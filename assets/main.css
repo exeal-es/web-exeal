@@ -40,14 +40,19 @@ h1 {
 
 h2 {
 	font-size: 1.625em;
+	margin-bottom: 1.25em;
+}
+
+h3 {
+	font-size: 1.375em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+	font-style: italic;
+	font-weight: bold;
 }
 
 p, li, a {
 	font-size: 1em;
-}
-
-h2 {
-	margin-bottom: 1.25em;
 }
 
 p {
@@ -204,4 +209,26 @@ nav {
 
 #icons02 .n01:hover svg {
 	fill: #1fe589 !important;
+}
+
+/**************
+ * SERVICE BOX
+ **************/
+
+div.service {
+	border-style: solid;
+	border-color: #1fe589;
+	border-width: 4px;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+div.row {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
 }
