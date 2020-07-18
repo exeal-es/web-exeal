@@ -268,13 +268,21 @@ img.avatar {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(31, 229, 137, 0.6);
 }
 
-.btn.btn-primary {
+.btn-submit {
 	border-width: 0px;
 	border-radius: 0px;
 	background-color: #1fe589;
 	width: 100%;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	color: #FFFFFF;
 }
 
+.btn-submit:active {
+	background-color: #1fe589;
+	border-color: #1fe589;
+}
 
 @font-face {
 	font-family: 'Gopher Medium';
@@ -388,4 +396,9 @@ a.button-hollow:after {
 	margin-left: .75em;
 	margin-top: 4px;
 	content: url('img/arrow-cta-yellow.svg');
+}
+
+.footer {
+	padding-top: 3em;
+	padding-bottom: 3em;
 }
