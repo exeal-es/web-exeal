@@ -42,7 +42,11 @@ p, li, a {
 	font-size: 1em;
 }
 
-p, h2 {
+h2 {
+	margin-bottom: 1.25em;
+}
+
+p {
 	margin-top: 1.25em;
 	margin-bottom: 1.25em;
 }
