@@ -36,10 +36,19 @@ body {
 
 h1 {
 	font-size: 1.75em;
+	font-family: 'Gopher Medium', 'Work Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
 }
 
 h2 {
 	font-size: 1.625em;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h2 {
 	margin-bottom: 1.25em;
 }
 
@@ -47,6 +56,7 @@ h3 {
 	font-size: 1.375em;
 	margin-top: 1.25em;
 	margin-bottom: 1.25em;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 	font-style: italic;
 	font-weight: bold;
 }
@@ -257,4 +267,32 @@ img.avatar {
 	border-radius: 0px;
 	background-color: #1fe589;
 	width: 100%;
+}
+
+
+@font-face {
+	font-family: 'Gopher Medium';
+	src: url('font/gopher-medium-webfont.woff2') format('woff2'),
+			 url('font/gopher-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Gopher Bold';
+	src: url('font/gopher-bold-webfont.woff2') format('woff2'),
+			 url('font/gopher-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Gopher Regular';
+	src: url('font/gopher-regular-webfont.woff2') format('woff2'),
+			 url('font/gopher-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
 }
