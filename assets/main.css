@@ -65,6 +65,10 @@ p em {
 	font-weight: bold;
 }
 
+h2 em {
+	border-bottom: 3px solid #1fe589;
+}
+
 li {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
