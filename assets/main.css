@@ -95,6 +95,11 @@ nav {
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 }
 
+.navbar {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
 .nav-item {
 	margin-left: 3em;
 }
