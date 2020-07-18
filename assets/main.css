@@ -236,3 +236,8 @@ div.row {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 }
+
+img.avatar {
+	width: 6em;
+	height: 6em;
+}
