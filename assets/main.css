@@ -42,6 +42,8 @@ body {
 
 h1 {
 	font-size: 1.875em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
 	font-family: 'Gopher Medium', 'Work Sans', sans-serif;
 	font-weight: normal;
 	font-style: normal;
