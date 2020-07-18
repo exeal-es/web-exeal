@@ -10,13 +10,13 @@ html {
 	color: #182935
 }
 
+.gloaming {
+	background-color: #F1FFF9;
+}
+
 .dark {
 	background-color: #182935;
 	color: #FFFFFF;
-}
-
-.black {
-	background-color: #000000;
 }
 
 section {
