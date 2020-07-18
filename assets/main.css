@@ -240,6 +240,12 @@ div.service {
 	text-align: center;
 	align-items: center;
 	justify-content: center;
+	height:100%;
+}
+
+div.service h3 {
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 div.service a {
