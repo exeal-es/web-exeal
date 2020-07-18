@@ -19,6 +19,10 @@ html {
 	color: #FFFFFF;
 }
 
+.black {
+	background-color: #000000;
+}
+
 section {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -87,14 +91,6 @@ nav {
 	background-image: url('images/container23.png');
 }
 
-
-
-
-footer {
-	border-style: solid;
-	border-color: #1fe589;
-	border-top-width: 2px;
-}
 
 .icons {
 	cursor: default;
