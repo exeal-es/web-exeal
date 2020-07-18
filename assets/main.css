@@ -103,16 +103,20 @@ nav {
 	background-position: center;
 	background-repeat: repeat;
 	background-size: cover;
+	opacity: 0.9;
 }
 
-.background.background-05 {
-	background-image: url('images/container05.png');
+.background.background-01 {
+	background-image: url('img/background-01-left.png');
 }
 
-.background.background-23 {
-	background-image: url('images/container23.png');
+.background.background-02 {
+	background-image: url('img/background-02.png');
 }
 
+.background.background-03 {
+	background-image: url('img/background-03.png');
+}
 
 .icons {
 	cursor: default;
