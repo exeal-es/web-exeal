@@ -106,9 +106,19 @@ nav {
 .background.background-01 {
 	background-image: url('img/background-01-right.png'), url('img/background-01-left.png');
 	background-attachment: fixed, fixed;
-	background-position: top right, top left;
-	background-repeat: no-repeat, repeat;
-	background-size: 40em, 128em;
+	background-position: top right, top;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 40em, 100em;
+}
+
+@media (max-width: 1400px) {
+	.background.background-01 {
+		background-image: url('img/background-01-right.png');
+		background-attachment: fixed;
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 40em;
+	}
 }
 
 .background.background-02 {
