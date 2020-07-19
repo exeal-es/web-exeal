@@ -241,6 +241,7 @@ div.service {
 	align-items: center;
 	justify-content: center;
 	height:100%;
+	position:relative;
 }
 
 div.service h3 {
@@ -401,4 +402,18 @@ a.button-hollow:after {
 .footer {
 	padding-top: 3em;
 	padding-bottom: 3em;
+}
+
+.service > .flap {
+	display: block;
+	border-top-right-radius: 50%;
+	border-color: #1fe589;
+	border-right-style: solid;
+	border-top-style: solid;
+	border-width: 4px;
+	width: 10em;
+	padding-bottom: 10em;
+  position: absolute;
+  top: -4px;
+  right: -4px;
 }
