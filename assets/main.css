@@ -6,7 +6,7 @@ html {
 }
 
 @media (min-width: 1200px) {
-	.container{
+	.container {
 		max-width: 1250px;
 	}
 }
@@ -425,4 +425,10 @@ a.button-hollow:after {
   position: absolute;
   top: -4px;
   right: -4px;
+}
+
+@media (min-width: 992px) {
+	div.container img.img-fluid {
+		padding: 1.5em;
+	}
 }
