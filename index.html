@@ -30,6 +30,17 @@
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" href="assets/img/favicon.png" />
 		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+		<!-- Google Analytics -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172984297-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-172984297-1');
+		</script>
 	</head>
 
 	<body>
@@ -197,34 +208,34 @@
 					</div>
 					<div class="col-md-10 col-sm-12">
 						<h2><em>Contacta con nosotros</em> para averiguar c&oacute;mo podemos <em>colaborar</em>.</h2>
-						<form method="post" action="">
+						<form accept-charset="UTF-8" action="https://formspree.io/pedro.pardal@exeal.com" method="post">
 							<div class="row">
 								<div class="col-md-6 form-group">
-									<input class="form-control" id="element_name" name="element_name" type="text" placeholder="Nombre"/>
+									<input class="form-control" id="name" name="name" type="text" placeholder="Nombre"/>
 								</div>
 								<div class="col-md-6 form-group">
-									<input class="form-control" id="element_surname" name="element_surname" type="text" placeholder="Apellidos"/>
+									<input class="form-control" id="surname" name="surname" type="text" placeholder="Apellidos"/>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6 form-group">
-									<input class="form-control" id="element_email" name="element_email" type="text" placeholder="Email"/>
+									<input class="form-control" id="email" name="email" type="text" placeholder="Email"/>
 								</div>
 								<div class="col-md-6 form-group">
-									<input class="form-control" id="element_phone" name="element_phone" type="text" placeholder="Tel&eacute;fono"/>
+									<input class="form-control" id="phone" name="phone" type="text" placeholder="Tel&eacute;fono"/>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-12">
 									<div class="form-group">
-										<input class="form-control" id="element_company" name="element_company" type="text" placeholder="Compa&ntilde;&iacute;a"/>
+										<input class="form-control" id="company" name="company" type="text" placeholder="Compa&ntilde;&iacute;a"/>
 									</div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-12">
 									<div class="form-group">
-										<textarea class="form-control" id="element_message" name="element_message" placeholder="Mensaje"></textarea>
+										<textarea class="form-control" id="message" name="message" placeholder="Mensaje"></textarea>
 									</div>
 								</div>
 							</div>
