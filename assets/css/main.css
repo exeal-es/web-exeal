@@ -106,7 +106,7 @@ nav {
 }
 
 .background.background-01 {
-	background-image: url('img/background-01-right.png'), url('img/background-01-left.png');
+	background-image: url('../img/background-01-right.png'), url('../img/background-01-left.png');
 	background-attachment: fixed, fixed;
 	background-position: top right, top;
 	background-repeat: no-repeat, no-repeat;
@@ -115,7 +115,7 @@ nav {
 
 @media (max-width: 1400px) {
 	.background.background-01 {
-		background-image: url('img/background-01-right.png');
+		background-image: url('../img/background-01-right.png');
 		background-attachment: fixed;
 		background-position: top right;
 		background-repeat: no-repeat;
@@ -124,7 +124,7 @@ nav {
 }
 
 .background.background-02 {
-	background-image: url('img/background-02.png');
+	background-image: url('../img/background-02.png');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: repeat;
@@ -132,7 +132,7 @@ nav {
 }
 
 .background.background-03 {
-	background-image: url('img/background-03.png');
+	background-image: url('../img/background-03.png');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: repeat;
@@ -298,8 +298,8 @@ img.avatar {
 
 @font-face {
 	font-family: 'Gopher Medium';
-	src: url('font/gopher-medium-webfont.woff2') format('woff2'),
-			 url('font/gopher-medium-webfont.woff') format('woff');
+	src: url('../font/gopher-medium-webfont.woff2') format('woff2'),
+			 url('../font/gopher-medium-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -307,8 +307,8 @@ img.avatar {
 
 @font-face {
 	font-family: 'Gopher Bold';
-	src: url('font/gopher-bold-webfont.woff2') format('woff2'),
-			 url('font/gopher-bold-webfont.woff') format('woff');
+	src: url('../font/gopher-bold-webfont.woff2') format('woff2'),
+			 url('../font/gopher-bold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -316,8 +316,8 @@ img.avatar {
 
 @font-face {
 	font-family: 'Gopher Regular';
-	src: url('font/gopher-regular-webfont.woff2') format('woff2'),
-			 url('font/gopher-regular-webfont.woff') format('woff');
+	src: url('../font/gopher-regular-webfont.woff2') format('woff2'),
+			 url('../font/gopher-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -373,15 +373,15 @@ a.button:after {
 }
 
 .dark a.button:after {
-	content: url('img/arrow-cta-dark.svg');
+	content: url('../img/arrow-cta-dark.svg');
 }
 
 .light a.button:after {
-	content: url('img/arrow-cta-white.svg');
+	content: url('../img/arrow-cta-white.svg');
 }
 
 .gloaming a.button:after {
-	content: url('img/arrow-cta-white.svg');
+	content: url('../img/arrow-cta-white.svg');
 }
 
 a.button-hollow {
@@ -407,7 +407,7 @@ a.button-hollow:after {
 	float: right;
 	margin-left: .75em;
 	margin-top: 4px;
-	content: url('img/arrow-cta-yellow.svg');
+	content: url('../img/arrow-cta-yellow.svg');
 }
 
 .footer {
