@@ -76,7 +76,7 @@ h4 {
 	font-family: 'Work Sans', sans-serif;
 }
 
-p {
+section p {
 	margin-top: 1.25em;
 	margin-bottom: 1.25em;
 }
@@ -433,4 +433,18 @@ a.button-hollow:after {
 	div.container img.img-fluid {
 		padding: 1.5em;
 	}
+}
+
+footer a {
+	color: #707070;
+}
+
+footer a:hover {
+	color: #909090;
+	text-decoration: none;
+}
+
+footer li img {
+	width: 2em;
+	height: 2em;
 }
