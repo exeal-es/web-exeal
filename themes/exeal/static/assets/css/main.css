@@ -272,6 +272,20 @@ div.service a {
 	margin: auto;
 }
 
+div.service > div.flap {
+	display: block;
+	border-top-right-radius: 50%;
+	border-color: #1fe589;
+	border-right-style: solid;
+	border-top-style: solid;
+	border-width: 4px;
+	width: 10em;
+	padding-bottom: 10em;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}
+
 img.avatar {
 	width: 6em;
 	height: 6em;
@@ -423,20 +437,6 @@ a.button-hollow:after {
 	padding-bottom: 3em;
 }
 
-.service > .flap {
-	display: block;
-	border-top-right-radius: 50%;
-	border-color: #1fe589;
-	border-right-style: solid;
-	border-top-style: solid;
-	border-width: 4px;
-	width: 10em;
-	padding-bottom: 10em;
-  position: absolute;
-  top: -4px;
-  right: -4px;
-}
-
 @media (min-width: 992px) {
 	div.container img.img-fluid {
 		padding: 1.5em;
@@ -479,4 +479,13 @@ div.icon-container {
 		position: relative;
 		top: 0.15em;
 	}
+}
+
+sup {
+  font-size: 0.75em;
+}
+
+.center-horizontal {
+	margin-left: auto;
+	margin-right: auto;
 }
