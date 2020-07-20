@@ -543,3 +543,8 @@ dl.faq dd {
 	padding-bottom: 1em;
 	padding-top: 1em;
 }
+
+p.taxes {
+	color: #707070;
+	font-size: 0.75em;
+}
