@@ -470,3 +470,13 @@ div.icon-container {
 	min-height: 5.5em;
 	display: flex;
 }
+
+@media (min-width: 1200px) {
+	h1.arrow-right:before {
+		content: url('/assets/img/arrow-right-secondary.svg');
+		display: inline-block;
+		margin-right: 1em;
+		position: relative;
+		top: 0.15em;
+	}
+}
