@@ -465,3 +465,8 @@ ul.ticked li:before {
 	position: relative;
 	top: 0.15em;
 }
+
+div.icon-container {
+	min-height: 5.5em;
+	display: flex;
+}
