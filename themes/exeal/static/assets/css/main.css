@@ -139,6 +139,14 @@ nav {
 	background-size: cover;
 }
 
+.background.background-01-simple {
+	background-image: url('../img/background-01-left.png');
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100em;
+}
+
 .icons {
 	cursor: default;
 	padding: 0;
