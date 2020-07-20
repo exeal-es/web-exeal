@@ -489,3 +489,36 @@ sup {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+div.bordered {
+	font-weight: normal;
+	font-style: normal;
+	border-style: solid;
+	border-color: #1fe589;
+	border-width: 4px;
+	padding: 1em 2em;
+	position: relative;
+}
+
+div.bordered.expanded {
+	position: relative;
+	top: -4px;
+}
+
+div.bordered > h2 {
+	margin: 0em;
+}
+
+/*
+div.bordered > div.dropdown {
+	display: block;
+	border-color: #1fe589;
+	border-left-style: solid;
+	border-width: 4px;
+	width: 4.5em;
+	height: 108%;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}
+*/
