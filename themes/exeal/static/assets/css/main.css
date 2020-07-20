@@ -20,6 +20,10 @@ html {
 	background-color: #F1FFF9;
 }
 
+.gray {
+	background-color: #F1F1F1;
+}
+
 .dark {
 	background-color: #182935;
 	color: #FFFFFF;
@@ -522,3 +526,20 @@ div.bordered > div.dropdown {
   right: -4px;
 }
 */
+
+dl.faq dt {
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	color: #707070;
+	border-color: #D7D7D7;
+	border-bottom-style: solid;
+	border-width: 2px;
+	font-size: 1.25em;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+}
+
+dl.faq dd {
+	color: #707070;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
