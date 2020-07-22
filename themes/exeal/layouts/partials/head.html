@@ -1,24 +1,25 @@
 <head>
   <meta charset="utf-8">
-  <title>Exeal: Formación y coaching para desarrolladores</title>
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <!--<title></title>-->
   <!-- Meta -->
 
-  <meta name="description" content="Transmitimos a tu equipo las competencias necesarias para desarrollar software de forma profesional.">
+  <meta name="description" content="{{ .Description }}">
   <meta name="author" content="Exeal">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Exeal">
-  <meta property="og:site_name" content="Exeal">
-  <meta property="og:description" content="Transmitimos a tu equipo las competencias necesarias para desarrollar software de forma profesional.">
+  <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:description" content="{{ .Description }}">
   <meta property="og:url" content="https://www.exeal.com/">
   <meta property="og:image" content="https://www.exeal.com/assets/img/open-graph.jpg">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@exeal_es">
-  <meta name="twitter:title" content="Exeal">
-  <meta name="twitter:description" content="Transmitimos a tu equipo las competencias necesarias para desarrollar software de forma profesional.">
+  <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
+  <meta name="twitter:description" content="{{ .Description }}">
   <meta name="twitter:image" content="https://www.exeal.com/assets/img/open-graph.jpg">
 
   <!-- Stylesheet -->
