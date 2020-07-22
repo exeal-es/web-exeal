@@ -586,13 +586,18 @@ p.taxes {
 
 .avatar-with-name .customer-name {
 	display: inline-block;
-	margin-left: 1.5em;
 }
 
 .avatar-with-name p {
-	text-align: left;
 	margin: 0px;
 	color: #707070;
+}
+
+@media (min-width: 992px) {
+	.avatar-with-name p {
+		text-align: left;
+		margin-left: 1.5em;
+	}
 }
 
 .carousel-indicators-parent {
@@ -603,4 +608,11 @@ p.taxes {
 .carousel {
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 	font-size: 1.3em;
+}
+
+@media (max-width: 992px) {
+	.avatar-with-name .customer-name {
+		display: block;
+		margin-top: 1em;
+	}
 }
