@@ -548,3 +548,59 @@ p.taxes {
 	color: #707070;
 	font-size: 0.75em;
 }
+
+.carousel-indicators {
+	display: inline-block;
+	margin-right: 1em;
+	margin-left: 0px;
+	position: relative;
+	bottom: 0px;
+}
+
+.carousel-indicators li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 10px;
+	text-indent: 0;
+	cursor: pointer;
+	border: none;
+	border-radius: 50%;
+	background-color: #D0D0D0;
+	position: relative;
+	top: 0.15em;
+}
+.carousel-indicators .active {
+	margin: 10px;
+	background-color: #182935;
+}
+
+.avatar-with-name {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.avatar-with-name > * {
+	vertical-align: middle;
+}
+
+.avatar-with-name .customer-name {
+	display: inline-block;
+	margin-left: 1.5em;
+}
+
+.avatar-with-name p {
+	text-align: left;
+	margin: 0px;
+	color: #707070;
+}
+
+.carousel-indicators-parent {
+	margin-top: 1.5em;
+	text-align: center;
+}
+
+.carousel {
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	font-size: 1.3em;
+}
