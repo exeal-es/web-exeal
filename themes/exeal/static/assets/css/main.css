@@ -103,9 +103,9 @@ nav {
 	padding-bottom: 1em;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 	.nav-item {
-		margin-left: 3em;
+		margin-left: 2em;
 	}
 }
 
@@ -639,4 +639,18 @@ p.price sup {
 	div.price-box-right {
 		margin-left: 2em;
 	}
+}
+
+a.nav-button {
+	display: block;
+	background-color: #E6AD1C;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	text-decoration: none;
+	width: fit-content;
+	justify-content: center;
+	align-items: center;
+	padding-left: 1em !important;
+	padding-right: 1em !important;
+	color: #182935 !important;
+	border-radius: 2rem;
 }
