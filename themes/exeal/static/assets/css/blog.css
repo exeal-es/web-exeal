@@ -53,12 +53,12 @@ ul.tags li {
   margin: 0.5em 1em;
 }
 
-ul.tags .tags-light li {
+ul.tags.tags-light li {
   color: #E4E4E4;
   border-color: #FFFFFF;
 }
 
-ul.tags .tags-dark li {
+ul.tags.tags-dark li {
   color: #182935;
   border-color: #182935;
 }
@@ -93,4 +93,52 @@ div.post-author {
 
 .post-author .customer-name {
   max-width: 30rem;
+}
+
+.post-card {
+  background-image: url('/assets/img/blog/covers/torii.png');
+}
+
+.post-card-inner {
+  background: rgba(24,41,53,0.75);
+  height: 100%;
+  padding: 2rem;
+  color: #FFFFFF;
+  height: 22em;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.post-card ul.tags {
+  font-size: 0.75rem;
+  margin: 0px;
+}
+
+.post-card p {
+  margin-top: 0.5em;
+}
+
+.post-card h2 {
+  margin-bottom: 0em;
+}
+
+.post-card ul.tags li {
+  display: inline;
+  padding: 0.25em 0.5em;
+  margin: 0.25em 0em;
+}
+
+.post-card p.author {
+  border-top: #1fe589;
+  border-top-style: solid;
+  border-top-width: 4px;
+  font-size: 0.75em;
+  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+}
+
+.post-card .post-title {
+  position: absolute;
+  bottom: 0;
+  left: 2em;
+  right: 2em;
 }
