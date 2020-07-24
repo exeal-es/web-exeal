@@ -25,8 +25,14 @@
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
-              <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-              <p class="lead">A great starter layout for a landing page</p>
+              <ul class=tags>
+                <li>#coding</li>
+                <li>#legacycode</li>
+                <li>#software</li>
+              </ul>
+              <h1><span class="underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></h1>
+              <h2>Pedro Pardal</h2>
+			      	<p><a data-scroll="sect-about" href="#"><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg" /></a></p>
             </div>
           </div>
         </div>
@@ -69,6 +75,8 @@
 
 {{ define "main" }}
 <div class="container">
+  <h1><span class="underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></h1>
+
   {{ .Content }}
 </div>
 {{ end }}
