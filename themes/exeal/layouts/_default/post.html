@@ -2,22 +2,24 @@
 <html lang="es">
   {{- partial "head.html" . -}}
   <body>
-    <nav class="dark navbar navbar-expand-lg navbar-dark navbar-shrink">
+    <nav class="navbar navbar-expand-lg navbar-shrink">
       <div class="container">
         <a href="/" class="navbar-brand">
-          <img src="/assets/img/logo-exeal-header.svg" alt="Exeal"/>
+          <img src="/assets/img/blog/logo-blog.svg" alt="Exeal Blog"/>
         </a>
+        <!--
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav ml-auto">
+
             {{- block "nav-items" . }}
-              <li class="nav-item"><a class="nav-link" data-scroll="sect-about" href="#">Acerca de</a></li>
-              <li class="nav-item"><a class="nav-link" data-scroll="sect-contact" href="#">Contacto</a></li>
             {{- end }}
+            
           </ul>
         </div>
+        -->
       </div>
     </nav>
     <header class="hero">
@@ -30,7 +32,7 @@
                 <li>#legacycode</li>
                 <li>#software</li>
               </ul>
-              <h1><span class="underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></h1>
+              <h1><span class="underline">{{ .Title }}</span></h1>
               <h2>Pedro Pardal</h2>
 			      	<p><a data-scroll="sect-about" href="#"><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg" /></a></p>
             </div>
@@ -74,9 +76,12 @@
 </html>
 
 {{ define "main" }}
-<div class="container">
-  <h1><span class="underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></h1>
+<section>
+  <div class="container">
+    <article>
+      {{ .Content }}
+    </article>
+  </div>
+</section>
 
-  {{ .Content }}
-</div>
 {{ end }}

@@ -90,7 +90,7 @@ p em {
 	font-weight: bold;
 }
 
-nav {
+nav.dark {
 	border-style: solid;
 	border-color: #707070;
 	border-bottom-width: 2px;
@@ -344,6 +344,15 @@ img.avatar {
 	font-family: 'Gopher Regular';
 	src: url('../font/gopher-regular-webfont.woff2') format('woff2'),
 			 url('../font/gopher-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'JetBrainsMono-Regular';
+	src: url('../font/JetBrainsMono-Regular.woff2') format('woff2'),
+			 url('../font/JetBrainsMono-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
