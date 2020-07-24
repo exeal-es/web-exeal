@@ -46,13 +46,21 @@ ul.tags {
 
 ul.tags li {
   display: inline-block;
-  color: #E4E4E4;
   border-style: solid;
-  border-color: #FFFFFF;
   border-radius: 5px;
   border-width: 2px;
   padding: 0em 0.5em;
   margin: 0.5em 1em;
+}
+
+ul.tags .tags-light li {
+  color: #E4E4E4;
+  border-color: #FFFFFF;
+}
+
+ul.tags .tags-dark li {
+  color: #182935;
+  border-color: #182935;
 }
 
 pre {
@@ -62,4 +70,27 @@ pre {
   margin: 0em 2rem;
   padding: 2em 2em;
   font-family: 'JetBrainsMono-Regular', 'Work Sans', sans-serif;
+}
+
+div.post-author {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #1fe589;
+  margin: 2em 0em;
+}
+
+.post-author .customer-name {
+  margin: 2em 0em;
+}
+
+.post-author .customer-name h2 {
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  text-align: left;
+}
+
+.post-author .customer-name {
+  max-width: 30rem;
 }

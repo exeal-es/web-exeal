@@ -27,7 +27,7 @@
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
-              <ul class=tags>
+              <ul class="tags tags-light">
                 <li>#coding</li>
                 <li>#legacycode</li>
                 <li>#software</li>
@@ -40,7 +40,44 @@
         </div>
       </div>
     </header>
-    {{- block "main" . }}{{- end }}
+    <section>
+      {{- block "article" . }}{{- end }}
+
+      <div class="container">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center">
+            <ul class="tags tags-dark">
+              <li>#coding</li>
+              <li>#legacycode</li>
+              <li>#software</li>
+            </ul>
+      
+            <div class="post-author">
+              <div class="avatar-with-name">
+                <img class="rounded-circle" src="/assets/img/blog/authors/pedro-pardal.png"/>
+                <div class="customer-name">
+                  <h2>Pedro Pardal</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+      
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a target="_blank" href="https://twitter.com/ppardalj"> <img src="/assets/img/blog/social-icons/icon-twitter.svg"> </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="https://www.linkedin.com/in/pedro-pardal-jimena-36764344/"> <img src="/assets/img/blog/social-icons/icon-linkedin.svg"> </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="mailto:pedro.pardal@exeal.com"> <img src="/assets/img/blog/social-icons/icon-email.svg"> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="black footer">
       <div class="container">
         <div class="row align-items-center">
@@ -75,13 +112,10 @@
   </body>
 </html>
 
-{{ define "main" }}
-<section>
-  <div class="container">
-    <article>
-      {{ .Content }}
-    </article>
-  </div>
-</section>
-
+{{ define "article" }}
+<div class="container">
+  <article>
+    {{ .Content }}
+  </article>
+</div>
 {{ end }}
