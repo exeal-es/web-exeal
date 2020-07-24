@@ -1,0 +1,21 @@
+.hero {
+  height: 10em;
+  min-height: 500px;
+  background-image: url('/assets/img/blog/blog-cover-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-mask {
+  background: rgba(24,41,53,0.75);
+  height: 100%;
+}
+
+.hero h1 {
+  color:  #FFFFFF;
+  font-size: 3em;
+  border-bottom: 3px solid #1fe589;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	margin-bottom: 1.25em;
+}
