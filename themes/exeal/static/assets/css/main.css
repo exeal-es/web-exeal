@@ -621,11 +621,22 @@ p.price {
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 	color: #F1FFF9;
 	font-size: 6em;
-	margin: 3rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 	-webkit-text-stroke-width: 3px; 
 	-webkit-text-stroke-color: #1fe589; 
 }
 
 p.price sup {
 	font-size: 3rem;
+}
+
+@media (min-width: 1200px) {
+	div.price-box-left {
+		margin-right: 2em;
+	}
+
+	div.price-box-right {
+		margin-left: 2em;
+	}
 }
