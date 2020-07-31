@@ -141,6 +141,11 @@ div.post-author {
   position: relative;
 }
 
+.post-card-inner:hover {
+  background: rgba(24,41,53,1.0);
+  transition: 0.2s;
+}
+
 .post-card ul.tags {
   font-size: 0.75rem;
   margin: 0px;
