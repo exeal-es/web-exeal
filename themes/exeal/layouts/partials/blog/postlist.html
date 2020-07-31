@@ -1,0 +1,26 @@
+<section>
+  <div class="container">
+    <div class="row">
+      {{ range first 9 .Data.Pages }}
+      <div class="col-lg-4">
+        <div class="post-card">
+          <div class="post-card-inner">
+            {{ if .Params.tags }}
+            <ul class="tags tags-light">
+              {{ range $i, $tag := .Params.tags }}
+              <li><a href="{{ relLangURL ( printf "tags/%s" ( $tag | urlize ) ) }}">#{{ $tag }}</a></li>
+              {{ end }}
+            </ul>
+            {{ end }}
+            <div class="post-title">
+              <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              <p class="author">Pedro Pardal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
