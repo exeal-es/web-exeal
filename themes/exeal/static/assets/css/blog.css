@@ -63,6 +63,14 @@ ul.tags.tags-dark li {
   border-color: #182935;
 }
 
+ul.tags a {
+  color: white;
+}
+
+ul.tags a:hover {
+  text-decoration: none;
+}
+
 pre {
   border-style: solid;
 	border-color: #1fe589;

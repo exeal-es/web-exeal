@@ -27,11 +27,7 @@
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
-              <ul class="tags tags-light">
-                <li>#coding</li>
-                <li>#legacycode</li>
-                <li>#software</li>
-              </ul>
+              {{ partial "tags.html" .}}
               <h1><span class="underline">{{ .Title }}</span></h1>
               <h2>Pedro Pardal</h2>
 			      	<p><a data-scroll="sect-about" href="#"><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg" /></a></p>
