@@ -5,9 +5,7 @@ layout: post
 tags: ['coding', 'software', 'legacy']
 ---
 
-## Lorem ipsum
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu metus non purus tincidunt tristique lobortis sit amet mi. Curabitur aliquet felis sit amet risus consequat, sed tincidunt diam tempus. Fusce eget purus mi. Phasellus nulla dui, efficitur ut condimentum eget, pulvinar vitae ipsum. Integer tincidunt ipsum arcu, vitae imperdiet mauris tincidunt in. Curabitur arcu odio, sodales id justo ut, semper bibendum nisi. Praesent et dictum lacus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu metus non purus tincidunt tristique lobortis sit amet mi. <!--more--> Curabitur aliquet felis sit amet risus consequat, sed tincidunt diam tempus. Fusce eget purus mi. Phasellus nulla dui, efficitur ut condimentum eget, pulvinar vitae ipsum. Integer tincidunt ipsum arcu, vitae imperdiet mauris tincidunt in. Curabitur arcu odio, sodales id justo ut, semper bibendum nisi. Praesent et dictum lacus.
 
 ```csharp
 // testing code

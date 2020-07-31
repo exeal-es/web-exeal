@@ -187,3 +187,32 @@ div.post-author {
 .post-card a:hover {
   text-decoration: none;
 }
+
+.post-card-detail {
+  display: none;
+  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+}
+
+div.post-card-reading-time {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  font-size: 0.85em;
+  color: #1fe589;
+
+}
+
+.post-card-summary {
+  font-size: 1.15em;
+}
+
+.post-card:hover .post-card-detail {
+  display: block;
+  transition: 0.2s;
+}
+
+.post-card:hover .post-card-cover {
+  display: none;
+  transition: 0.2s;
+}
