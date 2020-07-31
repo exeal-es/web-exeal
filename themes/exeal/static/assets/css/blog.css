@@ -142,3 +142,11 @@ div.post-author {
   left: 2em;
   right: 2em;
 }
+
+.post-card a {
+  color: white;
+}
+
+.post-card a:hover {
+  text-decoration: none;
+}

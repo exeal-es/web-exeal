@@ -13,6 +13,7 @@
     <section>
       <div class="container">
         <div class="row">
+          {{ range first 9 .Data.Pages }}
           <div class="col-lg-4">
             <div class="post-card">
               <div class="post-card-inner">
@@ -22,139 +23,13 @@
                   <li>#software</li>
                 </ul>
                 <div class="post-title">
-                  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                  <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                   <p class="author">Pedro Pardal</p>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4">
-            <div class="post-card">
-              <div class="post-card-inner">
-                <ul class="tags tags-light">
-                  <li>#coding</li>
-                  <li>#legacycode</li>
-                  <li>#software</li>
-                </ul>
-                <div class="post-title">
-                  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                  <p class="author">Pedro Pardal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="post-card">
-              <div class="post-card-inner">
-                <ul class="tags tags-light">
-                  <li>#coding</li>
-                  <li>#legacycode</li>
-                  <li>#software</li>
-                </ul>
-                <div class="post-title">
-                  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                  <p class="author">Pedro Pardal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="post-card">
-              <div class="post-card-inner">
-                <ul class="tags tags-light">
-                  <li>#coding</li>
-                  <li>#legacycode</li>
-                  <li>#software</li>
-                </ul>
-                <div class="post-title">
-                  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                  <p class="author">Pedro Pardal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="post-card">
-              <div class="post-card-inner">
-                <ul class="tags tags-light">
-                  <li>#coding</li>
-                  <li>#legacycode</li>
-                  <li>#software</li>
-                </ul>
-                <div class="post-title">
-                  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                  <p class="author">Pedro Pardal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="post-card">
-              <div class="post-card-inner">
-                <ul class="tags tags-light">
-                  <li>#coding</li>
-                  <li>#legacycode</li>
-                  <li>#software</li>
-                </ul>
-                <div class="post-title">
-                  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                  <p class="author">Pedro Pardal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="post-card">
-              <div class="post-card-inner">
-                <ul class="tags tags-light">
-                  <li>#coding</li>
-                  <li>#legacycode</li>
-                  <li>#software</li>
-                </ul>
-                <div class="post-title">
-                  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                  <p class="author">Pedro Pardal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="post-card">
-              <div class="post-card-inner">
-                <ul class="tags tags-light">
-                  <li>#coding</li>
-                  <li>#legacycode</li>
-                  <li>#software</li>
-                </ul>
-                <div class="post-title">
-                  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                  <p class="author">Pedro Pardal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="post-card">
-              <div class="post-card-inner">
-                <ul class="tags tags-light">
-                  <li>#coding</li>
-                  <li>#legacycode</li>
-                  <li>#software</li>
-                </ul>
-                <div class="post-title">
-                  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                  <p class="author">Pedro Pardal</p>
-                </div>
-              </div>
-            </div>
+          {{ end }}
           </div>
         </div>
       </div>
