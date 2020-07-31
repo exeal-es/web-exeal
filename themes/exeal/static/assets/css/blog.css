@@ -54,7 +54,7 @@ ul.tags li {
 }
 
 ul.tags.tags-light li {
-  color: #E4E4E4;
+  color: #FFFFFF;
   border-color: #FFFFFF;
 }
 
@@ -64,11 +64,31 @@ ul.tags.tags-dark li {
 }
 
 ul.tags.tags-light a {
-  color: #E4E4E4;
+  color: #FFFFFF;
+}
+
+ul.tags.tags-light li:hover a {
+  color: #182935;
+  transition: 0.2s;
+}
+
+ul.tags.tags-light li:hover {
+  background-color: #FFFFFF;
+  transition: 0.2s;
 }
 
 ul.tags.tags-dark a {
   color: #182935;
+}
+
+ul.tags.tags-dark li:hover a {
+  color: #FFFFFF;
+  transition: 0.2s;
+}
+
+ul.tags.tags-dark li:hover {
+  background-color: #182935;
+  transition: 0.2s;
 }
 
 ul.tags a:hover {
