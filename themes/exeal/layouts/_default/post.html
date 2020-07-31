@@ -2,32 +2,16 @@
 <html lang="es">
   {{- partial "head.html" . -}}
   <body>
-    <nav class="navbar navbar-expand-lg navbar-shrink">
-      <div class="container">
-        <a href="/" class="navbar-brand">
-          <img src="/assets/img/blog/logo-blog.svg" alt="Exeal Blog"/>
-        </a>
-        <!--
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav ml-auto">
+    {{- partial "blog/navbar.html" . -}}
 
-            {{- block "nav-items" . }}
-            {{- end }}
-            
-          </ul>
-        </div>
-        -->
-      </div>
-    </nav>
     <header class="hero">
       <div class="hero-mask">
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
-              {{ partial "tags.html" .}}
+              <ul class="tags tags-light">
+                {{ partial "tags.html" .}}
+              </ul>
               <h1><span class="underline">{{ .Title }}</span></h1>
               <h2>Pedro Pardal</h2>
 			      	<p><a data-scroll="sect-body" href="#"><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg" /></a></p>
@@ -36,16 +20,14 @@
         </div>
       </div>
     </header>
+
     <section id="sect-body">
       {{- block "article" . }}{{- end }}
-
       <div class="container">
         <div class="row h-100 align-items-center">
           <div class="col-12 text-center">
             <ul class="tags tags-dark">
-              <li>#coding</li>
-              <li>#legacycode</li>
-              <li>#software</li>
+              {{ partial "tags.html" .}}
             </ul>
       
             <div class="post-author">
