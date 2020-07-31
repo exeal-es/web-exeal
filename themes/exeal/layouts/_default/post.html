@@ -30,13 +30,13 @@
               {{ partial "tags.html" .}}
               <h1><span class="underline">{{ .Title }}</span></h1>
               <h2>Pedro Pardal</h2>
-			      	<p><a data-scroll="sect-about" href="#"><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg" /></a></p>
+			      	<p><a data-scroll="sect-body" href="#"><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg" /></a></p>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section>
+    <section id="sect-body">
       {{- block "article" . }}{{- end }}
 
       <div class="container">
