@@ -165,7 +165,7 @@ div.post-card-reading-time {
   margin: 1rem 0rem;
 }
 
-#sect-visit-blog {
+section.no-padding-top {
   padding-top: 0em;
 }
 
@@ -179,9 +179,65 @@ div.post-card-reading-time {
   border-style: solid;
   border-width: 2px;
   width: 11px;
-	height: 11px;
+  height: 11px;
 }
 
 .blog-carousel .carousel-indicators li.active {
-	background-color: white;
+  background-color: white;
+}
+
+.podcast-item {
+  background-color: #182935;
+}
+
+.podcast-widget {
+  width: 100%;
+  height: 12rem;
+  background-color: #1fe589;
+  margin-bottom: 0.5em;
+}
+
+.podcast-item-inner {
+  height: 100%;
+  padding: 1rem;
+  color: #FFFFFF;
+  height: 22em;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.podcast-item h2 {
+  font-size: 1.25em;
+}
+
+.podcast-item p.episode-title {
+  font-size: 0.85rem;
+  line-height: 1rem;
+  margin: 0rem;
+}
+
+.podcast-item a.button {
+  font-size: 0.85rem;
+  width: 100%;
+}
+
+a.button.button-green {
+  background-color: #1fe589 !important;
+  border-style: none;
+  color: #182935;
+  text-align: center;
+}
+
+a.button.button-green:after {
+	float: none;
+	margin-left: .75em;
+	margin-top: 4px;
+	content: url('../img/arrow-small-right-dark.svg');
+}
+
+.podcast-item .cta {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
 }
