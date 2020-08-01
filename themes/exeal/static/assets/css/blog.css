@@ -79,8 +79,11 @@ div.post-author {
   background-image: url('/assets/img/blog/covers/torii.png');
 }
 
-.post-card-inner {
+.post-card-bg-mask {
   background: rgba(24,41,53,0.75);
+}
+
+.post-card-inner {
   height: 100%;
   padding: 2rem;
   color: #FFFFFF;
@@ -152,32 +155,4 @@ div.post-card-reading-time {
 .post-card:hover .post-card-cover {
   display: none;
   transition: 0.2s;
-}
-
-article em {
-  font-weight: normal;
-}
-
-article strong {
-  font-weight: bold;
-}
-
-article img {
-  max-width: 90%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-article h2 {
-  padding-top: 2em;
-}
-
-article ul {
-  display: block;
-  list-style-type: disc;
-  padding-left: 2em;
 }
