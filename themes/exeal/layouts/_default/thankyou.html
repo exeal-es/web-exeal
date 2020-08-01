@@ -28,6 +28,59 @@
 </section>
 
 <section class="light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="post-card">
+          <div class="post-card-inner">
+            <div class="post-card-cover">
+              {{ if .Params.tags }}
+              <ul class="tags tags-light">
+                {{ range $i, $tag := .Params.tags }}
+                <li><a href="{{ relLangURL ( printf "tags/%s" ( $tag | urlize ) ) }}">#{{ $tag }}</a></li>
+                {{ end }}
+              </ul>
+              {{ end }}
+              <div class="post-title">
+                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <p class="author">Pedro Pardal</p>
+              </div>
+            </div>
+            <div class="post-card-detail">
+              <div class="post-card-summary"><a href="{{ .Permalink }}">{{ .Summary }}</div>
+              <div class="post-card-reading-time">Tiempo de lectura: {{ math.Round (div (countwords .Content) 220.0) }} minutos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="post-card">
+          <div class="post-card-inner">
+            <div class="post-card-cover">
+              {{ if .Params.tags }}
+              <ul class="tags tags-light">
+                {{ range $i, $tag := .Params.tags }}
+                <li><a href="{{ relLangURL ( printf "tags/%s" ( $tag | urlize ) ) }}">#{{ $tag }}</a></li>
+                {{ end }}
+              </ul>
+              {{ end }}
+              <div class="post-title">
+                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <p class="author">Pedro Pardal</p>
+              </div>
+            </div>
+            <div class="post-card-detail">
+              <div class="post-card-summary"><a href="{{ .Permalink }}">{{ .Summary }}</div>
+              <div class="post-card-reading-time">Tiempo de lectura: {{ math.Round (div (countwords .Content) 220.0) }} minutos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
   <div class="container vertical-center horizontal-center">
     <div class="row">
       <div class="col-md-12">
