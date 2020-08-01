@@ -158,7 +158,9 @@ div.post-card-reading-time {
 
 .blog-carousel h1 {
   font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-size: 2rem;
   margin: 1rem 0rem;
+  max-width: 25rem;
 }
 
 .blog-carousel ul.tags {
