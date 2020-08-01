@@ -3,15 +3,14 @@
   min-height: 700px;
 }
 
-.hero-back-img {
+.hero-bg-img {
   background-image: url('/assets/img/blog/blog-cover-1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.hero-back-img-mask {
-  background: rgba(24,41,53,0.75);
+.hero-bg-img-mask {
   height: 100%;
 }
 
@@ -75,15 +74,15 @@ div.post-author {
   max-width: 30rem;
 }
 
-.post-card {
+.blog-item {
   background-image: url('/assets/img/blog/covers/torii.png');
 }
 
-.post-card-bg-mask {
+.bg-mask {
   background: rgba(24,41,53,0.75);
 }
 
-.post-card-inner {
+.blog-item-inner {
   height: 100%;
   padding: 2rem;
   color: #FFFFFF;
@@ -92,20 +91,20 @@ div.post-author {
   position: relative;
 }
 
-.post-card-inner:hover {
+.blog-item-inner:hover {
   background: rgba(24,41,53,1.0);
   transition: 0.2s;
 }
 
-.post-card p {
+.blog-item p {
   margin-top: 0.5em;
 }
 
-.post-card h2 {
+.blog-item h2 {
   margin-bottom: 0em;
 }
 
-.post-card p.author {
+.blog-item p.author {
   border-top: #1fe589;
   border-top-style: solid;
   border-top-width: 4px;
@@ -113,27 +112,27 @@ div.post-author {
   font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 }
 
-.post-card .post-title {
+.blog-item .post-title {
   position: absolute;
   bottom: 0;
   left: 2em;
   right: 2em;
 }
 
-.post-card a {
+.blog-item a {
   color: white;
 }
 
-.post-card a:hover {
+.blog-item a:hover {
   text-decoration: none;
 }
 
-.post-card-detail {
+.blog-item-detail {
   display: none;
   font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 }
 
-div.post-card-reading-time {
+div.blog-item-reading-time {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
@@ -143,16 +142,16 @@ div.post-card-reading-time {
 
 }
 
-.post-card-summary {
+.blog-item-summary {
   font-size: 1.15em;
 }
 
-.post-card:hover .post-card-detail {
+.blog-item:hover .blog-item-detail {
   display: block;
   transition: 0.2s;
 }
 
-.post-card:hover .post-card-cover {
+.blog-item:hover .blog-item-cover {
   display: none;
   transition: 0.2s;
 }

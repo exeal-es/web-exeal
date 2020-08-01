@@ -1,6 +1,6 @@
-<div class="post-card">
-  <div class="post-card-inner post-card-bg-mask">
-    <div class="post-card-cover">
+<div class="blog-item post-card">
+  <div class="blog-item-inner bg-mask">
+    <div class="blog-item-cover">
       {{ if .Params.tags }}
       <ul class="tags tags-light tags-small">
         {{ range $i, $tag := .Params.tags }}
@@ -13,9 +13,9 @@
         <p class="author">Pedro Pardal</p>
       </div>
     </div>
-    <div class="post-card-detail">
-      <div class="post-card-summary"><a href="{{ .Permalink }}">{{ .Summary }}</div>
-      <div class="post-card-reading-time">Tiempo de lectura: {{ math.Round (div (countwords .Content) 220.0) }} minutos</div>
+    <div class="blog-item-detail">
+      <div class="blog-item-summary"><a href="{{ .Permalink }}">{{ .Summary }}</div>
+      <div class="blog-item-reading-time">Tiempo de lectura: {{ math.Round (div (countwords .Content) 220.0) }} minutos</div>
     </div>
   </div>
 </div>

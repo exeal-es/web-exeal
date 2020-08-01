@@ -31,8 +31,8 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-        <div class="post-card hero-back-img">
-          <div class="post-card-inner post-card-bg-mask hero-back-img-mask vertical-center">
+        <div class="blog-item hero-bg-img">
+          <div class="blog-item-inner bg-mask hero-bg-img-mask vertical-center">
             <div>
               <h2>Pedro Pardal</h2>
               <h1><span class="underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></h1>
@@ -54,9 +54,9 @@
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="post-card">
-          <div class="post-card-inner post-card-bg-mask">
-            <div class="post-card-cover">
+        <div class="blog-item">
+          <div class="blog-item-inner bg-mask">
+            <div class="blog-item-cover">
               {{ if .Params.tags }}
               <ul class="tags tags-light">
                 {{ range $i, $tag := .Params.tags }}
@@ -69,9 +69,9 @@
                 <p class="author">Pedro Pardal</p>
               </div>
             </div>
-            <div class="post-card-detail">
-              <div class="post-card-summary"><a href="{{ .Permalink }}">{{ .Summary }}</div>
-              <div class="post-card-reading-time">Tiempo de lectura: {{ math.Round (div (countwords .Content) 220.0) }} minutos</div>
+            <div class="blog-item-detail">
+              <div class="blog-item-summary"><a href="{{ .Permalink }}">{{ .Summary }}</div>
+              <div class="blog-item-reading-time">Tiempo de lectura: {{ math.Round (div (countwords .Content) 220.0) }} minutos</div>
             </div>
           </div>
         </div>
