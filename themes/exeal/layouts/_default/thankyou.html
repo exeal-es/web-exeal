@@ -31,24 +31,24 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-        <div class="post-card">
-          <div class="post-card-inner">
-            <div class="post-card-cover">
-              {{ if .Params.tags }}
+        <div class="post-card hero-back-img">
+          <div class="post-card-inner hero-back-img-mask vertical-center">
+            <div>
+              <h2>Pedro Pardal</h2>
+              <h1><span class="underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></h1>
               <ul class="tags tags-light">
-                {{ range $i, $tag := .Params.tags }}
-                <li><a href="{{ relLangURL ( printf "tags/%s" ( $tag | urlize ) ) }}">#{{ $tag }}</a></li>
-                {{ end }}
+                <li><a href="#">#coding</a></li>
+                <li><a href="#">#legacycode</a></li>
+                <li><a href="#">#software</a></li>
               </ul>
-              {{ end }}
-              <div class="post-title">
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                <p class="author">Pedro Pardal</p>
+              <div class="carousel-indicators-parent">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+                  <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+                </ol>
+                <a href="#carousel-testimonials" data-slide="next" role="button"><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></a>
               </div>
-            </div>
-            <div class="post-card-detail">
-              <div class="post-card-summary"><a href="{{ .Permalink }}">{{ .Summary }}</div>
-              <div class="post-card-reading-time">Tiempo de lectura: {{ math.Round (div (countwords .Content) 220.0) }} minutos</div>
             </div>
           </div>
         </div>

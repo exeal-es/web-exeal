@@ -1,13 +1,16 @@
 .hero {
   height: 10em;
   min-height: 700px;
+}
+
+.hero-back-img {
   background-image: url('/assets/img/blog/blog-cover-1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.hero-mask {
+.hero-back-img-mask {
   background: rgba(24,41,53,0.75);
   height: 100%;
 }
@@ -31,7 +34,7 @@
   margin-bottom: 1em;
 }
 
-.hero h1 span.underline {
+h1 span.underline {
   border-bottom: 4px solid #1fe589;
 }
 
