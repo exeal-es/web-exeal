@@ -135,7 +135,6 @@ div.post-card-reading-time {
   right: 2rem;
   font-size: 0.85em;
   color: #1fe589;
-
 }
 
 .post-card-summary {
@@ -150,4 +149,22 @@ div.post-card-reading-time {
 .post-card:hover .post-card-cover {
   display: none;
   transition: 0.2s;
+}
+
+.blog-carousel p.author-name {
+  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  margin: 1rem 0rem;
+}
+
+.blog-carousel h1 {
+  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  margin: 1rem 0rem;
+}
+
+.blog-carousel ul.tags {
+  margin: 1rem 0rem;
+}
+
+#sect-visit-blog {
+  padding-top: 0em;
 }
