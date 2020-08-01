@@ -74,10 +74,6 @@ div.post-author {
   max-width: 30rem;
 }
 
-.blog-item {
-  background-image: url('/assets/img/blog/covers/torii.png');
-}
-
 .bg-mask {
   background: rgba(24,41,53,0.75);
 }
@@ -91,7 +87,7 @@ div.post-author {
   position: relative;
 }
 
-.blog-item-inner:hover {
+.post-card-inner:hover {
   background: rgba(24,41,53,1.0);
   transition: 0.2s;
 }
@@ -127,12 +123,12 @@ div.post-author {
   text-decoration: none;
 }
 
-.blog-item-detail {
+.post-card-detail {
   display: none;
   font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 }
 
-div.blog-item-reading-time {
+div.post-card-reading-time {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
@@ -142,16 +138,16 @@ div.blog-item-reading-time {
 
 }
 
-.blog-item-summary {
+.post-card-summary {
   font-size: 1.15em;
 }
 
-.blog-item:hover .blog-item-detail {
+.post-card:hover .post-card-detail {
   display: block;
   transition: 0.2s;
 }
 
-.blog-item:hover .blog-item-cover {
+.post-card:hover .post-card-cover {
   display: none;
   transition: 0.2s;
 }
