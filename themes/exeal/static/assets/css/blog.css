@@ -168,3 +168,20 @@ div.post-card-reading-time {
 #sect-visit-blog {
   padding-top: 0em;
 }
+
+.blog-carousel-indicators-parent {
+  margin: 1rem 0rem;
+}
+
+.blog-carousel .carousel-indicators li {
+  background-color: rgba(0,0,0,0);
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  width: 12px;
+	height: 12px;
+}
+
+.blog-carousel .carousel-indicators li.active {
+	background-color: white;
+}

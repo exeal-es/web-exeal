@@ -582,12 +582,15 @@ p.taxes {
 	cursor: pointer;
 	border: none;
 	border-radius: 50%;
-	background-color: #D0D0D0;
 	position: relative;
 	top: 0.15em;
 }
-.carousel-indicators .active {
-	margin: 10px;
+
+.carousel-indicators.carousel-testimonials li {
+	background-color: #D0D0D0;
+}
+
+.carousel-indicators.carousel-testimonials .active {
 	background-color: #182935;
 }
 
