@@ -31,3 +31,16 @@ article li {
   background-repeat: no-repeat;
   padding-left: 3em;
 }
+
+article a {
+  color: inherit;
+  border-bottom: 3px solid #E6AD1C;
+}
+
+article a:hover {
+  background-color: #182935;
+  color: white;
+  border-bottom: 0px;
+  text-decoration: none;
+  transition: 0.2s;
+}
