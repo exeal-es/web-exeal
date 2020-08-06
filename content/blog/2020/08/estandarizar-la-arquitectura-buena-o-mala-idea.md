@@ -1,6 +1,6 @@
 ---
 title: "Estandarizar la arquitectura: ¿buena o mala idea?"
-date: 2020-07-01T00:00:00+02:00
+date: 2020-08-06T00:00:00+02:00
 layout: post
 tags: ['arquitectura']
 ---
