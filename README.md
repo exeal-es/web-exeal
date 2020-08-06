@@ -3,14 +3,15 @@
 ## Requirements
 
 - Hugo
+- Make
 
 ## Development server
 ```sh
-hugo server --watch --verbose
+make dev
 ```
 
 ## Build for production
 
 ```sh
-HUGO_ENV=production hugo --verbose
+make publish
 ```
