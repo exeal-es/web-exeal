@@ -14,12 +14,15 @@
   height: 100%;
 }
 
+.hero {
+  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+}
+
 .hero h1 {
   color: #FFFFFF;
   font-size: 3rem;
   font-weight: normal;
 	font-style: normal;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
   line-height: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -28,9 +31,16 @@
 .hero h2 {
   color: #E4E4E4;
   font-size: 1.5rem;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0px;
+}
+
+.hero p.date {
+  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-size: 1.25rem;
+  color: #A0A0A0;
+  margin-top: 0px;
+  margin-bottom: 2rem;
 }
 
 h1 span.underline {
