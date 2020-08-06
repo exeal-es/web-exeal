@@ -11,7 +11,7 @@ Reciéntemente en el equipo con el que trabajo actualmente, tuvimos una interesa
 
 La disyuntiva: usar o no [DTO's](https://martinfowler.com/eaaCatalog/dataTransferObject.html) de la capa de presentación como valores devueltos por los repositorios, que pertenecen a la capa de dominio.
 
-Puesto que a todos nos chillaba, comenzamos planteándonos qué nos dice la teoría: es deseable desacoplar nuestro código usando capas, minimizando el acomplamiento entre ellas. De esta manera, por ejemplo, un cambio en la lógica de negocio no afectaría a la presentación de los datos. Típicamente se plantea un [diseño de tres capas](https://martinfowler.com/bliki/PresentationDomainDataLayering.html): presentación, dominio y acceso a datos. Y así lo establece "la arquitectura".
+Puesto que a todos nos chillaba, comenzamos planteándonos qué nos dice la teoría: es deseable desacoplar nuestro código usando capas, minimizando el acoplamiento entre ellas. De esta manera, por ejemplo, un cambio en la lógica de negocio no afectaría a la presentación de los datos. Típicamente se plantea un [diseño de tres capas](https://martinfowler.com/bliki/PresentationDomainDataLayering.html): presentación, dominio y acceso a datos. Y así lo establece "la arquitectura".
 
 ![](/assets/img/blog/posts/torre-de-marfil.png)
 
