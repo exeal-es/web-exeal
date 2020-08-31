@@ -8,19 +8,10 @@
   <meta name="author" content="Exeal">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
-  <!-- Open Graph -->
-  <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
-  <meta property="og:site_name" content="{{ .Site.Title }}">
-  <meta property="og:description" content="{{ .Description }}">
-  <meta property="og:url" content="https://www.exeal.com/">
-  <meta property="og:image" content="https://www.exeal.com/assets/img/open-graph.jpg">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@exeal_es">
-  <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
-  <meta name="twitter:description" content="{{ .Description }}">
-  <meta name="twitter:image" content="https://www.exeal.com/assets/img/open-graph.jpg">
+  <!-- Internal templates -->
+  {{- template "_internal/opengraph.html" . -}}
+  {{- template "_internal/schema.html" . -}}
+  {{- template "_internal/twitter_cards.html" . -}}
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">

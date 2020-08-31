@@ -1,8 +1,11 @@
 ---
 title: "Estandarizar la arquitectura: ¿buena o mala idea?"
+description: El motivo por el que definimos reglas de arquitectura es para protegernos de cambios que nos pueden doler. ¿Hasta qué punto debemos ser estrictos con estas reglas?
 date: 2020-08-06T00:00:00+02:00
 layout: post
 tags: ['arquitectura']
+images:
+  - '/assets/img/blog/posts/torre-de-marfil.png'
 ---
 
 Reciéntemente en el equipo con el que trabajo actualmente, tuvimos una interesante discusión de diseño de una de nuestras APIs web.<!--more-->
