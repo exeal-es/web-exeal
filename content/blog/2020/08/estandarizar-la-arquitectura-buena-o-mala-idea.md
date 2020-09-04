@@ -5,7 +5,7 @@ date: 2020-08-06T00:00:00+02:00
 layout: post
 tags: ['arquitectura']
 images:
-  - '/assets/img/blog/posts/torre-de-marfil.png'
+  - 'https://www.exeal.com/assets/img/blog/posts/torre-de-marfil.png'
 featured_image: '/assets/img/blog/blog-cover-1.png'
 ---
 
