@@ -740,3 +740,11 @@ div.course-body {
 	margin-bottom: 0.5rem;
 	margin-top: 0rem;
 }
+
+.courses-tagline {
+	background-image: url('/assets/img/blog/blog-cover-1.png');
+}
+
+.courses-tagline h1 {
+	margin-left: 2rem !important;
+}
