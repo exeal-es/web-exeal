@@ -742,9 +742,24 @@ div.course-body {
 }
 
 .courses-tagline {
+	background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 	background-image: url('/assets/img/blog/blog-cover-1.png');
 }
 
+.courses-tagline-inner {
+	height: 100%;
+  padding: 2rem;
+  color: #FFFFFF;
+  height: 22em;
+  margin-bottom: 1em;
+  position: relative;
+}
+
 .courses-tagline h1 {
-	margin-left: 2rem !important;
+	margin-left: 2rem;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-size: 2rem;
+  max-width: 25rem;
 }
