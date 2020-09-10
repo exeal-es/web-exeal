@@ -771,3 +771,14 @@ img.client-logo {
   font-size: 2rem;
   max-width: 25rem;
 }
+
+.course-header div.featured-course {
+	display: block;
+	background-color: #E6AD1C;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	color: #FFFFFF;
+	padding: 0.25rem 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
