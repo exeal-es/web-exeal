@@ -687,3 +687,10 @@ div.horizontal-center {
 div.thank-you-hero {
 	height: 25rem;
 }
+
+img.client-logo {
+	padding: 1.5rem;
+	max-width: 10rem;
+	filter: grayscale(100%);
+	opacity: 0.5;
+}
