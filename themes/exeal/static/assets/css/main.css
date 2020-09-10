@@ -694,3 +694,49 @@ img.client-logo {
 	filter: grayscale(100%);
 	opacity: 0.5;
 }
+
+div.course-card {
+	box-shadow: 0.5rem 0.5rem 1rem -1rem rgba(0,0,0,0.75);
+}
+
+div.course-header {
+	background-image: url('/assets/img/blog/posts/pain-developer.jpeg');
+  background-size: cover;
+  background-position: center;
+	background-repeat: no-repeat;
+	min-height: 16rem;
+}
+
+div.course-body {
+	padding: 1.5rem 2.5rem;
+}
+
+.course-body h3 {
+	font-size: 1.5em;
+	font-style: normal;
+	margin-bottom: 1.25rem;
+}
+
+.course-body p.level {
+	color: #909090;
+	font-size: 1em;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	margin-bottom: 1.25rem;
+	margin-top: 0rem;
+}
+
+.course-body p.description {
+	color: #707070;
+	font-size: 1rem;
+	margin-bottom: 1.25rem;
+	margin-top: 0rem;
+	line-height: 150%;
+}
+
+.course-body li {
+	color: #909090;
+	font-size: 0.85rem;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	margin-bottom: 0.5rem;
+	margin-top: 0rem;
+}
