@@ -809,3 +809,22 @@ label {
 	border-color: white;
 	background-color: transparent;
 }
+
+input.button {
+	display: block;
+	border-style: solid;
+	border-color: #E6AD1C;
+	background-color: #E6AD1C;
+	border-width: 3px;
+	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+	text-decoration: none;
+	width: 100%;
+	font-size: 1.3em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	padding-left: 1.4em;
+	padding-right: 1.4em;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
