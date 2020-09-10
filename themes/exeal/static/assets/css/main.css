@@ -746,6 +746,10 @@ img.client-logo {
 	margin-top: 0rem;
 }
 
+.course-body ul {
+	margin-bottom: 1.25rem;
+}
+
 .courses-tagline {
 	background-size: cover;
   background-position: center;
