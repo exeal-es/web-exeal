@@ -385,7 +385,7 @@ img.arrow-right {
 	width: 3.5em;
 }
 
-.button {
+a.button {
 	display: block;
 	border-style: solid;
 	border-color: #E6AD1C;
@@ -404,41 +404,41 @@ img.arrow-right {
   align-items: center;
 }
 
-.button.expand {
+a.button.expand {
 	width: 100%;
 }
 
-.dark .button {
+.dark a.button {
 	color: #182935;
 }
 
-.light .button {
+.light a.button {
 	color: #FFFFFF;
 }
 
-.gloaming .button {
+.gloaming a.button {
 	color: #FFFFFF;
 }
 
-.button:after {
+a.button:after {
 	float: right;
 	margin-left: .75em;
 	margin-top: 4px;
 }
 
-.dark .button:after {
+.dark a.button:after {
 	content: url('../img/arrow-cta-dark.svg');
 }
 
-.light .button:after {
+.light a.button:after {
 	content: url('../img/arrow-cta-white.svg');
 }
 
-.gloaming .button:after {
+.gloaming a.button:after {
 	content: url('../img/arrow-cta-white.svg');
 }
 
-.button-hollow {
+a.button-hollow {
 	display: block;
 	border-style: solid;
 	border-color: #E6AD1C;
