@@ -396,6 +396,10 @@ a.button {
   align-items: center;
 }
 
+a.button.expand {
+	width: auto;
+}
+
 .dark a.button {
 	color: #182935;
 }
@@ -695,11 +699,12 @@ img.client-logo {
 	opacity: 0.5;
 }
 
-div.course-card {
+.course-card {
 	box-shadow: 0.5rem 0.5rem 1rem -1rem rgba(0,0,0,0.75);
+	margin-bottom: 2rem;
 }
 
-div.course-header {
+.course-header {
 	background-image: url('/assets/img/blog/posts/pain-developer.jpeg');
   background-size: cover;
   background-position: center;
@@ -707,7 +712,7 @@ div.course-header {
 	min-height: 16rem;
 }
 
-div.course-body {
+.course-body {
 	padding: 1.5rem 2.5rem;
 }
 
