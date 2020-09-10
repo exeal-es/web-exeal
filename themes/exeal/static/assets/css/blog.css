@@ -244,19 +244,19 @@ section.no-padding-top {
   margin: 0rem;
 }
 
-.podcast-item a.button {
+.podcast-item .button {
   font-size: 0.85rem;
   width: 100%;
 }
 
-a.button.button-green {
+.button.button-green {
   background-color: #1fe589 !important;
   border-style: none;
   color: #182935;
   text-align: center;
 }
 
-a.button.button-green:after {
+.button.button-green:after {
 	float: none;
 	margin-left: .75em;
 	margin-top: 4px;

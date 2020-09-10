@@ -1,0 +1,159 @@
+{{ define "main" }}
+<section class="dark background background-05">
+  <div class="container">
+    <div class="row mt-1 mb-1">
+      <div class="course-page-tagline col-md-6 col-sm-12 mb-3">
+        <h1>Training de Desarrollo de aplicaciones con contenedores</h1>
+        <h2>Aprende a nosequé nosecuanto blablabla nonainoná</h2>
+        <img class="img-fluid mockup-brochure" src="/assets/img/legacy/mockup-brochure.png" />
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <form accept-charset="UTF-8" action="https://getform.io/f/d1f0f1fc-1836-4cd7-bac0-c5fd411594e2" method="post">
+					<div class="row">
+						<div class="col-md-6 form-group">
+							<input class="form-control" id="name" name="name" type="text" placeholder="Nombre"/>
+						</div>
+						<div class="col-md-6 form-group">
+							<input class="form-control" id="surname" name="surname" type="text" placeholder="Apellidos"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 form-group">
+							<input class="form-control" id="email" name="email" type="email" placeholder="Email"/>
+						</div>
+						<div class="col-md-6 form-group">
+							<input class="form-control" id="phone" name="phone" type="text" placeholder="Tel&eacute;fono"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="form-group">
+								<input class="form-control" id="company" name="company" type="text" placeholder="Compa&ntilde;&iacute;a"/>
+							</div>
+						</div>
+          </div>
+          <div class="row">
+						<div class="col-12">
+							<div class="form-group">
+                <input id="accept-terms" name="accept-terms" type="checkbox"/>
+                <label for="accept-terms">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eiusmod tempor incididunt ut labore et dolore magna aliqua.</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<input class="button expand" type="submit" name="submit" value="Descarga la guía" />
+						</div>
+					</div>
+				</form>
+			</div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+		<div class="row mt-3 mb-3">
+			<div class="col-md-7">
+        <h2>A veces, parece que la mejor solución para evitar trabajar sobre Legacy Code es &quot;parar las máquinas&quot; y reescribir el código desde cero. <em>La experiencia nos dice que no</em>.</h2>
+        <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg"/></p>
+        <p>Enfrentarte a Legacy Code es solo cuestión de tiempo, aunque vuelvas a escribir el código desde cero, en menos tiempo del que piensas ese código que has escrito va a ser por su naturaleza irremediablemente Legacy Code.</p>
+      </div>
+      <div class="col-md-5 order-last photo">
+				<img class="img-fluid pad" src="/assets/img/legacy/bola.png" />
+			</div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-services" class="gloaming">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-4 mb-3">
+				<div class="service">
+					<div class="flap"></div>
+					<img src="/assets/img/icon-apprenticeship.svg"/>
+					<h3>20% teoría / 80% práctica</h3>
+					<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<div class="col-xl-4 mb-3">
+				<div class="service">
+					<div class="flap"></div>
+					<img src="/assets/img/icon-coaching.svg"/>
+					<h3>Presencial o remoto</h3>
+					<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<div class="col-xl-4 mb-3">
+				<div class="service">
+					<div class="flap"></div>
+					<img src="/assets/img/icon-training.svg"/>
+					<h3>Certificado de finalización</h3>
+					<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="sect-agenda" class="dark background background-02">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>Que <em>vas a aprender</em> en este training intensivo:</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="row ticked">
+          <li class="col-md-6">Como enfrentarse a una base de código heredado que no conoces.</li>
+          <li class="col-md-6">Identificar code smells: síntomas indicativos de problemas de mantenibilidad en el código.</li>
+          <li class="col-md-6">Técnicas de refactorización: cómo cambiar el código de forma segura sin afectar a su comportamiento actual.</li>
+          <li class="col-md-6">Construir una red de seguridad para cambiar el código basada en tests automáticos.</li>
+          <li class="col-md-6">Técnicas de eliminación de dependencias: cómo separar módulos que están tan unidos que no se pueden testear.</li>
+          <li class="col-md-6">Añadir nueva funcionalidad o corregir errores sobre legacy code usando TDD.</li>
+          <li class="col-md-6">Realizar análisis de deuda técnica y riesgos de un proyecto legacy.</li>
+          <li class="col-md-6">Aplicar con éxito estas técnicas a tu propio proyecto, independientemente del lenguaje en el que esté escrito.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{- partial "testimonials.html" . -}}
+
+<section class="gloaming">
+  <div class="container">
+		<div class="row mt-3 mb-3">
+      <div class="col-md-4 col-sm-12 photo d-none d-sm-none d-md-block">
+				<img class="img-fluid" src="/assets/img/legacy/mockup-brochure.png" />
+			</div>
+			<div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+        <a class="button" target="_blank" href="#">Accede al programa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-register" class="dark background background-02">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2><em>¿Tienes alguna duda?</em> ¡Escríbenos y te responderemos lo antes posible!</h2>
+        <a class="button" target="_blank" href="#">Contacto</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

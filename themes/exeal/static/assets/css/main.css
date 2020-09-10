@@ -150,6 +150,14 @@ nav.dark {
 	background-repeat: repeat;
 }
 
+.background.background-05 {
+	background-image: url('../img/background-05.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
 .background.background-01-simple {
 	background-image: url('../img/background-01-left.png');
 	background-attachment: fixed;
@@ -377,7 +385,7 @@ img.arrow-right {
 	width: 3.5em;
 }
 
-a.button {
+.button {
 	display: block;
 	border-style: solid;
 	border-color: #E6AD1C;
@@ -396,41 +404,41 @@ a.button {
   align-items: center;
 }
 
-a.button.expand {
-	width: auto;
+.button.expand {
+	width: 100%;
 }
 
-.dark a.button {
+.dark .button {
 	color: #182935;
 }
 
-.light a.button {
+.light .button {
 	color: #FFFFFF;
 }
 
-.gloaming a.button {
+.gloaming .button {
 	color: #FFFFFF;
 }
 
-a.button:after {
+.button:after {
 	float: right;
 	margin-left: .75em;
 	margin-top: 4px;
 }
 
-.dark a.button:after {
+.dark .button:after {
 	content: url('../img/arrow-cta-dark.svg');
 }
 
-.light a.button:after {
+.light .button:after {
 	content: url('../img/arrow-cta-white.svg');
 }
 
-.gloaming a.button:after {
+.gloaming .button:after {
 	content: url('../img/arrow-cta-white.svg');
 }
 
-a.button-hollow {
+.button-hollow {
 	display: block;
 	border-style: solid;
 	border-color: #E6AD1C;
@@ -449,7 +457,7 @@ a.button-hollow {
 	color: #E6AD1C;
 }
 
-a.button-hollow:after {
+.button-hollow:after {
 	float: right;
 	margin-left: .75em;
 	margin-top: 4px;
@@ -462,7 +470,7 @@ a.button-hollow:after {
 }
 
 @media (min-width: 992px) {
-	div.container img.img-fluid {
+	div.container img.img-fluid.pad {
 		padding: 1.5em;
 	}
 }
@@ -781,4 +789,23 @@ img.client-logo {
   position: absolute;
   top: 1rem;
   left: 1rem;
+}
+
+img.mockup-brochure {
+	max-height: 14rem;
+}
+
+.course-page-tagline h1 {
+	margin-top: 0rem;
+}
+
+label {
+  font-size: 0.85rem;
+  color: #707070;
+  line-height: 100%;
+}
+
+.dark .form-control {
+	border-color: white;
+	background-color: transparent;
 }
