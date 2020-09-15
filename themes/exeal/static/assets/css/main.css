@@ -828,3 +828,31 @@ input.button {
 	align-items: center;
 	cursor: pointer;
 }
+
+ul.course-features li:before {
+	content: url('/assets/img/icon-markup-green-xs.svg');
+	width: 1rem;
+	display: inline-block;
+	margin-right: 0.3em;
+	position: relative;
+	top: 0.15em;
+}
+
+i.icon {
+	display: inline-block;
+	margin-right: 0.25rem;
+	position: relative;
+	top: 0.15em;
+}
+
+i.i-level-black {
+	width: 24px;
+	height: 24px;
+	background-image: url('/assets/img/icon-markup-black-s.svg');
+}
+
+i.i-level-grey {
+	width: 24px;
+	height: 24px;
+	background-image: url('/assets/img/icon-markup-grey-s.svg');
+}
