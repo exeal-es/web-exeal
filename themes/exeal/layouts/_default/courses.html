@@ -1,19 +1,18 @@
 {{ define "main" }}
-<section class="light">
-  <div class="container">
-		<div class="courses-tagline">
-			<div class="bg-mask row no-gutters">
-				<div class="col-md-6">
-					<div class="courses-tagline-inner vertical-center">
-						<h1><span class="underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></h1>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<img class="tagline-img-max-height" src="/assets/img/trainings-banner-header-element-01.png">
-				</div>
+<section id="sect-service-training" class="dark background background-03">
+	<div class="container">
+		<div class="row mt-3 mb-3">
+			<div class="col-md-7">
+				<h1><span class="underline">Formaci&oacute;n avanzada</span> para equipos de desarrollo de software</h1>
+				<p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg"/></p>
+				<p>Mejora <em>de forma inmediata</em> las habilidades de tu equipo técnico en areas específicas con nuestros <em>cursos intensivos</em> (entre 1 y 5 días) de nivel medio-experto.</p>
+				<a data-scroll="sect-courses" href="#" class="button">Descubre los cursos</a>
+			</div>
+			<div class="col-md-5 d-none d-sm-none d-md-block" >
+				<img class="img-fluid pad" src="/assets/img/photo-training-module.png" />
 			</div>
 		</div>
-  </div>
+	</div>
 </section>
 
 <section id="sect-courses" class="light">
@@ -28,22 +27,23 @@
 						<div class="course-body">
 							<h3>Legacy Code</h3>
 							<p class="level"><i class="icon i-level-black"></i><i class="icon i-level-black"></i><i class="icon i-level-black"></i> Nivel Avanzado</p>
-							<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing at in tellus integer.</p>
-							<p class="description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing at in tellus integer.</p>
+							<p class="description">Aprende a trabajar sobre un proyecto de código legacy sin miedo a romper todo el sistema.</p>
+							<p class="description">Evita tener que reescribir todo el código existente desde cero, mediante técnicas de mejora contínua del código.</p>
 							<ul class="course-features">
 								<div class="row">
-									<li class="col-md-6">Lorem ipsum dolor</li>
-									<li class="col-md-6">Lorem ipsum dolor</li>
-									<li class="col-md-6">Lorem ipsum dolor</li>
-									<li class="col-md-6">Lorem ipsum dolor</li>
+									<li class="col-md-6">Refactorización de dependencias</li>
+									<li class="col-md-6">Construir una red de seguridad de tests</li>
+									<li class="col-md-6">Añadir nueva funcionalidad con TDD</li>
+									<li class="col-md-6">Análisis de deuda técnica</li>
 								</div>
 							</ul>
-							<a class="button button-green expand" href="#">Descubre el curso</a>
+							<a class="button button-green expand" href="/cursos/legacycode">Descubre el curso</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
+			<!--
 			<div class="col-md-4 col-sm-12">
 				<div class="course-card">
 					<div class="course-header">
@@ -80,11 +80,57 @@
 					</div>
 				</div>
 			</div>
+			-->
 		</div>
 	</div>
 </section>
 
-<section id="sect-clients" class="gloaming">
+<section class="dark background background-03">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>Conoce la <em>metodología</em> de nuestras formaciones.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="service">
+					<div class="flap"></div>
+					<img class="icon-mid" src="/assets/img/icons/white/Exeal-Icon-14.png"/>
+					<h3>100% prácticos</h3>
+          <p>Una sólida base teórica, aplicada con la realización de katas en <em>pair programming</em>, e infinidad de tips extraídos de proyectos del mundo real.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="service">
+					<div class="flap"></div>
+					<img class="icon-mid" src="/assets/img/icons/white/Exeal-Icon-10.png"/>
+					<h3>Presencial o remoto</h3>
+					<p>Tú eliges si impartimos el curso de forma presencial en tus oficinas, o en remoto a través de videoconferencia.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="service">
+					<div class="flap"></div>
+					<img class="icon-mid" src="/assets/img/icons/white/Exeal-Icon-15.png"/>
+					<h3>Coaching técnico</h3>
+          <p>Todos los cursos incluyen un día adicional de trabajo hands-on <em>sobre el código de tu proyecto</em>, de la mano de un coach técnico experimentado.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p><a class="button center-horizontal" data-scroll="sect-contact" href="#">Quiero saber más</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+<section id="sect-clients" class="light">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2 d-none d-sm-none d-md-block">
@@ -94,7 +140,7 @@
 				<h2>Han confiado en nosotros:</h2>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row align-items-center justify-content-center">
 			<div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
 				<img src="/assets/img/clients/exeal.png" class="img-fluid client-logo" alt="Exeal">
 			</div>
@@ -122,15 +168,18 @@
 		</div>
 	</div>
 </section>
+-->
 
-<section id="sect-contact" class="light">
+{{- partial "testimonials.html" . -}}
+
+<section id="sect-contact" class="gloaming">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2 d-none d-sm-none d-md-block">
 				<h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
 			</div>
 			<div class="col-md-10 col-sm-12">
-				<h2><em>Contacta con nosotros</em> para averiguar c&oacute;mo podemos <em>colaborar</em>.</h2>
+				<h2>¿Tienes dudas sobre los cursos? ¿No encuentras el curso que buscas? <em>¡Contacta con nosotros!</em></h2>
 				<form accept-charset="UTF-8" action="https://getform.io/f/d1f0f1fc-1836-4cd7-bac0-c5fd411594e2" method="post">
 					<div class="row">
 						<div class="col-md-6 form-group">

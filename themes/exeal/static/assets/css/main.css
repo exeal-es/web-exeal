@@ -860,3 +860,8 @@ i.i-level-grey {
 img.tagline-img-max-height {
 	height: 100%;
 }
+
+img.icon-mid {
+	max-height: 6rem;
+	margin-bottom: 1rem;
+}
