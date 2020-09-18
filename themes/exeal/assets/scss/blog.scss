@@ -2,6 +2,7 @@
 @import 'foundation/fonts';
 @import 'foundation/article';
 @import 'foundation/tags';
+@import 'foundation/buttons';
 
 .hero {
   height: 10em;
@@ -247,25 +248,6 @@ section.no-padding-top {
   font-size: 0.85rem;
   line-height: 1rem;
   margin: 0rem;
-}
-
-.podcast-item a.button {
-  font-size: 0.85rem;
-  width: 100%;
-}
-
-a.button.button-green {
-  background-color: $primary-color !important;
-  border-style: none;
-  color: $dark-background-color;
-  text-align: center;
-}
-
-a.button.button-green:after {
-	float: none;
-	margin-left: .75em;
-	margin-top: 4px;
-	content: url('/assets/img/arrow-small-right-dark.svg');
 }
 
 .podcast-item .cta {
