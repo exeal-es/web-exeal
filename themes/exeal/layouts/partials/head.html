@@ -1,45 +1,43 @@
-<head>
-  <meta charset="utf-8">
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
-  <!--<title></title>-->
-  <!-- Meta -->
+<meta charset="utf-8">
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+<!--<title></title>-->
+<!-- Meta -->
 
-  <meta name="description" content="{{ .Description }}">
-  <meta name="author" content="Exeal">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <!-- Internal templates -->
-  {{- template "_internal/opengraph.html" . -}}
-  {{- template "_internal/schema.html" . -}}
-  {{- template "_internal/twitter_cards.html" . -}}
+<meta name="description" content="{{ .Description }}">
+<meta name="author" content="Exeal">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-  {{ $style := resources.Get "scss/main.scss" | resources.ToCSS }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+<!-- Internal templates -->
+{{- template "_internal/opengraph.html" . -}}
+{{- template "_internal/schema.html" . -}}
+{{- template "_internal/twitter_cards.html" . -}}
 
-  {{ $style := resources.Get "scss/blog.scss" | resources.ToCSS }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+<!-- Stylesheet -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
-  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+{{ $style := resources.Get "scss/main.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" />
 
-  <!-- Google Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  {{ if eq (getenv "HUGO_ENV") "production" }}
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172984297-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+{{ $style := resources.Get "scss/blog.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" />
 
-    gtag('config', 'UA-172984297-1');
-  </script>
-  {{ end }}
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
 
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8231847.js"></script>
-  <!-- End of HubSpot Embed Code -->
-</head>
+<!-- Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+{{ if eq (getenv "HUGO_ENV") "production" }}
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172984297-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172984297-1');
+</script>
+{{ end }}
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8231847.js"></script>
+<!-- End of HubSpot Embed Code -->
