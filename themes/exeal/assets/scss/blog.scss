@@ -20,7 +20,7 @@
 }
 
 .hero h1 {
-  color: #FFFFFF;
+  color: white;
   font-size: 3rem;
   font-weight: normal;
 	font-style: normal;
@@ -109,7 +109,7 @@ div.post-author {
 .blog-item-inner {
   height: 100%;
   padding: 2rem;
-  color: #FFFFFF;
+  color: white;
   height: 22em;
   margin-bottom: 1em;
   position: relative;
@@ -217,20 +217,20 @@ section.no-padding-top {
 }
 
 .podcast-item {
-  background-color: #182935;
+  background-color: $dark-background-color;
 }
 
 .podcast-widget {
   width: 100%;
   height: 12rem;
-  background-color: #182935;
+  background-color: $dark-background-color;
   margin-bottom: 0.5em;
 }
 
 .podcast-item-inner {
   height: 100%;
   padding: 1rem;
-  color: #FFFFFF;
+  color: white;
   height: 22em;
   margin-bottom: 1em;
   position: relative;
@@ -254,7 +254,7 @@ section.no-padding-top {
 a.button.button-green {
   background-color: $primary-color !important;
   border-style: none;
-  color: #182935;
+  color: $dark-background-color;
   text-align: center;
 }
 

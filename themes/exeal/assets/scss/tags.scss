@@ -14,40 +14,40 @@ ul.tags li {
 }
 
 ul.tags.tags-light li {
-  color: #FFFFFF;
-  border-color: #FFFFFF;
+  color: white;
+  border-color: white;
 }
 
 ul.tags.tags-dark li {
-  color: #182935;
-  border-color: #182935;
+  color: $dark-background-color;
+  border-color: $dark-background-color;
 }
 
 ul.tags.tags-light a {
-  color: #FFFFFF;
+  color: white;
 }
 
 ul.tags.tags-light li:hover a {
-  color: #182935;
+  color: $dark-background-color;
   transition: 0.2s;
 }
 
 ul.tags.tags-light li:hover {
-  background-color: #FFFFFF;
+  background-color: white;
   transition: 0.2s;
 }
 
 ul.tags.tags-dark a {
-  color: #182935;
+  color: $dark-background-color;
 }
 
 ul.tags.tags-dark li:hover a {
-  color: #FFFFFF;
+  color: white;
   transition: 0.2s;
 }
 
 ul.tags.tags-dark li:hover {
-  background-color: #182935;
+  background-color: $dark-background-color;
   transition: 0.2s;
 }
 

@@ -4,7 +4,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 html {
 	font-size: 16pt;
-	background-color: #000000;
+	background-color: black;
 }
 
 @media (min-width: 1200px) {
@@ -14,12 +14,12 @@ html {
 }
 
 .light {
-	background-color: #FFFFFF;
-	color: #182935
+	background-color: white;
+	color: $dark-background-color
 }
 
 .gloaming {
-	background-color: #F1FFF9;
+	background-color: $gloaming-background-color;
 }
 
 .gray {
@@ -27,12 +27,12 @@ html {
 }
 
 .dark {
-	background-color: #182935;
-	color: #FFFFFF;
+	background-color: $dark-background-color;
+	color: white;
 }
 
 .black {
-	background-color: #000000;
+	background-color: black;
 }
 
 section {
@@ -246,11 +246,11 @@ nav.dark {
 }
 
 #icons02 a svg {
-	fill: #FFFFFF;
+	fill: white;
 }
 
 #icons02 a {
-	border: solid 1px #FFFFFF;
+	border: solid 1px white;
 }
 
 #icons02 a:hover {
@@ -331,7 +331,7 @@ img.avatar {
 	padding-top: 0.3em;
 	padding-bottom: 0.3em;
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
-	color: #FFFFFF;
+	color: white;
 }
 
 .btn-submit:active {
@@ -411,15 +411,15 @@ a.button.expand {
 }
 
 .dark a.button {
-	color: #182935;
+	color: $dark-background-color;
 }
 
 .light a.button {
-	color: #FFFFFF;
+	color: white;
 }
 
 .gloaming a.button {
-	color: #FFFFFF;
+	color: white;
 }
 
 a.button:after {
@@ -605,7 +605,7 @@ p.taxes {
 }
 
 .carousel-indicators.carousel-testimonials .active {
-	background-color: #182935;
+	background-color: $dark-background-color;
 }
 
 .avatar-with-name {
@@ -652,7 +652,7 @@ p.taxes {
 
 p.price {
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
-	color: #F1FFF9;
+	color: $gloaming-background-color;
 	font-size: 6em;
 	margin-top: 3rem;
 	margin-bottom: 3rem;
@@ -684,7 +684,7 @@ a.nav-button {
 	align-items: center;
 	padding-left: 1em !important;
 	padding-right: 1em !important;
-	color: #182935 !important;
+	color: $dark-background-color !important;
 	border-radius: 2rem;
 }
 
@@ -770,7 +770,7 @@ img.client-logo {
 .courses-tagline-inner {
 	height: 100%;
   padding: 2rem;
-  color: #FFFFFF;
+  color: white;
   height: 22em;
   position: relative;
 }
@@ -786,7 +786,7 @@ img.client-logo {
 	display: block;
 	background-color: $secondary-color;
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
-	color: #FFFFFF;
+	color: white;
 	padding: 0.25rem 1rem;
   position: absolute;
   top: 1rem;
