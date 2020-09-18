@@ -22,12 +22,6 @@
   {{ $style := resources.Get "scss/blog.scss" | resources.ToCSS }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
-  {{ $style := resources.Get "scss/article.scss" | resources.ToCSS }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" />
-
-  {{ $style := resources.Get "scss/tags.scss" | resources.ToCSS }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" />
-
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
