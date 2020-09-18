@@ -5,14 +5,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 @import 'foundation/buttons';
 
 html {
-	font-size: 16pt;
+	font-size: 15pt;
 	background-color: black;
-}
-
-@media (min-width: 1200px) {
-	.container {
-		max-width: 1250px;
-	}
 }
 
 .light {
