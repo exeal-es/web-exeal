@@ -23,7 +23,7 @@ html {
 }
 
 .gray {
-	background-color: #F1F1F1;
+	background-color: $gray-background-color;
 }
 
 .dark {
@@ -95,7 +95,7 @@ p em {
 
 nav.dark {
 	border-style: solid;
-	border-color: #707070;
+	border-color: $mid-gray;
 	border-bottom-width: 2px;
 	font-size: 1.1em;
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
@@ -478,11 +478,11 @@ a.button-hollow {
 }
 
 footer a {
-	color: #707070;
+	color: $mid-gray;
 }
 
 footer a:hover {
-	color: #909090;
+	color: $light-gray;
 	text-decoration: none;
 }
 
@@ -559,7 +559,7 @@ div.bordered > div.dropdown {
 
 dl.faq dt {
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
-	color: #707070;
+	color: $mid-gray;
 	border-color: $primary-color;
 	border-bottom-style: solid;
 	border-width: 2px;
@@ -569,13 +569,13 @@ dl.faq dt {
 }
 
 dl.faq dd {
-	color: #707070;
+	color: $mid-gray;
 	padding-bottom: 1em;
 	padding-top: 1em;
 }
 
 p.taxes {
-	color: #707070;
+	color: $mid-gray;
 	font-size: 0.75em;
 }
 
@@ -623,7 +623,7 @@ p.taxes {
 
 .avatar-with-name p {
 	margin: 0px;
-	color: #707070;
+	color: $mid-gray;
 }
 
 @media (min-width: 992px) {
@@ -733,7 +733,7 @@ img.client-logo {
 }
 
 .course-body p.level {
-	color: #909090;
+	color: $light-gray;
 	font-size: 1em;
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 	margin-bottom: 1.25rem;
@@ -741,7 +741,7 @@ img.client-logo {
 }
 
 .course-body p.description {
-	color: #707070;
+	color: $mid-gray;
 	font-size: 1rem;
 	margin-bottom: 1.25rem;
 	margin-top: 0rem;
@@ -749,7 +749,7 @@ img.client-logo {
 }
 
 .course-body li {
-	color: #909090;
+	color: $light-gray;
 	font-size: 0.85rem;
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 	margin-bottom: 0.5rem;
@@ -803,7 +803,7 @@ img.mockup-brochure {
 
 label {
   font-size: 0.85rem;
-  color: #707070;
+  color: $mid-gray;
   line-height: 100%;
 }
 
