@@ -1,5 +1,8 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}body{-webkit-text-size-adjust:none}mark{background-color:transparent;color:inherit}input::-moz-focus-inner{border:0;padding:0}input[type="text"],input[type="email"],select,textarea{-moz-appearance:none;-webkit-appearance:none;-ms-appearance:none;appearance:none}
 
+$primary-color: #1fe589;
+$secondary-color: #e6ad1c;
+
 html {
 	font-size: 16pt;
 	background-color: #000000;
@@ -63,7 +66,7 @@ h2 {
 }
 
 h2 em {
-	border-bottom: 3px solid #1fe589;
+	border-bottom: 3px solid $primary-color;
 }
 
 h3 {
@@ -111,7 +114,7 @@ nav.dark {
 }
 
 .background.background-01 {
-	background-image: url('../img/background-01-right.png'), url('../img/background-01-left.png');
+	background-image: url('/assets/img/background-01-right.png'), url('/assets/img/background-01-left.png');
 	background-attachment: fixed, fixed;
 	background-position: top right, top;
 	background-repeat: no-repeat, no-repeat;
@@ -120,7 +123,7 @@ nav.dark {
 
 @media (max-width: 1400px) {
 	.background.background-01 {
-		background-image: url('../img/background-01-right.png');
+		background-image: url('/assets/img/background-01-right.png');
 		background-attachment: fixed;
 		background-position: top right;
 		background-repeat: no-repeat;
@@ -129,7 +132,7 @@ nav.dark {
 }
 
 .background.background-02 {
-	background-image: url('../img/background-02.png');
+	background-image: url('/assets/img/background-02.png');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: repeat;
@@ -137,7 +140,7 @@ nav.dark {
 }
 
 .background.background-03 {
-	background-image: url('../img/background-03.png');
+	background-image: url('/assets/img/background-03.png');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: repeat;
@@ -145,13 +148,13 @@ nav.dark {
 }
 
 .background.background-04 {
-	background-image: url('../img/background-04.png');
+	background-image: url('/assets/img/background-04.png');
 	background-position: center;
 	background-repeat: repeat;
 }
 
 .background.background-05 {
-	background-image: url('../img/background-05.png');
+	background-image: url('/assets/img/background-05.png');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: repeat;
@@ -159,7 +162,7 @@ nav.dark {
 }
 
 .background.background-01-simple {
-	background-image: url('../img/background-01-left.png');
+	background-image: url('/assets/img/background-01-left.png');
 	background-attachment: fixed;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -252,24 +255,24 @@ nav.dark {
 }
 
 #icons02 a:hover {
-	border-color: #1fe589 !important;
+	border-color: $primary-color !important;
 }
 
 #icons02 a:hover svg {
-	fill: #1fe589 !important;
+	fill: $primary-color !important;
 }
 
 #icons02 .n01:hover {
-	border-color: #1fe589 !important;
+	border-color: $primary-color !important;
 }
 
 #icons02 .n01:hover svg {
-	fill: #1fe589 !important;
+	fill: $primary-color !important;
 }
 
 div.service {
 	border-style: solid;
-	border-color: #1fe589;
+	border-color: $primary-color;
 	border-width: 4px;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -294,7 +297,7 @@ div.service a {
 div.service > div.flap {
 	display: block;
 	border-top-right-radius: 50%;
-	border-color: #1fe589;
+	border-color: $primary-color;
 	border-right-style: solid;
 	border-top-style: solid;
 	border-width: 4px;
@@ -311,20 +314,20 @@ img.avatar {
 }
 
 .form-control {
-	border-color: #1fe589;
+	border-color: $primary-color;
 	border-width: 2px;
 	border-radius: 0px;
 }
 
 .form-control:focus {
-  border-color: #1fe589;
+  border-color: $primary-color;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(31, 229, 137, 0.6);
 }
 
 .btn-submit {
 	border-width: 0px;
 	border-radius: 0px;
-	background-color: #1fe589;
+	background-color: $primary-color;
 	width: 100%;
 	padding-top: 0.3em;
 	padding-bottom: 0.3em;
@@ -333,14 +336,14 @@ img.avatar {
 }
 
 .btn-submit:active {
-	background-color: #1fe589;
-	border-color: #1fe589;
+	background-color: $primary-color;
+	border-color: $primary-color;
 }
 
 @font-face {
 	font-family: 'Gopher Medium';
-	src: url('../font/gopher-medium-webfont.woff2') format('woff2'),
-			 url('../font/gopher-medium-webfont.woff') format('woff');
+	src: url('/assets/font/gopher-medium-webfont.woff2') format('woff2'),
+			 url('/assets/font/gopher-medium-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -348,8 +351,8 @@ img.avatar {
 
 @font-face {
 	font-family: 'Gopher Bold';
-	src: url('../font/gopher-bold-webfont.woff2') format('woff2'),
-			 url('../font/gopher-bold-webfont.woff') format('woff');
+	src: url('/assets/font/gopher-bold-webfont.woff2') format('woff2'),
+			 url('/assets/font/gopher-bold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -357,8 +360,8 @@ img.avatar {
 
 @font-face {
 	font-family: 'Gopher Regular';
-	src: url('../font/gopher-regular-webfont.woff2') format('woff2'),
-			 url('../font/gopher-regular-webfont.woff') format('woff');
+	src: url('/assets/font/gopher-regular-webfont.woff2') format('woff2'),
+			 url('/assets/font/gopher-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -366,8 +369,8 @@ img.avatar {
 
 @font-face {
 	font-family: 'JetBrainsMono-Regular';
-	src: url('../font/JetBrainsMono-Regular.woff2') format('woff2'),
-			 url('../font/JetBrainsMono-Regular.woff') format('woff');
+	src: url('/assets/font/JetBrainsMono-Regular.woff2') format('woff2'),
+			 url('/assets/font/JetBrainsMono-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -388,8 +391,8 @@ img.arrow-right {
 a.button {
 	display: block;
 	border-style: solid;
-	border-color: #E6AD1C;
-	background-color: #E6AD1C;
+	border-color: $secondary-color;
+	background-color: $secondary-color;
 	border-width: 3px;
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 	text-decoration: none;
@@ -427,21 +430,21 @@ a.button:after {
 }
 
 .dark a.button:after {
-	content: url('../img/arrow-cta-dark.svg');
+	content: url('/assets/img/arrow-cta-dark.svg');
 }
 
 .light a.button:after {
-	content: url('../img/arrow-cta-white.svg');
+	content: url('/assets/img/arrow-cta-white.svg');
 }
 
 .gloaming a.button:after {
-	content: url('../img/arrow-cta-white.svg');
+	content: url('/assets/img/arrow-cta-white.svg');
 }
 
 a.button-hollow {
 	display: block;
 	border-style: solid;
-	border-color: #E6AD1C;
+	border-color: $secondary-color;
 	border-width: 3px;
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 	text-decoration: none;
@@ -454,14 +457,14 @@ a.button-hollow {
 	border-radius: 2rem;
 	justify-content: center;
 	align-items: center;
-	color: #E6AD1C;
+	color: $secondary-color;
 }
 
 .button-hollow:after {
 	float: right;
 	margin-left: .75em;
 	margin-top: 4px;
-	content: url('../img/arrow-cta-yellow.svg');
+	content: url('/assets/img/arrow-cta-yellow.svg');
 }
 
 .footer {
@@ -526,7 +529,7 @@ div.bordered {
 	font-weight: normal;
 	font-style: normal;
 	border-style: solid;
-	border-color: #1fe589;
+	border-color: $primary-color;
 	border-width: 4px;
 	padding: 1em 2em;
 	position: relative;
@@ -544,7 +547,7 @@ div.bordered > h2 {
 /*
 div.bordered > div.dropdown {
 	display: block;
-	border-color: #1fe589;
+	border-color: $primary-color;
 	border-left-style: solid;
 	border-width: 4px;
 	width: 4.5em;
@@ -558,7 +561,7 @@ div.bordered > div.dropdown {
 dl.faq dt {
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 	color: #707070;
-	border-color: #1fe589;
+	border-color: $primary-color;
 	border-bottom-style: solid;
 	border-width: 2px;
 	font-size: 1.25em;
@@ -655,7 +658,7 @@ p.price {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 	-webkit-text-stroke-width: 3px; 
-	-webkit-text-stroke-color: #1fe589; 
+	-webkit-text-stroke-color: $primary-color; 
 }
 
 p.price sup {
@@ -674,7 +677,7 @@ p.price sup {
 
 a.nav-button {
 	display: block;
-	background-color: #E6AD1C;
+	background-color: $secondary-color;
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 	text-decoration: none;
 	width: fit-content;
@@ -782,7 +785,7 @@ img.client-logo {
 
 .course-header div.featured-course {
 	display: block;
-	background-color: #E6AD1C;
+	background-color: $secondary-color;
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 	color: #FFFFFF;
 	padding: 0.25rem 1rem;
@@ -813,8 +816,8 @@ label {
 input.button {
 	display: block;
 	border-style: solid;
-	border-color: #E6AD1C;
-	background-color: #E6AD1C;
+	border-color: $secondary-color;
+	background-color: $secondary-color;
 	border-width: 3px;
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
 	text-decoration: none;
