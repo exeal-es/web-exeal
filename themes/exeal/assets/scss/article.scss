@@ -1,3 +1,5 @@
+@import 'foundation/variables';
+
 article em {
   font-weight: normal;
 }
@@ -34,7 +36,7 @@ article li {
 
 article a {
   color: inherit;
-  border-bottom: 3px solid #E6AD1C;
+  border-bottom: 3px solid $secondary-color;
 }
 
 article a:hover {

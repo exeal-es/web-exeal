@@ -1,3 +1,5 @@
+@import 'foundation/variables';
+
 .hero {
   height: 10em;
   min-height: 700px;
@@ -43,7 +45,7 @@
 }
 
 h1 span.underline {
-  border-bottom: 4px solid #1fe589;
+  border-bottom: 4px solid $primary-color;
 }
 
 .hero p {
@@ -53,7 +55,7 @@ h1 span.underline {
 
 pre {
   border-style: solid;
-	border-color: #1fe589;
+	border-color: $primary-color;
   border-width: 4px;
   margin: 0em 2rem;
   padding: 2em 2em;
@@ -65,7 +67,7 @@ div.post-author {
   border-top-width: 1px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-color: #1fe589;
+  border-color: $primary-color;
   margin: 2em 0em;
 }
 
@@ -127,7 +129,7 @@ div.post-author {
 }
 
 .blog-item p.author {
-  border-top: #1fe589;
+  border-top: $primary-color;
   border-top-style: solid;
   border-top-width: 4px;
   font-size: 0.75em;
@@ -160,7 +162,7 @@ div.post-card-reading-time {
   left: 2rem;
   right: 2rem;
   font-size: 0.85em;
-  color: #1fe589;
+  color: $primary-color;
 }
 
 .post-card-summary {
@@ -250,7 +252,7 @@ section.no-padding-top {
 }
 
 a.button.button-green {
-  background-color: #1fe589 !important;
+  background-color: $primary-color !important;
   border-style: none;
   color: #182935;
   text-align: center;
