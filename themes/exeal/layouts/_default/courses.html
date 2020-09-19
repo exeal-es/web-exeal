@@ -18,6 +18,7 @@
 <section id="sect-courses" class="light">
 	<div class="container">
 		<div class="row">
+			{{ range first 1 (where .Data.Pages "Params.featured" true) }}
 			<div class="col-12">
 				<div class="course-card row no-gutters">
 					<div class="course-header col-lg-6 col-sm-12">
@@ -25,7 +26,7 @@
 					</div>
 					<div class="col-lg-6 col-sm-12">
 						<div class="course-body">
-							<h3>Legacy Code</h3>
+							<h3>{{ .Params.course_title }}</h3>
 							<p class="level"><i class="icon i-level-black"></i><i class="icon i-level-black"></i><i class="icon i-level-black"></i> Nivel Avanzado</p>
 							<p class="description">Aprende a trabajar sobre un proyecto de código legacy sin miedo a romper todo el sistema.</p>
 							<p class="description">Evita tener que reescribir todo el código existente desde cero, mediante técnicas de mejora contínua del código.</p>
@@ -37,50 +38,27 @@
 									<li class="col-md-6">Análisis de deuda técnica</li>
 								</div>
 							</ul>
-							<a class="button button-green expand" href="/cursos/legacycode">Descubre el curso</a>
+							<a class="button button-green expand" href="/cursos/legacy-code">Descubre el curso</a>
 						</div>
 					</div>
 				</div>
 			</div>
+			{{ end }}
 
-			<!--
-			<div class="col-md-4 col-sm-12">
+			{{ range first 9 (where .Data.Pages "Params.featured" nil) }}
+      <div class="col-md-4 col-sm-12">
 				<div class="course-card">
 					<div class="course-header">
 					</div>
 					<div class="course-body">
-						<h3>Desarrollo con contenedores</h3>
+						<h3>{{ .Params.course_title }}</h3>
 						<p class="level"><i class="icon i-level-black"></i><i class="icon i-level-black"></i><i class="icon i-level-grey"></i> Nivel Medio</p>
-						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing at in tellus integer.</p>
+						<p class="description">{{ .Description }}</p>
 						<a class="button button-green expand" href="#">Más info</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-12">
-				<div class="course-card">
-					<div class="course-header">
-					</div>
-					<div class="course-body">
-						<h3>Domain Driven Design</h3>
-						<p class="level"><i class="icon i-level-black"></i><i class="icon i-level-black"></i><i class="icon i-level-grey"></i> Nivel Medio</p>
-						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing at in tellus integer.</p>
-						<a class="button button-green expand" href="#">Más info</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12">
-				<div class="course-card">
-					<div class="course-header">
-					</div>
-					<div class="course-body">
-						<h3>Test Driven Development</h3>
-						<p class="level"><i class="icon i-level-black"></i><i class="icon i-level-grey"></i><i class="icon i-level-grey"></i> Nivel Principiante</p>
-						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing at in tellus integer.</p>
-						<a class="button button-green expand" href="#">Más info</a>
-					</div>
-				</div>
-			</div>
-			-->
+			{{ end }}
 		</div>
 	</div>
 </section>
