@@ -130,43 +130,7 @@
 			</div>
 			<div class="col-md-10 col-sm-12">
 				<h2><em>Contacta con nosotros</em> para averiguar c&oacute;mo podemos <em>colaborar</em>.</h2>
-				<form accept-charset="UTF-8" action="https://getform.io/f/d1f0f1fc-1836-4cd7-bac0-c5fd411594e2" method="post">
-					<div class="row">
-						<div class="col-md-6 form-group">
-							<input class="form-control" id="name" name="name" type="text" placeholder="Nombre"/>
-						</div>
-						<div class="col-md-6 form-group">
-							<input class="form-control" id="surname" name="surname" type="text" placeholder="Apellidos"/>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6 form-group">
-							<input class="form-control" id="email" name="email" type="email" placeholder="Email"/>
-						</div>
-						<div class="col-md-6 form-group">
-							<input class="form-control" id="phone" name="phone" type="text" placeholder="Tel&eacute;fono"/>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12">
-							<div class="form-group">
-								<input class="form-control" id="company" name="company" type="text" placeholder="Compa&ntilde;&iacute;a"/>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12">
-							<div class="form-group">
-								<textarea class="form-control" id="message" name="message" placeholder="Mensaje"></textarea>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12">
-							<input class="btn-submit" type="submit" name="submit" value="Enviar" />
-						</div>
-					</div>
-				</form>
+				{{- partial "contactform.html" . -}}
 			</div>
 		</div>
 	</div>
