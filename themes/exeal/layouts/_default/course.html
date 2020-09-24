@@ -3,12 +3,12 @@
   <div class="container">
     <div class="row mt-1 mb-1">
       <div class="course-page-tagline col-md-6 col-sm-12 mb-3">
-        <h1>Curso de desarrollo sobre <span class="underline">Legacy Code</span></h1>
-        <h2>Aprende a trabajar sobre un proyecto de código legacy sin miedo a romper todo el sistema.</h2>
+        <h1>{{ .Params.course_prefix }} <span class="underline">{{ .Params.course_title }}</span></h1>
+        <h2>{{ .Description }}</h2>
         <img class="img-fluid mockup-brochure" src="/assets/img/legacy/mockup-brochure.png" />
       </div>
       <div class="col-md-6 col-sm-12">
-        <form accept-charset="UTF-8" action="https://formspree.io/xnqoqweq" method="post">
+        <form accept-charset="UTF-8" action="{{ .Params.download_form_url }}" method="post">
 					<div class="row">
 						<div class="col-md-6 form-group">
 							<input class="form-control" id="name" name="name" type="text" placeholder="Nombre"/>
@@ -54,9 +54,9 @@
   <div class="container">
 		<div class="row mt-3 mb-3">
 			<div class="col-md-7">
-        <h2>A veces, parece que la mejor solución para evitar trabajar sobre Legacy Code es &quot;parar las máquinas&quot; y reescribir el código desde cero. <em>La experiencia nos dice que no</em>.</h2>
+        <h2>{{ .Params.course_claim_header | safeHTML }}</h2>
         <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg"/></p>
-        <p>Enfrentarte a Legacy Code es solo cuestión de tiempo, aunque vuelvas a escribir el código desde cero, en menos tiempo del que piensas ese código que has escrito va a ser por su naturaleza irremediablemente Legacy Code.</p>
+        <p>{{ .Params.course_claim_body | safeHTML }}</p>
       </div>
       <div class="col-md-5 order-last photo">
 				<img class="img-fluid pad" src="/assets/img/legacy/bola.png" />
@@ -89,39 +89,14 @@
 					<div class="flap"></div>
 					<img src="/assets/img/icon-training.svg"/>
 					<h3>Coaching técnico</h3>
-          <p>El curso incluye un día adicional de trabajo hands-on <em>sobre el código legacy de tu proyecto</em>, de la mano de un coach técnico experimentado.</p>
+          <p>El curso incluye un día adicional de trabajo hands-on <em>sobre el código de tu proyecto</em>, de la mano de un coach técnico experimentado.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section id="sect-agenda" class="dark background background-02">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2><em>Objetivos</em> de aprendizaje:</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="row ticked">
-          <li class="col-md-6">Enfrentarse a una base de código heredado desconocida.</li>
-          <li class="col-md-6">Identificar code smells: síntomas indicativos de problemas de mantenibilidad en el código.</li>
-          <li class="col-md-6">Técnicas de refactorización: cómo cambiar el código de forma segura sin afectar a su comportamiento actual.</li>
-          <li class="col-md-6">Construir una red de seguridad para cambiar el código basada en tests automáticos.</li>
-          <li class="col-md-6">Técnicas de eliminación de dependencias: cómo separar módulos que están tan unidos que no se pueden testear.</li>
-          <li class="col-md-6">Añadir nueva funcionalidad o corregir errores sobre legacy code usando TDD.</li>
-          <li class="col-md-6">Realizar análisis de deuda técnica y riesgos de un proyecto legacy.</li>
-          <li class="col-md-6">Aplicar con éxito estas técnicas a tu propio proyecto, independientemente del lenguaje en el que esté escrito.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+{{- partial "learningobjectives.html" . -}}
 
 {{- partial "testimonials.html" . -}}
 
