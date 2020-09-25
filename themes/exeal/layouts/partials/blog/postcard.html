@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="post-card-detail">
-      <div class="post-card-summary"><a href="{{ .Permalink }}">{{ .Summary }}</div>
+      <div class="post-card-summary"><a href="{{ .Permalink }}">{{ .Description }}</div>
       <div class="post-card-reading-time">Tiempo de lectura: {{ math.Round (div (countwords .Content) 220.0) }} minutos</div>
     </div>
   </div>
