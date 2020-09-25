@@ -321,7 +321,7 @@ img.avatar {
 
 .btn-submit {
 	border-width: 0px;
-	border-radius: 0px;
+	border-radius: 2rem;
 	background-color: $primary-color;
 	width: 100%;
 	padding-top: 0.3em;
@@ -697,6 +697,7 @@ input.button {
 	display: block;
 	border-style: solid;
 	border-color: $secondary-color;
+	border-radius: 2rem;
 	background-color: $secondary-color;
 	border-width: 3px;
 	font-family: 'Gopher Regular', 'Work Sans', sans-serif;
