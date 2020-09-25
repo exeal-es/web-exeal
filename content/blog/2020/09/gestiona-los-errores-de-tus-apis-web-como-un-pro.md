@@ -7,6 +7,7 @@ tags: ['apis', 'netcore', 'csharp']
 images:
   - '/assets/img/blog/posts/controlled-explosion.jpg'
 featured_image: '/assets/img/blog/posts/controlled-explosion.jpg'
+card_image: '/assets/img/blog/covers/controlled-explosion.jpg'
 ---
 
 La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y **darle un punto de calidad de vida a los usuarios de la misma**.<!--more--> Aún así, son muchos los proveedores que descuidan este aspecto, y no es raro encontrar APIs de terceros con las que la integración se complica. Escenarios como errores no documentados, información insuficiente para diagnosticar los problemas, representación inconsistente que dificulta la integración... son por desgracia bastante comunes.

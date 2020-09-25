@@ -7,6 +7,7 @@ tags: ['arquitectura']
 images:
   - 'https://www.exeal.com/assets/img/blog/posts/torre-de-marfil.png'
 featured_image: '/assets/img/blog/blog-cover-1.png'
+card_image: '/assets/img/blog/covers/torre-de-marfil.png'
 ---
 
 Reciéntemente en el equipo con el que trabajo actualmente, tuvimos una interesante discusión de diseño de una de nuestras APIs web.<!--more-->

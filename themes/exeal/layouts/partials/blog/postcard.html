@@ -1,6 +1,4 @@
-{{ with .Params.images }}
-<div class="blog-item post-card" style="background-image: url('{{ index . 0 | absURL }}');">
-{{ end }}
+<div class="blog-item post-card" style="background-image: url('{{ .Params.card_image | absURL }}');">
   <div class="blog-item-inner post-card-inner bg-mask">
     <div class="post-card-cover">
       {{ if .Params.tags }}
