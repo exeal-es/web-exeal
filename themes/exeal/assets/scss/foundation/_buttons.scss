@@ -41,18 +41,6 @@ a.button:after {
 	margin-top: 4px;
 }
 
-.dark a.button:after {
-	content: url('/assets/img/arrow-cta-dark.svg');
-}
-
-.light a.button:after {
-	content: url('/assets/img/arrow-cta-white.svg');
-}
-
-.gloaming a.button:after {
-	content: url('/assets/img/arrow-cta-white.svg');
-}
-
 a.button-hollow {
 	display: block;
 	border-style: solid;
@@ -72,28 +60,43 @@ a.button-hollow {
 	color: $secondary-color;
 }
 
-.button-hollow:after {
-	float: right;
-	margin-left: .75em;
-	margin-top: 4px;
-	content: url('/assets/img/arrow-cta-yellow.svg');
-}
-
 .podcast-item a.button {
   font-size: 0.85rem;
   width: 100%;
 }
 
 a.button.button-green {
-  background-color: $primary-color !important;
-  border-style: none;
-  color: $dark-background-color;
-  text-align: center;
+	background-color: $primary-color !important;
+	border-style: none;
+	color: $dark-background-color;
+	text-align: center;
 }
 
-a.button.button-green:after {
-	float: none;
-	margin-left: .75em;
-	margin-top: 4px;
-	content: url('/assets/img/arrow-small-right-dark.svg');
+// Arrow after button text
+@media (min-width: 992px) {
+	.dark a.button:after {
+		content: url('/assets/img/arrow-cta-dark.svg');
+	}
+
+	.light a.button:after {
+		content: url('/assets/img/arrow-cta-white.svg');
+	}
+
+	.gloaming a.button:after {
+		content: url('/assets/img/arrow-cta-white.svg');
+	}
+
+	.button-hollow:after {
+		float: right;
+		margin-left: .75em;
+		margin-top: 4px;
+		content: url('/assets/img/arrow-cta-yellow.svg');
+	}
+
+	a.button.button-green:after {
+		float: none;
+		margin-left: .75em;
+		margin-top: 4px;
+		content: url('/assets/img/arrow-small-right-dark.svg');
+	}
 }
