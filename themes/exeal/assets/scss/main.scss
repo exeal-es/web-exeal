@@ -715,13 +715,12 @@ input.button {
 	cursor: pointer;
 }
 
-ul.course-features li:before {
-	content: url('/assets/img/icon-markup-green-xs.svg');
-	width: 1rem;
-	display: inline-block;
-	margin-right: 0.3em;
-	position: relative;
-	top: 0.15em;
+ul.course-features li {
+	background-image: url('/assets/img/icon-markup-green-xs.svg');
+	background-repeat: no-repeat;
+	background-position-x: 0.75em;
+	background-position-y: 0.5em;
+	padding-left: 2.25em;
 }
 
 i.icon {
