@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section id="sect-thank-you" class="dark background background-05">
+  <div class="container thank-you-hero vertical-center">
+    <div class="row">
+      <div class="col-md-12 text-center">
+				<h1><em>Contacta con nosotros</em> para averiguar c&oacute;mo podemos <em>colaborar</em>.</h1>
+				<p><a data-scroll="sect-contact" href="#"><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg" /></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-contact" class="gloaming">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 d-none d-sm-none d-md-block">
+				<h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+			</div>
+			<div class="col-md-10 col-sm-12">
+				<h2>Por favor, completa el siguiente formulario para que nos pongamos en contacto contigo lo antes posible.</h2>
+				{{- partial "contactform.html" . -}}
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
