@@ -2,42 +2,30 @@
 <section id="sect-course-overview" class="dark background background-05">
   <div class="container">
     <div class="row mt-1 mb-1 align-items-center h-100">
-      <div class="course-page-tagline col-md-6 col-sm-12 mb-3">
+      <div class="course-page-tagline col-md-7 col-sm-12 mb-3">
         <h1>{{ .Params.course_prefix }} <span class="underline">{{ .Params.course_title }}</span></h1>
         <h2>{{ .Description }}</h2>
         <img class="img-fluid mockup-brochure" src="/assets/img/legacy/mockup-brochure.png" />
       </div>
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-5 col-sm-12">
         <form accept-charset="UTF-8" action="{{ .Params.download_form_url }}" method="post">
-					<div class="row">
-						<div class="col-md-6 form-group">
-							<input class="form-control" id="name" name="name" type="text" placeholder="Nombre"/>
-						</div>
-						<div class="col-md-6 form-group">
-							<input class="form-control" id="surname" name="surname" type="text" placeholder="Apellidos"/>
-						</div>
+					<div class="form-group">
+						<input class="form-control" id="name" name="name" type="text" placeholder="Nombre"/>
 					</div>
-					<div class="row">
-						<div class="col-md-6 form-group">
-							<input class="form-control" id="email" name="email" type="email" placeholder="Email"/>
-						</div>
-						<div class="col-md-6 form-group">
-							<input class="form-control" id="phone" name="phone" type="text" placeholder="Tel&eacute;fono"/>
-						</div>
+					<div class="form-group">
+						<input class="form-control" id="surname" name="surname" type="text" placeholder="Apellidos"/>
 					</div>
-					<div class="row">
-						<div class="col-12">
-							<div class="form-group">
-								<input class="form-control" id="company" name="company" type="text" placeholder="Compa&ntilde;&iacute;a"/>
-							</div>
-						</div>
-          </div>
-          <div class="row">
-						<div class="col-12">
-							<div class="form-group">
-                <label class="checkbox-container" for="accept-terms"><input id="accept-terms" name="accept-terms" type="checkbox"/><span class="checkmark"></span>Acepto recibir comunicaciones comerciales u ofertas por parte de Exeal.</label>
-							</div>
-						</div>
+					<div class="form-group">
+						<input class="form-control" id="email" name="email" type="email" placeholder="Email"/>
+					</div>
+					<div class="form-group">
+						<input class="form-control" id="phone" name="phone" type="text" placeholder="Tel&eacute;fono"/>
+					</div>
+					<div class="form-group">
+						<input class="form-control" id="company" name="company" type="text" placeholder="Compa&ntilde;&iacute;a"/>
+					</div>
+					<div class="form-group">
+						<label class="checkbox-container" for="accept-terms"><input id="accept-terms" name="accept-terms" type="checkbox"/><span class="checkmark"></span>Acepto recibir comunicaciones comerciales u ofertas por parte de Exeal.</label>
 					</div>
 					<div class="row">
 						<div class="col-12">
