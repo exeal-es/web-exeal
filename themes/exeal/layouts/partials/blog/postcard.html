@@ -5,9 +5,7 @@
     <div class="post-card-cover">
       {{ if .Params.tags }}
       <ul class="tags tags-light tags-small">
-        {{ range $i, $tag := .Params.tags }}
-        <li><a href="{{ relLangURL ( printf "tags/%s" ( $tag | urlize ) ) }}">#{{ $tag }}</a></li>
-        {{ end }}
+        {{ range $i, $tag := .Params.tags }}<li><a href="{{ relLangURL ( printf "tags/%s" ( $tag | urlize ) ) }}">#{{ $tag }}</a></li>{{ end }}
       </ul>
       {{ end }}
       <div class="post-title">
