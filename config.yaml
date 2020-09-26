@@ -1,6 +1,6 @@
 title: Exeal
 theme: exeal
-baseURL: /
+baseURL: https://www.exeal.com
 languageCode: es-es
 defaultContentLanguage: es
 metaDataFormat: yaml
