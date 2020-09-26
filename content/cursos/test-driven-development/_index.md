@@ -5,6 +5,7 @@ date: 2020-09-24T09:00:00+02:00
 layout: course
 course_title: "Test Driven Development"
 course_prefix: "Curso de"
+course_level: intermediate
 download_form_url: https://formspree.io/xnqoqweq # TODO: Poner el definitivo
 course_claim_header: No se trata únicamente de escribir los tests antes que el código, esa es <em>la parte más sencilla</em>.
 course_claim_body: Con TDD podrás escribir código radicalmente más simple, mantenible, expresivo y conciso. <em>Vuélvete realmente productivo</em> y evita gastar tiempo en depurar fallos y reimplementar funcionalidades, escribiendo <em>código que soporte el paso del tiempo</em>.

@@ -34,7 +34,7 @@
 					<div class="col-lg-6 col-sm-12">
 						<div class="course-body">
 							<h3>{{ .Params.course_title }}</h3>
-							<p class="level"><i class="icon i-level-black"></i><i class="icon i-level-black"></i><i class="icon i-level-black"></i> Nivel Avanzado</p>
+							{{- partial "courselevel.html" . -}}
 							<p class="description">Aprende a trabajar sobre un proyecto de código legacy sin miedo a romper todo el sistema.</p>
 							<p class="description">Evita tener que reescribir todo el código existente desde cero, mediante técnicas de mejora contínua del código.</p>
 							<ul class="course-features">
