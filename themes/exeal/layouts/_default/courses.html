@@ -28,7 +28,7 @@
 			{{ range first 1 (where .Data.Pages "Params.featured" true) }}
 			<div class="col-12">
 				<div class="course-card row no-gutters">
-					<div class="course-header col-lg-6 col-sm-12">
+					<div class="course-header col-lg-6 col-sm-12" style="background-image: url('{{ .Params.course_featured_image }}')">
 						<div class="featured-course">Curso más popular</div>
 					</div>
 					<div class="col-lg-6 col-sm-12">
@@ -52,22 +52,20 @@
 			</div>
 			{{ end }}
 
-			<!--
 			{{ range first 9 (where .Data.Pages "Params.featured" nil) }}
       <div class="col-md-4 col-sm-12">
 				<div class="course-card">
-					<div class="course-header">
+					<div class="course-header" style="background-image: url('{{ .Params.course_featured_image }}')">
 					</div>
 					<div class="course-body">
 						<h3>{{ .Params.course_title }}</h3>
-						<p class="level"><i class="icon i-level-black"></i><i class="icon i-level-black"></i><i class="icon i-level-grey"></i> Nivel Medio</p>
+						{{- partial "courselevel.html" . -}}
 						<p class="description">{{ .Description }}</p>
 						<a class="button button-green expand" href="{{ .Permalink }}">Más info</a>
 					</div>
 				</div>
 			</div>
 			{{ end }}
-			-->
 		</div>
 	</div>
 </section>

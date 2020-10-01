@@ -4,6 +4,7 @@ description: "Aprende a trabajar sobre un proyecto de Legacy Code sin miedo a ro
 date: 2020-09-09T15:00:00+02:00
 layout: course
 featured: true
+course_featured_image: /assets/img/blog/posts/pain-developer.jpeg
 course_title: "Legacy Code"
 course_prefix: "Curso de desarrollo sobre"
 course_level: advanced
