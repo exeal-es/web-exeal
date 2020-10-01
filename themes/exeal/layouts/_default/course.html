@@ -4,8 +4,10 @@
     <div class="row mt-1 mb-1 align-items-center h-100">
       <div class="course-page-tagline col-md-7 col-sm-12 mb-3">
         <h1>{{ .Params.course_prefix }} <span class="underline">{{ .Params.course_title }}</span></h1>
-        <h2>{{ .Description }}</h2>
-        <img class="img-fluid mockup-brochure" src="/assets/img/legacy/mockup-brochure.png" />
+				<h2>{{ .Description }}</h2>
+				{{ if ( isset .Params "brochure_image" ) }}
+				<img class="img-fluid mockup-brochure" src="{{ .Params.brochure_image }}" />
+				{{ end }}
       </div>
       <div class="col-md-5 col-sm-12">
         <form accept-charset="UTF-8" action="{{ .Params.download_form_url }}" method="post">
@@ -91,9 +93,11 @@
 <section class="gloaming">
   <div class="container">
 		<div class="row mt-3 mb-3">
+			{{ if ( isset .Params "brochure_image" ) }}
       <div class="col-md-4 col-sm-12 photo d-none d-sm-none d-md-block">
-				<img class="img-fluid" src="/assets/img/legacy/mockup-brochure.png" />
+				<img class="img-fluid" src="{{ .Params.brochure_image }}" />
 			</div>
+			{{ end }}
 			<div class="col-md-2 d-none d-sm-none d-md-block">
         <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
       </div>
