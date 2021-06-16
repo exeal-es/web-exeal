@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    {{- partial "head.html" . -}}
+  </head>
+  <body>
+    {{- partial "jobs/navbar.html" . -}}
+
+    {{- partial "jobs/hero.html" . -}}
+
+    <section id="sect-body">
+      {{- block "article" . }}{{- end }}
+    </section>
+
+    {{- partial "blog/footer.html" . -}}
+
+    {{- partial "javascript.html" . -}}
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"></script>
+  </body>
+</html>
+
+{{ define "article" }}
+<div class="container">
+  <article>
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}
