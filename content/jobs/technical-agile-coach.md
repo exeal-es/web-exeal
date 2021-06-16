@@ -26,7 +26,7 @@ Ayudarás a los equipos de desarrollo de software de nuestros clientes a adoptar
 
 ## Cómo lo harás
 
-Todo esto lo harás donde realmente está la chicha, entrando hasta lo más profundo del fango: desde el día a día del equipo, usando la metodología Samman Technical Coaching como base, que se fundamenta en el coaching en grupo mediante sesiones hands-on de Mob programming, preparación e impartición de Learning hours, facilitación de Katas y sesiones de Comunidad de práctica, mentorización 1:1 de cada developer, etc.
+Todo esto lo harás donde realmente está la chicha, entrando hasta lo más profundo del fango: desde el día a día del equipo, usando la metodología [Samman Technical Coaching](https://www.sammancoaching.org/) como base, que se fundamenta en el coaching en grupo mediante sesiones hands-on de Mob programming, preparación e impartición de Learning hours, facilitación de Katas y sesiones de Comunidad de práctica, mentorización 1:1 de cada developer, etc.
 
 Al margen de tu trabajo en cliente, y dado que el conocimiento y la experiencia de nuestra gente es nuestro mayor *asset*, dedicarás gran parte de tu tiempo a formarte continuamente (¡y a ayudar a compañeros a formarse!) con cursos, conferencias, talleres, etc., así como a ampliar nuestro programa de aprendizaje preparando nuevas formaciones.
 
@@ -80,7 +80,7 @@ Bonus points si:
 
 ## ¿Cómo aplico?
 
-Graba un vídeo describiendo tu candidatura (no más de 3 minutos), cuelga el video como oculto en una plataforma de video online (YouTube, Vimeo, Loom) y pásanos el link al vídeo por email a [pedro.pardal@exeal.com](mailto:pedro.pardal@exeal.com).
+Graba un vídeo describiendo tu candidatura (no más de 3 minutos), cuelga el video como oculto en una plataforma de video online (YouTube, Vimeo, Loom) y pásanos el link completando [este formulario de aplicación](https://docs.google.com/forms/d/e/1FAIpQLSdGMREnMbeNXLQNgbuVDis-fjp8RagRLIl4aJ54oEgDnnS9Ow/viewform).
 
 En el video, responde por favor a las siguientes preguntas:
 - Cuéntanos sobre ti: experiencia, tu background, motivaciones, etc.
