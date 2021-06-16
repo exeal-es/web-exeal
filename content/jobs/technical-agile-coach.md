@@ -74,7 +74,7 @@ Bonus points si:
 - Jornada laboral de 30h a la semana.
 - Budget de formación 3000€ y 3 días libres al año para ir a trainings, conferencias, etc.
 - 25 días de vacaciones pagadas al año.
-- Trabajo en remoto desde cualquier lugar, budget para montar tu oficina / costear un coworking.
+- Trabajo en remoto desde cualquier lugar, budget para montar tu oficina en casa / costear un coworking.
 - Formación continua dentro del horario de trabajo.
 - Viaje y alojamiento pagados para juntarte unos días con el resto del equipo cada 6 meses.
 
