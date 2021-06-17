@@ -1,16 +1,18 @@
 ---
-title: "Job Description - Technical Agile Coach"
-description: "Job Description - Technical Agile Coach @ Exeal (background técnico, 100% remoto, 30h/w, €36−42K)"
+title: "Job Description - Extreme Programming / Technical Coach"
+description: "Job Description - Extreme Programming / Technical Coach @ Exeal (100% remoto, 30h/w, €36−42K)"
 date: 2021-06-16T06:00:00+02:00
 layout: job
 featured_image: '/assets/img/blog/blog-cover-1.png'
+aliases:
+  - '/jobs/technical-agile-coach/'
 ---
 
 ¿Eres un desarrollador de software apasionado por las buenas prácticas, la mejora y el aprendizaje continuos? ¿Te encanta usar tu experiencia como ingeniero para hacer crecer a tus compañeros y equipo como profesionales? ¿Te fastidia poder dedicar poco tiempo a la formación y el desarrollo profesional?
 
 ¿Y si te dijera que existe un sitio donde puedes hacer de esta pasión un trabajo a tiempo completo? Pues sí, ese sitio existe, y se llama Exeal, un proyecto nacido para que podamos dedicar el 100% de nuestro tiempo a lo que más nos gusta: ayudar a equipos a mejorar su forma de desarrollar software mediante la formación y el acompañamiento.
 
-Estamos buscando incorporar a nuestro equipo una persona para la posición de Technical Agile Coach (background técnico), que ayude a nuestros clientes a aprender a hacer software mejor y mejor software.
+Estamos buscando incorporar a nuestro equipo una persona para la posición de Extreme Programming / Technical Coach, que ayude a nuestros clientes a aprender a hacer software mejor y mejor software.
 
 ## Qué harás
 
@@ -67,6 +69,7 @@ Eres la candidata ideal si cumples los siguientes requisitos:
 Bonus points si:
 - Participas activamente en la comunidad, das charlas, facilitas katas, te involucras en la organización de alguna comunidad/conferencia, etc.
 - Has impartido formación en el pasado, ya sea interna a tu equipo o fuera de tu empresa.
+- Tienes experiencia como Scrum Master / Agile Coach.
 
 ## Qué ofrecemos
 
@@ -84,5 +87,5 @@ Graba un vídeo describiendo tu candidatura (no más de 3 minutos), cuelga el vi
 
 En el video, responde por favor a las siguientes preguntas:
 - Cuéntanos sobre ti: experiencia, tu background, motivaciones, etc.
-- ¿Por qué quieres trabajar en una posición de Technical Agile Coach?
-- ¿Qué experiencia relevante tienes en el campo de Technical Agile Coaching? (si no tienes exp. en un puesto similar, ¿has participado en alguna empresa en alguna iniciativa interna relevante?)
+- ¿Por qué quieres trabajar en una posición de Extreme Programming / Technical Coach?
+- ¿Qué experiencia relevante tienes en el campo de Extreme Programming / Technical Coaching? (si no tienes exp. en un puesto similar, ¿has participado en alguna empresa en alguna iniciativa interna relevante?)
