@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="es">
   {{- partial "head.html" . -}}
+
+  {{ define "nav-items" }}
+	  {{- partial "navbar.html" . -}}
+  {{ end }}
+
   <body>
     <nav class="dark navbar navbar-expand-lg navbar-dark navbar-shrink">
       <div class="container">
@@ -12,13 +17,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav ml-auto">
-            {{- block "nav-items" . }}
-              <li class="nav-item"><a class="nav-link" href="/">Acerca de</a></li>
-              <li class="nav-item"><a class="nav-link" href="/cursos">Cursos</a></li>
-              <li class="nav-item"><a class="nav-link" href="/jobs/extreme-programming-coach/">Jobs</a></li>
-              <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
-              <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
-            {{- end }}
+            {{- block "nav-items" . }}{{- end }}
           </ul>
         </div>
       </div>
