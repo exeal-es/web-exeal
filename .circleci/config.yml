@@ -19,10 +19,10 @@ jobs:
             pwd
             git clone --depth 1 https://${GITHUB_TOKEN}@github.com/exeal-es/exeal-es.github.io.git
       - run:
-          name: Clean old files
+          name: Remove all folders
           working_directory: ~/workdir/exeal-es.github.io
           command: |
-            rm -rf *
+            rm -rf */
       - run:
           name: Copy public into workdir
           working_directory: ~/repo
