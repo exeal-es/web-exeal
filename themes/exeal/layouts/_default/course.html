@@ -3,107 +3,184 @@
   <div class="container">
     <div class="row mt-1 mb-1 align-items-center h-100">
       <div class="course-page-tagline col-md-7 col-sm-12 mb-3">
-        <h1>{{ .Params.course_prefix }} <span class="underline">{{ .Params.course_title }}</span></h1>
-				<h2>{{ .Description }}</h2>
-				{{ if ( isset .Params "brochure_image" ) }}
-				<img class="img-fluid mockup-brochure" src="{{ .Params.brochure_image }}" />
-				{{ end }}
+        <h1>
+          {{ .Params.course_prefix }}
+          <span class="underline">{{ .Params.course_title }}</span>
+        </h1>
+        <h2>{{ .Description }}</h2>
+        {{ if ( isset .Params "brochure_image" ) }}
+        <img
+          class="img-fluid mockup-brochure"
+          src="{{ .Params.brochure_image }}"
+        />
+        {{ end }}
       </div>
       <div class="col-md-5 col-sm-12">
-        <form accept-charset="UTF-8" action="{{ .Params.download_form_url }}" method="post">
-					<div class="form-group">
-						<input class="form-control" id="name" name="name" type="text" placeholder="Nombre" required/>
-					</div>
-					<div class="form-group">
-						<input class="form-control" id="surname" name="surname" type="text" placeholder="Apellidos" required/>
-					</div>
-					<div class="form-group">
-						<input class="form-control" id="email" name="email" type="email" placeholder="Email" required/>
-					</div>
-					<div class="form-group">
-						<input class="form-control" id="phone" name="phone" type="text" placeholder="Tel&eacute;fono"/>
-					</div>
-					<div class="form-group">
-						<input class="form-control" id="company" name="company" type="text" placeholder="Compa&ntilde;&iacute;a"/>
-					</div>
-					<div class="form-group">
-						<label class="checkbox-container" for="accept-terms"><input id="accept-terms" name="accept-terms" type="checkbox"/><span class="checkmark"></span>Acepto recibir comunicaciones comerciales u ofertas por parte de Exeal.</label>
-					</div>
-					<div class="row">
-						<div class="col-12">
-              <input class="button expand" type="submit" name="submit" value="Descarga el programa" />
-						</div>
-					</div>
-				</form>
-			</div>
+        <form
+          accept-charset="UTF-8"
+          data-redirect="{{ .Params.redirect_submission_url }}"
+        >
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="surname"
+              name="surname"
+              type="text"
+              placeholder="Apellidos"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="phone"
+              name="phone"
+              type="text"
+              placeholder="Tel&eacute;fono"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="company"
+              name="company"
+              type="text"
+              placeholder="Compa&ntilde;&iacute;a"
+            />
+          </div>
+          <div class="form-group">
+            <label class="checkbox-container" for="accept-terms"
+              ><input
+                id="accept-terms"
+                name="accept-terms"
+                type="checkbox"
+              /><span class="checkmark"></span>Acepto recibir comunicaciones
+              comerciales u ofertas por parte de Exeal.</label
+            >
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <input
+                class="button expand"
+                type="submit"
+                name="submit"
+                value="Descarga el programa"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="light">
   <div class="container">
-		<div class="row mt-3 mb-3">
-			<div class="col-md-7">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-7">
         <h2>{{ .Params.course_claim_header | safeHTML }}</h2>
-        <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg"/></p>
+        <p>
+          <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
+        </p>
         <p>{{ .Params.course_claim_body | safeHTML }}</p>
       </div>
       <div class="col-md-5 order-last photo">
-				<img class="img-fluid pad" src="/assets/img/legacy/bola.png" />
-			</div>
+        <img class="img-fluid pad" src="/assets/img/legacy/bola.png" />
+      </div>
     </div>
   </div>
 </section>
 
 <section id="sect-services" class="gloaming">
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-4 mb-3">
-				<div class="service">
-					<div class="flap"></div>
-					<img src="/assets/img/icon-apprenticeship.svg"/>
-					<h3>100% prácticos</h3>
-          <p>Una sólida base teórica, aplicada con la realización de katas en <em>pair programming</em>, e infinidad de tips extraídos de proyectos del mundo real.</p>
-				</div>
-			</div>
-			<div class="col-xl-4 mb-3">
-				<div class="service">
-					<div class="flap"></div>
-					<img src="/assets/img/icon-coaching.svg"/>
-					<h3>Presencial o remoto</h3>
-					<p>Tú eliges si impartimos el curso de forma presencial en tus oficinas, o en remoto a través de videoconferencia.</p>
-				</div>
-			</div>
-			<div class="col-xl-4 mb-3">
-				<div class="service">
-					<div class="flap"></div>
-					<img src="/assets/img/icon-training.svg"/>
-					<h3>Coaching técnico</h3>
-          <p>El curso incluye un día adicional de trabajo hands-on <em>sobre el código de tu proyecto</em>, de la mano de un coach técnico experimentado.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4 mb-3">
+        <div class="service">
+          <div class="flap"></div>
+          <img src="/assets/img/icon-apprenticeship.svg" />
+          <h3>100% prácticos</h3>
+          <p>
+            Una sólida base teórica, aplicada con la realización de katas en
+            <em>pair programming</em>, e infinidad de tips extraídos de
+            proyectos del mundo real.
+          </p>
+        </div>
+      </div>
+      <div class="col-xl-4 mb-3">
+        <div class="service">
+          <div class="flap"></div>
+          <img src="/assets/img/icon-coaching.svg" />
+          <h3>Presencial o remoto</h3>
+          <p>
+            Tú eliges si impartimos el curso de forma presencial en tus
+            oficinas, o en remoto a través de videoconferencia.
+          </p>
+        </div>
+      </div>
+      <div class="col-xl-4 mb-3">
+        <div class="service">
+          <div class="flap"></div>
+          <img src="/assets/img/icon-training.svg" />
+          <h3>Coaching técnico</h3>
+          <p>
+            El curso incluye un día adicional de trabajo hands-on
+            <em>sobre el código de tu proyecto</em>, de la mano de un coach
+            técnico experimentado.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-{{- partial "learningobjectives.html" . -}}
-
-{{- partial "testimonials.html" . -}}
+{{- partial "learningobjectives.html" . -}} {{- partial "testimonials.html" .
+-}}
 
 <section class="gloaming">
   <div class="container">
-		<div class="row mt-3 mb-3">
-			{{ if ( isset .Params "brochure_image" ) }}
+    <div class="row mt-3 mb-3">
+      {{ if ( isset .Params "brochure_image" ) }}
       <div class="col-md-4 col-sm-12 photo d-none d-sm-none d-md-block">
-				<img class="img-fluid" src="{{ .Params.brochure_image }}" />
-			</div>
-			{{ end }}
-			<div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+        <img class="img-fluid" src="{{ .Params.brochure_image }}" />
+      </div>
+      {{ end }}
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img
+            class="arrow-right"
+            src="/assets/img/arrow-right-secondary.svg"
+          />
+        </h2>
       </div>
       <div class="col-md-6 col-sm-12">
-        <h2>Descubre todos los detalles sobre el <em>programa docente, metodología y profesores</em>, descargando el programa del curso.</h2>
-        <a class="button" data-scroll="sect-course-overview" href="#">Accede al programa</a>
+        <h2>
+          Descubre todos los detalles sobre el
+          <em>programa docente, metodología y profesores</em>, descargando el
+          programa del curso.
+        </h2>
+        <a class="button" data-scroll="sect-course-overview" href="#"
+          >Accede al programa</a
+        >
       </div>
     </div>
   </div>
@@ -113,10 +190,18 @@
   <div class="container">
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+        <h2>
+          <img
+            class="arrow-right"
+            src="/assets/img/arrow-right-secondary.svg"
+          />
+        </h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2><em>¿Tienes alguna duda?</em> ¡Escríbenos y te responderemos lo antes posible!</h2>
+        <h2>
+          <em>¿Tienes alguna duda?</em> ¡Escríbenos y te responderemos lo antes
+          posible!
+        </h2>
         <a class="button" target="_blank" href="/contacto">Contacto</a>
       </div>
     </div>
