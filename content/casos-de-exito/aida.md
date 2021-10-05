@@ -6,10 +6,6 @@ layout: casestudy
 featured_image: '/assets/img/blog/blog-cover-1.png'
 ---
 
-*“Necesitábamos incorporar ingenieros a nuestro equipo, pero teníamos que dedicar seniors y tech leads para formarlos, que ya estaban en equipos productivos, con fechas de entrega agresivas. Intentar compaginar la entrega de valor con la formación de estas personas creaba fricción y frustración.”*
-
- -- *Emilio Macías, Director de operaciones de AIDA.*
-
 *Domingo Alonso Group* es una empresa de origen canario, que tiene más de 80 años de historia dedicada al sector de la automoción y la movilidad. *Aplicaciones Informáticas Domingo Alonso*, o **AIDA**, es la empresa tecnológica del grupo, centrando su actividad en el desarrollo de productos tecnológicos y software a medida, con los que tiene presencia internacional.
 
 ## La necesidad: incorporar nuevos desarrolladores sin perturbar a sus equipos productivos
