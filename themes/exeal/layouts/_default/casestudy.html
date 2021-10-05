@@ -6,13 +6,21 @@
   <body>
     {{- partial "casestudy/navbar.html" . -}}
 
-    {{- partial "casestudy/hero.html" . -}}
-
     <section id="sect-testimonials" class="light">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div id="carousel-testimonials" class="carousel">
+          <div class="col-md-6 order-md-first order-sm-last order-last photo">
+            <h2>De new hire a senior en 3 meses sin alterar la productividad de los equipos</h2>
+            <img class="img-fluid pad" src="/assets/img/clients/aida-logo.png" />
+            <ul>
+              <li>Cliente: Aida (Aplicaciones Informáticas Domingo Alonso)</li>
+              <li>Sector: Automoción y movilidad</li>
+              <li><a href="https://www.aidacanarias.com/" target="_blank">Web</a> y <a href="https://www.linkedin.com/company/grupo-domingo-alonso/" target="_blank">LinkedIn</a></li>
+              <li>Servicio: Aceleradora de talento</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div id="carousel-testimonials" class="">
               <div class="service">
                 <div class="flap"></div>
                 <p>&ldquo;Necesitábamos incorporar ingenieros a nuestro equipo, pero teníamos que dedicar seniors y tech leads para formarlos, que ya estaban en equipos productivos, con fechas de entrega agresivas. Intentar compaginar la entrega de valor con la formación de estas personas creaba fricción y frustración.&rdquo;</p>
@@ -33,6 +41,20 @@
 
     <section id="sect-body">
       {{- block "article" . }}{{- end }}
+    </section>
+
+    <section id="sect-contact" class="gloaming">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 d-none d-sm-none d-md-block">
+            <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+          </div>
+          <div class="col-md-10 col-sm-12">
+            <h2><em>Contacta con nosotros</em> para averiguar c&oacute;mo podemos <em>colaborar</em>.</h2>
+            {{- partial "contactform.html" . -}}
+          </div>
+        </div>
+      </div>
     </section>
 
     {{- partial "blog/footer.html" . -}}
