@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    {{- partial "head.html" . -}}
+  </head>
+  <body>
+    {{- partial "casestudy/navbar.html" . -}}
+
+    <section id="sect-testimonials" class="light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-md-first order-sm-last order-last photo">
+            <h2>De new hire a senior en 3 meses sin alterar la productividad de los equipos</h2>
+            <img class="img-fluid pad" src="/assets/img/clients/domingo-alonso-group-logo.png" />
+            <ul>
+              <li>Cliente: AIDA - Domingo Alonso Group</li>
+              <li>Sector: Automoción y movilidad</li>
+              <li><a href="https://www.aidacanarias.com/" target="_blank">Web</a> y <a href="https://www.linkedin.com/company/grupo-domingo-alonso/" target="_blank">LinkedIn</a></li>
+              <li>Servicio: Aceleradora de talento</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div id="carousel-testimonials" class="">
+              <div class="service">
+                <div class="flap"></div>
+                <p>&ldquo;Necesitábamos incorporar ingenieros a nuestro equipo, pero teníamos que dedicar seniors y tech leads para formarlos, que ya estaban en equipos productivos, con fechas de entrega agresivas. Intentar compaginar la entrega de valor con la formación de estas personas creaba fricción y frustración.&rdquo;</p>
+                <div class="avatar-with-name">
+                  <img class="rounded-circle avatar" src="/assets/img/testimonials/emilio-macias.jpeg"/>
+                  <div class="customer-name">
+                    <p>Emilio Macías</p>
+                    <p>Director de operaciones @ AIDA - Domingo Alonso Group</p>
+                    <p><a target="_blank" href="https://www.linkedin.com/in/emiliomaciasconde/"> <img src="/assets/img/blog/social-icons/icon-linkedin.svg"> </a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sect-body">
+      {{- block "article" . }}{{- end }}
+    </section>
+
+    {{- partial "clients.html" . -}}
+
+    <section id="sect-contact" class="gloaming">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 d-none d-sm-none d-md-block">
+            <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+          </div>
+          <div class="col-md-10 col-sm-12">
+            <h2><em>Contacta con nosotros</em> para averiguar c&oacute;mo podemos <em>colaborar</em>.</h2>
+            {{- partial "contactform.html" . -}}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{- partial "blog/footer.html" . -}}
+
+    {{- partial "javascript.html" . -}}
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"></script>
+  </body>
+</html>
+
+{{ define "article" }}
+<div class="container">
+  <article>
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}
