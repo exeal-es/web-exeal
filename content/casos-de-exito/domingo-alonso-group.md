@@ -1,6 +1,6 @@
 ---
 title: "De new hire a senior en 3 meses sin alterar la productividad de los equipos"
-description: "Caso de éxito de Aplicaciones Informáticas Domingo Alonso (AIDA): de new hire a senior en 3 meses sin alterar la productividad de los equipos"
+description: "Caso de éxito de Domingo Alonso Group: de new hire a senior en 3 meses sin alterar la productividad de los equipos"
 date: 2021-10-05T06:00:00+02:00
 layout: casestudy
 featured_image: '/assets/img/blog/blog-cover-1.png'
@@ -28,7 +28,7 @@ El alineamiento de estos factores con la visión de AIDA de cuáles debían ser 
 
 *“Al final la decisión fue cuando entramos en detalle y vimos ¿qué contenido va a conocer nuestro equipo? ¿Cuál es la forma en la que se va a trasladar esa información? Y qué necesidad teníamos nosotros. Nosotros teníamos una necesidad que era: necesitamos formar a nuestra gente lo antes posible en ciertos perfiles y no podemos invertir nosotros todo el tiempo en ello. El temario y la temática que ustedes ofrecían están acorde a las necesidades básicas que teníamos nosotros. Y eso fue casi el decir si, hay que probar.”*
 
- -- *Emilio Macías, Director de operaciones de AIDA.*
+ -- *Emilio Macías, Director de operaciones de AIDA - Domingo Alonso Group.*
 
 ## El ingrediente principal de la receta: la aceleración formativa
 
@@ -56,4 +56,4 @@ Asimismo, son reportados como éxitos la efectividad y eficiencia en la acelerac
 
 *“Nosotros siempre hemos apostado por perfiles jóvenes, pero necesitábamos poder incorporar a más personas. No contar con este servicio sería una vuelta atrás, frenar en seco ciertos proyectos y productos ya en producción para poder formar personas que se incorporen a nuestro equipo. Así qué yo espero no tener que dejar de contar con ustedes. Para mi ya forman parte del equipo.”*
 
--- *Emilio Macías, Director de operaciones de AIDA.*
+-- *Emilio Macías, Director de operaciones de AIDA - Domingo Alonso Group.*
