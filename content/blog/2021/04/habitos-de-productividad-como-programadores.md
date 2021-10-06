@@ -3,11 +3,11 @@ title: "Hábitos de productividad como programadores"
 description: "Comienza a usar el IDE de forma correcta para aumentar tu productividad al escribir código."
 date: 2021-04-18T00:10:00+01:00
 layout: post
-tags: ['legacy', 'habitos', 'refactoring']
+tags: ["legacy", "habitos", "refactoring"]
 images:
-  - '/assets/img/blog/posts/keyboard.jpg'
-featured_image: '/assets/img/blog/posts/keyboard.jpg'
-card_image: '/assets/img/blog/posts/keyboard.jpg'
+  - "/assets/img/blog/posts/keyboard.jpg"
+featured_image: "/assets/img/blog/posts/keyboard.jpg"
+card_image: "/assets/img/blog/posts/keyboard.jpg"
 ---
 
 En el [anterior post](/blog/2021/03/por-que-el-codigo-degenera/) de esta serie sobre cómo evitar que el código greenfield se convierta en legacy, hablábamos de que una de las áreas en las que podíamos trabajar era en mejorar nuestras competencias y habilidades como desarrolladores para ser más productivo.
@@ -23,7 +23,7 @@ Sin embargo, hay muchos programadores que siguen usando su **IDE como si fuese u
 Hay 2 hábitos indispensables en la forma de programar que harán que la experiencia con el IDE sea mucho más productiva:
 
 - **Usar el Autofix**. Los IDEs modernos se dan cuenta rápidamente cuando introduces un fallo de compilación, y sugieren posibilidades para arreglarlos por ti. P.ej. si usas una clase que no existe, y el IDE te sugiere crearla. Puedes aprovechar esto adoptando el estilo “consume-first” de programación, en el que escribes código que usa elementos que todavía no existen (clases, métodos, variables…), y luego dejas que el Autofix genere ese código en lugar de escribirlo tú.
-- Cambiar el código usando **refactors automáticos**. El IDE es capaz de hacer por ti transformaciones súper típicas, como renombrar variables, extraer métodos, *inlinear* parámetros, mover métodos de una clase a otra, etc.
+- Cambiar el código usando **refactors automáticos**. El IDE es capaz de hacer por ti transformaciones súper típicas, como renombrar variables, extraer métodos, _inlinear_ parámetros, mover métodos de una clase a otra, etc.
 
 Adoptar estos hábitos te otorgará las siguientes dos ventajas:
 
