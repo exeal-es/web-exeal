@@ -84,6 +84,6 @@ Hay 3 áreas en las que podemos trabajar para aplicar fuerzas:
 
 - Mejorar nuestras competencias y habilidades como desarrolladores para ser más productivo.
 - Mejorar el trabajo en equipo para crear un ritmo sostenible.
-- Preparar nuestro código para lo que pueda venir, _the right way_.
+- Preparar nuestro código para lo que pueda venir, *the right way*.
 
 Hablaremos sobre cada uno de estos tres puntos de forma más extensa en futuros posts.

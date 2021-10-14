@@ -195,7 +195,7 @@ Ahora el error anterior se pinta de la siguiente manera:
 
 ### ProblemDetails Middleware
 
-Para el caso de las excepciones, si no quieres complicarte mucho configurando tus propios manejadores, puedes usar el Nuget [Hellang.Middleware.ProblemDetails](https://www.nuget.org/packages/Hellang.Middleware.ProblemDetails/). Con apenas un par de líneas de configuración en el Startup puedes hacer que las excepciones no controladas se pinten como _problems_ de acuerdo al estándar _automágicamente_. Además, la configuración por defecto ya incluye diferentes comportamientos para entornos de desarrollo y productivos, por lo que apenas hay que preocuparse en configurarlo. Como punto negativo, es una solución específica al caso de excepciones no controladas: el resto de errores deberás seguir manejandolos manualmente.
+Para el caso de las excepciones, si no quieres complicarte mucho configurando tus propios manejadores, puedes usar el Nuget [Hellang.Middleware.ProblemDetails](https://www.nuget.org/packages/Hellang.Middleware.ProblemDetails/). Con apenas un par de líneas de configuración en el Startup puedes hacer que las excepciones no controladas se pinten como *problems* de acuerdo al estándar *automágicamente*. Además, la configuración por defecto ya incluye diferentes comportamientos para entornos de desarrollo y productivos, por lo que apenas hay que preocuparse en configurarlo. Como punto negativo, es una solución específica al caso de excepciones no controladas: el resto de errores deberás seguir manejandolos manualmente.
 
 ### AutoWrapper
 
