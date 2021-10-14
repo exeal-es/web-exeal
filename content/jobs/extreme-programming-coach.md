@@ -24,7 +24,7 @@ Ayudarás a los equipos de desarrollo de software de nuestros clientes a adoptar
 - Disciplina y aprendizaje: colaborar juntos en pair / mob programming, etc.
 - Saber qué construir: dividir un roadmap de producto en historias de usuario, planificar iteraciones, descomponer en slices verticales, etc.
 - Mejorar como equipo: retrospectivas, innovación, visión, etc.
-- Llevar un ritmo sostenible: build slack in, planificar según velocidad, single piece flow, etc.
+- Llevar un ritmo sostenible: integrar la práctica deliberada en el equipo, planificar según velocidad, limitar el work in progress, etc.
 
 ## Cómo lo harás
 
@@ -56,14 +56,13 @@ Es posible que necesites estar disponible para viajar por territorio nacional pa
 
 Eres la candidata ideal si cumples los siguientes requisitos:
 
-- Experiencia liderando equipos como Senior Engineer, Tech Lead o Engineering Manager.
-- Eres una crack en programación orientada a objetos, lenguajes como C#, Java o Kotlin son tu segunda lengua materna.
-- Experiencia trabajando en entornos ágiles, colaborando directamente con PO y stakeholders.
-- NO STACK. Nos basta con que conozcas un par de frameworks MVC en backend, algún FW de front/mobile, y sobre todo seas capaz de aprender rápido el stack que cada cliente use.
-- Experiencia en entornos cloud y prácticas DevOps (sabes diseñar una 12 factor app, montar un pipeline de CI/CD y escribir un Terraform para la infra de tu backend, etc.).
-- Excelentes habilidades de comunicación, liderazgo, paciencia y empatía: tu objetivo es provocar un cambio de mindset en las personas con el mínimo roce posible.
+- Trayectoria previa en roles técnicos hands-on: Software Developer, Senior Developer, Tech Lead, etc..
+- Experiencia en programación orientada a objetos (lenguajes como C#, Java, Kotlin, PHP, Javascript, etc.).
+- Experiencia trabajando en entornos ágiles, colaborando directamente con Product Owners y stakeholders.
+- NO STACK. Nos basta con que conozcas algún framework MVC en backend o algún FW de front/mobile, pero sobre todo estés dispuesto y seas capaz de aprender rápido el stack que cada cliente use.
+- Tu día a día está inspirado por los principios y valores de Extreme Programming, Software Craftsmanship y DevOps.
+- Habilidades de comunicación, liderazgo, paciencia y empatía: tu objetivo es provocar un cambio de mindset en las personas con el mínimo roce posible.
 - Pasión por estar en constante aprendizaje y crecimiento, cada cliente es un nuevo reto y nuestro mayor *asset* es nuestra experiencia y conocimientos.
-- Experiencia con DDD, has participado en/facilitado workshops de Discovery como Story mapping, Event Storming, etc.
 - Competencia de inglés profesional.
 
 Bonus points si:
