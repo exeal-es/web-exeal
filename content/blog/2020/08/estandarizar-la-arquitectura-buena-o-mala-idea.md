@@ -1,13 +1,14 @@
 ---
 title: "Estandarizar la arquitectura: ¿buena o mala idea?"
 description: El motivo por el que definimos reglas de arquitectura es para protegernos de cambios que nos pueden doler. ¿Hasta qué punto debemos ser estrictos con estas reglas?
+author: "Pedro Pardal"
 date: 2020-08-06T00:00:00+02:00
 layout: post
-tags: ['arquitectura']
+tags: ["arquitectura"]
 images:
-  - 'https://www.exeal.com/assets/img/blog/posts/torre-de-marfil.png'
-featured_image: '/assets/img/blog/blog-cover-1.png'
-card_image: '/assets/img/blog/covers/torre-de-marfil.png'
+  - "https://www.exeal.com/assets/img/blog/posts/torre-de-marfil.png"
+featured_image: "/assets/img/blog/blog-cover-1.png"
+card_image: "/assets/img/blog/covers/torre-de-marfil.png"
 ---
 
 Reciéntemente en el equipo con el que trabajo actualmente, tuvimos una interesante discusión de diseño de una de nuestras APIs web.<!--more-->
@@ -22,7 +23,7 @@ Puesto que a todos nos chillaba, comenzamos planteándonos qué nos dice la teor
 
 Esta arquitectura, en nuestro caso, no es ningún mandato de algún arquitecto fuera del equipo en su torre de marfil. Ni siquiera es algún acuerdo escrito en nuestra documentación. Por el contrario, es el conocimiento colectivo implícito generado por [todos nuestros aprendizajes de los últimos meses](https://www.youtube.com/watch?v=xQmi7uQ_ICU) acerca de diseño y arquitectura, los cuales nos han empujado de forma natural a diseñar nuestras aplicaciones de esta manera.
 
-Sin embargo, a poco que empezamos a explorar la situación, nos dimos cuenta de posibles problemas: una separación estricta de capas nos llevaría a replicar la mayoría de clases de nuestro modelo para tener una representación en cada capa, y por tanto a configurar todos los mapeos entre ellas. Esto nos acabaría dificultando el mantenimiento, p.ej. añadir un nuevo campo en la API causará un *shotgun surgery*, i.e. hacer el mismo cambio en múltiples partes del código. Es una violación del [principio DRY](https://es.wikipedia.org/wiki/No_te_repitas) (*Don't repeat yourself*). En nuestro caso, al ser una API tan sencilla, que apenas tiene lógica de negocio al ser una API de lectura, la balanza se decantó fácilmente: no hay justificación para introducir una capa de dominio.
+Sin embargo, a poco que empezamos a explorar la situación, nos dimos cuenta de posibles problemas: una separación estricta de capas nos llevaría a replicar la mayoría de clases de nuestro modelo para tener una representación en cada capa, y por tanto a configurar todos los mapeos entre ellas. Esto nos acabaría dificultando el mantenimiento, p.ej. añadir un nuevo campo en la API causará un _shotgun surgery_, i.e. hacer el mismo cambio en múltiples partes del código. Es una violación del [principio DRY](https://es.wikipedia.org/wiki/No_te_repitas) (_Don't repeat yourself_). En nuestro caso, al ser una API tan sencilla, que apenas tiene lógica de negocio al ser una API de lectura, la balanza se decantó fácilmente: no hay justificación para introducir una capa de dominio.
 
 ## Reglas de arquitectura
 
@@ -63,6 +64,6 @@ El motivo por el que definimos reglas de arquitectura es para **protegernos de c
 
 ![](/assets/img/blog/posts/team-developers.jpg)
 
-La clave es definir reglas arquitectónicas para aquellos asuntos que sabemos que nos pueden provocar dolor, y dejar libertad de diseño en aquellos sitios en los que el impacto o alcance de una decisión de diseño errónea es menor. En general, decidimos que aquellas partes que nos puedan provocar dolor las intentaremos tratar con un poco de *design up-front*, y usar diseño emergente para el resto. Y por supuesto, haber podido plantear este debate en el ambito del equipo: que el equipo **esté empoderado y pueda autoorganizarse** para tomar la decisión que más le convenga, sin depender de nadie fuera del equipo, ya que es dentro del equipo donde mejor se conoce el contexto del mismo y donde se puede tomar la decisión óptima.
+La clave es definir reglas arquitectónicas para aquellos asuntos que sabemos que nos pueden provocar dolor, y dejar libertad de diseño en aquellos sitios en los que el impacto o alcance de una decisión de diseño errónea es menor. En general, decidimos que aquellas partes que nos puedan provocar dolor las intentaremos tratar con un poco de _design up-front_, y usar diseño emergente para el resto. Y por supuesto, haber podido plantear este debate en el ambito del equipo: que el equipo **esté empoderado y pueda autoorganizarse** para tomar la decisión que más le convenga, sin depender de nadie fuera del equipo, ya que es dentro del equipo donde mejor se conoce el contexto del mismo y donde se puede tomar la decisión óptima.
 
 ¿Qué estrategia adoptas en tu equipo? ¿A qué conclusión habéis llegado? ¿Qué pros y contras has encontrado?
