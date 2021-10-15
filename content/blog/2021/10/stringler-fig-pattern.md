@@ -17,7 +17,7 @@ Hola como estan? espero que muy bien, Soy Damián, technical coach de [EXEAL](ht
 
 ## Antes de comenzar ...
 
-Me gustaría explicarles brevemente en qué consiste esta técnica de refactoring. Strangler fig pattern es un patrón que nos permitirá **migrar** nuestro actual software a otro anteponiendo un proxy que nos ayudará a **migrar** poco a poco nuestro código obsoleto a nuestro nuevo software.
+Me gustaría explicarles brevemente en qué consiste esta técnica de refactoring. Strangler fig pattern es un técnica que nos permitirá **migrar** nuestro actual software a otro anteponiendo un proxy que nos ayudará a **migrar** poco a poco nuestro código obsoleto a nuestro nuevo software.
 
 ## En otras palabras ...
 
