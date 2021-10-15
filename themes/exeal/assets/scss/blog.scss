@@ -1,8 +1,8 @@
-@import 'foundation/variables';
-@import 'foundation/fonts';
-@import 'foundation/article';
-@import 'foundation/tags';
-@import 'foundation/buttons';
+@import "foundation/variables";
+@import "foundation/fonts";
+@import "foundation/article";
+@import "foundation/tags";
+@import "foundation/buttons";
 
 .hero {
   height: 10em;
@@ -20,35 +20,35 @@
 }
 
 .hero {
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
 }
 
 .hero h1 {
   color: white;
   font-size: 3rem;
   font-weight: normal;
-	font-style: normal;
+  font-style: normal;
   line-height: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 .hero h2 {
-  color: #E4E4E4;
+  color: #e4e4e4;
   font-size: 1.5rem;
   margin-top: 1em;
   margin-bottom: 0px;
 }
 
 .hero p.date {
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   font-size: 1.25rem;
-  color: #A0A0A0;
+  color: #a0a0a0;
   margin-top: 0px;
   margin-bottom: 2rem;
 }
 
-h1 span.underline {
+span.underline {
   border-bottom: 4px solid $primary-color;
 }
 
@@ -59,11 +59,11 @@ h1 span.underline {
 
 pre {
   border-style: solid;
-	border-color: $primary-color;
+  border-color: $primary-color;
   border-width: 4px;
   margin: 0em 2rem;
   padding: 2em 2em;
-  font-family: 'JetBrainsMono-Regular', 'Work Sans', sans-serif;
+  font-family: "JetBrainsMono-Regular", "Work Sans", sans-serif;
 }
 
 div.post-author {
@@ -84,7 +84,7 @@ div.post-author {
   text-align: left;
 }
 
-.post-author .customer-name  p {
+.post-author .customer-name p {
   margin: 0px;
 }
 
@@ -107,7 +107,7 @@ div.post-author {
 }
 
 .bg-mask {
-  background: rgba(24,41,53,0.75);
+  background: rgba(24, 41, 53, 0.75);
 }
 
 .post-card {
@@ -124,7 +124,7 @@ div.post-author {
 }
 
 .post-card-inner:hover {
-  background: rgba(24,41,53,1.0);
+  background: rgba(24, 41, 53, 1);
   transition: 0.2s;
 }
 
@@ -141,7 +141,7 @@ div.post-author {
   border-top-style: solid;
   border-top-width: 4px;
   font-size: 0.75em;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
 }
 
 .blog-item .post-title {
@@ -161,7 +161,7 @@ div.post-author {
 
 .post-card-detail {
   display: none;
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
 }
 
 div.post-card-reading-time {
@@ -188,12 +188,12 @@ div.post-card-reading-time {
 }
 
 .blog-carousel p.author-name {
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   margin: 1rem 0rem;
 }
 
 .blog-carousel h1 {
-  font-family: 'Gopher Regular', 'Work Sans', sans-serif;
+  font-family: "Gopher Regular", "Work Sans", sans-serif;
   font-size: 2rem;
   margin: 1rem 0rem;
   max-width: 25rem;
@@ -212,7 +212,7 @@ section.no-padding-top {
 }
 
 .blog-carousel .carousel-indicators li {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border-color: white;
   border-style: solid;
   border-width: 2px;

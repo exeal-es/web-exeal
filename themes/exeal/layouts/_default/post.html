@@ -1,11 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     {{- partial "head.html" . -}}
   </head>
   <body>
     {{- partial "blog/navbar.html" . -}}
-
     {{- partial "blog/hero.html" . -}}
 
     <section id="sect-body">
@@ -16,7 +15,7 @@
             <ul class="tags tags-dark">
               {{ partial "blog/tags.html" .}}
             </ul>
-      
+
             {{ partial "blog/author.html" .}}
 
             <div class="addthis_inline_share_toolbox"></div>
@@ -26,16 +25,16 @@
     </section>
 
     {{- partial "blog/footer.html" . -}}
-
     {{- partial "javascript.html" . -}}
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"></script>
+    <script
+      type="text/javascript"
+      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"
+    ></script>
   </body>
 </html>
 
 {{ define "article" }}
 <div class="container">
-  <article>
-    {{ .Content }}
-  </article>
+  <article>{{ .Content }}</article>
 </div>
 {{ end }}
