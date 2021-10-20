@@ -1,13 +1,14 @@
 ---
 title: "Reconciliando a producto y tecnología"
 description: Reconciliar a producto y tecnología requiere de un ejercicio de autocrítica, empatía y colaboración por ambas partes.
+author: "Pedro Pardal"
 date: 2020-09-25T00:00:00+02:00
 layout: post
-tags: ['producto', 'agile']
+tags: ["producto", "agile"]
 images:
-  - '/assets/img/blog/posts/team-whiteboard.jpg'
-featured_image: '/assets/img/blog/posts/team-whiteboard.jpg'
-card_image: '/assets/img/blog/covers/team-whiteboard.jpg'
+  - "/assets/img/blog/posts/team-whiteboard.jpg"
+featured_image: "/assets/img/blog/posts/team-whiteboard.jpg"
+card_image: "/assets/img/blog/covers/team-whiteboard.jpg"
 ---
 
 # Reconciliando a producto y tecnología
@@ -38,11 +39,13 @@ Y la cosa es que probablemente cada parte lleve un poquito de razón: nadie se q
 Para lograr una colaboración real, se requerirá un ejercicio de autocrítica por ambas partes, en el que se deberá responder, entre otras, a las siguientes preguntas:
 
 #### Tecnología:
+
 - ¿Introducir esta tecnología realmente aporta valor al negocio o símplemente queremos hacerlo porque mola?
 - ¿Somos capaces de transmitir la necesidad de realizar esta mejora tecnológica?
 - ¿Podemos aportar el mismo valor trabajando menos? ¿Cuál es el [20% de trabajo que nos reportará el 80% de beneficio](https://es.wikipedia.org/wiki/Principio_de_Pareto)?
 
 #### Producto:
+
 - ¿Necesitan nuestros clientes todas estas funcionalidades? ¿Podemos lanzar un producto mínimo viable con un scope reducido?
 - ¿Entendemos las consecuencias de no realizar estas acciones de mantenimiento de la tecnología? ¿Estamos dispuestos a asumirlas? ¿Somos transparentes con la decisión de asumirlas o no asumirlas?
 

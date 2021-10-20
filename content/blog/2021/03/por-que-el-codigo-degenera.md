@@ -1,13 +1,14 @@
 ---
 title: "¿Por qué el código degenera?"
 description: "Ningún proyecto comienza siendo legacy. ¿Cuáles son los factores que hacen que un proyecto greenfield se convierta en legacy?"
+author: "Pedro Pardal"
 date: 2021-03-26T00:10:00+01:00
 layout: post
-tags: ['legacy', 'habitos']
+tags: ["legacy", "habitos"]
 images:
-  - '/assets/img/blog/posts/fruit.jpg'
-featured_image: '/assets/img/blog/posts/fruit.jpg'
-card_image: '/assets/img/blog/posts/fruit.jpg'
+  - "/assets/img/blog/posts/fruit.jpg"
+featured_image: "/assets/img/blog/posts/fruit.jpg"
+card_image: "/assets/img/blog/posts/fruit.jpg"
 ---
 
 En mi [training sobre código legacy](https://www.exeal.com/cursos/legacy-code/), suelo empezar preguntando a la gente que “qué es lo que caracteriza un código legacy”, y hay una constante que siempre sale en todos los equipos: **el código legacy da miedo, porque tocarlo supone un riesgo**. Riesgo de romper algo que antes funcionaba, que está dando dinero, que está pagando las facturas… y deje de funcionar.
@@ -46,7 +47,7 @@ Todo el tiempo vienen **requisitos nuevos y cambiantes**. El negocio y el mercad
 
 Tenemos dificultades para encajar los nuevos requisitos en la solución actual, y acabamos haciendo encaje de bolillos para tirar para adelante. Si repetimos esto una y otra vez, estaremos condenando al proyecto al fracaso lentamente.
 
-Una reacción muy común entre los desarrolladores es intentar adelantarse a los cambios,  creando un sistema con más abstracciones, más extensible, con una arquitectura definida, etc, para que la próxima vez que lleguen nuevos requisitos se puedan acomodar mejor.
+Una reacción muy común entre los desarrolladores es intentar adelantarse a los cambios, creando un sistema con más abstracciones, más extensible, con una arquitectura definida, etc, para que la próxima vez que lleguen nuevos requisitos se puedan acomodar mejor.
 
 Jugamos a ver el futuro con nuestra bola de cristal, a intentar prever los nuevos requisitos antes siquiera de que al negocio se les ocurran. Por supuesto, en la mayoría de los casos, **nos equivocamos**. Introducimos la abstracción incorrecta, y los nuevos requisitos siempre nos sorprenden. Acabamos con dos problemas: la complejidad inherente a los nuevos requisitos y tener que adaptar el software a los mismos, y la **complejidad accidental** de una solución más compleja de lo que podría ser.
 

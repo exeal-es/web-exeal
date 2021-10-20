@@ -1,13 +1,14 @@
 ---
 title: "Gestiona los errores de tus APIs web como un pro"
 description: La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y darle un punto de calidad de vida a los usuarios de la misma.
+author: "Pedro Pardal"
 date: 2020-09-04T00:00:00+02:00
 layout: post
-tags: ['apis', 'netcore', 'csharp']
+tags: ["apis", "netcore", "csharp"]
 images:
-  - '/assets/img/blog/posts/controlled-explosion.jpg'
-featured_image: '/assets/img/blog/posts/controlled-explosion.jpg'
-card_image: '/assets/img/blog/covers/controlled-explosion.jpg'
+  - "/assets/img/blog/posts/controlled-explosion.jpg"
+featured_image: "/assets/img/blog/posts/controlled-explosion.jpg"
+card_image: "/assets/img/blog/covers/controlled-explosion.jpg"
 ---
 
 La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y **darle un punto de calidad de vida a los usuarios de la misma**.<!--more--> Aún así, son muchos los proveedores que descuidan este aspecto, y no es raro encontrar APIs de terceros con las que la integración se complica. Escenarios como errores no documentados, información insuficiente para diagnosticar los problemas, representación inconsistente que dificulta la integración... son por desgracia bastante comunes.
@@ -22,7 +23,6 @@ Adoptar un estándar como este tiene numerosos beneficios, entre los que se incl
 - Es altamente probable encontrar **herramientas como frameworks o librerías que nos faciliten la vida**. Tanto desde nuestro punto de vista como proveedor de la API a la hora de implementarla, como para nuestro cliente consumidor, podrá beneficiarse de estas herramientas para agilizar la integración.
 
 Adicionalmente, una de las ventajas concretas de este estándar es que nos permite una **representación más granular** de los errores más allá del status code HTTP de la respuesta, mediante tipos y detalles de error, tal como veremos más adelante.
-
 
 ## ¿Qué pinta tiene?
 
@@ -89,9 +89,7 @@ Y enviamos un POST sin especificar el campo `Name`. Obtenemos la siguiente respu
   "status": 400,
   "traceId": "|66617be8-466db72568d15e33.",
   "errors": {
-    "Name": [
-      "The Name field is required."
-    ]
+    "Name": ["The Name field is required."]
   }
 }
 ```

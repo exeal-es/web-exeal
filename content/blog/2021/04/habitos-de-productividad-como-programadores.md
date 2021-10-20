@@ -1,13 +1,14 @@
 ---
 title: "Hábitos de productividad como programadores"
 description: "Comienza a usar el IDE de forma correcta para aumentar tu productividad al escribir código."
+author: "Pedro Pardal"
 date: 2021-04-18T00:10:00+01:00
 layout: post
-tags: ['legacy', 'habitos', 'refactoring']
+tags: ["legacy", "habitos", "refactoring"]
 images:
-  - '/assets/img/blog/posts/keyboard.jpg'
-featured_image: '/assets/img/blog/posts/keyboard.jpg'
-card_image: '/assets/img/blog/posts/keyboard.jpg'
+  - "/assets/img/blog/posts/keyboard.jpg"
+featured_image: "/assets/img/blog/posts/keyboard.jpg"
+card_image: "/assets/img/blog/posts/keyboard.jpg"
 ---
 
 En el [anterior post](/blog/2021/03/por-que-el-codigo-degenera/) de esta serie sobre cómo evitar que el código greenfield se convierta en legacy, hablábamos de que una de las áreas en las que podíamos trabajar era en mejorar nuestras competencias y habilidades como desarrolladores para ser más productivo.

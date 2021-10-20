@@ -1,6 +1,7 @@
 ---
 title: "#4: Ritmo sostenible y código legacy"
 description: Escuchamos un fragmento de una interesantísima discusión surgida durante uno de los trainings de Exeal sobre cómo domar el código legacy manteniendo un ritmo sostenible.
+author: "Pedro Pardal"
 date: 2021-02-28T10:00:00+02:00
 layout: podcast
 podcast_episode_id: 4QApNlC4iMC8WpO8k3DxJQ
