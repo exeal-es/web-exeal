@@ -13,7 +13,7 @@ card_image: "/assets/img/blog/posts/strangler-fig.jpg"
 
 ## Mi primer blog
 
-¡Hola! ¿cómo estan? Espero que muy bien, Soy Damián, Technical Coach de [Exeal](https://www.exeal.com/), y hoy vengo a comentarles nuestra experiencia aplicando [Strangler fig pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig).
+¡Hola! ¿cómo estan? Espero que muy bien, Soy Damián 👋, Technical Coach de [Exeal](https://www.exeal.com/), y hoy vengo a comentarles nuestra experiencia aplicando [Strangler fig pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig).
 
 ## Antes de comenzar ...
 
@@ -40,3 +40,7 @@ El secreto está en que nuestro Strangler proxy delegue las peticiones al antigu
 Aquí les comparto una librería que hicimos en EXEAL para soportar Strangler fig pattern con .NET Core:
 
 - **[Strangler Proxy](https://github.com/exeal-es/StranglerProxy)**
+
+Espero que hayas podido disfrutar de este post, ¡nos estamos viendo!
+
+¡Saludos! 🖖

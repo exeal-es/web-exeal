@@ -13,26 +13,39 @@ card_image: "/assets/img/blog/posts/test.jpg"
 
 ## Characterization Tests
 
-¡Hola! ¿cómo estan? Espero que muy bien, Soy Damián, Technical Coach en [Exeal](https://www.exeal.com/), y hoy me gustaría intentar explicarles para qué sirven los tests de caracterización.
+¡Hola! ¿cómo estan? Espero que muy bien, Soy Damián 👋, Technical Coach en [Exeal](https://www.exeal.com/), y hoy me gustaría intentar explicarles para qué sirven los tests de caracterización.
 
 ## ¿Qué son? ...
 
-Los tests de caracterización son tests automatizados que permiten probar una aplicación de manera íntegra controlando el output de un determinado componente, basándonos en un determinado input.
+Cuando trabajamos con código legacy, los tests de caracterización pueden ser una excelente herramienta para afrontar futuros refactors, ya que son tests automatizados que permiten tener un respaldo al momento de querer refactorizar un determinado componente de nuestra aplicación.
+Hay que tener en cuenta algo muy **importante**, los tests de caracterización serán un gran apoyo a la hora de realizar cambios, pero estos tipos de tests verifican el **comportamiento actual** no el **comportamiento deseado**.
 
-## Para explicarlo de una manera sencilla, planteemos el siguiente ejemplo
+También vale la pena recordar que **refactorizar** implica cambiar el código y el diseño de nuestro aplicativo **sin cambiar** el comportamiento del mismo.
 
-Tenemos una aplicación **Web API** que tiene un endpoint `GetUsers`. Entonces, cada vez que invoquemos este endpoint, nos devolverá un **JSON** con un array de usuarios, ¿cierto? Bien... aquí es donde entran los tests de caracterización.
+## ¿Como escribir tests de caracterización?
 
-## Para qué sirven?
+Escribir estos tests es mucho más sencillo que otros tipos de tests, mucho más incluso que cuando hacemos TDD, te comparto una pequeña receta para escribirlos:
 
-Suponiendo que necesitamos refactorizar nuestra aplicación que **no cuenta con tests automatizados** ¿Cómo hacemos para asegurar que nuestro refactor no rompe absolutamente nada? ¿Cómo garantizamos esto?
+- **Invoca la pieza de código que queres testear**
+- **Escribí una aserción que falle** (enserio, forzá que falle apropósito 🤯)
+- **Copiá el assertion devuelto**
+- **Cambiá el test para que el valor expected sea el valor copiado anteriormente**
+- **Repetí este comportamiento con diferentes inputs hasta que tengas la seguridad de poder refactorizar**
 
-Una excelente práctica es implementar tests de caracterización. Para ello, podremos de manera automática, generar archivos estáticos de la respuesta de este endpoint `GetUsers` para asegurar de manera inicial **antes de comenzar el refactor** para que cada vez que hagamos un pequeño cambio de nuestro código a refactorizar, podamos ejecutar nuevamente este test de caracterización y asegurar que el output de este **JSON** es el mismo que el contenido del archivo previamente generado.
+Lo que estamos intentando acá es poder refactorizar asegurandonos que **jamás** estamos cambiando el comportamiento **actual**
 
-Existen numerosas librerías para soportar la creación de los tests de caracterización para diferentes lenguajes de programación, aquí les comparto una súper completa.
+## Acá te dejo algunos consejos que me han servido al momento de hacer tests de caracterización
 
-**[https://github.com/orgs/approvals](https://github.com/orgs/approvals/repositories)**
+- **No tengas miedo de buscar piezas de código enmarañadas** (este es el código que nadie quiere tocar 🥱)
+- **Después de hacer varios tests, intenta encontrar la correcta responsabilidad de esa clase, método, función, servicio, lo que sea**
+- **Intenta pensar en valores extremos como input** (forzá ir a corner cases)
+- **Si por casualidad encontras clases invariantes, escribí este test de caracterización** (el equipo te lo agradecerá 🙏)
+
+## En resumen ...
+
+Los tests de caracterización nos aportan un gran valor para poder refactorizar nuestro código y no ir a ciegas, sin saber realmente que es lo que estamos afectando sin darnos cuenta, hay veces que trabajamos con aplicativos que son demasiado grandes, y re testearlo puede llevar mucho tiempo.
+Los invito a que prueben esta forma de testear cuando encuentren una clase gigante que quieran **refactorizar**
 
 Espero que hayas podido disfrutar de este post, ¡nos estamos viendo!
 
-¡Saludos!
+¡Saludos! 🖖

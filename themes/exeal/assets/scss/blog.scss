@@ -164,6 +164,15 @@ div.post-author {
   font-family: "Gopher Regular", "Work Sans", sans-serif;
 }
 
+.post-card-detail a {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 div.post-card-reading-time {
   position: absolute;
   bottom: 2rem;
