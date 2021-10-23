@@ -7,12 +7,13 @@
       </ul>
       {{ end }}
       <div class="post-title">
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <h2>{{ .Title }}</h2>
         <p class="author">{{ .Params.author }}</p>
       </div>
     </div>
     <div class="post-card-detail">
-      <div class="post-card-summary"><a href="{{ .Permalink }}">{{ .Description }}</div>
+      <a href="{{ .Permalink }}"></a>
+      <div class="post-card-summary">{{ .Description }}</div>
       <div class="post-card-reading-time">Tiempo de lectura: {{ math.Round (div (countwords .Content) 220.0) }} minutos</div>
     </div>
   </div>
