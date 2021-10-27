@@ -1,6 +1,6 @@
 ---
 title: "Mob programming"
-description: "¿Cómo es trabajar como Mob programming?"
+description: "¿Cómo es trabajar con Mob programming?"
 author: "Damián Pumar"
 date: 2021-10-26T00:10:00+01:00
 layout: post
