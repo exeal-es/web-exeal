@@ -490,33 +490,40 @@ p.taxes {
 }
 
 //
-// AVATAR WITH NAME
+// CUSTOMER
 //
 
-.avatar-with-name {
+.customer {
   & {
     margin-top: 1em;
     margin-bottom: 1em;
   }
-  
+
   & > * {
     vertical-align: middle;
   }
-  
-  & .customer-name {
+
+  & .customer-info {
     display: inline-block;
+    font-family: "Gopher Regular", sans-serif;
+  }
+  
+  @media (min-width: 992px) {
+    & .customer-info {
+      text-align: left;
+      margin-left: 1.5em;
+    }
+  }
+  
+  .dark & h6 {
+    color: $primary-color;
   }
   
   & p {
     margin: 0px;
-    color: $mid-gray;
-  }
-  
-  @media (min-width: 992px) {
-    & p {
-      text-align: left;
-      margin-left: 1.5em;
-    }
+    color: $light-gray;
+    font-size: 0.9em;
+    line-height: 1.25em;
   }
 }
 
@@ -531,7 +538,7 @@ p.taxes {
 }
 
 @media (max-width: 992px) {
-  .avatar-with-name .customer-name {
+  .customer .customer-info {
     display: block;
     margin-top: 1em;
   }
