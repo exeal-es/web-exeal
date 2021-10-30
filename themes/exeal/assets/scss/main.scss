@@ -272,8 +272,7 @@ div.box {
   }
   
   & h3 {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding: 0em 2em;
   }
 
   & a {
@@ -322,6 +321,22 @@ div.box {
     padding-bottom: 10em;
     bottom: -4px;
     right: -4px;
+  }
+}
+
+div.box.case-study-info {
+  & h4 {
+    font-family: "Gopher Regular", sans-serif;
+    margin: 0px;
+  }
+
+  & p {
+    margin: 0em;
+    color: $mid-gray;
+  }
+
+  & > img {
+    height: 3em;
   }
 }
 
