@@ -1,6 +1,6 @@
 {{ $customer := index .context.Site.Data.customers .customerId }}
 <div class="box">
-  <div class="flap-top-right"></div>
+  <div class="flap flap-top-right"></div>
   <p>&ldquo;{{ .testimonial }}&rdquo;</p>
   <div class="customer">
     <img class="avatar rounded-circle" src="{{ $customer.avatar }}" />
