@@ -580,9 +580,9 @@ p.taxes {
     color: $primary-color;
   }
   
-  & p {
+  & .customer-info p {
     margin: 0px;
-    color: $light-gray;
+    color: $mid-gray !important;
     font-size: 0.9em;
     line-height: 1.25em;
   }
@@ -873,6 +873,22 @@ p.bigger {
 //
 // CASE STUDY
 //
+
+body.case-study p {
+  color: $mid-gray;
+}
+
+body.case-study .box p {
+  color: $dark-background-color;
+}
+
+body.case-study .dark .box p {
+  color: $gray-background-color;
+}
+
+body.case-study .dark p {
+  color: $light-gray;
+}
 
 ul.case-study-index li {
   background-image: url('/assets/img/arrow-cta-yellow.svg');
