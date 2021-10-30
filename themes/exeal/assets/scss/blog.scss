@@ -74,8 +74,13 @@ div.post-author {
     border-bottom-width: 1px;
     border-color: $primary-color;
     margin: 2em 0em;
+    padding: 1em 0em;
   }
   
+  & > * {
+    vertical-align: middle;
+  }
+
   & .post-author-name {
     display: inline-block;
     margin: 2em 2em;
@@ -99,6 +104,13 @@ div.post-author {
     display: flex;
   }
   
+  @media (min-width: 992px) {
+    & p {
+      text-align: left;
+      margin-left: 1.5em;
+    }
+  }
+
   @media (max-width: 992px) {
     & .post-author-name h2 {
       text-align: center;
