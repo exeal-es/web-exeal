@@ -252,42 +252,47 @@ section.background {
   }
 }
 
+//
+// BOXES
+//
 div.box {
-  border-style: solid;
-  border-color: $primary-color;
-  border-width: 4px;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 2em;
-  padding-bottom: 1em;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  position: relative;
-}
+  & {
+    border-style: solid;
+    border-color: $primary-color;
+    border-width: 4px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  & h3 {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 
-div.box h3 {
-  padding-left: 2em;
-  padding-right: 2em;
-}
+  & a {
+    margin: auto;
+  }
 
-div.box a {
-  margin: auto;
-}
-
-div.box > div.flap {
-  display: block;
-  border-top-right-radius: 50%;
-  border-color: $primary-color;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-width: 4px;
-  width: 10em;
-  padding-bottom: 10em;
-  position: absolute;
-  top: -4px;
-  right: -4px;
+  & > div.flap {
+    display: block;
+    border-top-right-radius: 50%;
+    border-color: $primary-color;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-width: 4px;
+    width: 10em;
+    padding-bottom: 10em;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+  }
 }
 
 img.avatar {
