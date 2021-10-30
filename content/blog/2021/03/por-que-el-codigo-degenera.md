@@ -1,7 +1,7 @@
 ---
 title: "¿Por qué el código degenera?"
 description: "Ningún proyecto comienza siendo legacy. ¿Cuáles son los factores que hacen que un proyecto greenfield se convierta en legacy?"
-author: "Pedro Pardal"
+author: pedropardal
 date: 2021-03-26T00:10:00+01:00
 layout: post
 tags: ["legacy", "habitos"]

@@ -1,7 +1,7 @@
 ---
 title: "Reconciliando a producto y tecnología"
 description: Reconciliar a producto y tecnología requiere de un ejercicio de autocrítica, empatía y colaboración por ambas partes.
-author: "Pedro Pardal"
+author: pedropardal
 date: 2020-09-25T00:00:00+02:00
 layout: post
 tags: ["producto", "agile"]

@@ -1,7 +1,7 @@
 ---
 title: "Logs 101"
 description: "Breve introducción a técnicas de logging, cómo escribir logs útiles que faciliten la tarea de diagnóstico de incidencias en aplicaciones software."
-author: "Pedro Pardal"
+author: pedropardal
 date: 2021-04-07T00:10:00+01:00
 layout: post
 tags: ["logs", "bugs", "netcore", "csharp"]

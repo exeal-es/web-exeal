@@ -1,7 +1,7 @@
 ---
 title: "Characterization Tests"
 description: "Para qué sirven los tests de caracterización"
-author: "Damián Pumar"
+author: damianpumar
 date: 2021-10-21T00:10:00+01:00
 layout: post
 tags: ["legacy", "refactoring", "test"]
