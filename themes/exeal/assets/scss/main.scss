@@ -346,18 +346,23 @@ img.arrow-right {
   }
 }
 
-footer a {
-  color: $mid-gray;
-}
-
-footer a:hover {
-  color: $light-gray;
-  text-decoration: none;
-}
-
-footer li img {
-  width: 2em;
-  height: 2em;
+//
+// FOOTER
+//
+footer {
+  & a {
+    color: $mid-gray;
+  }
+  
+  & a:hover {
+    color: $light-gray;
+    text-decoration: none;
+  }
+  
+  & li img {
+    width: 2em;
+    height: 2em;
+  }
 }
 
 ul.ticked li {
