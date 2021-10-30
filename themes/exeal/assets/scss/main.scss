@@ -335,11 +335,6 @@ img.arrow-right {
   width: 3.5em;
 }
 
-.footer {
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
-
 @media (min-width: 992px) {
   div.container img.img-fluid.pad {
     padding: 1.5em;
@@ -350,6 +345,12 @@ img.arrow-right {
 // FOOTER
 //
 footer {
+  & {
+    background-color: black;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
   & a {
     color: $mid-gray;
   }
@@ -483,28 +484,34 @@ p.taxes {
   background-color: $dark-background-color;
 }
 
+//
+// AVATAR WITH NAME
+//
+
 .avatar-with-name {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.avatar-with-name > * {
-  vertical-align: middle;
-}
-
-.avatar-with-name .customer-name {
-  display: inline-block;
-}
-
-.avatar-with-name p {
-  margin: 0px;
-  color: $mid-gray;
-}
-
-@media (min-width: 992px) {
-  .avatar-with-name p {
-    text-align: left;
-    margin-left: 1.5em;
+  & {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  
+  & > * {
+    vertical-align: middle;
+  }
+  
+  & .customer-name {
+    display: inline-block;
+  }
+  
+  & p {
+    margin: 0px;
+    color: $mid-gray;
+  }
+  
+  @media (min-width: 992px) {
+    & p {
+      text-align: left;
+      margin-left: 1.5em;
+    }
   }
 }
 
