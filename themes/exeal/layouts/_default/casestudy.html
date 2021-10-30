@@ -322,18 +322,11 @@
         </div>
       </div>
       <div class="row align-items-center justify-content-center">
+        {{ range .Site.Data.clients }}
         <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="/assets/img/clients/voxel-logo.png" class="img-fluid client-logo" alt="Voxel">
+          <img src="{{ .logo }}" class="img-fluid client-logo" alt="{{ .name }}">
         </div>
-        <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="/assets/img/clients/devoluiva-logo.png" class="img-fluid client-logo" alt="DevoluIVA">
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="/assets/img/clients/domingo-alonso-group-logo.png" class="img-fluid client-logo" alt="Domingo Alonso Group">
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="/assets/img/clients/bab-logo.jpeg" class="img-fluid client-logo" alt="Bab">
-        </div>
+        {{ end }}
       </div>
     </div>
   </section>
