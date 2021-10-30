@@ -178,7 +178,7 @@ section {
 }
 
 body {
-  font-family: "Work Sans", Sans-Serif;
+  font-family: "Avenir Book", Sans-Serif;
   letter-spacing: 0.02rem;
   line-height: 1.75rem;
 }
@@ -188,14 +188,14 @@ h1 {
   line-height: 1.25em;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
-  font-family: "Gopher Medium", "Work Sans", sans-serif;
+  font-family: "Gopher Medium", sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
 h2 {
   font-size: 1.5em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-weight: normal;
   font-style: normal;
   margin-bottom: 1.25em;
@@ -208,7 +208,7 @@ h2 em {
 h3 {
   font-size: 1.375em;
   margin-bottom: 1.25em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-style: italic;
   font-weight: bold;
 }
@@ -217,7 +217,7 @@ h4 {
   font-size: 1.375em;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Avenir Book", sans-serif;
 }
 
 section p {
@@ -235,7 +235,7 @@ nav.dark {
   border-color: $mid-gray;
   border-bottom-width: 2px;
   font-size: 1.1em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
 }
 
 .navbar {
@@ -475,7 +475,7 @@ img.avatar {
   width: 100%;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   color: white;
 }
 
@@ -589,7 +589,7 @@ div.bordered > div.dropdown {
 */
 
 dl.faq dt {
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   color: $mid-gray;
   border-color: $primary-color;
   border-bottom-style: solid;
@@ -670,7 +670,7 @@ p.taxes {
 }
 
 .carousel {
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-size: 1.3em;
 }
 
@@ -682,7 +682,7 @@ p.taxes {
 }
 
 p.price {
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   color: $gloaming-background-color;
   font-size: 6em;
   margin-top: 3rem;
@@ -708,7 +708,7 @@ p.price sup {
 a.nav-button {
   display: block;
   background-color: $secondary-color;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   text-decoration: none;
   width: fit-content;
   justify-content: center;
@@ -765,7 +765,7 @@ img.client-logo {
 .course-body p.level {
   color: $light-gray;
   font-size: 1em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   margin-bottom: 1.25rem;
   margin-top: 0rem;
 }
@@ -781,7 +781,7 @@ img.client-logo {
 .course-body li {
   color: $light-gray;
   font-size: 0.85rem;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   margin-bottom: 0.5rem;
   margin-top: 0rem;
 }
@@ -807,7 +807,7 @@ img.client-logo {
 
 .courses-tagline h1 {
   margin-left: 2rem;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-size: 2rem;
   max-width: 25rem;
 }
@@ -815,7 +815,7 @@ img.client-logo {
 .course-header div.featured-course {
   display: block;
   background-color: $secondary-color;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   color: white;
   padding: 0.25rem 1rem;
   position: absolute;
@@ -850,7 +850,7 @@ input.button {
   border-radius: 2rem;
   background-color: $secondary-color;
   border-width: 3px;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   text-decoration: none;
   width: 100%;
   font-size: 1.3em;
