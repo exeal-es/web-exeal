@@ -252,7 +252,7 @@ section.background {
   }
 }
 
-div.service {
+div.box {
   border-style: solid;
   border-color: $primary-color;
   border-width: 4px;
@@ -267,16 +267,16 @@ div.service {
   position: relative;
 }
 
-div.service h3 {
+div.box h3 {
   padding-left: 2em;
   padding-right: 2em;
 }
 
-div.service a {
+div.box a {
   margin: auto;
 }
 
-div.service > div.flap {
+div.box > div.flap {
   display: block;
   border-top-right-radius: 50%;
   border-color: $primary-color;
