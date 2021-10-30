@@ -7,6 +7,12 @@ html {
   font-size: 15pt;
 }
 
+body {
+  font-family: "Avenir Book", Sans-Serif;
+  letter-spacing: 0.02rem;
+  line-height: 1.75rem;
+}
+
 .light {
   background-color: white;
   color: $dark-background-color;
@@ -32,12 +38,6 @@ html {
 section {
   padding-top: 3em;
   padding-bottom: 3em;
-}
-
-body {
-  font-family: "Avenir Book", Sans-Serif;
-  letter-spacing: 0.02rem;
-  line-height: 1.75rem;
 }
 
 h1 {
@@ -87,6 +87,9 @@ p em {
   font-weight: bold;
 }
 
+//
+// NAVBAR
+//
 nav.dark {
   border-style: solid;
   border-color: $mid-gray;
@@ -112,6 +115,20 @@ nav.dark {
   }
 }
 
+a.nav-button {
+  display: block;
+  background-color: $secondary-color;
+  font-family: "Gopher Regular", sans-serif;
+  text-decoration: none;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  color: $dark-background-color !important;
+  border-radius: 2rem;
+}
+
 .background.background-01 {
   background-image: url("/assets/img/background-01-right.png"),
     url("/assets/img/background-01-left.png");
@@ -131,143 +148,108 @@ nav.dark {
   }
 }
 
-.background.background-02 {
-  background-image: url("/assets/img/background-02.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
+//
+// BACKGROUNDS
+//
+section.background {
+  &.background-02 {
+    background-image: url("/assets/img/background-02.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  
+  &.background-03 {
+    background-image: url("/assets/img/background-03.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  
+  &.background-04 {
+    background-image: url("/assets/img/background-04.png");
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  &.background-05 {
+    background-image: url("/assets/img/background-05.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  
+  &.background-01-simple {
+    background-image: url("/assets/img/background-01-left.png");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100em;
+  }
 }
 
-.background.background-03 {
-  background-image: url("/assets/img/background-03.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-}
-
-.background.background-04 {
-  background-image: url("/assets/img/background-04.png");
-  background-position: center;
-  background-repeat: repeat;
-}
-
-.background.background-05 {
-  background-image: url("/assets/img/background-05.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-}
-
-.background.background-01-simple {
-  background-image: url("/assets/img/background-01-left.png");
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100em;
-}
-
+//
+// ICONS
+//
 .icons {
-  cursor: default;
-  padding: 0;
-  letter-spacing: 0;
-}
-
-.icons li {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  z-index: 1;
-}
-
-.icons li a {
-  display: flex;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-}
-
-.icons li a svg {
-  display: block;
-  position: relative;
-  -moz-transition: fill 0.25s ease;
-  -webkit-transition: fill 0.25s ease;
-  -ms-transition: fill 0.25s ease;
-  transition: fill 0.25s ease;
-}
-
-.icons li a + svg {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  -moz-pointer-events: none;
-  -webkit-pointer-events: none;
-  -ms-pointer-events: none;
-  pointer-events: none;
-  -moz-transition: fill 0.25s ease, stroke 0.25s ease;
-  -webkit-transition: fill 0.25s ease, stroke 0.25s ease;
-  -ms-transition: fill 0.25s ease, stroke 0.25s ease;
-  transition: fill 0.25s ease, stroke 0.25s ease;
-}
-
-.icons li a .label {
-  display: none;
-}
-
-#icons02 {
-  font-size: 1em;
-  width: calc(100% + 1.25rem);
-  margin-left: -0.625rem;
-}
-
-#icons02 li {
-  margin: 0.625rem;
-}
-
-#icons02 li a {
-  border-radius: 2rem;
-  width: 2em;
-  height: 2em;
-}
-
-#icons02 li a svg {
-  width: 60%;
-  height: 60%;
-}
-
-#icons02 a svg {
-  fill: white;
-}
-
-#icons02 a {
-  border: solid 1px white;
-}
-
-#icons02 a:hover {
-  border-color: $primary-color !important;
-}
-
-#icons02 a:hover svg {
-  fill: $primary-color !important;
-}
-
-#icons02 .n01:hover {
-  border-color: $primary-color !important;
-}
-
-#icons02 .n01:hover svg {
-  fill: $primary-color !important;
+  & {
+    cursor: default;
+    padding: 0;
+    letter-spacing: 0;
+  }
+  
+  & li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+  }
+  
+  & li a {
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+  }
+  
+  & li a svg {
+    display: block;
+    position: relative;
+    -moz-transition: fill 0.25s ease;
+    -webkit-transition: fill 0.25s ease;
+    -ms-transition: fill 0.25s ease;
+    transition: fill 0.25s ease;
+  }
+  
+  & li a + svg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    -moz-transition: fill 0.25s ease, stroke 0.25s ease;
+    -webkit-transition: fill 0.25s ease, stroke 0.25s ease;
+    -ms-transition: fill 0.25s ease, stroke 0.25s ease;
+    transition: fill 0.25s ease, stroke 0.25s ease;
+  }
+  
+  & li a .label {
+    display: none;
+  }
 }
 
 div.service {
@@ -560,20 +542,6 @@ p.price sup {
   div.price-box-right {
     margin-left: 2em;
   }
-}
-
-a.nav-button {
-  display: block;
-  background-color: $secondary-color;
-  font-family: "Gopher Regular", sans-serif;
-  text-decoration: none;
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
-  padding-left: 1em !important;
-  padding-right: 1em !important;
-  color: $dark-background-color !important;
-  border-radius: 2rem;
 }
 
 div.vertical-center {
