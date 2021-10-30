@@ -189,6 +189,14 @@ section.background {
     background-repeat: repeat;
     background-size: cover;
   }
+
+  &.background-06 {
+    background-image: url("/assets/img/background-06.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
 }
 
 //
