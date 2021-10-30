@@ -1,153 +1,16 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-body {
-  -webkit-text-size-adjust: none;
-}
-mark {
-  background-color: transparent;
-  color: inherit;
-}
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-}
-
+@import "foundation/reset";
 @import "foundation/variables";
 @import "foundation/fonts";
 @import "foundation/buttons";
 
 html {
   font-size: 15pt;
+}
+
+body {
+  font-family: "Avenir Book", Sans-Serif;
+  letter-spacing: 0.02rem;
+  line-height: 1.75rem;
 }
 
 .light {
@@ -177,25 +40,19 @@ section {
   padding-bottom: 3em;
 }
 
-body {
-  font-family: "Work Sans", Sans-Serif;
-  letter-spacing: 0.02rem;
-  line-height: 1.75rem;
-}
-
 h1 {
   font-size: 1.875em;
   line-height: 1.25em;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
-  font-family: "Gopher Medium", "Work Sans", sans-serif;
+  font-family: "Gopher Medium", sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
 h2 {
   font-size: 1.5em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-weight: normal;
   font-style: normal;
   margin-bottom: 1.25em;
@@ -208,7 +65,7 @@ h2 em {
 h3 {
   font-size: 1.375em;
   margin-bottom: 1.25em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-style: italic;
   font-weight: bold;
 }
@@ -217,7 +74,7 @@ h4 {
   font-size: 1.375em;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Avenir Book", sans-serif;
 }
 
 section p {
@@ -230,12 +87,15 @@ p em {
   font-weight: bold;
 }
 
+//
+// NAVBAR
+//
 nav.dark {
   border-style: solid;
   border-color: $mid-gray;
   border-bottom-width: 2px;
   font-size: 1.1em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
 }
 
 .navbar {
@@ -255,200 +115,237 @@ nav.dark {
   }
 }
 
-.background.background-01 {
-  background-image: url("/assets/img/background-01-right.png"),
-    url("/assets/img/background-01-left.png");
-  background-attachment: fixed, fixed;
-  background-position: top right, top;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 40em, 100em;
+a.nav-button {
+  display: block;
+  background-color: $secondary-color;
+  font-family: "Gopher Regular", sans-serif;
+  text-decoration: none;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  color: $dark-background-color !important;
+  border-radius: 2rem;
 }
 
-@media (max-width: 1400px) {
-  .background.background-01 {
-    background-image: url("/assets/img/background-01-right.png");
+//
+// BACKGROUNDS
+//
+section.background {
+  &.background-01 {
+    background-image: url("/assets/img/background-01-right.png"),
+      url("/assets/img/background-01-left.png");
+    background-attachment: fixed, fixed;
+    background-position: top right, top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40em, 100em;
+  }
+  
+  @media (max-width: 1400px) {
+    &.background-01 {
+      background-image: url("/assets/img/background-01-right.png");
+      background-attachment: fixed;
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: 40em;
+    }
+  }
+
+  &.background-01-simple {
+    background-image: url("/assets/img/background-01-left.png");
     background-attachment: fixed;
-    background-position: top right;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: 40em;
+    background-size: 100em;
+  }
+
+  &.background-02 {
+    background-image: url("/assets/img/background-02.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  
+  &.background-03 {
+    background-image: url("/assets/img/background-03.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  
+  &.background-04 {
+    background-image: url("/assets/img/background-04.png");
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  &.background-05 {
+    background-image: url("/assets/img/background-05.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+  &.background-06 {
+    background-image: url("/assets/img/background-06.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
   }
 }
 
-.background.background-02 {
-  background-image: url("/assets/img/background-02.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-}
-
-.background.background-03 {
-  background-image: url("/assets/img/background-03.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-}
-
-.background.background-04 {
-  background-image: url("/assets/img/background-04.png");
-  background-position: center;
-  background-repeat: repeat;
-}
-
-.background.background-05 {
-  background-image: url("/assets/img/background-05.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-}
-
-.background.background-01-simple {
-  background-image: url("/assets/img/background-01-left.png");
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100em;
-}
-
+//
+// ICONS
+//
 .icons {
-  cursor: default;
-  padding: 0;
-  letter-spacing: 0;
+  & {
+    cursor: default;
+    padding: 0;
+    letter-spacing: 0;
+  }
+  
+  & li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+  }
+  
+  & li a {
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+  }
+  
+  & li a svg {
+    display: block;
+    position: relative;
+    -moz-transition: fill 0.25s ease;
+    -webkit-transition: fill 0.25s ease;
+    -ms-transition: fill 0.25s ease;
+    transition: fill 0.25s ease;
+  }
+  
+  & li a + svg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    -moz-transition: fill 0.25s ease, stroke 0.25s ease;
+    -webkit-transition: fill 0.25s ease, stroke 0.25s ease;
+    -ms-transition: fill 0.25s ease, stroke 0.25s ease;
+    transition: fill 0.25s ease, stroke 0.25s ease;
+  }
+  
+  & li a .label {
+    display: none;
+  }
 }
 
-.icons li {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  z-index: 1;
+//
+// BOXES
+//
+div.box {
+  & {
+    border-style: solid;
+    border-color: $primary-color;
+    border-width: 4px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  & h3 {
+    padding: 0em 2em;
+  }
+
+  & a {
+    margin: auto;
+  }
+
+  & > div.flap {
+    display: block;
+    border-color: $primary-color;
+    position: absolute;
+    border-width: 4px;
+    width: 10em;
+  }
+
+  & > div.flap-top-right {
+    border-top-right-radius: 50%;
+    border-right-style: solid;
+    border-top-style: solid;
+    padding-bottom: 10em;
+    top: -4px;
+    right: -4px;
+  }
+
+  & > div.flap-top-left {
+    border-top-left-radius: 50%;
+    border-left-style: solid;
+    border-top-style: solid;
+    padding-bottom: 10em;
+    top: -4px;
+    left: -4px;
+  }
+
+  & > div.flap-bottom-left {
+    border-bottom-left-radius: 50%;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    padding-bottom: 10em;
+    bottom: -4px;
+    left: -4px;
+  }
+
+  & > div.flap-bottom-right {
+    border-bottom-right-radius: 50%;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    padding-bottom: 10em;
+    bottom: -4px;
+    right: -4px;
+  }
 }
 
-.icons li a {
-  display: flex;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-}
+div.box.case-study-info {
+  & h4 {
+    font-family: "Gopher Regular", sans-serif;
+    margin: 0px;
+  }
 
-.icons li a svg {
-  display: block;
-  position: relative;
-  -moz-transition: fill 0.25s ease;
-  -webkit-transition: fill 0.25s ease;
-  -ms-transition: fill 0.25s ease;
-  transition: fill 0.25s ease;
-}
+  & p {
+    margin: 0em;
+    color: $mid-gray;
+  }
 
-.icons li a + svg {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  -moz-pointer-events: none;
-  -webkit-pointer-events: none;
-  -ms-pointer-events: none;
-  pointer-events: none;
-  -moz-transition: fill 0.25s ease, stroke 0.25s ease;
-  -webkit-transition: fill 0.25s ease, stroke 0.25s ease;
-  -ms-transition: fill 0.25s ease, stroke 0.25s ease;
-  transition: fill 0.25s ease, stroke 0.25s ease;
-}
-
-.icons li a .label {
-  display: none;
-}
-
-#icons02 {
-  font-size: 1em;
-  width: calc(100% + 1.25rem);
-  margin-left: -0.625rem;
-}
-
-#icons02 li {
-  margin: 0.625rem;
-}
-
-#icons02 li a {
-  border-radius: 2rem;
-  width: 2em;
-  height: 2em;
-}
-
-#icons02 li a svg {
-  width: 60%;
-  height: 60%;
-}
-
-#icons02 a svg {
-  fill: white;
-}
-
-#icons02 a {
-  border: solid 1px white;
-}
-
-#icons02 a:hover {
-  border-color: $primary-color !important;
-}
-
-#icons02 a:hover svg {
-  fill: $primary-color !important;
-}
-
-#icons02 .n01:hover {
-  border-color: $primary-color !important;
-}
-
-#icons02 .n01:hover svg {
-  fill: $primary-color !important;
-}
-
-div.service {
-  border-style: solid;
-  border-color: $primary-color;
-  border-width: 4px;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 2em;
-  padding-bottom: 1em;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  position: relative;
-}
-
-div.service h3 {
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-div.service a {
-  margin: auto;
-}
-
-div.service > div.flap {
-  display: block;
-  border-top-right-radius: 50%;
-  border-color: $primary-color;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-width: 4px;
-  width: 10em;
-  padding-bottom: 10em;
-  position: absolute;
-  top: -4px;
-  right: -4px;
+  & > img {
+    height: 3em;
+  }
 }
 
 img.avatar {
@@ -475,7 +372,7 @@ img.avatar {
   width: 100%;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   color: white;
 }
 
@@ -496,29 +393,35 @@ img.arrow-right {
   width: 3.5em;
 }
 
-.footer {
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
-
 @media (min-width: 992px) {
   div.container img.img-fluid.pad {
     padding: 1.5em;
   }
 }
 
-footer a {
-  color: $mid-gray;
-}
+//
+// FOOTER
+//
+footer {
+  & {
+    background-color: black;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
 
-footer a:hover {
-  color: $light-gray;
-  text-decoration: none;
-}
-
-footer li img {
-  width: 2em;
-  height: 2em;
+  & a {
+    color: $mid-gray;
+  }
+  
+  & a:hover {
+    color: $light-gray;
+    text-decoration: none;
+  }
+  
+  & li img {
+    width: 2em;
+    height: 2em;
+  }
 }
 
 ul.ticked li {
@@ -589,7 +492,7 @@ div.bordered > div.dropdown {
 */
 
 dl.faq dt {
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   color: $mid-gray;
   border-color: $primary-color;
   border-bottom-style: solid;
@@ -639,28 +542,41 @@ p.taxes {
   background-color: $dark-background-color;
 }
 
-.avatar-with-name {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
+//
+// CUSTOMER
+//
 
-.avatar-with-name > * {
-  vertical-align: middle;
-}
+.customer {
+  & {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 
-.avatar-with-name .customer-name {
-  display: inline-block;
-}
+  & > * {
+    vertical-align: middle;
+  }
 
-.avatar-with-name p {
-  margin: 0px;
-  color: $mid-gray;
-}
-
-@media (min-width: 992px) {
-  .avatar-with-name p {
-    text-align: left;
-    margin-left: 1.5em;
+  & .customer-info {
+    display: inline-block;
+    font-family: "Gopher Regular", sans-serif;
+  }
+  
+  @media (min-width: 992px) {
+    & .customer-info {
+      text-align: left;
+      margin-left: 1.5em;
+    }
+  }
+  
+  .dark & h6 {
+    color: $primary-color;
+  }
+  
+  & p {
+    margin: 0px;
+    color: $light-gray;
+    font-size: 0.9em;
+    line-height: 1.25em;
   }
 }
 
@@ -670,19 +586,19 @@ p.taxes {
 }
 
 .carousel {
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-size: 1.3em;
 }
 
 @media (max-width: 992px) {
-  .avatar-with-name .customer-name {
+  .customer .customer-info {
     display: block;
     margin-top: 1em;
   }
 }
 
 p.price {
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   color: $gloaming-background-color;
   font-size: 6em;
   margin-top: 3rem;
@@ -703,20 +619,6 @@ p.price sup {
   div.price-box-right {
     margin-left: 2em;
   }
-}
-
-a.nav-button {
-  display: block;
-  background-color: $secondary-color;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
-  text-decoration: none;
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
-  padding-left: 1em !important;
-  padding-right: 1em !important;
-  color: $dark-background-color !important;
-  border-radius: 2rem;
 }
 
 div.vertical-center {
@@ -765,7 +667,7 @@ img.client-logo {
 .course-body p.level {
   color: $light-gray;
   font-size: 1em;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   margin-bottom: 1.25rem;
   margin-top: 0rem;
 }
@@ -781,7 +683,7 @@ img.client-logo {
 .course-body li {
   color: $light-gray;
   font-size: 0.85rem;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   margin-bottom: 0.5rem;
   margin-top: 0rem;
 }
@@ -807,7 +709,7 @@ img.client-logo {
 
 .courses-tagline h1 {
   margin-left: 2rem;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   font-size: 2rem;
   max-width: 25rem;
 }
@@ -815,7 +717,7 @@ img.client-logo {
 .course-header div.featured-course {
   display: block;
   background-color: $secondary-color;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   color: white;
   padding: 0.25rem 1rem;
   position: absolute;
@@ -850,7 +752,7 @@ input.button {
   border-radius: 2rem;
   background-color: $secondary-color;
   border-width: 3px;
-  font-family: "Gopher Regular", "Work Sans", sans-serif;
+  font-family: "Gopher Regular", sans-serif;
   text-decoration: none;
   width: 100%;
   font-size: 1.3em;
@@ -958,4 +860,17 @@ img.icon-mid {
 
 p.bigger {
   font-size: 1.25rem;
+}
+
+//
+// CASE STUDY
+//
+
+ul.case-study-index li {
+  background-image: url('/assets/img/arrow-cta-yellow.svg');
+  background-position-y: 0.3em;
+  background-repeat: no-repeat;
+  padding-left: 3em;
+  font-family: "Gopher Regular", sans-serif;
+  font-size: 1.1rem;
 }

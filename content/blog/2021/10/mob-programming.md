@@ -1,7 +1,7 @@
 ---
 title: "Mob programming"
 description: "¿Cómo se trabaja con Mob programming?"
-author: "Damián Pumar"
+author: damianpumar
 date: 2021-10-26T00:10:00+01:00
 layout: post
 tags: ["habits", "team-work"]

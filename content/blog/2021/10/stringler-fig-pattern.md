@@ -1,7 +1,7 @@
 ---
 title: "Strangler fig pattern"
 description: "Implementando Strangler fig pattern"
-author: "Damián Pumar"
+author: damianpumar
 date: 2021-10-03T00:10:00+01:00
 layout: post
 tags: ["legacy", "refactoring"]

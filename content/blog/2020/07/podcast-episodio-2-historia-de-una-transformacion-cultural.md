@@ -1,7 +1,7 @@
 ---
 title: "#2: Historia de una transformación cultural"
 description: Los compañeros de la empresa Voxel Group, de Barcelona, nos cuentan cómo han sido impulsores de una transformación cultural hacia una cultura de aprendizaje continuo
-author: "Pedro Pardal"
+author: pedropardal
 date: 2020-07-09T00:00:00+02:00
 layout: podcast
 podcast_episode_id: 14OGCmuCcTyspAfX1wM8yO

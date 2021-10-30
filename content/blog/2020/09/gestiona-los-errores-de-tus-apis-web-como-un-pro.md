@@ -1,7 +1,7 @@
 ---
 title: "Gestiona los errores de tus APIs web como un pro"
 description: La gestión de errores en APIs web es un punto clave a la hora de diseñar nuestra API y darle un punto de calidad de vida a los usuarios de la misma.
-author: "Pedro Pardal"
+author: pedropardal
 date: 2020-09-04T00:00:00+02:00
 layout: post
 tags: ["apis", "netcore", "csharp"]

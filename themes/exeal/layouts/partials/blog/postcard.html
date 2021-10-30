@@ -1,3 +1,4 @@
+{{ $author := index .Site.Data.authors .Params.author }}
 <div class="blog-item post-card" style="background-image: url('{{ .Params.card_image | absURL }}');">
   <div class="blog-item-inner post-card-inner bg-mask">
     <div class="post-card-cover">
@@ -8,7 +9,7 @@
       {{ end }}
       <div class="post-title">
         <h2>{{ .Title }}</h2>
-        <p class="author">{{ .Params.author }}</p>
+        <p class="author">{{ $author.name }}</p>
       </div>
     </div>
     <div class="post-card-detail">

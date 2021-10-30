@@ -1,7 +1,7 @@
 ---
 title: "Hábitos de productividad como programadores"
 description: "Comienza a usar el IDE de forma correcta para aumentar tu productividad al escribir código."
-author: "Pedro Pardal"
+author: pedropardal
 date: 2021-04-18T00:10:00+01:00
 layout: post
 tags: ["legacy", "habitos", "refactoring"]
