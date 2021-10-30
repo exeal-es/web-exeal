@@ -853,3 +853,16 @@ img.icon-mid {
 p.bigger {
   font-size: 1.25rem;
 }
+
+//
+// CASE STUDY
+//
+
+ul.case-study-index li {
+  background-image: url('/assets/img/arrow-cta-yellow.svg');
+  background-position-y: 0.3em;
+  background-repeat: no-repeat;
+  padding-left: 3em;
+  font-family: "Gopher Regular", sans-serif;
+  font-size: 1.1rem;
+}
