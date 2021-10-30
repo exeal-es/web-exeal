@@ -913,3 +913,79 @@ h2.with-arrow {
   font-family: "Gopher Regular", sans-serif !important;
   font-size: 1.1em;
 }
+
+.left {
+  background: $dark-background-color;
+  position: relative;
+  top: 50%;
+}
+
+.left:before {
+  left: -999em;
+  background: $dark-background-color;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 999em;
+  top: 0;
+  bottom: 0;
+  z-index: -999;
+}
+
+@media (max-width: 768px) {
+  .left:after {
+    right: -999em;
+    background: $dark-background-color;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 999em;
+    top: 0;
+    bottom: 0;
+    z-index: -999;
+  }
+}
+
+.right {
+  background: $gloaming-background-color;
+  position: relative;
+  top: 50%;
+}
+
+@media (max-width: 768px) {
+  .right:before {
+    left: -999em;
+    background: $gloaming-background-color;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 999em;
+    top: 0;
+    bottom: 0;
+    z-index: -999;
+  }
+}
+
+.right:after {
+  right: -999em;
+  background: $gloaming-background-color;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 999em;
+  top: 0;
+  bottom: 0;
+  z-index: -999;
+}
+
+@media (min-width: 768px) {
+  .margin-right {
+    margin-right: 4.5rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .margin-left {
+    margin-left: 4.5rem !important;
+  }
+}
