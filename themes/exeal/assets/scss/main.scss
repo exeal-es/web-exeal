@@ -874,3 +874,13 @@ ul.case-study-index li {
   font-family: "Gopher Regular", sans-serif;
   font-size: 1.1rem;
 }
+
+h2.with-arrow {
+  background-image: url('/assets/img/arrow-right-secondary.svg');
+  background-size: 2em;
+  background-position-y: 0.25em;
+  background-position-x: 0.3em;
+  margin-left: -3em;
+  padding-left: 3em;
+  background-repeat: no-repeat;
+}
