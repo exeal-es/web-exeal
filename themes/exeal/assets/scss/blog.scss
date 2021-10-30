@@ -76,33 +76,34 @@ div.post-author {
     margin: 2em 0em;
   }
   
-  & .customer-name {
+  & .post-author-name {
+    display: inline-block;
     margin: 2em 2em;
   }
   
-  & .customer-name h2 {
+  & .post-author-name h2 {
     margin-bottom: 0.5em;
     text-align: left;
   }
   
-  & .customer-name p {
+  & .post-author-name p {
     margin: 0px;
   }
   
-  & .customer-name {
+  & .post-author-name {
     max-width: 30rem;
   }
   
-  & .customer-name ul.social-icons {
+  & .post-author-name ul.social-icons {
     margin-top: 1em;
     display: flex;
   }
   
   @media (max-width: 992px) {
-    & .customer-name h2 {
+    & .post-author-name h2 {
       text-align: center;
     }
-    & .customer-name ul.social-icons {
+    & .post-author-name ul.social-icons {
       display: inline-block;
     }
   }
