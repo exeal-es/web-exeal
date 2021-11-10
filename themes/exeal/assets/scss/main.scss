@@ -141,7 +141,7 @@ section.background {
     background-repeat: no-repeat, no-repeat;
     background-size: 40em, 100em;
   }
-  
+
   @media (max-width: 1400px) {
     &.background-01 {
       background-image: url("/assets/img/background-01-right.png");
@@ -167,7 +167,7 @@ section.background {
     background-repeat: repeat;
     background-size: cover;
   }
-  
+
   &.background-03 {
     background-image: url("/assets/img/background-03.png");
     background-attachment: fixed;
@@ -175,13 +175,13 @@ section.background {
     background-repeat: repeat;
     background-size: cover;
   }
-  
+
   &.background-04 {
     background-image: url("/assets/img/background-04.png");
     background-position: center;
     background-repeat: repeat;
   }
-  
+
   &.background-05 {
     background-image: url("/assets/img/background-05.png");
     background-attachment: fixed;
@@ -216,14 +216,14 @@ section.background {
     padding: 0;
     letter-spacing: 0;
   }
-  
+
   & li {
     display: inline-block;
     vertical-align: middle;
     position: relative;
     z-index: 1;
   }
-  
+
   & li a {
     display: flex;
     -moz-align-items: center;
@@ -235,7 +235,7 @@ section.background {
     -ms-justify-content: center;
     justify-content: center;
   }
-  
+
   & li a svg {
     display: block;
     position: relative;
@@ -244,7 +244,7 @@ section.background {
     -ms-transition: fill 0.25s ease;
     transition: fill 0.25s ease;
   }
-  
+
   & li a + svg {
     display: block;
     position: absolute;
@@ -262,7 +262,7 @@ section.background {
     -ms-transition: fill 0.25s ease, stroke 0.25s ease;
     transition: fill 0.25s ease, stroke 0.25s ease;
   }
-  
+
   & li a .label {
     display: none;
   }
@@ -286,7 +286,7 @@ div.box {
     height: 100%;
     position: relative;
   }
-  
+
   & h3 {
     padding: 0em 2em;
   }
@@ -420,12 +420,12 @@ footer {
   & a {
     color: $mid-gray;
   }
-  
+
   & a:hover {
     color: $light-gray;
     text-decoration: none;
   }
-  
+
   & li img {
     width: 2em;
     height: 2em;
@@ -568,18 +568,18 @@ p.taxes {
     display: inline-block;
     font-family: "Gopher Regular", sans-serif;
   }
-  
+
   @media (min-width: 992px) {
     & .customer-info {
       text-align: left;
       margin-left: 1.5em;
     }
   }
-  
+
   .dark & h6 {
     color: $primary-color;
   }
-  
+
   & .customer-info p {
     margin: 0px;
     color: $mid-gray !important;
@@ -891,7 +891,7 @@ body.case-study .dark p {
 }
 
 ul.case-study-index li {
-  background-image: url('/assets/img/arrow-cta-yellow.svg');
+  background-image: url("/assets/img/arrow-cta-yellow.svg");
   background-position-y: 0.3em;
   background-repeat: no-repeat;
   padding-left: 3em;
@@ -899,8 +899,12 @@ ul.case-study-index li {
   font-size: 1.1rem;
 }
 
+ul.case-study-index li a {
+  color: $dark-background-color;
+}
+
 h2.with-arrow {
-  background-image: url('/assets/img/arrow-right-secondary.svg');
+  background-image: url("/assets/img/arrow-right-secondary.svg");
   background-size: 2em;
   background-position-y: 0.25em;
   background-position-x: 0.3em;
@@ -923,7 +927,7 @@ h2.with-arrow {
 .left:before {
   left: -999em;
   background: $dark-background-color;
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 999em;
@@ -936,7 +940,7 @@ h2.with-arrow {
   .left:after {
     right: -999em;
     background: $dark-background-color;
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 999em;
@@ -956,7 +960,7 @@ h2.with-arrow {
   .right:before {
     left: -999em;
     background: $gloaming-background-color;
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 999em;
@@ -969,7 +973,7 @@ h2.with-arrow {
 .right:after {
   right: -999em;
   background: $gloaming-background-color;
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 999em;
