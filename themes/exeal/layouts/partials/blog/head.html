@@ -1,0 +1,3 @@
+{{- partial "head.html" . -}}
+{{ $style := resources.Get "scss/blog.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" />
