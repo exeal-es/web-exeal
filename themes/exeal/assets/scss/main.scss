@@ -922,7 +922,6 @@ h2.with-arrow {
   display: table;
   max-width: 100%;
   height: fit-content;
-  padding-bottom: 6em;
 }
 
 .side-by-side-panel {
@@ -936,7 +935,6 @@ h2.with-arrow {
   .side-by-side {
     display: flex;
     flex-direction: column;
-    padding-bottom: 0em;
   }
 
   .side-by-side-panel {
