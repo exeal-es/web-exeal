@@ -1,28 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
-    {{- partial "head.html" . -}}
+    {{- partial "jobs/head.html" . -}}
   </head>
   <body>
-    {{- partial "jobs/navbar.html" . -}}
+    {{- partial "jobs/navbar.html" . -}} {{- partial "jobs/hero.html" . -}}
 
-    {{- partial "jobs/hero.html" . -}}
+    <section id="sect-body">{{- block "article" . }}{{- end }}</section>
 
-    <section id="sect-body">
-      {{- block "article" . }}{{- end }}
-    </section>
-
-    {{- partial "footer.html" . -}}
-
-    {{- partial "javascript.html" . -}}
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"></script>
+    {{- partial "footer.html" . -}} {{- partial "javascript.html" . -}}
+    <script
+      type="text/javascript"
+      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"
+    ></script>
   </body>
 </html>
 
 {{ define "article" }}
 <div class="container">
-  <article>
-    {{ .Content }}
-  </article>
+  <article>{{ .Content }}</article>
 </div>
 {{ end }}
