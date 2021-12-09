@@ -18,9 +18,9 @@ Estamos buscando incorporar a nuestro equipo una persona para la posición de Ex
 
 Ayudarás a los equipos de desarrollo de software de nuestros clientes a adoptar las habilidades, técnicas y mindset adecuados para tener éxito en entornos de desarrollo ágil de software. Algunas de las áreas de conocimiento en las que ayudarás:
 
-- Técnicas para verificar el trabajo de forma automática: *test-driven development* (TDD), *behaviour-driven development* (BDD), tests unitarios / de integración / *end to end*, *contract testing*, etc.
-- Escribir código de calidad: *refactoring*, productividad con el IDE, diseño simple y evolutivo, rescate de código legacy, *domain-driven design*, etc.
-- Desplegar a voluntad: *continuous integration*, *continuous delivery*, observabilidad, *devops*, etc.
+- Técnicas para verificar el trabajo de forma automática: _test-driven development_ (TDD), _behaviour-driven development_ (BDD), tests unitarios / de integración / _end to end_, _contract testing_, etc.
+- Escribir código de calidad: _refactoring_, productividad con el IDE, diseño simple y evolutivo, rescate de código legacy, _domain-driven design_, etc.
+- Desplegar a voluntad: _continuous integration_, _continuous delivery_, observabilidad, _devops_, etc.
 - Disciplina y aprendizaje: colaborar juntos en pair / mob programming, etc.
 - Saber qué construir: dividir un roadmap de producto en historias de usuario, planificar iteraciones, descomponer en slices verticales, etc.
 - Mejorar como equipo: retrospectivas, innovación, visión, etc.
@@ -30,7 +30,7 @@ Ayudarás a los equipos de desarrollo de software de nuestros clientes a adoptar
 
 Todo esto lo harás donde realmente está la chicha, entrando hasta lo más profundo del fango: desde el día a día del equipo, usando la metodología [Samman Technical Coaching](https://www.sammancoaching.org/) como base, que se fundamenta en el coaching en grupo mediante sesiones hands-on de Mob programming, preparación e impartición de Learning hours, facilitación de Katas y sesiones de Comunidad de práctica, mentorización 1:1 de cada developer, etc.
 
-Al margen de tu trabajo en cliente, y dado que el conocimiento y la experiencia de nuestra gente es nuestro mayor *asset*, dedicarás gran parte de tu tiempo a formarte continuamente (¡y a ayudar a compañeros a formarse!) con cursos, conferencias, talleres, etc., así como a ampliar nuestro programa de aprendizaje preparando nuevas formaciones.
+Al margen de tu trabajo en cliente, y dado que el conocimiento y la experiencia de nuestra gente es nuestro mayor _asset_, dedicarás gran parte de tu tiempo a formarte continuamente (¡y a ayudar a compañeros a formarse!) con cursos, conferencias, talleres, etc., así como a ampliar nuestro programa de aprendizaje preparando nuevas formaciones.
 
 ## Con quién lo harás
 
@@ -48,7 +48,7 @@ El resto del tiempo que dediques a tu formación, iniciativas internas, preparar
 
 Desde tu casa, tu co-working de confianza, la auto-caravana... ¡desde donde quieras en realidad! Sólo necesitas una conexión estable y un espacio sin ruido donde se te oiga cristalino.
 
-No tenemos oficinas, somos full remote nativo, *precovid*, *duringcovid* y *postcovid*. Aún así, la idea es juntarse un par de veces al año al menos para ponernos cara y hacer equipo.
+No tenemos oficinas, somos full remote nativo, _precovid_, _duringcovid_ y _postcovid_. Aún así, la idea es juntarse un par de veces al año al menos para ponernos cara y hacer equipo.
 
 Es posible que necesites estar disponible para viajar por territorio nacional para hacerle el onboarding a algún cliente (por supuesto siempre a gastos pagados).
 
@@ -59,10 +59,10 @@ Eres la candidata ideal si cumples los siguientes requisitos:
 - Trayectoria previa en roles técnicos hands-on: Software Developer, Senior Developer, Tech Lead, etc..
 - Experiencia en programación orientada a objetos (lenguajes como C#, Java, Kotlin, PHP, Javascript, etc.).
 - Experiencia trabajando en entornos ágiles, colaborando directamente con Product Owners y stakeholders.
-- NO STACK. Nos basta con que conozcas algún framework MVC en backend o algún FW de front/mobile, pero sobre todo estés dispuesto y seas capaz de aprender rápido el stack que cada cliente use.
+- NO STACK. Nos basta con que conozcas algún framework MVC en backend o algún FWK de front/mobile, pero sobre todo estés dispuesto y seas capaz de aprender rápido el stack que cada cliente use.
 - Tu día a día está inspirado por los principios y valores de Extreme Programming, Software Craftsmanship y DevOps.
 - Habilidades de comunicación, liderazgo, paciencia y empatía: tu objetivo es provocar un cambio de mindset en las personas con el mínimo roce posible.
-- Pasión por estar en constante aprendizaje y crecimiento, cada cliente es un nuevo reto y nuestro mayor *asset* es nuestra experiencia y conocimientos.
+- Pasión por estar en constante aprendizaje y crecimiento, cada cliente es un nuevo reto y nuestro mayor _asset_ es nuestra experiencia y conocimientos.
 - Competencia de inglés profesional.
 
 Bonus points si:
@@ -90,3 +90,10 @@ En el video, responde por favor a las siguientes preguntas:
 - Cuéntanos sobre ti: experiencia, tu background, motivaciones, etc.
 - ¿Por qué quieres trabajar en una posición de Extreme Programming / Technical Coach?
 - ¿Qué experiencia relevante tienes en el campo de Extreme Programming / Technical Coaching? (si no tienes exp. en un puesto similar, ¿has participado en alguna empresa en alguna iniciativa interna relevante?)
+
+## ¿Cómo es el proceso?
+
+Nuestro proceso consiste solo en 2 pasos:
+
+- Te contactaremos para coordinar una primera sesión donde charlaremos 30 minutos, allí podrás hacernos todas las preguntas que quieras
+- Haremos una sesión de pair programming donde podrás mostrarnos tus habilidades de programación
