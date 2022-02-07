@@ -151,17 +151,7 @@
 
 {{- partial "testimonials.html" . -}}
 
-<section id="sect-contact" class="gloaming">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-2 d-none d-sm-none d-md-block">
-				<h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
-			</div>
-			<div class="col-md-10 col-sm-12">
-				<h2>¿Tienes dudas sobre los cursos? ¿No encuentras el curso que buscas? <em>¡Contacta con nosotros!</em></h2>
-				{{- partial "contactform.html" . -}}
-			</div>
-		</div>
-	</div>
-</section>
+<section id="sect-calendly" class="light">
+    {{- partial "calendly.html" . -}}
+  </section>
 {{ end }}
