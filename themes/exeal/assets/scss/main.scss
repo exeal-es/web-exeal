@@ -947,12 +947,12 @@ h2.with-arrow {
   transition: 0.3s;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
-  .case-study-card {
-    flex-direction: column;
+  .case-study-card-container:not(:last-child) {
+    margin-bottom: 1em;
   }
 }
 
