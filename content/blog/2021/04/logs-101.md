@@ -22,7 +22,7 @@ Este post no pretende ser una guía exhaustiva, sino una breve introducción lle
 
 ## ¿Por qué logar?
 
-Los logs son la venta a los internals de nuestra aplicación. Sin ellos no podemos saber qué está pasando dentro. Si hay un error, una vez ya ha pasado, o ha dejado información o no podemos saber qué ha pasado.
+Los logs son la ventana a los internals de nuestra aplicación. Sin ellos no podemos saber qué está pasando dentro. Si hay un error, una vez ya ha pasado, o ha dejado información o no podemos saber qué ha pasado.
 
 ## ¿Dónde logar?
 
