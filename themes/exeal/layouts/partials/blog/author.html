@@ -3,9 +3,7 @@
   <img class="rounded-circle" src="{{ $author.avatar }}" />
   <div class="post-author-name">
     <h2>{{ $author.name }}</h2>
-    <p>
-      {{ $author.bio }}
-    </p>
+    <p>{{ $author.bio }}</p>
     <ul class="social-icons list-inline">
       <li class="list-inline-item">
         <a target="_blank" href="{{ $author.social.twitter }}">
@@ -13,10 +11,7 @@
         </a>
       </li>
       <li class="list-inline-item">
-        <a
-          target="_blank"
-          href="{{ $author.social.linkedin }}"
-        >
+        <a target="_blank" href="{{ $author.social.linkedin }}">
           <img src="/assets/img/blog/social-icons/icon-linkedin.svg" />
         </a>
       </li>

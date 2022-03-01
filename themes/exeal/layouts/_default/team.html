@@ -1,0 +1,47 @@
+{{ define "main" }}
+<section class="dark background background-03">
+  <div class="container">
+    <div class="row justify-content-center">
+      {{ range .Params.team }} {{ $data := index $.Site.Data.authors .name }}
+      <div
+        class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center"
+      >
+        <div class="team-card">
+          <img src="{{$data.avatar}}" />
+
+          <div class="team-card-container">
+            <p><b>{{ $data.name }}</b></p>
+            <p>{{ $data.bio }}</p>
+
+            <ul class="social-icons list-inline">
+              <li class="list-inline-item">
+                <a target="_blank" href="{{ $data.social.twitter }}">
+                  <img src="/assets/img/blog/social-icons/icon-twitter.svg" />
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="{{ $data.social.linkedin }}">
+                  <img src="/assets/img/blog/social-icons/icon-linkedin.svg" />
+                </a>
+              </li>
+              {{ if ($data.social.github) }}
+              <li class="list-inline-item">
+                <a target="_blank" href="{{ $data.social.github }}">
+                  <img src="/assets/img/blog/social-icons/icon-github.svg" />
+                </a>
+              </li>
+              {{ end }}
+              <li class="list-inline-item">
+                <a target="_blank" href="mailto:{{ $data.social.email }}">
+                  <img src="/assets/img/blog/social-icons/icon-email.svg" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

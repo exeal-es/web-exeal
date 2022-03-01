@@ -19,6 +19,10 @@ div.post-author {
     vertical-align: middle;
   }
 
+  & > img {
+    width: 10em;
+  }
+
   & .post-author-name {
     display: inline-block;
     margin: 2em 2em;
