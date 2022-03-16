@@ -4,9 +4,7 @@
   <div class="container">
     <div class="row justify-content-center">
       {{ range .Params.team }} {{ $data := index $.Site.Data.authors .name }}
-      <div
-        class="col-sm-12 col-md-3 d-flex align-items-center justify-content-center"
-      >
+      <div class="col-sm-12 col-md-3 d-flex">
         <div
           class="team-card"
           data-toggle="modal"
@@ -19,17 +17,19 @@
             <p>{{ $data.role }}</p>
 
             <ul class="social-icons list-inline">
+              {{ if ($data.social.twitter) }}
               <li class="list-inline-item">
                 <a target="_blank" href="{{ $data.social.twitter }}">
                   <img src="/assets/img/blog/social-icons/icon-twitter.svg" />
                 </a>
               </li>
+              {{ end }} {{ if ($data.social.linkedin) }}
               <li class="list-inline-item">
                 <a target="_blank" href="{{ $data.social.linkedin }}">
                   <img src="/assets/img/blog/social-icons/icon-linkedin.svg" />
                 </a>
               </li>
-              {{ if ($data.social.github) }}
+              {{ end }} {{ if ($data.social.github) }}
               <li class="list-inline-item">
                 <a target="_blank" href="{{ $data.social.github }}">
                   <img src="/assets/img/blog/social-icons/icon-github.svg" />
@@ -63,6 +63,7 @@
                 <p>{{ $data.role }}</p>
 
                 <ul class="social-icons list-inline">
+                  {{ if ($data.social.twitter) }}
                   <li class="list-inline-item">
                     <a target="_blank" href="{{ $data.social.twitter }}">
                       <img
@@ -70,6 +71,7 @@
                       />
                     </a>
                   </li>
+                  {{ end }} {{ if ($data.social.linkedin) }}
                   <li class="list-inline-item">
                     <a target="_blank" href="{{ $data.social.linkedin }}">
                       <img
@@ -77,7 +79,7 @@
                       />
                     </a>
                   </li>
-                  {{ if ($data.social.github) }}
+                  {{ end }} {{ if ($data.social.github) }}
                   <li class="list-inline-item">
                     <a target="_blank" href="{{ $data.social.github }}">
                       <img
