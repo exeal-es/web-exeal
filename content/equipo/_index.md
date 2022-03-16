@@ -12,3 +12,5 @@ team:
     { name: "jaimegomez" },
   ]
 ---
+
+## Nuestro equipo

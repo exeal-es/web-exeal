@@ -999,8 +999,8 @@ h2.with-arrow {
 
   & > img {
     width: 100%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
@@ -1011,8 +1011,52 @@ h2.with-arrow {
   }
 
   &:hover {
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 16px 0 rgba(143, 143, 143, 0.6);
     cursor: pointer;
+  }
+}
+
+.modal-dialog {
+  top: 5%;
+  width: 90%;
+  height: 80%;
+}
+
+.modal-content {
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0px !important;
+}
+
+.modal-header {
+  & > img {
+    width: 10em;
+    margin-right: 2em;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.modal-team-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & > p:first-child {
+    font-weight: 800;
+    font-family: "Gopher Regular";
+  }
+
+  & > p {
+    margin: 0;
+  }
+
+  & > ul {
+    margin-top: 1em;
   }
 }
 
