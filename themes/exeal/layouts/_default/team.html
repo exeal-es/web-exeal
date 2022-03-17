@@ -2,20 +2,21 @@
 <section class="light background">
   <div class="container">{{ .Content }}</div>
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center team-card--outer">
       {{ range .Params.team }} {{ $data := index $.Site.Data.authors .name }}
-      <div class="col-sm-12 col-md-4 col-lg-3 d-flex">
+      <div class="col-6 col-md-4 col-lg-3" style="margin-bottom: 1em">
         <div
-          class="team-card"
+          class="team-card--inner"
           data-toggle="modal"
           data-target="#{{$data.name}}"
         >
           <img src="{{$data.avatar}}" />
 
-          <div class="team-card-container">
-            <p><b>{{ $data.name }}</b></p>
+          <div class="team-card--content">
+            <p>{{ $data.name }}</p>
             <p>{{ $data.role }}</p>
-
+          </div>
+          <div class="team-card--footer">
             <ul class="social-icons list-inline">
               {{ if ($data.social.twitter) }}
               <li class="list-inline-item">
@@ -58,7 +59,7 @@
             <div class="modal-header">
               <img src="{{$data.avatar}}" />
 
-              <div class="modal-team-header">
+              <div class="modal-header--content">
                 <p>{{ $data.name }}</p>
                 <p>{{ $data.role }}</p>
 
