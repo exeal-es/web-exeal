@@ -1059,13 +1059,18 @@ h2.with-arrow {
 
 .modal-dialog {
   top: 5%;
-  width: 90%;
-  height: 80%;
+  width: 96vw;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    height: 125vh;
+  }
 }
 
 .modal-content {
-  min-height: 100%;
   position: absolute;
+  height: fit-content;
   top: 0;
   bottom: 0;
   left: 0;
