@@ -3,7 +3,8 @@
   <div class="container">{{ .Content }}</div>
   <div class="container">
     <div class="row justify-content-center team-card--outer">
-      {{ range .Params.team }} {{ $data := index $.Site.Data.authors .name }}
+      {{ range .Params.team }} {{$authorName := .name}} {{ $data := index
+      $.Site.Data.authors $authorName }}
       <div class="col-6 col-md-4 col-lg-3" style="margin-bottom: 1em">
         <div
           class="team-card--inner"
@@ -106,12 +107,27 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">{{ $data.bio }}</div>
+            <div class="modal-body">
+              {{ $data.bio | safeHTML }}
+
+              <br />
+              {{ $blogs := $.Site.GetPage "/blog" }} {{ $blogPost := where
+              $blogs.Pages ".Params.author" $authorName }} {{ range first 1
+              $blogPost }}
+
+              <div class="modal-body--link">
+                <a href="/blog?author={{$authorName}}"
+                  >Ver blogs de {{ $data.name }}</a
+                >
+              </div>
+
+              {{ end }}
+            </div>
           </div>
         </div>
       </div>
 
-      {{ end }}
+      {{end}}
     </div>
   </div>
 </section>

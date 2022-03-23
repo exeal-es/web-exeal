@@ -1105,3 +1105,14 @@ h2.with-arrow {
     }
   }
 }
+
+.modal-body {
+  &--link {
+    margin-top: 1em;
+
+    & > a {
+      color: $primary-color;
+      font-weight: 800;
+    }
+  }
+}
