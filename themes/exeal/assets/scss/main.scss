@@ -1057,17 +1057,6 @@ h2.with-arrow {
   }
 }
 
-.modal-dialog {
-  top: 5%;
-  width: 96vw;
-}
-
-@media (max-width: 768px) {
-  .modal-dialog {
-    height: 125vh;
-  }
-}
-
 .modal-content {
   position: absolute;
   height: fit-content;
