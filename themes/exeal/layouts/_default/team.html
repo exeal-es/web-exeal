@@ -2,48 +2,50 @@
 <section class="light background">
   <div class="container">{{ .Content }}</div>
   <div class="container">
-    <div class="row justify-content-center team-card--outer">
-      {{ range .Params.team }} {{$authorName := .name}} {{ $data := index $.Site.Data.authors $authorName }}
-      <div class="col-6 col-md-4 col-lg-3" style="margin-bottom: 1em">
+    <div class="row justify-content-center">
+      {{ range .Params.team }} {{$authorName := .name}} {{ $data := index
+      $.Site.Data.authors $authorName }}
+      <div class="course-card col-12 col-md-4 col-lg-4">
         <div
-          class="team-card--inner"
-          data-toggle="modal"
-          data-target="#{{$data.name}}"
-        >
-          <img src="{{$data.avatar}}" />
-
-          <div class="team-card--content">
-            <p>{{ $data.name }}</p>
-            <p>{{ $data.role }}</p>
-          </div>
-          <div class="team-card--footer">
-            <ul class="social-icons list-inline">
-              {{ if ($data.social.twitter) }}
-              <li class="list-inline-item">
-                <a target="_blank" href="{{ $data.social.twitter }}">
-                  <img src="/assets/img/blog/social-icons/icon-twitter.svg" />
-                </a>
-              </li>
-              {{ end }} {{ if ($data.social.linkedin) }}
-              <li class="list-inline-item">
-                <a target="_blank" href="{{ $data.social.linkedin }}">
-                  <img src="/assets/img/blog/social-icons/icon-linkedin.svg" />
-                </a>
-              </li>
-              {{ end }} {{ if ($data.social.github) }}
-              <li class="list-inline-item">
-                <a target="_blank" href="{{ $data.social.github }}">
-                  <img src="/assets/img/blog/social-icons/icon-github.svg" />
-                </a>
-              </li>
-              {{ end }}
-              <li class="list-inline-item">
-                <a target="_blank" href="mailto:{{ $data.social.email }}">
-                  <img src="/assets/img/blog/social-icons/icon-email.svg" />
-                </a>
-              </li>
-            </ul>
-          </div>
+          class="course-header"
+          style="background-image: url('{{$data.avatar}}')"
+        ></div>
+        <div class="course-body d-flex flex-column">
+          <h3>{{ $data.name }}</h3>
+          <p class="description" style="height: 4em">{{ $data.role }}</p>
+          <ul class="social-icons list-inline">
+            {{ if ($data.social.twitter) }}
+            <li class="list-inline-item">
+              <a target="_blank" href="{{ $data.social.twitter }}">
+                <img src="/assets/img/blog/social-icons/icon-twitter.svg" />
+              </a>
+            </li>
+            {{ end }} {{ if ($data.social.linkedin) }}
+            <li class="list-inline-item">
+              <a target="_blank" href="{{ $data.social.linkedin }}">
+                <img src="/assets/img/blog/social-icons/icon-linkedin.svg" />
+              </a>
+            </li>
+            {{ end }} {{ if ($data.social.github) }}
+            <li class="list-inline-item">
+              <a target="_blank" href="{{ $data.social.github }}">
+                <img src="/assets/img/blog/social-icons/icon-github.svg" />
+              </a>
+            </li>
+            {{ end }}
+            <li class="list-inline-item">
+              <a target="_blank" href="mailto:{{ $data.social.email }}">
+                <img src="/assets/img/blog/social-icons/icon-email.svg" />
+              </a>
+            </li>
+          </ul>
+          <a
+            class="button button-green expand"
+            data-toggle="modal"
+            data-target="#{{$data.name}}"
+            href="{{.name}}"
+            >Más info</a
+          >
         </div>
       </div>
 
@@ -57,6 +59,15 @@
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+
               <img src="{{$data.avatar}}" />
 
               <div class="modal-header--content">
@@ -96,21 +107,14 @@
                   </li>
                 </ul>
               </div>
-
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
             </div>
             <div class="modal-body">
               {{ $data.bio | safeHTML }}
 
               <br />
-              {{ $blogs := $.Site.GetPage "/blog" }} {{ $blogPost := where $blogs.Pages ".Params.author" $authorName }} {{ range first 1 $blogPost }}
+              {{ $blogs := $.Site.GetPage "/blog" }} {{ $blogPost := where
+              $blogs.Pages ".Params.author" $authorName }} {{ range first 1
+              $blogPost }}
 
               <div class="modal-body--link">
                 <a href="/blog?author={{$authorName}}"
