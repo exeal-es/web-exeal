@@ -1,74 +1,107 @@
-
 {{ define "main" }}
 <section id="sect-service-training" class="dark background background-03">
-	<div class="container">
-		<div class="row mt-3 mb-3">
-			<div class="col-md-7">
-				<h1><span class="underline">Formaci&oacute;n avanzada</span> para equipos de desarrollo de software</h1>
-				<p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg"/></p>
-				<p class="bigger">Mejora <em>de forma inmediata</em> las habilidades de tu equipo técnico en areas específicas con nuestros <em>cursos intensivos</em> de nivel medio-experto.</p>
-				<a data-scroll="sect-courses" href="#" class="button">Descubre los cursos</a>
-			</div>
-			<div class="col-md-5 d-none d-sm-none d-md-block" >
-				<img class="img-fluid pad" src="/assets/img/photo-training-module.png" />
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-7">
+        <h1>
+          <span class="underline">Formaci&oacute;n avanzada</span> para equipos
+          de desarrollo de software
+        </h1>
+        <p>
+          <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
+        </p>
+        <p class="bigger">
+          Mejora <em>de forma inmediata</em> las habilidades de tu equipo
+          técnico en areas específicas con nuestros
+          <em>cursos intensivos</em> de nivel medio-experto.
+        </p>
+        <a data-scroll="sect-courses" href="#" class="button"
+          >Descubre los cursos</a
+        >
+      </div>
+      <div class="col-md-5 d-none d-sm-none d-md-block">
+        <img
+          class="img-fluid pad"
+          src="/assets/img/photo-training-module.png"
+        />
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="sect-courses" class="light">
-	<div class="container">
-		<div class="row">
-			{{ range first 1 (where .Data.Pages "Params.featured" true) }}
-			<div class="col-12">
-				<div class="course-card row no-gutters">
-					<div class="course-header col-lg-6 col-sm-12" style="background-image: url('{{ .Params.course_featured_image }}')">
-						<div class="featured-course">Curso más popular</div>
-					</div>
-					<div class="col-lg-6 col-sm-12">
-						<div class="course-body">
-							<h3>{{ .Params.course_title }}</h3>
-							{{- partial "courselevel.html" . -}}
-							<p class="description">Aprende a trabajar sobre un proyecto de código legacy sin miedo a romper todo el sistema.</p>
-							<p class="description">Evita tener que reescribir todo el código existente desde cero, mediante técnicas de mejora contínua del código.</p>
-							<ul class="course-features">
-								<div class="row">
-									<li class="col-md-6">Refactorización de dependencias</li>
-									<li class="col-md-6">Construir una red de seguridad de tests</li>
-									<li class="col-md-6">Añadir nueva funcionalidad con TDD</li>
-									<li class="col-md-6">Análisis de deuda técnica</li>
-								</div>
-							</ul>
-							<a class="button button-green expand" href="{{ .Permalink }}">Descubre el curso</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			{{ end }}
-
-			{{ range first 9 (where .Data.Pages "Params.featured" nil) }}
+  <div class="container">
+    <div class="row">
+      {{ range first 1 (where .Data.Pages "Params.featured" true) }}
+      <div class="col-12">
+        <div class="course-card row no-gutters">
+          <div
+            class="course-header col-lg-6 col-sm-12"
+            style="background-image: url('{{ .Params.course_featured_image }}')"
+          >
+            <div class="featured-course">Curso más popular</div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="course-body">
+              <h3>{{ .Params.course_title }}</h3>
+              {{- partial "courselevel.html" . -}}
+              <p class="description">
+                Aprende a trabajar sobre un proyecto de código legacy sin miedo
+                a romper todo el sistema.
+              </p>
+              <p class="description">
+                Evita tener que reescribir todo el código existente desde cero,
+                mediante técnicas de mejora contínua del código.
+              </p>
+              <ul class="course-features">
+                <div class="row">
+                  <li class="col-md-6">Refactorización de dependencias</li>
+                  <li class="col-md-6">
+                    Construir una red de seguridad de tests
+                  </li>
+                  <li class="col-md-6">Añadir nueva funcionalidad con TDD</li>
+                  <li class="col-md-6">Análisis de deuda técnica</li>
+                </div>
+              </ul>
+              <a class="button button-green expand" href="{{ .Permalink }}"
+                >Descubre el curso</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }} {{ range first 9 (where .Data.Pages "Params.featured" nil) }}
       <div class="col-md-4 col-sm-12">
-				<div class="course-card">
-					<div class="course-header" style="background-image: url('{{ .Params.course_featured_image }}')">
-					</div>
-					<div class="course-body">
-						<h3>{{ .Params.course_title }}</h3>
-						{{- partial "courselevel.html" . -}}
-						<p class="description">{{ .Description }}</p>
-						<a class="button button-green expand" href="{{ .Permalink }}">Más info</a>
-					</div>
-				</div>
-			</div>
-			{{ end }}
-		</div>
-	</div>
+        <div class="course-card">
+          <div
+            class="course-header"
+            style="background-image: url('{{ .Params.course_featured_image }}')"
+          ></div>
+          <div class="course-body">
+            <h3>{{ .Params.course_title }}</h3>
+            {{- partial "courselevel.html" . -}}
+            <p class="description">{{ .Description }}</p>
+            <a class="button button-green expand" href="{{ .Permalink }}"
+              >Más info</a
+            >
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
 </section>
 
 <section class="dark background background-03">
   <div class="container">
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+        <h2>
+          <img
+            class="arrow-right"
+            src="/assets/img/arrow-right-secondary.svg"
+          />
+        </h2>
       </div>
       <div class="col-md-10 col-sm-12">
         <h2>Conoce la <em>metodología</em> de nuestras formaciones.</h2>
@@ -77,32 +110,59 @@
     <div class="row">
       <div class="col-md-4 mb-3">
         <div class="box">
-					<div class="-top-right"></div>
-					<img class="icon-mid" src="/assets/img/icons/white/Exeal-Icon-14.png"/>
-					<h3>100% prácticos</h3>
-          <p>Una sólida base teórica, aplicada con la realización de katas en <em>pair programming</em>, e infinidad de tips extraídos de proyectos del mundo real.</p>
+          <div class="-top-right"></div>
+          <img
+            class="icon-mid"
+            src="/assets/img/icons/white/Exeal-Icon-14.png"
+          />
+          <h3>100% prácticos</h3>
+          <p>
+            Una sólida base teórica, aplicada con la realización de katas en
+            <em>pair programming</em>, e infinidad de tips extraídos de
+            proyectos del mundo real.
+          </p>
         </div>
       </div>
       <div class="col-md-4 mb-3">
         <div class="box">
-					<div class="flap flap-top-right"></div>
-					<img class="icon-mid" src="/assets/img/icons/white/Exeal-Icon-10.png"/>
-					<h3>Presencial o remoto</h3>
-					<p>Tú eliges si impartimos el curso de forma presencial en tus oficinas, o en remoto a través de videoconferencia.</p>
+          <div class="flap flap-top-right"></div>
+          <img
+            class="icon-mid"
+            src="/assets/img/icons/white/Exeal-Icon-10.png"
+          />
+          <h3>Presencial o remoto</h3>
+          <p>
+            Tú eliges si impartimos el curso de forma presencial en tus
+            oficinas, o en remoto a través de videoconferencia.
+          </p>
         </div>
       </div>
       <div class="col-md-4 mb-3">
         <div class="box">
-					<div class="flap flap"></div>
-					<img class="icon-mid" src="/assets/img/icons/white/Exeal-Icon-15.png"/>
-					<h3>Coaching técnico</h3>
-          <p>Todos los cursos incluyen un día adicional de trabajo hands-on <em>sobre el código de tu proyecto</em>, de la mano de un coach técnico experimentado.</p>
+          <div class="flap flap"></div>
+          <img
+            class="icon-mid"
+            src="/assets/img/icons/white/Exeal-Icon-15.png"
+          />
+          <h3>Coaching técnico</h3>
+          <p>
+            Todos los cursos incluyen un día adicional de trabajo hands-on
+            <em>sobre el código de tu proyecto</em>, de la mano de un coach
+            técnico experimentado.
+          </p>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <p><a class="button center-horizontal" data-scroll="sect-contact" href="#">Quiero saber más</a></p>
+        <p>
+          <a
+            class="button center-horizontal"
+            data-scroll="sect-contact"
+            href="#"
+            >Quiero saber más</a
+          >
+        </p>
       </div>
     </div>
   </div>
@@ -110,7 +170,7 @@
 
 {{- partial "testimonials.html" . -}}
 
-<section id="sect-calendly" class="light">
-    {{- partial "calendly.html" . -}}
-  </section>
+<section id="sect-contact" class="light">
+  {{- partial "calendly.html" . -}}
+</section>
 {{ end }}
