@@ -995,7 +995,6 @@ h2.with-arrow {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 
-  
   &:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
@@ -1051,9 +1050,10 @@ h2.with-arrow {
 .modal-header {
   & > .close {
     position: absolute;
-    padding: 0.5em;
-    right: 0.5em;
-    top: 0.5em;
+    opacity: 1;
+    right: 20px;
+    width: 70px;
+    height: 70px;
   }
 
   & > img {
@@ -1088,9 +1088,8 @@ h2.with-arrow {
     flex-direction: column;
 
     & > .close {
-       height: 1.5em;
-       width: 1.5em;
-    }
+      position: unset;
+  }
 
     & > img {
       width: 100%;

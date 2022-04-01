@@ -5,41 +5,45 @@
     <div class="row justify-content-center">
       {{ range .Params.team }} {{$authorName := .name}} {{ $data := index
       $.Site.Data.authors $authorName }}
-      <div class="team-card col-12 col-md-4 col-lg-4">
-        <div data-toggle="modal" data-target="#{{$data.name}}">
-          <div
-            class="team-card-header"
-            style="background-image: url('{{$data.avatar}}')"
-          ></div>
-          <div class="team-card-body d-flex flex-column">
-            <h3>{{ $data.name }}</h3>
-            <p class="description">{{ $data.role }}</p>
-            <ul class="social-icons list-inline">
-              {{ if ($data.social.twitter) }}
-              <li class="list-inline-item">
-                <a target="_blank" href="{{ $data.social.twitter }}">
-                  <img src="/assets/img/blog/social-icons/icon-twitter.svg" />
-                </a>
-              </li>
-              {{ end }} {{ if ($data.social.linkedin) }}
-              <li class="list-inline-item">
-                <a target="_blank" href="{{ $data.social.linkedin }}">
-                  <img src="/assets/img/blog/social-icons/icon-linkedin.svg" />
-                </a>
-              </li>
-              {{ end }} {{ if ($data.social.github) }}
-              <li class="list-inline-item">
-                <a target="_blank" href="{{ $data.social.github }}">
-                  <img src="/assets/img/blog/social-icons/icon-github.svg" />
-                </a>
-              </li>
-              {{ end }}
-              <li class="list-inline-item">
-                <a target="_blank" href="mailto:{{ $data.social.email }}">
-                  <img src="/assets/img/blog/social-icons/icon-email.svg" />
-                </a>
-              </li>
-            </ul>
+      <div class="col-12 col-md-4 col-lg-4">
+        <div class="team-card">
+          <div data-toggle="modal" data-target="#{{$data.name}}">
+            <div
+              class="team-card-header"
+              style="background-image: url('{{$data.avatar}}')"
+            ></div>
+            <div class="team-card-body d-flex flex-column">
+              <h3>{{ $data.name }}</h3>
+              <p class="description">{{ $data.role }}</p>
+              <ul class="social-icons list-inline">
+                {{ if ($data.social.twitter) }}
+                <li class="list-inline-item">
+                  <a target="_blank" href="{{ $data.social.twitter }}">
+                    <img src="/assets/img/blog/social-icons/icon-twitter.svg" />
+                  </a>
+                </li>
+                {{ end }} {{ if ($data.social.linkedin) }}
+                <li class="list-inline-item">
+                  <a target="_blank" href="{{ $data.social.linkedin }}">
+                    <img
+                      src="/assets/img/blog/social-icons/icon-linkedin.svg"
+                    />
+                  </a>
+                </li>
+                {{ end }} {{ if ($data.social.github) }}
+                <li class="list-inline-item">
+                  <a target="_blank" href="{{ $data.social.github }}">
+                    <img src="/assets/img/blog/social-icons/icon-github.svg" />
+                  </a>
+                </li>
+                {{ end }}
+                <li class="list-inline-item">
+                  <a target="_blank" href="mailto:{{ $data.social.email }}">
+                    <img src="/assets/img/blog/social-icons/icon-email.svg" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
