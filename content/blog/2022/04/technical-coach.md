@@ -13,14 +13,14 @@ card_image: "/assets/img/blog/posts/technical-coaching.jpg"
 
 ## Cómo y por qué acabé siendo technical coach
 
-Hace tres meses comencé una nueva aventura profesional en [Exeal](https://www.exeal.com/) (una empresa que se dedica a mejorar las habilidades de los equipos que desarrollan software). Buscaban a alguien que quisiera ejercer el rol de [technical coach](https://twitter.com/ppardalj/status/1444918028156772353). Aunque en ese momento yo no estaba buscando un cambio y no tenía ninguna experencia formal en el puesto, no pude resistirme la por dos motivos principalmente:
+Hace tres meses comencé una nueva aventura profesional en [Exeal](https://www.exeal.com/) (una empresa que se dedica a mejorar las habilidades de los equipos que desarrollan software). Buscaban a alguien que quisiera ejercer el rol de [technical coach](https://twitter.com/ppardalj/status/1444918028156772353). Aunque en ese momento yo no estaba buscando un cambio y no tenía ninguna experencia formal en el puesto, no pude resistirme por dos motivos principalmente:
 
 - 🙀 por un lado es un puesto de trabajo nada común en España, y me parecía que no iba a encontrar muchas oportunidades como esa.
 - 😻 además, desde siempre la parte de la informática que más me ha interesado ha sido la que tiene que ver con buenas prácticas (diseño, principios de programación,...). Durante los últimos 4 años había estado trabajando en un empresa ([Alea Soluciones](https://www.alea-soluciones.com/)) con una implementación de eXtreme programming muy fuerte; y tenía claro me encantaría poder dedicar todo mi tiempo a profundizar aún más en las prácticas que esta filosofía propone.
 
 ## ¿Pero qué hace un technical coach exactamente?
 
-El technical coach tiene objetivo es asegurar la mejora de las capacidades técnicas de los equipos de desarrollo. Cualquiera que ayude al equipo a mejorar técnicamente. Principalmente se engloban en:
+El technical coach tiene como objetivo asegurar la mejora de las capacidades técnicas de los equipos de desarrollo. Cualquiera que ayude al equipo a mejorar técnicamente. Principalmente se engloban en:
 
 - ✅ Diseño guiado por tests: Test Driven Development / Behaviour Driven Development
 - 👍🏼 Escribir buen código: principios de diseño orientado a objetos, refactoring, productividad con el IDE, DDD,...
@@ -52,11 +52,11 @@ Para llevar a cabo todos estos objetivos, se realizan una serie de actividades, 
 - 📸 Vas a exponerte continuamente: ten en cuenta que gran parte de tu tiempo estarás con ayudando a otras personas que te plantearán sus dudas y dolores y que esperan que les ayudes a solucionarlos.
 - 🗣️ Prepárate para hablar mucho, marcar el ritmo y estar pendiente de muchas cosas.
 - 🛠️ Tienes que ser generalista o tener la capacidad para serlo. Hay que ser consciente de que cada equipo tiene sus lenguajes, herramientas y técnicas. Yo en sólo 3 meses he tocado varias cosas que no conocía (C#, Angular, los IDEs de Jetbrains,...). Por suerte todo esto son más bien detalles, y los principios que hay detrás de todo lo importante se mantienen.
-- 💡 Cualquier persona que se dedica al desarrollo de software necesita tener el aprendizaje continuo con uno de sus pilares, pero en el caso de un technical coach es vital. No simplemente por el tema de las herramientas que comentaba en el punto anterior, si no sobretodo por los principios y técnicas más importantes que nunca se acaban de dominar completamente y por cuestionarnos todo lo que sabemos y no caer el el dogmatismo.
+- 💡 Cualquier persona que se dedica al desarrollo de software necesita tener el aprendizaje continuo como uno de sus pilares, pero en el caso de un technical coach es vital. No simplemente por el tema de las herramientas que comentaba en el punto anterior, si no sobretodo por los principios y técnicas más importantes que nunca se acaban de dominar completamente y por cuestionarnos todo lo que sabemos y no caer el el dogmatismo.
 
 ## Conclusión
 
-Paradójicamente, creo que lo mejor de este trabajo es lo que llegas a aprender (¿se supone que debería ser al revés? 😅). En sólo 3 meses tengo la sensación de haber asentado y descubierto un montón de cosas, y estoy seguro que cuando cumpla 1 año en Exeal y haga retrospectiva el conocimiento y experiencia acumulados sea brutal.
+Paradójicamente, creo que lo mejor de este trabajo es lo que llegas a aprender (¿se supone que debería ser al revés? 😅). En sólo 3 meses tengo la sensación de haber asentado y descubierto un montón de cosas, y estoy seguro que cuando cumpla 1 año en Exeal y haga retrospectiva el conocimiento y la experiencia que haya acumulado será brutal.
 
 Aunque como comentaba al principio es un puesto que escasea (sobretodo en España) creo que poco a poco cada vez va a verse más, y que es muy necesario este rol técnico que ayude a superar algunos de los errores que se han cometido en la expansión y implantación de “Agile” en los últimos años.
 
