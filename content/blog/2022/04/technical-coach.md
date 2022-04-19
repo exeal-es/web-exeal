@@ -1,8 +1,8 @@
 ---
-title: "El rol de technical coach"
-description: "¿Podría ser para mí?"
+title: "El rol de technical coach: ¿podría ser para mí?"
+description: "Resumen de mis 3 primeros meses en Exeal"
 author: raulvillares
-date: 2022-04-17T00:10:00+01:00
+date: 2022-04-19T00:10:00+01:00
 layout: post
 tags: ["coaching", "team-work", "agile"]
 images:
