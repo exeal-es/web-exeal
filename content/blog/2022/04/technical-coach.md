@@ -49,7 +49,7 @@ Para llevar a cabo todos estos objetivos, se realizan una serie de actividades, 
 ## A tener en cuenta...
 
 - 🚀 Para empezar a ejercer de technical coach no hace falta que tengas experiencia como tal (siempre hay una primera vez ¿verdad?), pero sí en las prácticas técnicas mencionadas anteriormente y que además tengas las soft skills necesarias.
-- 📸 Vas a exponerte continuamente: ten en cuenta que gran parte de tu tiempo estarás con ayudando a otras personas que te plantearán sus dudas y dolores y que esperan que les ayudes a solucionarlos.
+- 📸 Vas a exponerte continuamente: ten en cuenta que gran parte de tu tiempo estarás ayudando a otras personas que te plantearán sus dudas y dolores y que esperan que les ayudes a solucionarlos.
 - 🗣️ Prepárate para hablar mucho, marcar el ritmo y estar pendiente de muchas cosas.
 - 🛠️ Tienes que ser generalista o tener la capacidad para serlo. Hay que ser consciente de que cada equipo tiene sus lenguajes, herramientas y técnicas. Yo en sólo 3 meses he tocado varias cosas que no conocía (C#, Angular, los IDEs de Jetbrains,...). Por suerte todo esto son más bien detalles, y los principios que hay detrás de todo lo importante se mantienen.
 - 💡 Cualquier persona que se dedica al desarrollo de software necesita tener el aprendizaje continuo como uno de sus pilares, pero en el caso de un technical coach es vital. No simplemente por el tema de las herramientas que comentaba en el punto anterior, si no sobretodo por los principios y técnicas más importantes que nunca se acaban de dominar completamente y por cuestionarnos todo lo que sabemos y no caer el el dogmatismo.
