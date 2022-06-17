@@ -126,7 +126,7 @@ a.nav-button {
   align-items: center;
   padding-left: 1em !important;
   padding-right: 1em !important;
-  color: $dark-background-color !important;
+  color: $dark-background-color  !important;
   border-radius: 2rem;
 }
 
@@ -246,7 +246,7 @@ section.background {
     transition: fill 0.25s ease;
   }
 
-  & li a + svg {
+  & li a+svg {
     display: block;
     position: absolute;
     top: 0;
@@ -296,7 +296,7 @@ div.box {
     margin: auto;
   }
 
-  & > div.flap {
+  &>div.flap {
     display: block;
     border-color: $primary-color;
     position: absolute;
@@ -304,7 +304,7 @@ div.box {
     width: 10em;
   }
 
-  & > div.flap-top-right {
+  &>div.flap-top-right {
     border-top-right-radius: 50%;
     border-right-style: solid;
     border-top-style: solid;
@@ -313,7 +313,7 @@ div.box {
     right: -4px;
   }
 
-  & > div.flap-top-left {
+  &>div.flap-top-left {
     border-top-left-radius: 50%;
     border-left-style: solid;
     border-top-style: solid;
@@ -322,7 +322,7 @@ div.box {
     left: -4px;
   }
 
-  & > div.flap-bottom-left {
+  &>div.flap-bottom-left {
     border-bottom-left-radius: 50%;
     border-left-style: solid;
     border-bottom-style: solid;
@@ -331,7 +331,7 @@ div.box {
     left: -4px;
   }
 
-  & > div.flap-bottom-right {
+  &>div.flap-bottom-right {
     border-bottom-right-radius: 50%;
     border-right-style: solid;
     border-bottom-style: solid;
@@ -352,7 +352,7 @@ div.box.case-study-info {
     color: $mid-gray;
   }
 
-  & > img {
+  &>img {
     height: 3em;
   }
 }
@@ -418,6 +418,16 @@ footer {
     padding-bottom: 3em;
   }
 
+  & p {
+    font-size: 0.8em;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      line-height: 1em;
+    }
+  }
+
   & a {
     color: $mid-gray;
   }
@@ -430,6 +440,12 @@ footer {
   & li img {
     width: 2em;
     height: 2em;
+  }
+
+  & .social-media {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 }
 
@@ -560,7 +576,7 @@ p.taxes {
     margin-bottom: 1em;
   }
 
-  & > * {
+  &>* {
     vertical-align: middle;
   }
 
@@ -582,7 +598,7 @@ p.taxes {
 
   & .customer-info p {
     margin: 0px;
-    color: $mid-gray !important;
+    color: $mid-gray  !important;
     font-size: 0.9em;
     line-height: 1.25em;
   }
@@ -644,7 +660,7 @@ div.thank-you-hero {
 }
 
 img.client-logo {
-  padding: 1.5rem;
+  padding: 0.2rem;
   max-width: 10rem;
 }
 
@@ -848,7 +864,7 @@ img.icon-mid {
   display: none;
 }
 
-.checkbox-container input:checked ~ .checkmark:after {
+.checkbox-container input:checked~.checkmark:after {
   display: block;
 }
 
@@ -972,16 +988,16 @@ h2.with-arrow {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.case-study-card > .container {
+.case-study-card>.container {
   padding: 16px 32px;
 }
 
-.case-study-card > .container > h4 {
+.case-study-card>.container>h4 {
   font-weight: 900;
   font-size: 0.95em;
 }
 
-.case-study-card > .container > h6 {
+.case-study-card>.container>h6 {
   font-size: 0.75em;
   color: #838383;
   margin-bottom: 1em;
@@ -1048,7 +1064,7 @@ h2.with-arrow {
 }
 
 .modal-header {
-  & > .close {
+  &>.close {
     position: absolute;
     opacity: 1;
     right: 20px;
@@ -1056,7 +1072,7 @@ h2.with-arrow {
     height: 70px;
   }
 
-  & > img {
+  &>img {
     width: 10em;
     margin-right: 2em;
     -webkit-transition: 0.3s ease-in-out;
@@ -1068,16 +1084,16 @@ h2.with-arrow {
     flex-direction: column;
     width: 100%;
 
-    & > p:first-child {
+    &>p:first-child {
       font-weight: 800;
       font-family: "Gopher Regular";
     }
 
-    & > p {
+    &>p {
       margin: 0;
     }
 
-    & > ul {
+    &>ul {
       margin-top: 1em;
     }
   }
@@ -1087,11 +1103,11 @@ h2.with-arrow {
   .modal-header {
     flex-direction: column;
 
-    & > .close {
+    &>.close {
       position: unset;
-  }
+    }
 
-    & > img {
+    &>img {
       width: 100%;
       margin-top: 1em;
     }
@@ -1102,7 +1118,7 @@ h2.with-arrow {
   &--link {
     margin-top: 1em;
 
-    & > a {
+    &>a {
       color: $primary-color;
       font-weight: 800;
     }
