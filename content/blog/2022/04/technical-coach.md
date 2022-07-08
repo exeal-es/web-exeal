@@ -52,14 +52,14 @@ Para llevar a cabo todos estos objetivos, se realizan una serie de actividades, 
 - 📸 Vas a exponerte continuamente: ten en cuenta que gran parte de tu tiempo estarás ayudando a otras personas que te plantearán sus dudas y dolores y que esperan que les ayudes a solucionarlos.
 - 🗣️ Prepárate para hablar mucho, marcar el ritmo y estar pendiente de muchas cosas.
 - 🛠️ Tienes que ser generalista o tener la capacidad para serlo. Hay que ser consciente de que cada equipo tiene sus lenguajes, herramientas y técnicas. Yo en sólo 3 meses he tocado varias cosas que no conocía (C#, Angular, los IDEs de Jetbrains,...). Por suerte todo esto son más bien detalles, y los principios que hay detrás de todo lo importante se mantienen.
-- 💡 Cualquier persona que se dedica al desarrollo de software necesita tener el aprendizaje continuo como uno de sus pilares, pero en el caso de un technical coach es vital. No simplemente por el tema de las herramientas que comentaba en el punto anterior, si no sobretodo por los principios y técnicas más importantes que nunca se acaban de dominar completamente y por cuestionarnos todo lo que sabemos y no caer el el dogmatismo.
+- 💡 Cualquier persona que se dedica al desarrollo de software necesita tener el aprendizaje continuo como uno de sus pilares, pero en el caso de un technical coach es vital. No simplemente por el tema de las herramientas que comentaba en el punto anterior, si no sobre todo por los principios y técnicas más importantes que nunca se acaban de dominar completamente y por cuestionarnos todo lo que sabemos y no caer el el dogmatismo.
 
 ## Conclusión
 
 Paradójicamente, creo que lo mejor de este trabajo es lo que llegas a aprender (¿se supone que debería ser al revés? 😅). En sólo 3 meses tengo la sensación de haber asentado y descubierto un montón de cosas, y estoy seguro que cuando cumpla 1 año en Exeal y haga retrospectiva el conocimiento y la experiencia que haya acumulado será brutal.
 
-Aunque como comentaba al principio es un puesto que escasea (sobretodo en España) creo que poco a poco cada vez va a verse más, y que es muy necesario este rol técnico que ayude a superar algunos de los errores que se han cometido en la expansión y implantación de “Agile” en los últimos años.
+Aunque como comentaba al principio es un puesto que escasea (sobre todo en España) creo que poco a poco cada vez va a verse más, y que es muy necesario este rol técnico que ayude a superar algunos de los errores que se han cometido en la expansión y implantación de “Agile” en los últimos años.
 
 ### Postdata
 
-Para saber más sobre este puesto de trabajo, [el libro de Emily Blanche](https://leanpub.com/techagilecoach) sobre el tema te puede ayudar a hacerte una idea detallada e incluso a prepararte para ejercer como technical coach.
+Para saber más sobre este puesto de trabajo, [el libro de Emily Bache](https://leanpub.com/techagilecoach) sobre el tema te puede ayudar a hacerte una idea detallada e incluso a prepararte para ejercer como technical coach.
