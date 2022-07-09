@@ -23,6 +23,10 @@ a.button.expand {
 	width: 100%;
 }
 
+a.button.button-center {
+	margin: auto;
+}
+
 .dark a.button {
 	color: $dark-background-color;
 }
