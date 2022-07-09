@@ -459,6 +459,16 @@ ul.ticked li {
   padding-bottom: 0.75rem;
 }
 
+ul.ticked-cross li {
+  background-image: url("/assets/img/Red_X.svg");
+  background-position-y: 0.4em;
+  background-position-x: 0.75rem;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  padding-left: 2.75rem;
+  padding-bottom: 0.75rem;
+}
+
 div.icon-container {
   min-height: 5.5em;
   display: flex;
