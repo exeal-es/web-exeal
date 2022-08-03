@@ -1,8 +1,8 @@
 ---
 title: El principio FIRST
 description: Una breve introducción a los principios FIRST
-author: Damián Pumar
-date: 2022-08-02T23:10:00.000Z
+author: damianpumar
+date: 2022-08-03T23:10:00.000Z
 layout: post
 tags: [FIRST, unit test, testing]
 images: [/assets/img/blog/posts/unit-tests.png]
