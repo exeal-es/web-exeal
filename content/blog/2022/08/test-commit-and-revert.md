@@ -10,11 +10,9 @@ featured_image: /assets/img/blog/posts/test-and-commit-or-revert.jpeg
 card_image: /assets/img/blog/posts/test-and-commit-or-revert.jpeg
 ---
 
-¡Hola! ¿cómo están? Espero que muy bien, Soy Damián 👋, Technical Coach en [Exeal](https://www.exeal.com/), y en esta oportunidad me gustaría explicarles brevemente
-
 ## TCR (Test && Commit || Revert)
 
-Hace un tiempo me encontré con un blog del gran maestro [Kent Beck](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864) un flujo de trabajo nuevo llamado TCR (Test && Commit || Revert) donde cada vez que un Test se ejecuta y pasa correctamente el código se «comitea», pero si no pasa el Test el nuevo código... se borra (git reset --hard).
+Hace un tiempo me encontré en un blog del gran maestro [Kent Beck](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864) un flujo de trabajo nuevo llamado TCR (Test && Commit || Revert) donde cada vez que un Test se ejecuta y pasa correctamente el código se «comitea», pero si no pasa el Test el nuevo código... se borra (git reset --hard).
 
 ## Pongamos en práctica
 
