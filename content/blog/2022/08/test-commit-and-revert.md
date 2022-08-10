@@ -47,6 +47,15 @@ Una vez que tengamos los ficheros ejecutamos los scripts de la siguiente manera 
  test.bat && commit.bat || revert.bat
 ```
 
+## Conclusiones
+
+Es cierto que esta técnica puede ser un poco molesta, y mucho más si trabajamos con TDD, se imaginan... en cada flujo de TDD (Red - Green - Refactor) haríamos un revert cada vez que hagamos un nuevo test, por este motivo, esto es inviable en TDD.
+Pero para ello, también existen algunos scripts que nos permiten hacer un revert solo del código productivo.
+
+Es importante aclarar que esta técnica es muy útil cuando queremos forzarnos a escribir el mínimo código productivo posible para poner en verde nuestro test, y para practicar [baby steps](https://kata-log.rocks/baby-steps) (hacer pequeños pasos de bebé para avanzar con nuestro diseño).
+
+Los invito a probar esta técnica y que nos comenten en [@exeal](https://twitter.com/exeal) qué les pareció.
+
 Espero que hayas podido disfrutar de este post, ¡nos estamos viendo!
 
 ¡Saludos! 🖖
