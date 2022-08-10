@@ -266,6 +266,11 @@ function roman(digit) {
 }
 ```
 
+## Conclusiones
+
+TPP promete mejorar la eficiencia de los desarrolladores que trabajan en un entorno TDD al ayudar a evitar impases. Proporciona medios útiles para superar los obstáculos en el diseño e implementación de pruebas unitarias. Aunque la lista específica de transformaciones aplicadas puede variar entre los desarrolladores, la premisa de priorizar la simplicidad establece un sistema que es fácil de seguir. 
+Es probable que la técnica aumente en importancia y aplicabilidad a medida que se estudia, mejora y formaliza.
+
 Espero que hayas podido disfrutar de este post, ¡nos estamos viendo!
 
 ¡Saludos! 🖖
