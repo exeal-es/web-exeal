@@ -5,9 +5,9 @@ author: damianpumar
 date: 2022-08-03T23:10:00.000Z
 layout: post
 tags: [FIRST, unit test, testing]
-images: [/assets/img/blog/posts/unit-tests.png]
-featured_image: /assets/img/blog/posts/unit-tests.png
-card_image: /assets/img/blog/posts/unit-tests.png
+images: [/assets/img/blog/posts/first.jpg]
+featured_image: /assets/img/blog/posts/first.jpg
+card_image: /assets/img/blog/posts/first.jpg
 ---
 
 ## El principio FIRST
@@ -48,7 +48,13 @@ Todo esto podría pasar mientras nosotros estamos realizando otra tarea, sin pre
 
 ## Timely (oportuno)
 
-Esta última característica se basa en cuándo deberíamos tener desarrolladas las pruebas, que deben estar desarrolladas lo antes posible y siempre antes de subir código a producción, e invirtiendo un tiempo razonable para desarrollarlas.
+Esta última característica se basa en el **cuándo** deberíamos tener desarrolladas las pruebas.
+Estas deben estar desarrolladas lo antes posible y siempre antes de subir código a producción, e invirtiendo un tiempo razonable para desarrollarlas.
+
+## Conclusiones
+
+Cumplir estos principios en nuestros tests, es todo un desafío, pero está claro que si lo logramos, vamos a tener unos tests automatizados que aporten un valor en nuestro producto sin lugar a dudas.
+En mi experiencia, la característica más difícil de mantener es **Fast** ya que con el tiempo conlleva un gran esfuerzo mantener los tests rápidos, probablemente por la cantidad de iteraciones de nuestro producto perdemos el foco de los tests.
 
 Bien! ahora que tenemos en claro que son los principios FIRST, te invitamos a que revises detenidamente tus pruebas unitarias para determinar si cumplen o no con estos principios, y te animamos a compartirlo con nosotros escribiéndonos a [@exeal](https://twitter.com/exeal).
 
