@@ -1,2 +1,16 @@
 clientsheader:
   other: These clients have already trusted us
+fieldname:
+  other: Name
+fieldsurname:
+  other: Surname
+fieldphone:
+  other: Phone number
+fieldcompany:
+  other: Company name
+fieldcontactmsg:
+  other: Tell us about your team's challenges
+checkcomms:
+  other: I agree to receive commercial communications and offers from Excel.
+btnsend:
+  other: Send

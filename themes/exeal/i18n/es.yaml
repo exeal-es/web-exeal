@@ -1,2 +1,16 @@
 clientsheader:
   other: Estos clientes ya han confiado en nosotros
+fieldname:
+  other: Nombre
+fieldsurname:
+  other: Apellidos
+fieldphone:
+  other: Teléfono
+fieldcompany:
+  other: Compañía
+fieldcontactmsg:
+  other: Cuéntanos acerca de los retos de tu equipo
+checkcomms:
+  other: Acepto recibir comunicaciones comerciales u ofertas por parte de Exeal.
+btnsend:
+  other: Enviar
