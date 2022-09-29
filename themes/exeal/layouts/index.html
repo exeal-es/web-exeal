@@ -3,12 +3,10 @@
   <div class="container">
     <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
       <div class="col-md-12">
-        <h1>Acompañamiento técnico para tu equipo de desarrollo</h1>
-        <h4>
-          Ayudamos a líderes técnicos a mejorar las prácticas de su equipo para acelerar la entrega de software y eliminar los bugs.
-        </h4>
+        <h1>{{ .Params.texts.hero.header | safeHTML }}</h1>
+        <h4>{{ .Params.texts.hero.subheader | safeHTML }}</h4>
         <p>
-          <a data-scroll="sect-contact" href="#" class="button button-center">Charlemos sobre tu equipo</a>
+          <a data-scroll="sect-contact" href="#" class="button button-center">{{ .Params.texts.common.call_to_action }}</a>
         </p>
       </div>
     </div>
@@ -28,32 +26,25 @@
       </div>
       <div class="col-md-10 col-sm-12">
         <h2>
-          Entregar software de calidad a tiempo <em>no tiene por qué ser doloroso.</em>
+          {{ .Params.texts.stakes.header | safeHTML }}
         </h2>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <p>
-          ¿Están preparados tu software y tus procesos para que tu equipo aporte valor de forma continua, cumpliendo las fechas de entrega? O por el contrario se oyen cosas como...
-        </p>
+        <p>{{ .Params.texts.stakes.p1 | safeHTML }}</p>
         <ul class="row ticked-cross">
-          <li class="col-md-6">"Estamos saturados arreglando bugs y no podemos añadir nuevas funcionalidades."</li>
-          <li class="col-md-6">"Tenemos que dedicar un sprint entero a refactorizar."</li>
-          <li class="col-md-6">"Al añadir la nueva funcionalidad se han roto otras tres."</li>
-          <li class="col-md-6">"Es imposible trabajar porque hay demasiada deuda técnica."</li>
-          <li class="col-md-6">"Fulanito se ha ido de vacaciones y es el único que controla este tema."</li>
-          <li class="col-md-6">"El cambio ya está hecho, pero hasta la release de dentro de dos semanas no llegará a producción."</li>
+          {{ range .Params.texts.stakes.list }}
+          <li class="col-md-6">{{ . }}</li>
+          {{ end }}
         </ul>
-        <p>
-          Sin las prácticas ni el mindset adecuados, tu equipo permanecerá <em>lento, ahogado con incidencias y frustrado</em>.
-        </p>
+        <p>{{ .Params.texts.stakes.p2 | safeHTML }}</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <p>
-          <a data-scroll="sect-contact" href="#" class="button button-center">Charlemos sobre tu equipo</a>
+          <a data-scroll="sect-contact" href="#" class="button button-center">{{ .Params.texts.common.call_to_action }}</a>
         </p>
       </div>
     </div>
@@ -72,48 +63,26 @@
         </h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2>
-          Llevaremos a tu equipo al <em>alto rendimiento</em>, de forma que serán capaces de...
-        </h2>
+        <h2>{{ .Params.texts.valueprop.what | safeHTML }}</h2>
       </div>
     </div>
 
     <div class="row">
+      {{ range .Params.texts.valueprop.benefits }}
       <div class="col-xl-4 mb-3">
         <div class="box">
           <div class="flap flap-top-right"></div>
-          <img src="/assets/img/icon-apprenticeship.svg" />
-          <p>
-            Producir software fácil de extender y mantener, entregado a tiempo al mercado.
-          </p>
+          <img src="{{ .icon }}" />
+          <p>{{ .text | safeHTML }}</p>
         </div>
       </div>
-      <div class="col-xl-4 mb-3">
-        <div class="box">
-          <div class="flap flap-top-right"></div>
-          <img src="/assets/img/icon-coaching.svg" />
-          <p>
-            Minimizar los defectos en el producto y las sorpresas en los despliegues.
-          </p>
-        </div>
-      </div>
-      <div class="col-xl-4 mb-3">
-        <div class="box">
-          <div class="flap flap-top-right"></div>
-          <img src="/assets/img/icon-training.svg" />
-          <p>
-            Aportar valor al negocio desde el primer momento y de forma constante
-          </p>
-        </div>
-      </div>
+      {{ end }}
     </div>
 
     <div class="container">
       <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
         <div class="col-md-12">
-          <p>
-            Lo conseguiremos fomentando una cultura de <em>excelencia técnica</em>, <em>colaboración</em> y <em>mejora continua</em>.
-          </p>
+          <p>{{ .Params.texts.valueprop.how | safeHTML }}</p>
         </div>
       </div>
     </div>
@@ -121,7 +90,7 @@
     <div class="row justify-content-center align-items-center text-center">
       <div class="col-m-12">
         <p>
-          <a data-scroll="sect-contact" href="#" class="button button-center">Charlemos sobre tu equipo</a>
+          <a data-scroll="sect-contact" href="#" class="button button-center">{{ .Params.texts.common.call_to_action }}</a>
         </p>
       </div>
     </div>
@@ -140,16 +109,12 @@
         </h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2>
-          Deja guiar a tu equipo por expertos
-        </h2>
+        <h2>{{ .Params.texts.team.header }}</h2>
       </div>
     </div>
     <div class="row justify-content-center text-center">
       <div class="col-md-12">
-        <p>
-          Los technical coaches que acompañarán a tu equipo son desarrolladores y líderes técnicos con amplia experiencia trabajando en equipos de alto rendimiento.
-        </p>
+        <p>{{ .Params.texts.team.p }}</p>
       </div>
       {{ range .Params.team }} {{$authorName := .name}} {{ $data := index $.Site.Data.authors $authorName }}
       <div class="col-12 col-md-4 col-lg-4">
@@ -201,72 +166,42 @@
         <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2>¿Cómo es trabajar con nosotros?</h2>
+        <h2>{{ .Params.texts.guide.header }}</h2>
       </div>
     </div>
     <div class="row mt-3">
+      {{ range .Params.texts.guide.features }}
       <div class="col-md-4">
         <div class="icon-container">
-          <img src="/assets/img/legacy/icons/icon-01.svg" />
+          <img src="{{ .icon }}" />
         </div>
-        <p>Trabajaremos codo con codo con los desarrolladores <em>desde el día a día</em> de su proyecto, en sesiones de Pair/Mob programming.</p>
+        <p>{{ .text | safeHTML }}</p>
       </div>
-      <div class="col-md-4">
-        <div class="icon-container">
-          <img src="/assets/img/legacy/icons/icon-06.svg" />
-        </div>
-        <p>Pondremos el <em>foco en el negocio</em>, facilitando la colaboración entre desarrolladores y stakeholders para aportar valor de forma continua.</p>
-      </div>
-      <div class="col-md-4">
-        <div class="icon-container">
-          <img src="/assets/img/legacy/icons/icon-02.svg" />
-        </div>
-        <p>Perseguiremos la excelencia técnica, fomentando la adopción de <em>buenas prácticas técnicas</em> (Agile, XP, DevOps) y hábitos que permitan la adopción de un ritmo sostenible.</p>
-      </div>
-      <div class="col-md-4">
-        <div class="icon-container">
-          <img src="/assets/img/legacy/icons/icon-04.svg" />
-        </div>
-        <p>Ayudaremos al equipo a dar forma a una <em>visión técnica</em> que habilite la evolución del negocio.</p>
-      </div>
-      <div class="col-md-4">
-        <div class="icon-container">
-          <img src="/assets/img/legacy/icons/icon-03.svg" />
-        </div>
-        <p><em>Formaremos al equipo</em> en aquellos conocimientos de los que pueda carecer, en el momento oportuno y desde un punto de vista aplicado, mediante Learning Hours.</p>
-      </div>
-      <div class="col-md-4">
-        <div class="icon-container">
-          <img src="/assets/img/legacy/icons/icon-05.svg" />
-        </div>
-        <p>Lograremos un <em>impacto a largo plazo</em>. Cuando nos vayamos, el cambio cultural y de mindset del equipo perdurará.</p>
-      </div>
+      {{ end }}
     </div>
     <div class="row">
       <div class="col-md-12">
         <p>
-          <a data-scroll="sect-contact" href="#" class="button button-center">Charlemos sobre tu equipo</a>
+          <a data-scroll="sect-contact" href="#" class="button button-center">{{ .Params.texts.common.call_to_action }}</a>
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="sect-video">
+<section id="sect-socialproof">
   <div class="container">
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
         <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2>¿Qué dicen nuestros clientes?</h2>
+        <h2>{{ .Params.texts.socialproof.header }}</h2>
       </div>
     </div>
     <div class="row justify-content-center text-center">
       <div class="col-md-12">
-        <p>
-          Clica en el video para descubrir cómo ayudamos a BAB a automatizar el despliegue de nuevas versiones de su SAAS para +50 clientes, así como a optimizar el ciclo de vida de desarrollo mediante la adopción de buenas prácticas.
-        </p>
+        <p>{{ .Params.texts.socialproof.subheader }}</p>
       </div>
     </div>
     <div class="row">
@@ -286,28 +221,20 @@
         <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
           <div class="box">
             <div class="flap flap-top-right"></div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <p>&ldquo;Ver al equipo motivado y con ganas ha sido muy positivo. Gana el equipo, gana la empresa y también ganan los empleados a nivel personal ya que obtienen un aprendizaje y una formación extra que tiene un retorno muy positivo&rdquo;</p>
-                  <div class="customer">
-                    <img class="rounded-circle avatar" src="/assets/img/testimonials/gerard-artes.jpg"/>
-                    <div class="customer-info">
-                      <p>Gerard Artés</p>
-                      <p>CTO & Co-founder @ BAB</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <p>&ldquo;Tras empezar a trabajar con Exeal, volvemos a respirar en el equipo el aprendizaje, las preguntas, las lecturas... El éxito principal es ayudar a crecer y retener a nuestros profesionales.&rdquo;</p>
-                  <div class="customer">
-                    <img class="rounded-circle avatar" src="/assets/img/testimonials/emilio-macias.jpeg"/>
-                    <div class="customer-info">
-                      <p>Emilio Macías</p>
-                      <p>Director de operaciones @ AIDA (Domingo Alonso Group)</p>
-                    </div>
+            <div class="carousel-inner">
+              {{ range .Params.texts.testimonials }}
+              <div class="carousel-item {{ if eq .active true }}active{{ end }}">
+                <p>{{ .text | safeHTML }}</p>
+                <div class="customer">
+                  <img class="rounded-circle avatar" src="{{ .photo }}"/>
+                  <div class="customer-info">
+                    <p>{{ .name }}</p>
+                    <p>{{ .position }}</p>
                   </div>
                 </div>
               </div>
+              {{ end }}
+            </div>
           </div>
           
           <div class="carousel-indicators-parent">
@@ -325,7 +252,7 @@
 
 {{ partial "clients.html" (dict "context" . "background" "light")}}
 
-<section id="sect-value-proposition" class="dark background background-01">
+<section id="sect-plan" class="dark background background-01">
   <div class="container">
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
@@ -337,49 +264,27 @@
         </h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2>
-          Emprende ahora el camino hacia el alto rendimiento
-        </h2>
+        <h2>{{ .Params.texts.plan.header | safeHTML }}</h2>
       </div>
     </div>
 
     <div class="row">
+      {{ range .Params.texts.plan.steps }}
       <div class="col-xl-4 mb-3">
         <div class="box">
           <div class="flap flap-top-right"></div>
-          <p class="price">- 1 -</p>
-          <h3>Análisis</h3>
-          <p>
-            Cuéntanos, en una sesión gratuita y sin compromiso, cuáles son los retos y necesidades de tu equipo.
-          </p>
+          <p class="price">- {{ .number }} -</p>
+          <h3>{{ .title }}</h3>
+          <p>{{ .description }}</p>
         </div>
       </div>
-      <div class="col-xl-4 mb-3">
-        <div class="box">
-          <div class="flap flap-top-right"></div>
-          <p class="price">- 2 -</p>
-          <h3>Plan</h3>
-          <p>
-            Nos reunimos con tu equipo para acordar los objetivos, contenidos y formato del coaching.
-          </p>
-        </div>
-      </div>
-      <div class="col-xl-4 mb-3">
-        <div class="box">
-          <div class="flap flap-top-right"></div>
-          <p class="price">- 3 -</p>
-          <h3>Coaching</h3>
-          <p>
-            Nos integramos al día a día de tu equipo para potenciar sus prácticas técnicas.
-          </p>
-        </div>
-      </div>
+      {{ end }}
     </div>
 
     <div class="row justify-content-center align-items-center text-center">
       <div class="col-m-12">
         <p>
-          <a data-scroll="sect-contact" href="#" class="button button-center">Charlemos sobre tu equipo</a>
+          <a data-scroll="sect-contact" href="#" class="button button-center">{{ .Params.texts.common.call_to_action }}</a>
         </p>
       </div>
     </div>
@@ -399,30 +304,19 @@
       </div>
       <div class="col-md-10 col-sm-12">
         <h2>
-          Empodera a tu equipo de desarrollo para aportar valor al negocio
+          {{ .Params.texts.explaining_paragraph.header }}
         </h2>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <p>
-          En Exeal sabemos que el principal objetivo del software es generar valor para el negocio, pero también entendemos la desmotivación que supone estar constantemente haciendo malabares para seguir implementando funcionalidades, a la vez que mantener todos los fuegos controlados e intentar mejorar poco a poco el código, aún con la constante presión del negocio y la impotencia de no lograr un entendimiento.
-        </p>
-        <p>
-          Por ello, ponemos toda nuestra experiencia aplicando los principios y prácticas de metodologías de desarrollo ágil como XP (Extreme Programming) y DevOps a disposición de tu equipo, con el que trabajaremos codo con codo desde el día a día de vuestro proyecto. Fomentaremos la adopción de buenas prácticas, hábitos y creación de un ritmo sostenible, para garantizar la performance y predictibilidad del equipo a largo plazo.
-        </p>
-        <p>
-          Ayudaremos al equipo a colaborar con negocio y usuarios finales, optimizar sus procesos de desarrollo, dar forma a la visión técnica y construir software calidad de manera incremental. Lo haremos en sesiones de Pair y Mob Programming, así como como facilitando dinámicas de equipo. Trasladaremos aquellos conocimientos de los que pueda carecer el equipo (p.ej. TDD, refactoring, DDD, CI/CD, etc.), en el momento oportuno y desde un punto de vista aplicado, mediante Learning Hours.
-        </p>
-        <p>
-          Fomentaremos y cultivaremos una cultura de mejora y aprendizaje continuos entre todos los miembros del equipo para que, cuando nos vayamos, el equipo pueda seguir creciendo sin nosotros y aportando valor de forma constante a usuarios y stakeholders, sin incidencias relevantes, sin parones eternos para refactorizar, con despliegues casi instantáneos y sin riesgo y, sobre todo, con personas felices y orgullosas de pertenecer a tu equipo.</p>
-        </p>
+        {{ .Content }}
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <p>
-          <a data-scroll="sect-contact" href="#" class="button button-center">Charlemos sobre tu equipo</a>
+          <a data-scroll="sect-contact" href="#" class="button button-center">{{ .Params.texts.common.call_to_action }}</a>
         </p>
       </div>
     </div>
@@ -436,7 +330,7 @@
 				<h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
 			</div>
 			<div class="col-md-10 col-sm-12">
-				<h2>Cuéntanos acerca de los retos de tu equipo y te propondemos un plan personalizado para ellos.</h2>
+				<h2>{{ .Params.texts.contact.header }}</h2>
 				{{- partial "contactform.html" . -}}
 			</div>
 		</div>
