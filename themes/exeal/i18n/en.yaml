@@ -11,6 +11,20 @@ fieldcompany:
 fieldcontactmsg:
   other: Tell us about your team's challenges
 checkcomms:
-  other: I agree to receive commercial communications and offers from Excel.
+  other: I agree to receive commercial communications and offers from Exeal.
 btnsend:
   other: Send
+linklegal:
+  other: Legal notice
+linkcookiepolicy:
+  other: Cookie policy
+linkprivacypolicy:
+  other: Privacy policy
+navtraining:
+  other: Training
+navteam:
+  other: Our team
+navcareers:
+  other: Careers
+navcontact:
+  other: Contact

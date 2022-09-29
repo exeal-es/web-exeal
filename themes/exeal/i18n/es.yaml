@@ -14,3 +14,17 @@ checkcomms:
   other: Acepto recibir comunicaciones comerciales u ofertas por parte de Exeal.
 btnsend:
   other: Enviar
+linklegal:
+  other: Aviso legal
+linkcookiepolicy:
+  other: Política de cookies
+linkprivacypolicy:
+  other: Política de privacidad
+navtraining:
+  other: Cursos
+navteam:
+  other: Equipo
+navcareers:
+  other: Empleo
+navcontact:
+  other: Contacto
