@@ -3,41 +3,43 @@
   <div class="container">{{ .Content }}</div>
   <div class="container">
     <div class="row justify-content-center">
-      {{ range .Params.team }} {{$authorName := .name}} {{ $data := index $.Site.Data.authors $authorName }}
+      {{ range .Params.team }} {{$authorName := .memberID}} {{ $seeposts := .seeposts}}
       <div class="col-12 col-md-4 col-lg-4">
         <div class="team-card">
-          <div data-toggle="modal" data-target="#{{$data.name}}">
+          <div data-toggle="modal" data-target="#{{.memberID}}">
             <div
               class="team-card-header"
-              style="background-image: url('{{$data.avatar}}')"
+              style="background-image: url('{{.avatar}}')"
             ></div>
             <div class="team-card-body d-flex flex-column">
-              <h3>{{ $data.name }}</h3>
-              <p class="description">{{ $data.role }}</p>
+              <h3>{{ .name }}</h3>
+              <p class="description">{{ .role }}</p>
               <ul class="social-icons list-inline">
-                {{ if ($data.social.twitter) }}
+                {{ if (.social.twitter) }}
                 <li class="list-inline-item">
-                  <a target="_blank" href="{{ $data.social.twitter }}">
+                  <a target="_blank" href="{{ .twitter }}">
                     <img src="/assets/img/blog/social-icons/icon-twitter.svg" />
                   </a>
                 </li>
-                {{ end }} {{ if ($data.social.linkedin) }}
+                {{ end }}
+                {{ if (.social.linkedin) }}
                 <li class="list-inline-item">
-                  <a target="_blank" href="{{ $data.social.linkedin }}">
+                  <a target="_blank" href="{{ .social.linkedin }}">
                     <img
                       src="/assets/img/blog/social-icons/icon-linkedin.svg"
                     />
                   </a>
                 </li>
-                {{ end }} {{ if ($data.social.github) }}
+                {{ end }}
+                {{ if (.social.github) }}
                 <li class="list-inline-item">
-                  <a target="_blank" href="{{ $data.social.github }}">
+                  <a target="_blank" href="{{ .social.github }}">
                     <img src="/assets/img/blog/social-icons/icon-github.svg" />
                   </a>
                 </li>
                 {{ end }}
                 <li class="list-inline-item">
-                  <a target="_blank" href="mailto:{{ $data.social.email }}">
+                  <a target="_blank" href="mailto:{{ .social.email }}">
                     <img src="/assets/img/blog/social-icons/icon-email.svg" />
                   </a>
                 </li>
@@ -49,7 +51,7 @@
 
       <div
         class="modal fade bd-example-modal-lg"
-        id="{{$data.name}}"
+        id="{{.memberID}}"
         tabindex="-1"
         role="dialog"
         aria-hidden="true"
@@ -66,32 +68,34 @@
                 <span aria-hidden="true">&times;</span>
               </button>
 
-              <img src="{{$data.avatar}}" />
+              <img src="{{.avatar}}" />
 
               <div class="modal-header--content">
-                <p>{{ $data.name }}</p>
-                <p>{{ $data.role }}</p>
+                <p>{{ .name }}</p>
+                <p>{{ .role }}</p>
 
                 <ul class="social-icons list-inline">
-                  {{ if ($data.social.twitter) }}
+                  {{ if (.social.twitter) }}
                   <li class="list-inline-item">
-                    <a target="_blank" href="{{ $data.social.twitter }}">
+                    <a target="_blank" href="{{ .social.twitter }}">
                       <img
                         src="/assets/img/blog/social-icons/icon-twitter.svg"
                       />
                     </a>
                   </li>
-                  {{ end }} {{ if ($data.social.linkedin) }}
+                  {{ end }}
+                  {{ if (.social.linkedin) }}
                   <li class="list-inline-item">
-                    <a target="_blank" href="{{ $data.social.linkedin }}">
+                    <a target="_blank" href="{{ .social.linkedin }}">
                       <img
                         src="/assets/img/blog/social-icons/icon-linkedin.svg"
                       />
                     </a>
                   </li>
-                  {{ end }} {{ if ($data.social.github) }}
+                  {{ end }} 
+                  {{ if (.social.github) }}
                   <li class="list-inline-item">
-                    <a target="_blank" href="{{ $data.social.github }}">
+                    <a target="_blank" href="{{ .social.github }}">
                       <img
                         src="/assets/img/blog/social-icons/icon-github.svg"
                       />
@@ -99,7 +103,7 @@
                   </li>
                   {{ end }}
                   <li class="list-inline-item">
-                    <a target="_blank" href="mailto:{{ $data.social.email }}">
+                    <a target="_blank" href="mailto:{{ .social.email }}">
                       <img src="/assets/img/blog/social-icons/icon-email.svg" />
                     </a>
                   </li>
@@ -107,15 +111,13 @@
               </div>
             </div>
             <div class="modal-body">
-              {{ $data.bio | safeHTML }}
+              {{ .bio | safeHTML }}
 
               <br />
               {{ $blogs := $.Site.GetPage "/blog" }} {{ $blogPost := where $blogs.Pages ".Params.author" $authorName }} {{ range first 1 $blogPost }}
 
               <div class="modal-body--link">
-                <a href="/blog?author={{$authorName}}"
-                  >Ver blogs de {{ $data.name }}</a
-                >
+                <a href="/blog?author={{$authorName}}">{{$seeposts}}</a>
               </div>
 
               {{ end }}
