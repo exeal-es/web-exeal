@@ -1,9 +1,20 @@
-<li class="nav-item"><a class="nav-link" href="/cursos">{{ i18n "navtraining" }}</a></li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{ i18n "navservices" }}
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href="/">{{ i18n "navcoaching" }}</a>
+    <a class="dropdown-item" href="/servicios/aceleradora-de-talento">{{ i18n "navaccelerator" }}</a>
+    <a class="dropdown-item" href="/cursos">{{ i18n "navtrainingadhoc" }}</a>
+  </div>
+</li>
+
 <li class="nav-item"><a class="nav-link" href="/equipo">{{ i18n "navteam" }}</a></li>
 <li class="nav-item">
   <a class="nav-link" href="/jobs/extreme-programming-coach/">{{ i18n "navcareers" }}</a>
 </li>
 <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+
 <li class="nav-item">
   <a class="nav-link" data-scroll="sect-contact" href="#">{{ i18n "navcontact" }}</a>
 </li>
