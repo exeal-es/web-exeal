@@ -20,8 +20,14 @@ linkcookiepolicy:
   other: Cookie policy
 linkprivacypolicy:
   other: Privacy policy
-navtraining:
-  other: Training
+navservices:
+  other: Services
+navcoaching:
+  other: Technical Coaching
+navaccelerator:
+  other: Talent Acceleration Program
+navtrainingadhoc:
+  other: Ad Hoc Training
 navteam:
   other: Our team
 navcareers:
