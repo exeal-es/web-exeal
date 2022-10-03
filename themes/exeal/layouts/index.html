@@ -18,10 +18,7 @@
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
         <h2>
-          <img
-            class="arrow-right"
-            src="/assets/img/arrow-right-secondary.svg"
-          />
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
         </h2>
       </div>
       <div class="col-md-10 col-sm-12">
@@ -56,10 +53,7 @@
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
         <h2>
-          <img
-            class="arrow-right"
-            src="/assets/img/arrow-right-secondary.svg"
-          />
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
         </h2>
       </div>
       <div class="col-md-10 col-sm-12">
@@ -102,10 +96,7 @@
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
         <h2>
-          <img
-            class="arrow-right"
-            src="/assets/img/arrow-right-secondary.svg"
-          />
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
         </h2>
       </div>
       <div class="col-md-10 col-sm-12">
@@ -119,10 +110,7 @@
       {{ range .Params.team }} {{$authorName := .name}} {{ $data := index $.Site.Data.authors $authorName }}
       <div class="col-12 col-md-4 col-lg-4">
         <div class="team-card">
-          <div
-            class="team-card-header"
-            style="background-image: url('{{$data.avatar}}')"
-          ></div>
+          <div class="team-card-header" style="background-image: url('{{$data.avatar}}')"></div>
           <div class="team-card-body d-flex flex-column">
             <h3>{{ $data.name }}</h3>
             <p class="description">{{ $data.role }}</p>
@@ -137,9 +125,7 @@
               {{ if ($data.social.linkedin) }}
               <li class="list-inline-item">
                 <a target="_blank" href="{{ $data.social.linkedin }}">
-                  <img
-                    src="/assets/img/blog/social-icons/icon-linkedin.svg"
-                  />
+                  <img src="/assets/img/blog/social-icons/icon-linkedin.svg" />
                 </a>
               </li>
               {{ end }}
@@ -189,7 +175,7 @@
   </div>
 </section>
 
-<section id="sect-socialproof">
+<section id="sect-cases-studies" class="light">
   <div class="container">
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
@@ -199,25 +185,36 @@
         <h2>{{ .Params.texts.socialproof.header }}</h2>
       </div>
     </div>
-    <div class="row justify-content-center text-center">
-      <div class="col-md-12">
-        <p>{{ .Params.texts.socialproof.subheader }}</p>
+
+    <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
+      <div class="col-md-8">
+        <p>
+          {{ .Params.texts.socialproof.subheader }}
+        </p>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8WfycGZPaug"></iframe>
+      <div class="case-study-card-container">
+        {{ range .Params.texts.socialproof.casestudies }}
+        <div class="case-study-card">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="{{ .youtube }}"></iframe>
+          </div>
+          <div class="container">
+            <h4>{{ .title }}</h4>
+            <h6>{{ .description }}</h6>
+            <a href="{{ .link }}" class="button-hollow"
+              style="margin: auto; text-align: center; display: block">Más info</a>
+          </div>
         </div>
+        {{ end }}
       </div>
     </div>
   </div>
 </section>
 
-<section id="sect-testimonials" class="light">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
+<section id="sect-testimonials" class="gloaming">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
         <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
           <div class="box">
             <div class="flap flap-top-right"></div>
@@ -226,7 +223,7 @@
               <div class="carousel-item {{ if eq .active true }}active{{ end }}">
                 <p>{{ .text | safeHTML }}</p>
                 <div class="customer">
-                  <img class="rounded-circle avatar" src="{{ .photo }}"/>
+                  <img class="rounded-circle avatar" src="{{ .photo }}" />
                   <div class="customer-info">
                     <p>{{ .name }}</p>
                     <p>{{ .position }}</p>
@@ -236,18 +233,21 @@
               {{ end }}
             </div>
           </div>
-          
+
           <div class="carousel-indicators-parent">
             <ol class="carousel-indicators carousel-testimonials">
+              <!-- TODO draw buttons based on data, not hardcoded -->
               <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+              <li data-target="#carousel-testimonials" data-slide-to="2"></li>
             </ol>
-            <a href="#carousel-testimonials" data-slide="next" role="button"><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></a>
+            <a href="#carousel-testimonials" data-slide="next" role="button"><img class="arrow-right"
+                src="/assets/img/arrow-right-secondary.svg" /></a>
           </div>
         </div>
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 </section>
 
 {{ partial "clients.html" (dict "context" . "background" "light")}}
@@ -257,10 +257,7 @@
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
         <h2>
-          <img
-            class="arrow-right"
-            src="/assets/img/arrow-right-secondary.svg"
-          />
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
         </h2>
       </div>
       <div class="col-md-10 col-sm-12">
@@ -296,10 +293,7 @@
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
         <h2>
-          <img
-            class="arrow-right"
-            src="/assets/img/arrow-right-secondary.svg"
-          />
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
         </h2>
       </div>
       <div class="col-md-10 col-sm-12">
@@ -324,16 +318,16 @@
 </section>
 
 <section id="sect-contact" class="dark background background-03">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-2 d-none d-sm-none d-md-block">
-				<h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
-			</div>
-			<div class="col-md-10 col-sm-12">
-				<h2>{{ .Params.texts.contact.header }}</h2>
-				{{- partial "contactform.html" . -}}
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ .Params.texts.contact.header }}</h2>
+        {{- partial "contactform.html" . -}}
+      </div>
+    </div>
+  </div>
 </section>
 {{ end }}

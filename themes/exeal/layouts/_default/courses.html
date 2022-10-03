@@ -170,6 +170,8 @@
 
 {{- partial "testimonials.html" . -}}
 
+{{ partial "clients.html" (dict "context" . "background" "gloaming")}}
+
 <section id="sect-contact" class="light">
   {{- partial "calendly.html" . -}}
 </section>
