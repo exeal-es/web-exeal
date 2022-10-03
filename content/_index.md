@@ -71,7 +71,21 @@ texts:
       ]
   socialproof:
     header: ¿Qué dicen nuestros clientes?
-    subheader: Clica en el video para descubrir cómo ayudamos a BAB a automatizar el despliegue de nuevas versiones de su SAAS para +50 clientes, así como a optimizar el ciclo de vida de desarrollo mediante la adopción de buenas prácticas.
+    subheader: Descubre cómo nuestros clientes han transformado sus equipos de la mano de nuestro acompañamiento
+    casestudies: [
+      {
+        youtube: "https://www.youtube.com/embed/NZgsqqiS440",
+        title: "De new hire a senior en 3 meses sin alterar la productividad de los equipos",
+        description: "Tras realizar la definición del plan de carrera de los empleados del departamento de ingeniería de AIDA, identifican la necesidad de encontrar talento de nivel intermedio para incorporar a sus equipos.",
+        link: "/casos-de-exito/domingo-alonso-group/"
+      },
+      {
+        youtube: "https://www.youtube.com/embed/8WfycGZPaug",
+        title: "Cómo lograr la excelencia técnica y el alto rendimiento del equipo en 3 meses",
+        description: "Queríamos poner en marcha una “potente remodelación” a nivel del desarrollo de nuestro producto y para ello era necesario que el equipo con el que contábamos aprendiera, obtuviera formación.",
+        link: "/casos-de-exito/we-are-bab/"
+      },
+    ]
   testimonials:
     [
       {

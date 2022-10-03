@@ -71,7 +71,21 @@ texts:
       ]
   socialproof:
     header: What do our clients say?
-    subheader: Click on the video (in Spanish) to discover how we helped BAB to automate the deployment of new versions of its SAAS for +50 clients, as well as to optimize the development life cycle by adopting best practices.
+    subheader: Discover how our clients have transformed their teams thanks to our coaching and training services
+    casestudies: [
+      {
+        youtube: "https://www.youtube.com/embed/NZgsqqiS440",
+        title: "From new hire to senior in 3 months without altering team productivity",
+        description: "After defining the career path for all the employees of AIDA's engineering department, they identify the need of finding mid level talent to incorporate to their teams.",
+        link: "/casos-de-exito/domingo-alonso-group/"
+      },
+      {
+        youtube: "https://www.youtube.com/embed/8WfycGZPaug",
+        title: "How to achieve technical excellence and high performance in 3 months",
+        description: "We wanted to launch a \"powerful remodeling\" in our product development and it was necessary for our team to learn new skills and get training.",
+        link: "/casos-de-exito/we-are-bab/"
+      },
+    ]
   testimonials:
     [
       {
