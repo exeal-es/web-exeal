@@ -3,4 +3,9 @@ theme: exeal
 baseURL: https://www.exeal.com
 languageCode: es-es
 defaultContentLanguage: es
+languages:
+  es:
+    weight: 1
+  en:
+    weight: 2
 metaDataFormat: yaml

@@ -1,0 +1,36 @@
+clientsheader:
+  other: Estos clientes ya han confiado en nosotros
+fieldname:
+  other: Nombre
+fieldsurname:
+  other: Apellidos
+fieldphone:
+  other: Teléfono
+fieldcompany:
+  other: Compañía
+fieldcontactmsg:
+  other: Cuéntanos acerca de los retos de tu equipo
+checkcomms:
+  other: Acepto recibir comunicaciones comerciales u ofertas por parte de Exeal.
+btnsend:
+  other: Enviar
+linklegal:
+  other: Aviso legal
+linkcookiepolicy:
+  other: Política de cookies
+linkprivacypolicy:
+  other: Política de privacidad
+navservices:
+  other: Servicios
+navcoaching:
+  other: Coaching técnico
+navaccelerator:
+  other: Aceleradora de talento
+navtrainingadhoc:
+  other: Formaciones ad hoc
+navteam:
+  other: Equipo
+navcareers:
+  other: Empleo
+navcontact:
+  other: Contacto

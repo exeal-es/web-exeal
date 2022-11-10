@@ -1,0 +1,36 @@
+clientsheader:
+  other: These clients have already trusted us
+fieldname:
+  other: Name
+fieldsurname:
+  other: Surname
+fieldphone:
+  other: Phone number
+fieldcompany:
+  other: Company name
+fieldcontactmsg:
+  other: Tell us about your team's challenges
+checkcomms:
+  other: I agree to receive commercial communications and offers from Exeal.
+btnsend:
+  other: Send
+linklegal:
+  other: Legal notice
+linkcookiepolicy:
+  other: Cookie policy
+linkprivacypolicy:
+  other: Privacy policy
+navservices:
+  other: Services
+navcoaching:
+  other: Technical Coaching
+navaccelerator:
+  other: Talent Acceleration Program
+navtrainingadhoc:
+  other: Ad Hoc Training
+navteam:
+  other: Our team
+navcareers:
+  other: Careers
+navcontact:
+  other: Contact
