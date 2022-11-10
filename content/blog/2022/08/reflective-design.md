@@ -2,7 +2,7 @@
 title: "Prepara tu código para lo que venga con Reflective Design"
 description: "Cómo evitar que el código se deteriore aplicando el mindset de Simple Design"
 author: pedropardal
-date: 2022-08-03T00:07:00+01:00
+date: 2022-11-10T00:07:00+01:00
 layout: post
 tags: ["legacy", "refactoring", "oo-design"]
 images:
