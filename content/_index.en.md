@@ -3,7 +3,7 @@ title: "Technical coaching for your software development team"
 description: "We help technical leaders to improve their team practices to accelerate software delivery and eliminate bugs."
 date: 2020-07-19T16:14:05+02:00
 team:
-  [{ name: "pedropardal" }, { name: "damianpumar" }, { name: "raulvillares" }]
+  [{ name: "pedropardal" }, { name: "raulvillares" }]
 texts:
   hero:
     header: Technical coaching for your software development team
