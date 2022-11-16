@@ -6,7 +6,6 @@ layout: team
 team:
   [
     { name: "pedropardal" },
-    { name: "damianpumar" },
     { name: "raulvillares" },
     { name: "sarasanchez" },
     { name: "anacarreras" },
