@@ -6,8 +6,6 @@ layout: team
 team:
   [
     { name: "pedropardal" },
-    { name: "raulvillares" },
-    { name: "sarasanchez" },
     { name: "anacarreras" },
   ]
 ---
