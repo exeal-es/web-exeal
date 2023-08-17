@@ -1,0 +1,313 @@
+{{ define "main" }}
+<section id="sect-header" class="dark background background-01">
+  <div class="container">
+    <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
+      <div class="col-md-12">
+        <h1>{{ .Params.texts.hero.header | safeHTML }}</h1>
+        <h4>{{ .Params.texts.hero.subheader | safeHTML }}</h4>
+        <p class="justify-content-center align-items-center text-center">
+          <a data-scroll="sect-download-program" href="#" class="button-hollow" style="display: inline-block">{{ .Params.texts.common.cta_transitional }}</a>
+          <a target="_blank" href="{{.Params.cta_url}}" class="button" style="display: inline-block">{{ .Params.texts.common.call_to_action }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-stakes" class="light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>
+          {{ .Params.texts.stakes.header | safeHTML }}
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p>{{ .Params.texts.stakes.p1 | safeHTML }}</p>
+        <ul class="row ticked-cross">
+          {{ range .Params.texts.stakes.list }}
+          <li class="col-md-6">{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-best-practices" class="gloaming background background-06">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ .Params.texts.bestpractices.what | safeHTML }}</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p>{{ .Params.texts.bestpractices.p1 | safeHTML }}</p>
+        <ul class="row ticked">
+          {{ range .Params.texts.bestpractices.benefits }}
+          <li class="col-md-6"><em>{{ .title }}</em>: {{ .description }}</li>
+          {{ end }}
+        </ul>
+        <p>{{ .Params.texts.bestpractices.p2 | safeHTML }}</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-m-12">
+        <p class="justify-content-center align-items-center text-center">
+          <a data-scroll="sect-download-program" href="#" class="button-hollow" style="display: inline-block">{{ .Params.texts.common.cta_transitional }}</a>
+          <a target="_blank" href="{{.Params.cta_url}}" class="button" style="display: inline-block">{{ .Params.texts.common.call_to_action }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-value-proposition" class="dark background background-03">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ .Params.texts.valueprop.what | safeHTML }}</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p>{{ .Params.texts.valueprop.p1 | safeHTML }}</p>
+        <ul class="row ticked">
+          {{ range .Params.texts.valueprop.list }}
+          <li class="col-md-6">{{ . | safeHTML }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-m-12">
+        <p class="justify-content-center align-items-center text-center">
+          <a data-scroll="sect-download-program" href="#" class="button-hollow" style="display: inline-block">{{ .Params.texts.common.cta_transitional }}</a>
+          <a target="_blank" href="{{.Params.cta_url}}" class="button" style="display: inline-block">{{ .Params.texts.common.call_to_action }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-your-mentor" class="light">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-7">
+        <h2>Conoce a tu mentor</h2>
+        <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg"/></p>
+        <p>Pedro Pardal es Technical Coach en Exeal y desarrollador de software con <em>más de 12 años de experiencia aplicando buenas prácticas</em> en empresas como Tuenti, Trivago, Social Point, Mango o Codurance.</p>
+        <p>Desde hace 4 años, utiliza su experiencia para ayudar a equipos de desarrollo a <em>aportar el máximo valor</em> al negocio a través del software de calidad, en empresas como Voxel, AIDA o Wolters Kluwer.</p>
+        <p>Es miembro activo de las comunidades de Agile y Software Crafters en España.</p>
+      </div>
+      {{ range .Params.team }} {{$authorName := .name}} {{ $data := index $.Site.Data.authors $authorName }}
+      <div class="col-5">
+        <div class="team-card">
+          <div class="team-card-header" style="background-image: url('{{$data.avatar}}')"></div>
+          <div class="team-card-body d-flex flex-column">
+            <h3>{{ $data.name }}</h3>
+            <p class="description">{{ $data.role }}</p>
+            <ul class="social-icons list-inline">
+              {{ if ($data.social.twitter) }}
+              <li class="list-inline-item">
+                <a target="_blank" href="{{ $data.social.twitter }}">
+                  <img src="/assets/img/blog/social-icons/icon-twitter.svg" />
+                </a>
+              </li>
+              {{ end }}
+              {{ if ($data.social.linkedin) }}
+              <li class="list-inline-item">
+                <a target="_blank" href="{{ $data.social.linkedin }}">
+                  <img src="/assets/img/blog/social-icons/icon-linkedin.svg" />
+                </a>
+              </li>
+              {{ end }}
+              {{ if ($data.social.github) }}
+              <li class="list-inline-item">
+                <a target="_blank" href="{{ $data.social.github }}">
+                  <img src="/assets/img/blog/social-icons/icon-github.svg" />
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section id="sect-testimonials" class="gloaming">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>¿Qué cuentan nuestros alumnos sobre nosotros?</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+          <div class="box">
+            <div class="flap flap-top-right"></div>
+            <div class="carousel-inner">
+              {{ range .Params.texts.testimonials }}
+              <div class="carousel-item {{ if eq .active true }}active{{ end }}">
+                <p>{{ .text | safeHTML }}</p>
+                <div class="customer">
+                  <img class="rounded-circle avatar" src="{{ .photo }}" />
+                  <div class="customer-info">
+                    <p>{{ .name }}</p>
+                    <p>{{ .position }}</p>
+                  </div>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="carousel-indicators-parent">
+            <ol class="carousel-indicators carousel-testimonials">
+              <!-- TODO draw buttons based on data, not hardcoded -->
+              <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+              <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+            </ol>
+            <a href="#carousel-testimonials" data-slide="next" role="button"><img class="arrow-right"
+                src="/assets/img/arrow-right-secondary.svg" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-plan" class="dark background background-05">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ .Params.texts.plan.header | safeHTML }}</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      {{ range .Params.texts.plan.steps }}
+      <div class="col-xl-4 mb-3">
+        <div class="box">
+          <div class="flap flap-top-right"></div>
+          <p class="price">- {{ .number }} -</p>
+          <h3>{{ .title }}</h3>
+          <p>{{ .description }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-m-12">
+        <p class="justify-content-center align-items-center text-center">
+          <a data-scroll="sect-download-program" href="#" class="button-hollow" style="display: inline-block">{{ .Params.texts.common.cta_transitional }}</a>
+          <a target="_blank" href="{{.Params.cta_url}}" class="button" style="display: inline-block">{{ .Params.texts.common.call_to_action }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-download-program" class="dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>¿Aún tienes dudas? Descarga el folleto informativo</h2>
+        <div class="course-page-tagline col-12 mb-3">
+          <p>En el folleto informativo encontrarás todos los detalles, incluyendo los prerrequisitos, fechas relevantes y el <em>plan de estudios</em> completo.</p>
+        </div>
+        <div class="col-12">
+          <form
+            accept-charset="UTF-8"
+            data-redirect="{{ .Params.redirect_submission_url }}"
+          >
+            <div class="form-group">
+              <input
+                class="form-control"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Nombre"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="checkbox-container" for="accept-terms"
+                ><input
+                  id="accept-terms"
+                  name="accept-terms"
+                  type="checkbox"
+                /><span class="checkmark"></span>Acepto recibir comunicaciones
+                comerciales u ofertas por parte de Exeal.</label
+              >
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <input
+                  class="button expand"
+                  type="submit"
+                  name="submit"
+                  value="Descarga el programa"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
