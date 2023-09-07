@@ -10,20 +10,20 @@ team:
 texts:
   hero:
     header: Bootcamp de buenas prácticas de desarrollo de software
-    subheader: Da el salto como desarrollador, empieza a aportar valor a través del software y conviértete en un referente.
+    subheader: Da el salto como desarrollador/a, empieza a aportar valor a través del software y conviértete en un/a referente.
   stakes:
-    header: "En el sector tecnológico, no mantenerse actualizado <em>es fatal para tu carrera</em> como desarrollador."
-    p1: "Si no te actualizas, <em>te quedarás atrás</em> en cuanto a conocimientos y habilidades, lo que te hará menos valioso para las empresas y <em>menos competitivo</em> en el mercado laboral. Esto te costará:"
+    header: "En el sector tecnológico, no mantenerse actualizado <em>es fatal para tu carrera</em> como desarrollador/a."
+    p1: "Si no te actualizas, <em>te quedarás atrás</em> en cuanto a conocimientos y habilidades, lo que te hará perder valor para las empresas y <em>reducirá tu competitividad</em> en el mercado laboral. Esto te costará:"
     list:
       - "Perder la confianza de tu equipo y tus managers."
       - "Salarios más bajos que la media del sector."
       - "No aportar valor al negocio ni al producto."
       - "Perderte proyectos interesantes por falta de conocimientos y experiencia."
       - "Perder tu vida personal intentando formarte por tu cuenta."
-      - "Quedarte desfasado y estancar tu carrera."
+      - "Caer en desfase y estancar tu carrera."
   bestpractices:
     what: "Las buenas prácticas <em>no se enseñan en los bootcamps</em> ni en la universidad"
-    p1: "Sin embargo, son las que <em>de verdad diferencian a los desarrolladores senior</em> a la hora de escribir código más mantenible, escalable y que aporta valor al negocio:"
+    p1: "Sin embargo, son las que <em>de verdad diferencian a los/as senior</em> a la hora de escribir código más mantenible, escalable y que aporta valor al negocio:"
     benefits:
       [
         {
@@ -40,23 +40,23 @@ texts:
         },
         {
           title: "Desarrollo de producto",
-          description: "Visión de producto, comunicación con el cliente, gestión ágil deproyectos, historias de usuario",
+          description: "Visión de producto, comunicación con el cliente, gestión ágil de proyectos, historias de usuario",
         },
         {
           title: "Trabajo en equipo",
           description: "Pair programming, retrospectivas y acuerdos de equipo, habilidades blandas.",
         },
       ]
-    p2: "Pero no te preocupes, en el Bootcamp de Buenas Prácticas de Exeal <em>te las enseñamos todas</em>. En menos de lo que esperas <em>estarás preparado para acceder a posiciones senior</em>."
+    p2: "Pero no te preocupes, en el Bootcamp de Buenas Prácticas de Exeal <em>te las enseñamos todas</em>. En menos de lo que esperas <em>obtendrás la preparación necesaria para acceder a posiciones senior</em>."
   valueprop:
     what: "¿En qué consiste el <em>bootcamp de buenas prácticas</em>?"
     p1: "Durante cuatro meses, te incorporarás a una formación a tiempo parcial, donde te acompañaremos en tu proceso de aprendizaje y puesta en práctica de las buenas prácticas de desarrollo."
     list:
       - "Estudiarás los conceptos clave de las buenas prácticas en el <em>campus virtual, a tu ritmo</em>, mediante videos, ejercicios entregables y exámenes de autoevaluación."
-      - "Asistirás a <em>talleres online</em> en directo, en grupos reducidos, en los que resolverás tú mismo ejercicios prácticos con la ayuda de los mentores y compañeros."
+      - "Asistirás a <em>talleres online</em> en directo, en grupos reducidos, en los que resolverás ejercicios prácticos con la ayuda de los mentores y compañeros."
       - "Estarás <em>acompañado por un mentor</em>, que resolverá tus dudas y te dará feedback personalizado sobre tu avance en tutorías individuales."
       - "Desarrollarás un <em>proyecto integrador</em> de principio a fin empleando las buenas prácticas. Individual, en pareja o en grupo, tú decides cómo."
-      - "Estudiarás rodeado una <em>comunidad de compañeros</em> con la misma pasión, valores e inquietudes que tú."
+      - "Estudiarás rodeado una <em>comunidad</em> de personas con la misma pasión, valores e inquietudes que tú."
       - "Accederás a una <em>bolsa de empleo exclusiva</em> con empresas líderes del sector que apuestan por las buenas prácticas."
   testimonials:
     [
@@ -81,7 +81,7 @@ texts:
       },
     ]
   plan:
-    header: "¿A qué esperas? Conviértete ya en un <em>maestro jedi de las buenas prácticas</em>"
+    header: "¿A qué esperas? Impulsa tu carrera <em>dominando las buenas prácticas</em>"
     steps:
       [
         {
