@@ -12,7 +12,7 @@ texts:
     header: Bootcamp de buenas prácticas de desarrollo de software
     subheader: Da el salto como desarrollador/a, empieza a aportar valor a través del software y conviértete en un/a referente.
   stakes:
-    header: "En el sector tecnológico, no mantenerse actualizado <em>es fatal para tu carrera</em> como desarrollador/a."
+    header: "En el sector tecnológico, no mantenerse al día <em>es fatal para tu carrera</em> como desarrollador/a."
     p1: "Si no te actualizas, <em>te quedarás atrás</em> en cuanto a conocimientos y habilidades, lo que te hará perder valor para las empresas y <em>reducirá tu competitividad</em> en el mercado laboral. Esto te costará:"
     list:
       - "Perder la confianza de tu equipo y tus managers."
