@@ -30,12 +30,25 @@ Para escribir nuestro primer test, deberíamos:
 2. **Determinar cómo vamos a interactuar con el sistema**. Si preferimos un enfoque más funcional, podríamos definir una función `run(friends, currentTime): notifications`. Si optamos por un enfoque más orientado a tuberías, podemos definir colaboradores que nos proporcionen cada información, p.ej. `SystemClock`, `FacebookFriendScrapper` y `BirthdayGreetingSender`. Inyectaríamos estos colaboradores a nuestro SUT, el `GreeterJob`, que tendría un único método `run()` que jugaría con esos colaboradores. Aquí depende del estilo de cada uno.
 3. **Definir el comportamiento más simple**. P.ej., que no haya ningún amigo, me da igual la fecha, no envío ninguna notificación.
 
+El código del primer test podría ser algo así:
+```csharp
+[Fact] public void send_no_notifications() {
+  var friends = new List<Friend>();
+  var currentTime = fixture.Create<DateTime>();
+
+  var greeterJob = new GreeterJob();
+  var greetings = greeterJob.Run(friends, currentTime);
+
+  greetings.Should().BeEmpty();
+}
+```
+
 A partir de aquí **es muy fácil escribir los tests sucesivos**. Simplemente vamos jugando a plantear variantes de las entradas y salidas. ¿Qué pasa cuando tengo más de un amigo? ¿Y si tengo un amigo pero hoy no es su cumpleaños? ¿Y si tengo un amigo y hoy es su cumpleaños? ¿Y si tengo dos amigos pero hoy solo cumple uno de ellos?
 
 Tampoco quiere decir que la interfaz pública del sistema no evolucione; **siempre podemos refactorizar** si encontramos un diseño que nos convence más. Pero buscar algo funcional desde un primer momento nos da algo a lo que agarrarnos y nos permite avanzar.
 
 ## Muchas prácticas, una filosofía común
 
-Fíjate como la filosofía es muy similar a cuando hacemos desarrollo de producto a mayor escala. Lo primero que hacemos es un **Vertical Slicing**, para identificar la mínima expresión de cada una de las partes de nuestro sistema. En base a eso, montamos un **Walking Skeleton** de nuestra solución, que contenga todas esas partes en su mínima expresión, pero ya trabajando juntas, para luego ir añadiéndole carne al esqueleto en iteraciones sucesivas.
+Fíjate como la filosofía es muy similar a cuando hacemos desarrollo de producto a mayor escala. Lo primero que hacemos es un [Vertical Slicing](https://abrahamvallez.medium.com/vertical-slicing-i-desaprende-lo-que-sabes-sobre-user-stories-y-pon-el-foco-en-desarrollo-b859c5827326), para identificar la mínima expresión de cada una de las partes de nuestro sistema. En base a eso, montamos un [Walking Skeleton](https://wiki.c2.com/?WalkingSkeleton) de nuestra solución, que contenga todas esas partes en su mínima expresión, pero ya trabajando juntas, para luego ir añadiéndole carne al esqueleto en iteraciones sucesivas.
 
 Trabajar con la misma filosofía a nivel macro y micro hace que cada fase del desarrollo encaje mejor y el proceso en su conjunto cobre más sentido. Muchas veces, la respuesta a las preguntas de cómo hacer ciertas cosas está en el resto de prácticas que utilizamos a otros niveles.
