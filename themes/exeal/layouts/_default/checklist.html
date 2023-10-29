@@ -1,0 +1,175 @@
+{{ define "main" }}
+<section id="sect-course-overview" class="dark background background-05">
+  <div class="container">
+    <div class="row mt-1 mb-1 align-items-center h-100">
+      <div class="course-page-tagline col-md-7 col-sm-12 mb-3">
+        <h1>
+          {{ .Params.course_prefix }}
+          <span class="underline">{{ .Params.course_title }}</span>
+        </h1>
+        <h2>{{ .Description }}</h2>
+        {{ if ( isset .Params "brochure_image" ) }}
+        <img
+          class="img-fluid mockup-brochure"
+          src="{{ .Params.brochure_image }}"
+        />
+        {{ end }}
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <form
+          accept-charset="UTF-8"
+          data-redirect="{{ .Params.redirect_submission_url }}"
+        >
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="surname"
+              name="surname"
+              type="text"
+              placeholder="Apellidos"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="phone"
+              name="phone"
+              type="text"
+              placeholder="Tel&eacute;fono"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="company"
+              name="company"
+              type="text"
+              placeholder="Compa&ntilde;&iacute;a"
+            />
+          </div>
+          <div class="form-group">
+            <label class="checkbox-container" for="accept-terms"
+              ><input
+                id="accept-terms"
+                name="accept-terms"
+                type="checkbox"
+              /><span class="checkmark"></span>Acepto recibir comunicaciones
+              comerciales u ofertas por parte de Exeal.</label
+            >
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <input
+                class="button expand"
+                type="submit"
+                name="submit"
+                value="Descarga el programa"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-7">
+        <h2>{{ .Params.course_claim_header | safeHTML }}</h2>
+        <p>
+          <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
+        </p>
+        <p>{{ .Params.course_claim_body | safeHTML }}</p>
+      </div>
+      <div class="col-md-5 order-last photo">
+        <img class="img-fluid pad" src="/assets/img/legacy/bola.png" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-value-proposition" class="gloaming background background-06">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ .Params.texts.valueprop.what | safeHTML }}</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      {{ range .Params.texts.valueprop.benefits }}
+      <div class="col-xl-4 mb-3">
+        <div class="box">
+          <div class="flap flap-top-right"></div>
+          <img src="{{ .icon }}" />
+          <p>{{ .text | safeHTML }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="container">
+      <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
+        <div class="col-md-12">
+          <p>{{ .Params.texts.valueprop.how | safeHTML }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-m-12">
+        <p>
+          <a data-scroll="sect-contact" href="#" class="button button-center">{{ .Params.texts.common.call_to_action }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-7">
+        <h2>{{ .Params.course_claim_header | safeHTML }}</h2>
+        <p>
+          <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
+        </p>
+        <p>{{ .Params.course_claim_body | safeHTML }}</p>
+      </div>
+      <div class="col-md-5 order-last photo">
+        <img class="img-fluid pad" src="/assets/img/legacy/bola.png" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "clients.html" (dict "context" . "background" "gloaming")}}
+{{ end }}
