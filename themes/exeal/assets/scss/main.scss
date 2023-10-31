@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Avenir Book", Sans-Serif;
+  font-family: $p-font, Sans-Serif;
   letter-spacing: 0.02rem;
   line-height: 1.75rem;
 }
@@ -46,14 +46,14 @@ h1 {
   line-height: 1.25em;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
-  font-family: "Gopher Medium", sans-serif;
+  font-family: $h1-font, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
 h2 {
   font-size: 1.5em;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   font-weight: normal;
   font-style: normal;
   margin-bottom: 1.25em;
@@ -66,7 +66,7 @@ h2 em {
 h3 {
   font-size: 1.375em;
   margin-bottom: 1.25em;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   font-style: italic;
   font-weight: bold;
 }
@@ -100,7 +100,7 @@ nav.dark {
   border-color: $mid-gray;
   border-bottom-width: 2px;
   font-size: 1.1em;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
 }
 
 .navbar {
@@ -123,7 +123,7 @@ nav.dark {
 a.nav-button {
   display: block;
   background-color: $secondary-color;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   text-decoration: none;
   width: fit-content;
   justify-content: center;
@@ -347,7 +347,7 @@ div.box {
 
 div.box.case-study-info {
   & h4 {
-    font-family: "Gopher Regular", sans-serif;
+    font-family: $h2-font, sans-serif;
     margin: 0px;
   }
 
@@ -385,7 +385,7 @@ img.avatar {
   width: 100%;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   color: white;
 }
 
@@ -530,7 +530,7 @@ sup {
 }
 
 dl.faq dt {
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   color: $mid-gray;
   border-color: $primary-color;
   border-bottom-style: solid;
@@ -596,7 +596,7 @@ p.taxes {
 
   & .customer-info {
     display: inline-block;
-    font-family: "Gopher Regular", sans-serif;
+    font-family: $h2-font, sans-serif;
   }
 
   @media (min-width: 992px) {
@@ -624,7 +624,7 @@ p.taxes {
 }
 
 .carousel {
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   font-size: 1.3em;
 }
 
@@ -636,7 +636,7 @@ p.taxes {
 }
 
 p.price {
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   color: $gloaming-background-color;
   font-size: 6em;
   margin-top: 3rem;
@@ -703,7 +703,7 @@ img.client-logo {
 .course-body p.level {
   color: $light-gray;
   font-size: 1em;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   margin-bottom: 1.25rem;
   margin-top: 0rem;
 }
@@ -719,7 +719,7 @@ img.client-logo {
 .course-body li {
   color: $light-gray;
   font-size: 0.85rem;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   margin-bottom: 0.5rem;
   margin-top: 0rem;
 }
@@ -745,7 +745,7 @@ img.client-logo {
 
 .courses-tagline h1 {
   margin-left: 2rem;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   font-size: 2rem;
   max-width: 25rem;
 }
@@ -753,7 +753,7 @@ img.client-logo {
 .course-header div.featured-course {
   display: block;
   background-color: $secondary-color;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   color: white;
   padding: 0.25rem 1rem;
   position: absolute;
@@ -788,7 +788,7 @@ input.button {
   border-radius: 2rem;
   background-color: $secondary-color;
   border-width: 3px;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   text-decoration: none;
   width: 100%;
   font-size: 1.3em;
@@ -923,7 +923,7 @@ ul.case-study-index li {
   background-position-y: 0.3em;
   background-repeat: no-repeat;
   padding-left: 3em;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   font-size: 1.1rem;
 }
 
@@ -942,7 +942,7 @@ h2.with-arrow {
 }
 
 .box h4 {
-  font-family: "Gopher Regular", sans-serif !important;
+  font-family: $h2-font, sans-serif !important;
   font-size: 1.1em;
 }
 
@@ -1052,7 +1052,7 @@ h2.with-arrow {
 .team-card-body p.level {
   color: $light-gray;
   font-size: 1em;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   margin-bottom: 1.25rem;
   margin-top: 0rem;
 }
@@ -1100,7 +1100,7 @@ h2.with-arrow {
 
     &>p:first-child {
       font-weight: 800;
-      font-family: "Gopher Regular";
+      font-family: $h2-font;
     }
 
     &>p {

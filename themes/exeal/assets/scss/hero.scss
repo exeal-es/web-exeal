@@ -20,7 +20,7 @@
 }
 
 .hero {
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
 }
 
 .hero h1 {
@@ -41,7 +41,7 @@
 }
 
 .hero p.date {
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   font-size: 1.25rem;
   color: #a0a0a0;
   margin-top: 0px;
