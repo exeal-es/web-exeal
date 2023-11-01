@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="light">
+	<div class="container">
+		<div class="row mt-3 mb-3">
+      {{ if ( isset .Params "brochure_image" ) }}
+      <div class="col-md-5 order-md-first order-sm-last order-last photo vertical-center">
+        <img class="img-fluid pad" src="{{ .Params.brochure_image }}" />
+      </div>
+			{{ end }}
+			<div class="col-md-7 vertical-center">
+        <div>
+          <h2>Checklist para el <em>alto rendimiento</em> de equipos de desarrollo ágiles</h2>
+          <p>¡Enhorabuena! Aquí tienes el enlace para descargar la checklist. Comienza el camino hacia la entrega continua de valor hoy mismo.</p>
+          <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg"/></p>
+          <a target="_blank" href="{{ .Params.download_url }}" class="button">Descargar la checklist</a>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}

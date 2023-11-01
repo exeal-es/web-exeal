@@ -98,7 +98,7 @@ div.post-author {
   border-top-style: solid;
   border-top-width: 4px;
   font-size: 0.75em;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
 }
 
 .blog-item .post-title {
@@ -118,7 +118,7 @@ div.post-author {
 
 .post-card-detail {
   display: none;
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
 }
 
 .post-card-detail a {
@@ -154,12 +154,12 @@ div.post-card-reading-time {
 }
 
 .blog-carousel p.author-name {
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   margin: 1rem 0rem;
 }
 
 .blog-carousel h1 {
-  font-family: "Gopher Regular", sans-serif;
+  font-family: $h2-font, sans-serif;
   font-size: 2rem;
   margin: 1rem 0rem;
   max-width: 25rem;

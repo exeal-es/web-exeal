@@ -1,0 +1,153 @@
+{{ define "main" }}
+<section id="sect-form" class="dark background background-05">
+  <div class="container">
+    <div class="row mt-1 mb-1 align-items-center h-100">
+      <div class="course-page-tagline col-md-7 col-sm-12 mb-3">
+        <h1>
+          Checklist para el alto rendimiento de equipos de desarrollo ágiles
+        </h1>
+        <h4>¡Descarga ya gratuitamente la checklist y comienza el camino hacia la entrega continua de valor hoy mismo!</h4>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <form
+          accept-charset="UTF-8"
+          data-redirect="/checklist-equipos-de-alto-rendimiento/descargar/"
+        >
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="surname"
+              name="surname"
+              type="text"
+              placeholder="Apellidos"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="company"
+              name="company"
+              type="text"
+              placeholder="Compa&ntilde;&iacute;a"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="position"
+              name="position"
+              type="text"
+              placeholder="Cargo"
+            />
+          </div>
+          <div class="form-group">
+            <label class="checkbox-container" for="accept-terms"
+              ><input
+                id="accept-terms"
+                name="accept-terms"
+                type="checkbox"
+              /><span class="checkmark"></span>Envíame contenido de valor por email cada semana, así como noticias de nuevos servicios. Date de baja cuando quieras.</label
+            >
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <input
+                class="button expand"
+                type="submit"
+                name="submit"
+                value="Descarga la checklist"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-5">
+        <h2>La mayoría de equipos de desarrollo de software <em>están estancados</em>.</h2>
+        <p>
+          Las metodologías ágiles no garantizan ganar la batalla contra la deuda técnica ni habilitan por sí solas la entrega continua de valor.
+        </p>
+        <p>
+          Para desbloquear la verdadera agilidad, es necesario adoptar las mejores prácticas técnicas.</p>
+        </p>
+      </div>
+      <div class="col-md-7 order-last photo">
+        <img class="img-fluid pad" src="/assets/img/checklist/brochure-1.png" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 justify-content-center align-items-center text-center">
+        <h2>En este PDF descargable gratuito, encontrarás una recopilación destilada de las <em>80 mejores prácticas para tu equipo de desarrollo</em>, divididas en 8 categorías:</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="row blocks">
+          <li class="col-md-3"><div class="col-md-12 inner">Testing automático</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Mantenibilidad del código</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Entrega continua</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Operabilidad</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Desarrollo de producto</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Aprendizaje continuo</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Mejora continua</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Ritmo sostenible</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-7 photo">
+        <img class="img-fluid pad" src="/assets/img/checklist/flyer-mockup.png" />
+      </div>
+      <div class="col-md-5 order-last">
+        <h2>Además, encontrarás instrucciones para <em>evaluar la situación actual junto a tu equipo</em> y cómo diseñar <em>un plan para catapultaros al alto rendimiento</em>.</h2>
+        <p>
+          ¡Descarga ya gratuitamente la checklist y comienza el camino hacia la entrega continua de valor hoy mismo!
+        </p>
+        <p>
+          <a href="#" class="button button-center">Descarga la checklist</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "clients.html" (dict "context" . "background" "light")}}
+{{ end }}
