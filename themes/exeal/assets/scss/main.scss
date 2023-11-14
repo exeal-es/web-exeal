@@ -95,12 +95,15 @@ li em {
 //
 // NAVBAR
 //
+nav {
+  font-size: 1.1em;
+  font-family: $h2-font, sans-serif;
+}
+
 nav.dark {
   border-style: solid;
   border-color: $mid-gray;
   border-bottom-width: 2px;
-  font-size: 1.1em;
-  font-family: $h2-font, sans-serif;
 }
 
 .navbar {
