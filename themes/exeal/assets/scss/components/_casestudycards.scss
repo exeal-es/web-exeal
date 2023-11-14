@@ -1,0 +1,114 @@
+body.case-study p {
+  color: $mid-gray;
+}
+
+body.case-study .box p {
+  color: $dark-background-color;
+}
+
+body.case-study .dark .box p {
+  color: $gray-background-color;
+}
+
+body.case-study .dark p {
+  color: $light-gray;
+}
+
+ul.case-study-index li {
+  background-image: url("/assets/img/arrow-cta-yellow.svg");
+  background-position-y: 0.3em;
+  background-repeat: no-repeat;
+  padding-left: 3em;
+  font-family: $h2-font, sans-serif;
+  font-size: 1.1rem;
+}
+
+ul.case-study-index li a {
+  color: $dark-background-color;
+}
+
+h2.with-arrow {
+  background-image: url("/assets/img/arrow-right-secondary.svg");
+  background-size: 2em;
+  background-position-y: 0.25em;
+  background-position-x: 0.3em;
+  margin-left: -3em;
+  padding-left: 3em;
+  background-repeat: no-repeat;
+}
+
+.box h4 {
+  font-family: $h2-font, sans-serif !important;
+  font-size: 1.1em;
+}
+
+.side-by-side {
+  display: table;
+  max-width: 100%;
+  height: fit-content;
+}
+
+.side-by-side-panel {
+  display: table-cell;
+  width: 50%;
+  padding-left: 10%;
+  padding-right: 2%;
+}
+
+@media (max-width: 768px) {
+  .side-by-side {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-by-side-panel {
+    width: 100%;
+    padding-left: 1em;
+  }
+}
+
+.case-study-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.case-study-card {
+  margin: 0 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: 0.3s;
+}
+
+.case-study-card .container h6 {
+  min-height: 10em;
+}
+
+@media (max-width: 768px) {
+  .case-study-card-container {
+    flex-direction: column;
+  }
+
+  .case-study-card-container .case-study-card:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}
+
+.case-study-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.case-study-card>.container {
+  padding: 16px 32px;
+}
+
+.case-study-card>.container>h4 {
+  font-weight: 900;
+  font-size: 0.95em;
+}
+
+.case-study-card>.container>h6 {
+  font-size: 0.75em;
+  color: #838383;
+  margin-bottom: 1em;
+}
