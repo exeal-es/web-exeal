@@ -1,5 +1,5 @@
 $("document").ready(function () {
-  $("form").each(function () {
+  $("form.redirect-js").each(function () {
     this.addEventListener(
       "submit",
       function (event) {
