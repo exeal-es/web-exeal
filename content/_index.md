@@ -1,145 +1,105 @@
 ---
-title: "Acompañamiento técnico para tu equipo de desarrollo"
-description: "Ayudamos a líderes técnicos a mejorar las prácticas de su equipo para acelerar la entrega de software y eliminar los bugs."
-date: 2020-07-19T16:14:05+02:00
+title: "Bootcamp de buenas prácticas de desarrollo de software"
+description: "Da el salto como desarrollador, empieza a aportar valor a través del software y conviértete en un referente."
+date: 2023-08-01T00:00:00+02:00
+cta_url: https://forms.gle/1aQBrPyStQWaoHbY7
+redirect_submission_url: /bootcamp-buenas-practicas/programa/
 team:
   [{ name: "pedropardal" }]
 texts:
   hero:
-    header: Acompañamiento técnico para tu equipo de desarrollo
-    subheader: Ayudamos a líderes técnicos a mejorar las prácticas de su equipo para acelerar la entrega de software y eliminar los bugs.
+    header: Bootcamp de buenas prácticas de desarrollo de software
+    subheader: Da el salto como desarrollador/a, empieza a aportar valor a través del software y conviértete en un/a referente.
   stakes:
-    header: "Entregar software de calidad a tiempo <em>no tiene por qué ser doloroso.</em>"
-    p1: "¿Están preparados tu software y tus procesos para que tu equipo aporte valor de forma continua, cumpliendo las fechas de entrega? O por el contrario se oyen cosas como..."
+    header: "En el sector tecnológico, no mantenerse al día <em>es fatal para tu carrera</em> como desarrollador/a."
+    p1: "Si no te actualizas, <em>te quedarás atrás</em> en cuanto a conocimientos y habilidades, lo que te hará perder valor para las empresas y <em>reducirá tu competitividad</em> en el mercado laboral. Esto te costará:"
     list:
-      - "Estamos saturados arreglando bugs y no podemos añadir nuevas funcionalidades."
-      - "Tenemos que dedicar un sprint entero a refactorizar."
-      - "Al añadir la nueva funcionalidad se han roto otras tres."
-      - "Es imposible trabajar porque hay demasiada deuda técnica."
-      - "Fulanito se ha ido de vacaciones y es el único que controla este tema."
-      - "El cambio ya está hecho, pero hasta la release de dentro de dos semanas no llegará a producción."
-    p2: "Sin las prácticas ni el mindset adecuados, tu equipo permanecerá <em>lento, ahogado con incidencias y frustrado</em>."
-  valueprop:
-    what: "Llevaremos a tu equipo al <em>alto rendimiento</em>, de forma que serán capaces de..."
+      - "Perder la confianza de tu equipo y tus managers."
+      - "Salarios más bajos que la media del sector."
+      - "No aportar valor al negocio ni al producto."
+      - "Perderte proyectos interesantes por falta de conocimientos y experiencia."
+      - "Perder tu vida personal intentando formarte por tu cuenta."
+      - "Caer en desfase y estancar tu carrera."
+  bestpractices:
+    what: "Las buenas prácticas <em>no se enseñan en los bootcamps</em> ni en la universidad"
+    p1: "Sin embargo, son las que <em>de verdad diferencian a los/as senior</em> a la hora de escribir código más mantenible, escalable y que aporta valor al negocio:"
     benefits:
       [
         {
-          icon: "/assets/img/icon-apprenticeship.svg",
-          text: "Producir software fácil de extender y mantener, entregado a tiempo al mercado.",
+          title: "Testing automatizado",
+          description: "Pruebas unitarias, de integración y de aceptación, test-driven development (TDD).",
         },
         {
-          icon: "/assets/img/icon-coaching.svg",
-          text: "Minimizar los defectos en el producto y las sorpresas en los despliegues.",
+          title: "Diseño y arquitectura de software",
+          description: "Refactoring, Principios SOLID, arquitectura hexagonal, domain-driven design (DDD).",
         },
         {
-          icon: "/assets/img/icon-training.svg",
-          text: "Aportar valor al negocio desde el primer momento y de forma constante.",
+          title: "DevOps",
+          description: "Integración y despliegue continuos, operabilidad, monitorización y seguridad.",
+        },
+        {
+          title: "Desarrollo de producto",
+          description: "Visión de producto, comunicación con el cliente, gestión ágil de proyectos, historias de usuario",
+        },
+        {
+          title: "Trabajo en equipo",
+          description: "Pair programming, retrospectivas y acuerdos de equipo, habilidades blandas.",
         },
       ]
-    how: "Lo conseguiremos fomentando una cultura de <em>excelencia técnica</em>, <em>colaboración</em> y <em>mejora continua</em>."
-  team:
-    header: Deja guiar a tu equipo por expertos
-    p: Los technical coaches que acompañarán a tu equipo son desarrolladores y líderes técnicos con amplia experiencia trabajando en equipos de alto rendimiento.
-  guide:
-    header: ¿Cómo es trabajar con nosotros?
-    features:
-      [
-        {
-          icon: "/assets/img/legacy/icons/icon-01.svg",
-          text: "Trabajaremos codo con codo con los desarrolladores <em>desde el día a día</em> de su proyecto, en sesiones de Pair/Mob programming.",
-        },
-        {
-          icon: "/assets/img/legacy/icons/icon-06.svg",
-          text: "Pondremos el <em>foco en el negocio</em>, facilitando la colaboración entre desarrolladores y stakeholders para aportar valor de forma continua.",
-        },
-        {
-          icon: "/assets/img/legacy/icons/icon-02.svg",
-          text: "Perseguiremos la excelencia técnica, fomentando la adopción de <em>buenas prácticas técnicas</em> (Agile, XP, DevOps) y hábitos que permitan la adopción de un ritmo sostenible.",
-        },
-        {
-          icon: "/assets/img/legacy/icons/icon-04.svg",
-          text: "Ayudaremos al equipo a dar forma a una <em>visión técnica</em> que habilite la evolución del negocio.",
-        },
-        {
-          icon: "/assets/img/legacy/icons/icon-03.svg",
-          text: "<em>Formaremos al equipo</em> en aquellos conocimientos de los que pueda carecer, en el momento oportuno y desde un punto de vista aplicado, mediante Learning Hours.",
-        },
-        {
-          icon: "/assets/img/legacy/icons/icon-05.svg",
-          text: "Lograremos un <em>impacto a largo plazo</em>. Cuando nos vayamos, el cambio cultural y de mindset del equipo perdurará",
-        },
-      ]
-  socialproof:
-    header: ¿Qué dicen nuestros clientes?
-    subheader: Descubre cómo nuestros clientes han transformado sus equipos de la mano de nuestro acompañamiento
-    casestudies: [
-      {
-        youtube: "https://www.youtube.com/embed/NZgsqqiS440",
-        title: "De new hire a senior en 3 meses sin alterar la productividad de los equipos",
-        description: "Tras realizar la definición del plan de carrera de los empleados del departamento de ingeniería de AIDA, identifican la necesidad de encontrar talento de nivel intermedio para incorporar a sus equipos.",
-        link: "/casos-de-exito/domingo-alonso-group/"
-      },
-      {
-        youtube: "https://www.youtube.com/embed/8WfycGZPaug",
-        title: "Cómo lograr la excelencia técnica y el alto rendimiento del equipo en 3 meses",
-        description: "Queríamos poner en marcha una “potente remodelación” a nivel del desarrollo de nuestro producto y para ello era necesario que el equipo con el que contábamos aprendiera, obtuviera formación.",
-        link: "/casos-de-exito/we-are-bab/"
-      },
-    ]
+    p2: "Pero no te preocupes, en el Bootcamp de Buenas Prácticas de Exeal <em>te las enseñamos todas</em>. En menos de lo que esperas <em>obtendrás la preparación necesaria para acceder a posiciones senior</em>."
+  valueprop:
+    what: "¿En qué consiste el <em>bootcamp de buenas prácticas</em>?"
+    p1: "Durante cuatro meses, te incorporarás a una formación a tiempo parcial, donde te acompañaremos en tu proceso de aprendizaje y puesta en práctica de las buenas prácticas de desarrollo."
+    list:
+      - "Estudiarás los conceptos clave de las buenas prácticas en el <em>campus virtual, a tu ritmo</em>, mediante videos, ejercicios entregables y exámenes de autoevaluación."
+      - "Asistirás a <em>talleres online</em> en directo, en grupos reducidos, en los que resolverás ejercicios prácticos con la ayuda de los mentores y compañeros."
+      - "Estarás <em>acompañado por un mentor</em>, que resolverá tus dudas y te dará feedback personalizado sobre tu avance en tutorías individuales."
+      - "Desarrollarás un <em>proyecto integrador</em> de principio a fin empleando las buenas prácticas. Individual, en pareja o en grupo, tú decides cómo."
+      - "Estudiarás rodeado una <em>comunidad</em> de personas con la misma pasión, valores e inquietudes que tú."
+      - "Accederás a una <em>bolsa de empleo exclusiva</em> con empresas líderes del sector que apuestan por las buenas prácticas."
   testimonials:
     [
       {
-        text: "&ldquo;Desde que Pedro llegó al equipo se involucró desde el minuto 1, tanto en el producto como en la parte técnica, siendo una pieza clave en la gran mejora sistémica que experimentó el equipo, ayudando no solo en detalles técnicos si no en las interacciones, relaciones y otras dinámicas de equipo.&rdquo;",
-        name: "Abraham Vallez",
-        position: "Engineering Manager @ Zinklar",
-        photo: "/assets/img/testimonials/abraham-vallez.png",
+        text: "&ldquo;El training de legacy code de Exeal me dejó un montón de tips útiles que vienen muy bien para aplicar en el día a día. Además de aprender y reforzar estrategias existentes para que el código legacy sea un poco más amigable y no tan temido. ¡Lo súper recomiendo!&rdquo;",
+        name: "Meri Herrera",
+        position: "Software Engineer @ Voxel Group",
+        photo: "/assets/img/testimonials/meri-herrera.jpeg",
         active: true,
       },
       {
-        text: "&ldquo;Ver al equipo motivado y con ganas ha sido muy positivo. Gana el equipo, gana la empresa y también ganan los empleados a nivel personal ya que obtienen un aprendizaje y una formación extra que tiene un retorno muy positivo&rdquo;",
-        name: "Gerard Artés",
-        position: "CTO & Co-founder @ BAB",
-        photo: "/assets/img/testimonials/gerard-artes.jpg"
+        text: "&ldquo;Hasta ahora, cambiaba el código legacy cruzando los dedos para que todo funcionara correctamente, sin ningún tipo de test. El curso con Pedro ha sido un punto de inflexión, he adquirido herramientas para que mi código sea de mucha mejor calidad, y como protegerlo con tests automáticos.&rdquo;",
+        name: "Humberto Braojos",
+        position: "Software Engineer @ Voxel Group",
+        photo: "/assets/img/testimonials/humberto-braojos.jpeg"
       },
       {
-        text: "&ldquo;Tras empezar a trabajar con Exeal, volvemos a respirar en el equipo el aprendizaje, las preguntas, las lecturas... El éxito principal es ayudar a crecer y retener a nuestros profesionales.&rdquo;",
-        name: "Emilio Macías",
-        position: "Director de operaciones @ AIDA (Domingo Alonso Group)",
-        photo: "/assets/img/testimonials/emilio-macias.jpeg",
+        text: "&ldquo;Ahora me enfrento a los cambios en el código legacy con mucha más tranquilidad, confianza en el resultado y eficiencia. Resaltaría particularmente los ejercicios de extraer dependencias, solía ser el punto de mayor dolor al añadir cobertura de tests.&rdquo;",
+        name: "Fermín Sáez",
+        position: "Software Engineer @ Voxel Group",
+        photo: "/assets/img/testimonials/fermin-saez.jpeg",
       },
     ]
   plan:
-    header: Emprende ahora el camino hacia el alto rendimiento
+    header: "¿A qué esperas? Impulsa tu carrera <em>dominando las buenas prácticas</em>"
     steps:
       [
         {
           number: "1",
-          title: "Análisis",
-          description: "Cuéntanos, en una sesión gratuita y sin compromiso, cuáles son los retos y necesidades de tu equipo.",
+          title: "Apúntate a la lista de espera",
+          description: "Envíanos tu solicitud y nos pondremos en contacto contigo para compartirte todos los detalles.",
         },
         {
           number: "2",
-          title: "Plan",
-          description: "Nos reunimos con tu equipo para acordar los objetivos, contenidos y formato del coaching.",
+          title: "Formaliza tu matrícula",
+          description: "El próximo cohort empieza el 2 de Octubre de 2023. ¡Corre, las plazas son limitadas!",
         },
         {
           number: "3",
-          title: "Coaching",
-          description: "Nos integramos al día a día de tu equipo para potenciar sus prácticas técnicas.",
+          title: "Estudia con nosotros",
+          description: "Durante los próximos 4 meses, aprende la teoria y aplicación de las buenas prácticas en la academia de Exeal.",
         },
       ]
-  explaining_paragraph:
-    header: Empodera a tu equipo de desarrollo para aportar valor al negocio
-  contact:
-    header: Cuéntanos acerca de los retos de tu equipo y te propondemos un plan personalizado para ellos.
   common:
-    call_to_action: Charlemos sobre tu equipo
+    call_to_action: Apúntate a la lista de espera
+    cta_transitional: "Más info"
 ---
-
-En Exeal sabemos que el principal objetivo del software es generar valor para el negocio, pero también entendemos la desmotivación que supone estar constantemente haciendo malabares para seguir implementando funcionalidades, a la vez que mantener todos los fuegos controlados e intentar mejorar poco a poco el código, aún con la constante presión del negocio y la impotencia de no lograr un entendimiento.
-
-Por ello, ponemos toda nuestra experiencia aplicando los principios y prácticas de metodologías de desarrollo ágil como XP (Extreme Programming) y DevOps a disposición de tu equipo, con el que trabajaremos codo con codo desde el día a día de vuestro proyecto. Fomentaremos la adopción de buenas prácticas, hábitos y creación de un ritmo sostenible, para garantizar la performance y predictibilidad del equipo a largo plazo.
-
-Ayudaremos al equipo a colaborar con negocio y usuarios finales, optimizar sus procesos de desarrollo, dar forma a la visión técnica y construir software calidad de manera incremental. Lo haremos en sesiones de Pair y Mob Programming, así como como facilitando dinámicas de equipo. Trasladaremos aquellos conocimientos de los que pueda carecer el equipo (p.ej. TDD, refactoring, DDD, CI/CD, etc.), en el momento oportuno y desde un punto de vista aplicado, mediante Learning Hours.
-
-Fomentaremos y cultivaremos una cultura de mejora y aprendizaje continuos entre todos los miembros del equipo para que, cuando nos vayamos, el equipo pueda seguir creciendo sin nosotros y aportando valor de forma constante a usuarios y stakeholders, sin incidencias relevantes, sin parones eternos para refactorizar, con despliegues casi instantáneos y sin riesgo y, sobre todo, con personas felices y orgullosas de pertenecer a tu equipo.
