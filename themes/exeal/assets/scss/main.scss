@@ -102,34 +102,6 @@ img.avatar {
   height: 6em;
 }
 
-.form-control {
-  border-color: $primary-color;
-  border-width: 2px;
-  border-radius: 0px;
-}
-
-.form-control:focus {
-  border-color: $primary-color;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-    0 0 8px rgba(31, 229, 137, 0.6);
-}
-
-.btn-submit {
-  border-width: 0px;
-  border-radius: 2rem;
-  background-color: $primary-color;
-  width: 100%;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-  font-family: $h2-font, sans-serif;
-  color: white;
-}
-
-.btn-submit:active {
-  background-color: $primary-color;
-  border-color: $primary-color;
-}
-
 img.arrow-down {
   height: 4em;
   width: auto;
@@ -149,6 +121,7 @@ img.arrow-right {
 }
 
 @import "components/footer";
+@import "components/forms";
 
 ul.ticked li {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20d%3D%22M37.9%2C10.6l-3.2-3.2c-0.4-0.4-1-0.7-1.6-0.7c-0.6%2C0-1.2%2C0.2-1.6%2C0.7L15.9%2C23l-7-7c-0.4-0.4-1-0.7-1.6-0.7S6.1%2C15.6%2C5.6%2C16%20l-3.2%2C3.2c-0.4%2C0.4-0.7%2C1-0.7%2C1.6S2%2C22%2C2.4%2C22.5l8.6%2C8.6l3.2%2C3.2c0.4%2C0.4%2C1%2C0.7%2C1.6%2C0.7c0.6%2C0%2C1.2-0.2%2C1.6-0.7l3.2-3.2l17.2-17.2%20c0.4-0.4%2C0.7-1%2C0.7-1.6C38.6%2C11.6%2C38.4%2C11.1%2C37.9%2C10.6z%22%20fill%3D%22%2305E69B%22%20%2F%3E%3C%2Fsvg%3E");
@@ -194,37 +167,7 @@ sup {
   margin-right: auto;
 }
 
-.collapsable {
-  cursor: pointer;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  color: $secondary-color;
-}
-
-.collapsable .image {
-  content: url("/assets/img/arrow-collapse.svg");
-  position: relative;
-  top: calc(100% - 15px);
-  margin-left: 80%;
-  transform: rotate(180deg);
-}
-
-.collapsable.collapsed .image {
-  transform: unset;
-}
-
-@media (max-width: 768px) {
-  .collapsable {
-    width: 80%;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-
-  .collapsable .image {
-    margin-left: calc(100% + 0.2em);
-  }
-}
+@import "components/casestudy/collapsable";
 
 @import "components/legacy/main";
 
@@ -261,99 +204,11 @@ img.mockup-brochure {
   max-height: 14rem;
 }
 
-label {
-  font-size: 0.85rem;
-  color: $mid-gray;
-  line-height: 100%;
-}
-
-.dark .form-control {
-  border-color: white;
-  background-color: transparent;
-  color: white;
-}
-
-input.button {
-  display: block;
-  border-style: solid;
-  border-color: $secondary-color;
-  border-radius: 2rem;
-  background-color: $secondary-color;
-  border-width: 3px;
-  font-family: $h2-font, sans-serif;
-  text-decoration: none;
-  width: 100%;
-  font-size: 1.3em;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-  padding-left: 1.4em;
-  padding-right: 1.4em;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
 @import "components/courses/levelicons";
 
 img.icon-mid {
   max-height: 6rem;
   margin-bottom: 1rem;
-}
-
-/* Customize the label (the container) */
-.checkbox-container {
-  display: block;
-  position: relative;
-  padding-left: 32px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.checkbox-container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: transparent;
-  border-color: white;
-  border-style: solid;
-  border-width: 2px;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.checkbox-container input:checked~.checkmark:after {
-  display: block;
-}
-
-.checkbox-container .checkmark:after {
-  left: 6px;
-  top: 2px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 
 p.bigger {
@@ -366,20 +221,4 @@ p.bigger {
 
 @import "components/ourteammembermodals";
 
-ul.blocks li {
-  padding: 0.25rem;
-}
-
-
-ul.blocks div.inner {
-  font-size: 1.25em;
-  text-align: center;
-  align-items: center;
-  display: grid;
-  height: 100%;
-  width: 100%;
-  font-family: $h2-font, sans-serif;
-  color: $primary-color;
-  margin: 1rem;
-  background-color: $gloaming-background-color;
-}
+@import "components/leadmagnet/areas";
