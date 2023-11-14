@@ -226,135 +226,11 @@ sup {
   }
 }
 
-dl.faq dt {
-  font-family: $h2-font, sans-serif;
-  color: $mid-gray;
-  border-color: $primary-color;
-  border-bottom-style: solid;
-  border-width: 2px;
-  font-size: 1.25em;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-}
+@import "components/legacy/main";
 
-dl.faq dd {
-  color: $mid-gray;
-  padding-bottom: 1em;
-  padding-top: 1em;
-}
+@import "components/testimonials";
 
-p.taxes {
-  color: $mid-gray;
-  font-size: 0.75em;
-}
-
-.carousel-indicators {
-  display: inline-block;
-  margin-right: 1em;
-  margin-left: 0px;
-  position: relative;
-  bottom: 0px;
-}
-
-.carousel-indicators li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 10px;
-  text-indent: 0;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  position: relative;
-  top: 0.15em;
-}
-
-.carousel-indicators.carousel-testimonials li {
-  background-color: #d0d0d0;
-}
-
-.carousel-indicators.carousel-testimonials .active {
-  background-color: $dark-background-color;
-}
-
-//
-// CUSTOMER
-//
-
-.customer {
-  & {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  &>* {
-    vertical-align: middle;
-  }
-
-  & .customer-info {
-    display: inline-block;
-    font-family: $h2-font, sans-serif;
-  }
-
-  @media (min-width: 992px) {
-    & .customer-info {
-      text-align: left;
-      margin-left: 1.5em;
-    }
-  }
-
-  .dark & h6 {
-    color: $primary-color;
-  }
-
-  & .customer-info p {
-    margin: 0px;
-    color: $mid-gray  !important;
-    font-size: 0.9em;
-    line-height: 1.25em;
-  }
-}
-
-.carousel-indicators-parent {
-  margin-top: 1.5em;
-  text-align: center;
-}
-
-.carousel {
-  font-family: $h2-font, sans-serif;
-  font-size: 1.3em;
-}
-
-@media (max-width: 992px) {
-  .customer .customer-info {
-    display: block;
-    margin-top: 1em;
-  }
-}
-
-p.price {
-  font-family: $h2-font, sans-serif;
-  color: $gloaming-background-color;
-  font-size: 6em;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: $primary-color;
-}
-
-p.price sup {
-  font-size: 3rem;
-}
-
-@media (min-width: 1200px) {
-  div.price-box-left {
-    margin-right: 2em;
-  }
-
-  div.price-box-right {
-    margin-left: 2em;
-  }
-}
+@import "components/price";
 
 div.vertical-center {
   display: flex;
@@ -375,95 +251,14 @@ img.client-logo {
   max-width: 10rem;
 }
 
-.course-card {
-  box-shadow: 0.5rem 0.5rem 1rem -1rem rgba(0, 0, 0, 0.75);
-  margin-bottom: 2rem;
-}
+@import "components/courses/coursecard";
 
-.course-header {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 16rem;
-}
-
-.course-body {
-  padding: 1.5rem 1.5rem;
-}
-
-.course-body h3 {
-  font-size: 1.5em;
-  font-style: normal;
-  margin-bottom: 1.25rem;
-}
-
-.course-body p.level {
-  color: $light-gray;
-  font-size: 1em;
-  font-family: $h2-font, sans-serif;
-  margin-bottom: 1.25rem;
+.course-page-tagline h1 {
   margin-top: 0rem;
-}
-
-.course-body p.description {
-  color: $mid-gray;
-  font-size: 1rem;
-  margin-bottom: 1.25rem;
-  margin-top: 0rem;
-  line-height: 150%;
-}
-
-.course-body li {
-  color: $light-gray;
-  font-size: 0.85rem;
-  font-family: $h2-font, sans-serif;
-  margin-bottom: 0.5rem;
-  margin-top: 0rem;
-}
-
-.course-body ul {
-  margin-bottom: 1.25rem;
-}
-
-.courses-tagline {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/img/blog/blog-cover-1.png");
-}
-
-.courses-tagline-inner {
-  height: 100%;
-  padding: 2rem;
-  color: white;
-  height: 22em;
-  position: relative;
-}
-
-.courses-tagline h1 {
-  margin-left: 2rem;
-  font-family: $h2-font, sans-serif;
-  font-size: 2rem;
-  max-width: 25rem;
-}
-
-.course-header div.featured-course {
-  display: block;
-  background-color: $secondary-color;
-  font-family: $h2-font, sans-serif;
-  color: white;
-  padding: 0.25rem 1rem;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
 }
 
 img.mockup-brochure {
   max-height: 14rem;
-}
-
-.course-page-tagline h1 {
-  margin-top: 0rem;
 }
 
 label {
@@ -498,37 +293,7 @@ input.button {
   cursor: pointer;
 }
 
-ul.course-features li {
-  background-image: url("/assets/img/icon-markup-green-xs.svg");
-  background-repeat: no-repeat;
-  background-position-x: 0.75em;
-  background-position-y: 0.5em;
-  padding-left: 2.25em;
-}
-
-i.icon {
-  display: inline-block;
-  margin-right: 0.25rem;
-  position: relative;
-  top: 0.15em;
-  background-repeat: no-repeat;
-}
-
-i.i-level-black {
-  width: 25px;
-  height: 25px;
-  background-image: url("/assets/img/icon-markup-black-s.svg");
-}
-
-i.i-level-grey {
-  width: 25px;
-  height: 25px;
-  background-image: url("/assets/img/icon-markup-grey-s.svg");
-}
-
-img.tagline-img-max-height {
-  height: 100%;
-}
+@import "components/courses/levelicons";
 
 img.icon-mid {
   max-height: 6rem;
