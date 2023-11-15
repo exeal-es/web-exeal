@@ -138,5 +138,5 @@ texts:
       - "Comunidad de desarrolladores, ex-alumnos y mentores."
       - "Bolsa de empleo exclusiva."
   common:
-    call_to_action: Apúntante a la academia
+    call_to_action: Apúntate a la academia
 ---
