@@ -1,10 +1,5 @@
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button>
-
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="newsletter-modal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="box" style="margin: 1.5rem; padding: 3rem">
@@ -32,7 +27,7 @@
                 </div>
                 <div class="mc-field-group">
                   <label for="mce-EMAIL"
-                    >Email Address <span class="asterisk">*</span></label
+                    >Tu mejor email <span class="asterisk">*</span></label
                   ><input
                     type="email"
                     name="EMAIL"
@@ -44,7 +39,7 @@
                 </div>
                 <div class="mc-field-group">
                   <label for="mce-FNAME"
-                    >First Name <span class="asterisk">*</span></label
+                    >Tu nombre <span class="asterisk">*</span></label
                   ><input
                     type="text"
                     name="FNAME"
@@ -147,3 +142,20 @@
     </div>
   </div>
 </div>
+
+<script>
+if (typeof(Storage) !== "undefined") {
+  function showPopup() {
+    window.setTimeout(function() {
+      $('#newsletter-modal').modal('show');
+      sessionStorage.setItem("popup", 'hide');         
+    }, 10000); 
+  }
+  if (!sessionStorage.getItem("popup")) {
+    sessionStorage.setItem("popup", 'show');         
+  }
+  if (sessionStorage.getItem("popup") == 'show') {
+    showPopup();
+  }
+}
+</script>
