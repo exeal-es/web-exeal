@@ -2,8 +2,7 @@
 title: "Aprendizaje acompañado para potenciar tu carrera como desarrollador de software"
 description: "Consigue mayor impacto con tu trabajo, mejora tu salario y recupera tu motivación."
 date: 2023-08-01T00:00:00+02:00
-cta_url: https://forms.gle/1aQBrPyStQWaoHbY7
-redirect_submission_url: /bootcamp-buenas-practicas/programa/
+cta_url: https://academia.exeal.com/order?ct=ec7d337c-bcb8-49a3-adba-e2f1fd30fa87
 team:
   [{ name: "pedropardal" }]
 texts:
