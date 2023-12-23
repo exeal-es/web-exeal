@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    {{- partial "katas/head.html" . -}}
+  </head>
+  <body>
+    {{- partial "katas/navbar.html" . -}}
+    {{- partial "katas/hero.html" . -}}
+
+    <section id="sect-body">
+      {{- block "article" . }}{{- end }}
+      <div class="container">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center">
+            <ul class="tags tags-dark">
+              {{ partial "katas/tags.html" . }}
+            </ul>
+            <div class="addthis_inline_share_toolbox"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{- partial "footer.html" . -}}
+    {{- partial "javascript.html" . -}}
+    {{- partial "popup-newsletter.html" . -}}
+    <script
+      type="text/javascript"
+      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"
+    ></script>
+  </body>
+</html>
+
+{{ define "article" }}
+<div class="container">
+  <article>{{ .Content }}</article>
+</div>
+{{ end }}
