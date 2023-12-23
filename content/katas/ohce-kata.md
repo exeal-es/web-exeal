@@ -4,7 +4,7 @@ description: 'Un sencillo ejercicio para practicar el estilo Outside-in de Test-
 date: 2023-12-23T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [tdd, outside-in, starter]
+tags: [tdd, outside-in, starter, mocks]
 images: [/assets/img/blog/posts/dojo.jpg]
 featured_image: /assets/img/blog/posts/dojo.jpg
 card_image: /assets/img/blog/posts/dojo.jpg
