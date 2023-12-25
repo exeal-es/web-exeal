@@ -28,11 +28,11 @@ navaccelerator:
   other: Talent Acceleration Program
 navbestpracticesbootcamp:
   other: Best Practices Bootcamp
-navelearning:
-  other: E-learning programs
 navresources:
   other: Resources
 navtrainingadhoc:
   other: Ad Hoc Training
 navmailinglist:
-  other: Join the newsletter
+  other: Newsletter
+navcontact:
+  other: Contact us

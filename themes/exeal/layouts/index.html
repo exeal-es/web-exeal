@@ -1,30 +1,3 @@
-{{ define "nav-items" }}
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Empresas
-  </a>
-  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <a class="dropdown-item" href="/servicios/technical-coaching">{{ i18n "navcoaching" }}</a>
-    <a class="dropdown-item" href="/servicios/aceleradora-de-talento">{{ i18n "navaccelerator" }}</a>
-    <a class="dropdown-item" href="/cursos">{{ i18n "navtrainingadhoc" }}</a>
-  </div>
-</li>
-
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    {{ i18n "navresources" }}
-  </a>
-  <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-    <a class="dropdown-item" href="/blog">Blog</a>
-    <a class="dropdown-item" href="/katas">Katas</a>
-  </div>
-</li>
-
-<li class="nav-item">
-  <a class="nav-link nav-button" href="/">Apúntate a la academia</a>
-</li>
-{{ end }}
-
 {{ define "main" }}
 <section id="sect-header" class="dark background background-01">
   <div class="container">
@@ -32,82 +5,186 @@
       <div class="col-md-12">
         <h1>{{ .Params.texts.hero.header | safeHTML }}</h1>
         <h4>{{ .Params.texts.hero.subheader | safeHTML }}</h4>
-        <p class="justify-content-center align-items-center text-center">
-          <a target="_blank" href="{{.Params.cta_url}}" class="button" style="display: inline-block">{{ .Params.texts.common.call_to_action }}</a>
+        <p>
+          <a data-scroll="sect-best-practices" href="#"
+            ><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg"
+          /></a>
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="sect-stakes" class="light">
+<section id="sect-best-practices" class="light">
   <div class="container">
     <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2>
-          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
-        </h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2>
-          {{ .Params.texts.stakes.header | safeHTML }}
-        </h2>
+      <div class="col-12 justify-content-center align-items-center text-center">
+        <h2>¿Cómo <em>te ayudamos</em> a ti y a tu equipo?</h2>
+        <p>Ponemos foco en los <em>fundamentos, metodologías y buenas prácticas</em>, <em>técnicas y de gestión</em>, por encima de tecnologías y frameworks concretos.</p>
       </div>
     </div>
-    <div class="row">
+
+    <div class="row mb-4">
       <div class="col-md-12">
-        <p>{{ .Params.texts.stakes.p1 | safeHTML }}</p>
-        <ul class="row ticked-cross">
-          {{ range .Params.texts.stakes.list }}
-          <li class="col-md-6">{{ . }}</li>
-          {{ end }}
+        <ul class="row blocks">
+          <li class="col-md-3"><div class="col-md-12 inner">Testing automatizado</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Diseño de software</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Orientación a producto</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Equipos de alto rendimiento</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Integración y entrega continua</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Metodologías ágiles</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Arquitectura de software</div></li>
+          <li class="col-md-3"><div class="col-md-12 inner">Aprendizaje continuo</div></li>
         </ul>
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center text-center mt-4">
+      <div class="col-m-12">
+        <p class="justify-content-center align-items-center text-center">
+          <a data-scroll="sect-services" href="#" class="button" style="display: inline-block">Descubre nuestros servicios</a>
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="sect-testimonials-1" class="gloaming">
+<section id="sect-services" class="gloaming">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <div id="carousel-testimonials-1" class="carousel slide" data-ride="carousel">
-          <div class="box">
-            <div class="flap flap-top-right"></div>
-            <div class="carousel-inner">
-              {{ range .Params.texts.testimonials1 }}
-              <div class="carousel-item {{ if eq .active true }}active{{ end }}">
-                <p>{{ .text | safeHTML }}</p>
-                <div class="customer">
-                  <img class="rounded-circle avatar" src="{{ .photo }}" />
-                  <div class="customer-info">
-                    <p>{{ .name }}</p>
-                    <p>{{ .position }}</p>
-                  </div>
-                </div>
-              </div>
-              {{ end }}
-            </div>
-          </div>
+      <div class="col-12 justify-content-center align-items-center text-center">
+        <h2>Proporcionamos servicios de acompañamiento y formación a medida a <em>particulares y empresas</em>.</h2>
+      </div>
+    </div>
 
-          <div class="carousel-indicators-parent">
-            <ol class="carousel-indicators carousel-testimonials">
-              <!-- TODO draw buttons based on data, not hardcoded -->
-              <li data-target="#carousel-testimonials-1" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-testimonials-1" data-slide-to="1"></li>
-              <li data-target="#carousel-testimonials-1" data-slide-to="2"></li>
-              <li data-target="#carousel-testimonials-1" data-slide-to="3"></li>
-            </ol>
-            <a href="#carousel-testimonials-1" data-slide="next" role="button"><img class="arrow-right"
-                src="/assets/img/arrow-right-secondary.svg" /></a>
-          </div>
+    <div class="row">
+      <div class="col-xl-4 mb-3">
+        <div class="box">
+          <div class="flap flap-top-right"></div>
+          <img src="/assets/img/icon-coaching.svg" />
+          <h3>Coaching t&eacute;cnico</h3>
+          <p>
+            Mejora las prácticas y procesos de tu equipo con un acompa&ntilde;amiento y mentorizaci&oacute;n 100% hands-on.
+          </p>
+          <a data-scroll="sect-service-coaching" href="#" class="button-hollow"
+            >M&aacute;s info</a
+          >
+        </div>
+      </div>
+      <div class="col-xl-4 mb-3">
+        <div class="box">
+          <div class="flap flap-top-right"></div>
+          <img src="/assets/img/icon-apprenticeship.svg" />
+          <h3>Bootcamps de desarrollo</h3>
+          <p>
+            Programas de formaci&oacute;n integrales en desarrollo ágil de software y buenas prácticas técnicas.
+          </p>
+          <a
+            data-scroll="sect-service-apprenticeship"
+            href="#"
+            class="button-hollow"
+            >M&aacute;s info</a
+          >
+        </div>
+      </div>
+      <div class="col-xl-4 mb-3">
+        <div class="box">
+          <div class="flap flap-top-right"></div>
+          <img src="/assets/img/icon-training.svg" />
+          <h3>Formaciones a medida</h3>
+          <p>
+            Cursos intensivos de nivel experto, de corta duraci&oacute;n, sobre
+            una t&eacute;cnica o metodolog&iacute;a particular.
+          </p>
+          <a href="/cursos" class="button-hollow">M&aacute;s info</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="sect-best-practices" class="dark background background-07">
+<section id="sect-service-coaching" class="dark background background-02">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-7">
+        <h3>Coaching t&eacute;cnico</h3>
+        <p>
+          <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
+        </p>
+        <p>
+          ¿Está tu equipo ahogado resolviendo incidencias, y <em>tarda cada vez más en entregar</em>
+          software de calidad a tiempo?
+        </p>
+        <p>
+          Nos integraremos en su día a día para ayudarles a <em>revisar sus procesos y prácticas</em> técnicas y de gestión,
+          ayudarles a definir una visión técnica y <em>capacitarlos para ejecutarla</em> de forma efectiva. 
+        </p>
+        <a data-scroll="sect-contact" href="#" class="button">Solicita info</a>
+      </div>
+      <div class="col-md-5 d-none d-sm-none d-md-block">
+        <img
+          class="img-fluid pad"
+          src="/assets/img/photo-apprenticeship-module.png"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-service-bootcamps" class="light">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-5 d-none d-sm-none d-md-block">
+        <img
+          class="img-fluid pad"
+          src="/assets/img/photo-coaching-module.png"
+        />
+      </div>
+      <div class="col-md-7">
+        <h3>Bootcamps de buenas prácticas de desarrollo</h3>
+        <p>
+          <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
+        </p>
+        <p>
+          ¿Buscas <em>incorporar talento</em> técnico a tu empresa y te quieres asegurar de que entran <em>con el nivel suficiente</em>? ¿O quizá quieres llevar el talento interno al siguiente nivel?
+        </p>
+        <p>
+          Con nuestros <em>programas de formación en buenas prácticas</em> de ingeniería <em>maximizarás el impacto en el negocio</em> de tu equipo de ingeniería.
+        </p>
+        <a data-scroll="sect-contact" href="#" class="button">Solicita info</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-service-training" class="dark background background-03">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-7">
+        <h3>Formaci&oacute;n avanzada</h3>
+        <p>
+          <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
+        </p>
+        <p>
+          ¿Tu equipo tiene necesidades de
+          <em>formaci&oacute;n muy espec&iacute;ficas</em>?
+        </p>
+        <p>
+          Diseñamos e impartimos cursos intensivos de <em>nivel experto</em>, sobre <em>técnicas y metodologías concretas</em>, de <em>aplicación inmediata</em> en tu proyecto.
+        </p>
+        <a data-scroll="sect-contact" href="#" class="button">Solicita info</a>
+      </div>
+      <div class="col-md-5 d-none d-sm-none d-md-block">
+        <img
+          class="img-fluid pad"
+          src="/assets/img/photo-training-module.png"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-meet-team" class="light background">
   <div class="container">
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
@@ -116,43 +193,15 @@
         </h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2>{{ .Params.texts.bestpractices.what | safeHTML }}</h2>
+        <h2>Deja guiar a tu equipo por expertos</h2>
       </div>
     </div>
-
-    <div class="row">
+    <div class="row justify-content-center text-center">
       <div class="col-md-12">
-        <p>{{ .Params.texts.bestpractices.p1 | safeHTML }}</p>
-        <ul class="row ticked">
-          {{ range .Params.texts.bestpractices.benefits }}
-          <li class="col-md-6">{{ . }}</li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-
-    <div class="row justify-content-center align-items-center text-center">
-      <div class="col-m-12">
-        <p class="justify-content-center align-items-center text-center">
-          <a target="_blank" href="{{.Params.cta_url}}" class="button" style="display: inline-block">{{ .Params.texts.common.call_to_action }}</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="sect-your-mentor" class="light">
-  <div class="container">
-    <div class="row mt-3 mb-3">
-      <div class="col-7">
-        <p>Me llamo Pedro Pardal, y soy software developer.</p>
-        <p>He hecho consultoría en multitud de empresas, y he conocido a innumerables personas como tú, con un <em>potencial increible</em>, pero <em>desmotivadas</em> por su situación.</p>
-        <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg"/></p>
-        <p>Por suerte, a lo largo de mi carrera, también he tenido la oportunidad de trabajar en empresas de producto de renombre, como Tuenti, Trivago o Codurance, y he podido <em>aprender de los mejores</em>.</p>
-        <p>Déjame que te comparta lo que he aprendido y te ayude a <em>subir al siguiente nivel.</em></p>
+        <p>Los technical coaches que acompañarán y formarán a tu equipo son desarrolladores y <em>líderes técnicos con amplia experiencia</em> trabajando en equipos de alto rendimiento.</p>
       </div>
       {{ range .Params.team }} {{$authorName := .name}} {{ $data := index $.Site.Data.authors $authorName }}
-      <div class="col-5">
+      <div class="col-12 col-md-4 col-lg-4">
         <div class="team-card">
           <div class="team-card-header" style="background-image: url('{{$data.avatar}}')"></div>
           <div class="team-card-body d-flex flex-column">
@@ -184,20 +233,56 @@
           </div>
         </div>
       </div>
-      {{ end }}
+      {{end}}
     </div>
   </div>
 </section>
 
-<section id="sect-testimonials-2" class="gloaming">
+<section id="sect-cases-studies" class="light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ .Params.texts.socialproof.header }}</h2>
+      </div>
+    </div>
+
+    <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
+      <div class="col-md-8">
+        <p>
+          {{ .Params.texts.socialproof.subheader }}
+        </p>
+      </div>
+      <div class="case-study-card-container">
+        {{ range .Params.texts.socialproof.casestudies }}
+        <div class="case-study-card">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="{{ .youtube }}"></iframe>
+          </div>
+          <div class="container">
+            <h4>{{ .title }}</h4>
+            <h6>{{ .description }}</h6>
+            <a href="{{ .link }}" class="button-hollow"
+              style="margin: auto; text-align: center; display: block">Más info</a>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-testimonials" class="gloaming">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div id="carousel-testimonials-2" class="carousel slide" data-ride="carousel">
+        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
           <div class="box">
             <div class="flap flap-top-right"></div>
             <div class="carousel-inner">
-              {{ range .Params.texts.testimonials2 }}
+              {{ range .Params.texts.testimonials }}
               <div class="carousel-item {{ if eq .active true }}active{{ end }}">
                 <p>{{ .text | safeHTML }}</p>
                 <div class="customer">
@@ -215,13 +300,11 @@
           <div class="carousel-indicators-parent">
             <ol class="carousel-indicators carousel-testimonials">
               <!-- TODO draw buttons based on data, not hardcoded -->
-              <li data-target="#carousel-testimonials-2" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-testimonials-2" data-slide-to="1"></li>
-              <li data-target="#carousel-testimonials-2" data-slide-to="2"></li>
-              <li data-target="#carousel-testimonials-2" data-slide-to="3"></li>
-
+              <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+              <li data-target="#carousel-testimonials" data-slide-to="2"></li>
             </ol>
-            <a href="#carousel-testimonials-2" data-slide="next" role="button"><img class="arrow-right"
+            <a href="#carousel-testimonials" data-slide="next" role="button"><img class="arrow-right"
                 src="/assets/img/arrow-right-secondary.svg" /></a>
           </div>
         </div>
@@ -230,143 +313,17 @@
   </div>
 </section>
 
-<section class="light">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 justify-content-center align-items-center text-center">
-        <h2>Conocer la última versión de Spring Boot <em>no te hace mejor ingeniero</em>. Estas son las habilidades que realmente <em>marcan la diferencia</em> en el mundo real:</h2>
-      </div>
-    </div>
+{{ partial "clients.html" (dict "context" . "background" "light")}}
 
-    <div class="row mb-4">
-      <div class="col-md-12">
-        <ul class="row blocks">
-          <li class="col-md-3"><div class="col-md-12 inner">Testing automático</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Diseño de software</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Orientación a producto</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Trabajo en equipo</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Entrega continua</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Conocer tus herramientas</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Arquitectura de software</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Aprendizaje continuo</div></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row justify-content-center align-items-center text-center mt-4">
-      <div class="col-m-12">
-        <p class="justify-content-center align-items-center text-center">
-          <a target="_blank" href="{{.Params.cta_url}}" class="button" style="display: inline-block">{{ .Params.texts.common.call_to_action }}</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="sect-plan" class="dark background background-05">
+<section id="sect-contact" class="dark background background-03">
   <div class="container">
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2>
-          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
-        </h2>
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2>{{ .Params.texts.plan.header | safeHTML }}</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      {{ range .Params.texts.plan.steps }}
-      <div class="col-xl-4 mb-3">
-        <div class="box">
-          <div class="flap flap-top-right"></div>
-          <p class="price">- {{ .number }} -</p>
-          <h3>{{ .title }}</h3>
-          <p>{{ .description }}</p>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-
-    <div class="row justify-content-center align-items-center text-center">
-      <div class="col-m-12">
-        <p class="justify-content-center align-items-center text-center">
-          <a target="_blank" href="{{.Params.cta_url}}" class="button" style="display: inline-block">{{ .Params.texts.common.call_to_action }}</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="sect-testimonials-3" class="gloaming">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div id="carousel-testimonials-3" class="carousel slide" data-ride="carousel">
-          <div class="box">
-            <div class="flap flap-top-right"></div>
-            <div class="carousel-inner">
-              {{ range .Params.texts.testimonials3 }}
-              <div class="carousel-item {{ if eq .active true }}active{{ end }}">
-                <p>{{ .text | safeHTML }}</p>
-                <div class="customer">
-                  <img class="rounded-circle avatar" src="{{ .photo }}" />
-                  <div class="customer-info">
-                    <p>{{ .name }}</p>
-                    <p>{{ .position }}</p>
-                  </div>
-                </div>
-              </div>
-              {{ end }}
-            </div>
-          </div>
-
-          <div class="carousel-indicators-parent">
-            <ol class="carousel-indicators carousel-testimonials">
-              <!-- TODO draw buttons based on data, not hardcoded -->
-              <li data-target="#carousel-testimonials-3" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-testimonials-3" data-slide-to="1"></li>
-              <li data-target="#carousel-testimonials-3" data-slide-to="2"></li>
-
-            </ol>
-            <a href="#carousel-testimonials-3" data-slide="next" role="button"><img class="arrow-right"
-                src="/assets/img/arrow-right-secondary.svg" /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="sect-value-proposition" class="dark background background-03">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2>
-          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
-        </h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2>{{ .Params.texts.valueprop.what | safeHTML }}</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="row ticked">
-          {{ range .Params.texts.valueprop.list }}
-          <li class="col-md-6">{{ . | safeHTML }}</li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-
-    <div class="row justify-content-center align-items-center text-center">
-      <div class="col-m-12">
-        <p class="justify-content-center align-items-center text-center">
-          <a target="_blank" href="{{.Params.cta_url}}" class="button" style="display: inline-block">{{ .Params.texts.common.call_to_action }}</a>
-        </p>
+        <h2>Contácta con nosotros y <em>charlemos sobre los retos de tu equipo</em> para valorar cómo podemos ayudar.</h2>
+        {{- partial "contactform.html" . -}}
       </div>
     </div>
   </div>
