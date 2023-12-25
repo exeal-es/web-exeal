@@ -1,6 +1,6 @@
 ---
 title: "Bootcamp de buenas prácticas de desarrollo de software"
-description: "Da el salto como desarrollador, empieza a aportar valor a través del software y conviértete en un referente."
+description: "Consigue mayor impacto con tu trabajo, mejora tu salario y recupera tu motivación."
 date: 2023-08-01T00:00:00+02:00
 layout: bootcamp-buenas-practicas
 cta_url: https://forms.gle/1aQBrPyStQWaoHbY7
@@ -10,97 +10,136 @@ team:
 texts:
   hero:
     header: Bootcamp de buenas prácticas de desarrollo de software
-    subheader: Da el salto como desarrollador/a, empieza a aportar valor a través del software y conviértete en un/a referente.
+    subheader: Consigue un mayor impacto con tu trabajo, mejora tu salario y recupera tu motivación.
   stakes:
-    header: "En el sector tecnológico, no mantenerse al día <em>es fatal para tu carrera</em> como desarrollador/a."
-    p1: "Si no te actualizas, <em>te quedarás atrás</em> en cuanto a conocimientos y habilidades, lo que te hará perder valor para las empresas y <em>reducirá tu competitividad</em> en el mercado laboral. Esto te costará:"
+    header: "Estás en piloto automático y eso te está <em>costando tu carrera</em> como desarrollador."
+    p1: "La mayoría de desarrolladores están <em>atrapados</em> en empresas mediocres, <em>desmotivados</em> por no tener oportunidades de crecer profesionalmente ni lograr impacto con su trabajo. ¿Te suena alguna de estas situaciones?:"
     list:
-      - "Perder la confianza de tu equipo y tus managers."
-      - "Salarios más bajos que la media del sector."
-      - "No aportar valor al negocio ni al producto."
-      - "Perderte proyectos interesantes por falta de conocimientos y experiencia."
-      - "Perder tu vida personal intentando formarte por tu cuenta."
-      - "Caer en desfase y estancar tu carrera."
-  bestpractices:
-    what: "Las buenas prácticas <em>no se enseñan en los bootcamps</em> ni en la universidad"
-    p1: "Sin embargo, son las que <em>de verdad diferencian a los/as senior</em> a la hora de escribir código más mantenible, escalable y que aporta valor al negocio:"
-    benefits:
-      [
-        {
-          title: "Testing automatizado",
-          description: "Pruebas unitarias, de integración y de aceptación, test-driven development (TDD).",
-        },
-        {
-          title: "Diseño y arquitectura de software",
-          description: "Refactoring, Principios SOLID, arquitectura hexagonal, domain-driven design (DDD).",
-        },
-        {
-          title: "DevOps",
-          description: "Integración y despliegue continuos, operabilidad, monitorización y seguridad.",
-        },
-        {
-          title: "Desarrollo de producto",
-          description: "Visión de producto, comunicación con el cliente, gestión ágil de proyectos, historias de usuario",
-        },
-        {
-          title: "Trabajo en equipo",
-          description: "Pair programming, retrospectivas y acuerdos de equipo, habilidades blandas.",
-        },
-      ]
-    p2: "Pero no te preocupes, en el Bootcamp de Buenas Prácticas de Exeal <em>te las enseñamos todas</em>. En menos de lo que esperas <em>obtendrás la preparación necesaria para acceder a posiciones senior</em>."
-  valueprop:
-    what: "¿En qué consiste el <em>bootcamp de buenas prácticas</em>?"
-    p1: "Durante cuatro meses, te incorporarás a una formación a tiempo parcial, donde te acompañaremos en tu proceso de aprendizaje y puesta en práctica de las buenas prácticas de desarrollo."
-    list:
-      - "Estudiarás los conceptos clave de las buenas prácticas en el <em>campus virtual, a tu ritmo</em>, mediante videos, ejercicios entregables y exámenes de autoevaluación."
-      - "Asistirás a <em>talleres online</em> en directo, en grupos reducidos, en los que resolverás ejercicios prácticos con la ayuda de los mentores y compañeros."
-      - "Estarás <em>acompañado por un mentor</em>, que resolverá tus dudas y te dará feedback personalizado sobre tu avance en tutorías individuales."
-      - "Desarrollarás un <em>proyecto integrador</em> de principio a fin empleando las buenas prácticas. Individual, en pareja o en grupo, tú decides cómo."
-      - "Estudiarás rodeado una <em>comunidad</em> de personas con la misma pasión, valores e inquietudes que tú."
-      - "Accederás a una <em>bolsa de empleo exclusiva</em> con empresas líderes del sector que apuestan por las buenas prácticas."
-  testimonials:
+      - "Tienes un salario más bajo que la media del sector."
+      - "No puedes cambiar de trabajo porque te faltan conocimientos y experiencia."
+      - "Estás rodeado de compañeros y jefes desmotivados."
+      - "Crees que tus opiniones no se valoran lo suficiente por tus compañeros."
+      - "Sientes que tu trabajo actual no sirve para nada."
+      - "Estás perdiendo tu vida personal intentando formarte por tu cuenta."
+  testimonials1:
     [
       {
-        text: "&ldquo;El training de legacy code de Exeal me dejó un montón de tips útiles que vienen muy bien para aplicar en el día a día. Además de aprender y reforzar estrategias existentes para que el código legacy sea un poco más amigable y no tan temido. ¡Lo súper recomiendo!&rdquo;",
-        name: "Meri Herrera",
-        position: "Software Engineer @ Voxel Group",
-        photo: "/assets/img/testimonials/meri-herrera.jpeg",
+        text: "&ldquo;Hay cosas que te chirrían, llegan momentos en los que tú mismo te planteas que tiene que haber alguna manera más cuerda de hacer las cosas. Un día se me cruzaron los cables, y me dije… yo con esto no puedo seguir para adelante, esto es una salvajada, no puedo seguir así.&rdquo;",
+        name: "David Lorenzo",
+        position: "Software Engineer",
+        photo: "/assets/img/testimonials/davidlorenzo.jpeg",
         active: true,
       },
       {
-        text: "&ldquo;Hasta ahora, cambiaba el código legacy cruzando los dedos para que todo funcionara correctamente, sin ningún tipo de test. El curso con Pedro ha sido un punto de inflexión, he adquirido herramientas para que mi código sea de mucha mejor calidad, y como protegerlo con tests automáticos.&rdquo;",
-        name: "Humberto Braojos",
-        position: "Software Engineer @ Voxel Group",
-        photo: "/assets/img/testimonials/humberto-braojos.jpeg"
+        text: "&ldquo;Me di cuenta que no tenía ni idea de nada, se me cayó el mundo encima, llevaba 4 años creyendo que programaba bien, y de repente si voy a otra empresa es que no me van ni a contratar, así que me asuste bastante.&rdquo;",
+        name: "Samuel Álvarez",
+        position: "Software Engineer",
+        photo: "/assets/img/testimonials/samu.jpeg"
       },
       {
-        text: "&ldquo;Ahora me enfrento a los cambios en el código legacy con mucha más tranquilidad, confianza en el resultado y eficiencia. Resaltaría particularmente los ejercicios de extraer dependencias, solía ser el punto de mayor dolor al añadir cobertura de tests.&rdquo;",
-        name: "Fermín Sáez",
-        position: "Software Engineer @ Voxel Group",
-        photo: "/assets/img/testimonials/fermin-saez.jpeg",
+        text: "&ldquo;Trabajé en una consultora grande, donde pronto entendí que quería salir. En el mundo tech escuchaba mucho sobre testing, pair programming, y tenía ganas de probarlo, de trabajar de verdad en un equipo Agile, haciendo código con calidad. Sabía que si continuaba en esta empresa no iba a aprender muchas cosas.&rdquo;",
+        name: "Victoria Kovaleva",
+        position: "Software Engineer",
+        photo: "/assets/img/testimonials/vika.jpeg"
       },
+      {
+        text: "&ldquo;Llegó un momento en que me preguntaba… ¿Realmente estoy aprendiendo a programar?  Intentaba aprender y hacer como podía. Veía el código de mis compañeros y pensaba, si veo que hacen las cosas de esta forma, pues supongo que será así…&rdquo;",
+        name: "Raúl Gómez",
+        position: "Software Engineer",
+        photo: "/assets/img/testimonials/raulgomez.jpeg"
+      }
     ]
+  promise:
+    what: "Buenas noticias: no necesitas depender de tu empresa para <em>dar el salto</em>."
+    p1: "Apúntate en el Bootcamp de buenas prácticas de Exeal y en menos tiempo del que esperas estarás:"
+    benefits:
+      - "Desarrollando soluciones mantenibles y escalables."
+      - "Recibiendo ofertas de empleo de calidad."
+      - "Logrando subidas de salario."
+      - "Ganando confianza e independencia como desarrollador."
+      - "Trabajando con gente inspiradora y motivada."
+      - "Recuperando tu vida personal."
+  testimonials2:
+    [
+      {
+        text: "&ldquo;Pensaba que sabía hacerlo muy bien cuando llegué a Voxel, pero cuando te conocí me abriste la mente.&rdquo;",
+        name: "Fermín Saez",
+        position: "Senior Software Engineer",
+        photo: "/assets/img/testimonials/fermin-saez.jpeg",
+        active: true,
+      },
+      {
+        text: "&ldquo;Lo que tú enseñas es una forma de desarrollar software, son muchas piezas que se juntan para formar un puzzle.&rdquo;",
+        name: "Samuel Álvarez",
+        position: "Software Engineer",
+        photo: "/assets/img/testimonials/samu.jpeg"
+      },
+      {
+        text: "&ldquo;Fue abrirme las puertas del paraíso y decir 'eh, que hay sitios en los que se pueden hacer las cosas bien'&rdquo;",
+        name: "Raúl Gómez",
+        position: "Software Engineer",
+        photo: "/assets/img/testimonials/raulgomez.jpeg"
+      },
+      {
+        text: "&ldquo;Aprender con Pedro fue un punto de inflexión en mi carrera profesional&rdquo;",
+        name: "David Lorenzo",
+        position: "Software Engineer",
+        photo: "/assets/img/testimonials/davidlorenzo.jpeg"
+      }
+    ] 
   plan:
-    header: "¿A qué esperas? Impulsa tu carrera <em>dominando las buenas prácticas</em>"
+    header: "Se acabó estudiar por tu cuenta, <em>déjate guiar por expertos</em>."
     steps:
       [
         {
           number: "1",
-          title: "Apúntate a la lista de espera",
-          description: "Envíanos tu solicitud y nos pondremos en contacto contigo para compartirte todos los detalles.",
+          title: "Agenda una mentoría gratuita",
+          description: "Reserva una sesión gratuita con tu mentor para estudiar tu situación y ayudarte a definir tus próximos pasos.",
         },
         {
           number: "2",
-          title: "Formaliza tu matrícula",
-          description: "El próximo cohort empieza el 2 de Octubre de 2023. ¡Corre, las plazas son limitadas!",
+          title: "Estudia en la academia",
+          description: "Durante los siguientes 4 meses, aprende la teoria y aplicación de las buenas prácticas en la academia de Exeal.",
         },
         {
           number: "3",
-          title: "Estudia con nosotros",
-          description: "Durante los próximos 4 meses, aprende la teoria y aplicación de las buenas prácticas en la academia de Exeal.",
-        },
+          title: "Impulsa tu carrera",
+          description: "Aplica tus nuevas habilidades para tener más impacto en tu empresa, aumentar tu salario o cambiar de trabajo.",
+        }
       ]
+  testimonials3:
+    [
+      {
+        text: "&ldquo;Cuando hablo con personas con 10 o 20 años experiencia, me dicen que ojalá ellos hubieran podido aprender al principio todo lo que yo sé ahora&rdquo;",
+        name: "Victoria Kovaleva",
+        position: "Software Engineer",
+        photo: "/assets/img/testimonials/vika.jpeg",
+        active: true
+      },
+      {
+        text: "&ldquo;Me diste por encima de todo unas bases con las que aprender, poder desarrollarme y saber si estoy yendo por el buen camino.&rdquo;",
+        name: "Samuel Álvarez",
+        position: "Software Engineer",
+        photo: "/assets/img/testimonials/samu.jpeg"
+      },
+      {
+        text: "&ldquo;Me siento mucho más seguro a la hora de hacer mi trabajo. Confío más no sólo en saber hacer cosas, sino en que tengo las herramientas necesarias para enfrentarme a ellas.&rdquo;",
+        name: "Fermín Saez",
+        position: "Senior Software Engineer",
+        photo: "/assets/img/testimonials/fermin-saez.jpeg"
+      }
+    ]
+  valueprop:
+    what: "Apuntarte al bootcamp de buenas prácticas te da acceso a:"
+    list:
+      - "Programa de 4 meses de formación en buenas prácticas de desarrollo."
+      - "Acceso para siempre +60 horas de videos de teoría y problemas resueltos."
+      - "Feedback personalizado de tus ejercicios entregables."
+      - "Seguimiento semanal con tu mentor."
+      - "Masterclasses y participación en talleres en grupo."
+      - "Comunidad de desarrolladores, ex-alumnos y mentores."
+      - "Certificado de finalización."
+      - "Bolsa de empleo exclusiva."
   common:
-    call_to_action: Apúntate a la lista de espera
-    cta_transitional: "Más info"
+    call_to_action: Agenda una mentoría gratuita
 ---
