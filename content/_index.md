@@ -8,6 +8,19 @@ texts:
   hero:
     header: Technical coaching y formación a medida para equipos y desarrolladores de software
     subheader: Ayudamos a desarrolladores y equipos a lograr más impacto en el negocio a través de las buenas prácticas de desarrollo.
+  bestpractices:
+    title: "¿Cómo <em>te ayudamos</em> a ti y a tu equipo?"
+    subtitle: "Ponemos foco en los <em>fundamentos, metodologías y buenas prácticas</em>, <em>técnicas y de gestión</em>, por encima de tecnologías y frameworks concretos."
+    services:
+      - name: "Testing automatizado"
+      - name: "Diseño de software"
+      - name: "Orientación a producto"
+      - name: "Equipos de alto rendimiento"
+      - name: "Integración y entrega continua"
+      - name: "Metodologías ágiles"
+      - name: "Arquitectura de software"
+      - name: "Aprendizaje continuo"
+    button_text: "Descubre nuestros servicios"
   testimonials:
     [
       {
@@ -47,6 +60,4 @@ texts:
         link: "/casos-de-exito/we-are-bab/"
       },
     ]
-  common:
-    call_to_action: Apúntate a la academia
 ---

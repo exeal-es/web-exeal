@@ -19,22 +19,17 @@
   <div class="container">
     <div class="row">
       <div class="col-12 justify-content-center align-items-center text-center">
-        <h2>¿Cómo <em>te ayudamos</em> a ti y a tu equipo?</h2>
-        <p>Ponemos foco en los <em>fundamentos, metodologías y buenas prácticas</em>, <em>técnicas y de gestión</em>, por encima de tecnologías y frameworks concretos.</p>
+        <h2>{{ .Params.texts.bestpractices.title | safeHTML }}</h2>
+        <p>{{ .Params.texts.bestpractices.subtitle | safeHTML }}</p>
       </div>
     </div>
 
     <div class="row mb-4">
       <div class="col-md-12">
         <ul class="row blocks">
-          <li class="col-md-3"><div class="col-md-12 inner">Testing automatizado</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Diseño de software</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Orientación a producto</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Equipos de alto rendimiento</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Integración y entrega continua</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Metodologías ágiles</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Arquitectura de software</div></li>
-          <li class="col-md-3"><div class="col-md-12 inner">Aprendizaje continuo</div></li>
+          {{ range .Params.texts.bestpractices.services }}
+            <li class="col-md-3"><div class="col-md-12 inner">{{ .name }}</div></li>
+          {{ end }}
         </ul>
       </div>
     </div>
@@ -42,7 +37,7 @@
     <div class="row justify-content-center align-items-center text-center mt-4">
       <div class="col-m-12">
         <p class="justify-content-center align-items-center text-center">
-          <a data-scroll="sect-services" href="#" class="button" style="display: inline-block">Descubre nuestros servicios</a>
+          <a data-scroll="sect-services" href="#" class="button" style="display: inline-block">{{ .Params.texts.bestpractices.button_text }}</a>
         </p>
       </div>
     </div>
