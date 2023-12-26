@@ -2,7 +2,6 @@
 title: "Coaching técnico y formación a medida para equipos y desarrolladores de software"
 description: "Ayudamos a desarrolladores y equipos a lograr más impacto en el negocio a través de las buenas prácticas de desarrollo"
 date: 2023-08-01T00:00:00+02:00
-cta_url: https://academia.exeal.com/order?ct=ec7d337c-bcb8-49a3-adba-e2f1fd30fa87
 team:
   [{ name: "pedropardal" }]
 texts:
