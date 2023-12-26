@@ -1,12 +1,12 @@
 ---
-title: "Coaching técnico y formación a medida para equipos y desarrolladores de software"
+title: "Technical coaching y formación a medida para equipos y desarrolladores de software"
 description: "Ayudamos a desarrolladores y equipos a lograr más impacto en el negocio a través de las buenas prácticas de desarrollo"
 date: 2023-08-01T00:00:00+02:00
 team:
   [{ name: "pedropardal" }]
 texts:
   hero:
-    header: Coaching técnico y formación a medida para equipos y desarrolladores de software
+    header: Technical coaching y formación a medida para equipos y desarrolladores de software
     subheader: Ayudamos a desarrolladores y equipos a lograr más impacto en el negocio a través de las buenas prácticas de desarrollo.
   testimonials:
     [
