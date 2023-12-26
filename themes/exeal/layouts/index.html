@@ -48,53 +48,22 @@
   <div class="container">
     <div class="row">
       <div class="col-12 justify-content-center align-items-center text-center">
-        <h2>Proporcionamos servicios de acompañamiento y formación a medida a <em>particulares y empresas</em>.</h2>
+        <h2>{{ .Params.texts.services.title | safeHTML }}</h2>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-xl-4 mb-3">
-        <div class="box">
-          <div class="flap flap-top-right"></div>
-          <img src="/assets/img/icon-coaching.svg" />
-          <h3>Coaching t&eacute;cnico</h3>
-          <p>
-            Mejora las prácticas y procesos de tu equipo con un acompa&ntilde;amiento y mentorizaci&oacute;n 100% hands-on.
-          </p>
-          <a data-scroll="sect-service-coaching" href="#" class="button-hollow"
-            >M&aacute;s info</a
-          >
+      {{ range .Params.texts.services.services }}
+        <div class="col-xl-4 mb-3">
+          <div class="box">
+            <div class="flap flap-top-right"></div>
+            <img src="{{ .icon_path }}" />
+            <h3>{{ .name }}</h3>
+            <p>{{ .description }}</p>
+            <a data-scroll="{{ .scroll_target }}" href="#" class="button-hollow">{{ .button_text }}</a>
+          </div>
         </div>
-      </div>
-      <div class="col-xl-4 mb-3">
-        <div class="box">
-          <div class="flap flap-top-right"></div>
-          <img src="/assets/img/icon-apprenticeship.svg" />
-          <h3>Bootcamps de desarrollo</h3>
-          <p>
-            Programas de formaci&oacute;n integrales en desarrollo ágil de software y buenas prácticas técnicas.
-          </p>
-          <a
-            data-scroll="sect-service-bootcamps"
-            href="#"
-            class="button-hollow"
-            >M&aacute;s info</a
-          >
-        </div>
-      </div>
-      <div class="col-xl-4 mb-3">
-        <div class="box">
-          <div class="flap flap-top-right"></div>
-          <img src="/assets/img/icon-training.svg" />
-          <h3>Formaciones a medida</h3>
-          <p>
-            Cursos intensivos de nivel experto, de corta duraci&oacute;n, sobre
-            una t&eacute;cnica o metodolog&iacute;a particular.
-          </p>
-          <a data-scroll="sect-service-training"
-          href="#" class="button-hollow">M&aacute;s info</a>
-        </div>
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
@@ -103,19 +72,17 @@
   <div class="container">
     <div class="row mt-3 mb-3">
       <div class="col-md-7">
-        <h3>Coaching t&eacute;cnico</h3>
+        <h3>{{ .Params.texts.servicecoaching.title }}</h3>
         <p>
           <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
         </p>
         <p>
-          ¿Está tu equipo ahogado resolviendo incidencias, y <em>tarda cada vez más en entregar</em>
-          software de calidad a tiempo?
+          {{ .Params.texts.servicecoaching.p1 | safeHTML }}
         </p>
         <p>
-          Nos integraremos en su día a día para ayudarles a <em>revisar sus procesos y prácticas</em> técnicas y de gestión,
-          ayudarles a definir una visión técnica y <em>capacitarlos para ejecutarla</em> de forma efectiva. 
+          {{ .Params.texts.servicecoaching.p2 | safeHTML }}
         </p>
-        <a data-scroll="sect-contact" href="#" class="button">Solicita info</a>
+        <a data-scroll="sect-contact" href="#" class="button">{{ .Params.texts.servicecoaching.cta }}</a>
       </div>
       <div class="col-md-5 d-none d-sm-none d-md-block">
         <img
@@ -137,17 +104,17 @@
         />
       </div>
       <div class="col-md-7">
-        <h3>Bootcamps de buenas prácticas de desarrollo</h3>
+        <h3>{{ .Params.texts.servicebootcamps.title }}</h3>
         <p>
           <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
         </p>
         <p>
-          ¿Buscas <em>incorporar talento</em> técnico a tu empresa y te quieres asegurar de que entran <em>con el nivel suficiente</em>? ¿O quizá quieres llevar el talento interno al siguiente nivel?
+          {{ .Params.texts.servicebootcamps.p1 | safeHTML }}
         </p>
         <p>
-          Con nuestros <em>programas de formación en buenas prácticas</em> de ingeniería <em>maximizarás el impacto en el negocio</em> de tu equipo de ingeniería.
+          {{ .Params.texts.servicebootcamps.p2 | safeHTML}}
         </p>
-        <a data-scroll="sect-contact" href="#" class="button">Solicita info</a>
+        <a data-scroll="sect-contact" href="#" class="button">{{ .Params.texts.servicebootcamps.cta }}</a>
       </div>
     </div>
   </div>
@@ -157,18 +124,17 @@
   <div class="container">
     <div class="row mt-3 mb-3">
       <div class="col-md-7">
-        <h3>Formaci&oacute;n avanzada</h3>
+        <h3>{{ .Params.texts.servicetraining.title }}</h3>
         <p>
           <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
         </p>
         <p>
-          ¿Tu equipo tiene necesidades de
-          <em>formaci&oacute;n muy espec&iacute;ficas</em>?
+          {{ .Params.texts.servicetraining.p1 | safeHTML }}
         </p>
         <p>
-          Diseñamos e impartimos cursos intensivos de <em>nivel experto</em>, sobre <em>técnicas y metodologías concretas</em>, de <em>aplicación inmediata</em> en tu proyecto.
+          {{ .Params.texts.servicetraining.p2 | safeHTML }}
         </p>
-        <a data-scroll="sect-contact" href="#" class="button">Solicita info</a>
+        <a data-scroll="sect-contact" href="#" class="button">{{ .Params.texts.servicetraining.cta }}</a>
       </div>
       <div class="col-md-5 d-none d-sm-none d-md-block">
         <img
@@ -189,12 +155,12 @@
         </h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2>Deja guiar a tu equipo por expertos</h2>
+        <h2>{{ .Params.texts.team.title | safeHTML }}</h2>
       </div>
     </div>
     <div class="row justify-content-center text-center">
       <div class="col-md-12">
-        <p>Los technical coaches que acompañarán y formarán a tu equipo son desarrolladores y <em>líderes técnicos con amplia experiencia</em> trabajando en equipos de alto rendimiento.</p>
+        <p>{{ .Params.texts.services.subtitle | safeHTML }}</p>
       </div>
       {{ range .Params.team }} {{$authorName := .name}} {{ $data := index $.Site.Data.authors $authorName }}
       <div class="col-12 col-md-4 col-lg-4">
@@ -261,7 +227,7 @@
             <h4>{{ .title }}</h4>
             <h6>{{ .description }}</h6>
             <a href="{{ .link }}" class="button-hollow"
-              style="margin: auto; text-align: center; display: block">Más info</a>
+              style="margin: auto; text-align: center; display: block">{{ .cta }}</a>
           </div>
         </div>
         {{ end }}
@@ -318,7 +284,7 @@
         <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2>Contácta con nosotros y <em>charlemos sobre los retos de tu equipo</em> para valorar cómo podemos ayudar.</h2>
+        <h2>{{ .Params.texts.contact.title | safeHTML }}</h2>
         {{- partial "contactform.html" . -}}
       </div>
     </div>
