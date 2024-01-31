@@ -11,8 +11,6 @@ featured_image: "/assets/img/blog/posts/team-whiteboard.jpg"
 card_image: "/assets/img/blog/covers/team-whiteboard.jpg"
 ---
 
-# Reconciliando a producto y tecnología
-
 Uno de los problemas que más a menudo se puede encontrar en casi cualquier compañía de producto tecnológico es: cómo encajar las prioridades de producto, es decir, el desarrollo de nuevas funcionalidades, corregir fallos, etc., con las prioridades tecnológicas, es decir, requisitos no funcionales, modernización de la tecnología, mantenimiento, optimización, etc. En este artículo pretendo explorar este conflicto y exponer patrones y antipatrones basados en mi experiencia como desarrollador y *technical coach* (por lo cual aviso de que el artículo puede ser algo *opinionated*).
 
 ## El eterno conflicto

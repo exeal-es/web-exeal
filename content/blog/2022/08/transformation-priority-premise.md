@@ -10,8 +10,6 @@ featured_image: /assets/img/blog/posts/woodcraft.png
 card_image: /assets/img/blog/posts/woodcraft.png
 ---
 
-# Transformation Priority Premise
-
 [El tio bob](https://es.wikipedia.org/wiki/Robert_C._Martin) lleva muchos años diciendo que mientras las pruebas son más específicas, el código se hace más genérico. Y es que de tanto refactorizar, de tanto modificar el código con esas pequeñas mejoras de estructura sin cambiar su comportamiento exterior, van ocurriendo transformaciones en el código de producción que parecen seguir un cierto camino ordenado.
 
 Esto parece generar una lista de transformaciones ordenada que nos puede servir de guía para alcanzar una implementación más genérica. Además nos ayuda a dar pequeños pasos de bebé al objetivo deseado, cosa difícil de asimilar en TDD al inicio.
