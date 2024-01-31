@@ -113,7 +113,7 @@
               {{ $blogs := $.Site.GetPage "/blog" }} {{ $blogPost := where $blogs.Pages ".Params.author" $authorName }} {{ range first 1 $blogPost }}
 
               <div class="modal-body--link">
-                <a href="/blog?author={{$authorName}}"
+                <a href="/blog/?author={{$authorName}}"
                   >Ver blogs de {{ $data.name }}</a
                 >
               </div>

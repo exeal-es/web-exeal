@@ -23,7 +23,7 @@ Estos términos y condiciones (en lo sucesivo, el “contrato”) son aplicables
 
 ## 3. Precios y condiciones de pago
 
-3.1. El precio del curso en vigor el día de la inscripción tendrá carácter vinculante para el contrato y se podrá consultar en la siguiente dirección de internet: [https://www.exeal.com/legacy](https://www.exeal.com/legacy)
+3.1. El precio del curso en vigor el día de la inscripción tendrá carácter vinculante para el contrato y se podrá consultar en la siguiente dirección de internet: [https://www.exeal.com/legacy/](https://www.exeal.com/legacy/)
 
 3.2. Se deberá abonar a Exeal el precio del curso (en lo sucesivo, “la matrícula”) en su totalidad en el plazo indicado en la factura. La transferencia a la cuenta de Exeal indicada en la factura será determinante a la hora de considerar que el pago se ha efectuado dentro del plazo establecido. Al realizar la transferencia deberá indicar el número del alumno.
 
