@@ -14,7 +14,7 @@ card_image: /assets/img/blog/posts/dojo.jpg
 
 Esta kata trata sobre calcular la siguiente generación del Juego de la Vida de Conway, dado cualquier posición inicial. Consulta http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life para conocer más sobre este famoso problema.
 
-![](/assets/img/katas/gameoflife.gif)
+![](/assets/img/katas/gameoflife.jpg)
 
 Comienzas con una cuadrícula bidimensional de celdas, donde cada celda está viva o muerta. En esta versión del problema, la cuadrícula es finita y no puede haber vida más allá de los bordes. Al calcular la próxima generación de la cuadrícula, sigue estas reglas:
 
