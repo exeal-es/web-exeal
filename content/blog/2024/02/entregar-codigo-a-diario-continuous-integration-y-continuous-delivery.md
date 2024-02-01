@@ -17,13 +17,13 @@ Integrar y desplegar código a diario implica un enfoque que maximiza la segurid
 
 ## Continuous Integration (CI) y Continuous Delivery (CD): Conceptos Clave
 ### ¿Qué es Continuous Integration (CI)?
-La Integración Continua es una práctica de desarrollo de software donde los desarrolladores integran su trabajo frecuentemente, al menos diariamente. Esto implica la automatización de pruebas para verificar cada integración, manteniendo el software en un estado desplegable en todo momento. El objetivo es detectar y solucionar problemas rápidamente, mejorando la calidad del software y reduciendo el tiempo necesario para validar y liberar nuevas actualizaciones.
+La Integración Continua es una práctica de desarrollo de software donde los desarrolladores integran su trabajo frecuentemente, **al menos diariamente**. Esto implica la **automatización de pruebas** para verificar cada integración, manteniendo el software en un estado desplegable en todo momento. El objetivo es detectar y solucionar problemas rápidamente, mejorando la calidad del software y reduciendo el tiempo necesario para validar y liberar nuevas actualizaciones.
 
 ### ¿Qué es Continuous Delivery (CD)?
-La Entrega Continua es una extensión de la Integración Continua, donde el software no solo se prueba de manera automática sino que también está listo para ser desplegado en cualquier momento. Este enfoque asegura que el proceso de llevar el software desde el desarrollo hasta la producción sea fluido y automatizado.
+La Entrega Continua es una extensión de la Integración Continua, donde el software no solo se prueba de manera automática sino que también está **listo para ser desplegado en cualquier momento**. Este enfoque asegura que el proceso de llevar el software desde el desarrollo hasta la producción sea fluido y automatizado.
 
 ### Diferencia entre Continuous Delivery y Continuous Deployment
-Aunque a menudo se confunden, la Entrega Continua (CD) y el Despliegue Continuo son conceptos distintos. La Entrega Continua significa que el software puede ser desplegado en cualquier momento, pero no implica que se haga automáticamente. En contraste, el Despliegue Continuo lleva esto un paso más allá, donde cada cambio que pasa todas las etapas de la pipeline de producción se despliega automáticamente, sin intervención humana.
+Aunque a menudo se confunden, la Entrega Continua (CD) y el Despliegue Continuo son conceptos distintos. La Entrega Continua significa que el software puede ser desplegado en cualquier momento, pero no implica que se haga automáticamente. En contraste, el Despliegue Continuo lleva esto un paso más allá, donde cada cambio que pasa todas las etapas de la pipeline de producción **se despliega automáticamente, sin intervención humana**.
 
 ## Objetivos de Practicar CI/CD
 
@@ -36,7 +36,7 @@ Aunque a menudo se confunden, la Entrega Continua (CD) y el Despliegue Continuo 
 - **Incorporación rápida del feedback del usuario**: Al desplegar continuamente, se puede obtener y reaccionar al feedback del usuario más rápidamente, lo que permite iteraciones más rápidas y un producto más alineado con las necesidades del usuario.
 
 ## Conclusión
-La integración y despliegue diarios de código de forma segura son fundamentales en el desarrollo de software moderno. A través de la práctica de CI/CD, las organizaciones pueden mejorar la calidad de sus productos, optimizar sus procesos de desarrollo y responder más rápidamente a las necesidades del mercado y los usuarios. Adoptar estas prácticas no es solo una cuestión de eficiencia, sino un paso crucial hacia la madurez en el desarrollo de software.
+La integración y despliegue diarios de código de forma segura son **fundamentales en el desarrollo de software moderno**. A través de la práctica de CI/CD, las organizaciones pueden mejorar la calidad de sus productos, optimizar sus procesos de desarrollo y **responder más rápidamente a las necesidades del mercado y los usuarios**. Adoptar estas prácticas no es solo una cuestión de eficiencia, sino un paso crucial hacia la madurez en el desarrollo de software.
 
 ## Te puede interesar
 
