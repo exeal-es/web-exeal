@@ -24,6 +24,7 @@ Refactoriza el código aplicando los movimientos de la receta ["Reemplazar condi
 
 - [Introducción a la kata Parrot Refactoring (Emily Bache, inglés)](https://www.youtube.com/watch?v=UxNEHKg_2eA&ab_channel=EmilyBache)
 - [Solución a la kata Parrot Refactoring en C# (Emily Bache, inglés)](https://www.youtube.com/watch?v=IvFX8Ivit1k&ab_channel=EmilyBache)
+- [Solución a la kata Parrot Refactoring en C# (Pedro Pardal, español)](https://www.youtube.com/watch?v=nXJxkyy1Q-A&t=2s&ab_channel=PedroPardal)
 
 ## Agradecimientos
 
