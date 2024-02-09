@@ -52,8 +52,16 @@ syllabus:
       - Design patterns & Refactoring to patterns
       - Principios SOLID
       - Cohesión y acoplamiento
-  - chapter: Arquitectura de aplicaciones web
+  - chapter: Diseño Outside-in
     number: 7
+    topics:
+      - Test doubles & Mockist TDD
+      - Integration and acceptance testing
+      - Double loop TDD
+      - Approval testing
+      - Behavior-driven development
+  - chapter: Arquitectura de aplicaciones web
+    number: 8
     topics:
       - Inyección de dependencias
       - Clean architecture (dependency rule)
@@ -63,7 +71,7 @@ syllabus:
       - Inversión de dependencias y arquitectura hexagonal
       - Introducción a CQRS
   - chapter: Patrones para el modelo de dominio (DDD)
-    number: 8
+    number: 9
     topics:
       - Preservación de invariantes y validación de datos
       - Value objects, Entidades y Agregados
@@ -71,7 +79,7 @@ syllabus:
       - Patrón repositorio
       - Eventos de dominio
   - chapter: Continuous Integration y Continuous Delivery
-    number: 9
+    number: 10
     topics:
       - El ciclo de vida DevOps
       - Microcommits y Conventional Commits
@@ -80,21 +88,6 @@ syllabus:
       - Gestión y versionado de artefactos
       - 'Técnicas de despliegue continuo: canary releases, blue-green deployment'
       - Análisis estático y métricas de calidad. Sonarqube.
-  - chapter: Buenas prácticas en Web APIs
-    number: 10
-    topics:
-      - Modelo REST
-      - 'Gestión de errores: Problems'
-      - Especificación y documentación con OpenAPI/Swagger
-      - Autenticación y autorización con JWT, OAuth 2
-  - chapter: Diseño Outside-in
-    number: 11
-    topics:
-      - Test doubles & Mockist TDD
-      - Integration and acceptance testing
-      - Double loop TDD
-      - Approval testing
-      - Behavior-driven development
 
 texts:
   hero:

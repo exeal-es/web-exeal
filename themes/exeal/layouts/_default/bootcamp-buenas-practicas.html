@@ -265,7 +265,6 @@
       <div class="col-md-10 col-sm-12">
         <h2>Programa del curso (4 meses)</h2>
         <dl class="faq">
-
           {{ range .Params.syllabus }}
           <dt data-toggle="collapse" href="#chapter{{ .number }}">{{ .number }}. {{ .chapter }}</dt>
           <dd class="collapse" id="chapter{{ .number }}">
@@ -276,7 +275,6 @@
             </ul>
           </dd>
           {{ end }}
-          
         </dl>
       </div>
     </div>
