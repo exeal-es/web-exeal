@@ -8,86 +8,72 @@ redirect_submission_url: /bootcamp-buenas-practicas/programa/
 team:
   [{ name: "pedropardal" }]
 syllabus:
-  - chapter: Fundamentos de desarrollo de software ágil
+  - chapter: Una nueva filosofía de desarrollo de software
     number: 1
     topics:
-      - Principios y valores del desarrollo de software ágil, Extreme Programming DevOps y Software Craftsmanship
-  - chapter: Definición de producto
+      - Principios y valores del desarrollo de software evolutivo
+      - 'Un poco de historia: Extreme Programming, DevOps y Software Craftsmanship'
+      - 'Estamos aquí para cambiar el mundo: impactando a través del software'
+  - chapter: Hábitos y prácticas fundamentales como desarrolladores
     number: 2
+    topics:
+      - 'Colaborar con el equipo en la producción de código: Pair & Mob programming'
+      - 'Programar en pequeños incrementos: Micro-commits y Conventional Commits'
+      - 'Conocer tus herramientas: Productividad con el IDE'
+      - 'Principios de la buena programación: DRY, KISS, YAGNI y otros'
+      - 'Código limpio y La regla de los scouts'
+      - 'Fundamentos de testing automático'
+      - 'Fundamentos de refactoring'
+      - 'Establecer una rutina de práctica deliberada'
+  - chapter: Diseño y desarrollo evolutivos
+    number: 3
+    topics:
+      - La filosofía del diseño evolutivo
+      - 'Un workflow para el diseño evolutivo: Test-driven development'
+      - 'Identificar oportunidades para mejorar el código: Code Smells'
+      - 'Cómo no reinventar la rueda: Patrones de diseño'
+      - 'Las fuerzas elementales del diseño de software: Cohesión y Acoplamiento'
+  - chapter: Trabajar en equipos de alto rendimiento
+    number: 4
+    topics:
+      - Equipos multidisciplinares y autogestionados
+      - Principios de Lean software development
+      - 'Limitar el trabajo para reducir desperdicio: Single piece flow'
+      - Retrospectivas y acuerdos de equipo
+  - chapter: Arquitectura de aplicaciones web
+    number: 5
+    topics:
+      - Principios de diseño de componentes
+      - Frameworks de desarrollo web. El modelo por capas y arquitectura clean.
+      - 'Poner el dominio en el centro: Inversión de dependencias y arquitectura hexagonal'
+      - 'Patrones para el modelo de dominio (DDD táctico): entidades, value objects, agregados y eventos'
+      - 'Documentando la arquitectura: ADRs y Diagramas C4'
+  - chapter: 'De idea a producción I: Discovery de producto, diseño e implementación'
+    number: 6
     topics:
       - Definir la visión de producto con la técnica de Product Vision Board
       - Definir un roadmap de desarrollo de un producto con la técnica de Story Mapping
-      - Escribir y refinar historias de usuario
-      - 'Descomponer historias por valor: Vertical Slicing'
-      - Lenguaje ubicuo
-      - Definir especificaciones ejecutables con el lenguaje Gherkin
-  - chapter: Equipos de alto rendimiento
-    number: 3
-    topics:
-      - Pair & Mob programming
-      - 'Principios de la buena programación: DRY, KISS, YAGNI, Clean Code'
-      - Acuerdos de equipo, definition of ready (DoR) y definition of done (DoD)
-      - 'Scrum: Planificar iteraciones, Dailies, Review & Demo'
-      - Retrospectivas y acuerdos de equipo
-  - chapter: Refactoring y productividad con el IDE
-    number: 4
-    topics:
-      - Productividad con el IDE
-      - ¿Qué es refactorizar? ¿Cuándo refactorizar?
-      - Core 6 transformations
-      - Hábitos de refactoring
-  - chapter: Test-driven development
-    number: 5
-    topics:
-      - Las 3 leyes del TDD y Baby steps
-      - 'Refactoring and the rule of 3: el búcle Red-green-refactor'
-      - Hábitos con TDD
-      - Transformation priority premise
-  - chapter: Diseño orientado a objetos
-    number: 6
-    topics:
-      - Principios del diseño evolutivo
-      - Las 4 reglas del diseño simple
-      - Object Calisthenics y Code Smells
-      - Design patterns & Refactoring to patterns
-      - Principios SOLID
-      - Cohesión y acoplamiento
-  - chapter: Diseño Outside-in
+      - 'Construir conocimiento compartido sobre las necesidades del usuario: User Stories'
+      - 'Descomponer stories por valor: Vertical Slicing'
+      - 'Refinar historias para encontrar requisitos ocultos: Example Mapping'
+      - Formalizar los requistisos con el lenguaje Gherkin
+      - Diseño Outside-in, Testing de aceptación y la técnica de doble bucle de TDD
+  - chapter: 'De idea a producción II: Integración y entrega continuas (CI/CD)'
     number: 7
     topics:
-      - Test doubles & Mockist TDD
-      - Integration and acceptance testing
-      - Double loop TDD
-      - Approval testing
-      - Behavior-driven development
-  - chapter: Arquitectura de aplicaciones web
+      - 'Integrar código a diario: Trunk-based development'
+      - 'Anatomía de una pipeline de CI/CD: Build, test, package, deploy'
+      - Análisis estático. Métricas de calidad del código.
+      - 'Prácticas de ingeniería para CI/CD: feature flags, branch by abstraction y parallel changes' 
+      - 'Técnicas de despliegue continuo: canary releases, blue-green deployment'
+  - chapter: Tu carrera como profesional de alto valor
     number: 8
     topics:
-      - Inyección de dependencias
-      - Clean architecture (dependency rule)
-      - Capas de framework y presentación
-      - Capas de dominio y aplicación
-      - Patrón modelo de dominio
-      - Inversión de dependencias y arquitectura hexagonal
-      - Introducción a CQRS
-  - chapter: Patrones para el modelo de dominio (DDD)
-    number: 9
-    topics:
-      - Preservación de invariantes y validación de datos
-      - Value objects, Entidades y Agregados
-      - Domain services y application services
-      - Patrón repositorio
-      - Eventos de dominio
-  - chapter: Continuous Integration y Continuous Delivery
-    number: 10
-    topics:
-      - El ciclo de vida DevOps
-      - Microcommits y Conventional Commits
-      - Trunk-based development
-      - 'Anatomía de una pipeline de CI: Build, test, release'
-      - Gestión y versionado de artefactos
-      - 'Técnicas de despliegue continuo: canary releases, blue-green deployment'
-      - Análisis estático y métricas de calidad. Sonarqube.
+      - ¿Qué es un profesional de alto valor?
+      - 'Definir tu stack tecnológico'
+      - 'Conectar con la comunidad'
+      - 'Tu marca personal'
+      - 'El camino empieza aquí: la mejora continua'
 
 texts:
   hero:
