@@ -7,6 +7,95 @@ cta_url: https://forms.gle/1aQBrPyStQWaoHbY7
 redirect_submission_url: /bootcamp-buenas-practicas/programa/
 team:
   [{ name: "pedropardal" }]
+syllabus:
+  - chapter: Fundamentos de desarrollo de software ágil
+    number: 1
+    topics:
+      - Principios y valores del desarrollo de software ágil, Extreme Programming DevOps y Software Craftsmanship
+  - chapter: Definición de producto
+    number: 2
+    topics:
+      - Definir la visión de producto con la técnica de Product Vision Board
+      - Definir un roadmap de desarrollo de un producto con la técnica de Story Mapping
+      - Escribir y refinar historias de usuario
+      - 'Descomponer historias por valor: Vertical Slicing'
+      - Lenguaje ubicuo
+      - Definir especificaciones ejecutables con el lenguaje Gherkin
+  - chapter: Equipos de alto rendimiento
+    number: 3
+    topics:
+      - Pair & Mob programming
+      - 'Principios de la buena programación: DRY, KISS, YAGNI, Clean Code'
+      - Acuerdos de equipo, definition of ready (DoR) y definition of done (DoD)
+      - 'Scrum: Planificar iteraciones, Dailies, Review & Demo'
+      - Retrospectivas y acuerdos de equipo
+  - chapter: Refactoring y productividad con el IDE
+    number: 4
+    topics:
+      - Productividad con el IDE
+      - ¿Qué es refactorizar? ¿Cuándo refactorizar?
+      - Core 6 transformations
+      - Hábitos de refactoring
+  - chapter: Test-driven development
+    number: 5
+    topics:
+      - Las 3 leyes del TDD y Baby steps
+      - 'Refactoring and the rule of 3: el búcle Red-green-refactor'
+      - Hábitos con TDD
+      - Transformation priority premise
+  - chapter: Diseño orientado a objetos
+    number: 6
+    topics:
+      - Principios del diseño evolutivo
+      - Las 4 reglas del diseño simple
+      - Object Calisthenics y Code Smells
+      - Design patterns & Refactoring to patterns
+      - Principios SOLID
+      - Cohesión y acoplamiento
+  - chapter: Arquitectura de aplicaciones web
+    number: 7
+    topics:
+      - Inyección de dependencias
+      - Clean architecture (dependency rule)
+      - Capas de framework y presentación
+      - Capas de dominio y aplicación
+      - Patrón modelo de dominio
+      - Inversión de dependencias y arquitectura hexagonal
+      - Introducción a CQRS
+  - chapter: Patrones para el modelo de dominio (DDD)
+    number: 8
+    topics:
+      - Preservación de invariantes y validación de datos
+      - Value objects, Entidades y Agregados
+      - Domain services y application services
+      - Patrón repositorio
+      - Eventos de dominio
+  - chapter: Continuous Integration y Continuous Delivery
+    number: 9
+    topics:
+      - El ciclo de vida DevOps
+      - Microcommits y Conventional Commits
+      - Trunk-based development
+      - 'Anatomía de una pipeline de CI: Build, test, release'
+      - Gestión y versionado de artefactos
+      - 'Técnicas de despliegue continuo: canary releases, blue-green deployment'
+      - Análisis estático y métricas de calidad. Sonarqube.
+  - chapter: Buenas prácticas en Web APIs
+    number: 10
+    topics:
+      - Modelo REST
+      - 'Gestión de errores: Problems'
+      - Especificación y documentación con OpenAPI/Swagger
+      - Autenticación y autorización con JWT, OAuth 2
+  - chapter: Diseño Outside-in
+    number: 11
+    topics:
+      - Test doubles & Mockist TDD
+      - Integration and acceptance testing
+      - Double loop TDD
+      - Approval testing
+      - Behavior-driven development
+
 texts:
   hero:
     header: Bootcamp de buenas prácticas de desarrollo de software

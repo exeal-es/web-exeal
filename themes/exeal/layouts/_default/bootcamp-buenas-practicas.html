@@ -265,125 +265,18 @@
       <div class="col-md-10 col-sm-12">
         <h2>Programa del curso (4 meses)</h2>
         <dl class="faq">
-          <dt data-toggle="collapse" href="#chapter1">1. Fundamentos de desarrollo de software ágil</dt>
-          <dd class="collapse" id="chapter1">
-            <ul>
-              <li>Principios y valores del desarrollo de software ágil, Extreme Programming DevOps y Software Craftsmanship</li>
-            </ul>
-          </dd>
-      
-          <dt data-toggle="collapse" href="#chapter2">2. Definición de producto</dt>
-          <dd class="collapse" id="chapter2">
-            <ul>
-              <li>Definir la visión de producto con la técnica de Product Vision Board.</li>
-              <li>Definir un roadmap de desarrollo de un producto con la técnica de Story Mapping.</li>
-              <li>Escribir y refinar historias de usuario.</li>
-              <li>Descomponer historias por valor: Vertical Slicing.</li>
-              <li>Lenguaje ubicuo</li>
-              <li>Definir especificaciones ejecutables con el lenguaje Gherkin.</li>
-            </ul>
-          </dd>
-      
-          <dt data-toggle="collapse" href="#chapter3">3. Equipos de alto rendimiento</dt>
-          <dd class="collapse" id="chapter3">
-            <ul>
-              <li>Pair & Mob programming</li>
-              <li>Principios de la buena programación: DRY, KISS, YAGNI, Clean Code</li>
-              <li>Acuerdos de equipo, definition of ready (DoR) y definition of done (DoD)</li>
-              <li>Scrum: Planificar iteraciones, Dailies, Review & Demo</li>
-              <li>Retrospectivas y acuerdos de equipo</li>
-            </ul>
-          </dd>
 
-          <dt data-toggle="collapse" href="#chapter4">4. Refactoring y productividad con el IDE</dt>
-          <dd class="collapse" id="chapter4">
+          {{ range .Params.syllabus }}
+          <dt data-toggle="collapse" href="#chapter{{ .number }}">{{ .number }}. {{ .chapter }}</dt>
+          <dd class="collapse" id="chapter{{ .number }}">
             <ul>
-              <li>Productividad con el IDE</li>
-              <li>¿Qué es refactorizar? ¿Cuándo refactorizar?</li>
-              <li>Core 6 transformations</li>
-              <li>Hábitos de refactoring</li>
+              {{ range .topics }}
+              <li>{{ . }}</li>
+              {{ end }}
             </ul>
           </dd>
-
-          <dt data-toggle="collapse" href="#chapter5">5. Test-driven development</dt>
-          <dd class="collapse" id="chapter5">
-            <ul>
-              <li>Las 3 leyes del TDD y Baby steps</li>
-              <li>Refactoring and the rule of 3: el búcle Red-green-refactor</li>
-              <li>Hábitos con TDD</li>
-              <li>Transformation priority premise</li>
-            </ul>
-          </dd>
-
-          <dt data-toggle="collapse" href="#chapter6">6. Diseño orientado a objetos</dt>
-          <dd class="collapse" id="chapter6">
-            <ul>
-              <li>Principios del diseño evolutivo</li>
-              <li>Las 4 reglas del diseño simple</li>
-              <li>Object Calisthenics y Code Smells</li>
-              <li>Design patterns & Refactoring to patterns</li>
-              <li>Principios SOLID</li>
-              <li>Cohesión y acoplamiento</li>
-            </ul>
-          </dd>
-
-          <dt data-toggle="collapse" href="#chapter7">7. Arquitectura de aplicaciones web</dt>
-          <dd class="collapse" id="chapter7">
-            <ul>
-              <li>Inyección de dependencias</li>
-              <li>Clean architecture (dependency rule)</li>
-              <li>Capas de framework y presentación</li>
-              <li>Capas de dominio y aplicación</li>
-              <li>Patrón modelo de dominio</li>
-              <li>Inversión de dependencias y arquitectura hexagonal</li>
-              <li>Introducción a CQRS</li>
-            </ul>
-          </dd>
-
-          <dt data-toggle="collapse" href="#chapter8">8. Patrones para el modelo de dominio (DDD)</dt>
-          <dd class="collapse" id="chapter8">
-            <ul>
-              <li>Preservación de invariantes y validación de datos</li>
-              <li>Value objects, Entidades y Agregados</li>
-              <li>Domain services y application services</li>
-              <li>Patrón repositorio</li>
-              <li>Eventos de dominio</li>
-            </ul>
-          </dd>
-
-          <dt data-toggle="collapse" href="#chapter9">9. Continuous Integration y Continuous Delivery</dt>
-          <dd class="collapse" id="chapter9">
-            <ul>
-              <li>El ciclo de vida DevOps</li>
-              <li>Microcommits y Conventional Commits</li>
-              <li>Trunk-based development</li>
-              <li>Anatomía de una pipeline de CI: Build, test, release</li>
-              <li>Gestión y versionado de artefactos</li>
-              <li>Técnicas de despliegue continuo: canary releases, blue-green deployment</li>
-              <li>Análisis estático y métricas de calidad. Sonarqube.</li>
-            </ul>
-          </dd>
-
-          <dt data-toggle="collapse" href="#chapter10">10. Buenas prácticas en Web APIs</dt>
-          <dd class="collapse" id="chapter10">
-            <ul>
-              <li>Modelo REST</li>
-              <li>Gestión de errores: Problems</li>
-              <li>Especificación y documentación con OpenAPI/Swagger</li>
-              <li>Autenticación y autorización con JWT, OAuth 2</li>
-            </ul>
-          </dd>
-
-          <dt data-toggle="collapse" href="#chapter11">11. Diseño Outside-in</dt>
-          <dd class="collapse" id="chapter11">
-            <ul>
-              <li>Test doubles & Mockist TDD</li>
-              <li>Integration and acceptance testing</li>
-              <li>Double loop TDD</li>
-              <li>Approval testing</li>
-              <li>Behavior-driven development</li>
-            </ul>
-          </dd>
+          {{ end }}
+          
         </dl>
       </div>
     </div>
