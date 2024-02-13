@@ -1,11 +1,103 @@
-{{ if ne .Params.show_newsletter_modal false }}
+{{ define "nav-items" }}
+<li class="nav-item">
+  <a onclick="showDownloadPopup()" class="nav-link nav-button" href="javascript:void(0)">{{ .Params.texts.common.call_to_action }}</a>
+</li>
+{{ end }}
+
+{{ define "main" }}
+<section class="dark background background-05">
+  <div class="container">
+    <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
+      <div class="col-md-12">
+        <h1>{{ .Params.texts.hero.header | safeHTML }}</h1>
+        <h4>{{ .Params.texts.hero.subheader | safeHTML }}</h4>
+        <p>
+          <a onclick="showDownloadPopup();" href="javascript:void(0)" class="button button-center">{{ .Params.texts.common.call_to_action }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-stakes" class="light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>
+          {{ .Params.texts.stakes.header | safeHTML }}
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7 photo d-none d-sm-none d-md-block">
+				<img class="img-fluid pad" src="/assets/img/blog/posts/pain-developer.jpeg" />
+			</div>
+      <div class="col-md-5">
+        <p>{{ .Params.texts.stakes.p1 | safeHTML }}</p>
+        <ul class="row ticked-cross">
+          {{ range .Params.texts.stakes.list }}
+          <li class="col-md-12">{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-7">
+        <h2>¿Qué significa todo esto <em>para ti</em>?</h2>
+        <p>A partir de ahora, tendrás que <em>currártelo más</em> si quieres promocionar, aumentar tu salario o cambiar de trabajo (o incluso mantener el tuyo actual).</p>
+        <p><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg" /></p>
+        <p>Si quieres garantizar tu estabilidad laboral y el crecimiento de tu carrera, tienes que <em>convertirte en un profesional de alto valor</em>, en constante crecimiento, y aprender a <em>generar impacto de forma continua al negocio para el que trabajas</em>.</p>
+        <p>
+          <a onclick="showDownloadPopup()" href="javascript:void(0)" class="button">{{ .Params.texts.common.call_to_action }}</a>
+        </p>
+      </div>
+      <div class="col-md-5 photo d-none d-sm-none d-md-block">
+				<img class="img-fluid pad" src="/assets/img/legacy/karateka.png" />
+			</div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-5 photo d-none d-sm-none d-md-block">
+				<img class="img-fluid pad" src="/assets/img/legacy/bola.png" />
+			</div>
+      <div class="col-md-7">
+        <h2><em>Ponte al mando</em> de tu carrera</h2>
+        <p>
+          Para ser un <em>desarrollador del 1%</em> y diferenciarte del resto de personas que compiten por tu puesto, la gran mayoría de acciones que puedes tomar están bajo tu control.
+        </p>
+        <p><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg" /></p>
+        <p>
+          En esta guía encontrarás las 10 claves más actualizadas y relevantes que puedes aplicar este año 2024, para ayudarte a <em>asegurar tu carrera como desarrollador</em>, mas 1 clave extra que te hará subir por el <em>fast track hasta 10x más rápido</em>.
+        </p>
+        <p>
+          <a onclick="showDownloadPopup()" href="javascript:void(0)" class="button">{{ .Params.texts.common.call_to_action }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Modal -->
-<div class="modal fade" id="newsletter-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="box" style="margin: 1.5rem; padding: 3rem">
         <div class="flap flap-top-right"></div>
-        <h2>¿Quieres descubrir las <em>10+1 claves que harán crecer tu carrera como desarrollador</em> en 2024?</h2>
+        <h2>Descarga la guía con las <em>10+1 claves que harán crecer tu carrera como desarrollador</em> en 2024.</h2>
         <p>Déjanos tu nombre y tu mejor email y lo <em>recibirás directamente en tu bandeja de entrada</em>, junto a mucho más <em>contenido de valor</em>.</p>
         <div id="mc_embed_shell">
           <link
@@ -82,7 +174,7 @@
                       name="subscribe"
                       id="mc-embedded-subscribe"
                       class="btn-submit"
-                      value="Obtener las 10+1 claves"
+                      value="Descargar la guía"
                     />
                   </div>
                 </div>
@@ -122,19 +214,9 @@
 </div>
 
 <script>
-if (typeof(Storage) !== "undefined") {
-  function showPopup() {
-    window.setTimeout(function() {
-      $('#newsletter-modal').modal('show');
-      sessionStorage.setItem("popup", 'hide');         
-    }, 10000); 
+  function showDownloadPopup() {
+    $('#download-modal').modal('show');
   }
-  if (!sessionStorage.getItem("popup")) {
-    sessionStorage.setItem("popup", 'show');         
-  }
-  if (sessionStorage.getItem("popup") == 'show') {
-    showPopup();
-  }
-}
 </script>
+
 {{ end }}
