@@ -10,4 +10,17 @@ certificateData:
   courseDetails: Voxel
   endDate: '2022-03-24'
   timespan: '16 semanas'
+  certificateImageSmall: /assets/img/certificates/certificate-mockup.png
+  certificateImage: /assets/img/certificates/certificate-mockup.png
+  competencies:
+    - Metodologías ágiles
+    - Código limpio
+    - Refactoring
+    - Test-driven development
+    - Diseño orientado a objetos
+    - Arquitectura web
+    - Web APIs
+    - CI/CD
+    - Bases de datos relacionales
+    - Observabilidad
 ---
