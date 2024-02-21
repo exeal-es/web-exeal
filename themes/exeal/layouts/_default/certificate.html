@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<section class="light">
+  <div class="container">
+		<div class="row mt-3 mb-3">
+			<div class="col-md-12">
+        <h2>Certificado de finalización.</h2>
+        <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg"/></p>
+        <p>Certificado para {{ .Params.certificateData.studentName }} por terminar el curso {{ .Params.certificateData.courseName }} {{ .Params.certificateData.courseDetails }} en la fecha {{ .Params.certificateData.endDate }} (Código de verificación: {{ .Params.certificateData.verificationCode }}) (URL del certificado: <a href="{{ .Page.Permalink }}">{{ .Page.Permalink }}</a>)</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
