@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<section class="light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="with-arrow">{{ .Params.certificateData.courseName }}: <em>Certificado del Curso</em>.</h2>
+      </div>
+    </div>
+		<div class="row mt-3 mb-3">
+			<div class="col-md-6 certificate-details">
+        <p>Completado por: <em>{{ .Params.certificateData.studentName }}</em></p>
+        <p>Código de verificación: {{ .Params.certificateData.verificationCode }}</p>
+        <p>Fecha de finalización: {{ .Params.certificateData.endDate }}</p>
+        <p>Duración: {{ .Params.certificateData.timespan }}</p>
+        <p><em>Competencias adquiridas:</em></p>
+        <ul class="row">
+          {{ range .Params.certificateData.competencies }}
+          <li class="col-md-6">{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <img class="img-fluid pad" src="{{ .Params.certificateData.certificateImageSmall }}" />
+        <p>
+          <a target="_blank" href="{{ .Params.certificateData.certificateImage }}" class="button button-center">Descargar</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
