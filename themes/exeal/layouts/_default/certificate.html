@@ -2,11 +2,20 @@
 
 <section class="light">
   <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="with-arrow">{{ .Params.certificateData.courseName }}: <em>Certificado del Curso</em>.</h2>
+      </div>
+    </div>
 		<div class="row mt-3 mb-3">
-			<div class="col-md-12">
-        <h2>Certificado de finalización.</h2>
-        <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg"/></p>
-        <p>Certificado para {{ .Params.certificateData.studentName }} por terminar el curso {{ .Params.certificateData.courseName }} {{ .Params.certificateData.courseDetails }} en la fecha {{ .Params.certificateData.endDate }} (Código de verificación: {{ .Params.certificateData.verificationCode }}) (URL del certificado: <a href="{{ .Page.Permalink }}">{{ .Page.Permalink }}</a>)</p>
+			<div class="col-md-6 gloaming">
+        <p>Completado por: <em>{{ .Params.certificateData.studentName }}</em></p>
+        <p>Código de verificación: {{ .Params.certificateData.verificationCode }}</p>
+        <p>Fecha de finalización: {{ .Params.certificateData.endDate }}</p>
+        <p>Duración: {{ .Params.certificateData.timespan }}</p>
+      </div>
+      <div class="col-md-6">
+        <img class="img-fluid pad" src="/assets/img/certificates/certificate-mockup.png" />
       </div>
     </div>
   </div>

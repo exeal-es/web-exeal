@@ -9,4 +9,5 @@ certificateData:
   courseName: Aceleradora de Talento
   courseDetails: Voxel
   endDate: '2022-03-24'
+  timespan: '16 semanas'
 ---
