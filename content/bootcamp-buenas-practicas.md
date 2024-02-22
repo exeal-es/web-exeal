@@ -4,7 +4,8 @@ description: "Consigue mayor impacto con tu trabajo, mejora tu salario y recuper
 date: 2023-08-01T00:00:00+02:00
 layout: bootcamp-buenas-practicas
 cta_url: https://forms.gle/1aQBrPyStQWaoHbY7
-redirect_submission_url: /bootcamp-buenas-practicas/programa/
+images: ['/assets/img/ogcard/bootcamp-2nd-edition.png']
+featured_image: '/assets/img/ogcard/bootcamp-2nd-edition.png'
 team:
   [{ name: "pedropardal" }]
 syllabus:
