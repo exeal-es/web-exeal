@@ -36,6 +36,8 @@ navresources:
   other: Resources
 navtrainingadhoc:
   other: Ad Hoc Training
+navelearning:
+  other: Online Training
 navmailinglist:
   other: Newsletter
 navchecklist:
