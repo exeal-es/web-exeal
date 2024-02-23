@@ -11,6 +11,7 @@ certificateData:
   courseName: Bootcamp de Buenas Prácticas de Desarrollo
   endDate: '2024-02-07'
   timespan: '16 semanas'
+  courseDetailsLink: 
   certificateImageSmall: /assets/img/certificates/s7djbwdbj12xsz7s5crr-small.png
   certificateImage: /assets/img/certificates/s7djbwdbj12xsz7s5crr.png
   competencies:

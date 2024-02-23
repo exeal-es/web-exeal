@@ -76,6 +76,13 @@ a.button.button-green {
 	text-align: center;
 }
 
+a.button.button-dark {
+	background-color: $dark-background-color !important;
+	border-style: none;
+	color: $gloaming-background-color;
+	text-align: center;
+}
+
 // Arrow after button text
 @media (min-width: 992px) {
 	.dark a.button:after {

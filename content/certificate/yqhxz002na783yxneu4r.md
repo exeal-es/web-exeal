@@ -11,6 +11,7 @@ certificateData:
   courseName: Aceleradora de Talento
   endDate: '2022-03-24'
   timespan: '16 semanas'
+  courseDetailsLink: https://www.exeal.com/servicios/aceleradora-de-talento/
   certificateImageSmall: /assets/img/certificates/yqhxz002na783yxneu4r-small.png
   certificateImage: /assets/img/certificates/yqhxz002na783yxneu4r.png
   competencies:

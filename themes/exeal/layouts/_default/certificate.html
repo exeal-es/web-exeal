@@ -19,6 +19,9 @@
           <li class="col-md-6">{{ . }}</li>
           {{ end }}
         </ul>
+        <p>
+          <a href="{{ .Params.certificateData.courseDetailsLink }}" class="button button-dark button-center">Detalles del curso</a>
+        </p>
       </div>
       <div class="col-md-6">
         <img class="img-fluid pad" src="{{ .Params.certificateData.certificateImageSmall }}" />

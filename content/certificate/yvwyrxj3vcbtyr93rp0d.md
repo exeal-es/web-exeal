@@ -11,6 +11,7 @@ certificateData:
   courseName: Bootcamp de Buenas Prácticas de Desarrollo
   endDate: '2024-02-07'
   timespan: '16 semanas'
+  courseDetailsLink: https://www.exeal.com/bootcamp-buenas-practicas/
   certificateImageSmall: /assets/img/certificates/yvwyrxj3vcbtyr93rp0d-small.png
   certificateImage: /assets/img/certificates/yvwyrxj3vcbtyr93rp0d.png
   competencies:
