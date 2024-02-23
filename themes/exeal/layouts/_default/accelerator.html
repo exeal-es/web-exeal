@@ -1,0 +1,97 @@
+{{ define "main" }}
+<section class="dark background background-05">
+  <div class="container">
+    <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
+      <div class="col-md-12">
+        <h1>Aceleradora de talento</h1>
+        <h4>Programa de formación en buenas prácticas de desarrollo de software para empresas</h4>
+        <p>
+          <a data-scroll="sect-contact" href="#" class="button button-center">Contáctanos</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-stakes" class="background light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>
+          🎯 La aceleradora de talento es un programa de aprendizaje enfocado a habilitar la incorporación y formación de nuevo talento técnico en tu empresa sin pertubar la actividad de tus equipos productivos.
+        </p>
+        <p>
+          ❌ Tus desarrolladores senior ya están muy ocupados aportando valor a la empresa: pedirles que además formen a las nuevas incorporaciones junior no es cost-effective.
+        </p>        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-value-proposition" class="light background background-06">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>Deja la formación de tus nuevas incorporaciones en nuestras manos</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p>
+          ✔️ Exeal asumirá esta responsabilidad preparando a los nuevos desarrolladores, asegurándose de que aprenden las <em>competencias básicas de ingeniería de software moderna</em>, así como los <em>elementos clave de la cultura de ingeniería de tu empresa</em>, dejándolos listos para incorporarse a los equipos productivos.
+        </p>
+        <p>
+          ✔️ Inmediatamente tras incorporarse a tu empresa, los nuevos developers dedicarán sus 3 primeros meses a mejorar sus habilidades con la metodología de Exeal, participando en un programa de aprendizaje preparado específicamente para ellos, de corte teórico y práctico, y desarrollarán un proyecto integrador facilitado por Exeal.
+        </p>        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-program" class="dark background background-07">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>¿Qué aprenderán tus nuevos desarrolladores?</h2>
+      </div>
+    </div>
+    <article>
+      <ul>
+        <li>Desarrollo ágil de software, DevOps y XP</li>
+        <li>Productividad con el IDE y herramientas</li>
+        <li>Diseño evolutivo (TDD, refactoring, orientación a objetos, principios SOLID y patrones de diseño)</li>
+        <li>Continuous Integration, Continuous Delivery y Observabilidad</li>
+        <li>Arquitecturas web backend y frontend</li>
+        <li>Fundamentos de sistemas distribuídos</li>
+        <li>Cómo trabajar con código legacy</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+{{ partial "clients.html" (dict "context" . "background" "light")}}
+
+<section id="sect-contact" class="dark background background-03">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>Si quieres saber cómo implementar este programa en tu empresa, contacta con nosotros:</h2>
+        {{- partial "contactform.html" . -}}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
