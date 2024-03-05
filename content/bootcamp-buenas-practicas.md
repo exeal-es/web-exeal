@@ -6,6 +6,7 @@ layout: bootcamp-buenas-practicas
 cta_url: https://forms.gle/1aQBrPyStQWaoHbY7
 images: ['/assets/img/ogcard/bootcamp-2nd-edition.png']
 featured_image: '/assets/img/ogcard/bootcamp-2nd-edition.png'
+show_newsletter_modal: false
 team:
   [{ name: "pedropardal" }]
 syllabus:
