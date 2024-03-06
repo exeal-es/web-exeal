@@ -1,6 +1,6 @@
 @import 'foundation/variables';
 
-a.button {
+.button {
 	display: block;
 	border-style: solid;
 	border-color: $secondary-color;
@@ -19,33 +19,33 @@ a.button {
   align-items: center;
 }
 
-a.button.expand {
+.button.expand {
 	width: 100%;
 }
 
-a.button.button-center {
+.button.button-center {
 	margin: auto;
 }
 
-.dark a.button {
+.dark .button {
 	color: $dark-background-color;
 }
 
-.light a.button {
+.light .button {
 	color: white;
 }
 
-.gloaming a.button {
+.gloaming .button {
 	color: white;
 }
 
-a.button:after {
+.button:after {
 	float: right;
 	margin-left: .75em;
 	margin-top: 4px;
 }
 
-a.button-hollow {
+.button-hollow {
 	display: block;
 	border-style: solid;
 	border-color: $secondary-color;
@@ -64,19 +64,19 @@ a.button-hollow {
 	color: $secondary-color;
 }
 
-.podcast-item a.button {
+.podcast-item .button {
   font-size: 0.85rem;
   width: 100%;
 }
 
-a.button.button-green {
+.button.button-green {
 	background-color: $primary-color !important;
 	border-style: none;
 	color: $dark-background-color;
 	text-align: center;
 }
 
-a.button.button-dark {
+.button.button-dark {
 	background-color: $dark-background-color !important;
 	border-style: none;
 	color: $gloaming-background-color;
@@ -85,15 +85,15 @@ a.button.button-dark {
 
 // Arrow after button text
 @media (min-width: 992px) {
-	.dark a.button:after {
+	.dark .button:after {
 		content: url('/assets/img/arrow-cta-dark.svg');
 	}
 
-	.light a.button:after {
+	.light .button:after {
 		content: url('/assets/img/arrow-cta-white.svg');
 	}
 
-	.gloaming a.button:after {
+	.gloaming .button:after {
 		content: url('/assets/img/arrow-cta-white.svg');
 	}
 
@@ -104,7 +104,7 @@ a.button.button-dark {
 		content: url('/assets/img/arrow-cta-yellow.svg');
 	}
 
-	a.button.button-green:after {
+	.button.button-green:after {
 		float: none;
 		margin-left: .75em;
 		margin-top: 4px;

@@ -1,19 +1,78 @@
 {{ define "nav-items" }}
 <li class="nav-item">
-  <a onclick="showDownloadPopup()" class="nav-link nav-button" href="javascript:void(0)">{{ .Params.texts.common.call_to_action }}</a>
+  <a data-scroll="sect-download" href="#" class="nav-link nav-button">{{ .Params.texts.common.call_to_action }}</a>
 </li>
 {{ end }}
 
 {{ define "main" }}
-<section class="dark background background-05">
+<section id="sect-download" class="dark background background-05">
   <div class="container">
-    <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
-      <div class="col-md-12">
+    <div class="row mt-1 mb-1 align-items-center h-100">
+      <div class="course-page-tagline col-md-7 col-sm-12 mb-3">
         <h1>{{ .Params.texts.hero.header | safeHTML }}</h1>
         <h4>{{ .Params.texts.hero.subheader | safeHTML }}</h4>
-        <p>
-          <a onclick="showDownloadPopup();" href="javascript:void(0)" class="button button-center">{{ .Params.texts.common.call_to_action }}</a>
-        </p>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <form
+          action="https://exeal.us10.list-manage.com/subscribe/post?u=b43f7982f87d38bbb55bc64ae&amp;id=a85eab802a&amp;f_id=008ed9e5f0"
+          method="post">
+          <div class="form-group">
+            <input
+              type="text"
+              name="FNAME"
+              class="form-control"
+              id="mce-FNAME"
+              value=""
+              required
+              placeholder="Tu nombre"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="EMAIL"
+              class="form-control"
+              id="mce-EMAIL"
+              value=""
+              required
+              placeholder="Tu mejor email"
+            />
+          </div>
+          <div id="mce-responses">
+            <div
+              class="response"
+              id="mce-error-response"
+              style="display: none"
+            ></div>
+            <div
+              class="response"
+              id="mce-success-response"
+              style="display: none"
+            ></div>
+          </div>
+          <div
+            aria-hidden="true"
+            style="position: absolute; left: -5000px"
+          >
+            /* real people should not fill this in and expect good things
+            - do not remove this or risk form bot signups */
+            <input
+              type="text"
+              name="b_b43f7982f87d38bbb55bc64ae_a85eab802a"
+              tabindex="-1"
+              value=""
+            />
+          </div>
+          <div>
+            <input
+              type="submit"
+              name="subscribe"
+              id="mc-embedded-subscribe"
+              class="button"
+              value="Envíame la guía por email"
+            />
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -58,7 +117,7 @@
         <p><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg" /></p>
         <p>Si quieres garantizar tu estabilidad laboral y el crecimiento de tu carrera, tienes que <em>convertirte en un profesional de alto valor</em>, en constante crecimiento, y aprender a <em>generar impacto de forma continua al negocio para el que trabajas</em>.</p>
         <p>
-          <a onclick="showDownloadPopup()" href="javascript:void(0)" class="button">{{ .Params.texts.common.call_to_action }}</a>
+          <a data-scroll="sect-download" href="#" class="button">{{ .Params.texts.common.call_to_action }}</a>
         </p>
       </div>
       <div class="col-md-5 photo d-none d-sm-none d-md-block">
@@ -84,7 +143,7 @@
           En esta guía encontrarás las 10 claves más actualizadas y relevantes que puedes aplicar este año 2024, para ayudarte a <em>asegurar tu carrera como desarrollador</em>, mas 1 clave extra que te hará subir por el <em>fast track hasta 10x más rápido</em>.
         </p>
         <p>
-          <a onclick="showDownloadPopup()" href="javascript:void(0)" class="button">{{ .Params.texts.common.call_to_action }}</a>
+          <a data-scroll="sect-download" href="#" class="button">{{ .Params.texts.common.call_to_action }}</a>
         </p>
       </div>
     </div>
@@ -212,11 +271,5 @@
     </div>
   </div>
 </div>
-
-<script>
-  function showDownloadPopup() {
-    $('#download-modal').modal('show');
-  }
-</script>
 
 {{ end }}
