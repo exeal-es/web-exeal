@@ -52,3 +52,10 @@ Tampoco quiere decir que la interfaz pública del sistema no evolucione; **siemp
 Fíjate como la filosofía es muy similar a cuando hacemos desarrollo de producto a mayor escala. Lo primero que hacemos es un [Vertical Slicing](https://abrahamvallez.medium.com/vertical-slicing-i-desaprende-lo-que-sabes-sobre-user-stories-y-pon-el-foco-en-desarrollo-b859c5827326), para identificar la mínima expresión de cada una de las partes de nuestro sistema. En base a eso, montamos un [Walking Skeleton](https://wiki.c2.com/?WalkingSkeleton) de nuestra solución, que contenga todas esas partes en su mínima expresión, pero ya trabajando juntas, para luego ir añadiéndole carne al esqueleto en iteraciones sucesivas.
 
 Trabajar con la misma filosofía a nivel macro y micro hace que cada fase del desarrollo encaje mejor y el proceso en su conjunto cobre más sentido. Muchas veces, la respuesta a las preguntas de cómo hacer ciertas cosas está en el resto de prácticas que utilizamos a otros niveles.
+
+--
+
+Te puede interesar:
+
+- [Curso de Test-driven development](https://www.exeal.com/cursos/test-driven-development/)
+- [Bootcamp de buenas prácticas de desarrollo de software](https://www.exeal.com/bootcamp-buenas-practicas/)
