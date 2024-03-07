@@ -10,8 +10,6 @@ featured_image: /assets/img/blog/posts/elephant-slicing.jpg
 card_image: /assets/img/blog/posts/elephant-slicing.jpg
 ---
 
-## 
-
 Cuando trabajamos en un proyecto software de cierto tamaño, tenemos que dividir (hacer slicing, o "loncheado") los requisitos más grandes en tareas más pequeñas y abordables.
 
 Existen dos formas de hacer esta división: slicing horizontal y vertical.
@@ -20,10 +18,9 @@ Cuando hacemos *horizontal slicing*, dividimos por un criterio técnico (normalm
 
 Este enfoque nos plantea 2 problemas
 
+- Primero, no podemos entregar la funcionalidad hasta el final hasta el final. Por tanto, hasta entonces no estaremos aportando valor al usuario.
 
-Primero, no podemos entregar la funcionalidad hasta el final hasta el final. Por tanto, hasta entonces no estaremos aportando valor al usuario.
-
-Segundo, es probable que nos cueste más integrar cada parte. ¿Quién no ha sufrido ir a integrarse con el backend y ver que los endpoints implementados no cuadran con el contrato de la API que acordamos?
+- Segundo, es probable que nos cueste más integrar cada parte. ¿Quién no ha sufrido ir a integrarse con el backend y ver que los endpoints implementados no cuadran con el contrato de la API que acordamos?
 
 Con *vertical slicing*, definimos pequeños incrementos que abarcan todos los componentes de la aplicación, pero que por sí solos aportan valor, aunque sea un poquito (un nuevo caso de uso, un caso de error, etc.).
 
