@@ -5,6 +5,7 @@ date: 2024-03-07T00:00:00+02:00
 layout: certificate
 images: ['/assets/img/certificates/cxes3gayujl3msye3vfk-small.png']
 featured_image: '/assets/img/certificates/cxes3gayujl3msye3vfk-small.png'
+noindex: true
 certificateData:
   verificationCode: cxes3gayujl3msye3vfk 
   studentName: Carlos Vigueras Carreño

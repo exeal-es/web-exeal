@@ -5,6 +5,7 @@ date: 2024-02-23T00:00:00+02:00
 layout: certificate
 images: ['/assets/img/certificates/09l86eigc58oiu9nquas-small.png']
 featured_image: '/assets/img/certificates/09l86eigc58oiu9nquas-small.png'
+noindex: true
 certificateData:
   verificationCode: 09l86eigc58oiu9nquas 
   studentName: Victor Rubio Ibañez

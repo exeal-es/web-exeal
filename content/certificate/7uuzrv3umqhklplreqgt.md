@@ -5,6 +5,7 @@ date: 2024-03-07T00:00:00+02:00
 layout: certificate
 images: ['/assets/img/certificates/7uuzrv3umqhklplreqgt-small.png']
 featured_image: '/assets/img/certificates/7uuzrv3umqhklplreqgt-small.png'
+noindex: true
 certificateData:
   verificationCode: 7uuzrv3umqhklplreqgt 
   studentName: Juan Vicente Quiles Puchalt

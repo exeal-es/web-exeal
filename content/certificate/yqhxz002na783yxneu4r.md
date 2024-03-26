@@ -5,6 +5,7 @@ date: 2024-02-21T00:00:00+02:00
 layout: certificate
 images: ['/assets/img/certificates/yqhxz002na783yxneu4r-small.png']
 featured_image: '/assets/img/certificates/yqhxz002na783yxneu4r-small.png'
+noindex: true
 certificateData:
   verificationCode: yqhxz002na783yxneu4r 
   studentName: Raúl Gómez Crespo

@@ -33,6 +33,10 @@
 	{{ end }}
 {{ end }}
 
+{{ if .Params.noindex }}
+  <meta name="robots" content="noindex" /> 
+{{ end }}
+
 <!-- Google Analytics -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 {{ if eq (getenv "HUGO_ENV") "production" }}

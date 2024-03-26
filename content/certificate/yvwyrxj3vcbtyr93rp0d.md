@@ -5,6 +5,7 @@ date: 2024-02-23T00:00:00+02:00
 layout: certificate
 images: ['/assets/img/certificates/yvwyrxj3vcbtyr93rp0d-small.png']
 featured_image: '/assets/img/certificates/yvwyrxj3vcbtyr93rp0d-small.png'
+noindex: true
 certificateData:
   verificationCode: yvwyrxj3vcbtyr93rp0d 
   studentName: Mario Beteta
