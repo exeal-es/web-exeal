@@ -47,7 +47,7 @@ Las propiedades definen un continuo, y cada punto de ese continuo nos proporcion
 
 ## SOLID en términos de propiedades
 
-En [mis formaciones](https://www.exeal.com/bootcamp-buenas-practicas/), intento fomentar que la gente **aprenda a pensar**. Que no se queden en el dogma del libro. Les animo a que hagan sus propias interpretaciones del mismo y, por supuesto, que las contrasten en la práctica.
+En [mis formaciones](https://academia.exeal.com/), intento fomentar que la gente **aprenda a pensar**. Que no se queden en el dogma del libro. Les animo a que hagan sus propias interpretaciones del mismo y, por supuesto, que las contrasten en la práctica.
 
 Es cierto que los principios SOLID tienen un trasfondo positivo: la intención detrás es buena. Pero con SOLID me pasaba que **no había lugar a este tipo de discusión y aprendizaje**. Así que desde hace no mucho, intento explicar SOLID desde un nuevo ángulo: en términos de otras propiedades del código.
 
@@ -138,7 +138,7 @@ Dicho esto, se me vienen a la cabeza las siguientes propiedades hacia las que pi
 
 ## Ya no enseño SOLID
 
-Por todo esto que has leído, desde hace un tiempo no enseño SOLID en [mis formaciones](https://www.exeal.com/bootcamp-buenas-practicas/).
+Por todo esto que has leído, desde hace un tiempo no enseño SOLID en [mis formaciones](https://academia.exeal.com/).
 
 Es decir, sí, vale, sigue en el temario (casi que por una cuestión de SEO y, por qué no decirlo, clickbait), y sigo mencionando y explicando los principios, porque tarde o temprano aparecen en las conversaciones. Pero ahora siempre intento abordarlos desde la perspectiva de las propiedades que hay detrás, para fomentar el pensamiento crítico y evitar que mis alumnos caigan en el dogma.
 

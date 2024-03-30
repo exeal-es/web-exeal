@@ -58,4 +58,3 @@ Trabajar con la misma filosofía a nivel macro y micro hace que cada fase del de
 Te puede interesar:
 
 - [Curso de Test-driven development](https://www.exeal.com/cursos/test-driven-development/)
-- [Bootcamp de buenas prácticas de desarrollo de software](https://www.exeal.com/bootcamp-buenas-practicas/)

@@ -58,4 +58,3 @@ Working with the same philosophy at both macro and micro levels makes each phase
 You might be interested in:
 
 - [Test-driven development course](https://www.exeal.com/cursos/test-driven-development/)
-- [Software development best practices bootcamp](https://www.exeal.com/bootcamp-buenas-practicas/)

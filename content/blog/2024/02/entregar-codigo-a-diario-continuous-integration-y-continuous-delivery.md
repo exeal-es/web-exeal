@@ -37,7 +37,3 @@ Aunque a menudo se confunden, la Entrega Continua (CD) y el Despliegue Continuo 
 
 ## Conclusión
 La integración y despliegue diarios de código de forma segura son **fundamentales en el desarrollo de software moderno**. A través de la práctica de CI/CD, las organizaciones pueden mejorar la calidad de sus productos, optimizar sus procesos de desarrollo y **responder más rápidamente a las necesidades del mercado y los usuarios**. Adoptar estas prácticas no es solo una cuestión de eficiencia, sino un paso crucial hacia la madurez en el desarrollo de software.
-
-## Te puede interesar
-
-- [Bootcamp de buenas prácticas de desarrollo de software](https://www.exeal.com/bootcamp-buenas-practicas/)
