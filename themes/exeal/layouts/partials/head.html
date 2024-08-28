@@ -1,8 +1,9 @@
+{{- partial "gtm_head.html" . -}}
+
 <meta charset="utf-8">
 <title>{{ .Title }} | {{ .Site.Title }}</title>
-<!--<title></title>-->
-<!-- Meta -->
 
+<!-- Meta -->
 <meta name="description" content="{{ .Description }}">
 <meta name="author" content="Exeal">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,19 +36,6 @@
 
 {{ if .Params.noindex }}
   <meta name="robots" content="noindex" /> 
-{{ end }}
-
-<!-- Google Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-{{ if eq (getenv "HUGO_ENV") "production" }}
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172984297-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-172984297-1');
-</script>
 {{ end }}
 
 <!-- Start of HubSpot Embed Code -->

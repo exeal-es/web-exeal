@@ -4,7 +4,10 @@
     {{- partial "jobs/head.html" . -}}
   </head>
   <body>
-    {{- partial "jobs/navbar.html" . -}} {{- partial "jobs/hero.html" . -}}
+    {{- partial "gtm_body.html" . -}}
+
+    {{- partial "jobs/navbar.html" . -}}
+    {{- partial "jobs/hero.html" . -}}
 
     <section id="sect-body">{{- block "article" . }}{{- end }}</section>
 
