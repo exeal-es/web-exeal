@@ -1,7 +1,7 @@
 ---
 title: "Technical coaching and bespoke training for software teams and developers"
 description: "We help software developers and teams achieve greater business impact through best development practices."
-date: 2023-08-01T00:00:00+02:00
+date: 2024-09-13T00:00:00+02:00
 team:
   [{ name: "pedropardal" }]
 texts:

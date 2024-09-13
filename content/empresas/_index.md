@@ -1,7 +1,7 @@
 ---
 title: "Technical coaching y formación a medida para equipos y desarrolladores de software"
 description: "Ayudamos a desarrolladores y equipos a lograr más impacto en el negocio a través de las buenas prácticas de desarrollo"
-date: 2023-08-01T00:00:00+02:00
+date: 2024-09-13T00:00:00+02:00
 layout: business
 team:
   [{ name: "pedropardal" }]
