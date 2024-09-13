@@ -9,9 +9,27 @@ texts:
     header: Become a senior developer by studying less than 1 hour a day
     subheader: Free online courses on software design and development with best practices.
     cta: Start learning
-  team:
-    title: "Let experts guide your team"
-    subtitle: "The technical coaches who will accompany and train your team are developers and <em>technical leaders with extensive experience</em> working in high-performance teams."
+  courses:
+    [
+      {
+        title: 'Introducción a Test-driven development (TDD)',
+        description: Aprende a desarrollar software de forma incremental usando el estilo test-first de programación.,
+        featured_image: '/assets/img/courses/tdd_course.jpeg',
+        link: 'https://academia.exeal.com/courses/introduccion-a-test-driven-development'
+      },
+      {
+        title: 'Object Calisthenics: 10 reglas para mejorar tu código hoy',
+        description: Mejora la calidad de tu código desde hoy aplicando estas 10 sencillas reglas.,
+        featured_image: '/assets/img/courses/calisthenics_course.jpg',
+        link: 'https://academia.exeal.com/courses/object-calisthenics'
+      },
+      {
+        title: 'Principios SOLID y más allá',
+        description: 'Aprende los principios para diseñar y desarrollar software que soporte el paso del tiempo',
+        featured_image: '/assets/img/courses/solid_course.jpeg',
+        link: 'https://academia.exeal.com/courses/principios-solid-y-mas-alla'
+      }
+    ]
   testimonials:
     [
       {
