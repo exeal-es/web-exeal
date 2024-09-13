@@ -13,7 +13,44 @@
   </div>
 </section>
 
-<section id="sect-howwework" class="light">
+<section id="sect-courses" class="light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>Descubre nuestros cursos</h2>
+      </div>
+    </div>
+    <div class="row">
+      {{ range .Params.texts.courses }}
+      <div class="col-md-4 col-sm-12">
+        <div class="course-card">
+          <div
+            class="course-header"
+            style="background-image: url('{{ .featured_image }}')"
+          ></div>
+          <div class="course-body">
+            <h3>{{ .title }}</h3>
+            <p class="description">{{ .description }}</p>
+            <a class="button button-green expand" href="{{ .link }}">Ver más</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>
+          <a href="https://academia.exeal.com/collections" class="button button-center">Descubre todos los cursos</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-howwework" class="gloaming">
   <div class="container">
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
@@ -63,7 +100,7 @@
   </div>
 </section>
 
-<section id="sect-testimonials" class="gloaming">
+<section id="sect-testimonials" class="light">
   <div class="container">
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
@@ -116,7 +153,7 @@
   </div>
 </section>
 
-<section id="sect-your-mentor" class="light">
+<section id="sect-your-mentor" class="gloaming">
   <div class="container">
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">

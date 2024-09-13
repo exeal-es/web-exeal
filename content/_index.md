@@ -22,9 +22,27 @@ texts:
       - name: "Arquitectura de software"
       - name: "Aprendizaje continuo"
     button_text: "Descubre nuestros servicios"
-  team:
-    title: Deja guiar a tu equipo por expertos
-    subtitle: Los technical coaches que acompañarán y formarán a tu equipo son desarrolladores y <em>líderes técnicos con amplia experiencia</em> trabajando en equipos de alto rendimiento.
+  courses:
+    [
+      {
+        title: 'Introducción a Test-driven development (TDD)',
+        description: Aprende a desarrollar software de forma incremental usando el estilo test-first de programación.,
+        featured_image: '/assets/img/courses/tdd_course.jpeg',
+        link: 'https://academia.exeal.com/courses/introduccion-a-test-driven-development'
+      },
+      {
+        title: 'Object Calisthenics: 10 reglas para mejorar tu código hoy',
+        description: Mejora la calidad de tu código desde hoy aplicando estas 10 sencillas reglas.,
+        featured_image: '/assets/img/courses/calisthenics_course.jpg',
+        link: 'https://academia.exeal.com/courses/object-calisthenics'
+      },
+      {
+        title: 'Principios SOLID y más allá',
+        description: 'Aprende los principios para diseñar y desarrollar software que soporte el paso del tiempo',
+        featured_image: '/assets/img/courses/solid_course.jpeg',
+        link: 'https://academia.exeal.com/courses/principios-solid-y-mas-alla'
+      }
+    ]
   testimonials:
     [
       {
