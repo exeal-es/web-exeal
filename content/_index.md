@@ -28,23 +28,30 @@ texts:
   testimonials:
     [
       {
-        text: "&ldquo;Desde que Pedro llegó al equipo se involucró desde el minuto 1, tanto en el producto como en la parte técnica, siendo una pieza clave en la gran mejora sistémica que experimentó el equipo, ayudando no solo en detalles técnicos si no en las interacciones, relaciones y otras dinámicas de equipo.&rdquo;",
-        name: "Abraham Vallez",
-        position: "Engineering Manager @ Zinklar",
-        photo: "/assets/img/testimonials/abraham-vallez.png",
+        text: "&ldquo;Cuando hablo con personas con 10 o 20 años experiencia, me dicen que ojalá ellos hubieran podido aprender al principio todo lo que yo sé ahora
+&rdquo;",
+        name: "Victoria Kovaleva",
+        position: "Junior Software Engineer",
+        photo: "/assets/img/testimonials/vika.jpeg",
         active: true,
       },
       {
-        text: "&ldquo;Ver al equipo motivado y con ganas ha sido muy positivo. Gana el equipo, gana la empresa y también ganan los empleados a nivel personal ya que obtienen un aprendizaje y una formación extra que tiene un retorno muy positivo&rdquo;",
-        name: "Gerard Artés",
-        position: "CTO & Co-founder @ BAB",
-        photo: "/assets/img/testimonials/gerard-artes.jpg"
+        text: "&ldquo;Aprender con Pedro fue un punto de inflexión en mi carrera profesional&rdquo;",
+        name: "David Lorenzo",
+        position: "Software Engineer @ Voxel Group",
+        photo: "/assets/img/testimonials/davidlorenzo.jpeg"
       },
       {
-        text: "&ldquo;Tras empezar a trabajar con Exeal, volvemos a respirar en el equipo el aprendizaje, las preguntas, las lecturas... El éxito principal es ayudar a crecer y retener a nuestros profesionales.&rdquo;",
-        name: "Emilio Macías",
-        position: "Director de operaciones @ AIDA (Domingo Alonso Group)",
-        photo: "/assets/img/testimonials/emilio-macias.jpeg",
+        text: "&ldquo;Lo que tú enseñas es una forma de desarrollar software, son muchas piezas que se juntan para formar un puzzle.&rdquo;",
+        name: "Samuel Álvarez",
+        position: "Software Engineer @ Voxel Group",
+        photo: "/assets/img/testimonials/samu.jpeg",
+      },
+      {
+        text: "&ldquo;El training de legacy code de Exeal me dejó un montón de tips útiles que vienen muy bien para aplicar en el día a día. Además de aprender y reforzar estrategias existentes para que el código legacy sea un poco más amigable y no tan temido. ¡Lo súper recomiendo!&rdquo;",
+        name: "Meri Herrera",
+        position: "Senior Software Engineer @ Voxel Group",
+        photo: "/assets/img/testimonials/meri-herrera.jpeg",
       },
     ]
 ---
