@@ -1,13 +1,13 @@
 ---
-title: "Technical coaching y formación a medida para equipos y desarrolladores de software"
+title: "Formación de calidad para equipos y desarrolladores de software"
 description: "Ayudamos a desarrolladores y equipos a lograr más impacto en el negocio a través de las buenas prácticas de desarrollo"
 date: 2024-09-13T00:00:00+02:00
 team:
   [{ name: "pedropardal" }]
 texts:
   hero:
-    header: Technical coaching y formación a medida para equipos y desarrolladores de software
-    subheader: Ayudamos a desarrolladores y equipos a lograr más impacto en el negocio a través de las buenas prácticas de desarrollo.
+    header: Conviértete en desarrollador/a senior estudiando menos de 1 hora al día
+    subheader: Cursos online gratuitos sobre diseño y desarrollo de software con buenas prácticas.
   bestpractices:
     title: "¿Cómo <em>te ayudamos</em> a ti y a tu equipo?"
     subtitle: "Ponemos foco en los <em>fundamentos, metodologías y buenas prácticas</em>, <em>técnicas y de gestión</em>, por encima de tecnologías y frameworks concretos."

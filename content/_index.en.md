@@ -6,8 +6,8 @@ team:
   [{ name: "pedropardal" }]
 texts:
   hero:
-    header: Technical coaching and bespoke training for software teams and developers
-    subheader: We help software developers and teams achieve greater business impact through best development practices.
+    header: Become a senior developer by studying less than 1 hour a day
+    subheader: Free online courses on software design and development with best practices.
   bestpractices:
     title: "How do <em>we help</em> you and your team?"
     subtitle: "We focus on <em>fundamentals, methodologies, and best practices</em>, <em>technical and management</em> techniques, above specific technologies and frameworks."
