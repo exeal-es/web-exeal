@@ -13,6 +13,109 @@
   </div>
 </section>
 
+<section id="sect-howwework" class="light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>¿Cómo funciona nuestra metodología?</h2>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <div class="icon-container">
+          <img src="/assets/img/legacy/icons/icon-06.svg" />
+        </div>
+        <h3 class="mt-3">Píldoras de teoría</h3>
+        <p>Aprenderás los conceptos teóricos con videos cortos, fácilmente digeribles, que puedes ver cuantas veces quieras.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-container">
+          <img src="/assets/img/legacy/icons/icon-02.svg" />
+        </div>
+        <h3 class="mt-3">Katas prácticas</h3>
+        <p>Aplicarás lo aprendido con una serie de ejercicios prácticos propuestos.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-container">
+          <img src="/assets/img/legacy/icons/icon-03.svg" />
+        </div>
+        <h3 class="mt-3">Soporte en comunidad</h3>
+        <p>Tendrás acceso al servidor de Discord de Exeal donde podrás conversar, resolver dudas y compartir experiencias con los demás alumnos</p>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-container">
+          <img src="/assets/img/legacy/icons/icon-05.svg" />
+        </div>
+        <h3 class="mt-3">Estudia gratis</h3>
+        <p>Nuestros cursos son gratuitos para que cualquiera pueda a comenzar a estudiar, sin barreras. No obstante, puedes elegir abonar una pequeña matricula para dar soporte al creador.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-container">
+          <img src="/assets/img/legacy/icons/icon-01.svg" />
+        </div>
+        <h3 class="mt-3">Acceso de por vida</h3>
+        <p>Tendrás acceso para siempre a todos los materiales del curso, así como a las nuevas actualizaciones del mismo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-testimonials" class="gloaming">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img
+            class="arrow-right"
+            src="/assets/img/arrow-right-secondary.svg"
+          />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>¿Qué dice nuestro alumnado?</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+          <div class="box">
+            <div class="flap flap-top-right"></div>
+            <div class="carousel-inner">
+              {{ range .Params.texts.testimonials }}
+              <div class="carousel-item {{ if eq .active true }}active{{ end }}">
+                <p>{{ .text | safeHTML }}</p>
+                <div class="customer">
+                  <img class="rounded-circle avatar" src="{{ .photo }}" />
+                  <div class="customer-info">
+                    <p>{{ .name }}</p>
+                    <p>{{ .position }}</p>
+                  </div>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="carousel-indicators-parent">
+            <ol class="carousel-indicators carousel-testimonials">
+              <!-- TODO draw buttons based on data, not hardcoded -->
+              <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+              <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+              <li data-target="#carousel-testimonials" data-slide-to="3"></li>
+            </ol>
+            <a href="#carousel-testimonials" data-slide="next" role="button"><img class="arrow-right"
+                src="/assets/img/arrow-right-secondary.svg" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="sect-your-mentor" class="light">
   <div class="container">
     <div class="row">
@@ -71,59 +174,6 @@
         </div>
       </div>
       {{ end }}
-    </div>
-  </div>
-</section>
-
-<section id="sect-testimonials" class="gloaming">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2>
-          <img
-            class="arrow-right"
-            src="/assets/img/arrow-right-secondary.svg"
-          />
-        </h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2>¿Qué dice nuestro alumnado?</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
-          <div class="box">
-            <div class="flap flap-top-right"></div>
-            <div class="carousel-inner">
-              {{ range .Params.texts.testimonials }}
-              <div class="carousel-item {{ if eq .active true }}active{{ end }}">
-                <p>{{ .text | safeHTML }}</p>
-                <div class="customer">
-                  <img class="rounded-circle avatar" src="{{ .photo }}" />
-                  <div class="customer-info">
-                    <p>{{ .name }}</p>
-                    <p>{{ .position }}</p>
-                  </div>
-                </div>
-              </div>
-              {{ end }}
-            </div>
-          </div>
-
-          <div class="carousel-indicators-parent">
-            <ol class="carousel-indicators carousel-testimonials">
-              <!-- TODO draw buttons based on data, not hardcoded -->
-              <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-testimonials" data-slide-to="1"></li>
-              <li data-target="#carousel-testimonials" data-slide-to="2"></li>
-              <li data-target="#carousel-testimonials" data-slide-to="3"></li>
-            </ol>
-            <a href="#carousel-testimonials" data-slide="next" role="button"><img class="arrow-right"
-                src="/assets/img/arrow-right-secondary.svg" /></a>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
