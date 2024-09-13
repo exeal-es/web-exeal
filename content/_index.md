@@ -8,6 +8,7 @@ texts:
   hero:
     header: Conviértete en desarrollador/a senior estudiando menos de 1 hora al día
     subheader: Cursos online gratuitos sobre diseño y desarrollo de software con buenas prácticas.
+    cta: Comienza a aprender
   bestpractices:
     title: "¿Cómo <em>te ayudamos</em> a ti y a tu equipo?"
     subtitle: "Ponemos foco en los <em>fundamentos, metodologías y buenas prácticas</em>, <em>técnicas y de gestión</em>, por encima de tecnologías y frameworks concretos."
@@ -79,20 +80,4 @@ texts:
         photo: "/assets/img/testimonials/emilio-macias.jpeg",
       },
     ]
-  socialproof:
-    header: ¿Qué dicen nuestros clientes?
-    subheader: Descubre cómo nuestros clientes han transformado sus equipos de la mano de nuestro acompañamiento
-    casestudies:
-      - youtube: "https://www.youtube.com/embed/NZgsqqiS440"
-        title: "De new hire a senior en 3 meses sin alterar la productividad de los equipos"
-        description: "Tras realizar la definición del plan de carrera de los empleados del departamento de ingeniería de AIDA, identifican la necesidad de encontrar talento de nivel intermedio para incorporar a sus equipos."
-        link: "/casos-de-exito/domingo-alonso-group/"
-        cta: Más info
-      - youtube: "https://www.youtube.com/embed/8WfycGZPaug"
-        title: "Cómo lograr la excelencia técnica y el alto rendimiento del equipo en 3 meses"
-        description: "Queríamos poner en marcha una “potente remodelación” a nivel del desarrollo de nuestro producto y para ello era necesario que el equipo con el que contábamos aprendiera, obtuviera formación."
-        link: "/casos-de-exito/we-are-bab/"
-        cta: Más info
-  contact:
-    title: Contácta con nosotros y <em>charlemos sobre los retos de tu equipo</em> para valorar cómo podemos ayudar.
 ---

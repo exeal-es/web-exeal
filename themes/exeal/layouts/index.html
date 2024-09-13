@@ -6,9 +6,7 @@
         <h1>{{ .Params.texts.hero.header | safeHTML }}</h1>
         <h4>{{ .Params.texts.hero.subheader | safeHTML }}</h4>
         <p>
-          <a data-scroll="sect-best-practices" href="#"
-            ><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg"
-          /></a>
+          <a href="https://academia.exeal.com/collections" class="button button-center">{{ .Params.texts.hero.cta }}</a>
         </p>
       </div>
     </div>
@@ -200,42 +198,6 @@
   </div>
 </section>
 
-<section id="sect-cases-studies" class="light">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2>{{ .Params.texts.socialproof.header }}</h2>
-      </div>
-    </div>
-
-    <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
-      <div class="col-md-8">
-        <p>
-          {{ .Params.texts.socialproof.subheader }}
-        </p>
-      </div>
-      <div class="case-study-card-container">
-        {{ range .Params.texts.socialproof.casestudies }}
-        <div class="case-study-card">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="{{ .youtube }}"></iframe>
-          </div>
-          <div class="container">
-            <h4>{{ .title }}</h4>
-            <h6>{{ .description }}</h6>
-            <a href="{{ .link }}" class="button-hollow"
-              style="margin: auto; text-align: center; display: block">{{ .cta }}</a>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="sect-testimonials" class="gloaming">
   <div class="container">
     <div class="row">
@@ -276,19 +238,5 @@
 </section>
 
 {{ partial "clients.html" (dict "context" . "background" "light")}}
-
-<section id="sect-contact" class="dark background background-03">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2>{{ .Params.texts.contact.title | safeHTML }}</h2>
-        {{- partial "contactform.html" . -}}
-      </div>
-    </div>
-  </div>
-</section>
 
 {{ end }}

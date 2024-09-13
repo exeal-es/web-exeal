@@ -8,6 +8,7 @@ texts:
   hero:
     header: Become a senior developer by studying less than 1 hour a day
     subheader: Free online courses on software design and development with best practices.
+    cta: Start learning
   bestpractices:
     title: "How do <em>we help</em> you and your team?"
     subtitle: "We focus on <em>fundamentals, methodologies, and best practices</em>, <em>technical and management</em> techniques, above specific technologies and frameworks."
@@ -82,20 +83,4 @@ texts:
         photo: "/assets/img/testimonials/emilio-macias.jpeg",
       },
     ]
-  socialproof:
-    header: What are our customers saying?
-    subheader: Discover how our customers have transformed their teams with the support of our guidance.
-    casestudies:
-      - youtube: "https://www.youtube.com/embed/NZgsqqiS440"
-        title: "From new hire to senior in 3 months without disrupting team productivity"
-        description: "After defining the career plan for the employees in AIDA's engineering department, they identify the need to find mid-level talent to join their teams."
-        link: "/casos-de-exito/domingo-alonso-group/"
-        cta: More info
-      - youtube: "https://www.youtube.com/embed/8WfycGZPaug"
-        title: "How to achieve technical excellence and high team performance in 3 months."
-        description: "We wanted to kickstart a 'powerful overhaul' in the development of our product, and for that, it was necessary for the existing team to learn and receive training."
-        link: "/casos-de-exito/we-are-bab/"
-        cta: More info
-  contact:
-    title: Contact us, and let's <em>discuss the challenges your team is facing</em> to assess how we can help.
 ---
