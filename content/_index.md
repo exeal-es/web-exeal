@@ -28,8 +28,7 @@ texts:
   testimonials:
     [
       {
-        text: "&ldquo;Cuando hablo con personas con 10 o 20 años experiencia, me dicen que ojalá ellos hubieran podido aprender al principio todo lo que yo sé ahora
-&rdquo;",
+        text: "&ldquo;Cuando hablo con personas con 10 o 20 años experiencia, me dicen que ojalá ellos hubieran podido aprender al principio todo lo que yo sé ahora&rdquo;",
         name: "Victoria Kovaleva",
         position: "Junior Software Engineer",
         photo: "/assets/img/testimonials/vika.jpeg",
