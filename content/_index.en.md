@@ -9,55 +9,6 @@ texts:
     header: Become a senior developer by studying less than 1 hour a day
     subheader: Free online courses on software design and development with best practices.
     cta: Start learning
-  bestpractices:
-    title: "How do <em>we help</em> you and your team?"
-    subtitle: "We focus on <em>fundamentals, methodologies, and best practices</em>, <em>technical and management</em> techniques, above specific technologies and frameworks."
-    services:
-      - name: "Automated Testing"
-      - name: "Software Design"
-      - name: "Product Orientation"
-      - name: "High-Performance Teams"
-      - name: "Integration and Continuous Delivery"
-      - name: "Agile Methodologies"
-      - name: "Software Architecture"
-      - name: "Continuous Learning"
-    button_text: "Discover our services"
-  services:
-    title: "We provide customized coaching and training services to <em>individuals and businesses</em>."
-    services:
-      - name: "Technical Coaching"
-        icon_path: "/assets/img/icon-coaching.svg"
-        description: "Improve your team's practices and processes with 100% hands-on coaching and mentoring."
-        button_text: "More info"
-        scroll_target: "sect-service-coaching"
-      - name: "Development Bootcamps"
-        icon_path: "/assets/img/icon-apprenticeship.svg"
-        description: "Comprehensive training programs in agile software development and good technical practices."
-        button_text: "More info"
-        scroll_target: "sect-service-bootcamps"
-      - name: "Bespoke Training"
-        icon_path: "/assets/img/icon-training.svg"
-        description: "Short-term, expert-level intensive courses on a specific technique or methodology."
-        button_text: "More info"
-        scroll_target: "sect-service-training"
-  
-  servicecoaching:
-    title: Technical Coaching
-    p1: "Is your team drowning in incident resolution, and <em>taking longer and longer</em> to deliver quality software on time?"
-    p2: "We will integrate into your daily routine to help you <em>review your processes and technical</em> and management practices, assist in defining a technical vision, and <em>empower you to execute</em> it effectively."
-    cta: Request information
-
-  servicebootcamps:
-    title: Development Best Practices Bootcamps
-    p1: "Are you looking to <em>bring technical talent</em> into your company and want to ensure they come in <em>with sufficient expertise</em>? Or perhaps you want to take internal talent to the next level?"
-    p2: "With our <em>training programs in best engineering practices</em>, you will <em>maximize the business impact</em> of your engineering team."
-    cta: Request information
-
-  servicetraining:
-    title: Customized Training
-    p1: "Does your team have very specific <em>training needs</em>?"
-    p2: "We design and deliver intensive courses at the <em>expert level</em>, covering <em>specific techniques and methodologies</em> that are <em>immediately applicable</em> to your project."
-    cta: Request information
   team:
     title: "Let experts guide your team"
     subtitle: "The technical coaches who will accompany and train your team are developers and <em>technical leaders with extensive experience</em> working in high-performance teams."
