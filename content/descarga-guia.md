@@ -6,4 +6,5 @@ images: ['/assets/img/ogcard/devguide2024.png']
 featured_image: '/assets/img/ogcard/devguide2024.png'
 show_newsletter_modal: false
 layout: devguidethankyou
+download_url: https://drive.google.com/file/d/1tik_qCD5uNDc1s6StiDemdRMN5RkyhZw/view
 ---

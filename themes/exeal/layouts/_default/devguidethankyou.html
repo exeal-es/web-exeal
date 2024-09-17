@@ -1,14 +1,22 @@
 {{ define "main" }}
-<section id="sect-thank-you" class="dark background background-04">
-  <div class="container thank-you-hero vertical-center justify-content-center align-items-center text-center">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>¡Enhorabuena! Te hemos enviado por email la <em>guía para hacer que tu carrera como desarrollador despegue en 2024</em>.</h1>
-        <p>Si no recibes la guía en unos minutos, revisa la carpeta de spam.</p>
-        <p>En caso de que aún así no la recibas, escribenos por email a <em>hola@exeal.com</em> y te la enviaremos directamente.</p>
+<section class="dark background background-04">
+	<div class="container">
+		<div class="row mt-3 mb-3">
+      {{ if ( isset .Params "brochure_image" ) }}
+      <div class="col-md-5 order-md-first order-sm-last order-last photo vertical-center">
+        <img class="img-fluid pad" src="{{ .Params.brochure_image }}" />
       </div>
-    </div>
-  </div>
+			{{ end }}
+			<div class="col-md-7 vertical-center">
+        <div>
+          <h2>Las <em>10+1 claves</em> para hacer que tu carrera como developer despegue en 2024.</h2>
+          <p>¡Enhorabuena! Aquí tienes el enlace para descargar la guía. Toma el control de tu carrera como developer hoy mismo.</p>
+          <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg"/></p>
+          <a target="_blank" href="{{ .Params.download_url }}" class="button">Descargar la guia</a>
+        </div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="light">
@@ -27,14 +35,14 @@
           <em>¿Quieres seguir aprendiendo?</em>
         </h2>
         <p>
-          Descubre todo el contenido de valor gratuito sobre buenas prácticas y desarrollo de software que tenemos que ofrecerte.
+          Descubre todas nuestras formaciones sobre desarrollo de software con buenas prácticas que tenemos que ofrecerte.
           
         </p>
         <p>
           <img class="arrow-down" src="/assets/img/arrow-down-secondary.svg"/>
         </p>
         <p>
-          <a href="/blog/" class="button">Visita nuestro blog</a>
+          <a href="https://academia.exeal.com/collections" class="button">Descubre los cursos</a>
         </p>
       </div>
     </div>
