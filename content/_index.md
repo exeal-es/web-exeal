@@ -7,7 +7,7 @@ team:
 texts:
   hero:
     header: Conviértete en desarrollador/a senior estudiando menos de 1 hora al día
-    subheader: Cursos online gratuitos sobre diseño y desarrollo de software con buenas prácticas.
+    subheader: Cursos online sobre diseño y desarrollo de software con buenas prácticas.
     cta: Comienza a aprender
   bestpractices:
     title: "¿Cómo <em>te ayudamos</em> a ti y a tu equipo?"
