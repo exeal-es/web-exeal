@@ -1,0 +1,32 @@
+<section id="sect-partners" class="{{ .background }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img
+            class="arrow-right"
+            src="/assets/img/arrow-right-secondary.svg"
+          />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ i18n "partnersheader" }}</h2>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      {{ range .context.Site.Data.partners }}
+      <div
+        class="col-lg-3 col-md-4 col-6 d-flex mt-3 mb-3 align-items-center justify-content-center"
+      >
+        <img
+          src="{{ .logo }}"
+          class="img-fluid partner-logo"
+          style="max-height: 200px"
+          alt="{{ .name }}"
+          loading="lazy"
+        />
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

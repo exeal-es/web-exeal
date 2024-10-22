@@ -176,7 +176,9 @@
 
 {{ partial "clients.html" (dict "context" . "background" "gloaming")}}
 
-<section id="sect-contact" class="light">
+{{ partial "partners.html" (dict "context" . "background" "light")}}
+
+<section id="sect-contact" class="gloaming">
   {{- partial "calendly.html" . -}}
 </section>
 {{ end }}
