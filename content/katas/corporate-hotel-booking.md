@@ -67,4 +67,4 @@ Reglas:
 
 - Inspirado en [Corporate Hotel Booking Kata](https://www.codurance.com/katas/corporate-hotel-booking) por Sandro Mancuso.
 - [Solución con Java y Spring Boot](https://github.com/exeal-es/hotel-booking-api-java/).
-- [Curso de Test-driven development](https://academia.exeal.com/courses/test-driven-development).
+- [Curso de Test-driven development](https://academia.exeal.com/courses/introduccion-a-test-driven-development).

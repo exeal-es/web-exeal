@@ -71,7 +71,7 @@ Y para que aprendas realmente cómo yo consigo que mi código se mantenga simple
 
 Hasta finales de agosto puedes adquirir la formación a precio reducido, así que yo no me lo perdería.
 
-Te dejo más información [aquí (C#)](https://academia.exeal.com/courses/curso-avanzado-dise%C3%B1o-software-csharp) y [aquí (Java)](https://academia.exeal.com/courses/curso-avanzado-de-diseno-de-software-en-java).
+Te dejo más información [aquí](https://academia.exeal.com/courses/curso-avanzado-de-diseno-de-software).
 
 Nos vemos pronto.
 
