@@ -1,9 +1,9 @@
 ---
 title: "Curso de Test Driven Development"
-description: "Metodologías para descubrir y convertir las necesidades de los usuarios en productos software que tienen impacto"
+description: "Metodologías y procesos para descubrir las necesidades de los usuarios y construir productos software que tienen impacto"
 date: 2020-09-24T09:00:00+02:00
 layout: course
-course_featured_image: /assets/img/courses/tdd-developer.jpg
+course_featured_image: /assets/img/courses/de-idea-a-produccion.png
 course_title: "De idea a producción"
 course_prefix: ""
 course_level: beginner

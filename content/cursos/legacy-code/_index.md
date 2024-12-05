@@ -4,7 +4,7 @@ description: "Aprende a trabajar sobre un proyecto de Legacy Code sin miedo a ro
 date: 2020-09-09T15:00:00+02:00
 layout: course
 brochure_image: /assets/img/legacy/mockup-brochure.png
-course_featured_image: /assets/img/blog/posts/pain-developer.jpeg
+course_featured_image: /assets/img/courses/rescata-tu-proyecto.png
 course_title: "Rescata tu proyecto"
 course_prefix: ""
 course_level: advanced

@@ -3,7 +3,7 @@ title: "Curso de Test Driven Development"
 description: "Aumenta la estabilidad de tu software a través de las diferentes técnicas y estrategias de tests automatizados."
 date: 2020-09-24T09:00:00+02:00
 layout: course
-course_featured_image: /assets/img/courses/tdd-developer.jpg
+course_featured_image: /assets/img/courses/a-prueba-de-fallos.png
 course_title: "A prueba de fallos"
 course_prefix: ""
 course_level: beginner

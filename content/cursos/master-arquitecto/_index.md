@@ -3,8 +3,8 @@ title: "Training de Refactorización hacia Domain-Driven Design"
 description: "Domina todas las técnicas para escribir código que soporte el paso del tiempo, desde el código limpio a la arquitectura de software."
 date: 2022-10-01T15:00:00+02:00
 layout: course
-course_featured_image: /assets/img/blog/posts/nube-ubicuidad.jpeg
-course_title: "Arquitecto master"
+course_featured_image: /assets/img/courses/master-arquitecto.png
+course_title: "Master arquitecto"
 course_prefix: ""
 course_level: advanced
 redirect_submission_url: https://www.exeal.com/cursos/refactoring-hacia-domain-driven-design/programa/
