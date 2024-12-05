@@ -1,6 +1,6 @@
 ---
-title: "Technical coaching y formación a medida para equipos y desarrolladores de software"
-description: "Ayudamos a desarrolladores y equipos a lograr más impacto en el negocio a través de las buenas prácticas de desarrollo"
+title: "Desbloquea a tu equipo de desarrollo de software"
+description: "Ayudamos a líderes técnicos a capacitar a sus equipos para acelerar la entrega de software y eliminar los bugs."
 date: 2024-12-05T00:00:00+02:00
 team:
   [{ name: "pedropardal" }]
