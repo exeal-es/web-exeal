@@ -38,7 +38,9 @@ navtrainingadhoc:
   other: Formaciones a medida
 navresources:
   other: Recursos
-navbusiness:
+navb2c:
+  other: Particulares
+navb2b:
   other: Empresas
 navmailinglist:
   other: Newsletter

@@ -1,3 +1,7 @@
+{{ define "nav-items" }}
+  {{- partial "navbar-b2b.html" . -}}
+{{ end }}
+
 {{ define "main" }}
 <section id="sect-header" class="dark background background-01">
   <div class="container">
@@ -6,181 +10,164 @@
         <h1>{{ .Params.texts.hero.header | safeHTML }}</h1>
         <h4>{{ .Params.texts.hero.subheader | safeHTML }}</h4>
         <p>
-          <a href="https://academia.exeal.com/collections" class="button button-center">{{ .Params.texts.hero.cta }}</a>
+          <a data-scroll="sect-best-practices" href="#"
+            ><img class="arrow-down" src="/assets/img/arrow-down-secondary.svg"
+          /></a>
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="sect-courses" class="light">
+<section id="sect-best-practices" class="light">
   <div class="container">
     <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2>Descubre nuestros cursos</h2>
+      <div class="col-12 justify-content-center align-items-center text-center">
+        <h2>{{ .Params.texts.bestpractices.title | safeHTML }}</h2>
+        <p>{{ .Params.texts.bestpractices.subtitle | safeHTML }}</p>
       </div>
     </div>
-    <div class="row">
-      {{ range .Params.texts.courses }}
-      <div class="col-md-4 col-sm-12">
-        <div class="course-card">
-          <div
-            class="course-header"
-            style="background-image: url('{{ .featured_image }}')"
-          ></div>
-          <div class="course-body">
-            <h3>{{ .title }}</h3>
-            <p class="description">{{ .description }}</p>
-            <a class="button button-green expand" href="{{ .link }}">Ver más</a>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <p>
-          <a href="https://academia.exeal.com/collections" class="button button-center">Descubre todos los cursos</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="sect-howwework" class="gloaming">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2>¿Cómo funciona nuestra metodología?</h2>
-      </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col-md-4">
-        <div class="icon-container">
-          <img src="/assets/img/legacy/icons/icon-06.svg" />
-        </div>
-        <h3 class="mt-3">Píldoras de teoría</h3>
-        <p>Aprenderás los conceptos teóricos con videos cortos, fácilmente digeribles, que puedes ver cuantas veces quieras.</p>
-      </div>
-      <div class="col-md-4">
-        <div class="icon-container">
-          <img src="/assets/img/legacy/icons/icon-02.svg" />
-        </div>
-        <h3 class="mt-3">Katas prácticas</h3>
-        <p>Aplicarás lo aprendido con una serie de ejercicios prácticos propuestos.</p>
-      </div>
-      <div class="col-md-4">
-        <div class="icon-container">
-          <img src="/assets/img/legacy/icons/icon-03.svg" />
-        </div>
-        <h3 class="mt-3">Soporte en comunidad</h3>
-        <p>Tendrás acceso al servidor de Discord de Exeal donde podrás conversar, resolver dudas y compartir experiencias con los demás alumnos</p>
-      </div>
-      <!--
-      <div class="col-md-4">
-        <div class="icon-container">
-          <img src="/assets/img/legacy/icons/icon-05.svg" />
-        </div>
-        <h3 class="mt-3">Estudia gratis</h3>
-        <p>Nuestros cursos son gratuitos para que cualquiera pueda a comenzar a estudiar, sin barreras. No obstante, puedes elegir abonar una pequeña matricula para dar soporte al creador.</p>
-      </div>
-      -->
-      <div class="col-md-4">
-        <div class="icon-container">
-          <img src="/assets/img/legacy/icons/icon-01.svg" />
-        </div>
-        <h3 class="mt-3">Acceso de por vida</h3>
-        <p>Tendrás acceso para siempre a todos los materiales del curso, así como a las nuevas actualizaciones del mismo.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="sect-testimonials" class="light">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2>
-          <img
-            class="arrow-right"
-            src="/assets/img/arrow-right-secondary.svg"
-          />
-        </h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2>¿Qué dice nuestro alumnado?</h2>
-      </div>
-    </div>
-    <div class="row">
+    <div class="row mb-4">
       <div class="col-md-12">
-        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+        <ul class="row blocks">
+          {{ range .Params.texts.bestpractices.services }}
+            <li class="col-md-3"><div class="col-md-12 inner">{{ .name }}</div></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center text-center mt-4">
+      <div class="col-m-12">
+        <p class="justify-content-center align-items-center text-center">
+          <a data-scroll="sect-services" href="#" class="button" style="display: inline-block">{{ .Params.texts.bestpractices.button_text }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-services" class="gloaming">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 justify-content-center align-items-center text-center">
+        <h2>{{ .Params.texts.services.title | safeHTML }}</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      {{ range .Params.texts.services.services }}
+        <div class="col-xl-4 mb-3">
           <div class="box">
             <div class="flap flap-top-right"></div>
-            <div class="carousel-inner">
-              {{ range .Params.texts.testimonials }}
-              <div class="carousel-item {{ if eq .active true }}active{{ end }}">
-                <p>{{ .text | safeHTML }}</p>
-                <div class="customer">
-                  <img class="rounded-circle avatar" src="{{ .photo }}" />
-                  <div class="customer-info">
-                    <p>{{ .name }}</p>
-                    <p>{{ .position }}</p>
-                  </div>
-                </div>
-              </div>
-              {{ end }}
-            </div>
-          </div>
-
-          <div class="carousel-indicators-parent">
-            <ol class="carousel-indicators carousel-testimonials">
-              <!-- TODO draw buttons based on data, not hardcoded -->
-              <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-testimonials" data-slide-to="1"></li>
-              <li data-target="#carousel-testimonials" data-slide-to="2"></li>
-              <li data-target="#carousel-testimonials" data-slide-to="3"></li>
-            </ol>
-            <a href="#carousel-testimonials" data-slide="next" role="button"><img class="arrow-right"
-                src="/assets/img/arrow-right-secondary.svg" /></a>
+            <img src="{{ .icon_path }}" />
+            <h3>{{ .name }}</h3>
+            <p>{{ .description }}</p>
+            <a data-scroll="{{ .scroll_target }}" href="#" class="button-hollow">{{ .button_text }}</a>
           </div>
         </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section id="sect-service-coaching" class="dark background background-02">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-7">
+        <h3>{{ .Params.texts.servicecoaching.title }}</h3>
+        <p>
+          <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
+        </p>
+        <p>
+          {{ .Params.texts.servicecoaching.p1 | safeHTML }}
+        </p>
+        <p>
+          {{ .Params.texts.servicecoaching.p2 | safeHTML }}
+        </p>
+        <a data-scroll="sect-contact" href="#" class="button">{{ .Params.texts.servicecoaching.cta }}</a>
+      </div>
+      <div class="col-md-5 d-none d-sm-none d-md-block">
+        <img
+          class="img-fluid pad"
+          src="/assets/img/photo-apprenticeship-module.png"
+        />
       </div>
     </div>
   </div>
 </section>
 
-<section id="sect-your-mentor" class="gloaming">
+<section id="sect-service-bootcamps" class="light">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-5 d-none d-sm-none d-md-block">
+        <img
+          class="img-fluid pad"
+          src="/assets/img/photo-coaching-module.png"
+        />
+      </div>
+      <div class="col-md-7">
+        <h3>{{ .Params.texts.servicebootcamps.title }}</h3>
+        <p>
+          <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
+        </p>
+        <p>
+          {{ .Params.texts.servicebootcamps.p1 | safeHTML }}
+        </p>
+        <p>
+          {{ .Params.texts.servicebootcamps.p2 | safeHTML}}
+        </p>
+        <a data-scroll="sect-contact" href="#" class="button">{{ .Params.texts.servicebootcamps.cta }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-service-training" class="dark background background-03">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-7">
+        <h3>{{ .Params.texts.servicetraining.title }}</h3>
+        <p>
+          <img class="arrow-down" src="/assets/img/arrow-down-primary.svg" />
+        </p>
+        <p>
+          {{ .Params.texts.servicetraining.p1 | safeHTML }}
+        </p>
+        <p>
+          {{ .Params.texts.servicetraining.p2 | safeHTML }}
+        </p>
+        <a data-scroll="sect-contact" href="#" class="button">{{ .Params.texts.servicetraining.cta }}</a>
+      </div>
+      <div class="col-md-5 d-none d-sm-none d-md-block">
+        <img
+          class="img-fluid pad"
+          src="/assets/img/photo-training-module.png"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-meet-team" class="light background">
   <div class="container">
     <div class="row">
       <div class="col-md-2 d-none d-sm-none d-md-block">
         <h2>
-          <img
-            class="arrow-right"
-            src="/assets/img/arrow-right-secondary.svg"
-          />
+          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
         </h2>
       </div>
       <div class="col-md-10 col-sm-12">
-        <h2>Déjate guiar por expertos</h2>
+        <h2>{{ .Params.texts.team.title | safeHTML }}</h2>
       </div>
     </div>
-    <div class="row mt-3 mb-3">
-      <div class="col-6">
-        <p>
-          Pedro es Software engineer y tech lead con +12 años de experiencia construyendo aplicaciones web escalables en el cloud, y liderando equipos multidisciplinares usando metodologías ágiles.
-        </p>
-        <p>
-          Inspirado por los valores de Software Craftsmanship y prácticas de Extreme Programming y DevOps, poniendo especial énfasis en la entrega temprana de valor, comunicación transparente con el cliente y excelencia técnica.
-        </p>
+    <div class="row justify-content-center text-center">
+      <div class="col-md-12">
+        <p>{{ .Params.texts.services.subtitle | safeHTML }}</p>
       </div>
       {{ range .Params.team }} {{$authorName := .name}} {{ $data := index $.Site.Data.authors $authorName }}
-      <div class="col-6">
+      <div class="col-12 col-md-4 col-lg-4">
         <div class="team-card">
           <div class="team-card-header" style="background-image: url('{{$data.avatar}}')"></div>
           <div class="team-card-body d-flex flex-column">
@@ -212,7 +199,82 @@
           </div>
         </div>
       </div>
-      {{ end }}
+      {{end}}
+    </div>
+  </div>
+</section>
+
+<section id="sect-cases-studies" class="light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ .Params.texts.socialproof.header }}</h2>
+      </div>
+    </div>
+
+    <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
+      <div class="col-md-8">
+        <p>
+          {{ .Params.texts.socialproof.subheader }}
+        </p>
+      </div>
+      <div class="case-study-card-container">
+        {{ range .Params.texts.socialproof.casestudies }}
+        <div class="case-study-card">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="{{ .youtube }}"></iframe>
+          </div>
+          <div class="container">
+            <h4>{{ .title }}</h4>
+            <h6>{{ .description }}</h6>
+            <a href="{{ .link }}" class="button-hollow"
+              style="margin: auto; text-align: center; display: block">{{ .cta }}</a>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sect-testimonials" class="gloaming">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+          <div class="box">
+            <div class="flap flap-top-right"></div>
+            <div class="carousel-inner">
+              {{ range .Params.texts.testimonials }}
+              <div class="carousel-item {{ if eq .active true }}active{{ end }}">
+                <p>{{ .text | safeHTML }}</p>
+                <div class="customer">
+                  <img class="rounded-circle avatar" src="{{ .photo }}" />
+                  <div class="customer-info">
+                    <p>{{ .name }}</p>
+                    <p>{{ .position }}</p>
+                  </div>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="carousel-indicators-parent">
+            <ol class="carousel-indicators carousel-testimonials">
+              <!-- TODO draw buttons based on data, not hardcoded -->
+              <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+              <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+            </ol>
+            <a href="#carousel-testimonials" data-slide="next" role="button"><img class="arrow-right"
+                src="/assets/img/arrow-right-secondary.svg" /></a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -221,15 +283,15 @@
 
 {{ partial "partners.html" (dict "context" . "background" "light")}}
 
-<section id="sect-cta" class="dark background background-07">
-  <div class="container vertical-center">
+<section id="sect-contact" class="dark background background-03">
+  <div class="container">
     <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>¿A qué esperas?</h1>
-        <h4>Da hoy el primer paso para relanzar tu carrera y convertirte en senior developer, dedicando menos de una hora al día.</h4>
-        <p>
-          <a href="https://academia.exeal.com/collections" class="button button-center">{{ .Params.texts.hero.cta }}</a>
-        </p>
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ .Params.texts.contact.title | safeHTML }}</h2>
+        {{- partial "contactform.html" . -}}
       </div>
     </div>
   </div>

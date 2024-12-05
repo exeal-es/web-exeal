@@ -36,8 +36,10 @@ navdevelopment:
   other: Custom Software Development
 navresources:
   other: Resources
-navbusiness:
-  other: Business
+navb2c:
+  other: For individuals
+navb2b:
+  other: For businesses
 navtrainingadhoc:
   other: Ad Hoc Training
 navmailinglist:
