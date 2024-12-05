@@ -30,15 +30,13 @@ navservices:
   other: Services
 navcoaching:
   other: Technical Coaching
-navaccelerator:
-  other: Talent Acceleration Program
 navresources:
   other: Resources
 navb2c:
   other: For individuals
 navb2b:
   other: For businesses
-navtrainingadhoc:
+navopentraining:
   other: Ad Hoc Training
 navmailinglist:
   other: Newsletter

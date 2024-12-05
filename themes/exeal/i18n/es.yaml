@@ -30,10 +30,8 @@ navservices:
   other: Servicios
 navcoaching:
   other: Coaching técnico
-navaccelerator:
-  other: Aceleradora de talento
-navtrainingadhoc:
-  other: Formaciones a medida
+navopentraining:
+  other: Cursos abiertos
 navresources:
   other: Recursos
 navb2c:
