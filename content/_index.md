@@ -121,7 +121,7 @@ texts:
   explaining_paragraph:
     header: Empodera a tu equipo de desarrollo para aportar valor al negocio
   contact:
-    title: Contácta con nosotros y <em>charlemos sobre los retos de tu equipo</em> para valorar cómo podemos ayudar.
+    title: O, si lo prefieres, <em>déjanos un mensaje</em> y contactaremos nosotros contigo lo antes posible.
   common:
     call_to_action: Agendar sesión estratégica
 ---
