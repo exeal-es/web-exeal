@@ -3,9 +3,10 @@ title: "Curso de diseño de software orientado a objetos"
 description: "Aprende a desarrollar aplicaciones escalables y extensibles aprovechando la potencia del paradigma de programación más extendido: la orientación a objetos."
 date: 2020-10-02T13:04:23+02:00
 layout: course
+featured: true
 course_featured_image: /assets/img/courses/rubber-balloons.jpg
-course_title: "Diseño orientado a objetos"
-course_prefix: "Curso de"
+course_title: "Pilares del software"
+course_prefix: ""
 course_level: intermediate
 redirect_submission_url: https://www.exeal.com/cursos/diseno-orientado-a-objetos/programa/
 course_claim_header: "¿Crees que la orientación a objetos es tener clases llenas de getters y setters? <em>Estás equivocado.</em>"

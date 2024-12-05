@@ -1,11 +1,11 @@
 ---
 title: "Training de Refactorización hacia Domain-Driven Design"
-description: "Aprende a rescatar un proyecto legacy combinando las técnicas de refactorización y Domain-Driven Design."
+description: "Domina todas las técnicas para escribir código que soporte el paso del tiempo, desde el código limpio a la arquitectura de software."
 date: 2022-10-01T15:00:00+02:00
 layout: course
 course_featured_image: /assets/img/blog/posts/nube-ubicuidad.jpeg
-course_title: "Refactorización hacia Domain-Driven Design"
-course_prefix: "Curso de"
+course_title: "Arquitecto master"
+course_prefix: ""
 course_level: advanced
 redirect_submission_url: https://www.exeal.com/cursos/refactoring-hacia-domain-driven-design/programa/
 course_claim_header: ¿Crees que es muy tarde para que tu aplicación se beneficie de aplicar las técnicas de Domain-Driven Design, Arquitectura Hexagonal y CQRS?

@@ -1,11 +1,11 @@
 ---
 title: "Curso de Test Driven Development"
-description: "Aprende el estilo test-first de programación para mejorar el diseño de tu software a través de los tests automáticos."
+description: "Aumenta la estabilidad de tu software a través de las diferentes técnicas y estrategias de tests automatizados."
 date: 2020-09-24T09:00:00+02:00
 layout: course
 course_featured_image: /assets/img/courses/tdd-developer.jpg
-course_title: "Test Driven Development"
-course_prefix: "Curso de"
+course_title: "A prueba de fallos"
+course_prefix: ""
 course_level: beginner
 redirect_submission_url: https://www.exeal.com/cursos/test-driven-development/programa/
 course_claim_header: No se trata únicamente de escribir los tests antes que el código, esa es <em>la parte más sencilla</em>.

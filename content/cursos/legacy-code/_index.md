@@ -3,11 +3,10 @@ title: "Legacy Code Training"
 description: "Aprende a trabajar sobre un proyecto de Legacy Code sin miedo a romper todo el sistema."
 date: 2020-09-09T15:00:00+02:00
 layout: course
-featured: true
 brochure_image: /assets/img/legacy/mockup-brochure.png
 course_featured_image: /assets/img/blog/posts/pain-developer.jpeg
-course_title: "Legacy Code"
-course_prefix: "Curso de desarrollo sobre"
+course_title: "Rescata tu proyecto"
+course_prefix: ""
 course_level: advanced
 redirect_submission_url: https://www.exeal.com/cursos/legacy-code/programa/
 course_claim_header: A veces, parece que la mejor solución para evitar trabajar sobre Legacy Code es &quot;parar las máquinas&quot; y reescribir el código desde cero. <em>La experiencia nos dice que no</em>.

@@ -1,11 +1,11 @@
 ---
 title: "Curso de desarrollo de aplicaciones con contenedores"
-description: "Aprende a desarrollar servicios modernos preparados para la era cloud dominando los bloques básicos del software del futuro: los contenedores."
+description: "Conviértete en un verdadero líder para tu equipo y domina las claves para gestionar personas y proyectos."
 date: 2020-10-01T09:24:11+02:00
 layout: course
 course_featured_image: /assets/img/courses/container-cloud.jpg
-course_title: "Desarrollo con contenedores"
-course_prefix: "Curso de"
+course_title: "Líder desarrollador"
+course_prefix: ""
 course_level: intermediate
 redirect_submission_url: https://www.exeal.com/cursos/desarrollo-con-contenedores/programa/
 course_claim_header: "¿A estas alturas sigues con la excusa de <em>en mi local funciona</em>? ¿Sigues <em>gastando horas y horas</em> cada vez que despliegas a producción?"
