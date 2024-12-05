@@ -19,25 +19,7 @@ texts:
       - "Es imposible trabajar porque hay demasiada deuda técnica."
       - "Fulanito se ha ido de vacaciones y es el único que controla este tema."
       - "El cambio ya está hecho, pero hasta la release de dentro de dos semanas no llegará a producción."
-    p2: "Sin las prácticas ni el mindset adecuados, tu equipo permanecerá <em>lento, ahogado con incidencias y frustrado</em>."
-  valueprop:
-    what: "Llevaremos a tu equipo al <em>alto rendimiento</em>, de forma que serán capaces de..."
-    benefits:
-      [
-        {
-          icon: "/assets/img/icon-apprenticeship.svg",
-          text: "Producir software fácil de extender y mantener, entregado a tiempo al mercado.",
-        },
-        {
-          icon: "/assets/img/icon-coaching.svg",
-          text: "Minimizar los defectos en el producto y las sorpresas en los despliegues.",
-        },
-        {
-          icon: "/assets/img/icon-training.svg",
-          text: "Aportar valor al negocio desde el primer momento y de forma constante.",
-        },
-      ]
-    how: "Lo conseguiremos fomentando una cultura de <em>excelencia técnica</em>, <em>colaboración</em> y <em>mejora continua</em>."
+    p2: "Sin las prácticas ni el mindset adecuados, tu equipo permanecerá <em>lento, frustrado y ahogado en incidencias</em>."
   team:
     header: Deja guiar a tu equipo por expertos
     p: Los technical coaches que acompañarán a tu equipo son desarrolladores y líderes técnicos con amplia experiencia trabajando en equipos de alto rendimiento.
@@ -109,26 +91,6 @@ texts:
         photo: "/assets/img/testimonials/emilio-macias.jpeg",
       },
     ]
-  plan:
-    header: Emprende ahora el camino hacia el alto rendimiento
-    steps:
-      [
-        {
-          number: "1",
-          title: "Análisis",
-          description: "Cuéntanos, en una sesión gratuita y sin compromiso, cuáles son los retos y necesidades de tu equipo.",
-        },
-        {
-          number: "2",
-          title: "Plan",
-          description: "Nos reunimos con tu equipo para acordar los objetivos, contenidos y formato del coaching.",
-        },
-        {
-          number: "3",
-          title: "Coaching",
-          description: "Nos integramos al día a día de tu equipo para potenciar sus prácticas técnicas.",
-        },
-      ]
   explaining_paragraph:
     header: Empodera a tu equipo de desarrollo para aportar valor al negocio
   contact:
