@@ -38,7 +38,7 @@ texts:
       ]
   plan:
     header: ¿Cómo lo haremos?
-    subtitle: "Mediante un sistema de 3 pasos, que lleva a tu equipo de <em>estar constantemente apagando fuegos<em>, al <em>alto rendimiento y la mejora continua</em>."
+    subtitle: "Mediante un sistema de 3 pasos, que lleva a tu equipo de <em>estar constantemente apagando fuegos</em>, al <em>alto rendimiento y la mejora continua</em>."
     steps:
       [
         {
