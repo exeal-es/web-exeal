@@ -6,7 +6,7 @@ team:
   [{ name: "pedropardal" }]
 texts:
   hero:
-    header: Desencadena a tu equipo de desarrollo de software
+    header: Desbloquea a tu equipo de desarrollo de software
     subheader: Ayudamos a líderes técnicos a capacitar a sus equipos para acelerar la entrega de software y eliminar los bugs.
   stakes:
     header: "Entregar software de calidad a tiempo <em>no tiene por qué ser doloroso.</em>"
