@@ -11,28 +11,31 @@ jobs:
       HUGO_BUILD_DIR: public
     steps:
       - checkout
-      - run: HUGO_ENV=production hugo -F --minify -v -d $HUGO_BUILD_DIR
+      - run:
+          name: Hugo build
+          command: |
+            HUGO_ENV=production hugo -F --minify -v -d $HUGO_BUILD_DIR
       - persist_to_workspace:
           root: public
           paths: .
       - run:
-          name: Clone Public domain
+          name: Clone Github Pages repository
           working_directory: ~/workdir
           command: |
             pwd
             git clone --depth 1 https://${GITHUB_TOKEN}@github.com/exeal-es/exeal-es.github.io.git
       - run:
-          name: Remove all folders
+          name: Clear Github Pages repository
           working_directory: ~/workdir/exeal-es.github.io
           command: |
             rm -rf */
       - run:
-          name: Copy public into workdir
+          name: Copy new files into Github Pages repository
           working_directory: ~/repo
           command: |
             cp -a public/. ~/workdir/exeal-es.github.io
-      - deploy:
-          name: Trigger docs deployment
+      - run:
+          name: Deploy to Github Pages
           working_directory: ~/workdir/exeal-es.github.io
           command: |
             git config credential.helper 'cache --timeout=120'
