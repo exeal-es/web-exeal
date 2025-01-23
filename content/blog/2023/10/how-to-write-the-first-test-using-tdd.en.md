@@ -5,9 +5,9 @@ author: pedropardal
 date: 2023-10-25T00:00:00.000Z
 layout: post
 tags: [tdd, agile, buenas-practicas]
-images: [/assets/img/blog/posts/birthday-stock.jpg]
-featured_image: /assets/img/blog/posts/birthday-stock.jpg
-card_image: /assets/img/blog/posts/birthday-stock.jpg
+images: [/images/blog/posts/birthday-stock.jpg]
+featured_image: /images/blog/posts/birthday-stock.jpg
+card_image: /images/blog/posts/birthday-stock.jpg
 ---
 
 The first test is one of the most important steps when we develop using TDD. It's the one that will determine whether we build our solution on solid foundations or unnecessarily complicate our lives.

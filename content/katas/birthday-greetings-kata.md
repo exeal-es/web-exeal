@@ -5,9 +5,9 @@ date: 2024-06-30T00:00:00.000Z
 layout: kata
 author: pedropardal
 tags: [tdd, outside-in, experienced, mocks]
-images: [/assets/img/blog/posts/birthday-stock.jpg]
-featured_image: /assets/img/blog/posts/birthday-stock.jpg
-card_image: /assets/img/blog/posts/birthday-stock.jpg
+images: [/images/blog/posts/birthday-stock.jpg]
+featured_image: /images/blog/posts/birthday-stock.jpg
+card_image: /images/blog/posts/birthday-stock.jpg
 ---
 
 ## Tu tarea
