@@ -9,3 +9,7 @@ languages:
   en:
     weight: 2
 metaDataFormat: yaml
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
