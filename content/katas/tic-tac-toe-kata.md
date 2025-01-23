@@ -5,16 +5,16 @@ date: 2023-12-23T00:00:00.000Z
 layout: kata
 author: pedropardal
 tags: [tdd, starter, object-design]
-images: [/assets/img/blog/posts/dojo.jpg]
-featured_image: /assets/img/blog/posts/dojo.jpg
-card_image: /assets/img/blog/posts/dojo.jpg
+images: [/images/blog/posts/dojo.jpg]
+featured_image: /images/blog/posts/dojo.jpg
+card_image: /images/blog/posts/dojo.jpg
 ---
 
 ## Tu tarea
 
 Implementar el clásico juego tres en raya, en el que dos jugadores X y O marcan alternadamente los espacios de un tablero de 3x3. El primer jugador que haga 3 en raya gana la partida.
 
-![](/assets/img/katas/tic-tac-toe.png)
+![](/images/katas/tic-tac-toe.png)
 
 Las reglas del juego son las siguientes:
 

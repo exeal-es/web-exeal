@@ -5,9 +5,9 @@ date: 2024-02-24T00:00:00.000Z
 layout: kata
 author: pedropardal
 tags: [tdd, starter]
-images: [/assets/img/blog/posts/dojo.jpg]
-featured_image: /assets/img/blog/posts/dojo.jpg
-card_image: /assets/img/blog/posts/dojo.jpg
+images: [/images/blog/posts/dojo.jpg]
+featured_image: /images/blog/posts/dojo.jpg
+card_image: /images/blog/posts/dojo.jpg
 ---
 
 Los romanos fueron un grupo ingenioso. Conquistaron la mayor parte de Europa y la gobernaron durante cientos de años. Inventaron el concreto, las carreteras rectas e incluso los [bikinis](https://sights.seindal.dk/italy/sicily/piazza-armerina/villa-romana-del-casale/). Sin embargo, una cosa que nunca descubrieron fue el número cero. Esto hizo que escribir y fechar extensas historias de sus hazañas fuera un poco más desafiante, pero el sistema de números que idearon aún se usa hoy en día. Por ejemplo, la BBC utiliza números romanos para fechar sus programas.

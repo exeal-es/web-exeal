@@ -4,7 +4,7 @@ description: "Aprende a desarrollar aplicaciones escalables y extensibles aprove
 date: 2020-10-02T13:04:23+02:00
 layout: course
 featured: true
-course_featured_image: /assets/img/courses/pilares-del-software.png
+course_featured_image: /images/courses/pilares-del-software.png
 course_title: "Pilares del software"
 course_prefix: ""
 course_level: intermediate

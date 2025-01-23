@@ -6,9 +6,9 @@ date: 2022-11-10T00:07:00+01:00
 layout: post
 tags: ["legacy", "refactoring", "oo-design"]
 images:
-  - "/assets/img/blog/posts/reflection.jpeg"
-featured_image: "/assets/img/blog/posts/reflection.jpeg"
-card_image: "/assets/img/blog/posts/reflection.jpeg"
+  - "/images/blog/posts/reflection.jpeg"
+featured_image: "/images/blog/posts/reflection.jpeg"
+card_image: "/images/blog/posts/reflection.jpeg"
 ---
 
 ¿Por qué los proyectos greenfield acaban convirtiéndose poco a poco en código legacy, difícil de extender y mantener?

@@ -5,9 +5,9 @@ author: pedropardal
 date: 2024-03-16T00:00:00.000Z
 layout: post
 tags: []
-images: [/assets/img/blog/posts/podcast-tech-from-the-trenches.jpg]
-featured_image: /assets/img/blog/posts/podcast-tech-from-the-trenches.jpg
-card_image: /assets/img/blog/posts/podcast-tech-from-the-trenches.jpg
+images: [/images/blog/posts/podcast-tech-from-the-trenches.jpg]
+featured_image: /images/blog/posts/podcast-tech-from-the-trenches.jpg
+card_image: /images/blog/posts/podcast-tech-from-the-trenches.jpg
 ---
 
 Recientemente fui invitado al podcast [Tech from the trenches](https://www.youtube.com/@TechFromTheTrenches), en el que tuve la oportunidad de hablar sobre cómo pueden los desarrolladores adaptarse eficazmente a los cambios actuales, respondiendo a preguntas como:

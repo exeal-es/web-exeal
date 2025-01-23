@@ -5,9 +5,9 @@ author: pedropardal
 date: 2024-02-01T00:00:00.000Z
 layout: post
 tags: [best-practices, ci-cd]
-images: [/assets/img/blog/posts/programador.jpg]
-featured_image: /assets/img/blog/posts/programador.jpg
-card_image: /assets/img/blog/posts/programador.jpg
+images: [/images/blog/posts/programador.jpg]
+featured_image: /images/blog/posts/programador.jpg
+card_image: /images/blog/posts/programador.jpg
 ---
 
 En el mundo del desarrollo de software, la capacidad de integrar y desplegar código de manera eficiente y segura es crucial. Esta práctica no solo mejora la calidad del producto final, sino que también optimiza el proceso de desarrollo. En este post, exploraremos cómo lograr integraciones y despliegues diarios seguros, profundizando en los conceptos de **Integración Continua (CI) y Entrega Continua (CD)**, sus diferencias y objetivos.

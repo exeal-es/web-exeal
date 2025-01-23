@@ -5,9 +5,9 @@ date: 2024-11-04T00:00:00.000Z
 layout: newsletterpost
 author: pedropardal
 tags: [newsletter]
-images: [/assets/img/blog/posts/dojo.jpg]
-featured_image: /assets/img/blog/posts/dojo.jpg
-card_image: /assets/img/blog/posts/dojo.jpg
+images: [/images/blog/posts/dojo.jpg]
+featured_image: /images/blog/posts/dojo.jpg
+card_image: /images/blog/posts/dojo.jpg
 ---
 
 ¿Crees que lo de envolver los tipos primitivos en clases es sobreingeniería?

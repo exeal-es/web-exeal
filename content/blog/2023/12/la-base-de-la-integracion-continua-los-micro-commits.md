@@ -5,9 +5,9 @@ author: pedropardal
 date: 2023-12-15T00:00:00.000Z
 layout: post
 tags: [ci-cd, buenas-practicas, tdd]
-images: [/assets/img/blog/posts/videogame.webp]
-featured_image: /assets/img/blog/posts/videogame.webp
-card_image: /assets/img/blog/posts/videogame.webp
+images: [/images/blog/posts/videogame.webp]
+featured_image: /images/blog/posts/videogame.webp
+card_image: /images/blog/posts/videogame.webp
 ---
 
 Quizá te sorprenda (a mí me sorprendió cuando empecé a [ayudar a otros equipos como coach](https://www.exeal.com/servicios/technical-coaching/)), pero la mayoría de desarrolladores commitean código al control de versiones apenas entre 2 o 3 veces por semana.
@@ -22,7 +22,7 @@ Esta práctica, conocida como micro-commits, es junto con el testing automatizad
 
 Tenemos que **ver los commits como si estuviéramos guardando la partida** en un videojuego.
 
-![](/assets/img/blog/posts/savegame.jpg)
+![](/images/blog/posts/savegame.jpg)
 
 Buscamos **evitar perder cuanto más avance posible**. Que no tenga que volver a respawnear 7 pantallas más atrás y volver a pasarme todas esas pantallas. Es decir, que si me matan, respawnee lo mas cerca posible de donde me han matado. Con los commits, el concepto es el mismo.
 
@@ -47,7 +47,7 @@ Cada iteración del bucle de TDD añade un **pequeño incremento de funcionalida
 
 Esta técnica se conoce como **bucle Red-green-refactor extendido**, o bucle red-green-refactor-integrate.
 
-![](/assets/img/blog/posts/rgri-loop.png)
+![](/images/blog/posts/rgri-loop.png)
 
 Incluso podemos **commitear inmediatamente tras llegar a verde**, y luego volver a integrar tantas veces como pasos de refactoring demos (ya que recordemos que refactorizar es realizar una serie de transformaciones pequeñas que preservan el comportamiento del código, es decir, nunca dejamos que los tests se rompan, i.e. volvamos a rojo).
 

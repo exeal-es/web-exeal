@@ -6,9 +6,9 @@ date: 2021-10-03T00:10:00+01:00
 layout: post
 tags: ["legacy", "refactoring"]
 images:
-  - "/assets/img/blog/posts/strangler-fig.jpg"
-featured_image: "/assets/img/blog/posts/strangler-fig.jpg"
-card_image: "/assets/img/blog/posts/strangler-fig.jpg"
+  - "/images/blog/posts/strangler-fig.jpg"
+featured_image: "/images/blog/posts/strangler-fig.jpg"
+card_image: "/images/blog/posts/strangler-fig.jpg"
 ---
 
 ## Mi primer blog
@@ -30,10 +30,10 @@ El secreto está en que nuestro Strangler proxy delegue las peticiones al antigu
 ## Así se ve nuestro software
 
 - **Con Strangler fig pattern**
-  ![](/assets/img/blog/posts/strangler-fig-proxy.jpg)
+  ![](/images/blog/posts/strangler-fig-proxy.jpg)
 
 - **Sin Strangler fig pattern**
-  ![](/assets/img/blog/posts/strangler-fig-no-proxy.jpg)
+  ![](/images/blog/posts/strangler-fig-no-proxy.jpg)
 
 ## Open source
 

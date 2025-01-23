@@ -5,16 +5,16 @@ date: 2023-12-23T00:00:00.000Z
 layout: kata
 author: pedropardal
 tags: [tdd, starter, object-design]
-images: [/assets/img/blog/posts/dojo.jpg]
-featured_image: /assets/img/blog/posts/dojo.jpg
-card_image: /assets/img/blog/posts/dojo.jpg
+images: [/images/blog/posts/dojo.jpg]
+featured_image: /images/blog/posts/dojo.jpg
+card_image: /images/blog/posts/dojo.jpg
 ---
 
 ## Tu tarea
 
 Esta kata trata sobre calcular la siguiente generación del Juego de la Vida de Conway, dado cualquier posición inicial. Consulta http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life para conocer más sobre este famoso problema.
 
-![](/assets/img/katas/gameoflife.jpg)
+![](/images/katas/gameoflife.jpg)
 
 Comienzas con una cuadrícula bidimensional de celdas, donde cada celda está viva o muerta. En esta versión del problema, la cuadrícula es finita y no puede haber vida más allá de los bordes. Al calcular la próxima generación de la cuadrícula, sigue estas reglas:
 

@@ -5,9 +5,9 @@ author: pedropardal
 date: 2023-11-22T00:00:00.000Z
 layout: post
 tags: [agile, buenas-practicas]
-images: [/assets/img/blog/posts/stock-market.jpg]
-featured_image: /assets/img/blog/posts/stock-market.jpg
-card_image: /assets/img/blog/posts/stock-market.jpg
+images: [/images/blog/posts/stock-market.jpg]
+featured_image: /images/blog/posts/stock-market.jpg
+card_image: /images/blog/posts/stock-market.jpg
 ---
 
 No toda la deuda técnica es mala.

@@ -3,7 +3,7 @@ title: "Curso de desarrollo de aplicaciones con contenedores"
 description: "Conviértete en un verdadero líder para tu equipo y domina las claves para gestionar personas y proyectos."
 date: 2020-10-01T09:24:11+02:00
 layout: course
-course_featured_image: /assets/img/courses/lider-desarrollador.png
+course_featured_image: /images/courses/lider-desarrollador.png
 course_title: "Líder desarrollador"
 course_prefix: ""
 course_level: intermediate

@@ -5,9 +5,9 @@ author: pedropardal
 date: 2023-10-17T00:00:00.000Z
 layout: post
 tags: [team-work, agile, buenas-practicas]
-images: [/assets/img/blog/posts/elephant-slicing.jpg]
-featured_image: /assets/img/blog/posts/elephant-slicing.jpg
-card_image: /assets/img/blog/posts/elephant-slicing.jpg
+images: [/images/blog/posts/elephant-slicing.jpg]
+featured_image: /images/blog/posts/elephant-slicing.jpg
+card_image: /images/blog/posts/elephant-slicing.jpg
 ---
 
 When working on a software project of a certain size, we have to divide (slice, or "slice") larger requirements into smaller, more manageable tasks.

@@ -3,8 +3,8 @@ title: "Aceleradora de Talento: Certificado del curso"
 description: "Certificado de finalización del curso Aceleradora de Talento para Samuel Álvarez."
 date: 2024-05-18T00:00:00+02:00
 layout: certificate
-images: ['/assets/img/certificates/9037fi9sj2mdtqc49gw1-small.png']
-featured_image: '/assets/img/certificates/9037fi9sj2mdtqc49gw1-small.png'
+images: ['/images/certificates/9037fi9sj2mdtqc49gw1-small.png']
+featured_image: '/images/certificates/9037fi9sj2mdtqc49gw1-small.png'
 noindex: true
 certificateData:
   verificationCode: 9037fi9sj2mdtqc49gw1 
@@ -13,8 +13,8 @@ certificateData:
   endDate: '2022-03-24'
   timespan: '16 semanas'
   courseDetailsLink: https://www.exeal.com/servicios/aceleradora-de-talento/
-  certificateImageSmall: /assets/img/certificates/9037fi9sj2mdtqc49gw1-small.png
-  certificateImage: /assets/img/certificates/9037fi9sj2mdtqc49gw1.png
+  certificateImageSmall: /images/certificates/9037fi9sj2mdtqc49gw1-small.png
+  certificateImage: /images/certificates/9037fi9sj2mdtqc49gw1.png
   competencies:
     - Metodologías ágiles
     - Código limpio

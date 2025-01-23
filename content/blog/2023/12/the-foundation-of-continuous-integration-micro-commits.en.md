@@ -5,9 +5,9 @@ author: pedropardal
 date: 2023-12-15T00:00:00.000Z
 layout: post
 tags: [ci-cd, best-practices, tdd]
-images: [/assets/img/blog/posts/videogame.webp]
-featured_image: /assets/img/blog/posts/videogame.webp
-card_image: /assets/img/blog/posts/videogame.webp
+images: [/images/blog/posts/videogame.webp]
+featured_image: /images/blog/posts/videogame.webp
+card_image: /images/blog/posts/videogame.webp
 ---
 
 You might be surprised (it surprised me when I began [helping other teams as a coach](https://www.exeal.com/servicios/technical-coaching/)), but most developers commit code to version control only about 2 or 3 times a week.
@@ -22,7 +22,7 @@ This practice, known as micro-commits, is, along with automated testing and buil
 
 We need to **view commits as if we were saving the game** in a video game.
 
-![](/assets/img/blog/posts/savegame.jpg)
+![](/images/blog/posts/savegame.jpg)
 
 We aim to **avoid losing progress as much as possible**. We don't want to respawn seven screens back and have to go through all those screens again. In other words, if we die, we want to respawn as close as possible to where we died. With commits, the concept is the same.
 
@@ -47,7 +47,7 @@ Each iteration of the TDD loop adds a **small functional increment**, leaving us
 
 This technique is known as the **Extended Red-Green-Refactor Loop** or red-green-refactor-integrate loop.
 
-![](/assets/img/blog/posts/rgri-loop.png)
+![](/images/blog/posts/rgri-loop.png)
 
 We can even **commit immediately after reaching green**, and then integrate as many times as refactoring steps we take (remember that refactoring is performing a series of small transformations that preserve the behavior of the code, meaning we never let tests break, i.e., go back to red).
 

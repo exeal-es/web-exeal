@@ -5,9 +5,9 @@ author: damianpumar
 date: 2022-09-28T23:10:00.000Z
 layout: post
 tags: [testing]
-images: [/assets/img/blog/posts/first.jpg]
-featured_image: /assets/img/blog/posts/first.jpg
-card_image: /assets/img/blog/posts/first.jpg
+images: [/images/blog/posts/first.jpg]
+featured_image: /images/blog/posts/first.jpg
+card_image: /images/blog/posts/first.jpg
 ---
 
 ## Los principios FIRST

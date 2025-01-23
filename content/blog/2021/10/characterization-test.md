@@ -6,9 +6,9 @@ date: 2021-10-21T00:10:00+01:00
 layout: post
 tags: ["legacy", "refactoring", "test"]
 images:
-  - "/assets/img/blog/posts/test.jpg"
-featured_image: "/assets/img/blog/posts/test.jpg"
-card_image: "/assets/img/blog/posts/test.jpg"
+  - "/images/blog/posts/test.jpg"
+featured_image: "/images/blog/posts/test.jpg"
+card_image: "/images/blog/posts/test.jpg"
 ---
 
 ## Characterization Tests

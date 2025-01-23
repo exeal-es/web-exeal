@@ -6,9 +6,9 @@ date: 2021-04-07T00:10:00+01:00
 layout: post
 tags: ["logs", "bugs", "netcore", "csharp"]
 images:
-  - "/assets/img/blog/posts/logs.jpg"
-featured_image: "/assets/img/blog/posts/logs.jpg"
-card_image: "/assets/img/blog/posts/logs.jpg"
+  - "/images/blog/posts/logs.jpg"
+featured_image: "/images/blog/posts/logs.jpg"
+card_image: "/images/blog/posts/logs.jpg"
 ---
 
 Recientemente en el equipo con el que trabajo, hemos tenido varias incidencias que han sido bastante difíciles de depurar. Los principales motivos son los siguientes:

@@ -5,9 +5,9 @@ author: damianpumar
 date: 2022-08-07T23:10:00.000Z
 layout: post
 tags: [tdd, refactoring]
-images: [/assets/img/blog/posts/woodcraft.png]
-featured_image: /assets/img/blog/posts/woodcraft.png
-card_image: /assets/img/blog/posts/woodcraft.png
+images: [/images/blog/posts/woodcraft.png]
+featured_image: /images/blog/posts/woodcraft.png
+card_image: /images/blog/posts/woodcraft.png
 ---
 
 [El tio bob](https://es.wikipedia.org/wiki/Robert_C._Martin) lleva muchos años diciendo que mientras las pruebas son más específicas, el código se hace más genérico. Y es que de tanto refactorizar, de tanto modificar el código con esas pequeñas mejoras de estructura sin cambiar su comportamiento exterior, van ocurriendo transformaciones en el código de producción que parecen seguir un cierto camino ordenado.

@@ -3,8 +3,8 @@ title: "Bootcamp de Buenas Prácticas de Desarrollo: Certificado del curso"
 description: "Certificado de finalización del curso Bootcamp de Buenas Prácticas de Desarrollo para Victor Rubio Ibañez."
 date: 2024-02-23T00:00:00+02:00
 layout: certificate
-images: ['/assets/img/certificates/09l86eigc58oiu9nquas-small.png']
-featured_image: '/assets/img/certificates/09l86eigc58oiu9nquas-small.png'
+images: ['/images/certificates/09l86eigc58oiu9nquas-small.png']
+featured_image: '/images/certificates/09l86eigc58oiu9nquas-small.png'
 noindex: true
 certificateData:
   verificationCode: 09l86eigc58oiu9nquas 
@@ -13,8 +13,8 @@ certificateData:
   endDate: '2024-02-07'
   timespan: '16 semanas'
   courseDetailsLink: https://www.exeal.com/
-  certificateImageSmall: /assets/img/certificates/09l86eigc58oiu9nquas-small.png
-  certificateImage: /assets/img/certificates/09l86eigc58oiu9nquas.png
+  certificateImageSmall: /images/certificates/09l86eigc58oiu9nquas-small.png
+  certificateImage: /images/certificates/09l86eigc58oiu9nquas.png
   competencies:
     - Metodologías ágiles
     - Diseño evolutivo

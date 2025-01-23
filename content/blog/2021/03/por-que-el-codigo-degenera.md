@@ -6,9 +6,9 @@ date: 2021-03-26T00:10:00+01:00
 layout: post
 tags: ["legacy", "habitos"]
 images:
-  - "/assets/img/blog/posts/fruit.jpg"
-featured_image: "/assets/img/blog/posts/fruit.jpg"
-card_image: "/assets/img/blog/posts/fruit.jpg"
+  - "/images/blog/posts/fruit.jpg"
+featured_image: "/images/blog/posts/fruit.jpg"
+card_image: "/images/blog/posts/fruit.jpg"
 ---
 
 En mi [training sobre código legacy](https://www.exeal.com/cursos/legacy-code/), suelo empezar preguntando a la gente que “qué es lo que caracteriza un código legacy”, y hay una constante que siempre sale en todos los equipos: **el código legacy da miedo, porque tocarlo supone un riesgo**. Riesgo de romper algo que antes funcionaba, que está dando dinero, que está pagando las facturas… y deje de funcionar.
@@ -29,7 +29,7 @@ No debemos cuestionar únicamente las tecnologías, incluso las consideradas bue
 
 Por ejemplo, una de las buenas prácticas a día de hoy, que todos tenemos grabadas a fuego, es hacerle unit tests a todas las clases, maximizando la cobertura. Es decir, tener una [pirámide de tests](https://martinfowler.com/articles/practical-test-pyramid.html) con una amplia base de tests unitarios muy rápidos, y una cima con unos pocos tests end to end, ya que son muy costosos.
 
-![](/assets/img/blog/posts/traditional-pyramid.png)
+![](/images/blog/posts/traditional-pyramid.png)
 
 Pero apenas recientemente, estamos [empezando a cuestionarnos](https://kentcdodds.com/blog/write-tests) el retorno de escribir todos estos tests unitarios cuando, al hacer un pequeño cambio en el código, la mitad de los tests unitarios de la aplicación se rompen, y empleamos más tiempo arreglándolos que programando nuevas features. Unido a que el coste de los tests end to end cada vez es menor, con herramientas como [Cypress](https://www.cypress.io/), [RestAssured](https://rest-assured.io/), [TestContainers](https://www.testcontainers.org/), etc. **¿Será que los unit tests que escribimos hoy son el legacy code del mañana?**
 
@@ -65,7 +65,7 @@ Si estuviéramos solos en el proyecto de principio a fin, probablemente tendría
 
 Pero al trabajar en equipo, cada integrante entiende una cosa distinta sobre el dominio, tiene una visión y un grado de experiencia diferentes. A no ser que seamos muy buenos comunicándonos y alineándonos entre nosotros, habrá muchísimas fuerzas tirando cada una hacia un lado.
 
-![](/assets/img/blog/posts/team-developers.jpg)
+![](/images/blog/posts/team-developers.jpg)
 
 Este fenómeno se hace mucho más evidente cuando hay una rotación en el equipo. Por ejemplo:
 

@@ -3,8 +3,8 @@ title: "Bootcamp de Buenas Prácticas de Desarrollo: Certificado del curso"
 description: "Certificado de finalización del curso Bootcamp de Buenas Prácticas de Desarrollo para Ana Gil Amor."
 date: 2024-02-23T00:00:00+02:00
 layout: certificate
-images: ['/assets/img/certificates/3z9xlmr7fn3qrw24lzec-small.png']
-featured_image: '/assets/img/certificates/3z9xlmr7fn3qrw24lzec-small.png'
+images: ['/images/certificates/3z9xlmr7fn3qrw24lzec-small.png']
+featured_image: '/images/certificates/3z9xlmr7fn3qrw24lzec-small.png'
 noindex: true
 certificateData:
   verificationCode: 3z9xlmr7fn3qrw24lzec 
@@ -13,8 +13,8 @@ certificateData:
   endDate: '2024-02-07'
   timespan: '16 semanas'
   courseDetailsLink: https://www.exeal.com/
-  certificateImageSmall: /assets/img/certificates/3z9xlmr7fn3qrw24lzec-small.png
-  certificateImage: /assets/img/certificates/3z9xlmr7fn3qrw24lzec.png
+  certificateImageSmall: /images/certificates/3z9xlmr7fn3qrw24lzec-small.png
+  certificateImage: /images/certificates/3z9xlmr7fn3qrw24lzec.png
   competencies:
     - Metodologías ágiles
     - Diseño evolutivo

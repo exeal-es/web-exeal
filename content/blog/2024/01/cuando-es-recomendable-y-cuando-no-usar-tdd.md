@@ -5,9 +5,9 @@ author: pedropardal
 date: 2024-01-31T00:00:00.000Z
 layout: post
 tags: [best-practices, tdd]
-images: [/assets/img/blog/posts/tdd-woman.jpg]
-featured_image: /assets/img/blog/posts/tdd-woman.jpg
-card_image: /assets/img/blog/posts/tdd-woman.jpg
+images: [/images/blog/posts/tdd-woman.jpg]
+featured_image: /images/blog/posts/tdd-woman.jpg
+card_image: /images/blog/posts/tdd-woman.jpg
 ---
 
 En el mundo del desarrollo de software, la adopción de prácticas como *Test-driven development* (Desarrollo dirigido por pruebas, o TDD) ha generado debates fervientes sobre su aplicabilidad universal. La premisa de alcanzar un 100% de cobertura de pruebas puede resultar atractiva, pero es crucial comprender que TDD es una herramienta, no una panacea. Aprender a discernir cuándo utilizarla de manera efectiva es fundamental para el éxito de un proyecto.

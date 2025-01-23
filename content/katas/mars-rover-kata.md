@@ -5,15 +5,15 @@ date: 2023-12-23T00:00:00.000Z
 layout: kata
 author: pedropardal
 tags: [tdd, object-design, design-patterns]
-images: [/assets/img/blog/posts/dojo.jpg]
-featured_image: /assets/img/blog/posts/dojo.jpg
-card_image: /assets/img/blog/posts/dojo.jpg
+images: [/images/blog/posts/dojo.jpg]
+featured_image: /images/blog/posts/dojo.jpg
+card_image: /images/blog/posts/dojo.jpg
 ---
 
 ## Tu tarea
 Formas parte del equipo que explora Marte enviando vehículos controlados de forma remota a la superficie del planeta. Desarrolla una API que traduzca las instrucciones enviadas desde la Tierra a comandos que el rover pueda entender.
 
-![](/assets/img/katas/marsrover.jpg)
+![](/images/katas/marsrover.jpg)
 
 ### Requisitos
 

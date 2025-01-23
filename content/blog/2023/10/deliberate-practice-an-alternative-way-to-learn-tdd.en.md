@@ -5,9 +5,9 @@ author: pedropardal
 date: 2023-10-31T00:00:00.000Z
 layout: post
 tags: [tdd, buenas-practicas]
-images: [/assets/img/blog/posts/practice-makes-perfect-cover.jpg]
-featured_image: /assets/img/blog/posts/practice-makes-perfect-cover.jpg
-card_image: /assets/img/blog/posts/practice-makes-perfect-cover.jpg
+images: [/images/blog/posts/practice-makes-perfect-cover.jpg]
+featured_image: /images/blog/posts/practice-makes-perfect-cover.jpg
+card_image: /images/blog/posts/practice-makes-perfect-cover.jpg
 ---
 
 Have you ever **found yourself stuck** while practicing TDD, refactoring, software design, or any other programming-related skill?
@@ -32,7 +32,7 @@ We do this to **avoid mindless repetition**, i.e., repeating a task over and ove
 
 The idea is to create a **virtuous cycle of feedback**: by being more specific about what we're practicing, we'll see more specific flaws and be able to identify more specific improvement actions more quickly.
 
-![](/assets/img/blog/posts/deliberate-practice-time.png)
+![](/images/blog/posts/deliberate-practice-time.png)
 
 ## Identificar las sub-habilidades
 
@@ -50,7 +50,7 @@ For example, let's say we're paddle tennis players and we want to improve our fo
 - Tactics and positioning on the court
 - etc. etc.
 
-![](/assets/img/blog/posts/padel.webp)
+![](/images/blog/posts/padel.webp)
 
 Now, in the next practice session, we'll focus solely on "reading the ball". This will free our mind to ask questions like: What happens when it comes from different angles? What if it comes with more or less power? What if it has spin? When should I step forward and meet it? When should I bend down? When should I give more space?
 

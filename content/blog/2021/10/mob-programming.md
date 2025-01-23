@@ -6,9 +6,9 @@ date: 2021-10-26T00:10:00+01:00
 layout: post
 tags: ["habits", "team-work"]
 images:
-  - "/assets/img/blog/posts/mob-programming.jpg"
-featured_image: "/assets/img/blog/posts/mob-programming.jpg"
-card_image: "/assets/img/blog/posts/mob-programming.jpg"
+  - "/images/blog/posts/mob-programming.jpg"
+featured_image: "/images/blog/posts/mob-programming.jpg"
+card_image: "/images/blog/posts/mob-programming.jpg"
 ---
 
 ## Mob programming

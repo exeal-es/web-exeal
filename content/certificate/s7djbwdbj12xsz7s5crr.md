@@ -3,8 +3,8 @@ title: "Bootcamp de Buenas Prácticas de Desarrollo: Certificado del curso"
 description: "Certificado de finalización del curso Bootcamp de Buenas Prácticas de Desarrollo para David Rodero Correa."
 date: 2024-02-23T00:00:00+02:00
 layout: certificate
-images: ['/assets/img/certificates/s7djbwdbj12xsz7s5crr-small.png']
-featured_image: '/assets/img/certificates/s7djbwdbj12xsz7s5crr-small.png'
+images: ['/images/certificates/s7djbwdbj12xsz7s5crr-small.png']
+featured_image: '/images/certificates/s7djbwdbj12xsz7s5crr-small.png'
 noindex: true
 certificateData:
   verificationCode: s7djbwdbj12xsz7s5crr 
@@ -13,8 +13,8 @@ certificateData:
   endDate: '2024-02-07'
   timespan: '16 semanas'
   courseDetailsLink: 
-  certificateImageSmall: /assets/img/certificates/s7djbwdbj12xsz7s5crr-small.png
-  certificateImage: /assets/img/certificates/s7djbwdbj12xsz7s5crr.png
+  certificateImageSmall: /images/certificates/s7djbwdbj12xsz7s5crr-small.png
+  certificateImage: /images/certificates/s7djbwdbj12xsz7s5crr.png
   competencies:
     - Metodologías ágiles
     - Diseño evolutivo

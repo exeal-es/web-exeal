@@ -5,9 +5,9 @@ date: 2024-02-23T00:00:00.000Z
 layout: kata
 author: pedropardal
 tags: [refactoring, experienced, arquitectura]
-images: [/assets/img/blog/posts/mountain-snow.jpg]
-featured_image: /assets/img/blog/posts/mountain-snow.jpg
-card_image: /assets/img/blog/posts/mountain-snow.jpg
+images: [/images/blog/posts/mountain-snow.jpg]
+featured_image: /images/blog/posts/mountain-snow.jpg
+card_image: /images/blog/posts/mountain-snow.jpg
 ---
 
 ## Tu tarea

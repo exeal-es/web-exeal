@@ -6,9 +6,9 @@ date: 2021-04-18T00:10:00+01:00
 layout: post
 tags: ["legacy", "habitos", "refactoring"]
 images:
-  - "/assets/img/blog/posts/keyboard.jpg"
-featured_image: "/assets/img/blog/posts/keyboard.jpg"
-card_image: "/assets/img/blog/posts/keyboard.jpg"
+  - "/images/blog/posts/keyboard.jpg"
+featured_image: "/images/blog/posts/keyboard.jpg"
+card_image: "/images/blog/posts/keyboard.jpg"
 ---
 
 En el [anterior post](/blog/2021/03/por-que-el-codigo-degenera/) de esta serie sobre cómo evitar que el código greenfield se convierta en legacy, hablábamos de que una de las áreas en las que podíamos trabajar era en mejorar nuestras competencias y habilidades como desarrolladores para ser más productivo.
@@ -45,7 +45,7 @@ Adoptar estos hábitos, aparte de hacerte más productivo, tiene un quick win in
 
 El valor de las katas es la repetición de la solución para automatizarla. Es decir, que cuando tu te encuentres en tu código productivo una dependencia acoplada, sepas identificarla y desacoplarla rápidamente de forma segura, porque **lo has repetido ya mil veces**.
 
-![](/assets/img/blog/posts/dojo.jpg)
+![](/images/blog/posts/dojo.jpg)
 
 Lo que buscamos con la katas es **crear hábitos, automatizar tareas**. Y hacemos esto para dejar de pensar en ellos y poder elevar el nivel de abstracción de nuestro pensamiento. Cuando dejamos de preocuparnos de qué shortcut sirve para hacer determinada tarea, podemos poner foco en lo que de verdad importa:
 

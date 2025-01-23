@@ -93,20 +93,20 @@ texts:
         text: "&ldquo;Pedro was involved in the team from minute 1, both in the product and in the technical part, being a key player in the great systemic improvement that the team experienced, helping not only in technical details but also in interactions, relationships and other team dynamics.&rdquo;",
         name: "Abraham Vallez",
         position: "Engineering Manager @ Zinklar",
-        photo: "/assets/img/testimonials/abraham-vallez.png",
+        photo: "/images/testimonials/abraham-vallez.png",
         active: true,
       },
       {
         text: "&ldquo;Seeing the team motivated and eager has been very positive. The team wins, the company wins, and the employees also win on a personal level, since they get extra learning and training that has a very positive return.&rdquo;",
         name: "Gerard Artés",
         position: "Chief Technology Officer & Co-founder @ BAB",
-        photo: "/assets/img/testimonials/gerard-artes.jpg"
+        photo: "/images/testimonials/gerard-artes.jpg"
       },
       {
         text: "&ldquo;After starting to work with Exeal, our teams breathe learning, questions, readings... The main success is to retain our professionals and help them grow.&rdquo;",
         name: "Emilio Macías",
         position: "Chief Operating Officer @ AIDA (Domingo Alonso Group)",
-        photo: "/assets/img/testimonials/emilio-macias.jpeg",
+        photo: "/images/testimonials/emilio-macias.jpeg",
       },
     ]
   plan:

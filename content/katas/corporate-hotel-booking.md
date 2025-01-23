@@ -5,9 +5,9 @@ date: 2024-07-18T00:00:00.000Z
 layout: kata
 author: pedropardal
 tags: [tdd, outside-in, experienced]
-images: [/assets/img/blog/posts/hotel.jpg]
-featured_image: /assets/img/blog/posts/hotel.jpg
-card_image: /assets/img/blog/posts/hotel.jpg
+images: [/images/blog/posts/hotel.jpg]
+featured_image: /images/blog/posts/hotel.jpg
+card_image: /images/blog/posts/hotel.jpg
 ---
 
 ## Tu tarea

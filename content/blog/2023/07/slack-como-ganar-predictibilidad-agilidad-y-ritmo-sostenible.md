@@ -5,9 +5,9 @@ author: pedropardal
 date: 2023-07-20T00:00:00.000Z
 layout: post
 tags: [xp, team-work, agile, buenas-practicas]
-images: [/assets/img/blog/posts/pair-programming.jpeg]
-featured_image: /assets/img/blog/posts/pair-programming.jpeg
-card_image: /assets/img/blog/posts/pair-programming.jpeg
+images: [/images/blog/posts/pair-programming.jpeg]
+featured_image: /images/blog/posts/pair-programming.jpeg
+card_image: /images/blog/posts/pair-programming.jpeg
 ---
 
 ## Una historia de … ¿mensajería?
@@ -16,7 +16,7 @@ Permíteme que te presente al equipo de Messaging de la empresa Drocsid Inc. El 
 
 ¿Te suena este escenario? Es bastante más común de lo que parece y, aunque las causas pueden ser diversas, suele haber un factor común: pretender sobreacelerar al equipo y buscar maximizar su utilización. En otras palabras, **optimizar la eficiencia, y no la eficacia**. Lo cual tiene una consecuencia grave, y es que el equipo carece de tiempo para [reflexionar, adaptarse y mejorar](https://agilemanifesto.org/principles.html) (lo cual, recordemos, es uno de los principios del manifiesto ágil).
 
-![](/assets/img/blog/posts/eficacia-eficiencia.jpg)
+![](/images/blog/posts/eficacia-eficiencia.jpg)
 
 Ante este escenario, [Extreme Programming](https://www.amazon.es/Extreme-Programming-Explained-Embrace-Embracing/dp/0321278658) nos recomienda una práctica: Slack (que no tiene nada que ver con la aplicación de mensajería 😝)
 
@@ -26,7 +26,7 @@ El *slack*, o **tiempo no comprometido**, es una práctica de Extreme Programmin
 
 En términos de la conocida [matriz de priorización de Eisenhower](https://es.wikipedia.org/wiki/Gesti%C3%B3n_del_tiempo#M%C3%A9todo_Eisenhower), el trabajo regular en nuestro producto vendría a ser todo aquello que encaja en el cuadrante de lo importante y urgente, mientras que las tareas importantes pero no urgentes, que son las que normalmente quedan relegadas, son las que asignamos al tiempo de slack.
 
-![](/assets/img/blog/posts/eisenhower-matrix.png)
+![](/images/blog/posts/eisenhower-matrix.png)
 
 ## Beneficios del slack
 

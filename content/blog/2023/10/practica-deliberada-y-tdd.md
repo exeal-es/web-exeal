@@ -5,9 +5,9 @@ author: pedropardal
 date: 2023-10-31T00:00:00.000Z
 layout: post
 tags: [tdd, buenas-practicas]
-images: [/assets/img/blog/posts/practice-makes-perfect-cover.jpg]
-featured_image: /assets/img/blog/posts/practice-makes-perfect-cover.jpg
-card_image: /assets/img/blog/posts/practice-makes-perfect-cover.jpg
+images: [/images/blog/posts/practice-makes-perfect-cover.jpg]
+featured_image: /images/blog/posts/practice-makes-perfect-cover.jpg
+card_image: /images/blog/posts/practice-makes-perfect-cover.jpg
 ---
 
 ¿Alguna vez **te has estancado** practicando TDD, refactoring, diseño de software o cualquier otra habilidad relacionada con la programación?
@@ -32,7 +32,7 @@ Esto lo hacemos para **evitar la repetición sin cabeza**, es decir, repetir una
 
 La idea es crear un **ciclo virtuoso de feedback**, al ser más concreto lo que estamos practicando, vamos a ver fallos más concretos y vamos a poder identificar acciones de mejora más concretas, de forma más rápida.
 
-![](/assets/img/blog/posts/deliberate-practice-time.png)
+![](/images/blog/posts/deliberate-practice-time.png)
 
 ## Identificar las sub-habilidades
 
@@ -50,7 +50,7 @@ Por poner un ejemplo ajeno al TDD, imagina que somos jugadores de pádel, y quer
 - Táctica y posicionamiento en pista
 - etc. etc.
 
-![](/assets/img/blog/posts/padel.webp)
+![](/images/blog/posts/padel.webp)
 
 Ahora, en el próximo carro de práctica, nos centraremos únicamente en “leer la bola”. Esto liberará nuestra mente para hacerse preguntas como: ¿Qué pasa cuando viene desde diferentes ángulos? ¿Y si viene con más o menos potencia? ¿Qué ocurre si lleva efecto? ¿Cuándo tengo que salir y acompañarla? ¿Cuándo tengo que agacharme? ¿Cuándo tengo que dejar más espacio?.
 

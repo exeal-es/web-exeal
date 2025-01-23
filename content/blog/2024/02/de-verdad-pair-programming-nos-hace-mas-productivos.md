@@ -5,9 +5,9 @@ author: pedropardal
 date: 2024-02-27T00:00:00.000Z
 layout: post
 tags: [best-practices]
-images: [/assets/img/blog/posts/pair-programming.jpeg]
-featured_image: /assets/img/blog/posts/pair-programming.jpeg
-card_image: /assets/img/blog/posts/pair-programming.jpeg
+images: [/images/blog/posts/pair-programming.jpeg]
+featured_image: /images/blog/posts/pair-programming.jpeg
+card_image: /images/blog/posts/pair-programming.jpeg
 ---
 
 Si nunca has trabajado en pair programming, te pongo al día rápidamente: se trata de una práctica en la que **dos desarrolladores trabajan juntos en una única tarea, usando un único ordenador**.

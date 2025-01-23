@@ -5,9 +5,9 @@ author: pedropardal
 date: 2024-02-11T00:00:00.000Z
 layout: post
 tags: ["oo-design"]
-images: [/assets/img/blog/posts/coder.jpg]
-featured_image: /assets/img/blog/posts/coder.jpg
-card_image: /assets/img/blog/posts/coder.jpg
+images: [/images/blog/posts/coder.jpg]
+featured_image: /images/blog/posts/coder.jpg
+card_image: /images/blog/posts/coder.jpg
 ---
 
 Los principios SOLID son considerados por mucha gente la quintaesencia del *buen diseño de software*. Llega un momento en la carrera de todo desarrollador que, harto de [sufrir por tener que mantener código espaguetti cada día](https://www.exeal.com/cursos/legacy-code/), descubre SOLID y, cegado por el despecho y la ira hacia el código legacy, intenta aplicar SOLID a rajatabla.

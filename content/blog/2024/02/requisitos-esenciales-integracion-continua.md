@@ -5,9 +5,9 @@ author: pedropardal
 date: 2024-02-02T00:00:00.000Z
 layout: post
 tags: [ci-cd]
-images: [/assets/img/blog/posts/team-whiteboard.jpg]
-featured_image: /assets/img/blog/posts/team-whiteboard.jpg
-card_image: /assets/img/blog/posts/team-whiteboard.jpg
+images: [/images/blog/posts/team-whiteboard.jpg]
+featured_image: /images/blog/posts/team-whiteboard.jpg
+card_image: /images/blog/posts/team-whiteboard.jpg
 ---
 
 La Integración Continua es una práctica fundamental para garantizar la entrega de software en cualquier momento. Sin embargo, para aprovechar al máximo sus beneficios, es crucial cumplir con ciertos requisitos mínimos que proporcionarán una base sólida. A continuación, desglosamos los elementos esenciales que conforman estos requisitos.
