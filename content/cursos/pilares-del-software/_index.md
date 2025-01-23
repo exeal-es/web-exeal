@@ -4,7 +4,7 @@ description: "Transforma tus habilidades como desarrollador de software con las 
 date: 2024-12-06T00:00:00+02:00
 layout: pilaresdelsoftware
 featured: true
-course_featured_image: /assets/img/courses/pilares-del-software.png
+course_featured_image: /images/courses/pilares-del-software.png
 course_title: "Pilares del Software"
 checkout_url: https://academia.exeal.com/order?ct=d072bf22-a0b8-48b4-83de-6733758c3897
 team:
