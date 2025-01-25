@@ -1,8 +1,7 @@
 <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 <form
-  accept-charset="UTF-8"
-  data-redirect="{{ .Get 0 }}"
-  class="redirect-js"
+  method="post"
+  action="{{ .Get 0 }}"
   >
   {{ .InnerDeindent }}
 </form>
