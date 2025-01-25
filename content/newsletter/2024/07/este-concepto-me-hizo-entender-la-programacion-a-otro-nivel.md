@@ -10,6 +10,8 @@ featured_image: /images/blog/posts/dojo.jpg
 card_image: /images/blog/posts/dojo.jpg
 type: newsletter
 issue_number: 1
+aliases:
+  - "/newsletter/este-concepto-me-hizo-entender-la-programacion-a-otro-nivel/"
 ---
 
 Hace ya varios años, me encontré con el concepto de Object Calisthenics.
