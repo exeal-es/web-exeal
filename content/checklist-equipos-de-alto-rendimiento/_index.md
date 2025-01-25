@@ -13,13 +13,12 @@ layout: landing
       #### ¡Descarga ya gratuitamente la checklist y comienza el camino hacia la entrega continua de valor hoy mismo!
     {{< /col >}}
     {{< col 5 >}}
-      {{< form "/checklist-equipos-de-alto-rendimiento/descargar/" >}}
-        {{< input "text" "name" "Nombre" >}}
-        {{< input "text" "surname" "Apellidos" >}}
-        {{< input "email" "email" "Email" >}}
+      {{< form "https://app.kit.com/forms/7608716/subscriptions" >}}
+        {{< input "email" "email_address" "Email" >}}
+        {{< input "text" "first_name" "Nombre" >}}
+        {{< input "text" "last_name" "Apellidos" >}}
         {{< input "text" "company" "Compañía" >}}
-        {{< input "text" "position" "Cargo" >}}
-        {{< checkbox "accept-terms" "Envíame contenido de valor por email cada semana, así como noticias de nuevos servicios. Date de baja cuando quieras." >}}
+        {{< input "text" "jobtitle" "Cargo" >}}
         {{< submit "Descarga la checklist" >}}
       {{< /form >}}
     {{< /col >}}
