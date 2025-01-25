@@ -172,6 +172,11 @@ p.bigger {
   padding-left: 2.75rem;
 }
 
+.row-expand {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @import "components/navbar";
 @import "components/backgrounds";
 @import "components/icons";
