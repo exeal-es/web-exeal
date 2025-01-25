@@ -1,9 +1,9 @@
 {{ define "main" }}
-<section id="sect-thank-you" class="dark background background-01">
-  <div class="container thank-you-hero vertical-center">
+<section id="sect-newsletter" class="dark background background-01">
+  <div class="container">
     <div class="row">
-      <div class="col-md-7">
-        <h4>Recibe en tu email <em>contenido de valor</em> sobre desarrollo de software, buenas prácticas de ingeniería y desarrollo de producto.</h4>
+      <div class="col-md-7 vertical-center">
+        <h1>Recibe en tu email <em>contenido de valor</em> sobre desarrollo de software, buenas prácticas de ingeniería y desarrollo de producto.</h1>
       </div>
       <div class="col-md-5">
         {{ partial "newsletter/signupform.html" . }}
@@ -12,7 +12,7 @@
   </div>
 </section>
 
-<section>
+<section id="sect-prev-entries">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
