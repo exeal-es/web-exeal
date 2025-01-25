@@ -15,10 +15,10 @@ layout: landing
     {{< col 5 >}}
       {{< form "https://app.kit.com/forms/7608716/subscriptions" >}}
         {{< input "email" "email_address" "Email" >}}
-        {{< input "text" "first_name" "Nombre" >}}
-        {{< input "text" "last_name" "Apellidos" >}}
-        {{< input "text" "company" "Compañía" >}}
-        {{< input "text" "jobtitle" "Cargo" >}}
+        {{< input "text" "fields[first_name]" "Nombre" >}}
+        {{< input "text" "fields[last_name]" "Apellidos" >}}
+        {{< input "text" "fields[company]" "Compañía" >}}
+        {{< input "text" "fields[jobtitle]" "Cargo" >}}
         {{< submit "Descarga la checklist" >}}
       {{< /form >}}
     {{< /col >}}
