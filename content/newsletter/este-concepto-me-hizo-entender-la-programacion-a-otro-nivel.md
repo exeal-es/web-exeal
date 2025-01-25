@@ -8,6 +8,8 @@ tags: [newsletter]
 images: [/images/blog/posts/dojo.jpg]
 featured_image: /images/blog/posts/dojo.jpg
 card_image: /images/blog/posts/dojo.jpg
+type: newsletter
+issue_number: 1
 ---
 
 Hace ya varios años, me encontré con el concepto de Object Calisthenics.

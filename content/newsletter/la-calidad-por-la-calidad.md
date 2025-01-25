@@ -9,6 +9,7 @@ images: [/images/blog/posts/dojo.jpg]
 featured_image: /images/blog/posts/dojo.jpg
 card_image: /images/blog/posts/dojo.jpg
 type: newsletter
+issue_number: 2
 ---
 
 ¿Te has preguntado alguna vez cuál es la definición de calidad de software? ¿Y de calidad de código? ¿Qué relación hay entre ellas? ¿Acaso no son la misma cosa?

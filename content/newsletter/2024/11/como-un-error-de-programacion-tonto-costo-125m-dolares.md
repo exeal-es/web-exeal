@@ -8,6 +8,7 @@ tags: [newsletter]
 images: [/images/blog/posts/dojo.jpg]
 featured_image: /images/blog/posts/dojo.jpg
 card_image: /images/blog/posts/dojo.jpg
+issue_number: 3
 ---
 
 ¿Crees que lo de envolver los tipos primitivos en clases es sobreingeniería?
