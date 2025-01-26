@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="row">
-      {{ range (.Paginator 12).Pages }}
+      {{ range where (.Paginator 12).Pages "Params.type" "newsletter" }}
       <div class="col-12">
         {{- partial "newsletter/postcard.html" . -}}
       </div>
