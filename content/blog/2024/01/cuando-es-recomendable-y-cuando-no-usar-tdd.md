@@ -33,4 +33,4 @@ En resumen, el uso sensato de TDD implica una **evaluación reflexiva de su apli
 
 Te puede interesar:
 
-- [Curso de Test-driven development](https://www.exeal.com/cursos/test-driven-development/)
+- [Curso Pilares del Software](https://www.exeal.com/cursos/pilares-del-software/)

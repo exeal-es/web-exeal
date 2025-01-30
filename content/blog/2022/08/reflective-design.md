@@ -26,7 +26,7 @@ Una de las estrategias que podemos adoptar es el mindset de [Simple Design](http
 - Que maximice la expresividad.
 - Que minimice la complejidad.
 
-La experiencia nos dice que una de las mejores formas de conseguir cumplir estos 4 criterios a la vez en nuestro código, y así evitar que éste se deteriore, es desarrollar usando [Test Driven Development](https://www.exeal.com/cursos/test-driven-development/).
+La experiencia nos dice que una de las mejores formas de conseguir cumplir estos 4 criterios a la vez en nuestro código, y así evitar que éste se deteriore, es desarrollar usando [Test Driven Development](https://www.exeal.com/cursos/).
 
 ## TDD se ha malinterpretado
 
