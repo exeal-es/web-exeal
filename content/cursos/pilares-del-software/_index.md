@@ -17,20 +17,20 @@ texts:
       text: "&ldquo;Cuando hablo con personas con 10 o 20 años experiencia, me dicen que ojalá ellos hubieran podido aprender al principio todo lo que yo sé ahora&rdquo;",
       name: "Victoria Kovaleva",
       position: "Junior Software Engineer",
-      photo: "/assets/img/testimonials/vika.jpeg",
+      photo: "/images/testimonials/vika.jpeg",
       active: true,
     },
     {
       text: "&ldquo;Aprender con Pedro fue un punto de inflexión en mi carrera profesional&rdquo;",
       name: "David Lorenzo",
       position: "Software Engineer @ Voxel Group",
-      photo: "/assets/img/testimonials/davidlorenzo.jpeg"
+      photo: "/images/testimonials/davidlorenzo.jpeg"
     },
     {
       text: "&ldquo;Lo que tú enseñas es una forma de desarrollar software, son muchas piezas que se juntan para formar un puzzle.&rdquo;",
       name: "Samuel Álvarez",
       position: "Software Engineer @ Voxel Group",
-      photo: "/assets/img/testimonials/samu.jpeg",
+      photo: "/images/testimonials/samu.jpeg",
     }
   ]
 ---
