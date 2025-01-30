@@ -62,7 +62,7 @@ Este enfoque funciona muy bien, por los siguientes motivos:
 
 Para poder aplicar esta técnica de forma efectiva, necesitas varias cosas.
 
-En primer lugar, tener [conocimientos de diseño](https://www.exeal.com/cursos/diseno-orientado-a-objetos/) para saber “qué pinta tiene” un buen diseño. Conocer patrones de diseño, los principios SOLID, clean code, etc. Esta es la “parte fácil” y que seguro ya conoces, porque llevamos años hablando de esos temas en la industria. Hay decenas de libros y cientos de charlas y blogposts al respecto.
+En primer lugar, tener [conocimientos de diseño](https://www.exeal.com/cursos/pilares-del-software/) para saber “qué pinta tiene” un buen diseño. Conocer patrones de diseño, los principios SOLID, clean code, etc. Esta es la “parte fácil” y que seguro ya conoces, porque llevamos años hablando de esos temas en la industria. Hay decenas de libros y cientos de charlas y blogposts al respecto.
 
 Lo realmente difícil es **desarrollar un instinto** para identificar problemas de diseño: identificar code smells. Llegar a tener una “intolerancia” por el código "malo". Y esto lamentablemente sólo se puede conseguir:
 
