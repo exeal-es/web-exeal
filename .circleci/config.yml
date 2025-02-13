@@ -14,7 +14,7 @@ jobs:
       - run:
           name: Hugo build
           command: |
-            HUGO_ENV=production hugo -F --minify -v -d $HUGO_BUILD_DIR
+            HUGO_ENV=production hugo -F --minify -d $HUGO_BUILD_DIR
       - persist_to_workspace:
           root: public
           paths: .
