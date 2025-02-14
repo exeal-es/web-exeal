@@ -5,7 +5,7 @@ date: 2024-05-18T00:00:00+02:00
 layout: certificate
 images: ['/images/certificates/9037fi9sj2mdtqc49gw1-small.png']
 featured_image: '/images/certificates/9037fi9sj2mdtqc49gw1-small.png'
-noindex: true
+hidden: true
 certificateData:
   verificationCode: 9037fi9sj2mdtqc49gw1 
   studentName: Samuel Álvarez

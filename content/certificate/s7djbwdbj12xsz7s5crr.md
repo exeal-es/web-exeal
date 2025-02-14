@@ -5,7 +5,7 @@ date: 2024-02-23T00:00:00+02:00
 layout: certificate
 images: ['/images/certificates/s7djbwdbj12xsz7s5crr-small.png']
 featured_image: '/images/certificates/s7djbwdbj12xsz7s5crr-small.png'
-noindex: true
+hidden: true
 certificateData:
   verificationCode: s7djbwdbj12xsz7s5crr 
   studentName: David Rodero Correa

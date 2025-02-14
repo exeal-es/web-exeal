@@ -6,6 +6,7 @@ layout: job
 featured_image: "/assets/img/blog/blog-cover-1.png"
 aliases:
   - "/jobs/technical-agile-coach/"
+hidden: true
 ---
 
 ¿Eres un desarrollador de software apasionado por las buenas prácticas, la mejora y el aprendizaje continuos? ¿Te encanta usar tu experiencia como ingeniero para hacer crecer a tus compañeros y equipo como profesionales? ¿Te fastidia poder dedicar poco tiempo a la formación y el desarrollo profesional?

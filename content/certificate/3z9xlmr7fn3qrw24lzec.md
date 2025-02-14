@@ -5,7 +5,7 @@ date: 2024-02-23T00:00:00+02:00
 layout: certificate
 images: ['/images/certificates/3z9xlmr7fn3qrw24lzec-small.png']
 featured_image: '/images/certificates/3z9xlmr7fn3qrw24lzec-small.png'
-noindex: true
+hidden: true
 certificateData:
   verificationCode: 3z9xlmr7fn3qrw24lzec 
   studentName: Ana Gil Amor

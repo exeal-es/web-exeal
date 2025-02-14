@@ -1,6 +1,7 @@
 ---
 title: "Código de conducta de los eventos para la comunidad organizados por Exeal"
 layout: "single"
+hidden: true
 ---
 
 ## Código de conducta de los eventos para la comunidad organizados por Exeal

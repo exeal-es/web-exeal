@@ -1,14 +1,15 @@
 ---
-title: "Legacy Code Training"
+title: "Rescata tu proyecto"
 description: "Aprende a trabajar sobre un proyecto de Legacy Code sin miedo a romper todo el sistema."
 date: 2020-09-09T15:00:00+02:00
 layout: course
+hidden: true
 brochure_image: /assets/img/legacy/mockup-brochure.png
 course_featured_image: /images/courses/rescata-tu-proyecto.png
 course_title: "Rescata tu proyecto"
 course_prefix: ""
 course_level: advanced
-redirect_submission_url: https://www.exeal.com/cursos/legacy-code/programa/
+redirect_submission_url: https://www.exeal.com/cursos/rescata-tu-proyecto/programa/
 course_claim_header: A veces, parece que la mejor solución para evitar trabajar sobre Legacy Code es &quot;parar las máquinas&quot; y reescribir el código desde cero. <em>La experiencia nos dice que no</em>.
 course_claim_body: Enfrentarte a Legacy Code es solo cuestión de tiempo, aunque vuelvas a escribir el código desde cero, en menos tiempo del que piensas ese código que has escrito va a ser por su naturaleza irremediablemente Legacy Code.
 learning_objectives:

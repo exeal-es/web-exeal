@@ -5,7 +5,7 @@ date: 2024-03-07T00:00:00+02:00
 layout: certificate
 images: ['/images/certificates/ntgpht2e65ashwfj823x-small.png']
 featured_image: '/images/certificates/ntgpht2e65ashwfj823x-small.png'
-noindex: true
+hidden: true
 certificateData:
   verificationCode: ntgpht2e65ashwfj823x 
   studentName: Enrique Rosales Salas

@@ -7,6 +7,7 @@ team:
   [
     { name: "pedropardal" },
   ]
+hidden: true
 ---
 
 ## Nuestro equipo

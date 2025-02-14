@@ -5,4 +5,5 @@ date: 2022-10-01T15:00:00+02:00
 layout: courseprogram
 brochure_url: https://drive.google.com/file/d/1vsZTGZaSjD6pZHlJ3hCj9ehzJASyhhMz/view?usp=sharing
 brochure_image: /assets/img/legacy/mockup-brochure.png
+hidden: true
 ---

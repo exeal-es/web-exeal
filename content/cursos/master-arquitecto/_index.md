@@ -3,6 +3,7 @@ title: "Training de Refactorización hacia Domain-Driven Design"
 description: "Domina todas las técnicas para escribir código que soporte el paso del tiempo, desde el código limpio a la arquitectura de software."
 date: 2022-10-01T15:00:00+02:00
 layout: course
+hidden: true
 course_featured_image: /images/courses/master-arquitecto.png
 course_title: "Master arquitecto"
 course_prefix: ""

@@ -5,7 +5,7 @@ date: 2024-02-23T00:00:00+02:00
 layout: certificate
 images: ['/images/certificates/14djup94zswwmooueg6r-small.png']
 featured_image: '/images/certificates/14djup94zswwmooueg6r-small.png'
-noindex: true
+hidden: true
 certificateData:
   verificationCode: 14djup94zswwmooueg6r 
   studentName: Adrián Lizaga
