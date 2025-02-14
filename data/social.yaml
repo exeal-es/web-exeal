@@ -1,0 +1,10 @@
+- name: twitter
+  url: https://x.com/exeal
+- name: linkedin
+  url: https://www.linkedin.com/company/exeal/
+- name: youtube
+  url: https://www.youtube.com/channel/UCxVspi-mashFr1RPGxSxEPA
+- name: github
+  url: https://github.com/exeal-es
+- name: email
+  url: mailto:hola@exeal.com

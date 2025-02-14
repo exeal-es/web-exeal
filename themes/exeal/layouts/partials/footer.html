@@ -15,34 +15,13 @@
       </div>
       <div class="col-lg-6 social-media">
         <ul class="list-inline text-lg-right mt-3 mt-lg-0">
+          {{ range site.Data.social }}
           <li class="list-inline-item">
-            <a target="_blank" href="https://twitter.com/exeal">
-              <img src="/assets/img/social/twitter.svg" />
+            <a target="_blank" href="{{ .url }}">
+              <img src="/assets/img/social/{{ .name }}.svg" />
             </a>
           </li>
-          <li class="list-inline-item">
-            <a target="_blank" href="https://www.linkedin.com/company/exeal/">
-              <img src="/assets/img/social/linkedin.svg" />
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a
-              target="_blank"
-              href="https://www.youtube.com/channel/UCxVspi-mashFr1RPGxSxEPA"
-            >
-              <img src="/assets/img/social/youtube.svg" />
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a target="_blank" href="https://github.com/exeal-es">
-              <img src="/assets/img/social/github.svg" />
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a target="_blank" href="mailto:hola@exeal.com">
-              <img src="/assets/img/social/email.svg" />
-            </a>
-          </li>
+          {{ end }}
         </ul>
       </div>
     </div>
