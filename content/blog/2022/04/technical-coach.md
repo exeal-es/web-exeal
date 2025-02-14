@@ -6,9 +6,9 @@ date: 2022-04-19T00:10:00+01:00
 layout: post
 tags: ["coaching", "team-work", "agile"]
 images:
-  - "/images/blog/posts/technical-coaching.jpg"
-featured_image: "/images/blog/posts/technical-coaching.jpg"
-card_image: "/images/blog/posts/technical-coaching.jpg"
+  - "/images/blog/posts/team-coach.jpg"
+featured_image: "/images/blog/posts/team-coach.jpg"
+card_image: "/images/blog/posts/team-coach.jpg"
 ---
 
 ## Cómo y por qué acabé siendo technical coach
