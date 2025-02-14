@@ -1,0 +1,50 @@
+<section id="{{ .id }}" class="{{ .className }}">
+  <div class="container">
+    {{- partial "arrow-header.html" (dict "header" .title) }}
+
+    <div class="row mt-3 mb-3">
+      <div class="col-6">
+        <p>
+          {{ .p1 | safeHTML }}
+        </p>
+        <p>
+          {{ .p2 | safeHTML }}
+        </p>
+      </div>
+      {{ range .team }} {{ $authorName := .name }} {{ $data := index site.Data.authors $authorName }}
+      <div class="col-6">
+        <div class="team-card">
+          <div class="team-card-header" style="background-image: url('{{$data.avatar}}')"></div>
+          <div class="team-card-body d-flex flex-column">
+            <h3>{{ $data.name }}</h3>
+            <p class="description">{{ $data.role }}</p>
+            <ul class="social-icons list-inline">
+              {{ if ($data.social.twitter) }}
+              <li class="list-inline-item">
+                <a target="_blank" href="{{ $data.social.twitter }}">
+                  <img src="/assets/img/blog/social-icons/icon-twitter.svg" />
+                </a>
+              </li>
+              {{ end }}
+              {{ if ($data.social.linkedin) }}
+              <li class="list-inline-item">
+                <a target="_blank" href="{{ $data.social.linkedin }}">
+                  <img src="/assets/img/blog/social-icons/icon-linkedin.svg" />
+                </a>
+              </li>
+              {{ end }}
+              {{ if ($data.social.github) }}
+              <li class="list-inline-item">
+                <a target="_blank" href="{{ $data.social.github }}">
+                  <img src="/assets/img/blog/social-icons/icon-github.svg" />
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
