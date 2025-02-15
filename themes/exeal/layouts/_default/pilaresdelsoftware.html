@@ -1,19 +1,7 @@
 {{ define "main" }}
-<section class="dark background background-01">
-  <div class="container">
-    <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
-      <div class="col-md-12">
-        <h1>Pilares del software</h1>
-        <h4>Transforma tus habilidades como desarrollador de software con las bases que necesitas para escribir código limpio y avanzar con confianza.</h4>
-        <p>25 y 26 de abril de 2025 (Online)</p>
-        <p>97€ (antes 197€)</p>
-        <p>
-          <a data-scroll="sect-cta" href="#" class="button button-center">{{ .Params.texts.common.call_to_action }}</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+{{ range .Params.blocks }}
+  {{ partial (printf "blocks/%s.html" .type) . }}
+{{ end }}
 
 <section id="sect-stakes" class="light">
   <div class="container">

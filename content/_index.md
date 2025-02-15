@@ -10,7 +10,9 @@ blocks:
     className: "dark background background-01"
     header: Desbloquea a tu equipo de desarrollo de software
     subheader: Ayudamos a líderes técnicos a capacitar a sus equipos para acelerar la entrega de software y eliminar los bugs.
-    callToAction: Agendar sesión estratégica
+    callToAction:
+      text: Agendar sesión estratégica
+      scrollTo: sect-contact
 
   # The stakes
   - type: stakes

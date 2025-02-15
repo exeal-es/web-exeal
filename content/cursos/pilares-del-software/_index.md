@@ -9,28 +9,41 @@ course_title: "Pilares del Software"
 checkout_url: https://academia.exeal.com/order?ct=d072bf22-a0b8-48b4-83de-6733758c3897
 team:
   [{ name: "pedropardal" }]
+blocks:
+  # Hero
+  - type: hero
+    id: sect-hero
+    className: "dark background background-01"
+    header: Pilares del software
+    subheader: Transforma tus habilidades como desarrollador de software con las bases que necesitas para escribir código limpio y avanzar con confianza.
+    paragraphs:
+      - 25 y 26 de abril de 2025 (Online)
+      - 97€ (antes 197€)
+    callToAction:
+      text: ¡Comprar ahora!
+      scrollTo: sect-cta
 texts:
   common:
     call_to_action: ¡Comprar ahora!
   testimonials: [
     {
-      text: "&ldquo;Cuando hablo con personas con 10 o 20 años experiencia, me dicen que ojalá ellos hubieran podido aprender al principio todo lo que yo sé ahora&rdquo;",
       name: "Victoria Kovaleva",
       position: "Junior Software Engineer",
       photo: "/images/testimonials/vika.jpeg",
+      text: "&ldquo;Cuando hablo con personas con 10 o 20 años experiencia, me dicen que ojalá ellos hubieran podido aprender al principio todo lo que yo sé ahora&rdquo;",
       active: true,
     },
     {
-      text: "&ldquo;Aprender con Pedro fue un punto de inflexión en mi carrera profesional&rdquo;",
       name: "David Lorenzo",
       position: "Software Engineer @ Voxel Group",
-      photo: "/images/testimonials/davidlorenzo.jpeg"
+      photo: "/images/testimonials/davidlorenzo.jpeg",
+      text: "&ldquo;Aprender con Pedro fue un punto de inflexión en mi carrera profesional&rdquo;",
     },
     {
-      text: "&ldquo;Lo que tú enseñas es una forma de desarrollar software, son muchas piezas que se juntan para formar un puzzle.&rdquo;",
       name: "Samuel Álvarez",
       position: "Software Engineer @ Voxel Group",
       photo: "/images/testimonials/samu.jpeg",
+      text: "&ldquo;Lo que tú enseñas es una forma de desarrollar software, son muchas piezas que se juntan para formar un puzzle.&rdquo;"
     }
   ]
 ---

@@ -10,7 +10,9 @@ blocks:
     className: "dark background background-01"
     header: Unlock Your Software Development Team
     subheader: We help technical leaders empower their teams to accelerate software delivery and eliminate bugs.
-    callToAction: Schedule a Strategic Session
+    callToAction:
+      text: Schedule a Strategic Session
+      scrollTo: sect-contact
 
   # The stakes
   - type: stakes

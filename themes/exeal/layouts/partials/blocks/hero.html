@@ -4,8 +4,11 @@
       <div class="col-md-12">
         <h1>{{ .header | safeHTML }}</h1>
         <h4>{{ .subheader | safeHTML }}</h4>
+        {{ range .paragraphs }}
+          <p>{{ . | safeHTML }}</p>
+        {{ end }}
         <p>
-          <a data-scroll="sect-contact" href="#" class="button button-center">{{ .callToAction }}</a>
+          <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button button-center">{{ .callToAction.text }}</a>
         </p>
       </div>
     </div>
