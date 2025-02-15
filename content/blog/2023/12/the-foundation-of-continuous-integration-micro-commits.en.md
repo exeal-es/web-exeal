@@ -10,7 +10,7 @@ featured_image: /images/blog/posts/videogame.webp
 card_image: /images/blog/posts/videogame.webp
 ---
 
-You might be surprised (it surprised me when I began [helping other teams as a coach](https://www.exeal.com/servicios/technical-coaching/)), but most developers commit code to version control only about 2 or 3 times a week.
+You might be surprised (it surprised me when I began [helping other teams as a coach](https://www.exeal.com/)), but most developers commit code to version control only about 2 or 3 times a week.
 
 This limits the frequency with which they can deliver working code to production.
 

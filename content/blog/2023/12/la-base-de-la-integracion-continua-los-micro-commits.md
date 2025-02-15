@@ -10,7 +10,7 @@ featured_image: /images/blog/posts/videogame.webp
 card_image: /images/blog/posts/videogame.webp
 ---
 
-Quizá te sorprenda (a mí me sorprendió cuando empecé a [ayudar a otros equipos como coach](https://www.exeal.com/servicios/technical-coaching/)), pero la mayoría de desarrolladores commitean código al control de versiones apenas entre 2 o 3 veces por semana.
+Quizá te sorprenda (a mí me sorprendió cuando empecé a [ayudar a otros equipos como coach](https://www.exeal.com/)), pero la mayoría de desarrolladores commitean código al control de versiones apenas entre 2 o 3 veces por semana.
 
 Esto les limita la frecuencia con la que pueden entregar código funcionando a producción.
 
