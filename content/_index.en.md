@@ -151,7 +151,9 @@ blocks:
     paragraphs:
       - At Exeal, we know that the primary goal of software is to generate business value. But we also understand the frustration of constantly juggling new feature implementation while keeping fires under control and trying to improve code under constant business pressure.
       - That’s why we bring our expertise in agile methodologies like XP (Extreme Programming) and DevOps to your team, working side by side in your project to foster sustainable development practices.
-    callToAction: Schedule a Strategic Session
+    callToAction:
+      text: Schedule a Strategic Session
+      scrollTo: sect-contact
 
   # Clients
   - type: clients

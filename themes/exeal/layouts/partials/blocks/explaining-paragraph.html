@@ -11,12 +11,15 @@
         {{ end }}
       </div>
     </div>
+
+    {{ if .callToAction }}
     <div class="row">
       <div class="col-md-12">
         <p>
-          <a data-scroll="sect-contact" href="#" class="button button-center">{{ .callToAction }}</a>
+          <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button button-center">{{ .callToAction.text }}</a>
         </p>
       </div>
     </div>
+    {{ end }}
   </div>
 </section>
