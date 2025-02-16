@@ -70,7 +70,7 @@ texts:
   servicecoaching:
     title: "Paso 3: Accede a formación premium"
     p1: No te limites a un solo curso.
-    p2: Con tu suscripción tendrás acceso a TODOS los cursos de Exeal sobre buenas prácticas, arquitectura, testing, productividad y más.
+    p2: Con tu suscripción tendrás acceso a TODOS los cursos de la plataforma de e-learning de Exeal sobre buenas prácticas, arquitectura, testing, productividad y más.
     cta: Apúntate ya
   team:
     title: Déjate guiar por expertos
