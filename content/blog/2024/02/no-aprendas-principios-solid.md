@@ -10,7 +10,7 @@ featured_image: /images/blog/posts/coder.jpg
 card_image: /images/blog/posts/coder.jpg
 ---
 
-Los principios SOLID son considerados por mucha gente la quintaesencia del *buen diseño de software*. Llega un momento en la carrera de todo desarrollador que, harto de [sufrir por tener que mantener código espaguetti cada día](https://www.exeal.com/cursos/legacy-code/), descubre SOLID y, cegado por el despecho y la ira hacia el código legacy, intenta aplicar SOLID a rajatabla.
+Los principios SOLID son considerados por mucha gente la quintaesencia del *buen diseño de software*. Llega un momento en la carrera de todo desarrollador que, harto de [sufrir por tener que mantener código espaguetti cada día](https://www.exeal.com/cursos/rescata-tu-proyecto/), descubre SOLID y, cegado por el despecho y la ira hacia el código legacy, intenta aplicar SOLID a rajatabla.
 
 Sin embargo, **los principios SOLID esconden una trampa muy peligrosa**: una en la que no caemos hasta que hemos aplicado SOLID lo suficiente como para darnos cuenta de que, en el mejor de los casos, nos hace perder el tiempo con discusiones infructíferas y, en el peor, puede convertir una base de código en un lugar más infernal aún en el que trabajar.
 

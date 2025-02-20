@@ -19,7 +19,7 @@ Una de las estrategias que podemos adoptar es el mindset de [Simple Design](http
 
 ## Las 4 reglas de diseño simple
 
-[Michael Feathers](https://twitter.com/mfeathers), el autor del libro [Working Effectively with Legacy Code](https://www.amazon.es/Working-Effectively-Legacy-Robert-Martin/dp/0131177052), nos dice que “código legacy es código que no tiene tests”. Cuando yo hablo sobre código legacy [a nuestros alumnos](https://www.exeal.com/cursos/legacy-code/), les doy una definición un poco más amplia: “código legacy es código que no cumple las [4 rules of simple design](https://martinfowler.com/bliki/BeckDesignRules.html) - 4RSD” de Kent Beck. Estas reglas son las siguientes:
+[Michael Feathers](https://twitter.com/mfeathers), el autor del libro [Working Effectively with Legacy Code](https://www.amazon.es/Working-Effectively-Legacy-Robert-Martin/dp/0131177052), nos dice que “código legacy es código que no tiene tests”. Cuando yo hablo sobre código legacy [a nuestros alumnos](https://www.exeal.com/cursos/rescata-tu-proyecto/), les doy una definición un poco más amplia: “código legacy es código que no cumple las [4 rules of simple design](https://martinfowler.com/bliki/BeckDesignRules.html) - 4RSD” de Kent Beck. Estas reglas son las siguientes:
 
 - Que el código tenga tests (y estén en verde). Esta sería la definición de Michael Feathers.
 - Que minimice la duplicidad.

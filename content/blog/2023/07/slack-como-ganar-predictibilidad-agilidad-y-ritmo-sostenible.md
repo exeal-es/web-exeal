@@ -64,7 +64,7 @@ En caso de que estés preocupado por que la velocidad se resienta, si el tiempo 
 
 ## ¿Cómo implementar Slack en mi equipo?
 
-En primer lugar, decidid en equipo cuál o **cuáles son las actividades para las que os gustaría reservar tiempo**. Esto dependerá de la situación actual del equipo. Por ejemplo, en equipos con la responsabilidad de mantener una base de [código legacy](https://www.exeal.com/cursos/legacy-code/), nos ha funcionado bastante bien reservar una sesión a la semana de refactoring especulativo en mob programming.
+En primer lugar, decidid en equipo cuál o **cuáles son las actividades para las que os gustaría reservar tiempo**. Esto dependerá de la situación actual del equipo. Por ejemplo, en equipos con la responsabilidad de mantener una base de [código legacy](https://www.exeal.com/cursos/rescata-tu-proyecto/), nos ha funcionado bastante bien reservar una sesión a la semana de refactoring especulativo en mob programming.
 
 Otro ejemplo: cuando en Exeal [entramos al equipo de algún cliente a mejorar procesos e implantar prácticas técnicas](https://www.exeal.com), como TDD, CI/CD o Refactoring, reservamos varias sesiones de mob programming a la semana para trabajar sobre una historia de usuario, pero en la que el foco es el aprendizaje y la historia de usuario es la excusa para hacerlo en un entorno realista (y ya de paso, sacamos curro).
 

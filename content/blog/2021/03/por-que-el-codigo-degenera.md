@@ -11,7 +11,7 @@ featured_image: "/images/blog/posts/fruit.jpg"
 card_image: "/images/blog/posts/fruit.jpg"
 ---
 
-En mi [training sobre código legacy](https://www.exeal.com/cursos/legacy-code/), suelo empezar preguntando a la gente que “qué es lo que caracteriza un código legacy”, y hay una constante que siempre sale en todos los equipos: **el código legacy da miedo, porque tocarlo supone un riesgo**. Riesgo de romper algo que antes funcionaba, que está dando dinero, que está pagando las facturas… y deje de funcionar.
+En mi [training sobre código legacy](https://www.exeal.com/cursos/rescata-tu-proyecto/), suelo empezar preguntando a la gente que “qué es lo que caracteriza un código legacy”, y hay una constante que siempre sale en todos los equipos: **el código legacy da miedo, porque tocarlo supone un riesgo**. Riesgo de romper algo que antes funcionaba, que está dando dinero, que está pagando las facturas… y deje de funcionar.
 
 Existe una concepción negativa sobre el código legacy: como desarrolladores, tendemos a evitar este tipo de proyectos. Si nos dan a elegir, preferimos trabajar en el equipo que está desarrollando el nuevo producto de la empresa, con tecnologías cloud, serverless, contenedores, microservicios, etc., antes que mantener el monolito legacy de 1 millón de líneas de código (cuando, irónicamente, es éste el que paga las facturas).
 
