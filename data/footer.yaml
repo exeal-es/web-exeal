@@ -1,0 +1,11 @@
+links:
+  - url: "/equipo/"
+    text: "linkteam"
+  - url: "/jobs/extreme-programming-coach/"
+    text: "linkjobs"
+  - url: "/legal/legal-notice/"
+    text: "linklegal"
+  - url: "/legal/cookie-policy/"
+    text: "linkcookiepolicy"
+  - url: "/legal/privacy-policy/"
+    text: "linkprivacypolicy"

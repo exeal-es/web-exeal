@@ -21,3 +21,18 @@ make dev
 ```sh
 make publish
 ```
+
+## How-to
+
+### Updating Footer Links
+Footer links are stored in a YAML file located at `data/footer.yaml`:
+
+```yaml
+links:
+  - url: "/legal/legal-notice/"
+    text: "linklegal"
+  - url: "/legal/cookie-policy/"
+    text: "linkcookiepolicy"
+  - url: "/legal/privacy-policy/"
+    text: "linkprivacypolicy"
+```
