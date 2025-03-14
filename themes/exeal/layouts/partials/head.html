@@ -39,16 +39,21 @@
 {{ end }}
 
 <!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8231847.js"></script>
+{{ if site.Params.hubspotId }}
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/{{ site.Params.hubspotId }}.js"></script>
+{{ end }}
 <!-- End of HubSpot Embed Code -->
 
 <!-- Cookie consent generated with Osano's website configuration wizard -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 <!-- Facebook domain verification -->
-<meta name="facebook-domain-verification" content="xwbugjbpmp2jwy1y6mzdhe6ga267uz" />
+{{ if site.Params.facebookDomainVerification }}
+  <meta name="facebook-domain-verification" content="{{ site.Params.facebookDomainVerification }}" />
+{{ end }}
 
 <!-- Meta Pixel Code -->
+{{ if site.Params.facebookPixelId }}
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -58,23 +63,27 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '417415780749470');
+  fbq('init', '{{ site.Params.facebookPixelId }}');
   fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=417415780749470&ev=PageView&noscript=1"
+  src="https://www.facebook.com/tr?id={{ site.Params.facebookPixelId }}&ev=PageView&noscript=1"
   /></noscript>
+  {{ end }}
   <!-- End Meta Pixel Code -->
 
-  <!-- Hotjar -->
-   <!-- Hotjar Tracking Code for Sitio 5031744 (falta el nombre) -->
+<!-- Hotjar -->
+{{ if site.Params.hotjarId }}
+{{ $hotjarId := site.Params.hotjarId }}
 <script>
   (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:5031744,hjsv:6};
+      h._hjSettings={hjid:{{ $hotjarId }},hjsv:6};
       a=o.getElementsByTagName('head')[0];
       r=o.createElement('script');r.async=1;
       r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
       a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+{{ end}}
+<!-- End Hotjar -->

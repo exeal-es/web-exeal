@@ -11,6 +11,10 @@ languages:
 metaDataFormat: yaml
 params:
   gtm_id: "GTM-TQGN65PV"
+  facebookPixelId: 417415780749470
+  facebookDomainVerification: xwbugjbpmp2jwy1y6mzdhe6ga267uz
+  hotjarId: 5031744
+  hubspotId: 8231847
 markup:
   goldmark:
     renderer:
