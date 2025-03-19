@@ -57,7 +57,7 @@ Aún así, algunos patrones en los que sí hemos visto que renta hacer pairing e
 
 De la misma forma, cuando la certeza es alta o la solución es simple, seguir trabajando en pairing puede dejar de ser rentable, por lo que es importante saber identificar cuándo romper la pareja y pasar a otras tareas.
 
-Una buena idea puede ser [incorporar un technical coach](https://www.exeal.com/) al equipo. Los coaches son desarrolladores con amplia experiencia aplicando pairing y otras prácticas, y pueden ayudar al equipo a encontrar su propio estilo ahorrándose semanas de prueba y error.
+Una buena idea puede ser [incorporar un technical coach](https://www.ppardalj.com/team-coaching/) al equipo. Los coaches son desarrolladores con amplia experiencia aplicando pairing y otras prácticas, y pueden ayudar al equipo a encontrar su propio estilo ahorrándose semanas de prueba y error.
 
 También hay que tener en cuenta que el pair programming es una actividad que demanda mucha energía por parte de los desarrolladores implicados. Trabajar de esta forma durante demasiadas horas al día puede ser contraproducente y llevar al equipo al burnout. Además, todos los desarrolladores, quien más quien menos, necesitamos nuestro ratito de ponernos los cascos, aislarnos y programar.
 
