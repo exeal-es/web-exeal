@@ -12,7 +12,7 @@ function printInformation() {
 .//,     */(/////((/.    ./(,
 .//,         *(/.        ./(,
 .//*.........*(/,........,/(,`,
-    "color: #1fe589"
+    "color: #05e69b"
   );
 
   console.log(
