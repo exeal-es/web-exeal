@@ -20,9 +20,10 @@ blocks:
       scrollTo: sect-cta
 
   # The stakes
-  - type: stakes
+  - type: stakes-with-image
     id: sect-stakes
     className: "light"
+    image: /images/blog/posts/pain-developer.jpeg
     header: ¿Te sientes atrapado en el caos del código?
     list:
       - Dedicas horas solucionando problemas, pero siempre vuelven.
@@ -82,7 +83,6 @@ blocks:
         title: El Desarrollador
         description: Te convertirás en un profesional más sólido, desarrollando aspectos clave como liderazgo, comunicación y aprendizaje continuo.
     paragraph2: Estos pilares te proporcionan las herramientas necesarias para avanzar como desarrollador, impactar en tu equipo y contribuir al éxito de los productos que creas.
-    hook: ¿Estás preparado?
     callToAction:
       text: Pre-inscribete ahora
       scrollTo: sect-cta

@@ -1,0 +1,23 @@
+<section id="{{ .id }}" class="{{ .className }}">
+  <div class="container">
+    {{- partial "arrow-header.html" (dict "header" .header) }}
+    <div class="row">
+        <div class="col-md-7">
+            {{ if .p1 }}
+            <p>{{ .p1 | safeHTML }}</p>
+            {{ end }}
+            <ul class="row ticked-cross">
+              {{ range .list }}
+              <li class="col-md-12">{{ . }}</li>
+              {{ end }}
+            </ul>
+            {{ if .p2 }}
+            <p>{{ .p2 | safeHTML }}</p>
+            {{ end }}
+          </div>
+        <div class="col-md-5 photo d-none d-sm-none d-md-block">
+        <img class="img-fluid pad" src="{{ .image }}" />
+      </div>
+    </div>
+  </div>
+</section>
