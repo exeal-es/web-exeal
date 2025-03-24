@@ -175,14 +175,22 @@ blocks:
         photo: "/images/testimonials/vika.jpeg"
         text: "&ldquo;Cuando hablo con personas con 10 o 20 años experiencia, me dicen que ojalá ellos hubieran podido aprender al principio todo lo que yo sé ahora&rdquo;"
         active: true
-      - name: "David Lorenzo"
-        position: "Software Engineer @ Voxel Group"
-        photo: "/images/testimonials/davidlorenzo.jpeg"
-        text: "&ldquo;Aprender con Pedro fue un punto de inflexión en mi carrera profesional&rdquo;"
+      - name: "Fermín Saez"
+        position: "Senior Software Engineer"
+        photo: "/images/testimonials/fermin-saez.jpeg"
+        text: "&ldquo;Pensaba que sabía hacerlo muy bien cuando llegué a Voxel. Era consciente de que tenía cosas que mejorar, como mis habilidades en testing, pero cuando te conocí me abriste la mente.&rdquo;"
       - name: "Samuel Álvarez"
         position: "Software Engineer @ Voxel Group"
         photo: "/images/testimonials/samu.jpeg"
         text: "&ldquo;Lo que tú enseñas es una forma de desarrollar software, son muchas piezas que se juntan para formar un puzzle.&rdquo;"
+      - name: "Raúl Gómez"
+        position: "Software Engineer"
+        photo: "/images/testimonials/raulgomez.jpeg"
+        text: "&ldquo;He aprendido es que el código se puede criticar, pero no a la persona que lo hace, porque la persona que lo ha hecho lo hace lo mejor que puede en el momento en el que hizo el código. Eso es algo que me ha dado mucha seguridad. Me voy a dormir más tranquilo.&rdquo;"
+      - name: "David Lorenzo"
+        position: "Software Engineer @ Voxel Group"
+        photo: "/images/testimonials/davidlorenzo.jpeg"
+        text: "&ldquo;Aprender con Pedro fue un punto de inflexión en mi carrera profesional&rdquo;"
 
   # Clients
   - type: clients
