@@ -1,0 +1,24 @@
+<section id="{{ .id }}" class="{{ .className }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ .h2 }}</h2>
+        <dl class="faq">
+          {{ range .chapters }}
+          <dt data-toggle="collapse" href="#chapter{{ .number }}">{{ .number }}. {{ .chapter }}</dt>
+          <dd class="collapse" id="chapter{{ .number }}">
+            <ul>
+              {{ range .topics }}
+              <li>- {{ . }}</li>
+              {{ end }}
+            </ul>
+          </dd>
+          {{ end }}
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
