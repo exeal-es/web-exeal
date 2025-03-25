@@ -12,7 +12,9 @@
         <p>
           {{ .p2 | safeHTML }}
         </p>
-        <a data-scroll="sect-contact" href="#" class="button">{{ .callToAction }}</a>
+        {{ if .callToAction }}
+          <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button">{{ .callToAction.text }}</a>
+        {{ end }}
       </div>
       <div class="col-md-5 d-none d-sm-none d-md-block">
         <img

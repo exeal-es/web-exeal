@@ -44,10 +44,10 @@ blocks:
       - Pecador sexuarl va usté muy cargadoo amatomaa pecador ese que llega hasta luego Lucas sexuarl ahorarr.
     p2: Apetecan al ataquerl jarl <em>fistro ese pedazo de te</em> va a hasé pupitaa se calle ustée no puedor ese hombree.
 
-  # Imagina esto
+  # Ticked list
   - type: ticked-list
     id: sect-ticket-list
-    className: gloamin background background-06
+    className: gloaming background background-06
     header: Te va a hasé pupitaa va usté muy cargadoo
     items:
       - Quietooor tiene musho peligro hasta luego Lucas pupita diodenoo está la cosa muy malar
@@ -57,6 +57,30 @@ blocks:
       - Papaar papaar diodeno de la pradera a wan papaar papaar tiene musho peligro torpedo no puedor.
       - Mamaar va usté muy cargadoo qué dise usteer ese que llega.
     paragraph2: Pecador qué dise usteer jarl mamaar <em>la caidita</em> no te digo trigo por no llamarte Rodrigor
+    callToAction:
+      text: Compra pecador
+      scrollTo: sect-cta
+
+  # Content with image left
+  - type: content-image-left
+    id: sect-content-image-left
+    className: light
+    title: Te va a hasé pupitaa va usté muy cargadoo
+    p1: Quietooor tiene musho peligro hasta luego Lucas pupita diodenoo está la cosa muy malar
+    p2: Tiene musho peligro diodenoo no puedor pecador jarl.
+    image: /assets/img/photo-coaching-module.png
+    callToAction:
+      text: Compra pecador
+      scrollTo: sect-cta
+
+  # Content with image right
+  - type: content-image-right
+    id: sect-content-image-right
+    className: dark
+    title: Te va a hasé pupitaa va usté muy cargadoo
+    p1: Quietooor tiene musho peligro hasta luego Lucas pupita diodenoo está la cosa muy malar
+    p2: Tiene musho peligro diodenoo no puedor pecador jarl.
+    image: /assets/img/photo-apprenticeship-module.png
     callToAction:
       text: Compra pecador
       scrollTo: sect-cta
@@ -276,6 +300,9 @@ blocks:
       - title: Experiencia real
         description: Estas son las mismas formaciones con las que se capacitan <em>desarrolladores de empresas top</em> a nivel nacional e internacional.
         icon: /assets/img/icons/white/Exeal-Icon-10.png
+    callToAction:
+      text: Compra pecador
+      scrollTo: sect-cta
 
   # Featured course
   - type: featured-course
