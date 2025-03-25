@@ -49,15 +49,15 @@ blocks:
         description: Estas son las mismas formaciones con las que se capacitan <em>desarrolladores de empresas top</em> a nivel nacional e internacional.
         icon: /assets/img/icons/white/Exeal-Icon-10.png
 
-  # Three traits
+  # Featured course
   - type: featured-course
     id: sect-featured-course
 
-  # Title only
+  # Title only "Cursos avanzados"
   - type: title-only
     text: Cursos avanzados
 
-  # All courses
+  # All course cards
   - type: all-courses
     id: sect-courses
 
@@ -91,7 +91,6 @@ blocks:
         position: "Senior Software Engineer"
         photo: "/images/testimonials/humberto-braojos.jpeg"
         text: "&ldquo;Ahora me enfrento a los cambios en el código legacy con mucha más tranquilidad, confianza en el resultado y eficiencia. Resaltaría particularmente los ejercicios de extraer dependencias, solía ser el punto de mayor dolor al añadir cobertura de tests.&rdquo;"
-
 
   # Clients
   - type: clients
