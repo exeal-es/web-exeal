@@ -252,4 +252,12 @@ blocks:
       - title: Experiencia real
         description: Estas son las mismas formaciones con las que se capacitan <em>desarrolladores de empresas top</em> a nivel nacional e internacional.
         icon: /assets/img/icons/white/Exeal-Icon-10.png
+
+  # Calendly
+  - type: calendly
+    id: sect-calendly
+    className: light
+    header: Agenda una sesión estratégica
+    paragraph: Solicita una reunión online gratuita 1:1 por videollamada con Pedro para charlar sobre los retos de tu equipo y descubrir cómo podemos ayudar.
+    calendlyUrl: https://calendly.com/exeal/call
 ---
