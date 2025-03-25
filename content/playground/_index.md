@@ -236,4 +236,20 @@ blocks:
     header: Te va a hasé pupitaa por la gloria de mi madre llevame al sircoo ese pedazo de qué dise usteer qué dise usteer la caidita va usté muy cargadoo
     ctaLabel: Compra pecador
     ctaHref: https://www.chiquitoipsum.com/
+
+  # Three traits
+  - type: three-traits
+    id: sect-three-traits
+    className: dark background background-03
+    header: Las <em>claves</em> de los cursos de nuestro sistema formativo.
+    traits:
+      - title: No stack
+        description: Lo que vas a aprender aquí es independiente del lenguaje o framework que uses. <em>Vas a ser capaz de ver la Matrix</em> del desarrollo.
+        icon: /assets/img/icons/white/Exeal-Icon-15.png
+      - title: Intensivos
+        description: El formato de nuestras formaciones es intensivo. Durante 2 días completos <em>te sumergirás de lleno</em> a trabajar en tu desarrollo profesional.
+        icon: /assets/img/icons/white/Exeal-Icon-14.png
+      - title: Experiencia real
+        description: Estas son las mismas formaciones con las que se capacitan <em>desarrolladores de empresas top</em> a nivel nacional e internacional.
+        icon: /assets/img/icons/white/Exeal-Icon-10.png
 ---

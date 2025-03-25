@@ -1,0 +1,35 @@
+<section id="{{ .id }}" class="{{ .className }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2>
+          <img
+            class="arrow-right"
+            src="/assets/img/arrow-right-secondary.svg"
+          />
+        </h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ .header | safeHTML }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      {{ range .traits }}
+      <div class="col-md-4 mb-3">
+        <div class="box">
+          <div class="flap flap"></div>
+          <img
+            class="icon-mid"
+            src="{{ .icon }}"
+          />
+          <h3>{{ .title }}</h3>
+          <p>
+            {{ .description | safeHTML }}
+          </p>
+        </div>
+      </div>
+      {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
