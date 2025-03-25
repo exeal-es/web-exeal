@@ -1,9 +1,10 @@
 ---
 title: "Pilares del Software"
-description: "Transforma tus habilidades como desarrollador de software con las bases que necesitas para escribir código limpio y avanzar con confianza."
+description: "Construye tu futuro como desarrollador sobre los pilares del código sostenible, la entrega continua de valor y el liderazgo de equipos de alto rendimiento."
 date: 2024-12-06T00:00:00+02:00
 layout: pilaresdelsoftware
 featured: true
+images: [/images/ogcard/pilares-del-software.png]
 course_featured_image: /images/courses/pilares-del-software.png
 course_title: "Pilares del Software"
 blocks:
@@ -12,7 +13,7 @@ blocks:
     id: sect-hero
     className: "dark background background-01"
     header: Pilares del software
-    subheader: Transforma tus habilidades como desarrollador de software con las bases que necesitas para escribir código limpio y avanzar con confianza.
+    subheader: Construye tu futuro como desarrollador sobre los pilares del código sostenible, la entrega continua de valor y el liderazgo de equipos de alto rendimiento.
     paragraphs:
       - "Próxima edición: 25 y 26 de abril de 2025 (Online)"
     callToAction:
