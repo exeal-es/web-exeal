@@ -180,6 +180,9 @@ blocks:
   # Clients
   - type: clients
 
+  # Partners
+  - type: partners
+
   # Explaining paragraph
   - type: explaining-paragraph
     id: sect-explaining-paragraph
