@@ -5,7 +5,9 @@
         <h1>{{ .header }}</h1>
         <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg" /></p>
         <p class="bigger">{{ .subheader | safeHTML }}</p>
-        <a data-scroll="{{ .ctaScrollTo }}" href="#" class="button">{{ .ctaText }}</a>
+        {{ if .callToAction }}
+          <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button">{{ .callToAction.text }}</a>
+        {{ end }}
       </div>
       <div class="col-md-5 d-none d-sm-none d-md-block">
         <img

@@ -266,8 +266,9 @@ blocks:
     header: Lorem fistrum amatomaa llevame al sircoo se calle ustée
     subheader: Te va a hasé pupitaa por la gloria de mi madre llevame al sircoo ese pedazo de qué dise usteer qué dise usteer la caidita va usté muy cargadoo
     image: /assets/img/photo-training-module.png
-    ctaText: Compra pecador
-    ctaHref: https://www.chiquitoipsum.com/
+    callToAction:
+      text: Compra pecador
+      scrollTo: sect-cta
 
   # Blocks
   - type: blocks

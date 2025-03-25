@@ -14,8 +14,9 @@ blocks:
     header: La formación definitiva para despegar como desarrollador de software
     subheader: Hemos diseñado un sistema formativo con el que llegarás a un nivel superior como desarrollador, en <em>una experiencia transformadora</em> a nivel profesional y personal.
     image: /assets/img/photo-training-module.png
-    ctaText: Descubre las formaciones
-    ctaScrollTo: sect-courses
+    callToAction:
+      text: Descubre las formaciones
+      scrollTo: sect-courses
 
   # Blocks
   - type: blocks
