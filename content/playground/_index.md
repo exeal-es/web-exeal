@@ -285,6 +285,25 @@ blocks:
       - Condemor de la pradera
       - Condemor de la pradera
 
+  # Value proposition elements
+  - type: valueprop-elements
+    id: sect-value-prop-elements
+    className: gloaming
+    header: El training intensivo en <em>Legacy Code</em> de Exeal es diferente.
+    elements:
+      - icon: /assets/img/legacy/icons/icon-01.svg
+        text: Durante un total de <em>16 horas</em> (a lo largo de 2 semanas, durante 2 horas al día, de Lunes a Jueves) vas a trabajar teoría y práctica sobre un proyecto de Legacy Code.
+      - icon: /assets/img/legacy/icons/icon-06.svg
+        text: El training se realizará <em>100% online, por videoconferencia</em>. Si eres empresa y lo prefieres, podemos impartirlo en tus oficinas de manera presencial.
+      - icon: /assets/img/legacy/icons/icon-02.svg
+        text: El formato del training consiste en pequeñas introducciones teóricas, seguidas de sesiones de <em>“pair y mob programming”</em> sobre ejercicios guiados estilo <em>katas</em> para aplicar los conceptos.
+      - icon: /assets/img/legacy/icons/icon-04.svg
+        text: Podrás trabajar sobre <em>tu propio proyecto de Legacy Code</em> siempre que sea open source o, si vienes con el equipo de tu empresa, sobre el código de la misma.
+      - icon: /assets/img/legacy/icons/icon-03.svg
+        text: Para garantizar la calidad de la experiencia y poder <em>adaptar y personalizar</em> las sesiones a cada alumno, nuestras plazas están limitadas a <em>12 personas</em> por cada edición.
+      - icon: /assets/img/legacy/icons/icon-05.svg
+        text: Una vez acabado el training, continuaremos <em>resolviendote dudas</em> a través de nuestro Slack <em>Exeal Alumni</em>, junto a profesores y alumnos de otras ediciones.
+
   # Three traits
   - type: three-traits
     id: sect-three-traits

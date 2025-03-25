@@ -1,0 +1,22 @@
+<section id="{{ .id }}" class="{{ .className }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ .header | safeHTML }}</h2>
+      </div>
+    </div>
+    <div class="row mt-3">
+      {{ range .elements }}
+      <div class="col-md-4">
+        <div class="icon-container">
+          <img src="{{ .icon }}" />
+        </div>
+        <p>{{ .text | safeHTML }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
