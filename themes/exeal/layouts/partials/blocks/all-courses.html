@@ -1,0 +1,28 @@
+<section id="{{ .id }}" class="light">
+  <div class="container">
+    <div class="row">
+      {{ $allCourses := where site.Pages "Params.layout" "course" }}
+      {{ range first 9 (where $allCourses "Params.featured" nil) }}
+      <div class="col-md-4 col-sm-12">
+        <div class="course-card">
+          <div
+            class="course-header"
+            style="background-image: url('{{ .Params.course_featured_image }}')"
+          >
+            <div class="featured-course">¡Próximamente!</div>
+          </div>
+          <div class="course-body">
+            <h3>{{ .Params.course_title }}</h3>
+            <p class="description">{{ .Description }}</p>
+            <!--
+            <a class="button button-green expand" href="{{ .Permalink }}"
+              >Más info</a
+            >
+            -->
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

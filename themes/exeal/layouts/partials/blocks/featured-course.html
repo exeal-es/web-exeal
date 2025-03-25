@@ -1,0 +1,38 @@
+<section id="sect-courses" class="light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="course-card row no-gutters">
+          {{ range first 1 (where site.Pages "Params.featured" true) }}
+          <div
+            class="course-header col-lg-6 col-sm-12"
+            style="background-image: url('{{ .Params.course_featured_image }}')"
+          >
+            <div class="featured-course">Curso más popular</div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="course-body">
+              <h3>{{ .Params.course_title }}</h3>
+              <p class="description">
+                Nuestro curso insignia, en el que re-descubrirás los fundamentos del desarrollo de software, a todos los niveles.
+              </p>
+              <p class="description">
+                Después de hacer este curso tu carrera como desarrollador no volverá a ser igual. Aprenderás a:
+              </p>
+              <ul class="course-features">
+                <div class="row">
+                  <li class="col-md-6">Escribir código limpio y mantenible</li>
+                  <li class="col-md-6">Construir una red de seguridad con tests y TDD</li>
+                  <li class="col-md-6">Poner el producto y el negocio en el centro</li>
+                  <li class="col-md-6">Trabajar en un equipo de alto rendimiento</li>
+                </div>
+              </ul>
+              <a class="button" href="{{ .Permalink }}">Quiero saber más</a>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -15,7 +15,7 @@ blocks:
     subheader: Hemos diseñado un sistema formativo con el que llegarás a un nivel superior como desarrollador, en <em>una experiencia transformadora</em> a nivel profesional y personal.
     image: /assets/img/photo-training-module.png
     ctaText: Descubre las formaciones
-    ctaHref: sect-courses
+    ctaScrollTo: sect-courses
 
   # Blocks
   - type: blocks
@@ -48,4 +48,16 @@ blocks:
       - title: Experiencia real
         description: Estas son las mismas formaciones con las que se capacitan <em>desarrolladores de empresas top</em> a nivel nacional e internacional.
         icon: /assets/img/icons/white/Exeal-Icon-10.png
+
+  # Three traits
+  - type: featured-course
+    id: sect-featured-course
+
+  # Title only
+  - type: title-only
+    text: Cursos avanzados
+
+  # All courses
+  - type: all-courses
+    id: sect-courses
 ---
