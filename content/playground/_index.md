@@ -5,6 +5,18 @@ date: 2025-01-01T00:00:00+02:00
 layout: pilaresdelsoftware
 hidden: true
 blocks:
+  # VSL
+  - type: vsl-vidalytics
+    id: sect-vsl-vidalytics
+    className: dark background background-01
+    header: Bootcamp de buenas prácticas de desarrollo de software
+    subheader: Consigue un mayor impacto con tu trabajo, mejora tu salario y recupera tu motivación.
+    vidalyticsId: vidalytics_embed_oZGCaq2XtRaFPsy2
+    vidalyticsUrl: https://fast.vidalytics.com/embeds/1wda1GWO/oZGCaq2XtRaFPsy2/
+    callToAction:
+      text: Compra pecador
+      scrollTo: sect-cta
+
   # Hero
   - type: hero
     id: sect-hero
