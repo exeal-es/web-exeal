@@ -14,6 +14,7 @@ blocks:
     className: "dark background background-01"
     header: Pilares del software
     subheader: Construye tu futuro como desarrollador sobre los pilares del código sostenible, la entrega continua de valor y el liderazgo de equipos de alto rendimiento.
+    backgroundImage: /images/courses/pilares-high-res.jpg
     paragraphs:
       - "Próxima edición: 25 y 26 de abril de 2025 (Online)"
     callToAction:
@@ -141,6 +142,7 @@ blocks:
         topics:
           - Equipos multidisciplinares y auto-gestionados
           - "Desarrollando en equipo: pair y mob programming"
+          - Las 5 disfunciones de un equipo
           - Factores de alto rendimiento
           - Retrospectivas y acuerdos de equipo
           - Gestión basada en métricas
@@ -154,6 +156,7 @@ blocks:
           - Cómo ampliar tu esfera de influencia
           - 'Conectar con la comunidad'
           - 'La marca personal es el nuevo CV'
+          - '"1.1x developer"'
           - 'Cómo mantenerte al día y seguir aprendiendo: la filosofía Kaizen'
 
   # Meet your mentor

@@ -23,6 +23,7 @@ blocks:
     className: "dark background background-01"
     header: Lorem fistrum papaar
     subheader: Lorem fistrum papaar papaar torpedo al ataquerl sexuarl pupita quietooor. Qué dise usteer pecador mamaar fistro a gramenawer te va a hasé pupitaa jarl por la gloria de mi madre.
+    backgroundImage: /images/courses/pilares-del-software.png
     paragraphs:
       - Sexuarl diodeno pecador hasta luego
     callToAction:
