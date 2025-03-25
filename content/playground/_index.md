@@ -229,14 +229,6 @@ blocks:
       - Condemor de la pradera
       - Condemor de la pradera
 
-  # Call to action
-  - type: call-to-action
-    id: sect-cta
-    className: dark background background-07
-    header: Te va a hasé pupitaa por la gloria de mi madre llevame al sircoo ese pedazo de qué dise usteer qué dise usteer la caidita va usté muy cargadoo
-    ctaLabel: Compra pecador
-    ctaHref: https://www.chiquitoipsum.com/
-
   # Three traits
   - type: three-traits
     id: sect-three-traits
@@ -253,6 +245,26 @@ blocks:
         description: Estas son las mismas formaciones con las que se capacitan <em>desarrolladores de empresas top</em> a nivel nacional e internacional.
         icon: /assets/img/icons/white/Exeal-Icon-10.png
 
+  # Featured course
+  - type: featured-course
+    id: sect-featured-course
+
+  # Title only "Cursos avanzados"
+  - type: title-only
+    text: Cursos avanzados
+
+  # All course cards
+  - type: all-courses
+    id: sect-courses
+
+  # Call to action
+  - type: call-to-action
+    id: sect-cta
+    className: dark background background-07
+    header: Te va a hasé pupitaa por la gloria de mi madre llevame al sircoo ese pedazo de qué dise usteer qué dise usteer la caidita va usté muy cargadoo
+    ctaLabel: Compra pecador
+    ctaHref: https://www.chiquitoipsum.com/
+
   # Calendly
   - type: calendly
     id: sect-calendly
@@ -260,4 +272,10 @@ blocks:
     header: Agenda una sesión estratégica
     paragraph: Solicita una reunión online gratuita 1:1 por videollamada con Pedro para charlar sobre los retos de tu equipo y descubrir cómo podemos ayudar.
     calendlyUrl: https://calendly.com/exeal/call
+
+  # Contact Form
+  - type: contact-form
+    id: sect-contact-form
+    className: dark background background-03
+    title: "Contacta con nosotros para obtener más información o reservar tu plaza en nuestras formaciones:"
 ---
