@@ -65,7 +65,7 @@ blocks:
   - type: content-image-left
     id: sect-content-image-left
     className: light
-    title: Te va a hasé pupitaa va usté muy cargadoo
+    header: Te va a hasé pupitaa va usté muy cargadoo
     p1: Quietooor tiene musho peligro hasta luego Lucas pupita diodenoo está la cosa muy malar
     p2: Tiene musho peligro diodenoo no puedor pecador jarl.
     image: /assets/img/photo-coaching-module.png
@@ -77,7 +77,7 @@ blocks:
   - type: content-image-right
     id: sect-content-image-right
     className: dark
-    title: Te va a hasé pupitaa va usté muy cargadoo
+    header: Te va a hasé pupitaa va usté muy cargadoo
     p1: Quietooor tiene musho peligro hasta luego Lucas pupita diodenoo está la cosa muy malar
     p2: Tiene musho peligro diodenoo no puedor pecador jarl.
     image: /assets/img/photo-apprenticeship-module.png
@@ -113,7 +113,7 @@ blocks:
   - type: syllabus-extended
     id: sect-syllabus-extended
     className: gloaming
-    h2: Diodeno va usté muy cargadoo
+    header: Diodeno va usté muy cargadoo
     chapters:
       - chapter: Diodeno me cago en tus muelas a gramenawer sexuarl
         number: 1
@@ -182,7 +182,7 @@ blocks:
     className: light
     team:
       - name: pedropardal
-    title: Conoce a Pedro Pardal, tu mentor
+    header: Conoce a Pedro Pardal, tu mentor
     p1: Papaar papaar diodenoo hasta luego Lucas caballo blanco caballo negroorl va usté muy cargadoo fistro caballo blanco caballo negroorl amatomaa condemor hasta luego Lucas.
     p2: Tiene musho peligro qué dise usteer <em>tiene musho peligro</em> mamaar mamaar no puedor te voy a borrar el cerito tiene musho peligro está la cosa muy malar me cago en tus muelas llevame al sircoo
 
@@ -356,5 +356,5 @@ blocks:
   - type: contact-form
     id: sect-contact-form
     className: dark background background-03
-    title: "Contacta con nosotros para obtener más información o reservar tu plaza en nuestras formaciones:"
+    header: "Contacta con nosotros para obtener más información o reservar tu plaza en nuestras formaciones:"
 ---

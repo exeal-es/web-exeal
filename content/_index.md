@@ -103,5 +103,5 @@ blocks:
   - type: contact-form
     id: sect-contact-form
     className: dark background background-03
-    title: "Contacta con nosotros para obtener más información o reservar tu plaza en nuestras formaciones:"
+    header: "Contacta con nosotros para obtener más información o reservar tu plaza en nuestras formaciones:"
 ---

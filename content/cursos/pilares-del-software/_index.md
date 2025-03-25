@@ -91,7 +91,7 @@ blocks:
   - type: syllabus-extended
     id: sect-syllabus-extended
     className: gloaming
-    h2: Temario completo (click para ampliar)
+    header: Temario completo (click para ampliar)
     chapters:
       - chapter: "Introducción: los 4 pilares del software"
         number: 1
@@ -161,7 +161,7 @@ blocks:
     className: light
     team:
       - name: pedropardal
-    title: Conoce a Pedro Pardal, tu mentor
+    header: Conoce a Pedro Pardal, tu mentor
     p1: Con más de 12 años de experiencia como desarrollador senior y tech lead en empresas como Tuenti, Trivago y Codurance, Pedro ha formado a más de 200 desarrolladores y equipos de alto rendimiento.
     p2: <em>-- "Mi misión es ayudarte a programar con propósito, confianza y claridad. Nos vemos en el curso."</em>
 
