@@ -4,23 +4,4 @@
   {{ partial (printf "blocks/%s.html" .type) . }}
 {{ end }}
 
-{{- partial "testimonials.html" . -}}
-
-{{ partial "clients.html" (dict "context" . "background" "gloaming")}}
-
-{{ partial "partners.html" (dict "context" . "background" "light")}}
-
-<section id="sect-contact" class="dark background background-03">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2>Contacta con nosotros para obtener más información o reservar tu plaza en nuestras formaciones:</h2>
-        {{- partial "contactform.html" . -}}
-      </div>
-    </div>
-  </div>
-</section>
 {{ end }}

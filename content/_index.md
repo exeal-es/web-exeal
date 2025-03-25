@@ -60,4 +60,48 @@ blocks:
   # All courses
   - type: all-courses
     id: sect-courses
+
+  # Testimonials
+  - type: testimonials
+    id: sect-testimonials
+    className: gloaming
+    testimonials:
+      - name: "Victoria Kovaleva"
+        position: "Junior Software Engineer"
+        photo: "/images/testimonials/vika.jpeg"
+        text: "&ldquo;Cuando hablo con personas con 10 o 20 años experiencia, me dicen que ojalá ellos hubieran podido aprender al principio todo lo que yo sé ahora&rdquo;"
+        active: true
+      - name: "Samuel Álvarez"
+        position: "Software Engineer"
+        photo: "/images/testimonials/samu.jpeg"
+        text: "&ldquo;Lo que tú enseñas es una forma de desarrollar software, son muchas piezas que se juntan para formar un puzzle.&rdquo;"
+      - name: "David Lorenzo"
+        position: "Software Engineer"
+        photo: "/images/testimonials/davidlorenzo.jpeg"
+        text: "&ldquo;Aprender con Pedro fue un punto de inflexión en mi carrera profesional&rdquo;"
+      - name: "Fermín Saez"
+        position: "Senior Software Engineer"
+        photo: "/images/testimonials/fermin-saez.jpeg"
+        text: "&ldquo;Pensaba que sabía hacerlo muy bien cuando llegué a Voxel. Era consciente de que tenía cosas que mejorar, como mis habilidades en testing, pero cuando te conocí me abriste la mente.&rdquo;"
+      - name: "Meri Herrera"
+        position: "Senior Software Engineer"
+        photo: "/images/testimonials/meri-herrera.jpeg"
+        text: "&ldquo;El training de legacy code de Exeal me dejó un montón de tips útiles que vienen muy bien para aplicar en el día a día. Además de aprender y reforzar estrategias existentes para que el código legacy sea un poco más amigable y no tan temido. ¡Lo súper recomiendo!&rdquo;"
+      - name: "Humberto Braojos"
+        position: "Senior Software Engineer"
+        photo: "/images/testimonials/humberto-braojos.jpeg"
+        text: "&ldquo;Ahora me enfrento a los cambios en el código legacy con mucha más tranquilidad, confianza en el resultado y eficiencia. Resaltaría particularmente los ejercicios de extraer dependencias, solía ser el punto de mayor dolor al añadir cobertura de tests.&rdquo;"
+
+
+  # Clients
+  - type: clients
+
+  # Partners
+  - type: partners
+
+  # Contact Form
+  - type: contact-form
+    id: sect-contact-form
+    className: dark background background-03
+    title: "Contacta con nosotros para obtener más información o reservar tu plaza en nuestras formaciones:"
 ---
