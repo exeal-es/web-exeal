@@ -203,6 +203,16 @@ blocks:
       - De la pradera por la gloria de mi madre amatomaa.
       - Condemor me cago en tus muelas la caidita no te digo trigo por no llamarte Rodrigor
 
+  # Hero with image
+  - type: hero-with-image
+    id: sect-hero-with-image
+    className: dark background background-03
+    header: Lorem fistrum amatomaa llevame al sircoo se calle ustée
+    subheader: Te va a hasé pupitaa por la gloria de mi madre llevame al sircoo ese pedazo de qué dise usteer qué dise usteer la caidita va usté muy cargadoo
+    image: /assets/img/photo-training-module.png
+    ctaText: Compra pecador
+    ctaHref: https://www.chiquitoipsum.com/
+
   # Blocks
   - type: blocks
     id: sect-blocks
