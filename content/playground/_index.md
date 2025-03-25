@@ -203,6 +203,22 @@ blocks:
       - De la pradera por la gloria de mi madre amatomaa.
       - Condemor me cago en tus muelas la caidita no te digo trigo por no llamarte Rodrigor
 
+  # Blocks
+  - type: blocks
+    id: sect-blocks
+    className: light
+    header: Al ataquerl fistro benemeritaar me cago en tus muelas está la cosa muy malar <em>hasta luego Lucas</em> ese hombree
+    paragraph: Caballo blanco caballo negroorl condemor no puedor diodenoo a peich <em>al ataquerl</em> está la cosa muy malar ese que llega se calle ustée te voy a borrar el cerito
+    blocks:
+      - Condemor de la pradera
+      - Condemor de la pradera
+      - Condemor de la pradera
+      - Condemor de la pradera
+      - Condemor de la pradera
+      - Condemor de la pradera
+      - Condemor de la pradera
+      - Condemor de la pradera
+
   # Call to action
   - type: call-to-action
     id: sect-cta
