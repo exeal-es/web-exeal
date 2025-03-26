@@ -30,4 +30,4 @@ Formas parte del equipo que explora Marte enviando vehículos controlados de for
 
 ## Recursos
 
-Fuente: [https://technologyconversations.com/2014/10/17/java-tutorial-through-katas-mars-rover/](https://technologyconversations.com/2014/10/17/java-tutorial-through-katas-mars-rover/)
+Fuente: [https://web.archive.org/web/20230604125850/https://technologyconversations.com/2014/10/17/java-tutorial-through-katas-mars-rover/](https://web.archive.org/web/20230604125850/https://technologyconversations.com/2014/10/17/java-tutorial-through-katas-mars-rover/)
