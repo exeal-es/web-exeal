@@ -337,6 +337,26 @@ blocks:
   - type: all-courses
     id: sect-courses
 
+  # Precios
+  - type: prices
+    id: sect-prices
+    className: gloaming
+    header: Descubre nuestros <em>precios</em>.
+    prices:
+      - name: Early bird
+        amountInEuro: 49
+        taxes: "*IVA incluido"
+        details: Disponible hasta el Domingo 6/4/2025, 23:59
+        enabled: true
+        cta: Inscríbete
+        checkoutUrl: https://academia.exeal.com/enroll/3209522?price_id=4235954
+      - name: Precio regular
+        amountInEuro: 97
+        taxes: "*IVA incluido"
+        enabled: true
+        cta: Inscríbete
+        checkoutUrl: https://academia.exeal.com/enroll/3209522?price_id=4097710
+
   # Call to action
   - type: call-to-action
     id: sect-cta

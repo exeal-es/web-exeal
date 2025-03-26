@@ -18,8 +18,8 @@ blocks:
     paragraphs:
       - "Próxima edición: 25 y 26 de abril de 2025 (Online)"
     callToAction:
-      text: Pre-inscribete ahora
-      scrollTo: sect-cta
+      text: Inscribete ahora
+      scrollTo: sect-prices
 
   # The stakes
   - type: stakes-with-image
@@ -62,8 +62,8 @@ blocks:
       - Tomar las riendas de tu carrera como desarrollador.
     paragraph2: Este curso no es teoría vacía. Es todo lo que necesitas para <em>avanzar con confianza</em>.
     callToAction:
-      text: Pre-inscribete ahora
-      scrollTo: sect-cta
+      text: Inscribete ahora
+      scrollTo: sect-prices
 
   # Syllabus
   - type: syllabus
@@ -86,8 +86,8 @@ blocks:
         description: Te convertirás en un profesional más sólido, desarrollando aspectos clave como liderazgo, comunicación y aprendizaje continuo.
     paragraph2: Estos pilares te proporcionan las herramientas necesarias para avanzar como desarrollador, impactar en tu equipo y contribuir al éxito de los productos que creas.
     callToAction:
-      text: Pre-inscribete ahora
-      scrollTo: sect-cta
+      text: Inscribete ahora
+      scrollTo: sect-prices
 
   # Syllabus extended
   - type: syllabus-extended
@@ -210,6 +210,26 @@ blocks:
       - Por otro lado, exploraremos cómo trabajan en el día a día los equipos de desarrollo de alto rendimiento para conseguir maximizar su impacto, así cómo qué habilidades desarrollar, como liderazgo, comunicación y mentalidad de producto, para aportar el máximo valor.
       - "Si quieres mejorar tus habilidades, reducir la frustración y avanzar en tu carrera como desarrollador, 'Pilares del Software' es tu oportunidad para dominar las herramientas y técnicas que marcan la diferencia. No importa si trabajas en backend, frontend o full stack: este curso te dará una base sólida que podrás aplicar desde el primer día."
 
+  # Precios
+  - type: prices
+    id: sect-prices
+    className: gloaming
+    header: Descubre nuestros <em>precios</em>.
+    prices:
+      - name: Early bird
+        amountInEuro: 49
+        taxes: "*IVA incluido"
+        details: Disponible hasta el Domingo 6/4/2025, 23:59
+        enabled: true
+        cta: Inscríbete
+        checkoutUrl: https://academia.exeal.com/enroll/3209522?price_id=4235954
+      - name: Precio regular
+        amountInEuro: 97
+        taxes: "*IVA incluido"
+        enabled: true
+        cta: Inscríbete
+        checkoutUrl: https://academia.exeal.com/enroll/3209522?price_id=4097710
+
   # Contrarian
   - type: contrarian
     id: sect-stakes-2
@@ -236,7 +256,6 @@ blocks:
     id: sect-cta
     className: dark background background-07
     header: Deja de improvisar. Construye tu futuro como desarrollador.
-    ctaLabel: Pre-inscribete ahora
-#    ctaHref: https://academia.exeal.com/order?ct=d072bf22-a0b8-48b4-83de-6733758c3897
-    ctaHref: https://docs.google.com/forms/d/e/1FAIpQLScdzT2IB3-95p-kr8nAUQfAkwW3rYyYlR-lgYx4671Bf3SAXg/viewform?usp=dialog
+    ctaLabel: Inscribete ahora
+    ctaHref: https://academia.exeal.com/enroll/3209522?price_id=4235954
 ---

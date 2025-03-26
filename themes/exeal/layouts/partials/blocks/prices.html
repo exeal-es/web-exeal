@@ -1,0 +1,30 @@
+<section id="{{ .id }}" class="{{ .className }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>{{ .header | safeHTML }}</h2>
+        <div class="row">
+          {{ range .prices }}
+          <div class="col-xl-6 mb-3">
+            <div class="box price-box-left">
+              <div class="flap flap-top-right"></div>
+              <p class="price">{{ .amountInEuro }}<sup>€*</sup></p>
+              <h3>{{ .name }}</h3>
+              {{ if .details }}
+                <p>{{ .details }}</p>
+              {{ end }}
+              <p class="taxes">{{ .taxes }}</p>
+              {{ if .enabled }}
+                <a href="{{ .checkoutUrl }}" class="button">{{ .cta }}</a>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
