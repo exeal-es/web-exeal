@@ -1,3 +1,4 @@
+{{ $id := .id }}
 <section id="{{ .id }}" class="{{ .className }}">
   <div class="container">
     <div class="row">
@@ -8,8 +9,8 @@
         <h2>{{ .header }}</h2>
         <dl class="faq">
           {{ range .chapters }}
-          <dt data-toggle="collapse" href="#chapter{{ .number }}">{{ .number }}. {{ .chapter }}</dt>
-          <dd class="collapse" id="chapter{{ .number }}">
+          <dt data-toggle="collapse" href="#chapter{{ .number }}{{ $id }}">{{ .number }}. {{ .chapter }}</dt>
+          <dd class="collapse" id="chapter{{ .number }}{{ $id }}">
             <ul>
               {{ range .topics }}
               <li>- {{ . }}</li>

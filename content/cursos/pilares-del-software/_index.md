@@ -213,8 +213,8 @@ blocks:
   # Precios
   - type: prices
     id: sect-prices
-    className: gloaming
-    header: Descubre nuestros <em>precios</em>.
+    className: dark background background-02
+    header: <em>Precios</em>.
     prices:
       - name: Early bird
         amountInEuro: 49
@@ -229,6 +229,25 @@ blocks:
         enabled: true
         cta: Inscríbete
         checkoutUrl: https://academia.exeal.com/enroll/3209522?price_id=4097710
+
+  # FAQ
+  - type: syllabus-extended
+    id: sect-faq
+    className: gloaming
+    header: Preguntas frecuentes (click para ampliar)
+    chapters:
+      - chapter: ¿Qué horario tiene la formación
+        number: 1
+        topics:
+          - Ambos días, viernes y sábado, comenzaremos a las 10h de la mañana (horario de España peninsular). La formación se prolongará hasta las 19h-20h de la tarde. Habrá un espacio de 1:30h para comer, y pausas de 15-20 minutos a lo largo de la mañana y la tarde.
+      - chapter: ¿Qué formato tiene la formación?
+        number: 2
+        topics:
+          - El formato será una combinación de un directo en streaming para las partes de teoría, con chat y espacios de micro abierto para dudas, algunos espacios para práctica individual y en grupo (nosotros haremos los grupos), que incluyen prácticas de programación y dinámicas de grupo. También es posible que contemos con alguna ponencia invitada^^. Es un formato optimizado para el aprendizaje, y aunque es muy intenso, está pensado para que sea lo más ameno posible.
+      - chapter: ¿Se grabarán las sesiones?
+        number: 3
+        topics:
+          - Sí, pero las grabaciones únicamente estarán disponibles durante la semana posterior a la formación, y sólo se facilitarán a aquellas personas que, habiendo asistido a la formación, hayan tenido que abandonarla por causa de fuerza mayor. Pilares del software está pensado para ser una experiencia en directo y deseamos que todos los asistentes la experimenten así, pero entendemos que los imprevistos ocurren e intentaremos poner facilidades para adaptarnos.
 
   # Contrarian
   - type: contrarian
