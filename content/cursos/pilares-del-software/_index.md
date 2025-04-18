@@ -12,8 +12,8 @@ blocks:
   - type: hero
     id: sect-hero
     className: "dark background background-01"
-    header: Pilares del software
-    subheader: Construye tu futuro como desarrollador sobre los pilares del código sostenible, la entrega continua de valor y el liderazgo de equipos de alto rendimiento.
+    header: Aprende a programar sin caos, con propósito.
+    subheader: Con Pilares del Software vas a escribir código que no se rompe, reducir deuda técnica y entregar sin ansiedad. Aplicable desde el lunes.
     backgroundImage: /images/courses/pilares-high-res.jpg
     paragraphs:
       - "Próxima edición: 25 y 26 de abril de 2025 (Online)"
@@ -45,13 +45,13 @@ blocks:
       - Cada línea que escribes <em>aporta valor</em> al equipo y al negocio.
       - <em>Te sientes seguro</em> enfrentando cambios, porque sabes que tus pruebas automatizadas protegen tu trabajo.
       - Los bugs ya no te quitan el sueño y tu carrera avanza <em>con confianza</em>.
-    paragraph2: Es hora de construir <em>soluciones</em>, no problemas.
+    paragraph2: Es hora de dejar de sobrevivir y empezar a disfrutar el código.
 
   # Value proposition
   - type: ticked-list
     id: sect-value-proposition
-    className: dark background background-02
-    header: "<em>Pilares del Software</em>: La formación que cambiará tu forma de programar"
+    className: dark background background-03
+    header: "<em>Pilares del Software</em>: La formación que transforma cómo escribes código, piensas y colaboras como desarrollador."
     paragraph1: "Un programa intensivo y práctico diseñado para:"
     items:
       - Construir una base sólida de buenas prácticas en desarrollo de software.
@@ -60,10 +60,38 @@ blocks:
       - Alinear tus habilidades técnicas con objetivos reales del negocio.
       - Trabajar en equipos de alto rendimiento con otros profesionales motivados y enfocados.
       - Tomar las riendas de tu carrera como desarrollador.
-    paragraph2: Este curso no es teoría vacía. Es todo lo que necesitas para <em>avanzar con confianza</em>.
+    paragraph2: No es teoría para archivar. Es práctica para aplicar. <em>Lo que aprendes aquí, lo aplicas en tu código desde el primer día</em>. Así se nota el cambio.
     callToAction:
       text: Inscribete ahora
       scrollTo: sect-prices
+
+  # Diferenciador: Por qué este curso no es uno más
+  - type: ticked-list
+    id: sect-diferenciador
+    className: "light background background-06"
+    header: "¿Por qué no es un curso más?"
+    paragraph1: "Porque no vienes a mirar. Vienes a practicar lo que transforma tu día a día como desarrollador:"
+    items:
+      - 'No solo hablamos de testing: <em>escribes tests, refactorizas, y ves el impacto inmediato</em>.'
+      - 'No solo hablas de valor: <em>tomas decisiones técnicas con contexto de negocio real</em>.'
+      - 'No solo escuchas sobre equipos: <em>experimentas dinámicas que mejoran cómo trabajas en grupo</em>.'
+    paragraph2: "Esto no lo encuentras en vídeos ni en artículos. Es el tipo de aprendizaje que se queda contigo, porque lo vives y lo aplicas desde el primer momento."
+    callToAction:
+      text: Inscribete ahora
+      scrollTo: sect-prices
+
+  - type: ticked-list
+    id: sect-metodologia
+    className: "dark background background-04"
+    header: ¿Cómo aprenderás?
+    paragraph1: "Nada de sentarte a escuchar durante horas. <em>Aquí vienes a practicar</em>:"
+    items:
+      - 'Live coding: técnicas explicadas y aplicadas en tiempo real.'
+      - 'Retos prácticos guiados, con feedback de Pedro y del equipo.'
+      - 'Trabajo en parejas y pequeños equipos, simulando un entorno real.'
+      - 'Revisión de código y reflexión conjunta para aprender de los errores.'
+      - 'Dinámicas que van más allá del código: producto, equipo, comunicación.'
+      - 'Y no estarás solo: te acompañamos en cada reto, revisamos tu código y te damos feedback directo.'
 
   # Syllabus
   - type: syllabus
@@ -83,11 +111,24 @@ blocks:
         description: Comprenderás por qué los equipos multidisciplinares y autogestionados son aquellos que logran mayor impacto, y interiorizarás los factores de los equipos de alto rendimiento.
       - index: 4
         title: El Desarrollador
-        description: Te convertirás en un profesional más sólido, desarrollando aspectos clave como liderazgo, comunicación y aprendizaje continuo.
+        description: 'Ya seas junior o senior, trabajarás en desarrollar aspectos clave que hacen a un profesional de alto valor: liderazgo, comunicación, mentalidad de mejora continua.'
     paragraph2: Estos pilares te proporcionan las herramientas necesarias para avanzar como desarrollador, impactar en tu equipo y contribuir al éxito de los productos que creas.
     callToAction:
       text: Inscribete ahora
       scrollTo: sect-prices
+
+  # Aplicabilidad
+  - type: ticked-list
+    id: sect-aplicabilidad
+    className: "dark background background-05"
+    header: "¿Y si en mi empresa no aplicamos nada de esto?"
+    paragraph1: "Buena pregunta. Por eso este curso también te prepara para aplicar lo aprendido <em>incluso en contextos difíciles o legacy</em>:"
+    items:
+      - Aprenderás a mejorar tu código sin esperar que todo el equipo cambie.
+      - Verás cómo introducir prácticas de testing sin frenar al negocio.
+      - Entenderás qué batallas merece la pena luchar… y cómo hacerlo con inteligencia.
+      - Te llevarás una caja de herramientas adaptable a tu realidad, no a una empresa idealizada.
+    paragraph2: "No necesitas trabajar en una big tech como Google o Spotify para aplicar esto. Es para desarrolladores de verdad, en proyectos reales, con retos reales."
 
   # Syllabus extended
   - type: syllabus-extended
@@ -174,27 +215,44 @@ blocks:
     id: sect-testimonials
     className: gloaming
     testimonials:
-      - name: "Victoria Kovaleva"
-        position: "Junior Software Engineer"
-        photo: "/images/testimonials/vika.jpeg"
-        text: "&ldquo;Cuando hablo con personas con 10 o 20 años experiencia, me dicen que ojalá ellos hubieran podido aprender al principio todo lo que yo sé ahora&rdquo;"
-        active: true
-      - name: "Fermín Saez"
-        position: "Senior Software Engineer"
-        photo: "/images/testimonials/fermin-saez.jpeg"
-        text: "&ldquo;Pensaba que sabía hacerlo muy bien cuando llegué a Voxel. Era consciente de que tenía cosas que mejorar, como mis habilidades en testing, pero cuando te conocí me abriste la mente.&rdquo;"
-      - name: "Samuel Álvarez"
-        position: "Software Engineer @ Voxel Group"
-        photo: "/images/testimonials/samu.jpeg"
-        text: "&ldquo;Lo que tú enseñas es una forma de desarrollar software, son muchas piezas que se juntan para formar un puzzle.&rdquo;"
-      - name: "Raúl Gómez"
-        position: "Software Engineer"
-        photo: "/images/testimonials/raulgomez.jpeg"
-        text: "&ldquo;He aprendido es que el código se puede criticar, pero no a la persona que lo hace, porque la persona que lo ha hecho lo hace lo mejor que puede en el momento en el que hizo el código. Eso es algo que me ha dado mucha seguridad. Me voy a dormir más tranquilo.&rdquo;"
-      - name: "David Lorenzo"
-        position: "Software Engineer @ Voxel Group"
-        photo: "/images/testimonials/davidlorenzo.jpeg"
-        text: "&ldquo;Aprender con Pedro fue un punto de inflexión en mi carrera profesional&rdquo;"
+    - name: "Victoria Kovaleva"
+      position: "Junior Software Engineer"
+      photo: "/images/testimonials/vika.jpeg"
+      text: "&ldquo;Me he dado cuenta de que si hubiera seguido como estaba, sin esta formación, me hubiera costado años llegar al nivel de claridad y confianza que tengo ahora.&rdquo;"
+      active: true
+
+    - name: "Fermín Saez"
+      position: "Senior Software Engineer"
+      photo: "/images/testimonials/fermin-saez.jpeg"
+      text: "&ldquo;Yo pensaba que sabía hacerlo muy bien. Pero cuando vi tu forma de trabajar, me cambió la perspectiva. No era solo mejorar el código, era mejorar mi forma de pensar como desarrollador.&rdquo;"
+
+    - name: "Raúl Gómez"
+      position: "Software Engineer"
+      photo: "/images/testimonials/raulgomez.jpeg"
+      text: "&ldquo;Antes me daba miedo que criticaran mi código. Ahora sé que criticar el código no es criticarme a mí. Eso me ha dado mucha seguridad para trabajar en equipo.&rdquo;"
+
+    - name: "Samuel Álvarez"
+      position: "Software Engineer @ Voxel Group"
+      photo: "/images/testimonials/samu.jpeg"
+      text: "&ldquo;Para mí no ha sido solo aprender técnicas. Ha sido entender cómo encajan entre sí para construir algo sólido. Como un puzzle que por fin tiene sentido.&rdquo;"
+
+    - name: "David Lorenzo"
+      position: "Software Engineer @ Voxel Group"
+      photo: "/images/testimonials/davidlorenzo.jpeg"
+      text: "&ldquo;Aprender contigo fue un punto de inflexión en mi carrera. Cambié mi forma de pensar y de escribir código. Ya no improviso, sé lo que hago.&rdquo;"
+
+  # Para quién es
+  - type: ticked-list
+    id: sect-para-quien-es
+    className: "dark background background-03"
+    header: "¿Es este curso para ti?"
+    paragraph1: "Sí, si te reconoces en alguna de estas situaciones:"
+    items:
+      - Estás empezando y no quieres aprender con malas prácticas que luego cuesten años corregir.
+      - Llevas años programando, pero sientes que estás atrapado en el caos y quieres un enfoque más profesional.
+      - Eres senior y buscas claridad, estructura y herramientas para impactar más en tu equipo o en tu producto.
+      - Trabajas en un entorno que no facilita la mejora, y quieres aprender cómo avanzar desde donde estás, sin esperar a que todo cambie.
+      - Te interesa no solo escribir código, sino **entender cómo conectar con el negocio, el equipo y tu propio desarrollo profesional**.
 
   # Clients
   - type: clients
@@ -205,10 +263,11 @@ blocks:
     className: light background background-06
     header: Es hora de transformar tu manera de programar y liderar proyectos de software.
     paragraphs:
-      - En Exeal, entendemos lo frustrante que puede ser trabajar con código legacy desordenado o sentir que cada cambio añade más deuda técnica a tu proyecto. ¿Te has encontrado apagando incendios en lugar de construir soluciones duraderas? 'Pilares del Software' está diseñado para cambiar esa dinámica, ayudándote a implementar código limpio, reducir la deuda técnica y trabajar con confianza en cualquier entorno, ya seas backend o frontend, junior o senior.
+      - En Exeal, entendemos lo frustrante que puede ser trabajar en código legacy, con presión constante de fechas o en equipos donde nadie se preocupa por la calidad. No todos los entornos son ideales, pero eso no significa que no puedas mejorar. 'Pilares del Software' está diseñado para darte herramientas reales que puedes aplicar <em>incluso en contextos difíciles</em>, paso a paso y sin necesidad de cambiar el mundo de golpe.
       - A lo largo del curso, aprenderás a aplicar conceptos como Código limpio o Micro-refactoring, que garantizan aplicaciones mantenibles y escalables, además de desarrollar tests automatizados para asegurar la calidad del código. También descubrirás cómo CI/CD puede transformar la forma en que entregas valor de manera continua y eficiente.
       - Por otro lado, exploraremos cómo trabajan en el día a día los equipos de desarrollo de alto rendimiento para conseguir maximizar su impacto, así cómo qué habilidades desarrollar, como liderazgo, comunicación y mentalidad de producto, para aportar el máximo valor.
       - "Si quieres mejorar tus habilidades, reducir la frustración y avanzar en tu carrera como desarrollador, 'Pilares del Software' es tu oportunidad para dominar las herramientas y técnicas que marcan la diferencia. No importa si trabajas en backend, frontend o full stack: este curso te dará una base sólida que podrás aplicar desde el primer día."
+      - No necesitas permiso para aplicar lo aprendido. Desde escribir mejor código hoy, hasta introducir prácticas como micro-refactoring o tests, el cambio empieza contigo. Y si lideras equipo o aspiras a hacerlo, te llevas también herramientas para inspirar cambio sin imponerlo.
 
   # Precios
   - type: prices
@@ -243,7 +302,9 @@ blocks:
       - chapter: ¿Qué formato tiene la formación?
         number: 2
         topics:
-          - El formato será una combinación de un directo en streaming para las partes de teoría, con chat y espacios de micro abierto para dudas, algunos espacios para práctica individual y en grupo (nosotros haremos los grupos), que incluyen prácticas de programación y dinámicas de grupo. También es posible que contemos con alguna ponencia invitada^^. Es un formato optimizado para el aprendizaje, y aunque es muy intenso, está pensado para que sea lo más ameno posible.
+          - Cada módulo combina teoría directa con <strong>ejercicios prácticos guiados</strong>, donde escribirás código, aplicarás técnicas y recibirás feedback.
+          - Trabajarás en pareja o en grupo en dinámicas de programación, refactorización y diseño.
+          - El formato mezcla partes en streaming, sesiones en salas pequeñas (breakouts) y ejercicios individuales. Es intenso, pero está diseñado para que <em>lo que aprendas, lo pongas en práctica en el momento</em>.
       - chapter: ¿Se grabarán las sesiones?
         number: 3
         topics:
@@ -269,12 +330,13 @@ blocks:
       - Aprende a escribir código limpio y construir aplicaciones mantenibles.
       - Conecta tu trabajo con el negocio a través de un mindset de producto.
       - Avanza con confianza y cambia tu relación con el desarrollo.
+      - Tanto si estás empezando como si llevas años en esto, vas a salir con una caja de herramientas que puedes aplicar desde el lunes siguiente.
 
   # Call to action
   - type: call-to-action
     id: sect-cta
     className: dark background background-07
-    header: Deja de improvisar. Construye tu futuro como desarrollador.
+    header: Deja de improvisar. Aprende a programar con criterio, confianza y propósito.
     ctaLabel: Inscribete ahora
     ctaHref: https://academia.exeal.com/enroll/3209522?price_id=4235954
 ---
