@@ -97,6 +97,9 @@ blocks:
           - Testing de componentes y end-to-end en frontend con Cypress
           - Approval testing para validar sistemas legacy o difíciles de testear
 
+  # Clients
+  - type: clients
+  
   - type: call-to-action
     id: sect-cta
     className: dark background background-07

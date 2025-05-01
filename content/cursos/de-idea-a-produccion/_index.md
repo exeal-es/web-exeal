@@ -98,7 +98,9 @@ blocks:
           - Diseño de pipelines de integración y despliegue continuo centradas en flujo
           - Cómo adaptar la pipeline al tipo de hipótesis o fase del producto
           - 'Instrumentación y feedback post-producción: aprendizaje desde la entrega'
-
+  # Clients
+  - type: clients
+  
   - type: call-to-action
     id: sect-cta
     className: dark background background-07

@@ -108,6 +108,9 @@ blocks:
           - Análisis de flujos críticos y estimación del coste de interrupción.
           - Diferenciar costes directos (errores, operativa) y de oportunidad (features no entregadas).
 
+  # Clients
+  - type: clients
+  
   - type: call-to-action
     id: sect-cta
     className: dark background background-07

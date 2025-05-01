@@ -101,6 +101,9 @@ blocks:
           - 'Patrones de microservicios: coreografía, orquestación, API Composition, BFFs'
           - Fuerzas de “materia oscura” vs “energía oscura” en diseño arquitectónico (latencia, consistencia, resiliencia vs cohesión, simplicidad, velocidad de desarrollo)
 
+  # Clients
+  - type: clients
+
   - type: call-to-action
     id: sect-cta
     className: dark background background-07

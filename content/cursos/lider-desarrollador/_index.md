@@ -101,6 +101,9 @@ blocks:
           - 'Comunicación adaptable: ajustar tu mensaje a diferentes perfiles'
           - 'Public speaking: preparar y defender discursos que impactan emocionalmente'
 
+  # Clients
+  - type: clients
+  
   # Call to action
   - type: call-to-action
     id: sect-cta
