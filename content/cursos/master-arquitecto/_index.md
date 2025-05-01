@@ -1,27 +1,93 @@
 ---
-title: "Training de Refactorización hacia Domain-Driven Design"
-description: "Domina todas las técnicas para escribir código que soporte el paso del tiempo, desde el código limpio a la arquitectura de software."
-date: 2022-10-01T15:00:00+02:00
+title: "Formacion avanzada: Master Arquitecto"
+description: "Aprende a construir sistemas modulares, escalables y mantenibles aplicando DDD, arquitectura hexagonal, CQRS, patrones de diseño y análisis de trade-offs técnicos en entornos reales."
+date: 2025-05-01T00:00:00+02:00
 layout: course
-hidden: true
-course_featured_image: /images/courses/master-arquitecto.png
 course_title: "Master arquitecto"
-course_prefix: ""
-course_level: advanced
-redirect_submission_url: https://www.exeal.com/cursos/refactoring-hacia-domain-driven-design/programa/
-course_claim_header: ¿Crees que es muy tarde para que tu aplicación se beneficie de aplicar las técnicas de Domain-Driven Design, Arquitectura Hexagonal y CQRS?
-course_claim_body: En esta formación, combinamos técnicas de refactoring con los principales fundamentos de Domain-Driven Design, para que puedas rescatar y modernizar cualquier aplicación legacy.
-learning_objectives:
-  - "Conocer y aplicar los principios del paradigma de Domain-Driven Design para escribir
-aplicaciones mantenibles en colaboración con los expertos de dominio."
-  - "Conocer y aplicar los patrones arquitectónicos que soportan una implementación
-exitosa de Domain Driven Design, como rich domain model, ports and adapters y los
-building blocks del modelo de dominio."
-  - "Identificar la lógica de negocio acoplada de un proyecto legacy en forma de modelo
-anémico y separarla usando value objects y service layer hacia un modelo rico."
-  - "Evitar el acoplamiento con la base de datos usando el patrón repositorio."
-  - "Desacoplar diferentes bounded context (in-process o remotos) mediante eventos de
-dominio."
-  - "Cómo identificar los invariantes del dominio y determinar las fronteras entre los
-agregados en consecuencia."
+course_featured_image: /images/courses/master-arquitecto.png
+course_visible: true
+blocks:
+  - type: hero
+    id: sect-hero
+    className: dark background background-01
+    header: Master Arquitecto
+    subheader: Domina los principios de diseño evolutivo y arquitectura de software moderna.
+    backgroundImage: /images/courses/master-arquitecto.png
+    paragraphs:
+      - Aprenderás a construir sistemas modulares, escalables y mantenibles aplicando DDD, arquitectura hexagonal, CQRS, patrones de diseño y análisis de trade-offs técnicos en entornos reales.
+
+  - type: stakes-with-image
+    id: sect-stakes
+    className: light
+    image: /images/courses/master-arquitecto.png
+    header: Esta formación es para ti si…
+    list:
+      - Detectas problemas en el diseño, pero <em>no sabes cómo abordarlos sin romper nada</em>.
+      - Estás aplicando patrones o principios, pero <em>sin criterio claro ni coherencia estructural</em>.
+      - <em>Tomas decisiones de arquitectura por intuición</em>, sin evaluar bien sus trade-offs.
+      - Tu sistema se ha vuelto difícil de mantener, <em>y cada cambio cuesta más de lo que debería</em>.
+      - Tienes que justificar decisiones técnicas, pero <em>te faltan argumentos sólidos y visuales</em>.
+      - <em>No sabes cómo adaptar la arquitectura al dominio o al contexto real del producto.</em>
+
+  - type: ticked-list
+    id: sect-benefits
+    className: gloaming
+    header: Qué vas a aprender
+    items:
+      - Distinguir entre complejidad esencial y accidental, y reducir esta última con diseño intencional.
+      - Detectar y resolver code smells aplicando refactorizaciones guiadas por TDD.
+      - Aplicar patrones de diseño y principios SOLID/CUPID con criterio, no por checklist.
+      - Evaluar decisiones arquitectónicas basadas en propiedades del código y sus tradeoffs.
+      - Diseñar componentes y módulos con bajo acoplamiento y alta cohesión.
+      - Aplicar arquitectura hexagonal y clean para estructurar sistemas sostenibles y testeables.
+      - Modelar dominios complejos con DDD y CQRS, y alinearlos con una arquitectura centrada en el dominio.
+      - Comparar monolitos, microservicios y monolitos modulares con argumentos técnicos sólidos.
+
+  - type: syllabus-extended
+    id: sect-syllabus
+    className: light
+    header: Temario completo
+    chapters:
+      - number: 1
+        chapter: Fundamentos de diseño evolutivo
+        topics:
+          - Complejidad esencial vs accidental
+          - Code smells y refactorización con TDD
+          - 'Principios de diseño: SOLID, CUPID'
+          - Evaluación de propiedades del código y visualización de trade-offs
+      - number: 2
+        chapter: Diseño modular y componentes
+        topics:
+          - Principios de diseño de componentes (REP, CCP, CRP)
+          - Refactoring to Patterns
+          - Patrones de diseño (GoF y más) aplicados a código real
+      - number: 3
+        chapter: Patrones arquitectónicos clásicos y modernos
+        topics:
+          - Model-View-Controller (MVC)
+          - Arquitectura hexagonal
+          - Clean Architecture
+          - Vertical Slice Architecture
+          - Inversión de dependencias, inyección de dependencias, inversión de control
+      - number: 4
+        chapter: Diseño guiado por el dominio (DDD)
+        topics:
+          - Entidades, Value Objects, Repositorios, Factories, Domain Events
+          - DDD aplicado a arquitecturas hexagonales
+          - 'Separación de comandos y consultas: CQRS'
+          - CQRS en el contexto de DDD
+      - number: 5
+        chapter: Escalabilidad, modularidad y estilos de despliegue
+        topics:
+          - Monolitos vs microservicios
+          - Monolito modular y sus ventajas
+          - 'Patrones de microservicios: coreografía, orquestación, API Composition, BFFs'
+          - Fuerzas de “materia oscura” vs “energía oscura” en diseño arquitectónico (latencia, consistencia, resiliencia vs cohesión, simplicidad, velocidad de desarrollo)
+
+  - type: call-to-action
+    id: sect-cta
+    className: dark background background-07
+    header: ¿Estás listo para dejar de improvisar y empezar a diseñar con criterio, intención y solidez técnica?
+    ctaLabel: Contacta para reservar tu plaza
+    ctaHref: https://www.exeal.com/contacto
 ---
