@@ -13,7 +13,7 @@
           <dd class="collapse" id="chapter{{ .number }}{{ $id }}">
             <ul>
               {{ range .topics }}
-              <li>- {{ . }}</li>
+              <li>- {{ . | safeHTML }}</li>
               {{ end }}
             </ul>
           </dd>

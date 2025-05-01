@@ -9,16 +9,19 @@
             class="course-header"
             style="background-image: url('{{ .Params.course_featured_image }}')"
           >
-            <div class="featured-course">¡Próximamente!</div>
+            {{ if not .Params.course_visible }}
+              <div class="featured-course">¡Próximamente!</div>
+            {{ end }}
           </div>
           <div class="course-body">
             <h3>{{ .Params.course_title }}</h3>
             <p class="description">{{ .Description }}</p>
-            <!--
+            {{ if .Params.course_visible }}
             <a class="button button-green expand" href="{{ .Permalink }}"
               >Más info</a
             >
-            -->
+            {{ end }}
+            
           </div>
         </div>
       </div>
