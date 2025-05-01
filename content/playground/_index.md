@@ -2,7 +2,7 @@
 title: "Dev playground"
 description: "Collections of building blocks."
 date: 2025-01-01T00:00:00+02:00
-layout: pilaresdelsoftware
+layout: blocks
 hidden: true
 blocks:
   # VSL

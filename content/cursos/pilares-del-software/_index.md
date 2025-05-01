@@ -2,7 +2,7 @@
 title: "Pilares del Software"
 description: "Construye tu futuro como desarrollador sobre los pilares del código sostenible, la entrega continua de valor y el liderazgo de equipos de alto rendimiento."
 date: 2024-12-06T00:00:00+02:00
-layout: pilaresdelsoftware
+layout: blocks
 featured: true
 images: [/images/ogcard/pilares-del-software.png]
 course_featured_image: /images/courses/pilares-del-software.png

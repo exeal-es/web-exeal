@@ -501,7 +501,7 @@ Here's a **minimal sample Hugo page** using your block system, written in Markdo
 title: "Sample Page"
 description: "A minimal sample using Hugo blocks"
 date: 2025-03-25
-layout: pilaresdelsoftware
+layout: blocks
 blocks:
   - type: hero
     id: sect-hero
