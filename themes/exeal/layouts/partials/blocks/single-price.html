@@ -1,0 +1,35 @@
+<section id="{{ .id }}" class="{{ .className }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-sm-none d-md-block">
+        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <h2>
+          {{ .header | safeHTML }}
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-xl-12 mb-12">
+            <div class="box price-box-left">
+              <div class="flap flap-top-right"></div>
+              <p class="price-before">{{ .price.amountInEuroBefore }}€</p>
+              <p class="price">{{ .price.amountInEuro }}<sup>€*</sup></p>
+              <h3>{{ .price.name }}</h3>
+              {{ if .price.details }}
+                <p>{{ .price.details | safeHTML }}</p>
+              {{ end }}
+              <p class="taxes">{{ .price.taxes }}</p>
+              {{ if .price.enabled }}
+                <a href="{{ .price.checkoutUrl }}" class="button">{{ .price.cta }}</a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

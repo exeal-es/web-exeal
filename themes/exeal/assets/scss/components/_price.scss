@@ -12,6 +12,15 @@ p.price sup {
   font-size: 3rem;
 }
 
+p.price-before {
+  font-family: $h2-font, sans-serif;
+  color: $secondary-color;
+  font-size: 2em;
+  text-decoration: line-through;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 @media (min-width: 1200px) {
   div.price-box-left {
     margin-right: 1em;

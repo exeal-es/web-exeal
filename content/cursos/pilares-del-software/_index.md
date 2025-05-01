@@ -270,28 +270,18 @@ blocks:
       - No necesitas permiso para aplicar lo aprendido. Desde escribir mejor código hoy, hasta introducir prácticas como micro-refactoring o tests, el cambio empieza contigo. Y si lideras equipo o aspiras a hacerlo, te llevas también herramientas para inspirar cambio sin imponerlo.
 
   # Precios
-  - type: prices
+  - type: single-price
     id: sect-prices
     className: dark background background-04
-    header: <em>Precios</em>.
-    prices:
-      - name: Early Bird
-        amountInEuro: 29
-        details: LIMITADO a 30 plazas. Disponible hasta el Jueves 31/7/2025, 23:59 o hasta agotar
-        enabled: true
-        cta: Inscríbete
-        checkoutUrl: https://academia.exeal.com/enroll/3372757?price_id=4280871
-      - name: Precio regular
-        amountInEuro: 59
-        details: Disponible hasta el Lunes 8/9/2025, 23:59
-        enabled: true
-        cta: Inscríbete
-        checkoutUrl: https://academia.exeal.com/enroll/3372757?price_id=4280869
-      - name: Late Bird
-        amountInEuro: 109
-        enabled: true
-        cta: Inscríbete
-        checkoutUrl: https://academia.exeal.com/enroll/3372757?price_id=4280873
+    header: <em>Precio</em>.
+    price:
+      name: Oferta Early Bird
+      amountInEuroBefore: 109
+      amountInEuro: 29
+      details: LIMITADO a las primeras <em>30 plazas</em>. Disponible hasta el Jueves 31/7/2025, 23:59 o <em>hasta agotar</em>.
+      enabled: true
+      cta: Inscríbete
+      checkoutUrl: https://academia.exeal.com/enroll/3372757?price_id=4280871
 
   # FAQ
   - type: syllabus-extended
