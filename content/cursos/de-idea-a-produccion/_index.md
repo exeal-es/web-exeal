@@ -62,7 +62,7 @@ blocks:
   - type: syllabus-extended
     id: sect-syllabus
     className: light
-    header: Temario completo
+    header: Temario completo (click para ampliar)
     chapters:
       - number: 1
         chapter: Entender el problema y definir el producto
