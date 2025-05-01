@@ -1,7 +1,7 @@
 ---
 title: "Pilares del Software"
 description: "Construye tu futuro como desarrollador sobre los pilares del código sostenible, la entrega continua de valor y el liderazgo de equipos de alto rendimiento."
-date: 2024-12-06T00:00:00+02:00
+date: 2025-05-01T00:00:00+02:00
 layout: blocks
 featured: true
 images: [/images/ogcard/pilares-del-software.png]
@@ -16,7 +16,7 @@ blocks:
     subheader: Con Pilares del Software vas a escribir código que no se rompe, reducir deuda técnica y entregar sin ansiedad. Aplicable desde el lunes.
     backgroundImage: /images/courses/pilares-high-res.jpg
     paragraphs:
-      - "Próxima edición: 25 y 26 de abril de 2025 (Online)"
+      - "Próxima edición: 12 y 13 de septiembre de 2025 (Online)"
     callToAction:
       text: Inscribete ahora
       scrollTo: sect-prices
@@ -272,22 +272,26 @@ blocks:
   # Precios
   - type: prices
     id: sect-prices
-    className: dark background background-02
+    className: dark background background-04
     header: <em>Precios</em>.
     prices:
-      - name: Early bird
-        amountInEuro: 49
-        taxes: "*IVA incluido"
-        details: Disponible hasta el Martes 22/4/2025, 23:59
+      - name: Early Bird
+        amountInEuro: 29
+        details: LIMITADO a 30 plazas. Disponible hasta el Jueves 31/7/2025, 23:59 o hasta agotar
         enabled: true
         cta: Inscríbete
-        checkoutUrl: https://academia.exeal.com/enroll/3209522?price_id=4235954
+        checkoutUrl: https://academia.exeal.com/enroll/3372757?price_id=4280871
       - name: Precio regular
-        amountInEuro: 97
-        taxes: "*IVA incluido"
+        amountInEuro: 59
+        details: Disponible hasta el Lunes 8/9/2025, 23:59
         enabled: true
         cta: Inscríbete
-        checkoutUrl: https://academia.exeal.com/enroll/3209522?price_id=4097710
+        checkoutUrl: https://academia.exeal.com/enroll/3372757?price_id=4280869
+      - name: Late Bird
+        amountInEuro: 109
+        enabled: true
+        cta: Inscríbete
+        checkoutUrl: https://academia.exeal.com/enroll/3372757?price_id=4280873
 
   # FAQ
   - type: syllabus-extended
@@ -308,7 +312,7 @@ blocks:
       - chapter: ¿Se grabarán las sesiones?
         number: 3
         topics:
-          - Sí, pero las grabaciones únicamente estarán disponibles durante la semana posterior a la formación, y sólo se facilitarán a aquellas personas que, habiendo asistido a la formación, hayan tenido que abandonarla por causa de fuerza mayor. Pilares del software está pensado para ser una experiencia en directo y deseamos que todos los asistentes la experimenten así, pero entendemos que los imprevistos ocurren e intentaremos poner facilidades para adaptarnos.
+          - Sí, pero las grabaciones únicamente estarán disponibles durante la semana posterior a la formación, por si no pudiste acceder en directo.
 
   # Contrarian
   - type: contrarian
@@ -324,7 +328,7 @@ blocks:
     className: dark background-03
     header: "Pilares del software incluye:"
     items:
-      - "Curso intensivo online: 25 y 26 de abril de 2025 (más fechas por confirmar, también en presencial)"
+      - "Curso intensivo online: 12 y 13 de septiembre de 2025"
       - 16 horas de formación en directo, en sesiones prácticas y dinámicas, aplicable desde el primer día.
       - "4 pilares del software: código, producto, equipo y desarrollador."
       - Aprende a escribir código limpio y construir aplicaciones mantenibles.
@@ -338,5 +342,5 @@ blocks:
     className: dark background background-07
     header: Deja de improvisar. Aprende a programar con criterio, confianza y propósito.
     ctaLabel: Inscribete ahora
-    ctaHref: https://academia.exeal.com/enroll/3209522?price_id=4235954
+    ctaHref: https://academia.exeal.com/enroll/3372757?price_id=4280871
 ---
