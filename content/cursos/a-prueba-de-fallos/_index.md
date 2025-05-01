@@ -1,21 +1,89 @@
 ---
-title: "Curso de Test Driven Development"
+title: "Formacion avanzada: A prueba de fallos"
 description: "Aumenta la estabilidad de tu software a través de las diferentes técnicas y estrategias de tests automatizados."
-date: 2020-09-24T09:00:00+02:00
-hidden: true
+date: 2025-05-01T00:00:00+02:00
 layout: course
-course_featured_image: /images/courses/a-prueba-de-fallos.png
 course_title: "A prueba de fallos"
-course_prefix: ""
-course_level: beginner
-redirect_submission_url: https://www.exeal.com/cursos/test-driven-development/programa/
-course_claim_header: No se trata únicamente de escribir los tests antes que el código, esa es <em>la parte más sencilla</em>.
-course_claim_body: Con TDD podrás escribir código radicalmente más simple, mantenible, expresivo y conciso. <em>Vuélvete realmente productivo</em> y evita gastar tiempo en depurar fallos y reimplementar funcionalidades, escribiendo <em>código que soporte el paso del tiempo</em>.
-learning_objectives:
-  - "Emplear el estilo test-first de programación, en el que los tests se escriben antes que el código, para crear una sólida red de seguridad basada en tests automáticos."
-  - "Adoptar el ciclo red-green-refactor para no escribir más código del estrictamente necesario para implementar los requisitos."
-  - "Escribir tests basados en el comportamiento del software (el dominio) en lugar de su implementación, que protejan ante futuros cambios y sirvan como documentación."
-  - "Usar los tests como herramienta de feedback para tomar decisiones de diseño."
-  - "Interiorizar hábitos y patrones para aplicar la técnica *test-first* de forma efectiva."
-  - "Aprender los principios de diseño necesarios para desarrollar aplicaciones orientadas a objetos más complejas con TDD."
+course_featured_image: /images/courses/a-prueba-de-fallos.png
+course_visible: true
+blocks:
+  - type: hero
+    id: sect-hero
+    className: dark background background-01
+    header: A prueba de fallos
+    subheader: Construye software fiable y mantenible elevando tu nivel de testing.
+    backgroundImage: /images/courses/a-prueba-de-fallos.png
+    paragraphs:
+      - Aprenderás a diseñar estrategias de testing efectivas, aplicar TDD avanzado, usar testing de performance, contract testing, mutation testing y a automatizar la validación de calidad tanto en backend como en frontend.
+
+  - type: stakes-with-image
+    id: sect-stakes
+    className: light
+    image: /images/courses/a-prueba-de-fallos.png
+    header: Esta formación es para ti si…
+    list:
+      - <em>No sabes si puedes confiar en tu suite de tests</em>, o si es una falsa red de seguridad.
+      - TDD te suena útil, pero <em>no lo aplicas de forma práctica y constante en tu día a día</em>.
+      - Tienes tests, pero <em>no sabes si estás cubriendo lo que importa, o simplemente rellenando líneas.</em>
+      - Hay bugs en producción y <em>nadie sabe cómo se colaron</em>.
+      - <em>No tienes una estrategia clara de qué tipo de test usar en cada capa o contexto.</em>
+      - Te faltan herramientas para <em>automatizar, mantener y mejorar la calidad del sistema con confianza.</em>
+
+  - type: ticked-list
+    id: sect-benefits
+    className: gloaming
+    header: Qué vas a aprender
+    items:
+      - Diseñar una estrategia de testing coherente, alineada con el riesgo y el valor del sistema.
+      - Identificar y corregir test smells que degradan la calidad de tu suite de tests.
+      - 'Aplicar correctamente diferentes tipos de tests: unitarios, integración, end-to-end, contrato y colaboración.'
+      - Dominar técnicas avanzadas de TDD, outside-in y ATDD para desarrollar con tests como guía.
+      - Medir y mejorar la robustez de tu suite con mutation testing y property-based testing.
+      - Construir tests de performance realistas con herramientas como JMeter.
+      - Automatizar pruebas en backend y frontend, incluyendo APIs HTTP y componentes web.
+      - Usar contract testing con Pact para garantizar la compatibilidad entre servicios.
+
+  - type: syllabus-extended
+    id: sect-syllabus
+    className: light
+    header: Temario completo
+    chapters:
+      - number: 1
+        chapter: Fundamentos de una estrategia de testing robusta
+        topics:
+          - Cómo diseñar una estrategia de tests efectiva
+          - 'Modelos de estructura de tests: la pirámide y el trofeo'
+          - Detección y eliminación de test smells
+      - number: 2
+        chapter: Tipos de tests y sus roles
+        topics:
+          - Tests unitarios, de integración y end-to-end
+          - 'Dobles de test: spies, mocks, fakes, stubs'
+          - Tests de colaboración y de contrato
+      - number: 3
+        chapter: Técnicas avanzadas de TDD y ATDD
+        topics:
+          - TDD clásico y TDD outside-in
+          - Acceptance Test Driven Development (ATDD)
+          - Behaviour Driven Development (BDD) con frameworks como Cucumber
+      - number: 4
+        chapter: Testing de performance y fiabilidad
+        topics:
+          - Tests de rendimiento con JMeter
+          - Mutation testing para robustez del test suite
+          - Property-based testing para validación masiva de escenarios
+      - number: 5
+        chapter: Testing especializado por capas
+        topics:
+          - Testing de APIs HTTP en backend
+          - Contract testing con Pact
+          - Testing de componentes y end-to-end en frontend con Cypress
+          - Approval testing para validar sistemas legacy o difíciles de testear
+
+  - type: call-to-action
+    id: sect-cta
+    className: dark background background-07
+    header: ¿Y si tu suite de tests te diera confianza real para desplegar sin miedo?
+    ctaLabel: Contacta para reservar tu plaza
+    ctaHref: https://www.exeal.com/contacto
 ---

@@ -1,24 +1,100 @@
 ---
-title: "Rescata tu proyecto"
-description: "Aprende a trabajar sobre un proyecto de Legacy Code sin miedo a romper todo el sistema."
-date: 2020-09-09T15:00:00+02:00
+title: "Formacion avanzada: Rescata tu proyecto"
+description: "Dejarás de apagar fuegos y empezarás a mejorar el código de forma segura, paso a paso, con métricas objetivas y decisiones basadas en datos reales."
+date: 2025-05-01T00:00:00+02:00
 layout: course
-hidden: true
-brochure_image: /assets/img/legacy/mockup-brochure.png
-course_featured_image: /images/courses/rescata-tu-proyecto.png
 course_title: "Rescata tu proyecto"
-course_prefix: ""
-course_level: advanced
-redirect_submission_url: https://www.exeal.com/cursos/rescata-tu-proyecto/programa/
-course_claim_header: A veces, parece que la mejor solución para evitar trabajar sobre Legacy Code es &quot;parar las máquinas&quot; y reescribir el código desde cero. <em>La experiencia nos dice que no</em>.
-course_claim_body: Enfrentarte a Legacy Code es solo cuestión de tiempo, aunque vuelvas a escribir el código desde cero, en menos tiempo del que piensas ese código que has escrito va a ser por su naturaleza irremediablemente Legacy Code.
-learning_objectives:
-  - "Enfrentarse a una base de código heredado desconocida."
-  - "Identificar code smells: síntomas indicativos de problemas de mantenibilidad en el código."
-  - "Técnicas de refactorización: cómo cambiar el código de forma segura sin afectar a su comportamiento actual."
-  - "Construir una red de seguridad para cambiar el código basada en tests automáticos."
-  - "Técnicas de eliminación de dependencias: cómo separar módulos que están tan unidos que no se pueden testear."
-  - "Añadir nueva funcionalidad o corregir errores sobre legacy code usando TDD."
-  - "Realizar análisis de deuda técnica y riesgos de un proyecto legacy."
-  - "Aplicar con éxito estas técnicas a tu propio proyecto, independientemente del lenguaje en el que esté escrito."
+course_featured_image: /images/courses/rescata-tu-proyecto.png
+course_visible: true
+blocks:
+  - type: hero
+    id: sect-hero
+    className: dark background background-01
+    header: Rescata tu proyecto
+    subheader: Aprende a recuperar proyectos legacy en caos aplicando una estrategia de testing, refactorización y gestión de deuda técnica.
+    backgroundImage: /images/courses/rescata-tu-proyecto.png
+    paragraphs:
+      - Dejarás de apagar fuegos y empezarás a mejorar el código de forma segura, paso a paso, con métricas objetivas y decisiones basadas en datos reales.
+
+  - type: stakes-with-image
+    id: sect-stakes
+    className: light
+    image: /images/courses/rescata-tu-proyecto.png
+    header: Esta formación es para ti si…
+    list:
+      - Cada vez que tocas el código, <em>tienes miedo de romper algo</em>.
+      - No hay tests, o los que hay <em>no te ayudan a detectar errores reales</em>.
+      - El código es tan complejo que <em>ni tú ni nadie quiere meterse ahí</em>.
+      - <em>Los bugs se acumulan</em>, pero nadie tiene tiempo (ni ganas) de resolverlos.
+      - <em>No tienes métricas</em> que te ayuden a justificar decisiones técnicas.
+      - <em>Te cuesta traducir problemas técnicos en impacto para negocio</em>.
+      - Sabes que hay margen de mejora, pero <em>te faltan herramientas y apoyo para empezar.</em>
+
+  - type: ticked-list
+    id: sect-benefits
+    className: gloaming
+    header: Qué vas a aprender
+    items:
+      - Identificar fuentes de complejidad y entropía en tu proyecto con criterios técnicos claros.
+      - Diseñar una estrategia de testing viable en entornos legacy, combinando tests manuales, end-to-end y approval testing.
+      - Refactorizar código sin tests de forma segura, usando characterization tests y refactoring incremental.
+      - Establecer métricas técnicas (cobertura, duplicidad, LOC…) y automatizar su recogida para tomar decisiones basadas en datos.
+      - Implantar una política de gestión de bugs con separación de tracks, prioridades claras y métricas operativas.
+      - Calcular el impacto económico de errores, paradas y deuda técnica en términos de costes reales y oportunidad.
+      - Comunicar con claridad técnica y económica por qué ciertas decisiones son necesarias para la sostenibilidad del proyecto.
+
+  - type: syllabus-extended
+    id: sect-syllabus
+    className: light
+    header: Temario completo
+    chapters:
+      - number: 1
+        chapter: Entropía, complejidad y diagnóstico inicial
+        topics:
+          - 'Entropía del software: síntomas, causas y consecuencias.'
+          - Complejidad esencial vs. accidental.
+          - Qué observar y cómo leer el estado real de un proyecto legacy.
+          - 'Objetivo técnico: reducir riesgo al modificar código.'
+      - number: 2
+        chapter: Testing en entornos legacy
+        topics:
+          - Diseño de plan de pruebas funcionales manuales.
+          - Automatización de tests end-to-end y black-box.
+          - Approval testing y técnicas de desacoplo progresivo.
+          - 'Estrategia de descenso en la pirámide de testing: de E2E a unitarios.'
+      - number: 3
+        chapter: Refactorización guiada por tests
+        topics:
+          - 'Refactoring sobre código sin tests: characterization tests y golden masters.'
+          - 'Loop de insight: lectura de código, renaming, extract method, comentarios.'
+          - Naming como proceso iterativo para revelar intención.
+          - Aplicación controlada de micro-refactorings.
+      - number: 4
+        chapter: Métricas objetivas y automatización
+        topics:
+          - 'Métricas base: cobertura de tests, líneas de código, duplicidad, indentación.'
+          - Herramientas de análisis estático y automatización de mediciones.
+          - Uso de quality gates y forcing functions para forzar mejoras.
+          - Cómo incorporar métricas en la retro y tomar decisiones basadas en datos.
+      - number: 5
+        chapter: Gestión de bugs como sistema
+        topics:
+          - 'Separación de tracks: bugfixing vs feature development.'
+          - Definición y medición de severidad (P1, P2…).
+          - 'Métricas operativas: nº de bugs por sprint, tiempo medio de resolución.'
+          - Implantación de políticas tipo “zero known bugs”.
+      - number: 6
+        chapter: Evaluación del impacto técnico en el negocio
+        topics:
+          - Cálculo del coste medio de bugs, downtime y mantenimiento.
+          - 'Métricas Accelerate: lead time, deployment frequency, etc.'
+          - Análisis de flujos críticos y estimación del coste de interrupción.
+          - Diferenciar costes directos (errores, operativa) y de oportunidad (features no entregadas).
+
+  - type: call-to-action
+    id: sect-cta
+    className: dark background background-07
+    header: ¿Estás listo para dejar de apagar fuegos y empezar a rescatar tu proyecto con datos, estrategia y confianza?
+    ctaLabel: Contacta para reservar tu plaza
+    ctaHref: https://www.exeal.com/contacto
 ---
