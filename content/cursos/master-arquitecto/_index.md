@@ -31,7 +31,7 @@ blocks:
 
   - type: ticked-list
     id: sect-benefits
-    className: gloaming
+    className: dark background background-03
     header: Qué vas a aprender
     items:
       - Distinguir entre complejidad esencial y accidental, y reducir esta última con diseño intencional.
@@ -42,6 +42,23 @@ blocks:
       - Aplicar arquitectura hexagonal y clean para estructurar sistemas sostenibles y testeables.
       - Modelar dominios complejos con DDD y CQRS, y alinearlos con una arquitectura centrada en el dominio.
       - Comparar monolitos, microservicios y monolitos modulares con argumentos técnicos sólidos.
+
+  # ¿Cómo lo vas a aprender?
+  - type: valueprop-elements
+    id: sect-methodology
+    className: gloaming
+    header: Cómo lo vas a aprender
+    elements:
+      - icon: /assets/img/legacy/icons/icon-06.svg
+        text: '<em>Online</em>: Sesiones en directo por videoconferencia.'
+      - icon: /assets/img/legacy/icons/icon-01.svg
+        text: '<em>Intensivo</em>: 2 días completos (16 horas).'
+      - icon: /assets/img/legacy/icons/icon-02.svg
+        text: '<em>Interactivo</em>: Ejercicios, dinámicas y casos reales.'
+      - icon: /assets/img/legacy/icons/icon-04.svg
+        text: '<em>Reducido</em>: Limitado a 15 personas por edición.'
+      - icon: /assets/img/legacy/icons/icon-03.svg
+        text: '<em>Aplicable</em>: Técnicas para usar desde el primer día.'
 
   - type: syllabus-extended
     id: sect-syllabus
