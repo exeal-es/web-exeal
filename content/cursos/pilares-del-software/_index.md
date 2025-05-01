@@ -292,7 +292,7 @@ blocks:
       - chapter: ¿Qué horario tiene la formación
         number: 1
         topics:
-          - Ambos días, viernes y sábado, comenzaremos a las 10h de la mañana (horario de España peninsular). La formación se prolongará hasta las 19h-20h de la tarde. Habrá un espacio de 1:30h para comer, y pausas de 15-20 minutos a lo largo de la mañana y la tarde.
+          - Ambos días, viernes y sábado, comenzaremos a las 9.30h de la mañana (horario de España peninsular). La formación se prolongará hasta las 19h de la tarde, aproximadamente. Habrá un espacio de 1:30h para comer, y pausas de 15 minutos a lo largo de la mañana y la tarde.
       - chapter: ¿Qué formato tiene la formación?
         number: 2
         topics:
@@ -303,6 +303,10 @@ blocks:
         number: 3
         topics:
           - Sí, pero las grabaciones únicamente estarán disponibles durante la semana posterior a la formación, por si no pudiste acceder en directo.
+      - chapter: ¿Lo puede pagar mi empresa?
+        number: 4
+        topics:
+          - ¡Claro que sí! Contacta con nosotros directamente y le facilitaremos a tu empresa la forma de pago y factura correspondiente.
 
   # Contrarian
   - type: contrarian
@@ -319,7 +323,7 @@ blocks:
     header: "Pilares del software incluye:"
     items:
       - "Curso intensivo online: 12 y 13 de septiembre de 2025"
-      - 16 horas de formación en directo, en sesiones prácticas y dinámicas, aplicable desde el primer día.
+      - 16 horas de formación en directo, en sesiones prácticas y dinámicas de grupo, aplicable desde el primer día.
       - "4 pilares del software: código, producto, equipo y desarrollador."
       - Aprende a escribir código limpio y construir aplicaciones mantenibles.
       - Conecta tu trabajo con el negocio a través de un mindset de producto.
