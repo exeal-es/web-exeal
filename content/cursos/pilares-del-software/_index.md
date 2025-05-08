@@ -281,7 +281,7 @@ blocks:
       details: LIMITADO a las primeras <em>30 plazas</em>. Disponible hasta el Jueves 31/7/2025, 23:59 o <em>hasta agotar</em>.
       enabled: true
       cta: Inscríbete
-      checkoutUrl: https://academia.exeal.com/enroll/3372757?price_id=4280871
+      checkoutUrl: https://academia.exeal.com/enroll/3372757?price_id=4280871&utm_source=exeal.com&utm_medium=website&utm_campaign=pilares_del_software_sept25&utm_content=curso
 
   # FAQ
   - type: syllabus-extended
@@ -336,5 +336,5 @@ blocks:
     className: dark background background-07
     header: Deja de improvisar. Aprende a programar con criterio, confianza y propósito.
     ctaLabel: Inscribete ahora
-    ctaHref: https://academia.exeal.com/enroll/3372757?price_id=4280871
+    ctaHref: https://academia.exeal.com/enroll/3372757?price_id=4280871&utm_source=exeal.com&utm_medium=website&utm_campaign=pilares_del_software_sept25&utm_content=curso
 ---

@@ -124,7 +124,7 @@ blocks:
       details: LIMITADO a <em>15 plazas</em>. Disponible hasta el Sábado 31/5/2025, 23:59 o <em>hasta agotar</em>.
       enabled: true
       cta: Inscríbete
-      checkoutUrl: https://academia.exeal.com/enroll/3360975?price_id=4286425
+      checkoutUrl: https://academia.exeal.com/enroll/3360975?price_id=4286425&utm_source=exeal.com&utm_medium=website&utm_campaign=master_arquitecto_jun25&utm_content=curso
 
   # FAQ
   - type: syllabus-extended
@@ -161,5 +161,5 @@ blocks:
     className: dark background background-07
     header: ¿Estás listo para dejar de improvisar y empezar a diseñar con criterio, intención y solidez técnica?
     ctaLabel: Reserva tu plaza
-    ctaHref: https://academia.exeal.com/enroll/3360975?price_id=4286425
+    ctaHref: https://academia.exeal.com/enroll/3360975?price_id=4286425&utm_source=exeal.com&utm_medium=website&utm_campaign=master_arquitecto_jun25&utm_content=curso
 ---
