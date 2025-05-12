@@ -101,6 +101,58 @@ blocks:
           - 'Comunicación adaptable: ajustar tu mensaje a diferentes perfiles'
           - 'Public speaking: preparar y defender discursos que impactan emocionalmente'
 
+  # Próxima edición
+  - type: hero-with-image
+    id: sect-hero-with-image
+    className: gloaming background background-06
+    header: ¿Cuándo y dónde es la próxima edición?
+    subheader: La próxima edición de <em>Líder desarrollador</em> se celebrará <em>online</em> los días <em>viernes 26 y sábado 27 de Septiembre de 2025</em>.
+    image: /assets/img/photo-training-module.png
+    callToAction:
+      text: Quiero apuntarme
+      scrollTo: sect-prices
+
+  # Precios
+  - type: single-price
+    id: sect-prices
+    className: dark background background-04
+    header: <em>Precio</em>.
+    price:
+      name: Precio de lanzamiento
+      amountInEuroBefore: 1047
+      amountInEuro: 697
+      details: LIMITADO a <em>15 plazas</em>. Disponible hasta el Domingo 21/9/2025, 23:59 o <em>hasta agotar</em>.
+      enabled: true
+      cta: Inscríbete
+      checkoutUrl: https://pay.exeal.com/b/5kA4gXbKheaT8Wk7sw
+
+  # FAQ
+  - type: syllabus-extended
+    id: sect-faq
+    className: gloaming
+    header: Preguntas frecuentes (click para ampliar)
+    chapters:
+      - chapter: ¿Qué horario tiene la formación?
+        number: 1
+        topics:
+          - Ambos días, viernes y sábado, comenzaremos a las 9.30h de la mañana (horario de España peninsular). La formación se prolongará hasta las 19h de la tarde, aproximadamente. Habrá un espacio de 1:30h para comer, y pausas de 15 minutos a lo largo de la mañana y la tarde.
+      - chapter: ¿Necesito ser senior?
+        number: 2
+        topics:
+          - No. No necesitas ser senior, pero sí es recomendable tener cierta experiencia real desarrollando software. El enfoque es práctico y avanzado, pero accesible para cualquier developer que ya trabaje o haya trabajado en proyectos de verdad.
+      - chapter: ¿Se grabarán las sesiones?
+        number: 3
+        topics:
+          - Sí, se grabarán, y estarán disponibles durante 1 año completo para que puedas consultarlas cuando quieras.
+      - chapter: ¿Puedo pagar a plazos?
+        number: 4
+        topics:
+          - Sí. Ofrecemos pago a plazos de hasta 4 meses sin intereses, para que puedas ajustar la inversión a tus necesidades. <a href="https://www.exeal.com/contacto">Contacta con nosotros directamente</a> para financiar la compra.
+      - chapter: ¿Lo puede pagar mi empresa?
+        number: 5
+        topics:
+          - ¡Claro que sí! <a href="https://www.exeal.com/contacto">Contacta con nosotros directamente</a> y le facilitaremos a tu empresa la forma de pago y factura correspondiente.
+
   # Clients
   - type: clients
   
@@ -109,6 +161,6 @@ blocks:
     id: sect-cta
     className: dark background background-07
     header: ¿Quieres dar el salto de developer competente a referente que inspira y guía a su equipo?
-    ctaLabel: Contacta para reservar tu plaza
-    ctaHref: https://www.exeal.com/contacto
+    ctaLabel: Reserva tu plaza
+    ctaHref: https://pay.exeal.com/b/5kA4gXbKheaT8Wk7sw
 ---
