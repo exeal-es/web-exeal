@@ -124,8 +124,8 @@ blocks:
       amountInEuro: 697
       details: LIMITADO a <em>15 plazas</em>. Disponible hasta el Domingo 21/9/2025, 23:59 o <em>hasta agotar</em>.
       enabled: true
-      cta: Inscríbete
-      checkoutUrl: https://pay.exeal.com/b/5kA4gXbKheaT8Wk7sw
+      cta: Agenda una llamada de admisión
+      checkoutUrl: https://calendly.com/exeal/llamada-de-admision-en-lider-desarrollador
 
   # FAQ
   - type: syllabus-extended
@@ -162,6 +162,6 @@ blocks:
     id: sect-cta
     className: dark background background-07
     header: ¿Quieres dar el salto de developer competente a referente que inspira y guía a su equipo?
-    ctaLabel: Reserva tu plaza
-    ctaHref: https://pay.exeal.com/b/5kA4gXbKheaT8Wk7sw
+    ctaLabel: Agenda una llamada de admisión
+    ctaHref: https://calendly.com/exeal/llamada-de-admision-en-lider-desarrollador
 ---

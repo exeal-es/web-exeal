@@ -42,7 +42,6 @@ blocks:
       - Diseñar componentes y módulos con bajo acoplamiento y alta cohesión.
       - Aplicar arquitectura hexagonal y clean para estructurar sistemas sostenibles y testeables.
       - Modelar dominios complejos con DDD y CQRS, y alinearlos con una arquitectura centrada en el dominio.
-      - Comparar monolitos, microservicios y monolitos modulares con argumentos técnicos sólidos.
 
   # ¿Cómo lo vas a aprender?
   - type: valueprop-elements
@@ -67,40 +66,73 @@ blocks:
     header: Temario completo (click para ampliar)
     chapters:
       - number: 1
-        chapter: Fundamentos de diseño evolutivo
+        chapter: El propósito de la arquitectura y el rol del arquitecto
+        topics:
+          - Qué significa que “toda decisión difícil de cambiar es arquitectura”
+          - El arquitecto como diseñador de experiencia para developers
+          - El anti-patrón del arquitecto de torre de marfil
+          - Rol del arquitecto en equipos de alto rendimiento
+          - Arquitectura como producto iterativo e incremental
+
+      - number: 2
+        chapter: Fundamentos del diseño evolutivo
         topics:
           - Complejidad esencial vs accidental
-          - Code smells y refactorización con TDD
-          - 'Principios de diseño: SOLID, CUPID'
-          - Evaluación de propiedades del código y visualización de trade-offs
-      - number: 2
-        chapter: Diseño modular y componentes
-        topics:
-          - Principios de diseño de componentes (REP, CCP, CRP)
-          - Refactoring to Patterns
-          - Patrones de diseño (GoF y más) aplicados a código real
+          - Diseño intencional vs diseño accidental
+          - Diseño ágil y Just Enough Design Up Front
+          - Principios de diseño evolutivo
+          - 'Evaluación de diseños mediante propiedades del sistema: legibilidad, modularidad, cohesión, acoplamiento, testabilidad, invarianza'
+
       - number: 3
-        chapter: Patrones arquitectónicos clásicos y modernos
+        chapter: Propiedades, code smells y refactorización
         topics:
-          - Model-View-Controller (MVC)
-          - Arquitectura hexagonal
-          - Clean Architecture
-          - Vertical Slice Architecture
-          - Inversión de dependencias, inyección de dependencias, inversión de control
+          - Refactorización guiada por Test-driven development (TDD)
+          - Identificación de code smells y rediseño incremental
+          - Refactoring to Patterns como técnica evolutiva
+
       - number: 4
-        chapter: Diseño guiado por el dominio (DDD)
+        chapter: Patrones arquitectónicos modernos
         topics:
-          - Entidades, Value Objects, Repositorios, Factories, Domain Events
-          - DDD aplicado a arquitecturas hexagonales
-          - 'Separación de comandos y consultas: CQRS'
-          - CQRS en el contexto de DDD
+          - 'Arquitectura hexagonal: puertos y adaptadores.'
+          - Clean Architecture y separación de responsabilidades.
+          - Funcional Core / Imperative Shell.
+          - 'Dependency rule: todas las dependencias apuntan hacia el centro.'
+          - Inversión de dependencias, inversión de control e inyección de dependencias.
+          - Tests de contrato y colaboración.
+
       - number: 5
-        chapter: Escalabilidad, modularidad y estilos de despliegue
+        chapter: Diseño de componentes y modularidad
         topics:
-          - Monolitos vs microservicios
-          - Monolito modular y sus ventajas
-          - 'Patrones de microservicios: coreografía, orquestación, API Composition, BFFs'
-          - Fuerzas de “materia oscura” vs “energía oscura” en diseño arquitectónico (latencia, consistencia, resiliencia vs cohesión, simplicidad, velocidad de desarrollo)
+          - 'Principios de cohesión: REP, CCP, CRP.'
+          - 'Principios de acoplamiento: ADP, SDP, SAP.'
+          - Package by layer vs. Package by feature.
+          - Vertical Slice Architecture como alternativa evolutiva.
+
+      - number: 6
+        chapter: Diseño guiado por el dominio (DDD + CQRS)
+        topics:
+          - Introducción a DDD táctico y estratégico.
+          - Entidades, Value Objects, Agregados, Repositorios, Domain Events.
+          - Bounded Contexts y preservación de la intención del dominio.
+          - Encapsulación de invariantes y modelos ricos.
+          - Principio CQS (Command Query Separation).
+          - 'CQRS: comandos, queries y eventos.'
+          - Aplicación de CQRS en arquitecturas centradas en dominio.
+
+      - number: 7
+        chapter: Comunicación arquitectónica
+        topics:
+          - Por qué documentar y comunicar decisiones arquitectónicas
+          - 'Modelo C4: contexto, contenedores, componentes, código'
+          - Structurizr y documentación “as code”
+          - 'ADRs: Architecture Decision Records ligeros y efectivos'
+
+      - number: 8
+        chapter: Plan de acción personal
+        topics:
+          - Identificación de dolores reales en tu sistema actual
+          - Elección de técnicas vistas aplicables a tu contexto
+          - Diseño de un primer paso viable (conversación, experimento, refactor…)
 
   # Próxima edición
   - type: hero-with-image
@@ -124,8 +156,8 @@ blocks:
       amountInEuro: 697
       details: LIMITADO a <em>15 plazas</em>. Disponible hasta el Sábado 31/5/2025, 23:59 o <em>hasta agotar</em>.
       enabled: true
-      cta: Inscríbete
-      checkoutUrl: https://pay.exeal.com/b/8wMaFl4hP8Qz5K8dQV
+      cta: Reserva tu plaza
+      checkoutUrl: https://calendly.com/exeal/llamada-de-admision-master-arquitecto
 
   # FAQ
   - type: syllabus-extended
@@ -162,5 +194,5 @@ blocks:
     className: dark background background-07
     header: ¿Estás listo para dejar de improvisar y empezar a diseñar con criterio, intención y solidez técnica?
     ctaLabel: Reserva tu plaza
-    ctaHref: https://pay.exeal.com/b/8wMaFl4hP8Qz5K8dQV
+    ctaHref: https://calendly.com/exeal/llamada-de-admision-master-arquitecto
 ---

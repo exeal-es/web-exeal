@@ -131,8 +131,8 @@ blocks:
       amountInEuro: 697
       details: LIMITADO a <em>15 plazas</em>. Disponible hasta el Domingo 9/11/2025, 23:59 o <em>hasta agotar</em>.
       enabled: true
-      cta: Inscríbete
-      checkoutUrl: https://pay.exeal.com/b/28o3cT6pX9UDc8w8wz
+      cta: Agenda una llamada de admisión
+      checkoutUrl: https://calendly.com/exeal/llamada-de-admision-en-rescata-tu-proyecto
 
   # FAQ
   - type: syllabus-extended
@@ -168,6 +168,6 @@ blocks:
     id: sect-cta
     className: dark background background-07
     header: ¿Estás listo para dejar de apagar fuegos y empezar a rescatar tu proyecto con datos, estrategia y confianza?
-    ctaLabel: Reserva tu plaza
-    ctaHref: https://pay.exeal.com/b/28o3cT6pX9UDc8w8wz
+    ctaLabel: Agenda una llamada de admisión
+    ctaHref: https://calendly.com/exeal/llamada-de-admision-en-rescata-tu-proyecto
 ---
