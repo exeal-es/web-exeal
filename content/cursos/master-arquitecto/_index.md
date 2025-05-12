@@ -6,6 +6,7 @@ layout: course
 course_title: "Master arquitecto"
 course_featured_image: /images/courses/master-arquitecto.png
 course_visible: true
+course_confirmed: true
 blocks:
   - type: hero
     id: sect-hero

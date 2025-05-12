@@ -6,6 +6,7 @@ layout: course
 course_title: "Líder desarrollador"
 course_featured_image: /images/courses/lider-desarrollador.png
 course_visible: true
+course_confirmed: true
 blocks:
   - type: hero
     id: sect-hero
