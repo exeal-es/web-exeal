@@ -98,6 +98,44 @@ blocks:
           - Diseño de pipelines de integración y despliegue continuo centradas en flujo
           - Cómo adaptar la pipeline al tipo de hipótesis o fase del producto
           - 'Instrumentación y feedback post-producción: aprendizaje desde la entrega'
+  
+  - type: hero-with-image
+    id: sect-hero-with-image
+    className: gloaming background background-06
+    header: ¿Cuándo y dónde será la próxima edición?
+    subheader: Aún no hay fecha confirmada para la próxima edición de <em>De idea a producción</em>, pero puedes apuntarte a la lista de espera para enterarte antes que nadie cuando abramos plazas.
+    image: /assets/img/photo-training-module.png
+    callToAction:
+      text: Apuntarme a la lista de espera
+      scrollTo: sect-cta
+
+  # FAQ
+  - type: syllabus-extended
+    id: sect-faq
+    className: gloaming
+    header: Preguntas frecuentes (click para ampliar)
+    chapters:
+      - chapter: ¿Qué horario tiene la formación?
+        number: 1
+        topics:
+          - Ambos días, viernes y sábado, comenzaremos a las 9.30h de la mañana (horario de España peninsular). La formación se prolongará hasta las 19h de la tarde, aproximadamente. Habrá un espacio de 1:30h para comer, y pausas de 15 minutos a lo largo de la mañana y la tarde.
+      - chapter: ¿Necesito ser senior?
+        number: 2
+        topics:
+          - No. No necesitas ser senior, pero sí es recomendable tener cierta experiencia real desarrollando software. El enfoque es práctico y avanzado, pero accesible para cualquier developer que ya trabaje o haya trabajado en proyectos de verdad.
+      - chapter: ¿Se grabarán las sesiones?
+        number: 3
+        topics:
+          - Sí, se grabarán, y estarán disponibles durante 1 año completo para que puedas consultarlas cuando quieras.
+      - chapter: ¿Puedo pagar a plazos?
+        number: 4
+        topics:
+          - Sí. Ofrecemos pago a plazos de hasta 4 meses sin intereses, para que puedas ajustar la inversión a tus necesidades. <a href="https://www.exeal.com/contacto">Contacta con nosotros directamente</a> para financiar la compra.
+      - chapter: ¿Lo puede pagar mi empresa?
+        number: 5
+        topics:
+          - ¡Claro que sí! <a href="https://www.exeal.com/contacto">Contacta con nosotros directamente</a> y le facilitaremos a tu empresa la forma de pago y factura correspondiente.
+  
   # Clients
   - type: clients
   
@@ -105,6 +143,6 @@ blocks:
     id: sect-cta
     className: dark background background-07
     header: ¿Listo para conectar descubrimiento, entrega y negocio en un flujo continuo de valor real?
-    ctaLabel: Contacta para reservar tu plaza
-    ctaHref: https://www.exeal.com/contacto
+    ctaLabel: Apuntarme a la lista de espera
+    ctaHref: https://docs.google.com/forms/d/e/1FAIpQLSeTrIbfqujDZQbZajngBd6d9UQU_6rbeduTLZAEKRgCYFPcBg/viewform?usp=dialog
 ---

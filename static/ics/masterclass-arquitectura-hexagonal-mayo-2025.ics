@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Pedro Pardal//Masterclass Arquitectura Hexagonal//ES
+BEGIN:VEVENT
+UID:66519278-aa05-4fd3-bea9-aa2d7f6b0c81
+DTSTAMP:20250512T160517Z
+DTSTART;TZID=Europe/Madrid:20250514T183000
+DTEND;TZID=Europe/Madrid:20250514T203000
+SUMMARY:Masterclass: Diseñar desde el problema, no desde el framework, con Arquitectura Hexagonal
+LOCATION:https://us06web.zoom.us/j/82613788846?pwd=9PYuPrKeZCmB7UnKXFawFBbVfSmcTi.1&jst=2
+DESCRIPTION:Enlace de Zoom para unirse:\nhttps://us06web.zoom.us/j/82613788846?pwd=9PYuPrKeZCmB7UnKXFawFBbVfSmcTi.1&jst=2\n\nEn caso de que la sala de Zoom se llene, puedes seguir la retransmisión desde YouTube:\nhttps://youtube.com/live/gJ8MM1Hj2TI?feature=share
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Masterclass empieza en 30 minutos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -9,6 +9,9 @@
             class="course-header"
             style="background-image: url('{{ .Params.course_featured_image }}')"
           >
+            {{ if .Params.course_confirmed }}
+              <div class="featured-course">¡Fecha confirmada!</div>
+            {{ end }}
             {{ if not .Params.course_visible }}
               <div class="featured-course">¡Próximamente!</div>
             {{ end }}
