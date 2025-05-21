@@ -3,6 +3,9 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <h1>{{ .header }}</h1>
+        {{ if .p }}
+        <p>{{ .p }}</p>
+        {{ end }}
         <p>
           <a href="{{ .ctaHref }}" class="button button-center">{{ .ctaLabel }}</a>
         </p>

@@ -22,7 +22,9 @@
             class="icon-mid"
             src="{{ .icon }}"
           />
-          <h3>{{ .title }}</h3>
+          {{ if .title}}
+            <h3>{{ .title }}</h3>
+          {{ end }}
           <p>
             {{ .description | safeHTML }}
           </p>
