@@ -44,7 +44,7 @@ texts:
         {
           number: "1",
           title: "Aprende y aplica",
-          description: "Cada semana participas en una sesión práctica con katas, code reviews, dinámicas y charlas."
+          description: "Participarás en sesiones prácticas con katas, code reviews, dinámicas de grupo, debates y charlas."
         },
         {
           number: "2",
@@ -60,7 +60,7 @@ texts:
   serviceconsultancy:
     title: "Paso 1: Aprende y aplica"
     p1: El conocimiento sin práctica se olvida.
-    p2: En nuestras sesiones semanales en vivo pondrás en práctica lo aprendido con ejercicios guiados, code reviews y dinámicas en equipo.
+    p2: En nuestras sesiones en vivo pondrás en práctica lo aprendido con ejercicios guiados, code reviews y dinámicas en equipo.
     cta: Apúntate ya
   servicetraining:
     title: "Paso 2: Comparte y crece"
