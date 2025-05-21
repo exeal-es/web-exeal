@@ -6,6 +6,17 @@ layout: cop
 cta_url: https://academia.exeal.com/enroll/2761726?price_id=3588453
 team:
   [{ name: "pedropardal" }]
+blocks:
+  - type: hero
+    id: sect-hero
+    className: dark background background-01
+    header: ¡Hacia la Excelencia!
+    subheader: Únete a la comunidad de práctica que te ayudará a aplicar, perfeccionar y avanzar en tu carrera como desarrollador.
+    paragraphs:
+      - "Oferta de lanzamiento: Desde solo 9€ el primer mes (después 29€ / mes)"
+    callToAction:
+      text: Apúntate ya
+      scrollTo: sect-prices
 texts:
   hero:
     header: ¡Hacia la Excelencia!
