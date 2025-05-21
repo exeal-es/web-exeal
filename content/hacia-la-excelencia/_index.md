@@ -157,6 +157,27 @@ blocks:
       text: Apúntate ya
       scrollTo: sect-prices
 
+  # Precios
+  - type: prices
+    id: sect-prices
+    className: gloaming
+    header: Descubre nuestros <em>precios</em>.
+    prices:
+      - name: Suscripción mensual
+        amountInEuro: 29
+        taxes: "*IVA incluido"
+        details: Prueba el primer mes sólo por 9€
+        enabled: true
+        cta: Apúntate ya
+        checkoutUrl: https://academia.exeal.com/enroll/2761726?price_id=3588453
+      - name: Suscripción anual
+        amountInEuro: 299
+        taxes: "*IVA incluido"
+        details: Ahorra un 14% con la suscripción anual
+        enabled: true
+        cta: Apúntate ya
+        checkoutUrl: https://academia.exeal.com/enroll/2761726?price_id=4305574
+
   # Clients
   - type: clients
 
