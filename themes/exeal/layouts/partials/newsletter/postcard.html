@@ -1,24 +1,17 @@
 <div class="preventry">
-  <span class="preventry-number">#{{ .Params.issue_number }}</span>
+  <div class="preventry-image">
+    <img src="{{ with .Params.images }}{{ index . 0 }}{{ end }}" alt="{{ .Title }}">
+  </div>
   <div class="preventry-content">
-    <p class="preventry-title">Masterclass Arquitectura Sostenible</p>
-    <p class="preventry-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, s...</p>
-    <p class="preventry-type">Masterclass</p>
-    <p class="preventry-date">{{ .Date.Format "January 2, 2006" }}</p>
-    <p class="preventry-format">Online</p>
+    <p class="preventry-title">{{ .Title }}</p>
+    <p class="preventry-subtitle">
+      {{ with .Params.description }}{{ . | truncate 80 }}{{ end }}
+    </p>
+    <div class="preventry-meta">
+      <span>{{ with .Params.eventType }}{{ . }}{{ else }}Evento{{ end }}</span>
+      <span>Fecha: {{ .Date.Format "2/1/2006" }}</span>
+      <span>Formato: {{ with .Params.format }}{{ . }}{{ else }}Online{{ end }}</span>
+    </div>
     <a class="button button-green" href="{{ .Permalink }}">Apuntarse</a>
   </div>
 </div>
-
-<!--
-<div class="preventry">
-  <span class="preventry-number">#{{ .Params.issue_number }}</span>
-  <div class="preventry-content">
-    <p class="preventry-title">{{ .Title }}</p>
-    <p class="preventry-date">{{ .Date.Format "January 2, 2006" }}</p>
-  </div>
-  <img src="/assets/img/arrow-cta-yellow.svg"></img>
-  <a href="{{ .Permalink }}"></a>
-</div>
-
--->

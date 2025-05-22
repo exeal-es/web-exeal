@@ -1,31 +1,71 @@
 .preventry {
   display: flex;
-  align-items: center;
-  padding: 1rem 0;
+  align-items: stretch;
+  padding: 1.5rem 0;
   position: relative;
-  border-bottom: 2px solid $primary-color;
+  min-height: 180px;
 }
 
-.preventry-number {
-  font-family: 'Avenir Book', sans-serif;
-  color: $mid-gray;
-  font-size: 1.5rem;
-  margin-right: 1.5rem;
+.preventry-image {
+  width: 180px;
+  height: auto;
+  flex-shrink: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.preventry-image img {
+  width: 180px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .preventry-content {
-  flex-grow: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
 }
 
 .preventry-title {
-  font-family: 'Avenir Book', sans-serif;
-  font-size: 1.25rem;
-  color: $dark-background-color;
+  font-family: $h2-font, sans-serif;
+  font-size: 1.5rem;
   margin: 0;
 }
 
-.preventry-date {
-  font-size: 0.9rem;
-  color: $mid-gray;
-  margin: 0.5rem 0 0;
+.preventry-subtitle {
+  color: #555;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.preventry-meta {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.preventry-meta span {
+  font-weight: 500;
+}
+
+.preventry-meta span:not(:last-child)::after {
+  content: " |";
+  margin-left: 0.7rem;
+  color: $light-gray;
+}
+
+@media (max-width: 768px) {
+  .preventry-meta span:not(:last-child)::after {
+    content: "";
+    margin-left: 0;
+  }
+  .preventry-meta {
+    gap: 0.7rem;
+  }
 }
