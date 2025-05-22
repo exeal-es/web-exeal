@@ -11,8 +11,6 @@ blocks:
     className: dark background background-01
     header: ¡Hacia la Excelencia!
     subheader: Únete a la comunidad de práctica que te ayudará a aplicar, perfeccionar y avanzar en tu carrera como desarrollador.
-    paragraphs:
-      - "Oferta de lanzamiento: Desde solo 9€ el primer mes (después 29€ / mes)"
     callToAction:
       text: Apúntate ya
       scrollTo: sect-prices
@@ -166,7 +164,6 @@ blocks:
       - name: Suscripción mensual
         amountInEuro: 29
         taxes: "*IVA incluido"
-        details: Prueba el primer mes sólo por 9€
         enabled: true
         cta: Apúntate ya
         checkoutUrl: https://academia.exeal.com/enroll/2761726?price_id=3588453
