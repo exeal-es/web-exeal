@@ -1,13 +1,13 @@
-<div class="preventry">
-  <div class="preventry-image">
+<div class="nextevent">
+  <div class="nextevent-image">
     <img src="{{ .image }}" alt="{{ .title }}">
   </div>
-  <div class="preventry-content">
-    <p class="preventry-title">{{ .title }}</p>
-    <p class="preventry-subtitle">
+  <div class="nextevent-content">
+    <p class="nextevent-title">{{ .title }}</p>
+    <p class="nextevent-subtitle">
       {{ .description | truncate 80 }}
     </p>
-    <div class="preventry-meta">
+    <div class="nextevent-meta">
       <span>{{ with .type }}{{ . }}{{ else }}Evento{{ end }}</span>
       <span>Fecha: {{ .date | dateFormat "2/1/2006" }}</span>
       <span>Formato: {{ with .format }}{{ . }}{{ else }}Online{{ end }}</span>

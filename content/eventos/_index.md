@@ -1,17 +1,17 @@
 ---
-title: "Newsletter"
-description: "Recibe en tu email consejos prácticos sobre liderazgo técnico, buenas prácticas de programación y desarrollo de producto."
+title: "Próximos eventos"
+description: "Consulta aquí todas las próximas charlas, formaciones y actividades en vivo para desarrolladores que quieren llevar su carrera al siguiente nivel."
 date: 2024-08-01T01:00:00+02:00
-images: [/images/newsletter/newsletter-ogcard.jpg]
+images: [/images/ogcard/events.png]
 layout: blocks
 blocks:
-  # Subscribe to newsletter form
-  - type: newsletter-subscribe
-    id: sect-newsletter-subscribe
+  # Subscribe form
+  - type: events-subscribe
+    id: sect-subscribe
     className: dark background background-01 
 
-  # Newsletter previous isues
-  - type: newsletter-prev-entries
-    id: sect-newsletter-prev-entries
+  # Next events
+  - type: events-next-events
+    id: sect-next-events
     className: light
 ---

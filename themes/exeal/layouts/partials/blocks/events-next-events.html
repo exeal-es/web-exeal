@@ -8,7 +8,7 @@
     <div class="row">
       {{ range site.Data.events }}
       <div class="col-12">
-        {{- partial "newsletter/postcard.html" . -}}
+        {{- partial "events/eventcard.html" . -}}
       </div>
       {{ end }}
     </div>
