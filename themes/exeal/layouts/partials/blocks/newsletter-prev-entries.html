@@ -6,8 +6,7 @@
       </div>
     </div>
     <div class="row">
-      {{ $pages := where site.RegularPages "Params.type" "newsletter" }}
-      {{ range $pages }}
+      {{ range site.Data.events }}
       <div class="col-12">
         {{- partial "newsletter/postcard.html" . -}}
       </div>

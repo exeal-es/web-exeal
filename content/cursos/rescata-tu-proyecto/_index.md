@@ -114,7 +114,7 @@ blocks:
     id: sect-hero-with-image
     className: gloaming background background-06
     header: ¿Cuándo y dónde es la próxima edición?
-    subheader: La próxima edición de <em>Rescata tu proyecto</em> se celebrará <em>online</em> los días <em>viernes 21 y sábado 2 de Noviembre de 2025</em>.
+    subheader: La próxima edición de <em>Rescata tu proyecto</em> se celebrará <em>online</em> los días <em>viernes 21 y sábado 22 de Noviembre de 2025</em>.
     image: /assets/img/photo-training-module.png
     callToAction:
       text: Quiero apuntarme

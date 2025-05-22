@@ -1,17 +1,17 @@
 <div class="preventry">
   <div class="preventry-image">
-    <img src="{{ with .Params.images }}{{ index . 0 }}{{ end }}" alt="{{ .Title }}">
+    <img src="{{ .image }}" alt="{{ .title }}">
   </div>
   <div class="preventry-content">
-    <p class="preventry-title">{{ .Title }}</p>
+    <p class="preventry-title">{{ .title }}</p>
     <p class="preventry-subtitle">
-      {{ with .Params.description }}{{ . | truncate 80 }}{{ end }}
+      {{ .description | truncate 80 }}
     </p>
     <div class="preventry-meta">
-      <span>{{ with .Params.eventType }}{{ . }}{{ else }}Evento{{ end }}</span>
-      <span>Fecha: {{ .Date.Format "2/1/2006" }}</span>
-      <span>Formato: {{ with .Params.format }}{{ . }}{{ else }}Online{{ end }}</span>
+      <span>{{ with .type }}{{ . }}{{ else }}Evento{{ end }}</span>
+      <span>Fecha: {{ .date | dateFormat "2/1/2006" }}</span>
+      <span>Formato: {{ with .format }}{{ . }}{{ else }}Online{{ end }}</span>
     </div>
-    <a class="button button-green" href="{{ .Permalink }}">Apuntarse</a>
+    <a class="button button-green" href="{{ .url }}">Apuntarse</a>
   </div>
 </div>
