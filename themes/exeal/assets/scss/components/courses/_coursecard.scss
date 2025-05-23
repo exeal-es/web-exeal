@@ -113,33 +113,32 @@ ul.course-features li {
   display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 
+.carousel-nav {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  margin-top: 1rem; /* Add some space above the navigation */
+}
+
 .carousel-control-prev,
 .carousel-control-next {
-  position: absolute;
-  top: 50%;
+  position: static; /* Remove absolute positioning */
+  top: auto;
   bottom: auto;
-  transform: translateY(-50%);
-  width: 50px; /* Increased size */
-  height: 50px; /* Increased size */
+  transform: none; /* Remove transform */
+  width: 40px; /* Slightly smaller size for inline display */
+  height: 40px; /* Slightly smaller size for inline display */
   background-color: transparent; /* Transparent background */
   border: 2px solid $primary-color; /* Green border using variable */
   border-radius: 50%; /* Make them round */
   color: $primary-color; /* Green color for icon/text using variable */
   opacity: 1; /* Keep opacity at 1 */
   transition: opacity 0.15s ease; /* Smooth transition */
-  z-index: 10; /* Ensure buttons are above content and other elements */
+  z-index: auto; /* Reset z-index */
   display: flex; /* Use flexbox for centering content */
   align-items: center;
   justify-content: center;
-  /* Positioning relative to the container, in the padding area */
-}
-
-.carousel-control-prev {
-  left: -20px; /* Adjusted value to position in the padding area */
-}
-
-.carousel-control-next {
-  right: -20px; /* Adjusted value to position in the padding area */
+  margin: 0 10px; /* Add horizontal margin between buttons */
 }
 
 .carousel-control-prev:hover,
@@ -150,8 +149,8 @@ ul.course-features li {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 15px; /* Slightly smaller icon size */
+  height: 15px; /* Slightly smaller icon size */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* Ensure icons are centered within the button */
