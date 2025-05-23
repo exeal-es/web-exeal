@@ -159,7 +159,7 @@ blocks:
   - type: prices
     id: sect-prices
     className: gloaming
-    header: Descubre nuestros <em>precios</em>.
+    header: Elige cómo quieres empezar.
     prices:
       - name: Suscripción mensual
         amountInEuro: 29
