@@ -1,0 +1,60 @@
+- title: Introducción a Test-driven Development
+  description: Aprende a desarrollar software de forma incremental usando el estilo test-first de programación
+  image: /images/online-courses/introduccion-tdd.png
+  url: https://academia.exeal.com/courses/introduccion-a-test-driven-development
+- title: Refactorización
+  description: Aprende a mejorar el diseño de tu código sin cambiar su comportamiento
+  image: /images/online-courses/refactorizacion.png
+  url: https://academia.exeal.com/courses/refactorizacion
+- title: Arquitectura Hexagonal
+  description: Aprende a diseñar tu software desde el problema, no desde el framework, con arquitectura hexagonal.
+  image: /images/online-courses/arquitectura-hexagonal.png
+  url: https://academia.exeal.com/courses/masterclass-arquitectura-hexagonal
+- title: Principios SOLID
+  description: Aprende los principios para desarrollar software que soporte el paso del tiempo
+  image: /images/online-courses/principios-solid.png
+  url: https://academia.exeal.com/courses/principios-solid-y-mas-alla
+- title: Buenas Prácticas de Programación
+  description: Mejora la calidad de tu código y aprende a escribir software más limpio y mantenible
+  image: /images/online-courses/buenas-practicas-de-programacion.png
+  url: https://academia.exeal.com/courses/buenas-practicas-de-programacion
+- title: Patrones de diseño
+  description: Aprende a aplicar patrones de diseño para resolver problemas comunes en el desarrollo de software
+  image: /images/online-courses/patrones-de-diseno.png
+  url: https://academia.exeal.com/courses/patrones-de-diseno
+- title: Object Calisthenics
+  description: Transforma tu forma de programar y escribe código más limpio y mantenible con estas sencillas reglas.
+  image: /images/online-courses/object-calisthenics.png
+  url: https://academia.exeal.com/courses/object-calisthenics
+- title: Code Smells
+  description: Identifica y corrige los olores de código para mejorar la calidad de tu software
+  image: /images/online-courses/code-smells.png
+  url: https://academia.exeal.com/courses/code-smells
+- title: Productividad con el IDE
+  description: Aprende a usar tu IDE de forma eficiente para mejorar tu productividad como desarrollador
+  image: /images/online-courses/productividad-con-el-ide.png
+  url: https://academia.exeal.com/courses/productividad-con-el-ide
+- title: Curso de C# y .NET
+  description: Aprende a desarrollar aplicaciones con C# y .NET, desde los fundamentos hasta técnicas avanzadas.
+  image: /images/online-courses/csharp-y-dotnet.png
+  url: https://academia.exeal.com/courses/curso-de-csharp-y-net
+- title: Fundamentos de Docker
+  description: Aprende los conceptos básicos de Docker y cómo usarlo para crear, desplegar y ejecutar aplicaciones en contenedores.
+  image: /images/online-courses/fundamentos-docker.png
+  url: https://academia.exeal.com/courses/fundamentos-de-docker
+- title: Fundamentos de Testing Automatizado
+  description: Aprende a escribir pruebas automatizadas para asegurar la calidad de tu software y facilitar su mantenimiento.
+  image: /images/online-courses/fundamentos-testing.png
+  url: https://academia.exeal.com/courses/testing-automatico
+- title: Fundamentos de Orientación a Objetos
+  description: Aprende los principios de la programación orientada a objetos y cómo aplicarlos en tus proyectos.
+  image: /images/online-courses/fundamentos-oo.png
+  url: https://academia.exeal.com/courses/fundamentos-de-orientacion-a-objetos
+- title: Buenas prácticas con Web APIs
+  description: Aprende a diseñar y desarrollar Web APIs siguiendo las mejores prácticas para asegurar su calidad y mantenibilidad.
+  image: /images/online-courses/buenas-practicas-webapis.png
+  url: https://academia.exeal.com/courses/web-apis
+- title: Taller de Outside-in TDD
+  description: Aprende a aplicar Outside-in TDD para desarrollar software de forma incremental y centrada en el usuario.
+  image: /images/online-courses/outside-in-tdd.png
+  url: https://academia.exeal.com/courses/taller-de-outside-in-tdd

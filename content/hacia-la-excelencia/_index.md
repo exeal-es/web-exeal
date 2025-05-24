@@ -102,6 +102,15 @@ blocks:
       text: Apúntate ya
       scrollTo: sect-prices
 
+  # Online Course Carrousel
+  - type: course-carrousel
+    header: Cursos breves, prácticos y al grano
+    p1: "Éste es el catálogo de cursos online que tendrás <em>desde el primer día</em>:"
+    id: sect-course-carrousel
+    p2:
+      - Cada curso está dividido en <em>píldoras que puedes consumir sin saturarte</em>, aplicar sobre la marcha y retomar cuando lo necesites.
+      - "Nada de vídeos eternos ni teoría para olvidar: aquí vienes a <em>entrenar fundamentos clave</em>, paso a paso."
+
   # Meet your mentor
   - type: guide
     id: sect-trainer
@@ -111,10 +120,6 @@ blocks:
     header: Conoce a Pedro Pardal, tu mentor
     p1: Con más de 12 años de experiencia como desarrollador senior y tech lead en empresas como Tuenti, Trivago y Codurance, Pedro ha formado a más de 200 desarrolladores y equipos de alto rendimiento.
     p2: <em>-- "Mi misión es ayudarte a programar con propósito, confianza y claridad. Nos vemos en la comunidad."</em>
-
-  # Meet your mentor
-  - type: course-carrousel
-    id: sect-course-carrousel
 
   # Testimonials
   - type: testimonials

@@ -1,29 +1,26 @@
 <section id="{{ .id }}" class="light" style="position: relative;">
   <div class="container">
+    {{- partial "arrow-header.html" (dict "header" .header) }}
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>{{ .p1 | safeHTML }}</p>
+      </div>
+    </div>
     <div class="row flex-nowrap overflow-auto">
-      {{ $allCourses := where site.Pages "Params.layout" "course" }}
-      {{ range first 9 (where $allCourses "Params.featured" nil) }}
+      {{ range site.Data.onlinecourses }}
       <div class="col-md-4 col-sm-12">
         <div class="course-card">
           <div
-            class="course-header"
-            style="background-image: url('{{ .Params.course_featured_image }}')"
+            class="online-course-header"
+            style="background-image: url('{{ .image }}')"
           >
-            {{ if .Params.course_confirmed }}
-              <div class="featured-course">¡Fecha confirmada!</div>
-            {{ end }}
-            {{ if not .Params.course_visible }}
-              <div class="featured-course">¡Próximamente!</div>
-            {{ end }}
           </div>
           <div class="course-body">
-            <h3>{{ .Params.course_title }}</h3>
-            <p class="description">{{ .Description }}</p>
-            {{ if .Params.course_visible }}
-            <a class="button button-green expand" href="{{ .Permalink }}"
-              >Más info</a
+            <h3>{{ .title }}</h3>
+            <p class="description">{{ .description }}</p>
+            <a class="button button-green expand" target="_blank" rel="noopener noreferrer" href="{{ .url }}"
+              >Ver más</a
             >
-            {{ end }}
           </div>
         </div>
       </div>
@@ -32,12 +29,19 @@
     <div class="carousel-nav mt-4">
       <button class="carousel-control-prev" type="button" data-bs-target="#{{ .id }}" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only">Anteriores</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#{{ .id }}" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="sr-only">Siguientes</span>
       </button>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{ range .p2 }}
+        <p>{{ . | safeHTML }}</p>
+        {{ end }}
+      </div>
     </div>
   </div>
 </section>
