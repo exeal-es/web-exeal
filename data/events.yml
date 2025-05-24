@@ -35,7 +35,7 @@
   type: "Formación en directo"
   date: 2025-09-12T00:10:00+02:00
   format: "Online"
-  url: "/cursos/lider-desarrollador/"
+  url: "/cursos/pilares-del-software/"
 - title: "Líder Desarrollador"
   description: "Lidera desde el ejemplo, gestiona equipos de forma emocionalmente inteligente y haz crecer tu impacto profesional."
   image: "/images/courses/lider-desarrollador.png"
