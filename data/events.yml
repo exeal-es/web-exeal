@@ -1,10 +1,34 @@
-- title: "Master Arquitecto"
-  description: "Aprende a construir sistemas modulares, escalables y mantenibles aplicando DDD, arquitectura hexagonal, CQRS, patrones de diseño y análisis de trade-offs técnicos en entornos reales"
-  image: "/images/courses/master-arquitecto.png"
-  type: "Formación Avanzada"
-  date: 2025-06-06T00:10:00+02:00
+- title: "Kata: Refactoring Golf"
+  description: "Un ejercicio práctico para aprender los límites de tu entorno de desarrollo."
+  image: "/images/courses/kata-thumbnail.png"
+  type: "Kata"
+  date: 2025-06-02T00:18:30+02:00
   format: "Online"
-  url: "/cursos/master-arquitecto/"
+  url: "/hacia-la-excelencia/"
+  metadata: hle
+- title: "Kata: String Calculator"
+  description: "Un ejercicio de TDD básico para aprender a avanzar paso a paso."
+  image: "/images/courses/kata-thumbnail.png"
+  type: "Kata"
+  date: 2025-06-16T00:18:30+02:00
+  format: "Online"
+  url: "/hacia-la-excelencia/"
+  metadata: hle
+- title: "Kata: Tic Tac Toe"
+  description: "Un ejercicio para integrar Object Calisthenics con TDD."
+  image: "/images/courses/kata-thumbnail.png"
+  type: "Kata"
+  date: 2025-06-30T00:18:30+02:00
+  format: "Online"
+  url: "/hacia-la-excelencia/"
+  metadata: hle
+#- title: "Master Arquitecto"
+#  description: "Aprende a construir sistemas modulares, escalables y mantenibles aplicando DDD, arquitectura hexagonal, CQRS, patrones de diseño y análisis de trade-offs técnicos en entornos reales"
+#  image: "/images/courses/master-arquitecto.png"
+#  type: "Formación Avanzada"
+#  date: 2025-06-06T00:10:00+02:00
+#  format: "Online"
+#  url: "/cursos/master-arquitecto/"
 - title: "Pilares del Software"
   description: "Nuestro curso insignia, en el que re-descubrirás los fundamentos del desarrollo de software, a todos los niveles."
   image: "/images/courses/pilares-del-software.png"

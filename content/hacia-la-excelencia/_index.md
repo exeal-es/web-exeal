@@ -9,6 +9,7 @@ blocks:
   - type: hero
     id: sect-hero
     className: dark background background-01
+    backgroundImage: /images/blog/posts/dojo.jpg
     header: ¡Hacia la Excelencia!
     subheader: Únete a la comunidad de práctica que te ayudará a aplicar, perfeccionar y avanzar en tu carrera como desarrollador.
     callToAction:
@@ -77,6 +78,11 @@ blocks:
     callToAction:  
       text: Apúntate ya
       scrollTo: sect-prices
+
+  # Next events
+  - type: events-next-events-hle
+    id: sect-next-events
+    className: light
 
   # Content with image right
   - type: content-image-right
@@ -194,12 +200,12 @@ blocks:
     header: "Hacia la Excelencia incluye:"
     items:
       - Acceso a todos los cursos de la plataforma de e-learning de Exeal.
-      - 1 sesión bi-semanal en grupo de 2h (grabaciones disponibles).
+      - Sesiones en directo bisemanales de práctica en grupo.
       - Acceso a las grabaciones de las sesiones anteriores.
       - Comunidad privada en Discord.
-      - Dinámicas prácticas como katas y code reviews.
       - Masterclasses con expertos.
       - Acompañamiento en tu evolución profesional.
+      - Condiciones especiales y prioritarias para los programas avanzados de Exeal.
 
   # Call to action
   - type: call-to-action
