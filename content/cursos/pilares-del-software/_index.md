@@ -276,8 +276,8 @@ blocks:
     header: <em>Precio</em>.
     price:
       name: Oferta Early Bird
-      amountInEuroBefore: 109
-      amountInEuro: 29
+      amountInEuroBefore: 129
+      amountInEuro: 79
       details: LIMITADO a las primeras <em>30 plazas</em>. Disponible hasta el Jueves 31/7/2025, 23:59 o <em>hasta agotar</em>.
       enabled: true
       cta: Inscríbete
