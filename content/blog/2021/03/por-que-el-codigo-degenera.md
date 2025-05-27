@@ -4,7 +4,7 @@ description: "Ningún proyecto comienza siendo legacy. ¿Cuáles son los factore
 author: pedropardal
 date: 2021-03-26T00:10:00+01:00
 layout: post
-tags: ["legacy", "habitos"]
+tags: ["codigo-legacy", "habitos"]
 images:
   - "/images/blog/posts/fruit.jpg"
 featured_image: "/images/blog/posts/fruit.jpg"

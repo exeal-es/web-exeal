@@ -4,6 +4,7 @@ description: Escuchamos un fragmento de una interesantísima discusión surgida 
 author: pedropardal
 date: 2021-02-28T10:00:00+02:00
 layout: podcast
+tags: ["podcast"]
 podcast_episode_id: 4QApNlC4iMC8WpO8k3DxJQ
 hidden: true
 ---

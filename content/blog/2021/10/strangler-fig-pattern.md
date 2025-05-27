@@ -4,7 +4,7 @@ description: "Implementando Strangler fig pattern"
 author: damianpumar
 date: 2021-10-03T00:10:00+01:00
 layout: post
-tags: ["legacy", "refactoring"]
+tags: ["codigo-legacy", "refactoring"]
 images:
   - "/images/blog/posts/strangler-fig.jpg"
 featured_image: "/images/blog/posts/strangler-fig.jpg"

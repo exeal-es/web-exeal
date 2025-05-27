@@ -4,7 +4,7 @@ description: 'Micro-commits are a prerequisite for practicing trunk-based develo
 author: pedropardal
 date: 2023-12-15T00:00:00.000Z
 layout: post
-tags: [ci-cd, best-practices, tdd]
+tags: [ci-cd, buenas-practicas, tdd]
 images: [/images/blog/posts/videogame.webp]
 featured_image: /images/blog/posts/videogame.webp
 card_image: /images/blog/posts/videogame.webp

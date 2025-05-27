@@ -4,7 +4,7 @@ description: 'Do you know how to divide the requirements of your software projec
 author: pedropardal
 date: 2023-10-17T00:00:00.000Z
 layout: post
-tags: [team-work, agile, buenas-practicas]
+tags: [equipos, agile, buenas-practicas]
 images: [/images/blog/posts/elephant-slicing.jpg]
 featured_image: /images/blog/posts/elephant-slicing.jpg
 card_image: /images/blog/posts/elephant-slicing.jpg

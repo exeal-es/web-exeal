@@ -4,7 +4,7 @@ description: "Resumen de mis 3 primeros meses en Exeal"
 author: raulvillares
 date: 2022-04-19T00:10:00+01:00
 layout: post
-tags: ["coaching", "team-work", "agile"]
+tags: ["coaching", "equipos", "agile"]
 images:
   - "/images/blog/posts/team-coach.jpg"
 featured_image: "/images/blog/posts/team-coach.jpg"

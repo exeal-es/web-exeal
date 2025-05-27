@@ -4,7 +4,7 @@ description: "Comienza a usar el IDE de forma correcta para aumentar tu producti
 author: pedropardal
 date: 2021-04-18T00:10:00+01:00
 layout: post
-tags: ["legacy", "habitos", "refactoring"]
+tags: ["habitos", "refactoring"]
 images:
   - "/images/blog/posts/keyboard.jpg"
 featured_image: "/images/blog/posts/keyboard.jpg"

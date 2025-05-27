@@ -4,6 +4,7 @@ description: Nos sumergimos de lleno en el trepidante mundo Startup de la mano d
 author: pedropardal
 date: 2020-10-02T09:24:51+02:00
 layout: podcast
+tags: ["podcast"]
 podcast_episode_id: 6dPDA84sYh8iTTu0ZQ3t62
 hidden: true
 ---

@@ -4,7 +4,7 @@ description: 'Aprende cómo practicar Continuous Integration y Continuous Delive
 author: pedropardal
 date: 2024-02-01T00:00:00.000Z
 layout: post
-tags: [best-practices, ci-cd]
+tags: [buenas-practicas, ci-cd]
 images: [/images/blog/posts/programador.jpg]
 featured_image: /images/blog/posts/programador.jpg
 card_image: /images/blog/posts/programador.jpg

@@ -4,7 +4,7 @@ description: "Para qué sirven los tests de caracterización"
 author: damianpumar
 date: 2021-10-21T00:10:00+01:00
 layout: post
-tags: ["legacy", "refactoring", "test"]
+tags: ["codigo-legacy", "refactoring", "testing"]
 images:
   - "/images/blog/posts/test.jpg"
 featured_image: "/images/blog/posts/test.jpg"

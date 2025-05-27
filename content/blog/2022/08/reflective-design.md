@@ -4,7 +4,7 @@ description: "Cómo evitar que el código se deteriore aplicando el mindset de S
 author: pedropardal
 date: 2022-11-10T00:07:00+01:00
 layout: post
-tags: ["legacy", "refactoring", "oo-design"]
+tags: ["codigo-legacy", "refactoring", "oo-design"]
 images:
   - "/images/blog/posts/reflection.jpeg"
 featured_image: "/images/blog/posts/reflection.jpeg"
