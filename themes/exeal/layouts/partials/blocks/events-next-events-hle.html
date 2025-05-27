@@ -1,0 +1,17 @@
+<section id="{{ .id }}" class="{{ .className }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Próximas sesiones de la comunidad de práctica</h2>
+      </div>
+    </div>
+    <div class="row">
+      {{ $allEvents := where site.Data.events "metadata" "hle" }}
+      {{ range first 3 $allEvents }}
+      <div class="col-12">
+        {{- partial "events/eventcard-hle.html" . -}}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

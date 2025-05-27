@@ -9,6 +9,7 @@ blocks:
   - type: hero
     id: sect-hero
     className: dark background background-01
+    backgroundImage: /images/blog/posts/dojo.jpg
     header: ¡Hacia la Excelencia!
     subheader: Únete a la comunidad de práctica que te ayudará a aplicar, perfeccionar y avanzar en tu carrera como desarrollador.
     callToAction:
@@ -78,6 +79,11 @@ blocks:
       text: Apúntate ya
       scrollTo: sect-prices
 
+  # Next events
+  - type: events-next-events-hle
+    id: sect-next-events
+    className: light
+
   # Content with image right
   - type: content-image-right
     id: sect-step-2
@@ -101,6 +107,15 @@ blocks:
     callToAction:  
       text: Apúntate ya
       scrollTo: sect-prices
+
+  # Online Course Carrousel
+  - type: course-carrousel
+    header: Cursos breves, prácticos y al grano
+    p1: "Éste es el catálogo de cursos online que tendrás <em>desde el primer día</em>:"
+    id: sect-course-carrousel
+    p2:
+      - Cada curso está dividido en <em>píldoras que puedes consumir sin saturarte</em>, aplicar sobre la marcha y retomar cuando lo necesites.
+      - "Nada de vídeos eternos ni teoría para olvidar: aquí vienes a <em>entrenar fundamentos clave</em>, paso a paso."
 
   # Meet your mentor
   - type: guide
@@ -159,7 +174,7 @@ blocks:
   - type: prices
     id: sect-prices
     className: gloaming
-    header: Descubre nuestros <em>precios</em>.
+    header: Elige cómo quieres empezar.
     prices:
       - name: Suscripción mensual
         amountInEuro: 29
@@ -185,12 +200,12 @@ blocks:
     header: "Hacia la Excelencia incluye:"
     items:
       - Acceso a todos los cursos de la plataforma de e-learning de Exeal.
-      - 1 sesión bi-semanal en grupo de 2h (grabaciones disponibles).
+      - Sesiones en directo bisemanales de práctica en grupo.
       - Acceso a las grabaciones de las sesiones anteriores.
       - Comunidad privada en Discord.
-      - Dinámicas prácticas como katas y code reviews.
       - Masterclasses con expertos.
       - Acompañamiento en tu evolución profesional.
+      - Condiciones especiales y prioritarias para los programas avanzados de Exeal.
 
   # Call to action
   - type: call-to-action

@@ -1,0 +1,47 @@
+<section id="{{ .id }}" class="light" style="position: relative;">
+  <div class="container">
+    {{- partial "arrow-header.html" (dict "header" .header) }}
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>{{ .p1 | safeHTML }}</p>
+      </div>
+    </div>
+    <div class="row flex-nowrap overflow-auto">
+      {{ range site.Data.onlinecourses }}
+      <div class="col-md-4 col-sm-12">
+        <div class="course-card">
+          <div
+            class="online-course-header"
+            style="background-image: url('{{ .image }}')"
+          >
+          </div>
+          <div class="course-body">
+            <h3>{{ .title }}</h3>
+            <p class="description">{{ .description }}</p>
+            <a class="button button-green expand" target="_blank" rel="noopener noreferrer" href="{{ .url }}"
+              >Ver más</a
+            >
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <div class="carousel-nav mt-4">
+      <button class="carousel-control-prev" type="button" data-bs-target="#{{ .id }}" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anteriores</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#{{ .id }}" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguientes</span>
+      </button>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{ range .p2 }}
+        <p>{{ . | safeHTML }}</p>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
