@@ -4,7 +4,7 @@ description: 'Explora el espacio y practica test-driven development y patrones d
 date: 2023-12-23T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [tdd, object-design, design-patterns]
+categories_katas: [tdd, object-design, patrones-de-diseño]
 images: [/images/katas/marsrover.jpg]
 featured_image: /images/katas/marsrover.jpg
 card_image: /images/katas/marsrover.jpg

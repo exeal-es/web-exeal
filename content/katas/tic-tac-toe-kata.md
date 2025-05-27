@@ -4,7 +4,7 @@ description: 'El clásico juego de tablero tres en raya, un ejercicio perfecto p
 date: 2023-12-23T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [tdd, starter, object-design]
+categories_katas: [tdd, starter, object-design]
 images: [/images/blog/posts/dojo.jpg]
 featured_image: /images/blog/posts/dojo.jpg
 card_image: /images/blog/posts/dojo.jpg

@@ -4,7 +4,7 @@ description: 'Un proyecto para practicar desarrollo con TDD en un proyecto reali
 date: 2024-07-18T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [tdd, outside-in, experienced]
+categories_katas: [tdd, outside-in, experienced]
 images: [/images/blog/posts/hotel.jpg]
 featured_image: /images/blog/posts/hotel.jpg
 card_image: /images/blog/posts/hotel.jpg

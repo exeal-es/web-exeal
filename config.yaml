@@ -19,3 +19,10 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+taxonomies:
+  tag: tags
+  categories_katas: categories_katas
+
+permalinks:
+  categories_katas: /katas/tags/:slug/

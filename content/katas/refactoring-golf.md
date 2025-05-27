@@ -4,7 +4,7 @@ description: 'Un sencillo ejercicio para comenzar a dar los primeros pasos con t
 date: 2025-05-27T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [refactoring, starter]
+categories_katas: [refactoring, starter]
 images: [/images/blog/posts/golf.jpg]
 featured_image: /images/blog/posts/golf.jpg
 card_image: /images/blog/posts/golf.jpg

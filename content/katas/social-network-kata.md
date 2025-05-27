@@ -4,7 +4,7 @@ description: 'Un ejercicio para practicar Arquitectura Hexagonal y TDD Outside-i
 date: 2025-04-14T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [tdd, outside-in, experienced, mocks, arquitectura, hexagonal]
+categories_katas: [tdd, outside-in, experienced, mocks, arquitectura]
 images: [/images/blog/posts/social-network.jpg]
 featured_image: /images/blog/posts/social-network.jpg
 card_image: /images/blog/posts/social-network.jpg

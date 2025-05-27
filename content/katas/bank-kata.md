@@ -4,7 +4,7 @@ description: 'Un ejercicio algo más complejo para practicar el estilo de TDD Ou
 date: 2023-12-23T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [tdd, outside-in, experienced, mocks]
+categories_katas: [tdd, outside-in, experienced, mocks]
 images: [/images/blog/posts/dojo.jpg]
 featured_image: /images/blog/posts/dojo.jpg
 card_image: /images/blog/posts/dojo.jpg

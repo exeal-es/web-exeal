@@ -4,7 +4,7 @@ description: 'Ejercicio para practicar TDD mockista o Outside-in en un escenario
 date: 2024-06-30T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [tdd, outside-in, experienced, mocks]
+categories_katas: [tdd, outside-in, experienced, mocks]
 images: [/images/blog/posts/birthday-stock.jpg]
 featured_image: /images/blog/posts/birthday-stock.jpg
 card_image: /images/blog/posts/birthday-stock.jpg
