@@ -26,7 +26,11 @@
     <div class="row justify-content-center align-items-center text-center">
       <div class="col-m-12">
         <p>
-          <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button button-center">{{ .callToAction.text }}</a>
+          {{ if .callToAction.href }}
+            <a href="{{ .callToAction.href }}" target="_blank" rel="noopener noreferrer" class="button button-center">{{ .callToAction.text }}</a>
+          {{ else }}
+            <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button button-center">{{ .callToAction.text }}</a>
+          {{ end }}
         </p>
       </div>
     </div>
