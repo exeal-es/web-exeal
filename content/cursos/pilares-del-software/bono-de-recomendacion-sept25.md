@@ -3,6 +3,7 @@ title: "Tu invitación a Pilares del Software"
 description: "Dos días para pasar del ‘a ver si no rompe’ al ‘lo tengo bajo control’."
 date: 2025-05-28T00:00:00+02:00
 layout: blocks
+hidden: true
 blocks:
   # Hero
   - type: hero
