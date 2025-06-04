@@ -7,16 +7,7 @@
     {{- partial "gtm_body.html" . -}}
     
     {{- partial "katas/navbar.html" . -}}
-    
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1>Katas con la categoría "{{ .Title }}"</h1>
-          </div>
-        </div>
-      </div>
-
-    {{- partial "katas/postlist.html" . -}}
+    {{- partial "katas/content.html" . -}}
     {{- partial "footer.html" . -}}
     {{- partial "javascript.html" . -}}
   </body>

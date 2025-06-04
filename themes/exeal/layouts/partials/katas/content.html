@@ -13,7 +13,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h2>Todas las katas</h2>
+        {{ if eq .Kind "term" }}
+          <h2>Katas con la categoría "{{ .Title }}"</h2>
+        {{ else if eq .Kind "section" }}
+          <h2>Todas las katas</h2>
+        {{ end }}
         <ul class="tags tags-dark">
           {{ range $name, $pages := .Site.Taxonomies.categories_katas }}
             <li>
