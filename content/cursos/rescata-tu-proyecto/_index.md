@@ -6,7 +6,7 @@ layout: course
 course_title: "Rescata tu proyecto"
 course_featured_image: /images/courses/rescata-tu-proyecto.png
 course_visible: true
-course_confirmed: true
+#course_confirmed: true
 blocks:
   - type: hero
     id: sect-hero
@@ -114,25 +114,29 @@ blocks:
     id: sect-hero-with-image
     className: gloaming background background-06
     header: ¿Cuándo y dónde es la próxima edición?
-    subheader: La próxima edición de <em>Rescata tu proyecto</em> se celebrará <em>online</em> los días <em>viernes 21 y sábado 22 de Noviembre de 2025</em>.
+    #subheader: La próxima edición de <em>Rescata tu proyecto</em> se celebrará <em>online</em> los días <em>viernes 21 y sábado 22 de Noviembre de 2025</em>.
+    subheader: Aún no hay fecha confirmada para la próxima edición de <em>Rescata tu proyecto</em>, pero puedes apuntarte a la lista de espera para enterarte antes que nadie cuando abramos plazas.
     image: /assets/img/photo-training-module.png
     callToAction:
-      text: Quiero apuntarme
-      scrollTo: sect-prices
+      text: Apuntarme en la lista de espera
+      #scrollTo: sect-prices
+      scrollTo: sect-cta
 
-  # Precios
-  - type: single-price
-    id: sect-prices
-    className: dark background background-04
-    header: <em>Precio</em>.
-    price:
-      name: Precio de lanzamiento
-      amountInEuroBefore: 1047
-      amountInEuro: 697
-      details: LIMITADO a <em>15 plazas</em>. Disponible hasta el Domingo 9/11/2025, 23:59 o <em>hasta agotar</em>.
-      enabled: true
-      cta: Agenda una llamada de admisión
-      checkoutUrl: https://calendly.com/exeal/llamada-de-admision-en-rescata-tu-proyecto
+  # # Precios
+  # - type: single-price
+  #   id: sect-prices
+  #   className: dark background background-04
+  #   header: <em>Precio</em>.
+  #   price:
+  #     name: Precio de lanzamiento
+  #     amountInEuroBefore: 997
+  #     amountInEuro: 597
+  #     #details: LIMITADO a <em>15 plazas</em>. Disponible hasta el Domingo 9/11/2025, 23:59 o <em>hasta agotar</em>.
+  #     enabled: true
+  #     #cta: Agenda una llamada de admisión
+  #     #checkoutUrl: https://calendly.com/exeal/llamada-de-admision-en-rescata-tu-proyecto
+  #     cta: Apuntarme a la lista de espera
+  #     checkoutUrl: https://docs.google.com/forms/d/e/1FAIpQLScqPt6rnPRi2KRJPQbFRnjUdJf1xB3PahsUhIWrpT4Ux2O0JA/viewform?usp=dialog
 
   # FAQ
   - type: syllabus-extended
@@ -168,6 +172,8 @@ blocks:
     id: sect-cta
     className: dark background background-07
     header: ¿Estás listo para dejar de apagar fuegos y empezar a rescatar tu proyecto con datos, estrategia y confianza?
-    ctaLabel: Agenda una llamada de admisión
-    ctaHref: https://calendly.com/exeal/llamada-de-admision-en-rescata-tu-proyecto
+    #ctaLabel: Agenda una llamada de admisión
+    #ctaHref: https://calendly.com/exeal/llamada-de-admision-en-rescata-tu-proyecto
+    ctaLabel: Apuntarme en la lista de espera
+    ctaHref: https://docs.google.com/forms/d/e/1FAIpQLScqPt6rnPRi2KRJPQbFRnjUdJf1xB3PahsUhIWrpT4Ux2O0JA/viewform?usp=dialog
 ---
