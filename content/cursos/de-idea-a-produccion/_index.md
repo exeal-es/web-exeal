@@ -15,7 +15,10 @@ blocks:
     backgroundImage: /images/courses/de-idea-a-produccion.png
     paragraphs:
       - Trabajarás con técnicas de Continuous Discovery, Design Sprint, BDD, Value Stream Mapping y diseño de pipelines de CI/CD orientadas a maximizar valor y aprendizaje continuo.
-
+    callToAction:
+      text: Apuntarme a la lista de espera
+      scrollTo: sect-cta
+      
   - type: stakes-with-image
     id: sect-stakes
     className: light

@@ -16,7 +16,10 @@ blocks:
     backgroundImage: /images/courses/rescata-tu-proyecto.png
     paragraphs:
       - Dejarás de apagar fuegos y empezarás a mejorar el código de forma segura, paso a paso, con métricas objetivas y decisiones basadas en datos reales.
-
+    callToAction:
+      text: Apuntarme a la lista de espera
+      scrollTo: sect-cta
+      
   - type: stakes-with-image
     id: sect-stakes
     className: light

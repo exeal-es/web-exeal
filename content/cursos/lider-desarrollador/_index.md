@@ -16,6 +16,9 @@ blocks:
     backgroundImage: /images/courses/lider-desarrollador.png
     paragraphs:
       - Aprenderás a dominar la comunicación, el feedback, la negociación, el public speaking y la construcción de tu marca personal como developer de alto valor.
+    callToAction:
+      text: Apuntarme a la lista de espera
+      scrollTo: sect-cta
 
   - type: stakes-with-image
     id: sect-stakes

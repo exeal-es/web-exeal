@@ -15,7 +15,10 @@ blocks:
     backgroundImage: /images/courses/modo-ia.jpg
     paragraphs:
       - Aprenderás a usar la IA como una herramienta técnica, productiva y sostenible. Domina herramientas como Copilot, Cursor y ChatGPT para escribir código, automatizar tareas y documentar sin perder el control ni la calidad.
-
+    callToAction:
+      text: Apuntarme a la lista de espera
+      scrollTo: sect-cta
+  
   - type: stakes-with-image
     id: sect-stakes
     className: light

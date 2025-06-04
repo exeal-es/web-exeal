@@ -15,7 +15,10 @@ blocks:
     backgroundImage: /images/courses/a-prueba-de-fallos.png
     paragraphs:
       - Aprenderás a diseñar estrategias de testing efectivas, aplicar TDD avanzado, usar testing de performance, contract testing, mutation testing y a automatizar la validación de calidad tanto en backend como en frontend.
-
+    callToAction:
+      text: Apuntarme a la lista de espera
+      scrollTo: sect-cta
+      
   - type: stakes-with-image
     id: sect-stakes
     className: light

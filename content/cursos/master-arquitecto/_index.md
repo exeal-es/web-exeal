@@ -16,7 +16,10 @@ blocks:
     backgroundImage: /images/courses/master-arquitecto.png
     paragraphs:
       - Aprenderás a construir sistemas modulares, escalables y mantenibles aplicando DDD, arquitectura hexagonal, CQRS, patrones de diseño y análisis de trade-offs técnicos en entornos reales.
-
+    callToAction:
+      text: Apuntarme a la lista de espera
+      scrollTo: sect-cta
+      
   - type: stakes-with-image
     id: sect-stakes
     className: light
