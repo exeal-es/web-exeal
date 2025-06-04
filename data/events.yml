@@ -1,11 +1,11 @@
-- title: "Kata: Refactoring Golf"
-  description: "Un ejercicio práctico para aprender los límites de tu entorno de desarrollo."
-  image: "/images/courses/kata-thumbnail.png"
-  type: "Kata"
-  date: 2025-06-02T00:18:30+02:00
-  format: "Online"
-  url: "/hacia-la-excelencia/"
-  metadata: hle
+# - title: "Kata: Refactoring Golf"
+#   description: "Un ejercicio práctico para aprender los límites de tu entorno de desarrollo."
+#   image: "/images/courses/kata-thumbnail.png"
+#   type: "Kata"
+#   date: 2025-06-02T00:18:30+02:00
+#   format: "Online"
+#   url: "/hacia-la-excelencia/"
+#   metadata: hle
 - title: "Kata: String Calculator"
   description: "Un ejercicio de TDD básico para aprender a avanzar paso a paso."
   image: "/images/courses/kata-thumbnail.png"
@@ -36,17 +36,17 @@
   date: 2025-09-12T00:10:00+02:00
   format: "Online"
   url: "/cursos/pilares-del-software/"
-- title: "Líder Desarrollador"
-  description: "Lidera desde el ejemplo, gestiona equipos de forma emocionalmente inteligente y haz crecer tu impacto profesional."
-  image: "/images/courses/lider-desarrollador.png"
-  type: "Formación Avanzada"
-  date: 2025-09-26T00:10:00+02:00
-  format: "Online"
-  url: "/cursos/lider-desarrollador/"
-- title: "Rescata Tu Proyecto"
-  description: "Dejarás de apagar fuegos y empezarás a mejorar el código de forma segura, paso a paso, con métricas objetivas y decisiones basadas en datos reales."
-  image: "/images/courses/rescata-tu-proyecto.png"
-  type: "Formación Avanzada"
-  date: 2025-11-21T00:10:00+02:00
-  format: "Online"
-  url: "/cursos/rescata-tu-proyecto/"
+# - title: "Líder Desarrollador"
+#   description: "Lidera desde el ejemplo, gestiona equipos de forma emocionalmente inteligente y haz crecer tu impacto profesional."
+#   image: "/images/courses/lider-desarrollador.png"
+#   type: "Formación Avanzada"
+#   date: 2025-09-26T00:10:00+02:00
+#   format: "Online"
+#   url: "/cursos/lider-desarrollador/"
+# - title: "Rescata Tu Proyecto"
+#   description: "Dejarás de apagar fuegos y empezarás a mejorar el código de forma segura, paso a paso, con métricas objetivas y decisiones basadas en datos reales."
+#   image: "/images/courses/rescata-tu-proyecto.png"
+#   type: "Formación Avanzada"
+#   date: 2025-11-21T00:10:00+02:00
+#   format: "Online"
+#   url: "/cursos/rescata-tu-proyecto/"
