@@ -12,7 +12,7 @@
             <p>{{ . | safeHTML }}</p>
           {{ end }}
           {{ if .callToAction }}
-          <p><a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button button-center">{{ .callToAction.text }}</a></p>
+            {{- partial "call-to-action.html" .callToAction }}
           {{ end }}
         </div>
       </div>
