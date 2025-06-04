@@ -4,7 +4,7 @@ description: 'El slack, o tiempo no comprometido, es una de las prácticas funda
 author: pedropardal
 date: 2023-07-20T00:00:00.000Z
 layout: post
-tags: [xp, team-work, agile, buenas-practicas]
+tags: [equipos, agile, buenas-practicas]
 images: [/images/blog/posts/pair-programming.jpeg]
 featured_image: /images/blog/posts/pair-programming.jpeg
 card_image: /images/blog/posts/pair-programming.jpeg

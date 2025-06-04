@@ -4,7 +4,7 @@ description: "Breve introducción a técnicas de logging, cómo escribir logs ú
 author: pedropardal
 date: 2021-04-07T00:10:00+01:00
 layout: post
-tags: ["logs", "bugs", "netcore", "csharp"]
+tags: ["logs", "csharp"]
 images:
   - "/images/blog/posts/logs.jpg"
 featured_image: "/images/blog/posts/logs.jpg"

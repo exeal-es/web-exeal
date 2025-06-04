@@ -4,7 +4,7 @@ description: '¿Cómo va a ser más productivo dos personas trabajando en una ú
 author: pedropardal
 date: 2024-02-27T00:00:00.000Z
 layout: post
-tags: [best-practices]
+tags: [buenas-practicas]
 images: [/images/blog/posts/pair-programming.jpeg]
 featured_image: /images/blog/posts/pair-programming.jpeg
 card_image: /images/blog/posts/pair-programming.jpeg

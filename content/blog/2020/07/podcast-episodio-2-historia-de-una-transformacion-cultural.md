@@ -4,6 +4,7 @@ description: Los compañeros de la empresa Voxel Group, de Barcelona, nos cuenta
 author: pedropardal
 date: 2020-07-09T00:00:00+02:00
 layout: podcast
+tags: ["podcast"]
 podcast_episode_id: 14OGCmuCcTyspAfX1wM8yO
 hidden: true
 ---

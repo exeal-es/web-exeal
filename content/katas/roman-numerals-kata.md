@@ -4,7 +4,7 @@ description: 'Un ejercicio algorítmico para practicar la transformation priorit
 date: 2024-02-24T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [tdd, starter]
+categories_katas: [tdd, starter]
 images: [/images/blog/posts/dojo.jpg]
 featured_image: /images/blog/posts/dojo.jpg
 card_image: /images/blog/posts/dojo.jpg

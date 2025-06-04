@@ -4,7 +4,7 @@ description: 'TDD es una herramienta, no una panacea. Aprender a discernir cuán
 author: pedropardal
 date: 2024-01-31T00:00:00.000Z
 layout: post
-tags: [best-practices, tdd]
+tags: [buenas-practicas, tdd]
 images: [/images/blog/posts/tdd-woman.jpg]
 featured_image: /images/blog/posts/tdd-woman.jpg
 card_image: /images/blog/posts/tdd-woman.jpg

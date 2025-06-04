@@ -4,7 +4,7 @@ description: La gestión de errores en APIs web es un punto clave a la hora de d
 author: pedropardal
 date: 2020-09-04T00:00:00+02:00
 layout: post
-tags: ["apis", "netcore", "csharp"]
+tags: ["apis", "csharp"]
 images:
   - "/images/blog/posts/controlled-explosion.jpg"
 featured_image: "/images/blog/posts/controlled-explosion.jpg"

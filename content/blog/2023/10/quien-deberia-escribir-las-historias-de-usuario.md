@@ -4,7 +4,7 @@ description: '¿Quién escribe las historias de usuario? ¿El Product Owner? ¿E
 author: pedropardal
 date: 2023-10-24T00:00:00.000Z
 layout: post
-tags: [team-work, agile, buenas-practicas]
+tags: [equipos, agile, buenas-practicas]
 images: [/images/blog/posts/post-it-wall.jpg]
 featured_image: /images/blog/posts/post-it-wall.jpg
 card_image: /images/blog/posts/post-it-wall.jpg

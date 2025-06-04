@@ -4,7 +4,7 @@ description: 'Kata práctica para aprender arquitectura hexagonal creando un aco
 date: 2025-05-13T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [arquitectura, experienced]
+categories_katas: [arquitectura, mocks, outside-in, experienced]
 images: [/images/blog/posts/panel-hexagonal.jpg]
 featured_image: /images/blog/posts/panel-hexagonal.jpg
 card_image: /images/blog/posts/panel-hexagonal.jpg

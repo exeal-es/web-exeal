@@ -4,10 +4,10 @@ description: 'Implementa las reglas de este famoso juego de tablero para practic
 date: 2023-12-23T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [tdd, starter, object-design]
-images: [/images/blog/posts/dojo.jpg]
-featured_image: /images/blog/posts/dojo.jpg
-card_image: /images/blog/posts/dojo.jpg
+categories_katas: [tdd, starter, object-design]
+images: [/images/katas/snakesandladdersboard.jpg]
+featured_image: /images/katas/snakesandladdersboard.jpg
+card_image: /images/katas/snakesandladdersboard.jpg
 ---
 
 *Snakes and Ladders* (Serpientes y Escaleras) es un antiguo juego de mesa indio considerado hoy en día un clásico mundial. Se juega entre dos o más jugadores en un tablero de juego que tiene cuadrados numerados y enrejados. En el tablero se representan varias "escaleras" y "serpientes", cada una conectando dos cuadrados específicos del tablero. (Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Snakes_and_ladders))

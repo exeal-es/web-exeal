@@ -4,7 +4,7 @@ description: 'Ejercicio de refactoring para practicar cómo resolver el abuso de
 date: 2024-02-08T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [refactoring, experienced, object-design]
+categories_katas: [refactoring, experienced, object-design]
 images: [/images/blog/posts/dojo.jpg]
 featured_image: /images/blog/posts/dojo.jpg
 card_image: /images/blog/posts/dojo.jpg

@@ -4,7 +4,7 @@ description: "¿Cómo se trabaja con Mob programming?"
 author: damianpumar
 date: 2021-10-26T00:10:00+01:00
 layout: post
-tags: ["habits", "team-work"]
+tags: ["buenas-practicas", "equipos"]
 images:
   - "/images/blog/posts/mob-programming.jpg"
 featured_image: "/images/blog/posts/mob-programming.jpg"

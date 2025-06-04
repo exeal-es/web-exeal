@@ -4,7 +4,7 @@ description: 'Ejercicio de refactoring para aprender a desacoplar dependencias c
 date: 2023-12-23T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [refactoring, experienced]
+categories_katas: [refactoring, experienced]
 images: [/images/blog/posts/dojo.jpg]
 featured_image: /images/blog/posts/dojo.jpg
 card_image: /images/blog/posts/dojo.jpg

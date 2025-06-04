@@ -4,7 +4,7 @@ description: 'Practica test-driven development en el contexto de una situación 
 date: 2023-12-23T00:00:00.000Z
 layout: kata
 author: pedropardal
-tags: [tdd, starter]
+categories_katas: [tdd, starter]
 images: [/images/blog/posts/dojo.jpg]
 featured_image: /images/blog/posts/dojo.jpg
 card_image: /images/blog/posts/dojo.jpg
