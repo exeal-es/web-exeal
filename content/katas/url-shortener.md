@@ -108,4 +108,5 @@ Debes implementar la lógica de negocio usando **arquitectura hexagonal (puertos
 
 Si te ha gustado esta kata y quieres profundizar en diseño evolutivo, arquitectura hexagonal y cómo tomar mejores decisiones técnicas en sistemas reales, échale un vistazo a la formación:
 
-👉 [Master Arquitecto – Formación avanzada en diseño y arquitectura de software](https://www.exeal.com/cursos/master-arquitecto/?utm_source=exeal.com&utm_medium=website&utm_campaign=master_arquitecto_jun25&utm_content=katas)
+- [Solución en C#](https://academia.exeal.com/courses/masterclass-arquitectura-hexagonal)
+- [Master Arquitecto – Formación avanzada en diseño y arquitectura de software](https://www.exeal.com/cursos/master-arquitecto/?utm_source=exeal.com&utm_medium=website&utm_campaign=master_arquitecto_jun25&utm_content=katas)
