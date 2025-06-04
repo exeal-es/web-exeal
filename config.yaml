@@ -15,6 +15,23 @@ params:
   facebookDomainVerification: xwbugjbpmp2jwy1y6mzdhe6ga267uz
   hotjarId: 5031744
   hubspotId: 8231847
+
+  navbar:
+  - name: "Próximos Eventos"
+    url: "/eventos/"
+    type: link
+  - name: "Recursos"
+    type: dropdown
+    items:
+      - name: "Checklist de Equipos de Alto Rendimiento"
+        url: "/checklist-equipos-de-alto-rendimiento/"
+      - name: "Comunidad de práctica"
+        url: "/hacia-la-excelencia/"
+      - name: "Blog"
+        url: "/blog/"
+      - name: "Katas"
+        url: "/katas/"
+
 markup:
   goldmark:
     renderer:
