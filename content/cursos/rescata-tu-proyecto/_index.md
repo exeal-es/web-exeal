@@ -7,6 +7,8 @@ course_title: "Rescata tu proyecto"
 course_featured_image: /images/courses/rescata-tu-proyecto.png
 course_visible: true
 #course_confirmed: true
+aliases:
+  - "/legacy/"
 blocks:
   - type: hero
     id: sect-hero
