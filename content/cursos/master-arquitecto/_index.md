@@ -6,7 +6,7 @@ layout: course
 course_title: "Master arquitecto"
 course_featured_image: /images/courses/master-arquitecto.png
 course_visible: true
-course_confirmed: true
+#course_confirmed: true
 blocks:
   - type: hero
     id: sect-hero
@@ -139,25 +139,26 @@ blocks:
     id: sect-hero-with-image
     className: gloaming background background-06
     header: ¿Cuándo y dónde es la próxima edición?
-    subheader: La próxima edición de <em>Master Arquitecto</em> se celebrará <em>online</em> los días <em>viernes 6 y sábado 7 de Junio de 2025</em>.
+    #subheader: La próxima edición de <em>Master Arquitecto</em> se celebrará <em>online</em> los días <em>viernes 6 y sábado 7 de Junio de 2025</em>.
+    subheader: Aún no hay fecha confirmada para la próxima edición de <em>Master Arquitecto</em>, pero puedes apuntarte a la lista de espera para enterarte antes que nadie cuando abramos plazas.
     image: /assets/img/photo-training-module.png
     callToAction:
-      text: Quiero apuntarme
-      scrollTo: sect-prices
+      text: Apuntarme a la lista de espera
+      scrollTo: sect-cta
 
-  # Precios
-  - type: single-price
-    id: sect-prices
-    className: dark background background-04
-    header: <em>Precio</em>.
-    price:
-      name: Precio de lanzamiento
-      amountInEuroBefore: 1047
-      amountInEuro: 697
-      details: LIMITADO a <em>15 plazas</em>. Disponible hasta el Sábado 31/5/2025, 23:59 o <em>hasta agotar</em>.
-      enabled: true
-      cta: Reserva tu plaza
-      checkoutUrl: https://calendly.com/exeal/llamada-de-admision-master-arquitecto
+  # # Precios
+  # - type: single-price
+  #   id: sect-prices
+  #   className: dark background background-04
+  #   header: <em>Precio</em>.
+  #   price:
+  #     name: Precio de lanzamiento
+  #     amountInEuroBefore: 1047
+  #     amountInEuro: 697
+  #     details: LIMITADO a <em>15 plazas</em>. Disponible hasta el Sábado 31/5/2025, 23:59 o <em>hasta agotar</em>.
+  #     enabled: true
+  #     cta: Reserva tu plaza
+  #     checkoutUrl: https://calendly.com/exeal/llamada-de-admision-master-arquitecto
 
   # FAQ
   - type: syllabus-extended
@@ -193,6 +194,8 @@ blocks:
     id: sect-cta
     className: dark background background-07
     header: ¿Estás listo para dejar de improvisar y empezar a diseñar con criterio, intención y solidez técnica?
-    ctaLabel: Reserva tu plaza
-    ctaHref: https://calendly.com/exeal/llamada-de-admision-master-arquitecto
+    #ctaLabel: Reserva tu plaza
+    #ctaHref: https://calendly.com/exeal/llamada-de-admision-master-arquitecto
+    ctaLabel: Apuntarme en la lista de espera
+    ctaHref: https://docs.google.com/forms/d/e/1FAIpQLSc1NUWUCEjTu_qFtQaw_1xGliOjwpBYHkXJpQE78PuLX1KoxA/viewform?usp=dialog
 ---
