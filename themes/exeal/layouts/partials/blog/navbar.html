@@ -13,24 +13,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav ml-auto"> 
-        <li class="nav-item">
-          <a class="nav-link" href="/eventos/">Próximos Eventos</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ i18n "navresources" }}
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-            <a class="dropdown-item" href="/blog/">Blog</a>
-            <a class="dropdown-item" href="/katas/">Katas</a>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link nav-button" href="/">Cursos</a>
-        </li>
+      <ul class="navbar-nav ml-auto">
+        {{- partial "blog/navbar-items.html" . -}}
       </ul>
     </div>
   </div>
