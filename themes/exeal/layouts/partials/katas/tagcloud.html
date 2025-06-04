@@ -1,0 +1,7 @@
+<ul class="tags tags-dark">
+  {{ range $name, $pages := .Site.Taxonomies.categories_katas }}
+    <li>
+      <a href="{{ (index $.Site.Taxonomies.categories_katas $name).Page.RelPermalink }}">#{{ $name }}</a> ({{ len $pages }})
+    </li>
+  {{ end }}
+</ul>
