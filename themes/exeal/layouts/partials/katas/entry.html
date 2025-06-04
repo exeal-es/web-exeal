@@ -1,0 +1,11 @@
+<div class="kataentry">
+  <div class="kataentry-content">
+    <p class="kataentry-title">{{ .Title }}</p>
+    <p class="kataentry-tags">
+      {{ range $i, $tag := .Params.categories_katas }}#{{ $tag }} {{ end }}
+    </p>
+  </div>
+  <img src="/assets/img/arrow-cta-yellow.svg"></img>
+  <a href="{{ .Permalink }}"></a>
+</div>
+
