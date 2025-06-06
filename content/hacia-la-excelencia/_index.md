@@ -3,6 +3,7 @@ title: "Hacia la Excelencia"
 description: "Únete a la comunidad de práctica que te ayudará a aplicar, perfeccionar y avanzar en tu carrera como desarrollador."
 date: 2025-02-13T00:00:00+02:00
 layout: cop
+hidden: true
 team:
   [{ name: "pedropardal" }]
 blocks:
