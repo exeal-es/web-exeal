@@ -7,7 +7,7 @@ blocks:
   - type: hero-download-freebie
     id: sect-form
     className: dark background background-05
-    header: Habla el <em>idioma del negocio</em>
+    header: "Habla el <em>idioma del negocio</em>: 16 términos clave que todo dev senior debería manejar"
     subheader: "Descárgate gratis esta guía práctica y empieza a traducir tus decisiones técnicas al idioma de dirección."
     formAction: https://app.kit.com/forms/8153282/subscriptions
     inputs:
