@@ -25,6 +25,8 @@ params:
     items:
       - name: "Checklist de Equipos de Alto Rendimiento"
         url: "/checklist-equipos-de-alto-rendimiento/"
+      - name: "Habla el idioma del negocio"
+        url: "/recursos/habla-el-idioma-del-negocio/"
       - name: "Comunidad de práctica"
         url: "/hacia-la-excelencia/"
       - name: "Blog"
