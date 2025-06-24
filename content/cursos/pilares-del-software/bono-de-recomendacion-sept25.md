@@ -32,7 +32,7 @@ blocks:
   - type: ticked-list
     id: sect-experiencia
     className: "dark background background-03"
-    header: "Lo que VAS a hacer en el taller"
+    header: "Lo que VAS a hacer en esta formación"
     items:
       - Tomar un fragmento de código enmarañado y dejarlo nítido, paso a paso, con tests que te avisan si algo se rompe.
       - Dividir una funcionalidad grande en trozos pequeños que el negocio entiende y valora.
@@ -65,36 +65,15 @@ blocks:
       text: Ver temario completo
       href: /cursos/pilares-del-software#sect-syllabus-extended
 
-  # Testimonials
-  - type: testimonials
-    id: sect-testimonials
+  # VSL Testimonios
+  - type: vsl-youtube
+    id: sect-video-testimonials
     className: light
-    testimonials:
-    - name: "Victoria Kovaleva"
-      position: "Junior Software Engineer"
-      photo: "/images/testimonials/vika.jpeg"
-      text: "&ldquo;Me he dado cuenta de que si hubiera seguido como estaba, sin esta formación, me hubiera costado años llegar al nivel de claridad y confianza que tengo ahora.&rdquo;"
-      active: true
-
-    - name: "Fermín Saez"
-      position: "Senior Software Engineer"
-      photo: "/images/testimonials/fermin-saez.jpeg"
-      text: "&ldquo;Yo pensaba que sabía hacerlo muy bien. Pero cuando vi tu forma de trabajar, me cambió la perspectiva. No era solo mejorar el código, era mejorar mi forma de pensar como desarrollador.&rdquo;"
-
-    - name: "Raúl Gómez"
-      position: "Software Engineer"
-      photo: "/images/testimonials/raulgomez.jpeg"
-      text: "&ldquo;Antes me daba miedo que criticaran mi código. Ahora sé que criticar el código no es criticarme a mí. Eso me ha dado mucha seguridad para trabajar en equipo.&rdquo;"
-
-    - name: "Samuel Álvarez"
-      position: "Software Engineer @ Voxel Group"
-      photo: "/images/testimonials/samu.jpeg"
-      text: "&ldquo;Para mí no ha sido solo aprender técnicas. Ha sido entender cómo encajan entre sí para construir algo sólido. Como un puzzle que por fin tiene sentido.&rdquo;"
-
-    - name: "David Lorenzo"
-      position: "Software Engineer @ Voxel Group"
-      photo: "/images/testimonials/davidlorenzo.jpeg"
-      text: "&ldquo;Aprender contigo fue un punto de inflexión en mi carrera. Cambié mi forma de pensar y de escribir código. Ya no improviso, sé lo que hago.&rdquo;"
+    header: Estos developers ya cambiaron su forma de desarrollar software para siempre
+    youtubeUrl: https://www.youtube.com/embed/yxNZ5_PaGu4?si=oeNnHH_ytgI8fUyS
+    callToAction:
+      text: Quiero aprovechar mi invitación
+      scrollTo: sect-prices
 
   # Precios
   - type: single-price
@@ -105,7 +84,7 @@ blocks:
         name: Invitación de confianza
         amountInEuroBefore: 129
         amountInEuro: 29
-        details: "Disponible solo desde este enlace y por tiempo limitado, hasta el 30/06/2025."
+        details: "Disponible solo desde este enlace y por tiempo limitado, hasta el 07/06/2025."
         enabled: true
         cta: "Reservar mi plaza"
         checkoutUrl: "https://academia.exeal.com/enroll/3372757?price_id=4313779"
@@ -135,7 +114,7 @@ blocks:
     className: "gloaming background background-06"
     header: "En tu entrada tienes"
     items:
-      - "16 h en directo — 12 y 13 sep 2025."
+      - "16 h en directo — 12 y 13 sept 2025."
       - "Grabaciones disponibles 7 días para repasar."
       - "Repositorio de ejercicios y ejemplos."
       - "Canal privado en Discord 30 días para dudas."
