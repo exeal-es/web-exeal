@@ -1,0 +1,40 @@
+<section id="{{ .id }}" class="{{ .className }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12 mb-3">
+        <h1>{{ .header | safeHTML }}</h1>
+        <h4>{{ .subheader | safeHTML }}</h4>
+      </div>
+      <div class="col-md-5 col-sm-12 mb-3">
+        <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+        <form
+          method="post"
+          action="{{ .formAction }}"
+          >
+          {{ range .inputs }}
+            <div class="form-group">
+              <input
+                class="form-control"
+                id="{{ .name }}"
+                name="{{ .name }}"
+                type="{{ .type }}"
+                placeholder="{{ .placeholder }}"
+                required
+              />
+            </div>
+          {{ end }}
+          <div class="row">
+            <div class="col-12">
+              <input
+                class="button expand"
+                type="submit"
+                name="submit"
+                value="{{ .submitText }}"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -23,14 +23,16 @@ params:
   - name: "Recursos"
     type: dropdown
     items:
-      - name: "Checklist de Equipos de Alto Rendimiento"
-        url: "/checklist-equipos-de-alto-rendimiento/"
-      - name: "Comunidad de práctica"
-        url: "/hacia-la-excelencia/"
+      - name: "Equipos de alto rendimiento"
+        url: "/recursos/checklist-equipos-de-alto-rendimiento/"
+      - name: "Habla el idioma del negocio"
+        url: "/recursos/habla-el-idioma-del-negocio/"
+      #- name: "Comunidad de práctica"
+      #  url: "/hacia-la-excelencia/"
+      - name: "Katas de programación"
+        url: "/katas/"
       - name: "Blog"
         url: "/blog/"
-      - name: "Katas"
-        url: "/katas/"
 
 markup:
   goldmark:

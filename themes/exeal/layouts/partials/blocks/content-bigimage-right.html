@@ -1,0 +1,24 @@
+<section id="{{ .id }}" class="{{ .className }}">
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-md-5">
+        <h2>{{ .header | safeHTML }}</h2>
+        <p>
+          {{ .p1 | safeHTML }}
+        </p>
+        <p>
+          {{ .p2 | safeHTML }}
+        </p>
+        {{ if .callToAction }}
+          <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button">{{ .callToAction.text }}</a>
+        {{ end }}
+      </div>
+      <div class="col-md-7 d-none d-sm-none d-md-block">
+        <img
+          class="img-fluid pad"
+          src="{{ .image }}"
+        />
+      </div>
+    </div>
+  </div>
+</section>
