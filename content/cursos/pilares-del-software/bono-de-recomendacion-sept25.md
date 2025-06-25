@@ -84,7 +84,7 @@ blocks:
         name: Invitación de confianza
         amountInEuroBefore: 129
         amountInEuro: 29
-        details: "Disponible solo desde este enlace y por tiempo limitado, hasta el 07/06/2025."
+        details: "Disponible solo desde este enlace y por tiempo limitado, hasta el 07/07/2025."
         enabled: true
         cta: "Reservar mi plaza"
         checkoutUrl: "https://academia.exeal.com/enroll/3372757?price_id=4313779"
