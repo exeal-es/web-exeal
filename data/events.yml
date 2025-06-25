@@ -6,14 +6,14 @@
 #   format: "Online"
 #   url: "/hacia-la-excelencia/"
 #   metadata: hle
-- title: "Kata: String Calculator"
-  description: "Un ejercicio de TDD básico para aprender a avanzar paso a paso."
-  image: "/images/courses/kata-thumbnail.png"
-  type: "Kata"
-  date: 2025-06-16T00:18:30+02:00
-  format: "Online"
-  url: "/hacia-la-excelencia/"
-  metadata: hle
+#- title: "Kata: String Calculator"
+#  description: "Un ejercicio de TDD básico para aprender a avanzar paso a paso."
+#  image: "/images/courses/kata-thumbnail.png"
+#  type: "Kata"
+#  date: 2025-06-16T00:18:30+02:00
+#  format: "Online"
+#  url: "/hacia-la-excelencia/"
+#  metadata: hle
 - title: "Kata: Tic Tac Toe"
   description: "Un ejercicio para integrar Object Calisthenics con TDD."
   image: "/images/courses/kata-thumbnail.png"
