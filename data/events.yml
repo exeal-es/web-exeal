@@ -14,11 +14,43 @@
 #  format: "Online"
 #  url: "/hacia-la-excelencia/"
 #  metadata: hle
-- title: "Kata: Tic Tac Toe"
-  description: "Un ejercicio para integrar Object Calisthenics con TDD."
+- title: "Taller: Micro-commits"
+  description: "Practicaremos cómo hacer commits pequeños y frecuentes."
   image: "/images/courses/kata-thumbnail.png"
   type: "Kata"
   date: 2025-06-30T00:18:30+02:00
+  format: "Online"
+  url: "/hacia-la-excelencia/"
+  metadata: hle
+- title: "Taller: Consume-first style"
+  description: "Aprenderemos a escribir código desde abajo hacia arriba."
+  image: "/images/courses/kata-thumbnail.png"
+  type: "Kata"
+  date: 2025-07-14T00:18:30+02:00
+  format: "Online"
+  url: "/hacia-la-excelencia/"
+  metadata: hle
+- title: "Taller: El primer test con TDD"
+  description: "Aprenderemos cómo identificar el primer test de un problema."
+  image: "/images/courses/kata-thumbnail.png"
+  type: "Kata"
+  date: 2025-07-28T00:18:30+02:00
+  format: "Online"
+  url: "/hacia-la-excelencia/"
+  metadata: hle
+- title: "Taller: Incrementos de valor con TDD"
+  description: "Aplicaremos el marco mental de los grados de libertad."
+  image: "/images/courses/kata-thumbnail.png"
+  type: "Kata"
+  date: 2025-08-11T00:18:30+02:00
+  format: "Online"
+  url: "/hacia-la-excelencia/"
+  metadata: hle
+- title: "Taller: Object Calisthenics con TDD"
+  description: "Haremos un ejercicio para integrar Object Calisthenics con TDD."
+  image: "/images/courses/kata-thumbnail.png"
+  type: "Kata"
+  date: 2025-08-25T00:18:30+02:00
   format: "Online"
   url: "/hacia-la-excelencia/"
   metadata: hle
