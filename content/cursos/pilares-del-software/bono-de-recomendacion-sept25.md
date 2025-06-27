@@ -70,7 +70,7 @@ blocks:
     id: sect-video-testimonials
     className: light
     header: Estos developers ya cambiaron su forma de desarrollar software para siempre
-    youtubeUrl: https://www.youtube.com/embed/yxNZ5_PaGu4?si=oeNnHH_ytgI8fUyS
+    youtubeUrl: https://www.youtube.com/embed/xnNiD3tDMw8?si=KOPnt4L8p1GoEJ4X
     callToAction:
       text: Quiero aprovechar mi invitación
       scrollTo: sect-prices
