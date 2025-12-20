@@ -210,6 +210,20 @@ blocks:
     p1: Con más de 12 años de experiencia como desarrollador senior y tech lead en empresas como Tuenti, Trivago y Codurance, Pedro ha formado a más de 200 desarrolladores y equipos de alto rendimiento.
     p2: <em>-- "Mi misión es ayudarte a programar con propósito, confianza y claridad. Nos vemos en el curso."</em>
 
+  # Video testimonials
+  - type: video-testimonials
+    id: sect-video-testimonials
+    header: "Esto es lo que opinan algunos compañeros de la comunidad de developers que ya se han formado con nosotros:"
+    testimonials:
+      - youtube: "https://www.youtube.com/embed/wGQ8NsRdM5g"
+      - youtube: "https://www.youtube.com/embed/TIJuCH4NIbA"
+      - youtube: "https://www.youtube.com/embed/q7IhgkVc7A8"
+      - youtube: "https://www.youtube.com/embed/JCi0JKSKDlc"
+      - youtube: "https://www.youtube.com/embed/2YPzBVWktso"
+      - youtube: "https://www.youtube.com/embed/LkFF7cPoaMk"
+      - youtube: "https://www.youtube.com/embed/6CFY2W5QWMY"
+      - youtube: "https://www.youtube.com/embed/T3KGgo2l3nw"
+
   # Testimonials
   - type: testimonials
     id: sect-testimonials

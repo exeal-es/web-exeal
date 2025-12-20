@@ -1,0 +1,33 @@
+<section id="{{ .id }}" class="{{ .className }}">
+  <div class="container">
+    {{- partial "arrow-header.html" (dict "header" .header) }}
+
+    <div class="row flex-nowrap overflow-auto">
+      {{ range .testimonials }}
+      <div class="col-md-6 col-sm-12">
+        <div class="course-card">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+              src="{{ .youtube }}"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <div class="carousel-nav">
+      <button class="carousel-control-prev" type="button" data-bs-target="#{{ .id }}" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anteriores</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#{{ .id }}" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguientes</span>
+      </button>
+    </div>
+  </div>
+</section>
