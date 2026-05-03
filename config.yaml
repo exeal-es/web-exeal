@@ -17,9 +17,6 @@ params:
   hubspotId: 8231847
 
   navbar:
-  - name: "Próximos Eventos"
-    url: "/eventos/"
-    type: link
   - name: "Recursos"
     type: dropdown
     items:
