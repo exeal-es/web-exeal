@@ -111,9 +111,19 @@ blocks:
       photo: "/images/testimonials/emilio-macias.jpeg"
       text: "&ldquo;Tras empezar a trabajar con Exeal, volvemos a respirar en el equipo el aprendizaje, las preguntas, las lecturas... El éxito principal es ayudar a crecer y retener a nuestros profesionales.&rdquo;"
 
+
+  # VSL Testimonios
+  - type: vsl-youtube
+    id: sect-video-testimonials
+    className: light
+    header: Cómo cambia un equipo cuando cambia su forma de desarrollar software
+    youtubeUrl: https://www.youtube.com/embed/xnNiD3tDMw8?si=KOPnt4L8p1GoEJ4X
+    callToAction:
+      text: Quiero transformar mi equipo
+      scrollTo: sect-contact-form
+
   # Partners
   - type: partners
-
 
   # Explaining paragraph
   - type: explaining-paragraph
