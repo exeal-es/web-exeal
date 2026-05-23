@@ -6,6 +6,9 @@
       </div>
       <div class="col-md-10 col-sm-12">
         <h2>{{ .header | safeHTML }}</h2>
+        {{ if .p1 }}
+          <p>{{ .p1 | safeHTML }}</p>
+        {{ end }}
         {{- partial "contactform.html" . -}}
       </div>
     </div>
