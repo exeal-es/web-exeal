@@ -1,6 +1,6 @@
 # Exeal Website
 
-[![CircleCI](https://circleci.com/gh/exeal-es/web-exeal/tree/master.svg?style=svg)](https://circleci.com/gh/exeal-es/web-exeal/tree/master)
+[![CI](https://github.com/exeal-es/web-exeal/actions/workflows/deploy.yml/badge.svg)](https://github.com/exeal-es/web-exeal/actions)
 
 ## :pick: Requirements
 
