@@ -1,7 +1,7 @@
 ---
 title: "Pilares del Software"
 description: "Construye tu futuro como desarrollador sobre los pilares del código sostenible, la entrega continua de valor y el liderazgo de equipos de alto rendimiento."
-date: 2025-05-01T00:00:00+02:00
+date: 2026-06-02T00:00:00+02:00
 layout: blocks
 featured: true
 images: [/images/ogcard/pilares-del-software.png]
@@ -16,10 +16,10 @@ blocks:
     subheader: Con Pilares del Software vas a escribir código que no se rompe, reducir deuda técnica y entregar sin ansiedad. Aplicable desde el lunes.
     backgroundImage: /images/courses/pilares-high-res.jpg
     paragraphs:
-      - "Próxima edición: 12 y 13 de septiembre de 2025 (Online)"
+      - "Próxima edición: por confirmar"
     callToAction:
-      text: Inscribete ahora
-      scrollTo: sect-prices
+      text: Apúntate a la lista de espera
+      scrollTo: sect-cta
 
   # The stakes
   - type: stakes-with-image
@@ -62,8 +62,8 @@ blocks:
       - Tomar las riendas de tu carrera como desarrollador.
     paragraph2: No es teoría para archivar. Es práctica para aplicar. <em>Lo que aprendes aquí, lo aplicas en tu código desde el primer día</em>. Así se nota el cambio.
     callToAction:
-      text: Inscribete ahora
-      scrollTo: sect-prices
+      text: Apúntate a la lista de espera
+      scrollTo: sect-cta
 
   # Diferenciador: Por qué este curso no es uno más
   - type: ticked-list
@@ -77,8 +77,8 @@ blocks:
       - 'No solo escuchas sobre equipos: <em>experimentas dinámicas que mejoran cómo trabajas en grupo</em>.'
     paragraph2: "Esto no lo encuentras en vídeos ni en artículos. Es el tipo de aprendizaje que se queda contigo, porque lo vives y lo aplicas desde el primer momento."
     callToAction:
-      text: Inscribete ahora
-      scrollTo: sect-prices
+      text: Apúntate a la lista de espera
+      scrollTo: sect-cta
 
   - type: ticked-list
     id: sect-metodologia
@@ -114,8 +114,8 @@ blocks:
         description: 'Ya seas junior o senior, trabajarás en desarrollar aspectos clave que hacen a un profesional de alto valor: liderazgo, comunicación, mentalidad de mejora continua.'
     paragraph2: Estos pilares te proporcionan las herramientas necesarias para avanzar como desarrollador, impactar en tu equipo y contribuir al éxito de los productos que creas.
     callToAction:
-      text: Inscribete ahora
-      scrollTo: sect-prices
+      text: Apúntate a la lista de espera
+      scrollTo: sect-cta
 
   # Aplicabilidad
   - type: ticked-list
@@ -283,19 +283,19 @@ blocks:
       - "Si quieres mejorar tus habilidades, reducir la frustración y avanzar en tu carrera como desarrollador, 'Pilares del Software' es tu oportunidad para dominar las herramientas y técnicas que marcan la diferencia. No importa si trabajas en backend, frontend o full stack: este curso te dará una base sólida que podrás aplicar desde el primer día."
       - No necesitas permiso para aplicar lo aprendido. Desde escribir mejor código hoy, hasta introducir prácticas como micro-refactoring o tests, el cambio empieza contigo. Y si lideras equipo o aspiras a hacerlo, te llevas también herramientas para inspirar cambio sin imponerlo.
 
-  # Precios
-  - type: single-price
-    id: sect-prices
-    className: dark background background-04
-    header: <em>Precio</em>.
-    price:
-      name: Oferta Early Bird
-      amountInEuroBefore: 129
-      amountInEuro: 79
-      details: LIMITADO a las primeras <em>30 plazas</em>. Disponible hasta el Jueves 31/7/2025, 23:59 o <em>hasta agotar</em>.
-      enabled: true
-      cta: Inscríbete
-      checkoutUrl: https://academia.exeal.com/enroll/3372757?price_id=4280871&utm_source=exeal.com&utm_medium=website&utm_campaign=pilares_del_software_sept25&utm_content=curso
+#  # Precios
+#  - type: single-price
+#    id: sect-prices
+#    className: dark background background-04
+#    header: <em>Precio</em>.
+#    price:
+#      name: Oferta Early Bird
+#      amountInEuroBefore: 129
+#      amountInEuro: 79
+#      details: LIMITADO a las primeras <em>30 plazas</em>. Disponible hasta el Jueves 31/7/2025, 23:59 o <em>hasta agotar</em>.
+#      enabled: true
+#      cta: Inscríbete
+#      checkoutUrl: https://academia.exeal.com/enroll/3372757?price_id=4280871&utm_source=exeal.com&utm_medium=website&utm_campaign=pilares_del_software_sept25&utm_content=curso
 
   # FAQ
   - type: syllabus-extended
@@ -349,6 +349,6 @@ blocks:
     id: sect-cta
     className: dark background background-07
     header: Deja de improvisar. Aprende a programar con criterio, confianza y propósito.
-    ctaLabel: Inscribete ahora
-    ctaHref: https://academia.exeal.com/enroll/3372757?price_id=4280871&utm_source=exeal.com&utm_medium=website&utm_campaign=pilares_del_software_sept25&utm_content=curso
+    ctaLabel: Apúntate a la lista de espera
+    ctaHref: https://forms.gle/wbnrDZQJH6De1xKN7
 ---
