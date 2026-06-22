@@ -24,17 +24,17 @@ La aplicación debe exponer una clase llamada `TicketPriceCalculator` con el sig
 
 ```csharp
 public decimal CalculatePrice(
-    TicketType ticketType,
-    int age,
     int quantity,
+    int age,
+    bool isStudent,
     bool isWeekend)
 ```
 
 Donde:
 
-* `ticketType` indica el tipo de entrada adquirida.
-* `age` es la edad del comprador.
 * `quantity` es el número de entradas compradas.
+* `age` es la edad del comprador.
+* `isWeekend` indica si el comprador es estudiante o no.
 * `isWeekend` indica si la compra se realiza en fin de semana.
 
 Ejemplo de uso:
@@ -43,9 +43,9 @@ Ejemplo de uso:
 var calculator = new TicketPriceCalculator();
 
 var price = calculator.CalculatePrice(
-    TicketType.General,
-    age: 35,
     quantity: 2,
+    age: 35,
+    isStudent: false,
     isWeekend: false);
 
 price.Should().Be(40m);
