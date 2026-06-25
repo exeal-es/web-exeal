@@ -17,6 +17,9 @@ params:
   hubspotId: 8231847
 
   navbar:
+  - name: "Zenkai"
+    type: link
+    url: "https://www.zenkai.academy/"
   - name: "Recursos"
     type: dropdown
     items:
