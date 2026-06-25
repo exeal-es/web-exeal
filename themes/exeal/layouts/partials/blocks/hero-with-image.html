@@ -6,7 +6,7 @@
         <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg" /></p>
         <p class="bigger">{{ .subheader | safeHTML }}</p>
         {{ if .callToAction }}
-          <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button">{{ .callToAction.text }}</a>
+          {{- partial "call-to-action.html" .callToAction }}
         {{ end }}
       </div>
       <div class="col-md-5 d-none d-sm-none d-md-block">

@@ -20,15 +20,15 @@ params:
   - name: "Zenkai"
     type: link
     url: "https://www.zenkai.academy/"
-  - name: "Recursos"
-    type: dropdown
-    items:
-      - name: "Equipos de alto rendimiento"
-        url: "/recursos/checklist-equipos-de-alto-rendimiento/"
-      - name: "Habla el idioma del negocio"
-        url: "/recursos/habla-el-idioma-del-negocio/"
-      - name: "Blog"
-        url: "/blog/"
+  - name: "Blog"
+    type: link
+    url: "/blog/"
+  - name: "Contacto"
+    type: link
+    url: "/contacto/"
+  - name: "Evalúa tu equipo"
+    type: button
+    url: "/recursos/checklist-equipos-de-alto-rendimiento/"
 
 markup:
   goldmark:

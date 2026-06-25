@@ -2,7 +2,7 @@
   <div class="col-m-12">
     <p>
       {{ if .href }}
-        <a href="{{ .href }}" target="_blank" rel="noopener noreferrer" class="button button-center">{{ .text }}</a>
+        <a href="{{ .href }}" rel="noopener noreferrer" class="button button-center">{{ .text }}</a>
       {{ else }}
         <a data-scroll="{{ .scrollTo }}" href="#" class="button button-center">{{ .text }}</a>
       {{ end }}

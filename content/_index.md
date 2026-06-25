@@ -3,8 +3,6 @@ title: "Entrega software que aporta valor, sin bloquear a tu equipo"
 description: "Ayudamos a organizaciones a aumentar su capacidad para entregar software mediante testing, refactoring, arquitectura evolutiva y prácticas modernas de ingeniería preparadas para la era de la IA."
 date: 2025-03-15T00:00:00+02:00
 layout: courses
-aliases:
-  - "/cursos/"
 
 blocks:
   # Hero with image
@@ -15,8 +13,8 @@ blocks:
     subheader: Ayudamos a organizaciones a aumentar su capacidad para entregar software mediante testing, refactoring, arquitectura evolutiva y prácticas modernas de ingeniería preparadas para la era de la IA.
     image: /assets/img/photo-coaching-module.png
     callToAction:
-      text: Contáctanos
-      scrollTo: sect-contact-form
+      text: Evalúa tu equipo
+      href: /recursos/checklist-equipos-de-alto-rendimiento/
 
   # Clients
   - type: clients
@@ -53,8 +51,8 @@ blocks:
       - Modernización de legacy code
       - Integración de engineers en equipos existentes
     callToAction:
-      text: Quiero saber más
-      scrollTo: sect-contact-form
+      text: Evalúa tu equipo
+      href: /recursos/checklist-equipos-de-alto-rendimiento/
 
   # Value proposition elements
   - type: valueprop-elements
@@ -120,7 +118,7 @@ blocks:
     youtubeUrl: https://www.youtube.com/embed/xnNiD3tDMw8?si=KOPnt4L8p1GoEJ4X
     callToAction:
       text: Quiero transformar mi equipo
-      scrollTo: sect-contact-form
+      href: /recursos/checklist-equipos-de-alto-rendimiento/
 
   # Partners
   - type: partners
@@ -150,13 +148,15 @@ blocks:
         description: Ayudamos al equipo a aplicar los cambios sobre el producto real mediante coaching técnico, pairing y apoyo hands-on en situaciones reales de desarrollo.
         icon: /assets/img/icons/white/Exeal-Icon-10.png
     callToAction:
-      text: Quiero comenzar
-      scrollTo: sect-contact-form
+      text: Comienza evaluando tu equipo
+      href: /recursos/checklist-equipos-de-alto-rendimiento/
 
-  # Contact Form
-  - type: contact-form
-    id: sect-contact-form
-    className: gloaming
-    header: Cuéntanos qué está frenando a tu equipo
-    p1: Hablemos sobre cómo mejorar la capacidad de entrega, reducir complejidad técnica y construir software preparado para evolucionar.
+  # Call to action
+  - type: call-to-action
+    id: sect-cta
+    className: light
+    header: ¿Qué capacidad real tiene tu equipo para entregar software?
+    p: Descubre en menos de 10 minutos qué está frenando a tu equipo y compara tu nivel con el de otros equipos de ingeniería.
+    ctaLabel: Evaluar mi equipo
+    ctaHref: /recursos/checklist-equipos-de-alto-rendimiento/
 ---
