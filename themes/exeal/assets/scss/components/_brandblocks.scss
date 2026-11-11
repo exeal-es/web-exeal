@@ -249,3 +249,33 @@ $xb-mono: "JetBrainsMono-Regular", monospace;
 // ---------- Tarjeta de oferta: legibilidad ----------
 .xb-offers .course-body li { color: $dark-background-color; }
 .xb-offers .course-header { min-height: 20rem; position: relative; }
+
+// ---------- Fondo del hero: código en diagonal a la derecha, difuminado hacia el texto ----------
+.xb-hero.xb-hero-bg {
+  position: relative;
+  overflow: hidden;
+  background-color: $dark-background-color;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; right: 0;
+    width: 70%;
+    background-image: url("/assets/img/hero-code.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    opacity: 0.5;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 45%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 45%);
+    pointer-events: none;
+  }
+  & > .container { position: relative; z-index: 1; }
+  @media (max-width: 991px) {
+    &::before {
+      width: 100%;
+      opacity: 0.35;
+      -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 60%);
+      mask-image: linear-gradient(180deg, #000 0%, transparent 60%);
+    }
+  }
+}

@@ -8,7 +8,7 @@ blocks:
   # Hero
   - type: hero-terminal
     id: sect-hero
-    className: dark background background-03
+    className: dark xb-hero-bg
     kicker: "// formación para equipos de desarrollo"
     header: Construir bien software <em>nunca ha importado tanto</em>
     subheader: La IA ha cambiado cómo se escribe código. Lo que decide si tu software aguanta sigue siendo lo mismo, los fundamentos y el criterio de tu equipo. Formamos a equipos de desarrollo para dominarlos, practicando sobre vuestro código.
