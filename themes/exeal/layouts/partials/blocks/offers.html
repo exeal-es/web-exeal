@@ -2,7 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2>{{ .header | safeHTML }}</h2>
+        {{ with .kicker }}<p class="xb-kicker">{{ . }}</p>{{ end }}
+        <h2 class="xb-hook">{{ .header | safeHTML }}</h2>
         {{ if .paragraph }}<p>{{ .paragraph | safeHTML }}</p>{{ end }}
       </div>
     </div>
@@ -15,8 +16,9 @@
           </div>
           <div class="col-lg-6 col-sm-12">
             <div class="course-body">
+              {{ with .kicker }}<p class="xb-offer-kicker">{{ . }}</p>{{ end }}
               <h3>{{ .title }}</h3>
-              {{ if .tagline }}<p class="description"><strong>{{ .tagline | safeHTML }}</strong></p>{{ end }}
+              {{ if .tagline }}<blockquote class="xb-offer-tagline">{{ .tagline | safeHTML }}</blockquote>{{ end }}
               <p class="description">{{ .description | safeHTML }}</p>
               {{ with .features }}
               <ul class="course-features">

@@ -279,3 +279,224 @@ $xb-mono: "JetBrainsMono-Regular", monospace;
     }
   }
 }
+
+// ---------- Titulares-gancho ----------
+.xb-hook {
+  font-family: $h1-font, sans-serif;
+  font-size: 2.1em;
+  line-height: 1.2em;
+  margin: 0 0 0.6em;
+  em { font-style: normal; color: $primary-color; }
+  @media (max-width: 767px) { font-size: 1.6em; }
+}
+.light .xb-hook em, .gloaming .xb-hook em {
+  color: $dark-background-color;
+  background: linear-gradient(transparent 62%, rgba(5, 230, 155, 0.45) 62%);
+}
+.xb-kicker {
+  font-family: $xb-mono;
+  color: $primary-color;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  margin-bottom: 1em;
+}
+.light .xb-kicker, .gloaming .xb-kicker { color: #0a9e6c; }
+.xb-intro { font-size: 1.05em; max-width: 40em; }
+.xb-outro {
+  font-family: $h2-font, sans-serif;
+  font-size: 1.2em;
+  margin-top: 1em;
+  em { font-style: normal; color: $secondary-color; }
+}
+
+// ---------- Tarjetas de artefacto ----------
+.xb-artifacts {
+  padding-top: 4.5em;
+  padding-bottom: 4em;
+  .xb-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0.6rem 0.6rem 1.4rem -1rem rgba(0, 0, 0, 0.55);
+    border-top: 4px solid $mid-gray;
+    color: $dark-background-color;
+  }
+  .xb-card-warn { border-top-color: #ff5a5a; }
+  .xb-card-ok { border-top-color: $primary-color; }
+  .xb-card-artifact {
+    margin: 0;
+    background: #0d1a22;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: $xb-mono;
+    font-size: 0.72em;
+    line-height: 1.75em;
+    padding: 1em 1.2em;
+    white-space: pre-wrap;
+    overflow: hidden;
+    .r { color: #ff7a7a; }
+    .g { color: $primary-color; }
+    .a { color: $secondary-color; }
+    .m { color: $mid-gray; }
+    .b { color: #8fd3ff; }
+  }
+  .xb-card-body {
+    padding: 1.1em 1.3em 1.2em;
+    h3 {
+      font-family: $h2-font, sans-serif;
+      font-weight: 700;
+      font-size: 1.1em;
+      font-style: normal;
+      margin: 0 0 0.4em;
+    }
+    p { margin: 0; font-size: 0.92em; line-height: 1.55em; }
+  }
+  &.dark .xb-card { background: #1f3443; color: white; box-shadow: none; }
+}
+
+// ---------- Declaración como titular ----------
+.xb-statement {
+  padding-top: 5em;
+  padding-bottom: 4.5em;
+  .xb-statement-big {
+    font-family: $h1-font, sans-serif;
+    font-size: 3.4em;
+    line-height: 1.1em;
+    margin: 0;
+    @media (max-width: 767px) { font-size: 2.2em; }
+  }
+  .xb-statement-p { font-size: 1.05em; line-height: 1.8em; }
+}
+
+// ---------- Tarjeta de oferta: kicker y lema ----------
+.xb-offers {
+  .xb-offer-kicker {
+    font-family: $xb-mono;
+    font-size: 0.75em;
+    color: #0a9e6c;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4em;
+  }
+  .xb-offer-tagline {
+    font-family: $h1-font, sans-serif;
+    font-size: 1.35em;
+    line-height: 1.3em;
+    color: $dark-background-color;
+    border-left: 4px solid $primary-color;
+    padding: 0.1em 0 0.1em 0.8em;
+    margin: 0 0 1em;
+  }
+}
+
+// ---------- Hero con foto (landing) ----------
+.xb-hero.xb-hero-photo {
+  position: relative;
+  overflow: hidden;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  background-color: $dark-background-color;
+  background-image:
+    linear-gradient(90deg, rgba(13, 26, 34, 0.96) 0%, rgba(13, 26, 34, 0.82) 42%, rgba(13, 26, 34, 0.35) 100%),
+    var(--xb-hero-photo);
+  background-size: cover;
+  background-position: center;
+  & > .container { position: relative; z-index: 1; }
+  h1 { font-size: 3em; }
+  @media (max-width: 991px) {
+    min-height: 0;
+    background-image:
+      linear-gradient(180deg, rgba(13, 26, 34, 0.75) 0%, rgba(13, 26, 34, 0.97) 60%),
+      var(--xb-hero-photo);
+    h1 { font-size: 2.1em; }
+  }
+  .xb-terminal { background: rgba(13, 26, 34, 0.88); backdrop-filter: blur(4px); }
+}
+.xb-hero-facts {
+  list-style: none;
+  padding: 0;
+  margin: 2.2em 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 1.6em;
+  font-family: $xb-mono;
+  font-size: 0.78em;
+  color: rgba(255, 255, 255, 0.75);
+  li::before { content: "▸ "; color: $primary-color; }
+}
+.xb-terminal-body {
+  .chk { color: rgba(255, 255, 255, 0.9); }
+  .chk .g { color: $primary-color; }
+  .chk .m { color: $mid-gray; }
+  .hdr { color: $secondary-color; letter-spacing: 0.08em; }
+}
+
+// ---------- Formador ----------
+.xb-trainer {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  .xb-trainer-photo {
+    position: relative;
+    height: 28rem;
+    background-size: cover;
+    border: 4px solid $primary-color;
+    & > div.flap {
+      display: block; position: absolute; border-color: $secondary-color;
+      border-width: 4px; width: 7em; padding-bottom: 7em;
+      border-top-right-radius: 50%; border-right-style: solid; border-top-style: solid;
+      top: -4px; right: -4px;
+    }
+  }
+  .xb-trainer-name {
+    font-family: $h2-font, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    span { color: $mid-gray; font-size: 0.85em; }
+  }
+  .xb-trainer-track {
+    font-family: $xb-mono;
+    font-size: 0.8em;
+    color: $mid-gray;
+    span.sep { color: $primary-color; margin: 0 0.6em; }
+  }
+  .xb-trainer-quote {
+    font-family: $h1-font, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.35em;
+    border-left: 4px solid $secondary-color;
+    padding-left: 0.8em;
+    margin: 1.4em 0;
+  }
+  .xb-trainer-social a {
+    font-family: $h2-font, sans-serif;
+    margin-right: 1.2em;
+    color: inherit;
+    border-bottom: 2px solid $primary-color;
+    text-decoration: none;
+  }
+}
+
+// ---------- Logos de clientes, más contenidos ----------
+#sect-clients img.client-logo {
+  max-height: 64px !important;
+  max-width: 8.5rem;
+  filter: grayscale(0.15);
+}
+.xb-cta-band h2 em { font-style: normal; color: $primary-color; }
+.xb-terminal-body .err { color: #ff7a7a; }
+.xb-offers { padding-top: 4.5em; padding-bottom: 4em; }
+
+// ---------- Ajustes ----------
+.xb-hero.xb-hero-photo { min-height: 44rem; padding-top: 6em; padding-bottom: 6em; }
+@media (max-width: 991px) { .xb-hero.xb-hero-photo { min-height: 0; } }
+.xb-artifacts .xb-card-artifact {
+  border: 0 !important;
+  border-radius: 0 !important;
+  min-height: 5.6em;
+}
+.xb-trainer-quote small { display: block; font-family: $p-font, sans-serif; font-size: 0.6em; color: $mid-gray; margin-top: 0.5em; }
+.xb-head { margin-bottom: 1.5em; }
+@media (max-width: 575px) {
+  .xb-terminal { font-size: 0.6em; }
+  .xb-terminal .xb-terminal-body p { white-space: pre; }
+}

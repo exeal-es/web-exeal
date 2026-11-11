@@ -1,10 +1,12 @@
 <section id="{{ .id }}" class="xb-statement {{ .className }}">
   <div class="container">
-    {{- partial "arrow-header.html" (dict "header" .header) }}
     <div class="row">
-      <div class="col-lg-10 offset-lg-2">
-        {{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}
-        <p class="xb-statement-big">{{ .statement | safeHTML }}</p>
+      <div class="col-lg-10">
+        {{ with .kicker }}<p class="xb-kicker">{{ . }}</p>{{ end }}
+        <h2 class="xb-statement-big">{{ .statement | safeHTML }}</h2>
+      </div>
+      <div class="col-lg-8 offset-lg-2 mt-4">
+        {{ range .paragraphs }}<p class="xb-statement-p">{{ . | safeHTML }}</p>{{ end }}
       </div>
     </div>
   </div>

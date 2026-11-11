@@ -1,21 +1,22 @@
-<section id="{{ .id }}" class="xb-hero {{ .className }}">
+<section id="{{ .id }}" class="xb-hero {{ .className }}"{{ with .backgroundImage }} style="{{ printf "--xb-hero-photo: url('%s')" . | safeCSS }}"{{ end }}>
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        {{ with .kicker }}<p class="xb-kicker">{{ . }}</p>{{ end }}
+        {{ with .kicker }}<p class="xb-kicker">{{ . | safeHTML }}</p>{{ end }}
         <h1>{{ .header | safeHTML }}</h1>
         <p class="xb-sub">{{ .subheader | safeHTML }}</p>
         <div class="xb-actions">
           {{ with .callToAction }}<a {{ if .href }}href="{{ .href }}"{{ else }}data-scroll="{{ .scrollTo }}" href="#"{{ end }} class="button">{{ .text }}</a>{{ end }}
           {{ with .secondaryCta }}<a {{ if .href }}href="{{ .href }}"{{ else }}data-scroll="{{ .scrollTo }}" href="#"{{ end }} class="xb-link">{{ .text }}</a>{{ end }}
         </div>
+        {{ with .facts }}<ul class="xb-hero-facts">{{ range . }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
       </div>
       <div class="col-lg-6">
         <div class="xb-terminal" aria-hidden="true">
           <div class="xb-terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="title">{{ .terminal.title }}</span></div>
           <div class="xb-terminal-body">
             {{ range .terminal.lines }}<p class="{{ .kind }}">{{ .text | safeHTML }}</p>{{ end }}
-            <p><span class="prompt">$</span> <span class="cursor"></span></p>
+            {{ if not .terminal.noCursor }}<p><span class="prompt">$</span> <span class="cursor"></span></p>{{ end }}
           </div>
         </div>
       </div>
