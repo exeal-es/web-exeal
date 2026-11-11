@@ -1,19 +1,17 @@
-<section id="{{ .id }}" class="{{ .className }}">
+<section id="{{ .id }}" class="xb-before-after {{ .className }}">
   <div class="container">
     {{- partial "arrow-header.html" (dict "header" .header) }}
-    <div class="row">
-      <div class="col-md-6">
-        <h3>{{ .beforeLabel }}</h3>
-        <ul class="row ticked-cross">
-          {{ range .pairs }}<li class="col-md-12">{{ .before | safeHTML }}</li>{{ end }}
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <h3>{{ .afterLabel }}</h3>
-        <ul class="row ticked">
-          {{ range .pairs }}<li class="col-md-12">{{ .after | safeHTML }}</li>{{ end }}
-        </ul>
-      </div>
+    <div class="row xb-ba-head d-none d-md-flex mt-3">
+      <div class="col-md-5">{{ .beforeLabel }}</div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">{{ .afterLabel }}</div>
     </div>
+    {{ range .pairs }}
+    <div class="row xb-ba-row">
+      <div class="col-md-5 xb-ba-before">{{ .before | safeHTML }}</div>
+      <div class="col-md-1 xb-ba-arrow d-none d-md-block">→</div>
+      <div class="col-md-6 xb-ba-after">{{ .after | safeHTML }}</div>
+    </div>
+    {{ end }}
   </div>
 </section>

@@ -1,0 +1,11 @@
+<section id="{{ .id }}" class="xb-statement {{ .className }}">
+  <div class="container">
+    {{- partial "arrow-header.html" (dict "header" .header) }}
+    <div class="row">
+      <div class="col-lg-10 offset-lg-2">
+        {{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}
+        <p class="xb-statement-big">{{ .statement | safeHTML }}</p>
+      </div>
+    </div>
+  </div>
+</section>

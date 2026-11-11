@@ -20,9 +20,6 @@ params:
   - name: "Piloto al mando"
     type: link
     url: "/piloto-al-mando/"
-  - name: "Zenkai"
-    type: link
-    url: "https://www.zenkai.academy/"
   - name: "Hablemos"
     type: button
     url: "/contacto/"

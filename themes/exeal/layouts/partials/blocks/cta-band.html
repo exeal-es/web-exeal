@@ -1,0 +1,8 @@
+<section id="{{ .id }}" class="xb-cta-band {{ .className }}">
+  <div class="container">
+    <h2>{{ .header | safeHTML }}</h2>
+    {{ with .p }}<p>{{ . | safeHTML }}</p>{{ end }}
+    <a href="{{ .ctaHref }}" class="button">{{ .ctaLabel }}</a>
+    {{ with .email }}<a class="xb-mail" href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+  </div>
+</section>

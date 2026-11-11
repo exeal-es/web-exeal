@@ -1,0 +1,14 @@
+<section id="{{ .id }}" class="xb-about {{ .className }}">
+  <div class="container">
+    {{- partial "arrow-header.html" (dict "header" .header) }}
+    <div class="row mt-3">
+      <div class="col-lg-5">
+        <blockquote class="xb-vision">{{ .vision | safeHTML }}{{ with .visionLabel }}<small>{{ . }}</small>{{ end }}</blockquote>
+      </div>
+      <div class="col-lg-7">
+        {{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}
+        {{ with .badges }}<ul class="xb-badges">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+      </div>
+    </div>
+  </div>
+</section>

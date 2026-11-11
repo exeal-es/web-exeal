@@ -7,6 +7,7 @@ blocks:
   - type: hero
     id: sect-hero
     className: dark background background-01
+    backgroundImage: /images/courses/piloto-al-mando.jpg
     header: Piloto al mando
     subheader: Tu equipo ya tiene copiloto. ¿Quién lleva el avión?
     paragraphs:
@@ -28,14 +29,14 @@ blocks:
       - Cada persona usa el asistente <em>a su manera</em>
     p2: La inversión en herramientas ya está hecha. Lo que falta es el sistema que hace que funcione.
 
-  - type: explaining-paragraph
+  - type: statement
     id: sect-idea
     className: light
     header: La idea
     paragraphs:
       - En aviación, el piloto automático vuela la mayor parte del trayecto, y nadie se plantea quitar al piloto. Él prepara el plan de vuelo, sigue los checklists, vigila los instrumentos y sabe cuándo tomar los mandos.
       - Usar la automatización a fondo exige saber volar. En software, saber volar son los fundamentos, es decir, tests, diseño con límites claros, incrementos pequeños y revisión con criterio.
-      - La IA propone. El equipo manda.
+    statement: La IA propone. <em>El equipo manda.</em>
 
   - type: before-after
     id: sect-before-after
@@ -98,23 +99,34 @@ blocks:
       - Una pieza de vuestro ciclo de desarrollo automatizada
       - El antes y el después de una funcionalidad real
 
-  - type: ticked-list
+  - type: facts
     id: sect-format
     className: gloaming
     header: Formato
-    items:
-      - "<strong>Duración:</strong> 16 h (2 días intensivos o 4 medias jornadas)"
-      - "<strong>Grupo:</strong> hasta 10-12 personas del mismo equipo o área"
-      - "<strong>Modalidad:</strong> presencial u online"
-      - "<strong>Material:</strong> vuestro código, con una sesión de preparación previa sobre vuestro repositorio"
-      - "<strong>Bonificación:</strong> Exeal es entidad formadora y la formación es bonificable por Fundae. La gestiona vuestra empresa o su gestoría; nosotros facilitamos la documentación"
-      - "<strong>Edición:</strong> in-company, para un solo equipo"
+    facts:
+      - value: 16 h
+        label: Duración
+        detail: 2 días intensivos o 4 medias jornadas.
+      - value: 10-12
+        label: Personas por grupo
+        detail: Del mismo equipo o área.
+      - value: Presencial u online
+        label: Modalidad
+      - value: Vuestro código
+        label: Material
+        detail: Con una sesión de preparación previa sobre vuestro repositorio.
+      - value: Fundae
+        label: Bonificable
+        detail: Exeal es entidad formadora. La bonificación la gestiona vuestra empresa o su gestoría; nosotros facilitamos la documentación.
+      - value: In-company
+        label: Edición
+        detail: Para un solo equipo.
 
   - type: clients
 
   - type: testimonials
     id: sect-testimonials
-    className: light
+    className: gloaming
     testimonials:
     - name: "Abraham Vallez"
       position: "Engineering Manager @ Zinklar"
@@ -133,9 +145,9 @@ blocks:
     paragraphs:
       - Exeal lleva desde 2020 formando y acompañando a equipos de desarrollo en las prácticas que hacen que el software aguante, como el testing, el diseño, la entrega continua y el trabajo en equipo. Han confiado en nosotros Wolters Kluwer, Voxel, AIDA, Beyond Hospitality, Stradivarius e Ideable, entre otros.
 
-  - type: call-to-action
+  - type: cta-band
     id: sect-cta
-    className: light
+    className: dark background background-03
     header: ¿Hablamos?
     p: Cuéntanos cómo está trabajando tu equipo con IA y vemos juntos si encaja.
     ctaLabel: Escríbenos

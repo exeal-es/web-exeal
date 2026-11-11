@@ -6,15 +6,33 @@ layout: courses
 
 blocks:
   # Hero
-  - type: hero-with-image
-    id: sect-hero-with-image
+  - type: hero-terminal
+    id: sect-hero
     className: dark background background-03
-    header: Construir bien software nunca ha importado tanto
+    kicker: "// formación para equipos de desarrollo"
+    header: Construir bien software <em>nunca ha importado tanto</em>
     subheader: La IA ha cambiado cómo se escribe código. Lo que decide si tu software aguanta sigue siendo lo mismo, los fundamentos y el criterio de tu equipo. Formamos a equipos de desarrollo para dominarlos, practicando sobre vuestro código.
-    image: /assets/img/photo-coaching-module.png
     callToAction:
       text: Ver formaciones
       scrollTo: sect-offers
+    secondaryCta:
+      text: Hablemos
+      href: /contacto/
+    terminal:
+      title: vuestro-repo — main
+      lines:
+        - kind: agent
+          text: "agente › propone un cambio en checkout (+142 −37)"
+        - kind: muted
+          text: "  comprobando los acuerdos del equipo…"
+        - text: '<span class="prompt">$</span> make test'
+        - kind: ok
+          text: "✔ 214 tests pasan · 0 fallan"
+        - kind: ok
+          text: "✔ arquitectura: sin dependencias prohibidas"
+        - text: '<span class="prompt">$</span> git push <span class="muted"># revisado por el equipo</span>'
+        - kind: ok
+          text: "→ desplegado. La IA propuso; el equipo decidió."
 
   # Clients
   - type: clients
@@ -33,25 +51,6 @@ blocks:
       - Cada persona usa la IA <em>a su manera</em>
       - Un sistema cada vez <em>más difícil de cambiar</em>
     p2: La inversión en herramientas ya está hecha. Lo que marca la diferencia es cómo trabaja el equipo con ellas.
-
-  # Beliefs (manifesto, condensed)
-  - type: valueprop-elements
-    id: sect-value-prop-elements
-    className: light
-    header: En qué creemos
-    elements:
-      - icon: /assets/img/legacy/icons/icon-01.svg
-        text: La IA amplifica a quien la usa. El <em>criterio humano</em> vale hoy más que nunca.
-      - icon: /assets/img/legacy/icons/icon-02.svg
-        text: Quien entiende las reglas de debajo <em>domina cualquier herramienta</em>, incluidas las que aún no existen.
-      - icon: /assets/img/legacy/icons/icon-03.svg
-        text: Los fundamentos rinden como el interés compuesto, <em>lentos al principio, imparables después</em>.
-      - icon: /assets/img/legacy/icons/icon-04.svg
-        text: Construir bien empieza antes del código, al <em>entender a las personas</em> y decidir qué construir y por qué.
-      - icon: /assets/img/legacy/icons/icon-05.svg
-        text: Lo que de verdad importa <em>se construye juntos</em>, con tu equipo, con quienes lo usan y con la IA como aliada.
-      - icon: /assets/img/legacy/icons/icon-06.svg
-        text: Contrastamos lo que creemos con la realidad y <em>cambiamos de opinión</em> cuando los hechos lo piden.
 
   # How we work
   - type: three-traits
@@ -81,6 +80,13 @@ blocks:
         description: Para equipos que ya trabajan con IA y quieren que lo que construyen aguante. 16 horas sobre vuestro código y con las herramientas que ya usáis.
         href: /piloto-al-mando/
         cta: Ver la formación
+        badge: Curso insignia
+        image: /images/courses/piloto-al-mando.jpg
+        features:
+          - Contexto que un agente puede entender
+          - Tests y checks que validan lo generado
+          - Incrementos pequeños y revisión con criterio
+          - Partes del ciclo automatizadas, con alguien al mando
 
   # Case studies
   - type: case-studies
@@ -127,24 +133,40 @@ blocks:
     callToAction:
       text: Hablemos
       scrollTo: sect-cta
-
-  # Partners
-  - type: partners
+  # Beliefs (manifesto)
+  - type: manifesto
+    id: sect-manifesto
+    className: dark background background-03
+    header: En qué creemos
+    lines:
+      - Creemos que la IA amplifica a quien la usa, y que el <em>criterio humano</em> vale hoy más que nunca.
+      - Creemos que construir bien empieza antes del código, al <em>entender a las personas</em> y decidir qué construir y por qué.
+      - Creemos que quien entiende las reglas de debajo <em>domina cualquier herramienta</em>, incluidas las que aún no existen.
+      - Creemos que los fundamentos rinden como el interés compuesto, <em>lentos al principio, imparables después</em>.
+      - Creemos que lo que de verdad importa <em>se construye juntos</em>, con tu equipo, con quienes lo usan y con la IA como aliada.
+    closing: Por eso elegimos el camino profundo, el que de verdad transforma.
 
   # About us
-  - type: explaining-paragraph
-    id: sect-explaining-paragraph
-    className: light background background-06
+  - type: about-split
+    id: sect-about
+    className: light
     header: Quiénes somos
+    vision: Software que cambia vidas, <em>empezando por la de quien lo construye</em>.
+    visionLabel: "// la visión de Exeal"
     paragraphs:
-      - "Software que cambia vidas, empezando por la de quien lo construye. Esa es la visión de Exeal."
-      - Desde 2020 formamos y acompañamos a equipos de desarrollo en las prácticas que hacen que el software aguante, como el testing, el diseño, la entrega continua y el trabajo en equipo. Hoy lo hacemos en un contexto nuevo, en el que la IA escribe una parte del código y el criterio del equipo decide qué llega a producción.
-      - Exeal es una entidad formadora y nuestra formación es bonificable por Fundae. La bonificación la gestiona vuestra empresa o su gestoría, y nosotros facilitamos toda la documentación.
+      - Desde 2020 formamos y acompañamos a equipos de desarrollo en las prácticas que hacen que el software aguante, como el testing, el diseño, la entrega continua y el trabajo en equipo.
+      - Hoy lo hacemos en un contexto nuevo, en el que la IA escribe una parte del código y el criterio del equipo decide qué llega a producción.
+      - La bonificación por Fundae la gestiona vuestra empresa o su gestoría, y nosotros facilitamos toda la documentación.
+    badges:
+      - Entidad formadora
+      - Bonificable por Fundae
+      - JetBrains Consulting Partner
+      - Desde 2020
 
   # Call to action
-  - type: call-to-action
+  - type: cta-band
     id: sect-cta
-    className: light
+    className: dark background background-03
     header: ¿Hablamos?
     p: Cuéntanos cómo trabaja hoy tu equipo y vemos juntos si podemos ayudar.
     ctaLabel: Escríbenos

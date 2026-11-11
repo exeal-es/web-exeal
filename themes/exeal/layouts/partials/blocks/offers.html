@@ -1,25 +1,36 @@
-<section id="{{ .id }}" class="{{ .className }}">
+<section id="{{ .id }}" class="xb-offers {{ .className }}">
   <div class="container">
-    {{- partial "arrow-header.html" (dict "header" .header) }}
-    {{ if .paragraph }}
     <div class="row">
-      <div class="col-md-12">
-        <p>{{ .paragraph | safeHTML }}</p>
+      <div class="col-12 text-center">
+        <h2>{{ .header | safeHTML }}</h2>
+        {{ if .paragraph }}<p>{{ .paragraph | safeHTML }}</p>{{ end }}
+      </div>
+    </div>
+    {{ range .offers }}
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="course-card row no-gutters">
+          <div class="course-header col-lg-6 col-sm-12" style="background-image: url('{{ .image }}')">
+            {{ if .badge }}<div class="featured-course">{{ .badge }}</div>{{ end }}
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="course-body">
+              <h3>{{ .title }}</h3>
+              {{ if .tagline }}<p class="description"><strong>{{ .tagline | safeHTML }}</strong></p>{{ end }}
+              <p class="description">{{ .description | safeHTML }}</p>
+              {{ with .features }}
+              <ul class="course-features">
+                <div class="row">
+                  {{ range . }}<li class="col-md-6">{{ . | safeHTML }}</li>{{ end }}
+                </div>
+              </ul>
+              {{ end }}
+              <a class="button" href="{{ .href }}">{{ .cta }}</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     {{ end }}
-    <div class="row">
-      {{ range .offers }}
-      <div class="col-md-6 mb-3">
-        <div class="box">
-          <div class="flap flap-top-right"></div>
-          <h3>{{ .title }}</h3>
-          {{ if .tagline }}<p><strong>{{ .tagline | safeHTML }}</strong></p>{{ end }}
-          <p>{{ .description | safeHTML }}</p>
-          <p><a href="{{ .href }}" class="button">{{ .cta }}</a></p>
-        </div>
-      </div>
-      {{ end }}
-    </div>
   </div>
 </section>
