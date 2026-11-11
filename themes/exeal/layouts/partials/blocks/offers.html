@@ -1,0 +1,25 @@
+<section id="{{ .id }}" class="{{ .className }}">
+  <div class="container">
+    {{- partial "arrow-header.html" (dict "header" .header) }}
+    {{ if .paragraph }}
+    <div class="row">
+      <div class="col-md-12">
+        <p>{{ .paragraph | safeHTML }}</p>
+      </div>
+    </div>
+    {{ end }}
+    <div class="row">
+      {{ range .offers }}
+      <div class="col-md-6 mb-3">
+        <div class="box">
+          <div class="flap flap-top-right"></div>
+          <h3>{{ .title }}</h3>
+          {{ if .tagline }}<p><strong>{{ .tagline | safeHTML }}</strong></p>{{ end }}
+          <p>{{ .description | safeHTML }}</p>
+          <p><a href="{{ .href }}" class="button">{{ .cta }}</a></p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

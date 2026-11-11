@@ -1,77 +1,86 @@
 ---
-title: "Entrega software que aporta valor, sin bloquear a tu equipo"
-description: "Ayudamos a organizaciones a aumentar su capacidad para entregar software mediante testing, refactoring, arquitectura evolutiva y prácticas modernas de ingeniería preparadas para la era de la IA."
-date: 2025-03-15T00:00:00+02:00
+title: "Construir bien software nunca ha importado tanto"
+description: "Exeal es una entidad formadora. Entrenamos a equipos de desarrollo en los fundamentos que hacen que el software aguante en la era de la IA, practicando juntos sobre vuestro código."
+date: 2026-11-11T00:00:00+01:00
 layout: courses
 
 blocks:
-  # Hero with image
+  # Hero
   - type: hero-with-image
     id: sect-hero-with-image
     className: dark background background-03
-    header: Entrega software que aporta valor, sin bloquear a tu equipo
-    subheader: Ayudamos a organizaciones a aumentar su capacidad para entregar software mediante testing, refactoring, arquitectura evolutiva y prácticas modernas de ingeniería preparadas para la era de la IA.
+    header: Construir bien software nunca ha importado tanto
+    subheader: La IA ha cambiado cómo se escribe código. Lo que decide si tu software aguanta sigue siendo lo mismo, los fundamentos y el criterio de tu equipo. Formamos a equipos de desarrollo para dominarlos, practicando sobre vuestro código.
     image: /assets/img/photo-coaching-module.png
     callToAction:
-      text: Evalúa tu equipo
-      href: /recursos/checklist-equipos-de-alto-rendimiento/
+      text: Ver formaciones
+      scrollTo: sect-offers
 
   # Clients
   - type: clients
 
-  # The stakes (with image)
+  # The moment
   - type: stakes-with-image
     id: sect-stakes-with-image
     className: "gloaming"
     image: /images/blog/posts/pain-developer.jpeg
-    header: Cuando el software se convierte en el cuello de botella del negocio
-    p1: 'En muchas organizaciones:'
+    header: Lo que vemos hoy en los equipos
+    p1: 'La IA ya escribe una parte del código. Bien usada, multiplica. Sin criterio, también multiplica lo que no quieres:'
     list:
-      - Los equipos <em>pierden velocidad</em> a medida que el producto crece
-      - Cada cambio aumenta el <em>riesgo de romper</em> algo
-      - El delivery depende de unas <em>pocas personas clave</em>
-      - La complejidad técnica empieza a <em>frenar la entrega</em> de producto
-      - La IA acelera la generación de código, pero también la <em>deuda técnica</em> y el caos
-      - El roadmap avanza <em>más lento</em> aunque el equipo no deje de crecer
-    p2: Hay un punto en el que añadir más developers ya no acelera al equipo, solo aumenta el caos.
+      - Más código del que el equipo puede <em>revisar a fondo</em>
+      - Deuda que entra <em>sin hacer ruido</em>
+      - Cambios que se aceptan <em>sin entenderlos</em>
+      - Cada persona usa la IA <em>a su manera</em>
+      - Un sistema cada vez <em>más difícil de cambiar</em>
+    p2: La inversión en herramientas ya está hecha. Lo que marca la diferencia es cómo trabaja el equipo con ellas.
 
- # Blocks
-  - type: blocks
-    id: sect-services
-    className: light
-    header: Cómo podemos ayudar a tu organización a <em>desarrollar mejor software</em>
-    paragraph: Trabajamos con empresas que necesitan <em>aumentar su capacidad de entrega</em>, <em>reducir complejidad técnica</em> y <em>fortalecer a sus equipos de desarrollo</em>.
-    blocks:
-      - Assessment técnico y de delivery
-      - Consultoría estratégica de ingeniería
-      - Workshops intensivos
-      - Formación a medida para developers
-      - Acompañamiento técnico a equipos
-      - Aceleración de onboarding técnico
-      - Modernización de legacy code
-      - Integración de engineers en equipos existentes
-    callToAction:
-      text: Evalúa tu equipo
-      href: /recursos/checklist-equipos-de-alto-rendimiento/
-
-  # Value proposition elements
+  # Beliefs (manifesto, condensed)
   - type: valueprop-elements
     id: sect-value-prop-elements
-    className: gloaming
-    header: Cómo trabajamos
+    className: light
+    header: En qué creemos
     elements:
       - icon: /assets/img/legacy/icons/icon-01.svg
-        text: La mayoría de organizaciones no necesitan más procesos, sino <em>menos fricción</em> para poder volver a avanzar.
-      - icon: /assets/img/legacy/icons/icon-06.svg
-        text: <em>Nos integramos en el día a día</em> técnico del equipo para ayudar a desbloquear problemas reales de arquitectura, delivery y evolución del sistema.
+        text: La IA amplifica a quien la usa. El <em>criterio humano</em> vale hoy más que nunca.
       - icon: /assets/img/legacy/icons/icon-02.svg
-        text: La IA ya permite generar más código; el verdadero reto es conseguir que el sistema <em>siga siendo entendible</em> y evolutivo.
+        text: Quien entiende las reglas de debajo <em>domina cualquier herramienta</em>, incluidas las que aún no existen.
       - icon: /assets/img/legacy/icons/icon-03.svg
-        text: Diseñamos prácticas que reducen dependencia individual y <em>aumentan autonomía</em> dentro del equipo.
+        text: Los fundamentos rinden como el interés compuesto, <em>lentos al principio, imparables después</em>.
       - icon: /assets/img/legacy/icons/icon-04.svg
-        text: Priorizamos <em>cambios progresivos y sostenibles</em> frente a reescrituras masivas y transformaciones milagro.
+        text: Construir bien empieza antes del código, al <em>entender a las personas</em> y decidir qué construir y por qué.
       - icon: /assets/img/legacy/icons/icon-05.svg
-        text: Testing, arquitectura o refactoring solo tienen sentido si ayudan al equipo a entregar mejor software con <em>menos riesgo</em>.
+        text: Lo que de verdad importa <em>se construye juntos</em>, con tu equipo, con quienes lo usan y con la IA como aliada.
+      - icon: /assets/img/legacy/icons/icon-06.svg
+        text: Contrastamos lo que creemos con la realidad y <em>cambiamos de opinión</em> cuando los hechos lo piden.
+
+  # How we work
+  - type: three-traits
+    id: sect-three-traits
+    className: dark background background-03
+    header: Cómo trabajamos
+    traits:
+      - title: Sobre vuestro código
+        description: Nada de ejercicios de juguete. Trabajamos sobre vuestro repositorio, vuestras herramientas y una funcionalidad real de vuestro producto.
+        icon: /assets/img/icons/white/Exeal-Icon-15.png
+      - title: Practicando juntos
+        description: Sesiones prácticas con el equipo, en directo y en grupo. No vendemos cursos grabados para ver a solas.
+        icon: /assets/img/icons/white/Exeal-Icon-14.png
+      - title: Con un antes y un después
+        description: Partimos de cómo trabajáis hoy y terminamos con un resultado visible en vuestro código, que el equipo sigue usando al día siguiente.
+        icon: /assets/img/icons/white/Exeal-Icon-10.png
+
+  # Offers (the only section expected to change often)
+  - type: offers
+    id: sect-offers
+    className: light
+    header: Formaciones
+    paragraph: Formación in-company para equipos de desarrollo, presencial u online.
+    offers:
+      - title: Piloto al mando
+        tagline: Tu equipo ya tiene copiloto. ¿Quién lleva el avión?
+        description: Para equipos que ya trabajan con IA y quieren que lo que construyen aguante. 16 horas sobre vuestro código y con las herramientas que ya usáis.
+        href: /piloto-al-mando/
+        cta: Ver la formación
 
   # Case studies
   - type: case-studies
@@ -100,63 +109,44 @@ blocks:
       photo: "/images/testimonials/gerard-artes.jpg"
       text: "&ldquo;Ver al equipo motivado y con ganas ha sido muy positivo. Gana el equipo, gana la empresa y también ganan los empleados a nivel personal ya que obtienen un aprendizaje y una formación extra que tiene un retorno muy positivo&rdquo;"
       active: true
-    - name: "Abraham Vallez"
-      position: "Engineering Manager @ Zinklar"
-      photo: "/images/testimonials/abraham-vallez.png"
-      text: "&ldquo;Desde que Pedro llegó al equipo se involucró desde el minuto 1, tanto en el producto como en la parte técnica, siendo una pieza clave en la gran mejora sistémica que experimentó el equipo, ayudando no solo en detalles técnicos si no en las interacciones, relaciones y otras dinámicas de equipo.&rdquo;"
     - name: "Emilio Macías"
       position: "Director de operaciones @ AIDA (Domingo Alonso Group)"
       photo: "/images/testimonials/emilio-macias.jpeg"
       text: "&ldquo;Tras empezar a trabajar con Exeal, volvemos a respirar en el equipo el aprendizaje, las preguntas, las lecturas... El éxito principal es ayudar a crecer y retener a nuestros profesionales.&rdquo;"
+    - name: "Abraham Vallez"
+      position: "Engineering Manager @ Zinklar"
+      photo: "/images/testimonials/abraham-vallez.png"
+      text: "&ldquo;Volvería a hacerlo con los ojos cerrados… Puede ayudar a mejorar de forma sistémica al equipo, no solo detalles técnicos.&rdquo;"
 
-
-  # VSL Testimonios
+  # Video testimonials
   - type: vsl-youtube
     id: sect-video-testimonials
     className: light
     header: Cómo cambia un equipo cuando cambia su forma de desarrollar software
     youtubeUrl: https://www.youtube.com/embed/xnNiD3tDMw8?si=KOPnt4L8p1GoEJ4X
     callToAction:
-      text: Quiero transformar mi equipo
-      href: /recursos/checklist-equipos-de-alto-rendimiento/
+      text: Hablemos
+      scrollTo: sect-cta
 
   # Partners
   - type: partners
 
-  # Explaining paragraph
+  # About us
   - type: explaining-paragraph
     id: sect-explaining-paragraph
     className: light background background-06
-    header: Ingeniería de software para equipos que necesitan volver a avanzar
+    header: Quiénes somos
     paragraphs:
-      - En Exeal ayudamos a organizaciones a desarrollar software de forma más fiable, sostenible y preparada para crecer. Trabajamos con equipos que necesitan reducir complejidad técnica, mejorar su capacidad de entrega y evitar que el software se convierta en un bloqueo para el negocio. Combinamos buenas prácticas de ingeniería, coaching técnico, formación y acompañamiento hands-on para ayudar a los equipos a evolucionar sus sistemas con más confianza y menos fricción.
-      - Nuestra experiencia incluye modernización de legacy code, arquitectura de software, testing, refactoring, delivery continuo y mejora de prácticas de desarrollo en equipos reales. Trabajamos tanto con empresas que necesitan transformar la forma en la que construyen software, como con developers que quieren desarrollar habilidades prácticas aplicables al día a día. Todo nuestro enfoque está orientado a construir sistemas y equipos capaces de evolucionar de forma sostenible en la era de la IA.
-
-  # Three traits
-  - type: three-traits
-    id: sect-three-traits
-    className: dark background background-03
-    header: Cómo empezamos a trabajar juntos
-    traits:
-      - title: '1. Discovery Workshop'
-        description: Analizamos el contexto técnico y organizativo del equipo para identificar bloqueos, fricciones y oportunidades de mejora prioritarias.
-        icon: /assets/img/icons/white/Exeal-Icon-15.png
-      - title: '2. Formación y upskilling'
-        description: 'Trabajamos sobre prácticas de ingeniería adaptadas al contexto real del equipo: arquitectura, testing, delivery, refactoring y colaboración técnica.'
-        icon: /assets/img/icons/white/Exeal-Icon-14.png
-      - title: '3. Acompañamiento en el día a día'
-        description: Ayudamos al equipo a aplicar los cambios sobre el producto real mediante coaching técnico, pairing y apoyo hands-on en situaciones reales de desarrollo.
-        icon: /assets/img/icons/white/Exeal-Icon-10.png
-    callToAction:
-      text: Comienza evaluando tu equipo
-      href: /recursos/checklist-equipos-de-alto-rendimiento/
+      - "Software que cambia vidas, empezando por la de quien lo construye. Esa es la visión de Exeal."
+      - Desde 2020 formamos y acompañamos a equipos de desarrollo en las prácticas que hacen que el software aguante, como el testing, el diseño, la entrega continua y el trabajo en equipo. Hoy lo hacemos en un contexto nuevo, en el que la IA escribe una parte del código y el criterio del equipo decide qué llega a producción.
+      - Exeal es una entidad formadora y nuestra formación es bonificable por Fundae. La bonificación la gestiona vuestra empresa o su gestoría, y nosotros facilitamos toda la documentación.
 
   # Call to action
   - type: call-to-action
     id: sect-cta
     className: light
-    header: ¿Qué capacidad real tiene tu equipo para entregar software?
-    p: Descubre en menos de 10 minutos qué está frenando a tu equipo y compara tu nivel con el de otros equipos de ingeniería.
-    ctaLabel: Evaluar mi equipo
-    ctaHref: /recursos/checklist-equipos-de-alto-rendimiento/
+    header: ¿Hablamos?
+    p: Cuéntanos cómo trabaja hoy tu equipo y vemos juntos si podemos ayudar.
+    ctaLabel: Escríbenos
+    ctaHref: /contacto/
 ---

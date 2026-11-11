@@ -17,18 +17,15 @@ params:
   hubspotId: 8231847
 
   navbar:
+  - name: "Piloto al mando"
+    type: link
+    url: "/piloto-al-mando/"
   - name: "Zenkai"
     type: link
     url: "https://www.zenkai.academy/"
-  - name: "Blog"
-    type: link
-    url: "/blog/"
-  - name: "Contacto"
-    type: link
-    url: "/contacto/"
-  - name: "Evalúa tu equipo"
+  - name: "Hablemos"
     type: button
-    url: "/recursos/checklist-equipos-de-alto-rendimiento/"
+    url: "/contacto/"
 
 markup:
   goldmark:
