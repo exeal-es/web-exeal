@@ -40,7 +40,6 @@ blocks:
 - type: artifact-cards
   id: sect-stakes
   className: gloaming
-  kicker: // lo que vemos cada semana
   header: La IA no ha arreglado tu equipo. <em>Lo ha acelerado.</em>
   intro: Con lo bueno y con lo malo. Si reconoces alguna de estas pantallas, sigue leyendo.
   cards:
@@ -82,7 +81,6 @@ blocks:
 - type: artifact-cards
   id: sect-how
   className: dark background background-03
-  kicker: // cómo trabajamos
   header: No damos charlas. <em>Abrimos vuestro repositorio.</em>
   intro: A construir bien no se aprende viendo diapositivas. Se aprende practicando, juntos, sobre el código que mantenéis cada día.
   cards:
@@ -107,9 +105,8 @@ blocks:
 - type: offers
   id: sect-offers
   className: light
-  kicker: // por dónde empezar
-  header: Empezad <em>por aquí</em>
-  paragraph: Formación in-company para equipos de desarrollo, presencial u online.
+  header: Formación in-company
+  paragraph: Para equipos de desarrollo, presencial u online.
   offers:
   - kicker: CURSO INSIGNIA · 16 H · IN-COMPANY
     title: Piloto al mando
@@ -174,7 +171,6 @@ blocks:
   - Creemos que los fundamentos rinden como el interés compuesto, <em>lentos al principio, imparables después</em>.
   - Creemos que lo que de verdad importa <em>se construye juntos</em>, con tu equipo, con quienes lo usan y con la IA como aliada.
   closing: Por eso elegimos el camino profundo, el que de verdad transforma.
-  kicker: // en qué creemos
 - type: about-split
   id: sect-about
   className: light
@@ -190,7 +186,6 @@ blocks:
   - Bonificable por Fundae
   - JetBrains Consulting Partner
   - Desde 2020
-  kicker: // quiénes somos
 - type: cta-band
   id: sect-cta
   className: dark background background-03

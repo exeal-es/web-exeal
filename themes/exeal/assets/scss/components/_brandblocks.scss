@@ -500,3 +500,22 @@ $xb-mono: "JetBrainsMono-Regular", monospace;
   .xb-terminal { font-size: 0.6em; }
   .xb-terminal .xb-terminal-body p { white-space: pre; }
 }
+
+// ---------- Terminal animada: las líneas aparecen una a una ----------
+.xb-terminal.xb-animate .xb-terminal-body p {
+  opacity: 0;
+  transform: translateY(4px);
+  animation: xb-line 0.35s ease-out forwards;
+  animation-delay: calc(0.6s + var(--xb-i, 0) * 0.45s);
+}
+@keyframes xb-line { to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .xb-terminal.xb-animate .xb-terminal-body p { opacity: 1; transform: none; animation: none; }
+}
+
+// ---------- Artefactos: misma altura en todas las tarjetas ----------
+.xb-artifacts .xb-card-artifact {
+  height: 7.2em;
+  min-height: 0;
+  overflow: hidden;
+}

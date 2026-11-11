@@ -12,10 +12,10 @@
         {{ with .facts }}<ul class="xb-hero-facts">{{ range . }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
       </div>
       <div class="col-lg-6">
-        <div class="xb-terminal" aria-hidden="true">
+        <div class="xb-terminal{{ if .terminal.animate }} xb-animate{{ end }}" aria-hidden="true">
           <div class="xb-terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="title">{{ .terminal.title }}</span></div>
           <div class="xb-terminal-body">
-            {{ range .terminal.lines }}<p class="{{ .kind }}">{{ .text | safeHTML }}</p>{{ end }}
+            {{ range $i, $l := .terminal.lines }}<p class="{{ $l.kind }}" style="{{ printf "--xb-i: %d" $i | safeCSS }}">{{ $l.text | safeHTML }}</p>{{ end }}
             {{ if not .terminal.noCursor }}<p><span class="prompt">$</span> <span class="cursor"></span></p>{{ end }}
           </div>
         </div>

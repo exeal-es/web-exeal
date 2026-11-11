@@ -44,13 +44,13 @@ blocks:
       text: PILOTO AUTOMÁTICO ............... <span class="g">ACTIVADO</span>
     - kind: hdr
       text: PILOTO AL MANDO ................. <span class="g">SÍ</span>
+    animate: true
 - type: artifact-cards
   id: sect-stakes
   className: gloaming
   columns: 2
-  kicker: // el problema
-  header: La IA ya escribe vuestro código. <em>¿Quién lo está leyendo?</em>
-  intro: Bien usada, multiplica. Sin pilotos, también multiplica lo que no quieres.
+  header: Más código que nunca. <em>Menos control que nunca.</em>
+  intro: La IA ha multiplicado lo que produce tu equipo. Sin un sistema para dirigirla, también multiplica los problemas.
   cards:
   - tone: warn
     artifact: 'PR #1482   <span class="r">+2.341</span>  <span class="g">−12</span>
@@ -80,7 +80,6 @@ blocks:
 - type: statement
   id: sect-idea
   className: light
-  kicker: // la idea
   statement: La IA propone. <em>El equipo manda.</em>
   paragraphs:
   - En aviación, el piloto automático vuela la mayor parte del trayecto, y nadie se plantea quitar al piloto. Él prepara el plan de vuelo, sigue los checklists, vigila los instrumentos y sabe cuándo tomar los mandos.
@@ -100,13 +99,11 @@ blocks:
     after: Incrementos pequeños y una revisión con criterio de lo que propone el agente
   - before: La IA, como ayuda puntual
     after: Partes del ciclo de desarrollo automatizadas, con alguien al mando
-  kicker: // qué cambia
 - type: artifact-cards
   id: sect-syllabus
   className: light
   columns: 2
-  kicker: // plan de vuelo
-  header: Cuatro bloques. <em>Una funcionalidad real</em>, de principio a fin.
+  header: 'Plan de vuelo: una funcionalidad real, de principio a fin'
   intro: 'Funciona con las herramientas que ya usáis. No es un curso de herramientas: es ingeniería.'
   cards:
   - tone: ok
@@ -136,7 +133,6 @@ blocks:
 - type: artifact-cards
   id: sect-scenarios
   className: dark background background-03
-  kicker: // escenarios
   header: Ningún equipo despega <em>desde la misma pista</em>
   intro: El curso es el mismo. El escenario se adapta a vuestro punto de partida.
   cards:
@@ -162,7 +158,6 @@ blocks:
   id: sect-deliverables
   className: light
   columns: 2
-  kicker: // os lleváis
   header: Lo que queda <em>cuando nos vamos</em>
   cards:
   - tone: ok
@@ -192,7 +187,7 @@ blocks:
 - type: facts
   id: sect-format
   className: gloaming
-  header: Los detalles, sin letra pequeña
+  header: Formato
   facts:
   - value: 16 h
     label: Duración
@@ -211,7 +206,6 @@ blocks:
   - value: In-company
     label: Edición
     detail: Para un solo equipo.
-  kicker: // formato
 - type: clients
 - type: testimonials
   id: sect-testimonials
@@ -232,7 +226,6 @@ blocks:
   author: pedropardal
   photo: /images/team/pedro-bilbo.jpg
   photoPosition: 72% center
-  kicker: // quién va a estar en la sala
   header: No os lo va a contar un vídeo. <em>Os lo voy a enseñar yo.</em>
   role: fundador de Exeal y formador del curso
   paragraphs:
