@@ -36,6 +36,7 @@ blocks:
     - text: <span class="prompt">$</span> gh pr create --reviewer ana
     - kind: ok
       text: ✔ ana aprobó · 4 comentarios resueltos
+    animate: true
 - type: clients
 - type: artifact-cards
   id: sect-stakes
