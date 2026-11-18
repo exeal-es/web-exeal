@@ -237,6 +237,68 @@ blocks:
   - Codurance
   - Exeal
   quote: «Recomendaría contratar a Pedro y Exeal a cualquier compañía y manager.»<br><small>— Abraham Vallez, Engineering Manager</small>
+- type: artifact-cards
+  id: sect-levels
+  className: gloaming
+  columns: 2
+  header: ¿Para quién es? <em>Depende de dónde estéis.</em>
+  intro: Hay equipos que aún no han despegado y equipos que ya vuelan con piloto automático. Este curso está pensado para los niveles 1 y 2.
+  cards:
+  - tone: neutral
+    artifact: '<span class="m">nivel 0 · en tierra</span>
+
+      la IA, como mucho en el chat del navegador'
+    title: Todavía no usáis IA para programar
+    text: Este curso no es vuestro punto de partida. Escríbenos y vemos juntos cuál es.
+  - tone: ok
+    artifact: '<span class="m">nivel 1 · con copiloto</span>
+
+      autocompletado y chat en el IDE · <span class="a">cada uno a su manera</span>'
+    title: La IA ya os ayuda, pero cada uno la usa a su manera
+    text: Es el punto de partida habitual. Salís con acuerdos comunes y el harness que os deja dar el siguiente paso.
+  - tone: ok
+    artifact: '<span class="m">nivel 2 · piloto automático sin checklist</span>
+
+      agentes que abren PR · <span class="r">sin acuerdos ni red</span>'
+    title: Ya trabajáis con agentes, pero sin un sistema
+    text: Aquí es donde el curso más rinde. Ponemos el contexto, el harness y el flujo que hacen que lo que genera el agente se pueda mantener.
+  - tone: neutral
+    artifact: '<span class="m">nivel 3 · en cabina</span>
+
+      agentes + harness + CI · <span class="g">acuerdos de equipo</span>'
+    title: Ya tenéis el sistema montado
+    text: Probablemente no necesitáis el curso completo. Podemos revisar vuestra cabina y quedarnos con el bloque 4.
+- type: artifact-cards
+  id: sect-not-for
+  className: light
+  columns: 2
+  header: No es para ti si <em>prefieres no saber quién lleva el avión</em>
+  intro: Mejor decirlo ahora que a mitad del vuelo.
+  cards:
+  - tone: warn
+    artifact: 'PR #1990   <span class="r">+5.120</span>
+
+      <span class="m">auto-merge</span> <span class="g">✔</span>  <span class="m">revisores:</span> <span class="r">0</span>'
+    title: Quieres que la IA programe sola y que nadie revise
+    text: Ese equipo existe. Suele aparecer en el post-mortem.
+  - tone: warn
+    artifact: '<span class="m">formación IA 2027</span>  <span class="g">✔ hecha</span>
+
+      <span class="m">cambios en el equipo:</span> <span class="r">ninguno</span>'
+    title: Buscas un curso para marcar la casilla
+    text: Para eso hay vídeos. Aquí se trabaja sobre vuestro código, y el lunes algo tiene que ser distinto.
+  - tone: warn
+    artifact: '<span class="m">tests:</span> 1.204 <span class="g">✔</span>  <span class="m">cobertura:</span> 94 %
+
+      <span class="m">bugs en producción:</span> <span class="r">los mismos</span>'
+    title: Crees que los tests ya los escribe la IA y listo
+    text: Unos tests que nadie entiende no protegen nada. Si no quieres saber volar, no te vamos a convencer.
+  - tone: warn
+    artifact: '<span class="b">manager ›</span> "que vengan y nos lo arreglen"
+
+      <span class="m">equipo ›</span> <span class="r">no estaba en la sala</span>'
+    title: Quieres que el cambio lo haga otro
+    text: Lo hacemos con el equipo, no por el equipo. Si nadie del equipo quiere estar, no funciona.
 - type: cta-band
   id: sect-cta
   className: dark background background-03
