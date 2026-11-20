@@ -24,7 +24,7 @@ Pero estamos en 2024, y por suerte tenemos una [mejor definición de productivid
 
 - El [lead time](https://www.agilealliance.org/glossary/lead-time/) de una tarea (es decir, el tiempo absoluto que pasa desde que la abrimos hasta que la entregamos). Entregar antes nos permite aportar valor antes y abrir nuevas tareas antes, lo que nos permite a su vez pivotar las prioridades de forma más ágil.
 - La tasa de fallos en el código producido o, visto desde otro ángulo, el tiempo extra que tenemos que dedicar a arreglar esos fallos.
-- La mantenibilidad del código, o el ritmo al que cada vez se hace más difícil añadir nueva funcionalidad (porque [todo código tiende a degenerarse](https://www.exeal.com/blog/2021/03/por-que-el-codigo-degenera/)).
+- La mantenibilidad del código, o el ritmo al que cada vez se hace más difícil añadir nueva funcionalidad (porque todo código tiende a degenerarse).
 - La felicidad de los desarrolladores. Está más que probado que los desarrolladores felices son más productivos, sin necesidad de irnos al extremo de los que se queman y se van de la empresa.
 - La cantidad de trabajo en curso, que debe ser mínima, para poder reducir la carga cognitiva (i.e. tener menos cosas en la cabeza) y reducir los cambios de contexto (i.e. el tiempo que gastamos en cambiar de un foco a otro).
 
@@ -57,7 +57,7 @@ Aún así, algunos patrones en los que sí hemos visto que renta hacer pairing e
 
 De la misma forma, cuando la certeza es alta o la solución es simple, seguir trabajando en pairing puede dejar de ser rentable, por lo que es importante saber identificar cuándo romper la pareja y pasar a otras tareas.
 
-Una buena idea puede ser [incorporar un technical coach](https://www.ppardalj.com/team-coaching/) al equipo. Los coaches son desarrolladores con amplia experiencia aplicando pairing y otras prácticas, y pueden ayudar al equipo a encontrar su propio estilo ahorrándose semanas de prueba y error.
+Una buena idea puede ser [incorporar un technical coach](https://www.exeal.com/) al equipo. Los coaches son desarrolladores con amplia experiencia aplicando pairing y otras prácticas, y pueden ayudar al equipo a encontrar su propio estilo ahorrándose semanas de prueba y error.
 
 También hay que tener en cuenta que el pair programming es una actividad que demanda mucha energía por parte de los desarrolladores implicados. Trabajar de esta forma durante demasiadas horas al día puede ser contraproducente y llevar al equipo al burnout. Además, todos los desarrolladores, quien más quien menos, necesitamos nuestro ratito de ponernos los cascos, aislarnos y programar.
 
