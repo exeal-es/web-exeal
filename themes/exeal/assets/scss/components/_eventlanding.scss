@@ -1,0 +1,193 @@
+// Landing de evento con VSL y registro (EXP-005, /alumni/). Solo usa tokens de foundation/variables.
+
+// ---------- Hero con vídeo ----------
+.xb-vsl-hero {
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+  h1 { margin-bottom: 0.4em; }
+  .xb-sub {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+  }
+  .xb-actions { margin-top: 2em; }
+}
+
+.xb-video {
+  position: relative;
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  background: #0d1a22;
+  border: 2px solid $primary-color;
+  border-top-right-radius: 3em;
+  overflow: hidden;
+  box-shadow: 0 2em 4em -1.5em rgba(0, 0, 0, 0.6);
+
+  iframe,
+  img,
+  .xb-video-facade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  img {
+    object-fit: cover;
+    object-position: var(--xb-poster-pos, center);
+    opacity: 0.75;
+  }
+  .xb-video-facade {
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    &:hover .xb-video-play,
+    &:focus-visible .xb-video-play { transform: translate(-50%, -50%) scale(1.08); }
+  }
+}
+
+.xb-video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 50%;
+  background: $secondary-color;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out;
+  pointer-events: none;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 0.8em 0 0.8em 1.3em;
+    border-color: transparent transparent transparent $dark-background-color;
+  }
+  @media (max-width: 575px) { width: 3.4em; height: 3.4em; }
+}
+
+// Marca de relleno: solo aparece mientras falta el vídeo o el formulario de Kit.
+.xb-video-pending {
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+  font-family: "JetBrainsMono-Regular", monospace;
+  font-size: 0.75em;
+  color: $dark-background-color;
+  background: $secondary-color;
+  line-height: 1.6em;
+  padding: 0.15em 0.6em;
+  @media (max-width: 575px) { font-size: 0.65em; left: 0.5em; bottom: 0.5em; }
+}
+.xb-registration .xb-video-pending { position: static; display: inline-block; margin-bottom: 1em; }
+
+// La flecha ↓ ya va en el texto del botón: sin la flecha automática de escritorio.
+.button.xb-no-arrow { display: inline-block; }
+.button.xb-no-arrow:after { content: none !important; }
+
+// ---------- Bloques de texto ----------
+.xb-prose {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  h2 { margin-top: 0; }
+  p { font-size: 1.05em; line-height: 1.8em; }
+  &.xb-prose-tight { padding-top: 0; }
+  strong { font-weight: bold; }
+  .xb-prose-list {
+    padding-left: 0;
+    margin: 0;
+    li { font-size: 1.05em; line-height: 1.7em; padding-bottom: 1em; }
+  }
+  .xb-prose-facts {
+    list-style: none;
+    padding: 1em 1.25em;
+    margin: 0 0 1.25em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.35em 1.5em;
+    border-left: 4px solid $primary-color;
+    background: $gloaming-background-color;
+    font-family: $h2-font, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    @media (min-width: 768px) { grid-template-columns: 1fr 1fr; }
+    li::before { content: "▸ "; color: #0a9e6c; }
+  }
+  .xb-prose-note {
+    font-style: italic;
+    color: $mid-gray;
+  }
+}
+
+// ---------- Registro ----------
+.xb-registration {
+  padding-top: 4.5em;
+  padding-bottom: 4.5em;
+  h2 {
+    font-family: $h1-font, sans-serif;
+    font-size: 2.2em;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+  }
+  label {
+    font-size: 0.9rem;
+    line-height: 1.4em;
+    color: rgba(255, 255, 255, 0.88);
+  }
+  .form-control { font-size: 1rem; }
+  select.form-control {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2010%22%3E%3Cpath%20d%3D%22M1%201l7%207%207-7%22%20fill%3D%22none%22%20stroke%3D%22%2305e69b%22%20stroke-width%3D%222.5%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.9em center;
+    background-size: 0.9em;
+    padding-right: 2.5em;
+    height: auto;
+    padding-top: 0.45em;
+    padding-bottom: 0.45em;
+    option { color: $dark-background-color; background: white; }
+  }
+  .xb-help {
+    font-size: 0.85rem;
+    line-height: 1.5em;
+    color: $light-gray;
+    margin: -0.5em 0 1rem;
+  }
+  .form-group .xb-help { margin: 0.4em 0 0; }
+  .checkbox-container {
+    padding-top: 1px;
+    a { color: $primary-color; text-decoration: underline; }
+    input:focus-visible ~ .checkmark { box-shadow: 0 0 8px rgba(31, 229, 137, 0.8); }
+  }
+  .xb-submit {
+    width: 100%;
+    margin-top: 0.75em;
+    font-size: 1.3em;
+    color: $dark-background-color;
+    cursor: pointer;
+    @media (min-width: 768px) { width: auto; padding-left: 2.2em; padding-right: 2.2em; }
+  }
+  .xb-footnote { margin: 0.9em 0 0; }
+}
+
+// ---------- Gracias ----------
+.xb-thanks {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  .xb-sub { max-width: 36em; }
+  .xb-sub a { color: $primary-color; text-decoration: underline; }
+  .xb-thanks-signature {
+    font-family: $h2-font, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+  }
+}
