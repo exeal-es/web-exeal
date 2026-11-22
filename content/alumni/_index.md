@@ -45,6 +45,7 @@ blocks:
   - "<strong>Saber qué están haciendo otros equipos</strong> con la IA: lo que funciona y lo que no, sin postureo."
   - "<strong>Un plan para el lunes:</strong> qué puedes cambiar tú solo, qué proponer a tu equipo y qué plantearle a tu manager."
   - <strong>Un diagnóstico corto para tu equipo,</strong> para ver en qué punto estáis trabajando con IA. Así la conversación empieza con datos de tu equipo, no con tu opinión.
+  - <strong>Un regalo sorpresa</strong> para cerrar el encuentro. No te decimos más.
 - type: prose
   id: sect-sesion
   className: light
@@ -56,7 +57,7 @@ blocks:
   - Gratis
   - Solo alumni de Exeal
   - Las conversaciones en grupo no se graban.
-  note: "Al final, diez minutos: Exeal vuelve con programas para equipos."
+  note: "Al final, diez minutos: Exeal vuelve con programas para equipos. Y cerramos con un regalo sorpresa para todos."
 - type: prose
   id: sect-para-quien-no
   className: light xb-prose-tight
