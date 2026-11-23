@@ -1,3 +1,8 @@
+resources:
+  - url: "/patrones/"
+    text: "linkpatterns"
+  - url: "/blog/"
+    text: "linkblog"
 links:
   - url: "/legal/legal-notice/"
     text: "linklegal"

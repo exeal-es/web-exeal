@@ -1,14 +1,13 @@
-<!doctype html>
-<html lang="{{ .Language.Lang }}">
-  <head>
-    {{- partial "blog/head.html" . -}}
-  </head>
-  <body>
-    {{- partial "gtm_body.html" . -}}
-    {{- partial "blog/navbar.html" . -}}
-    <!--{{- partial "blog/header.html" . -}}-->
-    {{- partial "blog/postlist.html" . -}}
-    {{- partial "footer.html" . -}}
-    {{- partial "javascript.html" . -}}
-  </body>
-</html>
+{{ define "main" }}
+{{ partial "reading/page-hero.html" (dict "kicker" "$ ls blog/" "title" .Title "sub" "Lo que aprendemos entrenando a equipos que construyen software: prácticas, casos y conversaciones.") }}
+<section class="xb-reading">
+  <div class="container">
+    <div class="xb-card-grid">
+      {{ range (.Paginator 12).Pages }}
+        {{ partial "reading/entry-card.html" . }}
+      {{ end }}
+    </div>
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</section>
+{{ end }}

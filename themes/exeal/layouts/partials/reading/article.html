@@ -1,0 +1,34 @@
+{{/* Página de lectura: un patrón o una entrada del blog. Misma cabecera, artículo sobre tarjeta y navegación. */}}
+{{ $isPattern := eq .Section "patrones" }}
+{{ $m := .Params.maturity | default "explore" }}
+{{ $author := "" }}{{ with .Params.author }}{{ $author = index site.Data.authors . }}{{ end }}
+{{ $photo := "" }}{{ if not $isPattern }}{{ $photo = .Params.featured_image }}{{ end }}
+<section class="xb-page-hero xb-page-hero-article"{{ with $photo }} style="{{ printf "--xb-hero-photo: url('%s')" . | safeCSS }}"{{ end }}>
+  <div class="container xb-narrow">
+    <p class="xb-kicker"><a href="{{ .CurrentSection.RelPermalink }}">{{ .Section }}</a> / {{ .File.ContentBaseName }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="xb-sub">{{ . }}</p>{{ end }}
+    <div class="xb-hero-meta">
+      {{ if $isPattern }}<span class="xb-badge xb-badge-{{ $m }}">{{ partial "reading/maturity-label.html" $m }}</span>{{ end }}
+      {{ with $author }}<span>{{ .name }}</span>{{ end }}
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+      <span>{{ .ReadingTime }} min de lectura</span>
+    </div>
+    {{ partial "reading/tags.html" (dict "tags" .Params.tags "class" "xb-tags-small xb-tags-light") }}
+  </div>
+</section>
+<section class="xb-reading">
+  <div class="container xb-narrow">
+    <article class="xb-prose">
+      {{ with .Params.podcast_episode_id }}
+      <iframe class="xb-podcast-embed" src="https://open.spotify.com/embed-podcast/episode/{{ . }}" allow="encrypted-media" loading="lazy" title="Episodio del podcast"></iframe>
+      {{ end }}
+      {{ .Content }}
+    </article>
+    {{ partial "reading/author.html" . }}
+    <nav class="xb-pager" aria-label="Más {{ .Section }}">
+      {{ with .PrevInSection }}<a class="xb-pager-link" href="{{ .RelPermalink }}"><span>← Anterior</span>{{ .Title }}</a>{{ else }}<span></span>{{ end }}
+      {{ with .NextInSection }}<a class="xb-pager-link next" href="{{ .RelPermalink }}"><span>Siguiente →</span>{{ .Title }}</a>{{ end }}
+    </nav>
+  </div>
+</section>

@@ -24,6 +24,12 @@ linkcookiepolicy:
   other: Cookie policy
 linkprivacypolicy:
   other: Privacy policy
+footerresources:
+  other: Resources
+linkpatterns:
+  other: Engineering patterns
+linkblog:
+  other: Blog
 navservices:
   other: Services
 navcoaching:

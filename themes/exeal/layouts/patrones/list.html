@@ -1,0 +1,59 @@
+{{ define "main" }}
+{{ $patterns := .RegularPages }}
+<section class="xb-page-hero xb-page-hero-home">
+  <div class="container xb-page-hero-grid">
+    <div>
+      <p class="xb-kicker">$ ls ~/exeal/patrones</p>
+      <h1>Patrones de ingeniería que <em>usamos de verdad</em></h1>
+      <p class="xb-sub">{{ .Description }} Cada patrón cuenta el problema, la solución y en qué punto de madurez está.</p>
+      <ul class="xb-hero-facts">
+        <li>{{ len $patterns }} patrones</li>
+        <li><a href="{{ "/tags/" | relLangURL }}" style="color: inherit">explorar por tags</a></li>
+      </ul>
+    </div>
+    <div class="xb-terminal" aria-hidden="true">
+      <div class="xb-terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="title">just list</span></div>
+      <div class="xb-terminal-body">
+        <p><span class="prompt">$</span> just list --by maturity</p>
+        {{ range slice "adopt" "trial" "explore" }}
+        {{ $n := len (where $patterns "Params.maturity" .) }}
+        <p><span class="t-{{ . }} t-label">{{ . }}</span><span class="t-count">{{ $n }}</span> <span class="t-bar">{{ strings.Repeat $n "▮" }}</span></p>
+        {{ end }}
+        <p><span class="prompt">$</span> <span class="cursor"></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="xb-reading">
+  <div class="container">
+    <div class="xb-filter" role="group" aria-label="Filtrar por madurez">
+      <span class="xb-filter-label">Madurez:</span>
+      <button type="button" class="xb-chip is-active" data-filter="all">Todos</button>
+      {{ range slice "adopt" "trial" "explore" }}
+      <button type="button" class="xb-chip xb-chip-{{ . }}" data-filter="{{ . }}">{{ partial "reading/maturity-label.html" . }}</button>
+      {{ end }}
+    </div>
+    <div class="xb-card-grid" id="patrones">
+      {{ range $patterns.ByDate.Reverse }}
+        {{ partial "reading/entry-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+<script>
+  (function () {
+    var chips = document.querySelectorAll('.xb-filter .xb-chip');
+    var cards = document.querySelectorAll('#patrones .xb-entry');
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var f = chip.dataset.filter;
+        chips.forEach(function (c) { c.classList.toggle('is-active', c === chip); });
+        cards.forEach(function (card) {
+          card.hidden = f !== 'all' && !card.classList.contains('xb-entry-' + f);
+        });
+      });
+    });
+  })();
+</script>
+{{ end }}
