@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ partial "reading/page-hero.html" (dict "kicker" "$ ls tags/" "title" "Tags" "sub" "Explora el blog y los patrones por tema.") }}
+<section class="xb-reading">
+  <div class="container">
+    <ul class="xb-tags xb-tags-cloud">
+      {{ range .Pages.ByTitle }}
+      <li><a href="{{ .RelPermalink }}">#{{ .Title }} <span class="count">{{ len .Pages }}</span></a></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}

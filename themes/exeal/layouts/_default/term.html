@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ partial "reading/page-hero.html" (dict "kicker" "$ grep -rl tag" "title" (printf "#%s" .Title) "sub" (printf "%d entradas del blog y patrones con este tag." (len .Pages))) }}
+<section class="xb-reading">
+  <div class="container">
+    <div class="xb-card-grid">
+      {{ range .Pages.ByDate.Reverse }}
+        {{ partial "reading/entry-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

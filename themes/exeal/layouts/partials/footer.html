@@ -5,6 +5,10 @@
         <a href="/"
           ><img src="/assets/img/logo-exeal-footer.svg" alt="Exeal"
         /></a>
+        <p class="footer-resources">
+          {{ i18n "footerresources" }}:
+          {{ range $i, $r := site.Data.footer.resources }}{{ if $i }} · {{ end }}<a href="{{ $r.url | relLangURL }}">{{ i18n $r.text }}</a>{{ end }}
+        </p>
         <p>
           {{ range site.Data.footer.links }}
             <a href="{{ .url }}">{{ i18n .text }}</a>{{ if not (eq (index site.Data.footer.links (sub (len site.Data.footer.links) 1)) .) }} | {{ end }}

@@ -1,0 +1,6 @@
+{{/* Lista de tags. Recibe dict: tags (lista), class (p. ej. "xb-tags-small xb-tags-light"). */}}
+{{ with .tags }}
+<ul class="xb-tags {{ $.class }}">
+  {{ range . }}<li><a href="{{ printf "/tags/%s/" (. | urlize) | relLangURL }}">#{{ . }}</a></li>{{ end }}
+</ul>
+{{ end }}
