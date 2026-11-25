@@ -1,10 +1,11 @@
 // Redirecciones permanentes (301), conservando la query:
-// - el dominio raíz a www, con la misma ruta;
+// - el dominio raíz y exeal.es (con y sin www) a www, con la misma ruta;
 // - el antiguo patterns.exeal.com y las rutas /patterns/ a /patrones/ en www.
 // El resto (www y las previews de *.pages.dev) pasa tal cual.
 // static/_routes.json excluye los assets para que no invoquen esta función.
 const APEX = "exeal.com";
 const WWW = `www.${APEX}`;
+const REDIRECTED_HOSTS = [APEX, "exeal.es", "www.exeal.es"];
 const OLD_PATTERNS_HOST = `patterns.${APEX}`;
 
 // Rutas del sitio antiguo de patrones: /, /patterns/<slug>/ y /tags/<tag>/.
@@ -24,9 +25,10 @@ export const onRequest = ({ request, next }) => {
   }
   if (url.pathname.startsWith("/patterns/")) {
     url.pathname = patternsPath(url.pathname);
+    if (REDIRECTED_HOSTS.includes(url.hostname)) url.hostname = WWW;
     return Response.redirect(url.toString(), 301);
   }
-  if (url.hostname === APEX) {
+  if (REDIRECTED_HOSTS.includes(url.hostname)) {
     url.hostname = WWW;
     return Response.redirect(url.toString(), 301);
   }
