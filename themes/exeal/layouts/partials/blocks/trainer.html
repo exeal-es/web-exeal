@@ -1,24 +1,16 @@
-{{ $data := index site.Data.authors .author }}
-<section id="{{ .id }}" class="xb-trainer {{ .className }}">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-5 mb-4 mb-lg-0">
-        <div class="xb-trainer-photo" style="{{ printf "background-image: url('%s'); background-position: %s;" (.photo | default $data.avatar) (.photoPosition | default "center") | safeCSS }}">
-          <div class="flap flap-top-right"></div>
-        </div>
-      </div>
-      <div class="col-lg-7">
-        {{ with .kicker }}<p class="xb-kicker">{{ . }}</p>{{ end }}
-        <h2 class="xb-hook">{{ .header | safeHTML }}</h2>
-        <p class="xb-trainer-name">{{ $data.name }} <span>· {{ .role }}</span></p>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{ $a := index site.Data.authors .author }}
+    <div class="ex-split s-split-rev">
+      <div>
+        {{ partial "arrow-header.html" . }}
+        <p><strong>{{ $a.name }}</strong>, {{ .role }}</p>
         {{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}
-        {{ with .track }}<p class="xb-trainer-track">{{ range $i, $e := . }}{{ if $i }}<span class="sep">→</span>{{ end }}<span>{{ $e }}</span>{{ end }}</p>{{ end }}
-        {{ with .quote }}<blockquote class="xb-trainer-quote">{{ . | safeHTML }}</blockquote>{{ end }}
-        <p class="xb-trainer-social">
-          {{ with $data.social.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
-          {{ with $data.social.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
-        </p>
+        {{ with .track }}<ul class="s-tags">{{ range . }}<li class="ex-tag">{{ . }}</li>{{ end }}</ul>{{ end }}
+        {{ with .quote }}<blockquote class="s-blockquote">{{ . | safeHTML }}</blockquote>{{ end }}
+        <p class="s-links">{{ with $a.social.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }} {{ with $a.social.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}</p>
       </div>
+      <div><span class="ex-photo ex-photo--disc"><img class="s-cover" style="{{ printf "object-position:%s" (.photoPosition | default "center") | safeCSS }}" src="{{ .photo | default $a.avatar }}" alt="{{ $a.name }}" loading="lazy"></span></div>
     </div>
   </div>
 </section>

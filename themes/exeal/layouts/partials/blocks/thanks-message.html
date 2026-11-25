@@ -1,12 +1,7 @@
-{{- /* Mensaje de gracias tras un registro: titular, párrafos y firma. */ -}}
-<section id="{{ .id }}" class="xb-hero xb-thanks {{ .className }}">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <h1>{{ .header | safeHTML }}</h1>
-        {{ range .paragraphs }}<p class="xb-sub">{{ . | safeHTML }}</p>{{ end }}
-        {{ with .signature }}<p class="xb-thanks-signature">{{ . | safeHTML }}</p>{{ end }}
-      </div>
-    </div>
-  </div>
+<section id="{{ .id }}" class="ex-hero s-hero s-hero--tall ex-theme-dark s-bg s-bg--samurai">
+  <div class="s-wrap"><div class="s-hero__text">
+    <h1 class="ex-h1">{{ .header | safeHTML }}</h1>
+    {{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}
+    {{ with .signature }}<p>{{ . | safeHTML }}</p>{{ end }}
+  </div></div>
 </section>

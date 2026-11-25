@@ -1,16 +1,6 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2>Próximos eventos</h2>
-      </div>
-    </div>
-    <div class="row">
-      {{ range site.Data.events }}
-      <div class="col-12">
-        {{- partial "events/eventcard.html" . -}}
-      </div>
-      {{ end }}
-    </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{ partial "arrow-header.html" (dict "header" "Próximos eventos") }}
+    {{ range site.Data.events }}{{ partial "events/eventcard.html" . }}{{ else }}<p>Ahora mismo no hay ninguno en el calendario. Si te apuntas a la lista, te avisamos del siguiente.</p>{{ end }}
   </div>
 </section>

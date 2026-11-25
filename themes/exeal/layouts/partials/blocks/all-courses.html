@@ -1,33 +1,8 @@
-<section id="{{ .id }}" class="light">
-  <div class="container">
-    <div class="row">
-      {{ $allCourses := where site.Pages "Params.layout" "course" }}
-      {{ range first 9 (where $allCourses "Params.featured" nil) }}
-      <div class="col-md-4 col-sm-12">
-        <div class="course-card">
-          <div
-            class="course-header"
-            style="background-image: url('{{ .Params.course_featured_image }}')"
-          >
-            {{ if .Params.course_confirmed }}
-              <div class="featured-course">¡Fecha confirmada!</div>
-            {{ end }}
-            {{ if not .Params.course_visible }}
-              <div class="featured-course">¡Próximamente!</div>
-            {{ end }}
-          </div>
-          <div class="course-body">
-            <h3>{{ .Params.course_title }}</h3>
-            <p class="description">{{ .Description }}</p>
-            {{ if .Params.course_visible }}
-            <a class="button button-green expand" href="{{ .Permalink }}"
-              >Más info</a
-            >
-            {{ end }}
-            
-          </div>
-        </div>
-      </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+<div class="ex-post-grid">
+      {{ range first 9 (where (where site.Pages "Params.layout" "course") "Params.featured" nil) }}
+      {{ partial "course-card.html" (dict "image" .Params.course_featured_image "badge" (cond (eq .Params.course_confirmed true) "Fecha confirmada" (cond (eq .Params.course_visible true) "" "Próximamente")) "title" .Params.course_title "text" .Description "href" (cond (eq .Params.course_visible true) .RelPermalink "") "cta" "Más info") }}
       {{ end }}
     </div>
   </div>

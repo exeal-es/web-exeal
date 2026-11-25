@@ -1,19 +1,11 @@
-<section id="{{ .id }}" class="xb-facts {{ .className }}">
-  <div class="container">
-    <div class="row xb-head">
-      <div class="col-lg-10">
-        {{ with .kicker }}<p class="xb-kicker">{{ . }}</p>{{ end }}
-        <h2 class="xb-hook">{{ .header | safeHTML }}</h2>
-      </div>
-    </div>
-    <div class="row mt-3">
-      {{ range .facts }}
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="xb-fact">
-          <div class="value">{{ .value | safeHTML }}</div>
-          <div class="label">{{ .label }}</div>
-          {{ with .detail }}<p class="detail">{{ . | safeHTML }}</p>{{ end }}
-        </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{- $c := .className }}{{ $sides := slice (slice "tl" "bl") (slice "tl" "tr") (slice "tr" "br") }}
+    {{ partial "arrow-header.html" . }}
+    <div class="ex-grid s-grid-3">
+      {{ range $i, $f := .facts }}
+      <div class="ex-box ex-box--info">{{ range index $sides (mod $i 3) }}<span class="ex-box__flap ex-box__flap--{{ . }}"></span>{{ end }}
+        {{ with .icon }}{{ partial "icon.html" (dict "name" . "className" $c) }}{{ end }}<h4>{{ .value | safeHTML }}</h4><p>{{ .detail | default .label | safeHTML }}</p>
       </div>
       {{ end }}
     </div>

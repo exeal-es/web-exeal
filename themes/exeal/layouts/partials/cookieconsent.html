@@ -1,21 +1,16 @@
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#efefef",
-      "text": "#404040"
-    },
-    "button": {
-      "background": "#8ec760",
-      "text": "#ffffff"
-    }
-  },
-  "content": {
-    "message": "Este sitio web utiliza cookies propias y de terceros para obtener estadísticas sobre los hábitos de navegación del usuario, mejorar su experiencia y permitirle compartir contenidos en redes sociales.",
-    "dismiss": "Aceptar",
-    "link": "Puede encontrar toda la información en nuestra Política de Cookies.",
-    "href": "/legal/cookie-policy/"
-  }
-});
-</script>
+{{- /* Patrón de cookies de exeal-design. La lógica está en site.js; los scripts que dependen de ella, en tracking.html. */ -}}
+<aside class="ex-cookies ex-theme-dark" id="cookies" aria-label="Cookies" hidden>
+  <img class="ex-cookies__neko" src="/exeal-design/img/neko.png" alt="">
+  <form class="ex-box"><span class="ex-box__flap ex-box__flap--tl"></span>
+    <h2>¿Una cookie?</h2>
+    <p>Las necesarias ya están en la mesa. Las de medir, publicidad y contenido de terceros, solo si quieres. <a class="ex-link" href="/legal/cookie-policy/">Política de cookies</a></p>
+    <div class="ex-cookies__actions"><button type="button" class="ex-button ex-button--hollow" data-cookies="none">Rechazar</button><button type="button" class="ex-button ex-button--hollow" data-cookies="all">Aceptar</button></div>
+    <details class="ex-disclosure"><summary>Elegir</summary>
+      <label class="ex-checkbox"><input type="checkbox" checked disabled> Necesarias</label>
+      <label class="ex-checkbox"><input type="checkbox" name="medicion"> Medición (Google Analytics, Ahrefs, Hotjar, HubSpot, Kit, Metricool)</label>
+      <label class="ex-checkbox"><input type="checkbox" name="publicidad"> Publicidad (Meta)</label>
+      <label class="ex-checkbox"><input type="checkbox" name="terceros"> Contenido de terceros (Spotify, Calendly, Vidalytics)</label>
+      <button type="submit" class="ex-button ex-button--hollow ex-button--nav">Guardar</button>
+    </details>
+  </form>
+</aside>

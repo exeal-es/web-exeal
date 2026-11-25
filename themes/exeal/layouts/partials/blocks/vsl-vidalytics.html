@@ -1,11 +1,9 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
-      <div class="col-md-12">
-        <h1>{{ .header | safeHTML }}</h1>
-        <h4>{{ .subheader | safeHTML }}</h4>
-        <p>
-          <div id="{{ .vidalyticsId }}" style="width: 100%; position:relative; padding-top: 56.25%;"></div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+<h2 class="ex-arrow-title"><span>{{ .header | safeHTML }}</span></h2>
+    {{ with .subheader }}<p class="s-lead">{{ . | safeHTML }}</p>{{ end }}
+    <template data-consent="terceros" data-name="Vidalytics">
+    <div id="{{ .vidalyticsId }}" style="width: 100%; position:relative; padding-top: 56.25%;"></div>
           <script type="text/javascript">
           (function (v, i, d, a, l, y, t, c, s) {
               y='_'+d.toLowerCase();c=d+'L';if(!v[d]){v[d]={};}if(!v[c]){v[c]={};}if(!v[y]){v[y]={};}var vl='Loader',vli=v[y][vl],vsl=v[c][vl + 'Script'],vlf=v[c][vl + 'Loaded'],ve='Embed';
@@ -17,11 +15,7 @@
               vsl(l+'loader.min.js',function(){if(!vli){var vlc=v[c][vl];vli=new vlc();}vli.loadScript(l+'player.min.js',function(){var vec=v[d][ve];t=new vec();t.run(a);});});
           })(window, document, 'Vidalytics', '{{ .vidalyticsId }}', '{{ .vidalyticsUrl }}');
           </script>
-        </p>
-        <p class="justify-content-center align-items-center text-center">
-          <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button" style="display: inline-block">{{ .callToAction.text }}</a>
-        </p>
-      </div>
-    </div>
+    </template>
+    {{ with .callToAction }}<div class="s-actions">{{ partial "button.html" . }}</div>{{ end }}
   </div>
 </section>

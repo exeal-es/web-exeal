@@ -1,50 +1,10 @@
-<form accept-charset="UTF-8" method="POST" action="https://leadhub-backend.ne2.studio/api/forms/exeal-home/submit">
-  <div class="row">
-    <div class="col-md-6 form-group">
-      <input class="form-control" id="name" name="name" type="text" placeholder="{{ i18n "fieldname" }}" required/>
-    </div>
-    <div class="col-md-6 form-group">
-      <input class="form-control" id="surname" name="surname" type="text" placeholder="{{ i18n "fieldsurname" }}" required/>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 form-group">
-      <input class="form-control" id="email" name="email" type="email" placeholder="Email" required/>
-    </div>
-    <div class="col-md-6 form-group">
-      <input class="form-control" id="phone" name="phone" type="text" placeholder="{{ i18n "fieldphone" }}"/>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12">
-      <div class="form-group">
-        <input class="form-control" id="company" name="company" type="text" placeholder="{{ i18n "fieldcompany" }}"/>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12">
-      <div class="form-group">
-        <textarea class="form-control" id="message" name="message" placeholder="{{ i18n "fieldcontactmsg" }}" required></textarea>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12">
-      <div class="form-group">
-        <label class="checkbox-container" for="accept-terms"
-          ><input
-            id="accept-terms"
-            name="accept-terms"
-            type="checkbox"
-          /><span class="checkmark"></span>{{ i18n "checkcomms" }}</label
-        >
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12">
-      <input class="btn-submit" type="submit" name="submit" value="{{ i18n "btnsend" }}" />
-    </div>
-  </div>
+<form class="ex-lead-form" accept-charset="UTF-8" method="POST" action="https://leadhub-backend.ne2.studio/api/forms/exeal-home/submit">
+  <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="name">{{ i18n "fieldname" }}</label><input class="ex-input" type="text" id="name" name="name" required autocomplete="given-name"></div>
+  <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="surname">{{ i18n "fieldsurname" }}</label><input class="ex-input" type="text" id="surname" name="surname" required autocomplete="family-name"></div>
+  <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="email">Email</label><input class="ex-input" type="email" id="email" name="email" required autocomplete="email"></div>
+  <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="phone">{{ i18n "fieldphone" }}</label><input class="ex-input" type="tel" id="phone" name="phone" autocomplete="tel"></div>
+  <div class="ex-field"><label class="ex-field__label" for="company">{{ i18n "fieldcompany" }}</label><input class="ex-input" type="text" id="company" name="company" autocomplete="organization"></div>
+  <div class="ex-field"><label class="ex-field__label" for="message">{{ i18n "fieldcontactmsg" }}</label><textarea class="ex-input" id="message" name="message" rows="5" required></textarea></div>
+  <label class="ex-checkbox"><input id="accept-terms" name="accept-terms" type="checkbox"> {{ i18n "checkcomms" }}</label>
+  <input class="ex-button ex-button--accent ex-button--block" type="submit" name="submit" value="{{ i18n "btnsend" }}">
 </form>

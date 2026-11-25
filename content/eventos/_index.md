@@ -8,7 +8,7 @@ blocks:
   # Subscribe form
   - type: events-subscribe
     id: sect-subscribe
-    className: dark background background-01 
+    className: dark samurai
 
   # Next events
   - type: events-next-events

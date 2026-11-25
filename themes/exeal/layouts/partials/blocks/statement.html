@@ -1,13 +1,6 @@
-<section id="{{ .id }}" class="xb-statement {{ .className }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10">
-        {{ with .kicker }}<p class="xb-kicker">{{ . }}</p>{{ end }}
-        <h2 class="xb-statement-big">{{ .statement | safeHTML }}</h2>
-      </div>
-      <div class="col-lg-8 offset-lg-2 mt-4">
-        {{ range .paragraphs }}<p class="xb-statement-p">{{ . | safeHTML }}</p>{{ end }}
-      </div>
-    </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+<p class="ex-pull s-pull">{{ .statement | safeHTML }}</p>
+    <div class="s-text s-text--center">{{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}</div>
   </div>
 </section>

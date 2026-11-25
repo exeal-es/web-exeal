@@ -1,18 +1,11 @@
-<section id="{{ .id }}" class="xb-about {{ .className }}">
-  <div class="container">
-    <div class="row xb-head">
-      <div class="col-lg-10">
-        {{ with .kicker }}<p class="xb-kicker">{{ . }}</p>{{ end }}
-        <h2 class="xb-hook">{{ .header | safeHTML }}</h2>
-      </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col-lg-5">
-        <blockquote class="xb-vision">{{ .vision | safeHTML }}{{ with .visionLabel }}<small>{{ . }}</small>{{ end }}</blockquote>
-      </div>
-      <div class="col-lg-7">
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{ partial "arrow-header.html" . }}
+    <div class="ex-split s-about">
+      <blockquote class="ex-h2 s-vision">{{ .vision | safeHTML }}{{ with .visionLabel }}<small>{{ . }}</small>{{ end }}</blockquote>
+      <div>
         {{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}
-        {{ with .badges }}<ul class="xb-badges">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+        {{ with .badges }}<ul class="s-tags">{{ range . }}<li class="ex-tag">{{ . }}</li>{{ end }}</ul>{{ end }}
       </div>
     </div>
   </div>

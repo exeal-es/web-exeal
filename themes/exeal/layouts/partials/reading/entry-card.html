@@ -1,19 +1,18 @@
-{{/* Tarjeta de un listado: sirve para patrones y para entradas del blog. */}}
-{{ $isPattern := eq .Section "patrones" }}
-{{ $m := .Params.maturity | default "explore" }}
-<div class="xb-entry {{ if $isPattern }}xb-entry-{{ $m }}{{ else }}xb-entry-post{{ end }}">
-  {{ if and (not $isPattern) .Params.card_image }}
-  <div class="xb-entry-img" style="{{ printf "background-image: url('%s')" (.Params.card_image | absURL) | safeCSS }}" aria-hidden="true"></div>
-  {{ end }}
-  <div class="xb-entry-meta">
-    {{ if $isPattern }}
-    <span class="xb-badge xb-badge-{{ $m }}">{{ partial "reading/maturity-label.html" $m }}</span>
-    {{ else }}
-    <span class="xb-badge">{{ if .Params.podcast_episode_id }}Podcast{{ else }}Blog{{ end }}</span>
-    {{ end }}
-    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_medium" }}</time>
-  </div>
-  <h2 class="xb-entry-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  {{ with .Description }}<p class="xb-entry-description">{{ . }}</p>{{ end }}
-  {{ partial "reading/tags.html" (dict "tags" .Params.tags "class" "xb-tags-small") }}
-</div>
+{{- /* Tarjeta de un listado: patrón (tarjeta con resumen) o entrada del blog (tarjeta de artículo). */ -}}
+{{- if eq .Section "patrones" -}}
+{{- $m := .Params.maturity | default "explore" -}}
+<article class="ex-card ex-card--raised s-pattern" data-maturity="{{ $m }}"><div class="ex-card__body">
+  <p><span class="ex-tag ex-tag--compact">{{ partial "reading/maturity-label.html" $m }}</span></p>
+  <h2 class="ex-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  {{ with .Description }}<p class="ex-card__text">{{ . }}</p>{{ end }}
+  {{ with .Params.tags }}<p class="s-pattern__tags">{{ range . }}#{{ . }} {{ end }}</p>{{ end }}
+</div></article>
+{{- else -}}
+{{- $a := dict -}}{{- with .Params.author -}}{{- $a = index site.Data.authors . | default dict -}}{{- end -}}
+<article class="ex-post"{{ with .Params.card_image }} style="{{ printf "--ex-post-cover:url('%s')" (. | relURL) | safeCSS }}"{{ end }}>
+  <ul class="ex-post__tags">{{ if .Params.podcast_episode_id }}<li class="ex-tag ex-tag--compact">Podcast</li>{{ end }}{{ range .Params.tags }}<li class="ex-tag ex-tag--compact">#{{ . }}</li>{{ end }}</ul>
+  <h2 class="ex-post__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <p class="ex-post__author">{{ with $a.name }}{{ . }} · {{ end }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_medium" }}</time></p>
+  <div class="ex-post__detail"><span>{{ .Description }}</span><small>{{ .ReadingTime }} min de lectura</small></div>
+</article>
+{{- end -}}

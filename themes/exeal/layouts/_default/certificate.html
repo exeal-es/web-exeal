@@ -1,35 +1,23 @@
 {{ define "main" }}
-
-<section class="light">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="with-arrow">{{ .Params.certificateData.courseName }}: <em>Certificado del Curso</em>.</h2>
-      </div>
+{{ with .Params.certificateData }}
+<section class="s-section ex-theme-light"><div class="s-wrap">
+  <h1 class="ex-arrow-title"><span>{{ .courseName }}: <em>certificado del curso</em></span></h1>
+  <div class="ex-split s-top">
+    <div>
+      <dl class="ex-terms">
+        <dt>Completado por</dt><dd>{{ .studentName }}</dd>
+        <dt>Código de verificación</dt><dd>{{ .verificationCode }}</dd>
+        <dt>Fecha de finalización</dt><dd>{{ .endDate }}</dd>
+        <dt>Duración</dt><dd>{{ .timespan }}</dd>
+        <dt>Competencias adquiridas</dt>
+      </dl>
+      <ul class="ex-ticked s-cols">{{ range .competencies }}<li>{{ . }}</li>{{ end }}</ul>
     </div>
-		<div class="row mt-3 mb-3">
-			<div class="col-md-6 certificate-details">
-        <p>Completado por: <em>{{ .Params.certificateData.studentName }}</em></p>
-        <p>Código de verificación: {{ .Params.certificateData.verificationCode }}</p>
-        <p>Fecha de finalización: {{ .Params.certificateData.endDate }}</p>
-        <p>Duración: {{ .Params.certificateData.timespan }}</p>
-        <p><em>Competencias adquiridas:</em></p>
-        <ul class="row">
-          {{ range .Params.certificateData.competencies }}
-          <li class="col-md-6">{{ . }}</li>
-          {{ end }}
-        </ul>
-        <p>
-          <a href="{{ .Params.certificateData.courseDetailsLink }}" class="button button-dark button-center">Detalles del curso</a>
-        </p>
-      </div>
-      <div class="col-md-6">
-        <img class="img-fluid pad" src="{{ .Params.certificateData.certificateImageSmall }}" />
-        <p>
-          <a target="_blank" href="{{ .Params.certificateData.certificateImage }}" class="button button-center">Descargar</a>
-        </p>
-      </div>
+    <div>
+      <img class="s-img" src="{{ .certificateImageSmall }}" alt="Certificado de {{ .studentName }}">
+      <div class="ex-actions s-actions"><a target="_blank" href="{{ .certificateImage }}" class="ex-button">Descargar</a><a href="{{ .courseDetailsLink }}" class="ex-button ex-button--hollow">Detalles del curso</a></div>
     </div>
   </div>
-</section>
+</div></section>
+{{ end }}
 {{ end }}

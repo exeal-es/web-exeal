@@ -1,13 +1,7 @@
 {{ define "main" }}
-{{ partial "reading/page-hero.html" (dict "kicker" "$ ls blog/" "title" .Title "sub" "Lo que aprendemos entrenando a equipos que construyen software: prácticas, casos y conversaciones.") }}
-<section class="xb-reading">
-  <div class="container">
-    <div class="xb-card-grid">
-      {{ range (.Paginator 12).Pages }}
-        {{ partial "reading/entry-card.html" . }}
-      {{ end }}
-    </div>
-    {{ template "_internal/pagination.html" . }}
-  </div>
-</section>
+{{ partial "page-hero.html" (dict "title" .Title "sub" "Lo que aprendemos entrenando a equipos que construyen software: prácticas, casos y conversaciones.") }}
+<section class="s-section ex-theme-light"><div class="s-wrap">
+  <div class="ex-post-grid">{{ range (.Paginator 12).Pages }}{{ partial "reading/entry-card.html" . }}{{ end }}</div>
+  {{ with .Paginator }}{{ if gt .TotalPages 1 }}<nav class="s-after" aria-label="Paginación"><ul class="ex-pagination">{{ $n := .PageNumber }}{{ range .Pagers }}<li><a href="{{ .URL }}"{{ if eq .PageNumber $n }} aria-current="page"{{ end }}>{{ .PageNumber }}</a></li>{{ end }}</ul></nav>{{ end }}{{ end }}
+</div></section>
 {{ end }}

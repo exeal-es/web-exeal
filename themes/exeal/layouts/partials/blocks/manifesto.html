@@ -1,18 +1,7 @@
-<section id="{{ .id }}" class="xb-manifesto {{ .className }}">
-  <div class="container">
-    <div class="row xb-head">
-      <div class="col-lg-10">
-        {{ with .kicker }}<p class="xb-kicker">{{ . }}</p>{{ end }}
-        <h2 class="xb-hook">{{ .header | safeHTML }}</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-10">
-        <ol class="xb-manifesto-list">
-          {{ range .lines }}<li><span>{{ . | safeHTML }}</span></li>{{ end }}
-        </ol>
-        {{ with .closing }}<p class="xb-manifesto-close">{{ . | safeHTML }}</p>{{ end }}
-      </div>
-    </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{ partial "arrow-header.html" . }}
+    <ol class="ex-manifesto">{{ range .lines }}<li><span>{{ . | safeHTML }}</span></li>{{ end }}</ol>
+    {{ with .closing }}<p class="ex-manifesto-close">{{ . | safeHTML }}</p>{{ end }}
   </div>
 </section>

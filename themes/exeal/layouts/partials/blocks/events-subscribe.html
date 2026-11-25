@@ -1,13 +1,9 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7">
-        <h1>Lo próximo en Exeal: <em>Talleres, cursos y eventos en directo</em></h1>
-        <h4>Consulta aquí todas las próximas charlas, formaciones y actividades en vivo para desarrolladores que quieren llevar su carrera al siguiente nivel</h4>
-      </div>
-      <div class="col-md-5">
-        {{ partial "events/signupform.html" . }}
-      </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+<div class="ex-split">
+      <div class="s-hero"><h1 class="ex-h1">Lo próximo en Exeal: <em>talleres, cursos y eventos en directo</em></h1>
+      <p class="s-lead">Consulta aquí todas las próximas charlas, formaciones y actividades en vivo para desarrolladores que quieren llevar su carrera al siguiente nivel</p></div>
+      <div>{{ partial "events/signupform.html" . }}</div>
     </div>
   </div>
 </section>

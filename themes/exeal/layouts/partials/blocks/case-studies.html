@@ -1,28 +1,13 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    {{- partial "arrow-header.html" (dict "header" .header) }}
-
-    <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
-      <div class="col-md-8">
-        <p>
-          {{ .subheader }}
-        </p>
-      </div>
-      <div class="case-study-card-container">
-        {{ range .casestudies }}
-        <div class="case-study-card">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="{{ .youtube }}"></iframe>
-          </div>
-          <div class="container">
-            <h4>{{ .title }}</h4>
-            <h6>{{ .description }}</h6>
-            <a href="{{ .link }}" class="button-hollow"
-              style="margin: auto; text-align: center; display: block">{{ .cta }}</a>
-          </div>
-        </div>
-        {{ end }}
-      </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{ partial "arrow-header.html" . }}
+    {{ with .subheader }}<p class="s-lead">{{ . }}</p>{{ end }}
+    <div class="ex-grid s-grid-2">
+      {{ range .casestudies }}
+      <article class="ex-video-card">{{ partial "video.html" (dict "url" .youtube "title" .title) }}
+        <div class="ex-video-card__body"><h3 class="ex-h4">{{ .title }}</h3><p class="ex-text ex-text--muted">{{ .description }}</p><a class="ex-button ex-button--hollow" href="{{ .link }}" aria-label="{{ .cta }}: {{ .title }}">{{ .cta }}</a></div>
+      </article>
+      {{ end }}
     </div>
   </div>
 </section>

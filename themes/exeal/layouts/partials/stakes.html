@@ -1,0 +1,4 @@
+{{ partial "arrow-header.html" . }}
+{{ with .p1 }}<p>{{ . | safeHTML }}</p>{{ end }}
+<ul class="ex-arrowed s-arrowed{{ if not .image }} s-cols{{ end }}">{{ range .list }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>
+{{ with .p2 }}<p>{{ . | safeHTML }}</p>{{ end }}

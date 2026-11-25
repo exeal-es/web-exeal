@@ -1,33 +1,9 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    {{- partial "arrow-header.html" (dict "header" .header) }}
-
-    <div class="row flex-nowrap overflow-auto">
-      {{ range .testimonials }}
-      <div class="col-md-6 col-sm-12">
-        <div class="course-card">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item"
-              src="{{ .youtube }}"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-      {{ end }}
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{ partial "arrow-header.html" . }}
+    <div class="ex-carousel s-carousel-2" tabindex="0" role="region" aria-label="Testimonios en vídeo">
+      {{ range $i, $e := .testimonials }}{{ partial "video.html" (dict "url" .youtube "title" (printf "testimonio %d" (add $i 1))) }}{{ end }}
     </div>
-    <div class="carousel-nav">
-      <button class="carousel-control-prev" type="button" data-bs-target="#{{ .id }}" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anteriores</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#{{ .id }}" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguientes</span>
-      </button>
-    </div>
+    <div class="ex-dots">{{ range $i, $e := .testimonials }}<a href="#{{ $.id }}-{{ $i }}" aria-label="Ver {{ add $i 1 }}"{{ if not $i }} aria-current="true"{{ end }}></a>{{ end }}<a class="ex-dots__next" href="#{{ .id }}" aria-label="Siguiente"></a></div>
   </div>
 </section>

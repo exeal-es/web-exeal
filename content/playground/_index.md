@@ -8,7 +8,7 @@ blocks:
   # VSL
   - type: vsl-vidalytics
     id: sect-vsl-vidalytics
-    className: dark background background-01
+    className: dark samurai
     header: Bootcamp de buenas prácticas de desarrollo de software
     subheader: Consigue un mayor impacto con tu trabajo, mejora tu salario y recupera tu motivación.
     vidalyticsId: vidalytics_embed_oZGCaq2XtRaFPsy2
@@ -20,7 +20,7 @@ blocks:
   # Hero
   - type: hero
     id: sect-hero
-    className: "dark background background-01"
+    className: dark samurai
     header: Lorem fistrum papaar
     subheader: Lorem fistrum papaar papaar torpedo al ataquerl sexuarl pupita quietooor. Qué dise usteer pecador mamaar fistro a gramenawer te va a hasé pupitaa jarl por la gloria de mi madre.
     backgroundImage: /images/courses/pilares-del-software.png
@@ -33,7 +33,7 @@ blocks:
   # The stakes (with image)
   - type: stakes-with-image
     id: sect-stakes-with-image
-    className: "light"
+    className: light
     image: /images/blog/posts/pain-developer.jpeg
     header: Jarl <em>hasta luego Lucas</em> hasta luego Lucas amatomaa apetecan
     p1: Tiene musho peligro la caidita ese que llega ahorarr quietooor no puedor se calle ustée
@@ -48,7 +48,7 @@ blocks:
   # Ticked list
   - type: ticked-list
     id: sect-ticket-list
-    className: gloaming background background-06
+    className: tint mint
     header: Te va a hasé pupitaa va usté muy cargadoo
     items:
       - Quietooor tiene musho peligro hasta luego Lucas pupita diodenoo está la cosa muy malar
@@ -89,7 +89,7 @@ blocks:
   # Syllabus
   - type: syllabus
     id: sect-syllabus
-    className: gloaming
+    className: tint
     header: Por la gloria de mi madre
     paragraph1: Está la cosa muy malar no puedor me cago en tus muelas fistro mamaar fistro te voy a borrar el cerito
     modules:
@@ -113,7 +113,7 @@ blocks:
   # Syllabus extended
   - type: syllabus-extended
     id: sect-syllabus-extended
-    className: gloaming
+    className: tint
     header: Diodeno va usté muy cargadoo
     chapters:
       - chapter: Diodeno me cago en tus muelas a gramenawer sexuarl
@@ -190,7 +190,7 @@ blocks:
   # Testimonials
   - type: testimonials
     id: sect-testimonials
-    className: gloaming
+    className: tint
     testimonials:
       - name: "Victoria Kovaleva"
         position: "Junior Software Engineer"
@@ -240,7 +240,7 @@ blocks:
   # Explaining paragraph
   - type: explaining-paragraph
     id: sect-explaining-paragraph
-    className: light background background-06
+    className: light mint
     header: Lorem fistrum ese que llega tiene musho peligro
     paragraphs:
       - Lorem fistrum se calle ustée pecador se calle ustée va usté muy cargadoo. A peich ahorarr amatomaa ese pedazo de ese hombree ese pedazo de caballo blanco caballo negroorl a gramenawer te voy a borrar el cerito apetecan. Mamaar apetecan al ataquerl ese pedazo de. No te digo trigo por no llamarte Rodrigor amatomaa no puedor va usté muy cargadoo. Me cago en tus muelas por la gloria de mi madre qué dise usteer fistro qué dise usteer. Quietooor pupita te voy a borrar el cerito condemor de la pradera no te digo trigo por no llamarte Rodrigor te voy a borrar el cerito diodeno se calle ustée de la pradera quietooor.
@@ -250,7 +250,7 @@ blocks:
   # Junk drawer
   - type: junk-drawer
     id: sect-junk-drawer
-    className: dark background-03
+    className: dark lines
     header: Papaar papaar ese pedazo de amatomaa benemeritaar
     items:
       - Te va a hasé pupitaa va usté muy cargadoo ahorarr a wan está la cosa muy malar
@@ -263,7 +263,7 @@ blocks:
   # Hero with image
   - type: hero-with-image
     id: sect-hero-with-image
-    className: dark background background-03
+    className: dark lines
     header: Lorem fistrum amatomaa llevame al sircoo se calle ustée
     subheader: Te va a hasé pupitaa por la gloria de mi madre llevame al sircoo ese pedazo de qué dise usteer qué dise usteer la caidita va usté muy cargadoo
     image: /assets/img/photo-training-module.png
@@ -290,37 +290,37 @@ blocks:
   # Value proposition elements
   - type: valueprop-elements
     id: sect-value-prop-elements
-    className: gloaming
+    className: tint
     header: El training intensivo en <em>Legacy Code</em> de Exeal es diferente.
     elements:
-      - icon: /assets/img/legacy/icons/icon-01.svg
+      - icon: calendario
         text: Durante un total de <em>16 horas</em> (a lo largo de 2 semanas, durante 2 horas al día, de Lunes a Jueves) vas a trabajar teoría y práctica sobre un proyecto de Legacy Code.
-      - icon: /assets/img/legacy/icons/icon-06.svg
+      - icon: global
         text: El training se realizará <em>100% online, por videoconferencia</em>. Si eres empresa y lo prefieres, podemos impartirlo en tus oficinas de manera presencial.
-      - icon: /assets/img/legacy/icons/icon-02.svg
+      - icon: conversacion
         text: El formato del training consiste en pequeñas introducciones teóricas, seguidas de sesiones de <em>“pair y mob programming”</em> sobre ejercicios guiados estilo <em>katas</em> para aplicar los conceptos.
-      - icon: /assets/img/legacy/icons/icon-04.svg
+      - icon: equipo
         text: Podrás trabajar sobre <em>tu propio proyecto de Legacy Code</em> siempre que sea open source o, si vienes con el equipo de tu empresa, sobre el código de la misma.
-      - icon: /assets/img/legacy/icons/icon-03.svg
+      - icon: objetivo
         text: Para garantizar la calidad de la experiencia y poder <em>adaptar y personalizar</em> las sesiones a cada alumno, nuestras plazas están limitadas a <em>12 personas</em> por cada edición.
-      - icon: /assets/img/legacy/icons/icon-05.svg
+      - icon: newsletter
         text: Una vez acabado el training, continuaremos <em>resolviendote dudas</em> a través de nuestro Slack <em>Exeal Alumni</em>, junto a profesores y alumnos de otras ediciones.
 
   # Three traits
   - type: three-traits
     id: sect-three-traits
-    className: dark background background-03
+    className: dark lines
     header: Las <em>claves</em> de los cursos de nuestro sistema formativo.
     traits:
       - title: No stack
         description: Lo que vas a aprender aquí es independiente del lenguaje o framework que uses. <em>Vas a ser capaz de ver la Matrix</em> del desarrollo.
-        icon: /assets/img/icons/white/Exeal-Icon-15.png
+        icon: torii
       - title: Intensivos
         description: El formato de nuestras formaciones es intensivo. Durante 2 días completos <em>te sumergirás de lleno</em> a trabajar en tu desarrollo profesional.
-        icon: /assets/img/icons/white/Exeal-Icon-14.png
+        icon: katanas
       - title: Experiencia real
         description: Estas son las mismas formaciones con las que se capacitan <em>desarrolladores de empresas top</em> a nivel nacional e internacional.
-        icon: /assets/img/icons/white/Exeal-Icon-10.png
+        icon: samurai
     callToAction:
       text: Compra pecador
       scrollTo: sect-cta
@@ -340,7 +340,7 @@ blocks:
   # Precios
   - type: prices
     id: sect-prices
-    className: gloaming
+    className: tint
     header: Descubre nuestros <em>precios</em>.
     prices:
       - name: Early bird
@@ -360,7 +360,7 @@ blocks:
   # Call to action
   - type: call-to-action
     id: sect-cta
-    className: dark background background-07
+    className: dark dev
     header: Te va a hasé pupitaa por la gloria de mi madre llevame al sircoo ese pedazo de qué dise usteer qué dise usteer la caidita va usté muy cargadoo
     ctaLabel: Compra pecador
     ctaHref: https://www.chiquitoipsum.com/
@@ -376,6 +376,6 @@ blocks:
   # Contact Form
   - type: contact-form
     id: sect-contact-form
-    className: dark background background-03
+    className: dark lines
     header: "Contacta con nosotros para obtener más información o reservar tu plaza en nuestras formaciones:"
 ---

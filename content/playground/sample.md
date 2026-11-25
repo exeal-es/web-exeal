@@ -6,7 +6,7 @@ layout: blocks
 blocks:
   - type: hero
     id: sect-hero
-    className: dark background background-01
+    className: dark samurai
     header: Learn to Build Better Software
     subheader: A hands-on training to level up your skills
     paragraphs:
@@ -29,7 +29,7 @@ blocks:
 
   - type: syllabus
     id: sect-syllabus
-    className: gloaming
+    className: tint
     header: What You’ll Learn
     paragraph1: A clear path to software craftsmanship.
     modules:
@@ -55,7 +55,7 @@ blocks:
 
   - type: call-to-action
     id: sect-cta
-    className: dark background background-07
+    className: dark dev
     header: Ready to Join?
     ctaLabel: Enroll Now
     ctaHref: https://example.com/enroll

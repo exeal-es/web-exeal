@@ -1,15 +1,8 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container vertical-center justify-content-center">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>{{ .header }}</h1>
-        {{ if .p }}
-        <p>{{ .p }}</p>
-        {{ end }}
-        <p>
-          <a href="{{ .ctaHref }}" class="button button-center">{{ .ctaLabel }}</a>
-        </p>
-      </div>
-    </div>
+{{- $theme := partial "theme.html" (.className | default "dark") -}}
+<section id="{{ .id }}" class="s-cta {{ $theme }}{{ if not (in $theme "s-bg") }} ex-motif ex-motif--code{{ end }}">
+  <div class="s-wrap">
+    <h2 class="ex-h1">{{ .header | safeHTML }}</h2>
+    {{ with .p }}<p>{{ . | safeHTML }}</p>{{ end }}
+    <div class="s-actions">{{ partial "button.html" (dict "text" .ctaLabel "href" .ctaHref) }}</div>
   </div>
 </section>

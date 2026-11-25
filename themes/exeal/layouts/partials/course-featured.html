@@ -1,0 +1,11 @@
+{{- /* dict: image, badge, title, tagline, paragraphs, features, href, cta. */ -}}
+<article class="ex-course ex-course--featured">
+  <div class="ex-course__cover" style="{{ printf "background-image:url('%s')" .image | safeCSS }}">{{ with .badge }}<span class="ex-course__badge">{{ . }}</span>{{ end }}</div>
+  <div class="ex-course__body">
+    <h3 class="ex-course__title">{{ .title }}</h3>
+    {{ with .tagline }}<p class="s-tagline">{{ . | safeHTML }}</p>{{ end }}
+    {{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}
+    {{ with .features }}<ul class="ex-ticked ex-course__features">{{ range . }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
+    <div class="ex-course__actions"><a class="ex-button ex-button--accent ex-button--block" href="{{ .href }}">{{ .cta }}</a></div>
+  </div>
+</article>

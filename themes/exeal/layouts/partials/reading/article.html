@@ -1,34 +1,26 @@
-{{/* Página de lectura: un patrón o una entrada del blog. Misma cabecera, artículo sobre tarjeta y navegación. */}}
+{{- /* Página de lectura: un patrón o una entrada del blog. */ -}}
 {{ $isPattern := eq .Section "patrones" }}
-{{ $m := .Params.maturity | default "explore" }}
 {{ $author := "" }}{{ with .Params.author }}{{ $author = index site.Data.authors . }}{{ end }}
 {{ $photo := "" }}{{ if not $isPattern }}{{ $photo = .Params.featured_image }}{{ end }}
-<section class="xb-page-hero xb-page-hero-article"{{ with $photo }} style="{{ printf "--xb-hero-photo: url('%s')" . | safeCSS }}"{{ end }}>
-  <div class="container xb-narrow">
-    <p class="xb-kicker"><a href="{{ .CurrentSection.RelPermalink }}">{{ .Section }}</a> / {{ .File.ContentBaseName }}</p>
-    <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p class="xb-sub">{{ . }}</p>{{ end }}
-    <div class="xb-hero-meta">
-      {{ if $isPattern }}<span class="xb-badge xb-badge-{{ $m }}">{{ partial "reading/maturity-label.html" $m }}</span>{{ end }}
+<header class="ex-hero s-hero s-hero--sheet ex-theme-dark {{ if $photo }}s-hero--photo{{ else }}ex-motif ex-motif--code{{ end }}"{{ with $photo }} style="{{ printf "--s-photo:url('%s')" . | safeCSS }}"{{ end }}>
+  <div class="s-wrap s-wrap--sheet">
+    <p><a class="ex-link" href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a></p>
+    <h1 class="ex-h1">{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    <p class="s-meta">{{ if $isPattern }}<span class="ex-tag ex-tag--compact">{{ partial "reading/maturity-label.html" (.Params.maturity | default "explore") }}</span>{{ end }}
       {{ with $author }}<span>{{ .name }}</span>{{ end }}
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
-      <span>{{ .ReadingTime }} min de lectura</span>
-    </div>
-    {{ partial "reading/tags.html" (dict "tags" .Params.tags "class" "xb-tags-small xb-tags-light") }}
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time><span>{{ .ReadingTime }} min de lectura</span>
+      {{ range .Params.tags }}<a href="{{ printf "/tags/%s/" (. | urlize) | relLangURL }}">#{{ . }}</a>{{ end }}</p>
   </div>
-</section>
-<section class="xb-reading">
-  <div class="container xb-narrow">
-    <article class="xb-prose">
-      {{ with .Params.podcast_episode_id }}
-      <iframe class="xb-podcast-embed" src="https://open.spotify.com/embed-podcast/episode/{{ . }}" allow="encrypted-media" loading="lazy" title="Episodio del podcast"></iframe>
-      {{ end }}
-      {{ .Content }}
-    </article>
+</header>
+<div class="ex-theme-gray s-reading">
+  <article class="ex-sheet s-sheet">
+    {{ with .Params.podcast_episode_id }}<template data-consent="terceros" data-name="Spotify"><iframe class="s-podcast" src="https://open.spotify.com/embed-podcast/episode/{{ . }}" allow="encrypted-media" loading="lazy" title="Episodio del podcast"></iframe></template>{{ end }}
+    {{ .Content }}
     {{ partial "reading/author.html" . }}
-    <nav class="xb-pager" aria-label="Más {{ .Section }}">
-      {{ with .PrevInSection }}<a class="xb-pager-link" href="{{ .RelPermalink }}"><span>← Anterior</span>{{ .Title }}</a>{{ else }}<span></span>{{ end }}
-      {{ with .NextInSection }}<a class="xb-pager-link next" href="{{ .RelPermalink }}"><span>Siguiente →</span>{{ .Title }}</a>{{ end }}
+    <nav class="ex-arrow-nav s-arrow-nav" aria-label="Más {{ .Section }}">
+      {{ with .PrevInSection }}<a class="is-prev" href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a>{{ end }}
+      {{ with .NextInSection }}<a class="is-next" href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a>{{ end }}
     </nav>
-  </div>
-</section>
+  </article>
+</div>

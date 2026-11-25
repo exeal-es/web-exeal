@@ -1,0 +1,29 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 296.8 291.8" style="enable-background:new 0 0 296.8 291.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#05E69B;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<polygon class="st0" points="15,52.3 15,114.5 77.2,114.5 77.2,76.2 96.4,76.2 96.4,52.3 		"/>
+		<rect x="115.5" y="52.3" class="st0" width="76.6" height="23.9"/>
+		<rect x="187.4" y="128.9" class="st0" width="86.2" height="67"/>
+		<rect x="91.6" y="128.9" class="st0" width="86.2" height="67"/>
+	</g>
+	<g>
+		<rect x="19.2" y="19.2" class="st1" width="9.6" height="9.6"/>
+		<rect x="38.3" y="19.2" class="st1" width="9.6" height="9.6"/>
+		<rect x="57.5" y="19.2" class="st1" width="9.6" height="9.6"/>
+		<path class="st1" d="M220.2,76.6V0H0v215.2l73.3-52.4h3.3v76.6h146.9l73.3,52.4V76.6H220.2z M287.3,114.9H86.2V86.2h201.1V114.9z
+			 M210.7,9.6v28.7H9.6V9.6C9.6,9.6,210.7,9.6,210.7,9.6z M70.3,153.2L9.6,196.6V47.9h201.1v28.7H76.6v57.5H19.2v9.6h57.5v9.6H70.3z
+			 M226.6,229.8H86.2v-86.2v-9.6v-9.6h201.1v148.7L226.6,229.8z"/>
+		<rect x="134.1" y="95.8" class="st1" width="9.6" height="9.6"/>
+		<rect x="114.9" y="95.8" class="st1" width="9.6" height="9.6"/>
+		<rect x="95.8" y="95.8" class="st1" width="9.6" height="9.6"/>
+		<rect x="95.8" y="210.7" class="st1" width="86.2" height="9.6"/>
+		<rect x="268.1" y="210.7" class="st1" width="9.6" height="9.6"/>
+		<rect x="191.5" y="210.7" class="st1" width="67" height="9.6"/>
+	</g>
+</g>
+</svg>

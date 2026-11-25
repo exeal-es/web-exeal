@@ -1,14 +1,11 @@
-{{- /* Bloque de texto sencillo: titular, párrafos, lista con check, datos en línea y nota. */ -}}
-<section id="{{ .id }}" class="xb-prose {{ .className }}">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        {{ with .header }}<h2>{{ . | safeHTML }}</h2>{{ end }}
-        {{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}
-        {{ with .items }}<ul class="ticked xb-prose-list">{{ range . }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
-        {{ with .facts }}<ul class="xb-prose-facts">{{ range . }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
-        {{ with .note }}<p class="xb-prose-note">{{ . | safeHTML }}</p>{{ end }}
-      </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+<div class="s-text">
+      {{ partial "arrow-header.html" . }}
+      {{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}
+      {{ with .items }}<ul class="ex-ticked">{{ range . }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
+      {{ with .facts }}<ul class="ex-ticked s-cols">{{ range . }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
+      {{ with .note }}<p class="ex-text--muted">{{ . | safeHTML }}</p>{{ end }}
     </div>
   </div>
 </section>

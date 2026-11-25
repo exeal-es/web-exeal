@@ -25,7 +25,7 @@ In the front matter of any page (`.md`), define a list of `blocks`, each with a 
 ```yaml
 - type: vsl-vidalytics
   id: sect-vsl-vidalytics
-  className: dark background background-01
+  className: dark
   header: Bootcamp for software development
   subheader: Improve your skills, salary, and motivation.
   vidalyticsId: vidalytics_embed_ABC123
@@ -53,7 +53,7 @@ In the front matter of any page (`.md`), define a list of `blocks`, each with a 
 ```yaml
 - type: hero
   id: sect-hero
-  className: dark background background-01
+  className: dark
   header: Welcome to Our Bootcamp
   subheader: Change your career in 3 months
   paragraphs:
@@ -106,7 +106,7 @@ In the front matter of any page (`.md`), define a list of `blocks`, each with a 
 ```yaml
 - type: ticked-list
   id: sect-benefits
-  className: gloaming
+  className: tint
   header: What you’ll get
   items:
     - Real projects
@@ -505,7 +505,7 @@ layout: blocks
 blocks:
   - type: hero
     id: sect-hero
-    className: dark background background-01
+    className: dark
     header: Learn to Build Better Software
     subheader: A hands-on training to level up your skills
     paragraphs:
@@ -528,7 +528,7 @@ blocks:
 
   - type: syllabus
     id: sect-syllabus
-    className: gloaming
+    className: tint
     header: What You’ll Learn
     paragraph1: A clear path to software craftsmanship.
     modules:
@@ -554,7 +554,7 @@ blocks:
 
   - type: call-to-action
     id: sect-cta
-    className: dark background background-07
+    className: dark
     header: Ready to Join?
     ctaLabel: Enroll Now
     ctaHref: https://example.com/enroll

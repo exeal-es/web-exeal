@@ -1,8 +1,0 @@
-{{/* Cabecera oscura de página. Recibe dict: kicker, title, sub. */}}
-<section class="xb-page-hero">
-  <div class="container">
-    {{ with .kicker }}<p class="xb-kicker">{{ . }}</p>{{ end }}
-    <h1>{{ .title }}</h1>
-    {{ with .sub }}<p class="xb-sub">{{ . }}</p>{{ end }}
-  </div>
-</section>

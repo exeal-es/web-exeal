@@ -1,0 +1,3 @@
+{{- /* dict: text, href o scrollTo, class (modificadores). */ -}}
+{{- $href := .href | default (printf "#%s" .scrollTo) -}}
+<a class="ex-button {{ .class }}" href="{{ $href }}"{{ if hasPrefix $href "http" }} rel="noopener"{{ end }}>{{ .text }}</a>

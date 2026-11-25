@@ -1,22 +1,8 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    <div class="row mt-3 mb-3 justify-content-center align-items-center text-center">
-      <div class="col-md-12">
-        <h1>{{ .header | safeHTML }}</h1>
-        <h4>{{ .subheader | safeHTML }}</h4>
-        <div class="video-container">
-          <iframe
-            src="{{ .youtubeUrl }}&amp;controls=0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen></iframe>
-        </div>
-        <p class="justify-content-center align-items-center text-center">
-          <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button" style="display: inline-block">{{ .callToAction.text }}</a>
-        </p>
-      </div>
-    </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+<h2 class="ex-arrow-title"><span>{{ .header | safeHTML }}</span></h2>
+    {{ with .subheader }}<p class="s-lead">{{ . | safeHTML }}</p>{{ end }}
+    {{ partial "video.html" (dict "url" .youtubeUrl "title" .header) }}
+    {{ with .callToAction }}<div class="s-actions">{{ partial "button.html" . }}</div>{{ end }}
   </div>
 </section>

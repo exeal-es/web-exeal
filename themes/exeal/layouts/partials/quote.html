@@ -1,0 +1,5 @@
+{{- /* dict: text, photo, name, position. */ -}}
+<figure class="ex-quote ex-box"{{ with .id }} id="{{ . }}"{{ end }}><span class="ex-box__flap ex-box__flap--tr"></span>
+  <blockquote>«{{ .text | replaceRE `^\s*(&ldquo;|")|(&rdquo;|")\s*$` "" | safeHTML }}»</blockquote>
+  <figcaption><img class="ex-avatar" src="{{ .photo }}" alt="" loading="lazy"><span><strong>{{ .name }}</strong>{{ .position }}</span></figcaption>
+</figure>

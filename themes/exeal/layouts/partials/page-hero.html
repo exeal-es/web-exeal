@@ -1,0 +1,9 @@
+{{- /* Cabecera oscura. dict: title, sub, paragraphs, cta (dict de button), photo, sheet (deja sitio para la hoja). */ -}}
+<header class="ex-hero s-hero ex-theme-dark {{ if .photo }}s-hero--photo{{ else if .sheet }}ex-motif ex-motif--code{{ else }}s-bg s-bg--{{ .bg | default "samurai" }}{{ end }}{{ if .sheet }} s-hero--sheet{{ end }}"{{ with .photo }} style="{{ printf "--s-photo:url('%s')" . | safeCSS }}"{{ end }}>
+  <div class="s-wrap{{ if .sheet }} s-wrap--sheet{{ end }}"><div class="s-hero__text">
+    <h1 class="ex-h1">{{ .title | safeHTML }}</h1>
+    {{ with .sub }}<p class="s-lead">{{ . | safeHTML }}</p>{{ end }}
+    {{ with .cta }}<div class="ex-actions">{{ partial "button.html" . }}</div>{{ end }}
+    {{ with .after }}{{ . }}{{ end }}
+  </div></div>
+</header>

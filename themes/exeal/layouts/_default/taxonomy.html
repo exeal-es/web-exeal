@@ -1,12 +1,6 @@
 {{ define "main" }}
-{{ partial "reading/page-hero.html" (dict "kicker" "$ ls tags/" "title" "Tags" "sub" "Explora el blog y los patrones por tema.") }}
-<section class="xb-reading">
-  <div class="container">
-    <ul class="xb-tags xb-tags-cloud">
-      {{ range .Pages.ByTitle }}
-      <li><a href="{{ .RelPermalink }}">#{{ .Title }} <span class="count">{{ len .Pages }}</span></a></li>
-      {{ end }}
-    </ul>
-  </div>
-</section>
+{{ partial "page-hero.html" (dict "title" "Tags" "sub" "Explora el blog y los patrones por tema.") }}
+<section class="s-section ex-theme-light"><div class="s-wrap">
+  <ul class="ex-rows s-rows">{{ range .Pages.ByTitle }}<li class="ex-row"><span><a href="{{ .RelPermalink }}">#{{ .Title }}</a><small>{{ len .Pages }} {{ if eq (len .Pages) 1 }}entrada{{ else }}entradas{{ end }}</small></span></li>{{ end }}</ul>
+</div></section>
 {{ end }}

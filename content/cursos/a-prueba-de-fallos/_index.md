@@ -9,7 +9,7 @@ course_visible: true
 blocks:
   - type: hero
     id: sect-hero
-    className: dark background background-01
+    className: dark samurai
     header: A prueba de fallos
     subheader: Construye software fiable y mantenible elevando tu nivel de testing.
     backgroundImage: /images/courses/a-prueba-de-fallos.png
@@ -34,7 +34,7 @@ blocks:
 
   - type: ticked-list
     id: sect-benefits
-    className: dark background background-03
+    className: dark lines
     header: Qué vas a aprender
     items:
       - Diseñar una estrategia de testing coherente, alineada con el riesgo y el valor del sistema.
@@ -49,24 +49,24 @@ blocks:
   # ¿Cómo lo vas a aprender?
   - type: valueprop-elements
     id: sect-methodology
-    className: gloaming
+    className: tint
     header: Cómo lo vas a aprender
     elements:
-      - icon: /assets/img/legacy/icons/icon-06.svg
+      - icon: global
         text: '<em>Online</em>: Sesiones en directo por videoconferencia.'
-      - icon: /assets/img/legacy/icons/icon-01.svg
+      - icon: calendario
         text: '<em>Intensivo</em>: 2 días completos (16 horas).'
-      - icon: /assets/img/legacy/icons/icon-02.svg
+      - icon: conversacion
         text: '<em>Interactivo</em>: Ejercicios, dinámicas y casos reales.'
-      - icon: /assets/img/legacy/icons/icon-04.svg
+      - icon: equipo
         text: '<em>Reducido</em>: Limitado a 15 personas por edición.'
-      - icon: /assets/img/legacy/icons/icon-03.svg
+      - icon: objetivo
         text: '<em>Aplicable</em>: Técnicas para usar desde el primer día.'
 
   - type: syllabus-extended
     id: sect-syllabus
     className: light
-    header: Temario completo (click para ampliar)
+    header: Temario completo
     chapters:
       - number: 1
         chapter: Fundamentos de una estrategia de testing robusta
@@ -102,7 +102,7 @@ blocks:
 
   - type: hero-with-image
     id: sect-hero-with-image
-    className: gloaming background background-06
+    className: tint mint
     header: ¿Cuándo y dónde será la próxima edición?
     subheader: Aún no hay fecha confirmada para la próxima edición de <em>A prueba de fallos</em>, pero puedes apuntarte a la lista de espera para enterarte antes que nadie cuando abramos plazas.
     image: /assets/img/photo-training-module.png
@@ -113,8 +113,8 @@ blocks:
   # FAQ
   - type: syllabus-extended
     id: sect-faq
-    className: gloaming
-    header: Preguntas frecuentes (click para ampliar)
+    className: tint
+    header: Preguntas frecuentes
     chapters:
       - chapter: ¿Qué horario tiene la formación?
         number: 1
@@ -142,7 +142,7 @@ blocks:
   
   - type: call-to-action
     id: sect-cta
-    className: dark background background-07
+    className: dark dev
     header: ¿Y si tu suite de tests te diera confianza real para desplegar sin miedo?
     ctaLabel: Apuntarme a la lista de espera
     ctaHref: https://docs.google.com/forms/d/e/1FAIpQLSdnIwqgMCW-TyOKJtKFlQthNasZQgPlYPMrG-ctqjuPTObftQ/viewform?usp=dialog

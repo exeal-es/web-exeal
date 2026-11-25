@@ -15,7 +15,7 @@ build:
 blocks:
 - type: vsl-hero
   id: sect-hero
-  className: dark xb-hero-bg
+  className: dark
   kicker: Solo para alumni de Exeal
   header: Volvemos a juntarnos.
   subheader: "Nos vendieron que la IA nos iba a quitar trabajo, y resulta que tenemos más que nunca. Así que nos juntamos dos horas con gente que sigue queriendo hacerlo bien: el jueves 28 de enero de 2027, de 18:30 a 20:30, online y gratis."
@@ -26,7 +26,7 @@ blocks:
   poster: /images/team/pedro-bilbo.jpg
   posterPosition: 75% 30%
   callToAction:
-    text: Me apunto ↓
+    text: Me apunto
     scrollTo: sect-registro
 - type: prose
   id: sect-para-quien
@@ -38,7 +38,7 @@ blocks:
   - Y te gustaría que tu equipo viniera contigo, en vez de tirar tú solo del carro.
 - type: prose
   id: sect-que-te-llevas
-  className: gloaming
+  className: tint
   header: Qué te llevas
   items:
   - <strong>Reencontrarte</strong> con gente como tú, de otras empresas.
@@ -60,7 +60,7 @@ blocks:
   note: "Al final, diez minutos: Exeal vuelve con programas para equipos. Y cerramos con un regalo sorpresa para todos."
 - type: prose
   id: sect-para-quien-no
-  className: light xb-prose-tight
+  className: light
   header: Para quién no es
   paragraphs:
   - Si buscas atajos o prefieres esperar a que todo esto pase, esta sesión no es para ti.

@@ -1,25 +1,10 @@
-{{ $id := .id }}
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2><img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" /></h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2>{{ .header }}</h2>
-        <dl class="faq">
-          {{ range .chapters }}
-          <dt data-toggle="collapse" href="#chapter{{ .number }}{{ $id }}">{{ .number }}. {{ .chapter }}</dt>
-          <dd class="collapse" id="chapter{{ .number }}{{ $id }}">
-            <ul>
-              {{ range .topics }}
-              <li>- {{ . | safeHTML }}</li>
-              {{ end }}
-            </ul>
-          </dd>
-          {{ end }}
-        </dl>
-      </div>
-    </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{ partial "arrow-header.html" . }}
+    {{ range .chapters }}
+    <details class="ex-disclosure"><summary>{{ .chapter }}</summary>
+      <div class="ex-disclosure__body">{{ if gt (len .topics) 1 }}<ul class="ex-bullets">{{ range .topics }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>{{ else }}{{ range .topics }}<p>{{ . | safeHTML }}</p>{{ end }}{{ end }}</div>
+    </details>
+    {{ end }}
   </div>
 </section>

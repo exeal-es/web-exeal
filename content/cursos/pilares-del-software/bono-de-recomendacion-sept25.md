@@ -8,7 +8,7 @@ blocks:
   # Hero
   - type: hero
     id: sect-hero
-    className: "dark background background-01"
+    className: dark samurai
     header: "Alguien de tu confianza quiere que programes con menos estrés"
     subheader: "Ha vivido Pilares del Software y sabe cómo cambia tu forma de trabajar: más claridad, más seguridad, más resultados."
     backgroundImage: /images/courses/pilares-high-res.jpg
@@ -19,7 +19,7 @@ blocks:
   # Dolor cotidiano
   - type: stakes-with-image
     id: sect-problema
-    className: "light"
+    className: light
     image: /images/blog/posts/pain-developer.jpeg
     header: "Problemas que quizá te suenen"
     list:
@@ -31,7 +31,7 @@ blocks:
   # Experiencia real
   - type: ticked-list
     id: sect-experiencia
-    className: "dark background background-03"
+    className: dark lines
     header: "Lo que VAS a hacer en esta formación"
     items:
       - Tomar un fragmento de código enmarañado y dejarlo nítido, paso a paso, con tests que te avisan si algo se rompe.
@@ -43,7 +43,7 @@ blocks:
   # ¿Para quién?
   - type: ticked-list
     id: sect-para-quien
-    className: "light background background-06"
+    className: light mint
     header: "Te vendrá de perlas si…"
     items:
       - Llevas tiempo programando, pero cada refactor es una lotería.
@@ -53,7 +53,7 @@ blocks:
 
   - type: ticked-list
     id: sect-temario-sintesis
-    className: "dark background-03"
+    className: dark lines
     header: "Lo que cubrimos en 4 bloques"
     paragraph1: "En 16 h tocamos los pilares que resuelven los problemas de tu día a día:"
     items:
@@ -78,7 +78,7 @@ blocks:
   # Precios
   - type: single-price
     id: sect-prices
-    className: dark background background-04
+    className: dark judoka
     header: "<em>Precio especial por invitación</em>."
     price:
         name: Invitación de confianza
@@ -111,7 +111,7 @@ blocks:
   # Qué incluye
   - type: junk-drawer
     id: sect-incluye
-    className: "gloaming background background-06"
+    className: tint mint
     header: "En tu entrada tienes"
     items:
       - "16 h en directo — 12 y 13 sept 2025."
@@ -123,7 +123,7 @@ blocks:
   # CTA final
   - type: call-to-action
     id: sect-cta-final
-    className: "dark background background-07"
+    className: dark dev
     header: "Tu invitación está a un clic — la próxima vez que toques tu código, hazlo con confianza"
     ctaLabel: "Aprovechar precio de invitado"
     ctaHref: "https://academia.exeal.com/enroll/3372757?price_id=4313779"

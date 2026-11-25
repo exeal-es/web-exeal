@@ -1,0 +1,31 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 296.8 292.1" style="enable-background:new 0 0 296.8 292.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#05E69B;}
+	.st1{fill:#182935;}
+</style>
+<g>
+	<g>
+		<path class="st1" d="M272.9,52.7H167.6v9.6h105.3c7.9,0,14.4,6.4,14.4,14.4v119.7h-9.6v9.6h9.6V225h-19.2v9.6h19.2v4.8
+			c0,7.9-6.4,14.4-14.4,14.4h-57.5H81.4H23.9c-7.9,0-14.4-6.4-14.4-14.4v-4.8h249V225H9.6v-19.2h9.6v-9.6H9.6V76.6
+			c0-7.9,6.4-14.4,14.4-14.4h105.3v-9.6H23.9C10.7,52.7,0,63.4,0,76.6v162.8c0,13.2,10.7,23.9,23.9,23.9h57.5v19.2H62.2v9.6h19.2
+			h134.1h19.2v-9.6h-19.2v-19.2h57.5c13.2,0,23.9-10.7,23.9-23.9V76.6C296.8,63.4,286.1,52.7,272.9,52.7z M205.9,282.5H91v-19.2
+			h114.9V282.5z"/>
+		<rect x="181.9" y="196.3" class="st1" width="9.6" height="9.6"/>
+	</g>
+	<path class="st0" d="M263.3,95.8L225,52.7v23.9h-28.7c-10.3,0-20,2.4-28.7,6.5V38.3h23.9L148.4,0l-43.1,38.3h23.9v44.8
+		c-8.7-4.1-18.4-6.5-28.7-6.5H71.8V52.7L33.5,95.8l38.3,43.1v-23.9H91c21.2,0,38.3,17.1,38.3,38.3v33.5v28.7h38.3v-28.7v-33.5
+		c0-21.2,17.1-38.3,38.3-38.3H225v23.9L263.3,95.8z"/>
+	<g>
+		<rect x="201.1" y="196.3" class="st1" width="9.6" height="9.6"/>
+		<rect x="220.2" y="196.3" class="st1" width="9.6" height="9.6"/>
+		<rect x="239.4" y="196.3" class="st1" width="9.6" height="9.6"/>
+		<rect x="258.5" y="196.3" class="st1" width="9.6" height="9.6"/>
+		<rect x="28.7" y="196.3" class="st1" width="9.6" height="9.6"/>
+		<rect x="47.9" y="196.3" class="st1" width="9.6" height="9.6"/>
+		<rect x="67" y="196.3" class="st1" width="9.6" height="9.6"/>
+		<rect x="86.2" y="196.3" class="st1" width="9.6" height="9.6"/>
+		<rect x="105.3" y="196.3" class="st1" width="9.6" height="9.6"/>
+	</g>
+</g>
+</svg>

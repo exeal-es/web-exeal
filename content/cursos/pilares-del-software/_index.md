@@ -11,7 +11,7 @@ blocks:
   # Hero
   - type: hero
     id: sect-hero
-    className: "dark background background-01"
+    className: dark samurai
     header: Aprende a programar sin caos, con propósito.
     subheader: Con Pilares del Software vas a escribir código que no se rompe, reducir deuda técnica y entregar sin ansiedad. Aplicable desde el lunes.
     backgroundImage: /images/courses/pilares-high-res.jpg
@@ -24,7 +24,7 @@ blocks:
   # The stakes
   - type: stakes-with-image
     id: sect-stakes
-    className: "light"
+    className: light
     image: /images/blog/posts/pain-developer.jpeg
     header: ¿Te sientes atrapado en el caos del código?
     list:
@@ -38,7 +38,7 @@ blocks:
   # Imagina esto
   - type: ticked-list
     id: sect-desired-situation
-    className: gloamin background background-06
+    className: tint mint
     header: "Imagina esto:"
     items:
       - Tu código es limpio, claro y <em>fácil de mantener</em>.
@@ -50,7 +50,7 @@ blocks:
   # Value proposition
   - type: ticked-list
     id: sect-value-proposition
-    className: dark background background-03
+    className: dark lines
     header: "<em>Pilares del Software</em>: La formación que transforma cómo escribes código, piensas y colaboras como desarrollador."
     paragraph1: "Un programa intensivo y práctico diseñado para:"
     items:
@@ -68,7 +68,7 @@ blocks:
   # Diferenciador: Por qué este curso no es uno más
   - type: ticked-list
     id: sect-diferenciador
-    className: "light background background-06"
+    className: light mint
     header: "¿Por qué no es un curso más?"
     paragraph1: "Porque no vienes a mirar. Vienes a practicar lo que transforma tu día a día como desarrollador:"
     items:
@@ -82,7 +82,7 @@ blocks:
 
   - type: ticked-list
     id: sect-metodologia
-    className: "dark background background-04"
+    className: dark judoka
     header: ¿Cómo aprenderás?
     paragraph1: "Nada de sentarte a escuchar durante horas. <em>Aquí vienes a practicar</em>:"
     items:
@@ -96,7 +96,7 @@ blocks:
   # Syllabus
   - type: syllabus
     id: sect-syllabus
-    className: gloaming
+    className: tint
     header: Lo que aprenderás en Pilares del Software
     paragraph1: "Pilares del Software es más que una formación, es una <em>transformación</em> en 4 dimensiones clave:"
     modules:
@@ -120,7 +120,7 @@ blocks:
   # Aplicabilidad
   - type: ticked-list
     id: sect-aplicabilidad
-    className: "dark background background-05"
+    className: dark texture
     header: "¿Y si en mi empresa no aplicamos nada de esto?"
     paragraph1: "Buena pregunta. Por eso este curso también te prepara para aplicar lo aprendido <em>incluso en contextos difíciles o legacy</em>:"
     items:
@@ -133,8 +133,8 @@ blocks:
   # Syllabus extended
   - type: syllabus-extended
     id: sect-syllabus-extended
-    className: gloaming
-    header: Temario completo (click para ampliar)
+    className: tint
+    header: Temario completo
     chapters:
       - chapter: "Introducción: los 4 pilares del software"
         number: 1
@@ -208,7 +208,7 @@ blocks:
       - name: pedropardal
     header: Conoce a Pedro Pardal, tu mentor
     p1: Con más de 12 años de experiencia como desarrollador senior y tech lead en empresas como Tuenti, Trivago y Codurance, Pedro ha formado a más de 200 desarrolladores y equipos de alto rendimiento.
-    p2: <em>-- "Mi misión es ayudarte a programar con propósito, confianza y claridad. Nos vemos en el curso."</em>
+    p2: «Mi misión es ayudarte a programar con propósito, confianza y claridad. Nos vemos en el curso.»
 
   # Video testimonials
   - type: video-testimonials
@@ -227,7 +227,7 @@ blocks:
   # Testimonials
   - type: testimonials
     id: sect-testimonials
-    className: gloaming
+    className: tint
     testimonials:
     - name: "Victoria Kovaleva"
       position: "Junior Software Engineer"
@@ -258,7 +258,7 @@ blocks:
   # Para quién es
   - type: ticked-list
     id: sect-para-quien-es
-    className: "dark background background-03"
+    className: dark lines
     header: "¿Es este curso para ti?"
     paragraph1: "Sí, si te reconoces en alguna de estas situaciones:"
     items:
@@ -266,7 +266,7 @@ blocks:
       - Llevas años programando, pero sientes que estás atrapado en el caos y quieres un enfoque más profesional.
       - Eres senior y buscas claridad, estructura y herramientas para impactar más en tu equipo o en tu producto.
       - Trabajas en un entorno que no facilita la mejora, y quieres aprender cómo avanzar desde donde estás, sin esperar a que todo cambie.
-      - Te interesa no solo escribir código, sino **entender cómo conectar con el negocio, el equipo y tu propio desarrollo profesional**.
+      - Te interesa no solo escribir código, sino <em>entender cómo conectar con el negocio, el equipo y tu propio desarrollo profesional</em>.
 
   # Clients
   - type: clients
@@ -274,7 +274,7 @@ blocks:
   # Explaining paragraph
   - type: explaining-paragraph
     id: sect-paragraph
-    className: light background background-06
+    className: light mint
     header: Es hora de transformar tu manera de programar y liderar proyectos de software.
     paragraphs:
       - En Exeal, entendemos lo frustrante que puede ser trabajar en código legacy, con presión constante de fechas o en equipos donde nadie se preocupa por la calidad. No todos los entornos son ideales, pero eso no significa que no puedas mejorar. 'Pilares del Software' está diseñado para darte herramientas reales que puedes aplicar <em>incluso en contextos difíciles</em>, paso a paso y sin necesidad de cambiar el mundo de golpe.
@@ -286,7 +286,7 @@ blocks:
 #  # Precios
 #  - type: single-price
 #    id: sect-prices
-#    className: dark background background-04
+#    className: dark judoka
 #    header: <em>Precio</em>.
 #    price:
 #      name: Oferta Early Bird
@@ -300,8 +300,8 @@ blocks:
   # FAQ
   - type: syllabus-extended
     id: sect-faq
-    className: gloaming
-    header: Preguntas frecuentes (click para ampliar)
+    className: tint
+    header: Preguntas frecuentes
     chapters:
       - chapter: ¿Qué horario tiene la formación
         number: 1
@@ -333,7 +333,7 @@ blocks:
   # Junk drawer
   - type: junk-drawer
     id: sect-junk-drawer
-    className: dark background-03
+    className: dark lines
     header: "Pilares del software incluye:"
     items:
       - "Curso intensivo online: 12 y 13 de septiembre de 2025"
@@ -347,7 +347,7 @@ blocks:
   # Call to action
   - type: call-to-action
     id: sect-cta
-    className: dark background background-07
+    className: dark dev
     header: Deja de improvisar. Aprende a programar con criterio, confianza y propósito.
     ctaLabel: Apúntate a la lista de espera
     ctaHref: https://forms.gle/wbnrDZQJH6De1xKN7

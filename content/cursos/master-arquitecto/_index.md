@@ -10,7 +10,7 @@ course_visible: true
 blocks:
   - type: hero
     id: sect-hero
-    className: dark background background-01
+    className: dark samurai
     header: Master Arquitecto
     subheader: Domina los principios de diseño evolutivo y arquitectura de software moderna.
     backgroundImage: /images/courses/master-arquitecto.png
@@ -35,7 +35,7 @@ blocks:
 
   - type: ticked-list
     id: sect-benefits
-    className: dark background background-03
+    className: dark lines
     header: Qué vas a aprender
     items:
       - Distinguir entre complejidad esencial y accidental, y reducir esta última con diseño intencional.
@@ -49,24 +49,24 @@ blocks:
   # ¿Cómo lo vas a aprender?
   - type: valueprop-elements
     id: sect-methodology
-    className: gloaming
+    className: tint
     header: Cómo lo vas a aprender
     elements:
-      - icon: /assets/img/legacy/icons/icon-06.svg
+      - icon: global
         text: '<em>Online</em>: Sesiones en directo por videoconferencia.'
-      - icon: /assets/img/legacy/icons/icon-01.svg
+      - icon: calendario
         text: '<em>Intensivo</em>: 2 días completos (16 horas).'
-      - icon: /assets/img/legacy/icons/icon-02.svg
+      - icon: conversacion
         text: '<em>Interactivo</em>: Ejercicios, dinámicas y casos reales.'
-      - icon: /assets/img/legacy/icons/icon-04.svg
+      - icon: equipo
         text: '<em>Reducido</em>: Limitado a 15 personas por edición.'
-      - icon: /assets/img/legacy/icons/icon-03.svg
+      - icon: objetivo
         text: '<em>Aplicable</em>: Técnicas para usar desde el primer día.'
 
   - type: syllabus-extended
     id: sect-syllabus
     className: light
-    header: Temario completo (click para ampliar)
+    header: Temario completo
     chapters:
       - number: 1
         chapter: El propósito de la arquitectura y el rol del arquitecto
@@ -140,7 +140,7 @@ blocks:
   # Próxima edición
   - type: hero-with-image
     id: sect-hero-with-image
-    className: gloaming background background-06
+    className: tint mint
     header: ¿Cuándo y dónde es la próxima edición?
     #subheader: La próxima edición de <em>Master Arquitecto</em> se celebrará <em>online</em> los días <em>viernes 6 y sábado 7 de Junio de 2025</em>.
     subheader: Aún no hay fecha confirmada para la próxima edición de <em>Master Arquitecto</em>, pero puedes apuntarte a la lista de espera para enterarte antes que nadie cuando abramos plazas.
@@ -152,7 +152,7 @@ blocks:
   # # Precios
   # - type: single-price
   #   id: sect-prices
-  #   className: dark background background-04
+  #   className: dark judoka
   #   header: <em>Precio</em>.
   #   price:
   #     name: Precio de lanzamiento
@@ -166,8 +166,8 @@ blocks:
   # FAQ
   - type: syllabus-extended
     id: sect-faq
-    className: gloaming
-    header: Preguntas frecuentes (click para ampliar)
+    className: tint
+    header: Preguntas frecuentes
     chapters:
       - chapter: ¿Qué horario tiene la formación?
         number: 1
@@ -195,7 +195,7 @@ blocks:
 
   - type: call-to-action
     id: sect-cta
-    className: dark background background-07
+    className: dark dev
     header: ¿Estás listo para dejar de improvisar y empezar a diseñar con criterio, intención y solidez técnica?
     #ctaLabel: Reserva tu plaza
     #ctaHref: https://calendly.com/exeal/llamada-de-admision-master-arquitecto

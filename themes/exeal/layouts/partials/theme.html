@@ -1,0 +1,9 @@
+{{- /* className de un bloque -> clases de sección. Temas: light, gray, tint, dark. Fondos: samurai, code, judoka, texture, dev, lines (con dark); mint (con light o tint). */ -}}
+{{- $c := . | default "light" -}}
+{{- $out := "s-section ex-theme-light" -}}
+{{- if in $c "dark" -}}{{- $out = "s-section ex-theme-dark" -}}
+  {{- range slice "samurai" "code" "judoka" "texture" "dev" "lines" -}}{{- if in $c . -}}{{- $out = printf "%s s-bg s-bg--%s" $out . -}}{{- end -}}{{- end -}}
+{{- else if in $c "tint" -}}{{- $out = "s-section ex-theme-tint" -}}
+{{- else if in $c "gray" -}}{{- $out = "s-section ex-theme-gray" -}}{{- end -}}
+{{- if and (in $c "mint") (not (in $c "dark")) -}}{{- $out = print $out " s-bg s-bg--mint" -}}{{- end -}}
+{{- return $out -}}

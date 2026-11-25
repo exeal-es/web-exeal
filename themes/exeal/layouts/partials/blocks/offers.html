@@ -1,38 +1,7 @@
-<section id="{{ .id }}" class="xb-offers {{ .className }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        {{ with .kicker }}<p class="xb-kicker">{{ . }}</p>{{ end }}
-        <h2 class="xb-hook">{{ .header | safeHTML }}</h2>
-        {{ if .paragraph }}<p>{{ .paragraph | safeHTML }}</p>{{ end }}
-      </div>
-    </div>
-    {{ range .offers }}
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <div class="course-card row no-gutters">
-          <div class="course-header col-lg-6 col-sm-12" style="background-image: url('{{ .image }}')">
-            {{ if .badge }}<div class="featured-course">{{ .badge }}</div>{{ end }}
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <div class="course-body">
-              {{ with .kicker }}<p class="xb-offer-kicker">{{ . }}</p>{{ end }}
-              <h3>{{ .title }}</h3>
-              {{ if .tagline }}<blockquote class="xb-offer-tagline">{{ .tagline | safeHTML }}</blockquote>{{ end }}
-              <p class="description">{{ .description | safeHTML }}</p>
-              {{ with .features }}
-              <ul class="course-features">
-                <div class="row">
-                  {{ range . }}<li class="col-md-6">{{ . | safeHTML }}</li>{{ end }}
-                </div>
-              </ul>
-              {{ end }}
-              <a class="button" href="{{ .href }}">{{ .cta }}</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {{ end }}
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{ partial "arrow-header.html" . }}
+    {{ with .paragraph }}<p>{{ . | safeHTML }}</p>{{ end }}
+    {{ range .offers }}{{ partial "course-featured.html" (dict "image" .image "badge" .badge "title" .title "tagline" .tagline "paragraphs" (slice .description) "features" .features "href" .href "cta" .cta) }}{{ end }}
   </div>
 </section>

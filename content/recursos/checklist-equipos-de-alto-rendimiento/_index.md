@@ -8,7 +8,7 @@ aliases:
 blocks:
   - type: hero-download-freebie
     id: sect-hero
-    className: dark background background-05
+    className: dark texture
     header: Checklist para el alto rendimiento de equipos de desarrollo ágiles
     subheader: "¡Descarga ya gratis la checklist y comienza el camino hacia la entrega continua de valor hoy mismo!"
     formAction: https://app.kit.com/forms/7608716/subscriptions

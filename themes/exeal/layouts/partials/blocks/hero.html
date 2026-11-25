@@ -1,21 +1,16 @@
-<header
-  id="{{ .id }}"
-  class="hero hero-bg-img {{ .className }}"
-  {{ if .backgroundImage }} style="background-image: url('{{ .backgroundImage }}')" {{ end }}>
-  <div class="hero-bg-img-mask bg-mask">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-md-12 text-center">
-          <h1>{{ .header | safeHTML }}</h1>
-          <h4>{{ .subheader | safeHTML }}</h4>
-          {{ range .paragraphs }}
-            <p>{{ . | safeHTML }}</p>
-          {{ end }}
-          {{ if .callToAction }}
-            {{- partial "call-to-action.html" .callToAction }}
-          {{ end }}
-        </div>
-      </div>
+{{- /* Con `image`: foto con motivo a la derecha. Con `backgroundImage`: foto a sangre oscurecida. Sin foto: textura de código. */ -}}
+<section id="{{ .id }}" class="ex-hero s-hero ex-theme-dark{{ if .backgroundImage }} s-hero--photo{{ else if not .image }} s-bg s-bg--samurai{{ end }}"{{ with .backgroundImage }} style="{{ printf "--s-photo:url('%s')" . | safeCSS }}"{{ end }}>
+  <div class="s-wrap{{ if .image }} ex-split{{ end }}">
+    <div class="s-hero__text">
+      <h1 class="ex-h1">{{ .header | safeHTML }}</h1>
+      {{ with .subheader }}<p class="s-lead">{{ . | safeHTML }}</p>{{ end }}
+      {{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}
+      {{ if or .callToAction .secondaryCta }}<div class="ex-actions">
+        {{ with .callToAction }}{{ partial "button.html" . }}{{ end }}
+        {{ with .secondaryCta }}{{ partial "button.html" (merge . (dict "class" "ex-button--hollow")) }}{{ end }}
+      </div>{{ end }}
+      {{ with .facts }}<ul class="s-tags">{{ range . }}<li class="ex-tag">{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
     </div>
+    {{ with .image }}{{ partial "photo.html" (dict "src" .) }}{{ end }}
   </div>
-</header>
+</section>

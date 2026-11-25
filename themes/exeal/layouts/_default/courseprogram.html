@@ -1,21 +1,7 @@
 {{ define "main" }}
-<section class="light">
-	<div class="container">
-		<div class="row mt-3 mb-3">
-      {{ if ( isset .Params "brochure_image" ) }}
-      <div class="col-md-5 order-md-first order-sm-last order-last photo vertical-center">
-        <img class="img-fluid pad" src="{{ .Params.brochure_image }}" />
-      </div>
-			{{ end }}
-			<div class="col-md-7 vertical-center">
-        <div>
-          <h2>¡Gracias por tu interés en nuestro curso!</h2>
-          <p>Descubre todos los detalles sobre los objetivos de aprendizaje, metodología docente y profesores accediendo al programa.</p>
-          <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg"/></p>
-          <a target="_blank" href="{{ .Params.brochure_url }}" class="button">Descargar el programa</a>
-        </div>
-			</div>
-		</div>
-	</div>
-</section>
+<section class="s-section ex-theme-light"><div class="s-wrap ex-split s-split-rev">
+  <div><h1 class="ex-h1">¡Gracias por tu interés en nuestro curso!</h1><p>Descubre todos los detalles sobre los objetivos de aprendizaje, metodología docente y profesores accediendo al programa.</p>
+  {{ partial "button.html" (dict "text" "Descargar el programa" "href" .Params.brochure_url) }}</div>
+  <div>{{ with .Params.brochure_image }}<img class="s-img" src="{{ . }}" alt="">{{ end }}</div>
+</div></section>
 {{ end }}

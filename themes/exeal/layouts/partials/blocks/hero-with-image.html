@@ -1,20 +1,12 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    <div class="row mt-3 mb-3">
-      <div class="col-md-7">
-        <h1>{{ .header }}</h1>
-        <p><img class="arrow-down" src="/assets/img/arrow-down-primary.svg" /></p>
-        <p class="bigger">{{ .subheader | safeHTML }}</p>
-        {{ if .callToAction }}
-          {{- partial "call-to-action.html" .callToAction }}
-        {{ end }}
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+<div class="ex-split">
+      <div>
+        {{ partial "arrow-header.html" . }}
+        <p class="s-lead">{{ .subheader | safeHTML }}</p>
+        {{ with .callToAction }}<div class="s-actions">{{ partial "button.html" . }}</div>{{ end }}
       </div>
-      <div class="col-md-5 d-none d-sm-none d-md-block">
-        <img
-          class="img-fluid pad"
-          src="{{ .image }}"
-        />
-      </div>
+      <div><img class="s-img" src="{{ .image }}" alt="" loading="lazy"></div>
     </div>
   </div>
 </section>

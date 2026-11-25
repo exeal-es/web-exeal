@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ .Language.Lang }}">
-  <head>
-    {{- partial "jobs/head.html" . -}}
-  </head>
-  <body>
-    {{- partial "gtm_body.html" . -}}
-
-    {{- partial "jobs/navbar.html" . -}}
-    {{- partial "jobs/hero.html" . -}}
-
-    <section id="sect-body">{{- block "article" . }}{{- end }}</section>
-
-    {{- partial "footer.html" . -}} {{- partial "javascript.html" . -}}
-    <script
-      type="text/javascript"
-      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"
-    ></script>
-  </body>
-</html>
-
-{{ define "article" }}
-<div class="container">
-  <article>{{ .Content }}</article>
-</div>
+{{ define "main" }}
+{{ partial "page-hero.html" (dict "title" .Title "photo" .Params.featured_image "sheet" true) }}
+<div class="ex-theme-gray s-reading"><article class="ex-sheet s-sheet">{{ .Content }}</article></div>
 {{ end }}

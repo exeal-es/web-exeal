@@ -1,15 +1,9 @@
-<nav class="dark navbar navbar-expand-lg navbar-dark navbar-shrink">
-  <div class="container">
-    <a href="/" class="navbar-brand">
-      <img src="/assets/img/logo-exeal-header.svg" alt="Exeal"/>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav ml-auto">
-        {{- partial "navbar-items.html" . -}}
-      </ul>
-    </div>
-  </div>
-</nav>
+{{- $logo := "logo-exeal-header" -}}{{- if in (slice "blog" "patrones") .Section -}}{{- $logo = printf "logo-exeal-%s-dark" .Section -}}{{- end -}}
+<div class="ex-theme-dark s-navbar"><nav class="ex-navbar" aria-label="Principal">
+  <a href="/"><img class="ex-navbar__logo" src="/exeal-design/img/{{ $logo }}.svg" alt="Exeal"></a>
+  <button class="ex-navbar__toggle" type="button" popovertarget="menu">Menú</button>
+  <ul class="ex-navbar__menu" id="menu" popover>
+    {{ $here := .RelPermalink }}
+    {{ range site.Params.navbar }}<li><a class="{{ if eq .type "button" }}ex-button ex-button--nav{{ else }}ex-navbar__link{{ end }}" href="{{ .url }}"{{ if eq .url $here }} aria-current="page"{{ end }}>{{ .name }}</a></li>{{ end }}
+  </ul>
+</nav></div>

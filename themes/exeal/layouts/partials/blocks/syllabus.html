@@ -1,49 +1,11 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2>
-          <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
-        </h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2>{{ .header }}</h2>
-      </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{ partial "arrow-header.html" . }}
+    {{ with .paragraph1 }}<p>{{ . | safeHTML }}</p>{{ end }}
+    <div class="ex-grid s-grid-2">
+      {{ range .modules }}<div class="ex-box"><span class="ex-box__flap ex-box__flap--tr"></span><span class="ex-dashnum" aria-hidden="true">{{ .index }}</span><h3 class="ex-h4">{{ .title }}</h3><p>{{ .description }}</p></div>{{ end }}
     </div>
-
-    <div class="row">
-      <div class="col-12 justify-content-center align-items-center text-center">
-        <p>{{ .paragraph1 | safeHTML }}</p>
-      </div>
-    </div>
-
-    <div class="row">
-      {{ range .modules }}
-      <div class="col-xl-6 mb-3">
-        <div class="box">
-          <div class="flap flap-top-right"></div>
-          <p class="price">- {{ .index }} -</p>
-          <h3>{{ .title }}</h3>
-          <p>{{ .description }}</p>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <p>{{ .paragraph2 | safeHTML }}</p>
-      </div>
-    </div>
-
-    {{ if .callToAction }}
-    <div class="row justify-content-center align-items-center text-center">
-      <div class="col-m-12">
-        <p>
-          <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button button-center">{{ .callToAction.text }}</a>
-        </p>
-      </div>
-    </div>
-    {{ end }}
+    {{ with .paragraph2 }}<p class="s-after">{{ . | safeHTML }}</p>{{ end }}
+    {{ with .callToAction }}<div class="s-actions">{{ partial "button.html" . }}</div>{{ end }}
   </div>
 </section>

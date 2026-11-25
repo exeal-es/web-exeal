@@ -1,0 +1,2 @@
+{{- /* dict: name, className. El icono claro va sobre oscuro. */ -}}
+<img class="ex-icon" src="/exeal-design/icons/{{ if in (.className | default "") "dark" }}light{{ else }}dark{{ end }}/{{ .name }}.svg" alt="" loading="lazy">

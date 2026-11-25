@@ -1,20 +1,10 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    <div class="col-md-12 text-center">
-      <h2>{{ .header }}</h2>
-      <p>
-        {{ .paragraph | safeHTML }}
-      </p>
-    </div>
-    <div
-      class="calendly-inline-widget"
-      data-url="{{ .calendlyUrl }}?hide_gdpr_banner=1"
-      style="min-width: 320px; height: 700px"
-    ></div>
-    <script
-      type="text/javascript"
-      src="https://assets.calendly.com/assets/external/widget.js"
-      async
-    ></script>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{ partial "arrow-header.html" . }}
+    {{ with .paragraph }}<p>{{ . | safeHTML }}</p>{{ end }}
+    <template data-consent="terceros" data-name="Calendly">
+    <div class="calendly-inline-widget" data-url="{{ .calendlyUrl }}?hide_gdpr_banner=1" style="min-width: 320px; height: 700px"></div>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </template>
   </div>
 </section>

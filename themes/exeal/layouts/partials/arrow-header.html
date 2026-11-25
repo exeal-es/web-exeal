@@ -1,10 +1,1 @@
-<div class="row">
-  <div class="col-md-2 d-none d-sm-none d-md-block">
-    <h2>
-      <img class="arrow-right" src="/assets/img/arrow-right-secondary.svg" />
-    </h2>
-  </div>
-  <div class="col-md-10 col-sm-12">
-    <h2>{{ .header | safeHTML }}</h2>
-  </div>
-</div>
+{{ with .header }}<h2 class="ex-arrow-title"><span>{{ . | safeHTML }}</span></h2>{{ end }}

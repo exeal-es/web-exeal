@@ -3,8 +3,6 @@ title: "Política de cookies"
 layout: single
 ---
 
-# Política de cookies
-
 EXEAL SOLUTIONS, S.L. informa acerca del uso de las cookies en su página web: https://www.exeal.com
 
 ## ¿Qué son las cookies?
@@ -156,10 +154,20 @@ A continuación, se identifican las cookies que están siendo utilizadas en este
     - Tipo: Tercero
     - Finalidad: Analítica
 
-https://www.exeal.com muestra información sobre su Política de cookies en la parte inferior o superior de cualquier página del portal con cada inicio de sesión.
+- exeal_consent
+    - Duración: 6 meses
+    - Descripción: Guarda tu elección sobre las cookies para no volver a preguntarte.
+    - Tipo: Propia
+    - Finalidad: Técnica
 
-Ante esta información es posible llevar a cabo las siguientes acciones:
+https://www.exeal.com muestra un aviso sobre cookies en la primera visita. Hasta que no eliges, no se carga ninguna herramienta de medición, publicidad ni contenido incrustado de terceros.
 
-- Aceptar cookies: No se volverá a visualizar este aviso al acceder a cualquier página del portal durante la presente sesión.
+Ante este aviso puedes:
+
+- Aceptar: se activan las cookies de medición, publicidad y contenido de terceros.
+- Rechazar: solo se usan las necesarias.
+- Elegir: decides por categorías.
+
+Los vídeos de YouTube solo se cargan cuando pulsas para reproducirlos, y el resto de contenidos incrustados cuando los aceptas o pulsas para cargarlos. Puedes cambiar tu elección en cualquier momento desde «Configurar cookies», al pie de cada página.
 
 REV: 20.3009

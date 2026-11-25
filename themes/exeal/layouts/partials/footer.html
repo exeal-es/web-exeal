@@ -1,31 +1,13 @@
-<footer class="black">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 text-lg-left">
-        <a href="/"
-          ><img src="/assets/img/logo-exeal-footer.svg" alt="Exeal"
-        /></a>
-        <p class="footer-resources">
-          {{ i18n "footerresources" }}:
-          {{ range $i, $r := site.Data.footer.resources }}{{ if $i }} · {{ end }}<a href="{{ $r.url | relLangURL }}">{{ i18n $r.text }}</a>{{ end }}
-        </p>
-        <p>
-          {{ range site.Data.footer.links }}
-            <a href="{{ .url }}">{{ i18n .text }}</a>{{ if not (eq (index site.Data.footer.links (sub (len site.Data.footer.links) 1)) .) }} | {{ end }}
-          {{ end }}
-        </p>
-      </div>
-      <div class="col-lg-6 social-media">
-        <ul class="list-inline text-lg-right mt-3 mt-lg-0">
-          {{ range site.Data.social }}
-          <li class="list-inline-item">
-            <a target="_blank" href="{{ .url }}">
-              <img src="/assets/img/social/{{ .name }}.svg" />
-            </a>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
+<div class="ex-theme-black"><footer class="ex-footer s-footer">
+  <div>
+    <a href="/"><img class="ex-footer__logo" src="/exeal-design/img/logo-exeal-footer.svg" alt="Exeal"></a>
+    <ul class="ex-footer__links">
+      {{ range site.Data.footer.resources }}<li><a href="{{ .url | relLangURL }}">{{ i18n .text }}</a></li>{{ end }}
+      {{ range site.Data.footer.links }}<li><a href="{{ .url }}">{{ i18n .text }}</a></li>{{ end }}
+      <li><button type="button" class="s-footer-button" data-cookies="open">{{ i18n "footercookies" }}</button></li>
+    </ul>
   </div>
-</footer>
+  <ul class="ex-footer__social">
+    {{ range site.Data.social }}<li><a target="_blank" rel="noopener" href="{{ .url }}"><img src="/assets/img/social/{{ .name }}.svg" alt="{{ if eq .name "email" }}Correo{{ else }}{{ .name | title }}{{ end }}"></a></li>{{ end }}
+  </ul>
+</footer></div>

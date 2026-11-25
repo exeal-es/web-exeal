@@ -25,7 +25,7 @@ make publish
 ## How-to
 
 ### Patrones de ingeniería (`/patrones/`)
-Cada patrón es un Markdown en `content/patrones/` con `title`, `description`, `date`, `tags` y `maturity` (`explore`, `trial` o `adopt`). Para crear uno: `hugo new content patrones/<slug>.md` (usa `archetypes/patrones.md`), o la skill `documentar-patron` de Claude Code. Comparten tags y estilos con el blog (`themes/exeal/assets/scss/components/_reading.scss`). El antiguo `patterns.exeal.com` redirige aquí desde `functions/_middleware.js`.
+Cada patrón es un Markdown en `content/patrones/` con `title`, `description`, `date`, `tags` y `maturity` (`explore`, `trial` o `adopt`). Para crear uno: `hugo new content patrones/<slug>.md` (usa `archetypes/patrones.md`), o la skill `documentar-patron` de Claude Code. Comparten tags y estilos con el blog (`partials/reading/`). El antiguo `patterns.exeal.com` redirige aquí desde `functions/_middleware.js`.
 
 ### Updating Footer Links
 Footer links are stored in a YAML file located at `data/footer.yaml`:

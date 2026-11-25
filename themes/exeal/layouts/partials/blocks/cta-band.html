@@ -1,8 +1,8 @@
-<section id="{{ .id }}" class="xb-cta-band {{ .className }}">
-  <div class="container">
-    <h2>{{ .header | safeHTML }}</h2>
+{{- $theme := partial "theme.html" (.className | default "dark") -}}
+<section id="{{ .id }}" class="s-cta {{ $theme }}{{ if not (in $theme "s-bg") }} ex-motif ex-motif--code{{ end }}">
+  <div class="s-wrap">
+    <h2 class="ex-h1">{{ .header | safeHTML }}</h2>
     {{ with .p }}<p>{{ . | safeHTML }}</p>{{ end }}
-    <a href="{{ .ctaHref }}" class="button">{{ .ctaLabel }}</a>
-    {{ with .email }}<a class="xb-mail" href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+    <div class="s-actions">{{ partial "button.html" (dict "text" .ctaLabel "href" .ctaHref) }}</div>
   </div>
 </section>

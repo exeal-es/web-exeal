@@ -1,25 +1,7 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    {{- partial "arrow-header.html" (dict "header" .header) }}
-
-    <div class="row">
-      <div class="col-md-12">
-        {{ range .paragraphs }}
-          <p>
-            {{ . }}
-          </p>
-        {{ end }}
-      </div>
-    </div>
-
-    {{ if .callToAction }}
-    <div class="row">
-      <div class="col-md-12">
-        <p>
-          <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button button-center">{{ .callToAction.text }}</a>
-        </p>
-      </div>
-    </div>
-    {{ end }}
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{ partial "arrow-header.html" . }}
+    <div class="s-text">{{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}</div>
+    {{ with .callToAction }}<div class="s-actions">{{ partial "button.html" . }}</div>{{ end }}
   </div>
 </section>

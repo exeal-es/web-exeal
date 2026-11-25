@@ -1,17 +1,10 @@
-<div class="nextevent">
-  <div class="nextevent-image">
-    <img src="{{ .image }}" alt="{{ .title }}">
+{{- /* Se llama con el evento; `anchor` sustituye al enlace. */ -}}
+<article class="ex-course ex-course--featured s-event">
+  <div class="ex-course__cover" style="{{ printf "background-image:url('%s')" .image | safeCSS }}"></div>
+  <div class="ex-course__body">
+    <h3 class="ex-course__title">{{ .title }}</h3>
+    <p>{{ .description }}</p>
+    <p>{{ .type | default "Evento" }} · {{ .date | dateFormat "2/1/2006" }} · {{ .format | default "Online" }}</p>
+    <div class="ex-course__actions"><a class="ex-button ex-button--accent ex-button--block" href="{{ .anchor | default .url }}">Apuntarse</a></div>
   </div>
-  <div class="nextevent-content">
-    <p class="nextevent-title">{{ .title }}</p>
-    <p class="nextevent-subtitle">
-      {{ .description | truncate 80 }}
-    </p>
-    <div class="nextevent-meta">
-      <span>{{ with .type }}{{ . }}{{ else }}Evento{{ end }}</span>
-      <span>Fecha: {{ .date | dateFormat "2/1/2006" }}</span>
-      <span>Formato: {{ with .format }}{{ . }}{{ else }}Online{{ end }}</span>
-    </div>
-    <a class="button button-green" href="{{ .url }}">Apuntarse</a>
-  </div>
-</div>
+</article>

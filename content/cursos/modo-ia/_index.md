@@ -4,15 +4,15 @@ description: "Aprende a programar, documentar y automatizar con inteligencia art
 date: 2025-05-10T00:00:00+02:00
 layout: course
 course_title: "Modo IA"
-course_featured_image: /images/courses/modo-ia.jpg
+course_featured_image: /images/brand/stock-01.jpg
 course_visible: true
 blocks:
   - type: hero
     id: sect-hero
-    className: dark background background-01
+    className: dark samurai
     header: Modo IA
     subheader: Activa tu forma de programar para la era de la inteligencia artificial.
-    backgroundImage: /images/courses/modo-ia.jpg
+    backgroundImage: /images/brand/stock-01.jpg
     paragraphs:
       - Aprenderás a usar la IA como una herramienta técnica, productiva y sostenible. Domina herramientas como Copilot, Cursor y ChatGPT para escribir código, automatizar tareas y documentar sin perder el control ni la calidad.
     callToAction:
@@ -22,7 +22,7 @@ blocks:
   - type: stakes-with-image
     id: sect-stakes
     className: light
-    image: /images/courses/modo-ia.jpg
+    image: /images/brand/stock-01.jpg
     header: Esta formación es para ti si…
     list:
       - Usas Copilot o ChatGPT, pero <em>no estás seguro de si los aprovechas bien</em>.
@@ -34,7 +34,7 @@ blocks:
 
   - type: ticked-list
     id: sect-benefits
-    className: dark background background-03
+    className: dark lines
     header: Qué vas a aprender
     items:
       - Integrar Copilot, Cursor y ChatGPT en tu flujo de desarrollo real.
@@ -47,24 +47,24 @@ blocks:
 
   - type: valueprop-elements
     id: sect-methodology
-    className: gloaming
+    className: tint
     header: Cómo lo vas a aprender
     elements:
-      - icon: /assets/img/legacy/icons/icon-06.svg
+      - icon: global
         text: '<em>Online</em>: Sesiones en directo por videoconferencia.'
-      - icon: /assets/img/legacy/icons/icon-01.svg
+      - icon: calendario
         text: '<em>Intensivo</em>: 2 días completos (16 horas).'
-      - icon: /assets/img/legacy/icons/icon-02.svg
+      - icon: conversacion
         text: '<em>Interactivo</em>: Demostraciones, ejercicios y debate técnico.'
-      - icon: /assets/img/legacy/icons/icon-04.svg
+      - icon: equipo
         text: '<em>Reducido</em>: Máximo 15 personas por edición.'
-      - icon: /assets/img/legacy/icons/icon-03.svg
+      - icon: objetivo
         text: '<em>Aplicable</em>: Lo que aprendes el viernes lo usas el lunes.'
 
   - type: syllabus-extended
     id: sect-syllabus
     className: light
-    header: Temario completo (click para ampliar)
+    header: Temario completo
     chapters:
       - number: 1
         chapter: 'Introducción: El developer en la era IA'
@@ -132,7 +132,7 @@ blocks:
 
   - type: hero-with-image
     id: sect-hero-with-image
-    className: gloaming background background-06
+    className: tint mint
     header: ¿Cuándo y dónde será la próxima edición?
     subheader: Aún no hay fecha confirmada para la próxima edición de <em>Modo IA</em>, pero puedes apuntarte a la lista de espera para enterarte antes que nadie cuando abramos plazas.
     image: /assets/img/photo-training-module.png
@@ -142,8 +142,8 @@ blocks:
 
   - type: syllabus-extended
     id: sect-faq
-    className: gloaming
-    header: Preguntas frecuentes (click para ampliar)
+    className: tint
+    header: Preguntas frecuentes
     chapters:
       - chapter: ¿Qué horario tiene la formación?
         number: 1
@@ -170,7 +170,7 @@ blocks:
 
   - type: call-to-action
     id: sect-cta
-    className: dark background background-07
+    className: dark dev
     header: ¿Estás listo para activar el Modo IA y transformar tu forma de programar?
     ctaLabel: Apuntarme a la lista de espera
     ctaHref: https://docs.google.com/forms/d/e/1FAIpQLSc_Vw99lUVJmYmC6EM-tP-7vmpTsrRdA1EcZkNyO0ghEvJgaQ/viewform?usp=sharing

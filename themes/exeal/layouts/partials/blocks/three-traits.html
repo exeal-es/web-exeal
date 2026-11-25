@@ -1,46 +1,10 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 d-none d-sm-none d-md-block">
-        <h2>
-          <img
-            class="arrow-right"
-            src="/assets/img/arrow-right-secondary.svg"
-          />
-        </h2>
-      </div>
-      <div class="col-md-10 col-sm-12">
-        <h2>{{ .header | safeHTML }}</h2>
-      </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{- $c := .className }}
+    {{ partial "arrow-header.html" . }}
+    <div class="ex-grid s-grid-3">
+      {{ range .traits }}<div class="ex-box"><span class="ex-box__flap ex-box__flap--tr"></span>{{ partial "icon.html" (dict "name" .icon "className" $c) }}{{ with .title }}<h3 class="ex-h4">{{ . }}</h3>{{ end }}<p>{{ .description | safeHTML }}</p></div>{{ end }}
     </div>
-    <div class="row">
-      {{ range .traits }}
-      <div class="col-md-4 mb-3">
-        <div class="box">
-          <div class="flap flap-top-right"></div>
-          <img
-            class="icon-mid"
-            src="{{ .icon }}"
-          />
-          {{ if .title}}
-            <h3>{{ .title }}</h3>
-          {{ end }}
-          <p>
-            {{ .description | safeHTML }}
-          </p>
-        </div>
-      </div>
-      {{ end }}
-      </div>
-    </div>
-    {{ if .callToAction }}
-    <div class="row">
-      <div class="col-md-12">
-        <p>
-          <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button button-center">{{ .callToAction.text }}</a>
-        </p>
-      </div>
-    </div>
-    {{ end }}
+    {{ with .callToAction }}<div class="s-actions">{{ partial "button.html" . }}</div>{{ end }}
   </div>
 </section>

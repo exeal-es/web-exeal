@@ -1,54 +1,35 @@
-<!doctype html>
-<html lang="{{ .Language.Lang }}">
+{{ define "main" }}
+<section id="sect-hero" class="ex-hero s-hero ex-theme-dark s-bg s-bg--code"><div class="s-wrap">
+  <h1 class="ex-h1">Cómo lograr la excelencia técnica y el alto rendimiento del equipo en 3 meses</h1>
+  {{- partial "testimonial.html" (dict "context" . "customerId" "gerardartes" "testimonial" "Queríamos poner en marcha una “potente remodelación” a nivel del desarrollo de nuestro producto y para ello era necesario que el equipo con el que contábamos aprendiera, obtuviera formación. Es muy sano realizar un proceso de autocrítica para así llegar a la conclusión de que no somos perfectos, no lo hacemos todo bien, ni somos los mejores programadores del mundo. Por lo que decidimos abrir nuestro software al equipo de Exeal para que se procediera a realizar un análisis objetivo con la finalidad de amplificarlo y mejorarlo. No queríamos encontrarnos dentro de un tiempo con una situación negativa en la que tuviéramos que reescribir el código precisamente por no haber hecho este ejercicio de crítica interna.") }}
+</div></section>
 
-<head>
-  {{- partial "head.html" . -}}
-</head>
-
-<body class="case-study">
-  {{- partial "gtm_body.html" . -}}
-  
-  {{- partial "casestudy/navbar.html" . -}}
-
-  <section id="sect-hero" class="dark background background-02">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1>Cómo lograr la excelencia técnica y el alto rendimiento del equipo en 3 meses</h1>
-        </div>
-        <div class="col-md-12">
-          {{- partial "testimonial.html" (dict "context" . "customerId" "gerardartes" "testimonial" "Queríamos poner en marcha una “potente remodelación” a nivel del desarrollo de nuestro producto y para ello era necesario que el equipo con el que contábamos aprendiera, obtuviera formación. Es muy sano realizar un proceso de autocrítica para así llegar a la conclusión de que no somos perfectos, no lo hacemos todo bien, ni somos los mejores programadores del mundo. Por lo que decidimos abrir nuestro software al equipo de Exeal para que se procediera a realizar un análisis objetivo con la finalidad de amplificarlo y mejorarlo. No queríamos encontrarnos dentro de un tiempo con una situación negativa en la que tuviéramos que reescribir el código precisamente por no haber hecho este ejercicio de crítica interna.") }}
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="sect-details" class="gloaming">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-4 mb-3">
-          <div class="box case-study-info">
-            <div class="flap flap-top-left"></div>
-            <div class="flap flap-bottom-left"></div>
+<section id="sect-details" class="s-section ex-theme-tint">
+    <div class="s-wrap">
+      <div class="ex-grid s-grid-3">
+        <div class="s-cell">
+          <div class="ex-box ex-box--info">
+            <span class="ex-box__flap ex-box__flap--tl"></span>
+            <span class="ex-box__flap ex-box__flap--bl"></span>
             <img src="/images/clients/bab-logo.png"/>
             <h4>Cliente:</h4>
             <p>BAB</p>
           </div>
         </div>
-        <div class="col-xl-4 mb-3">
-          <div class="box case-study-info">
-            <div class="flap flap-top-right"></div>
-            <div class="flap flap-top-left"></div>
-            <img src="/assets/img/icon-coaching.svg"/>
+        <div class="s-cell">
+          <div class="ex-box ex-box--info">
+            <span class="ex-box__flap ex-box__flap--tr"></span>
+            <span class="ex-box__flap ex-box__flap--tl"></span>
+            {{ partial "icon.html" (dict "name" "mercado") }}
             <h4>Sector:</h4>
             <p>Medios digitales</p>
           </div>
         </div>
-        <div class="col-xl-4 mb-3">
-          <div class="box case-study-info">
-            <div class="flap flap-top-right"></div>
-            <div class="flap flap-bottom-right"></div>
-            <img src="/assets/img/icon-group.svg"/>
+        <div class="s-cell">
+          <div class="ex-box ex-box--info">
+            <span class="ex-box__flap ex-box__flap--tr"></span>
+            <span class="ex-box__flap ex-box__flap--br"></span>
+            {{ partial "icon.html" (dict "name" "equipo") }}
             <h4>Servicio:</h4>
             <p>Coaching y consultoría</p>
           </div>
@@ -57,119 +38,108 @@
     </div>
   </section>
 
-  <section id="sect-index" class="gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="row case-study-index">
-            <li class="col-md-6"><a data-scroll="sect-need" href="#">La necesidad: Mejorar el software y proporcionar un acompañamiento y mentorización al equipo de desarrollo.</a></li>
-            <li class="col-md-6"><a data-scroll="sect-consequence" href="#">El objetivo: Promover y priorizar las buenas prácticas técnicas para mejorar la calidad del producto.</a></li>
-            <li class="col-md-6"><a data-scroll="sect-factors" href="#">Primer contacto y propuesta de valor.</a></li>
-            <li class="col-md-6"><a data-scroll="sect-accelerator" href="#">La clave: El coaching técnico.</a></li>
-            <li class="col-md-6"><a data-scroll="sect-addons" href="#">La solución: Guiar al equipo en la evolución de su producto, sincronizándolo con su propia evolución profesional.</a></li>
-            <li class="col-md-6"><a data-scroll="sect-benefits" href="#">Los beneficios de la evolución sincronizada.</a></li>
+  <section id="sect-index" class="s-section ex-theme-gray">
+    <div class="s-wrap">
+      <div>
+        <div>
+          <ul class="ex-arrowed s-cols">
+            <li><a href="#sect-need">La necesidad: Mejorar el software y proporcionar un acompañamiento y mentorización al equipo de desarrollo.</a></li>
+            <li><a href="#sect-consequence">El objetivo: Promover y priorizar las buenas prácticas técnicas para mejorar la calidad del producto.</a></li>
+            <li><a href="#sect-factors">Primer contacto y propuesta de valor.</a></li>
+            <li><a href="#sect-accelerator">La clave: El coaching técnico.</a></li>
+            <li><a href="#sect-addons">La solución: Guiar al equipo en la evolución de su producto, sincronizándolo con su propia evolución profesional.</a></li>
+            <li><a href="#sect-benefits">Los beneficios de la evolución sincronizada.</a></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="sect-video">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8WfycGZPaug"></iframe>
-          </div>
+  <section id="sect-video" class="s-section ex-theme-light">
+    <div class="s-wrap">
+      <div>
+        <div>
+          {{ partial "video.html" (dict "url" "https://www.youtube.com/embed/8WfycGZPaug" "title" .Title) }}
         </div>
       </div>
     </div>
   </section>
 
-  <section id="sect-about" class="mt-0 pt-0 pb-6">
-    <div class="container">
-      <div class="collapsable collapsed" data-toggle="collapse" data-target="#about" aria-controls="about">
-        <h2>BAB</h2>
-      </div>
-          <p class="text-center"><em>BAB</em> “el socio tecnológico para los medios de comunicación”.
+  <section id="sect-about" class="s-section ex-theme-light">
+    <div class="s-wrap">
+      <h2 class="ex-arrow-title"><span>BAB</span></h2>
+          <p><em>BAB</em> “el socio tecnológico para los medios de comunicación”.
             Esta empresa, ubicada en Barcelona, se dedica íntegramente al desarrollo de software dirigido a 
             los medios de comunicación digitales y cuenta con más de 17 años de experiencia en el sector.</p>
     </div>
   </section>
 
-  <section class="side-by-side">
-      <div class="side-by-side-panel dark">
-        <section id="sect-need">
-            <h2 class="with-arrow">La necesidad:
-              Analizar el software y proporcionar un acompañamiento y mentorización al equipo de desarrollo.</h2>
+  <div class="s-side">
+      <section id="sect-need" class="s-section ex-theme-dark">
+            <h2 class="ex-arrow-title"><span>La necesidad: Analizar el software y proporcionar un acompañamiento y mentorización al equipo de desarrollo.</span></h2>
             <p>Tras poner en marcha una “potente remodelación” a nivel del desarrollo de su producto era necesario
               proporcionar al equipo de profesionales con el que ya contaban un acompañamiento y una mentorización que implementara los conceptos del programa de aprendizaje en la realidad del proyecto.</p>
             <p>BAB quería potenciar la parte de despliegues, ya que los mismos son escenciales para sus clientes al momento de implementar una nueva versión de su producto. 
               Por ello era fundamental realizar una valoración a nivel de desarrollo y procesos para determinar así los puntos clave que podían optimizarse.</p>
         </section>
-      </div>
-      <div class="side-by-side-panel gloaming">
-        <section id="sect-consequence">
-            <h2 class="with-arrow">El objetivo: Promover y priorizar las buenas prácticas técnicas para mejorar la calidad del producto.</p>
+<section id="sect-consequence" class="s-section ex-theme-tint">
+            <h2 class="ex-arrow-title"><span>El objetivo: Promover y priorizar las buenas prácticas técnicas para mejorar la calidad del producto.</span></h2>
         </section>
-      </div>
-  </section>
+  </div>
 
-  <section id="sect-factors">
-    <div class="container">
-      <article class="text-center">
-        <h2>Primer contacto y propuesta de valor</h2>
+  <section id="sect-factors" class="s-section ex-theme-light">
+    <div class="s-wrap">
+      <div class="s-text">
+        <h2 class="ex-arrow-title"><span>Primer contacto y propuesta de valor</span></h2>
         <p>En este punto, Exeal realizó una valoración íntegra a nivel de desarrollo y procesos para determinar 
           los puntos clave que debían optimizarse. De esta forma, el equipo de Exeal aportó una visión alternativa a la que tenía BAB, adaptándose y complementando la forma de ser de la empresa y ofreciendo la siguiente propuesta de valor: </p>
-      </article>
-      <div class="row">
-        <div class="col-xl-6 mb-6">
-          <div class="box">
-            <div class="flap flap-top-right"></div>
-            <img src="/assets/img/icon-coaching.svg"/>
-            <h4>Acompañamiento y mentorización al equipo de desarrollo, integrándose de manera 100% hands-on.</h4>
+      </div>
+      <div class="ex-grid s-grid-2">
+        <div class="s-cell">
+          <div class="ex-box">
+            <span class="ex-box__flap ex-box__flap--tr"></span>
+            {{ partial "icon.html" (dict "name" "pair-programming") }}
+            <p>Acompañamiento y mentorización al equipo de desarrollo, integrándose de manera 100% hands-on.</p>
           </div>
         </div>
-        <div class="col-xl-6 mb-6">
-          <div class="box">
-            <div class="flap flap-top-right"></div>
-            <img src="/assets/img/icon-training.svg"/>
-            <h4>Análisis de la situación actual y elaboración de una visión técnica.</h4>
+        <div class="s-cell">
+          <div class="ex-box">
+            <span class="ex-box__flap ex-box__flap--tr"></span>
+            {{ partial "icon.html" (dict "name" "analitica") }}
+            <p>Análisis de la situación actual y elaboración de una visión técnica.</p>
           </div>
         </div>
       </div>
-        <article class="text-center">
+        <div class="s-text">
           <p>Desde el principio Exeal y BAB formaron un buen equipo. Tras exponer ambos proyectos fueron determinadas 
             cuáles eran las necesidades de BAB y qué objetivos querían lograr. Se realizó un análisis objetivo del software de BAB y comenzó la colaboración.</p>
-        </article>
-        <div class="light">
-          <a data-scroll="sect-calendly" href="#" class="button center-horizontal">Contacto</a>
         </div>
+        <div class="s-actions">{{ partial "button.html" (dict "text" "Hablemos" "href" "/contacto/") }}</div>
     </div>
   </section>
 
-  <section id="sect-testimonial-1" class="gloaming">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+  <section id="sect-testimonial-1" class="s-section ex-theme-tint">
+    <div class="s-wrap">
+      <div>
+        <div>
           {{- partial "testimonial.html" (dict "context" . "customerId" "gerardartes" "testimonial" "Abrimos nuestro software al equipo de Exeal para que procediera a realizar el análisis objetivo en profundidad. La valoración que se realizó no fue solo a nivel de desarrollo sino también de gestión para determinar los puntos clave que podían mejorarse. Ahí fue donde Exeal aportó valor, desde el punto de cómo definimos, cómo desarrollamos y cómo desplegamos nuestro software en estos tres bloques, que podemos definir de manera resumida como el ciclo de vida global del desarrollo del software de un producto") }}
         </div>
       </div>
     </div>
   </section>
 
-  <section id="sect-accelerator" class="dark background background-07">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="with-arrow">La clave: El coaching técnico</h2>
-          <div class="row">
-            <div class="col-md-6 d-none d-sm-none d-md-block">
+  <section id="sect-accelerator" class="s-section ex-theme-dark s-bg s-bg--dev">
+    <div class="s-wrap">
+      <div>
+        <div>
+          <h2 class="ex-arrow-title"><span>La clave: El coaching técnico</span></h2>
+          <div class="s-two">
+            <div>
               <p>Las tecnologías de la empresa se actualizan, las metodologías también, por ello ha de haber un 
                 equilibrio con los profesionales encargados de desarrollar el producto. Estos últimos tienen que 
                 sincronizarse con la evolución de la empresa y la clave para lograrlo es el coaching técnico. Con este servicio no solo se ve beneficiado el software que se mejora y amplifica, sino también el equipo técnico debido a que recibe un acompañamiento de la mano de Exeal, integrándose de manera 100% hands-on en la tarea de implementar los conceptos del programa de aprendizaje en la realidad de su proyecto.</p>
             </div>
-            <div class="col-md-6">
+            <div>
               <p>La excelencia técnica y un alto rendimiento de los profesionales es posible, así lo demuestran los 
                 resultados y beneficios obtenidos de BAB. Cabe destacar que este servicio es impartido por coaches técnicos 
                 y desarrolladores con una amplia experiencia en el sector y excelentes habilidades de comunicación y liderazgo.</p>
@@ -180,12 +150,12 @@
     </div>
   </section>
 
-  <section id="sect-addons">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="with-arrow">La solución: Guiar al equipo en la evolución de su producto, sincronizándolo con su propia evolución profesional.</h2>
-          <article>
+  <section id="sect-addons" class="s-section ex-theme-light">
+    <div class="s-wrap">
+      <div>
+        <div>
+          <h2 class="ex-arrow-title"><span>La solución: Guiar al equipo en la evolución de su producto, sincronizándolo con su propia evolución profesional.</span></h2>
+          <div class="s-text">
             <p>El acompañamiento y la mentorización son fundamentales. Durante la trayectoria de BAB se hicieron múltiples 
               cambios “radicales” en los que se desechó la tecnología con la que contaban para así volver a empezar. 
               (Quick-win, identificar las áreas en las que haciendo una inversión muy pequeña obtienes un gran beneficio.
@@ -193,38 +163,36 @@
                obtenida en un pasado, por lo que en el presente quisieron que la remodelación que pusieran en marcha estuviera sincronizada 
                con la evolución profesional del equipo de desarrolladores, para así lograr que perdurara en el tiempo y evitar una 
                situación negativa a corto, medio o largo plazo.</p>
-            <p><img src="/assets/img/photo-case-study-1.jpg"></p>
+            <p><img class="s-img" src="/assets/img/photo-case-study-1.jpg" alt="" loading="lazy"></p>
             <p>Cubrir las necesidades era sencillo, necesitaban otro equipo de profesionales que los acompañara durante el proceso
                de evolución de su producto para sacar el máximo partido de este y a su vez les asegurara que los profesionales 
                obtendrían el aprendizaje oportuno (por qué necesitaban ese aprendizaje). Lo que se resume en guiar al equipo en
                 la evolución del producto y sincronizarlo con su propia evolución profesional. Este proceso evita situaciones 
                 negativas para la empresa que repercutan en la calidad de su producto y en el rendimiento de los empleados.</p>
-            <p><img src="/assets/img/photo-case-study-2.jpg"></p>
-          </article>
+            <p><img class="s-img" src="/assets/img/photo-case-study-2.jpg" alt="" loading="lazy"></p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="sect-benefits" class="gloaming background background-06">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="with-arrow">Los beneficios de la mejora continua</h2>
-          <div class="row">
-            <div class="col-md-6 d-none d-sm-none d-md-block">
+  <section id="sect-benefits" class="s-section ex-theme-tint s-bg s-bg--mint">
+    <div class="s-wrap">
+      <div>
+        <div>
+          <h2 class="ex-arrow-title"><span>Los beneficios de la mejora continua</span></h2>
+          <div class="s-two">
+            <div>
               <p>Obtuvieron grandes beneficios en tan solo 3 meses que marcarán un antes y un después para la empresa y para 
                 tus profesionales, como en el caso de BAB. Para sacar el máximo partido a todo el proceso Exeal generó un 
                 vínculo con el equipo de desarrolladores de BAB, una simbiosis que unió la parte profesional y la humana para obtener así los mejores resultados. </p>
             </div>
-            <div class="col-md-6">
-              <p>
-                <ul class="row case-study-index">
+            <div>
+              <ul class="ex-arrowed s-cols">
                   <li>Automatizar, mejorar, optimizar los despliegues de las aplicaciones software de BAB.</li>
                   <li>Gran incremento de la seguridad con la que desarrollan el producto, llegando al 100% de cobertura de test del código, etcétera.</li>
                   <li>El equipo ha conseguido una buena motivación debido a la evolución de estos puntos.</li>
                 </ul>
-              </p>
             </div>
           </div>
         </div>
@@ -232,32 +200,17 @@
     </div>
   </section>
 
-  <section id="sect-testimonial-2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+  <section id="sect-testimonial-2" class="s-section ex-theme-light">
+    <div class="s-wrap">
+      <div>
+        <div>
           {{- partial "testimonial.html" (dict "context" . "customerId" "gerardartes" "testimonial" "La pasión, las ganas y la involucración del equipo con todo este proceso han sido muy positivas. Ver al equipo motivado y con ganas ha sido realmente interesante debido a la consecuencia de todo el aprendizaje, de ese mimo y ese cuidado. Gana el equipo, gana la empresa y también ganan los empleados a nivel personal ya que obtienen un aprendizaje y una formación extra que tiene un retorno muy positivo") }}
         </div>
       </div>
     </div>
   </section>
 
-  {{ partial "clients.html" (dict "context" . "background" "gray")}}
+  {{ partial "clients.html" (dict "background" "gray")}}
 
-  {{ partial "partners.html" (dict "context" . "background" "light")}}
-  
-  {{- partial "footer.html" . -}}
-
-  {{- partial "javascript.html" . -}}
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2bf2edad69c454"></script>
-</body>
-
-</html>
-
-{{ define "article" }}
-<div class="container">
-  <article>
-    {{ .Content }}
-  </article>
-</div>
+  {{ partial "partners.html" (dict "background" "light")}}
 {{ end }}

@@ -3,8 +3,6 @@ title: "Política de privacidad"
 layout: single
 ---
 
-# Política de privacidad
-
 ## Protección de datos de carácter personal según el RGPD
 
 EXEAL SOLUTIONS, S.L., en aplicación de la normativa vigente en materia de **protección** de datos de carácter personal, informa que los datos personales que se recogen a través de los formularios del Sitio web: https://www.exeal.com, se incluyen en los ficheros automatizados específicos de usuarios de los servicios de EXEAL SOLUTIONS, S.L.

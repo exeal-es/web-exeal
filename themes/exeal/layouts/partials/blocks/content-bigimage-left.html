@@ -1,24 +1,13 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    <div class="row mt-3 mb-3">
-      <div class="col-md-7 d-none d-sm-none d-md-block">
-        <img
-          class="img-fluid pad"
-          src="{{ .image }}"
-        />
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+<div class="ex-split s-split-rev">
+      <div>
+        {{ partial "arrow-header.html" . }}
+        {{ with .p1 }}<p>{{ . | safeHTML }}</p>{{ end }}
+        {{ with .p2 }}<p>{{ . | safeHTML }}</p>{{ end }}
+        {{ with .callToAction }}<div class="s-actions">{{ partial "button.html" (merge . (dict "class" "ex-button--hollow")) }}</div>{{ end }}
       </div>
-      <div class="col-md-5">
-        <h2>{{ .header | safeHTML }}</h2>
-        <p>
-          {{ .p1 | safeHTML }}
-        </p>
-        <p>
-          {{ .p2 | safeHTML }}
-        </p>
-        {{ if .callToAction }}
-        <a data-scroll="{{ .callToAction.scrollTo }}" href="#" class="button">{{ .callToAction.text }}</a>
-        {{ end }}
-      </div>
+      <div>{{ with .image }}<img class="s-img" src="{{ . }}" alt="" loading="lazy">{{ end }}</div>
     </div>
   </div>
 </section>

@@ -1,14 +1,5 @@
 {{ with .Params.author }}{{ with index site.Data.authors . }}
-<aside class="xb-author">
-  {{ with .avatar }}<img src="{{ . }}" alt="" loading="lazy">{{ end }}
-  <div>
-    <p class="xb-author-label">Escrito por</p>
-    <p class="xb-author-name">{{ .name }}</p>
-    {{ with .role }}<p class="xb-author-role">{{ . }}</p>{{ end }}
-    <div class="xb-author-links">
-      {{ with .social.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
-      {{ with .social.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
-    </div>
-  </div>
+<aside class="ex-author">{{ with .avatar }}<img class="ex-avatar" src="{{ . }}" alt="" loading="lazy">{{ end }}
+  <div><strong>{{ .name }}</strong>{{ .role }}<br>{{ with .social.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }} {{ with .social.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}</div>
 </aside>
 {{ end }}{{ end }}

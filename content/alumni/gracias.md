@@ -12,7 +12,7 @@ build:
 blocks:
 - type: thanks-message
   id: sect-gracias
-  className: dark xb-hero-bg
+  className: dark
   header: Dentro. Nos vemos el jueves 28.
   paragraphs:
   - Te acabo de mandar un correo con la fecha y el enlace para añadirlo al calendario. Si no lo ves en unos minutos, échale un ojo a promociones o spam.

@@ -1,0 +1,3 @@
+{{- /* Vídeo de YouTube con portada propia en /images/video/<id>.jpg; el reproductor se carga al pulsar (site.js). dict: url, title. */ -}}
+{{- $id := index (split (path.Base .url) "?") 0 -}}
+<div class="ex-video s-video"><img src="/images/video/{{ $id }}.jpg" alt="" loading="lazy"><button type="button" class="ex-video__play" data-video="https://www.youtube-nocookie.com/embed/{{ $id }}?rel=0" aria-label="Reproducir: {{ .title | plainify }}"></button></div>

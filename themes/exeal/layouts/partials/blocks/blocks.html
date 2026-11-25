@@ -1,32 +1,8 @@
-<section id="{{ .id }}" class="{{ .className }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 justify-content-center align-items-center text-center">
-        <h2>{{ .header | safeHTML }}</h2>
-        <p>{{ .paragraph | safeHTML }}</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="row blocks">
-          {{ range .blocks }}
-            <li class="col-md-3">
-              <div class="col-md-12 inner">
-                {{ . | safeHTML }}
-              </div>
-            </li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-md-12">
-        {{ if .callToAction }}
-          {{- partial "call-to-action.html" .callToAction }}
-        {{ end }}
-      </div>
-    </div>
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+{{ partial "arrow-header.html" . }}
+    {{ with .paragraph }}<p>{{ . | safeHTML }}</p>{{ end }}
+    <ol class="ex-hexes">{{ range $i, $e := .blocks }}<li class="ex-hex" data-n="{{ add $i 1 }}"><b>{{ . | safeHTML }}</b></li>{{ end }}</ol>
+    {{ with .callToAction }}<div class="s-actions">{{ partial "button.html" . }}</div>{{ end }}
   </div>
 </section>
