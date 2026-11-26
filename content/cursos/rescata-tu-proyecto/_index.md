@@ -1,184 +1,203 @@
 ---
-title: "Formacion avanzada: Rescata tu proyecto"
-description: "Dejarás de apagar fuegos y empezarás a mejorar el código de forma segura, paso a paso, con métricas objetivas y decisiones basadas en datos reales."
-date: 2025-05-01T00:00:00+02:00
+title: 'Formación in-company: Rescata tu proyecto'
+description: El equipo aprende a entender, proteger y cambiar código que hoy prefiere no tocar. Sale con una zona del sistema elegida, los primeros tests que la protegen y un plan para seguir.
+date: 2025-05-01 00:00:00+02:00
 layout: course
-course_title: "Rescata tu proyecto"
+course_title: Rescata tu proyecto
 course_featured_image: /images/courses/rescata-tu-proyecto.png
 course_visible: true
-#course_confirmed: true
 aliases:
-  - "/legacy/"
+- /legacy/
 blocks:
-  - type: hero
-    id: sect-hero
-    className: dark samurai
-    header: Rescata tu proyecto
-    subheader: Aprende a recuperar proyectos legacy en caos aplicando una estrategia de testing, refactorización y gestión de deuda técnica.
-    backgroundImage: /images/courses/rescata-tu-proyecto.png
-    paragraphs:
-      - Dejarás de apagar fuegos y empezarás a mejorar el código de forma segura, paso a paso, con métricas objetivas y decisiones basadas en datos reales.
-    callToAction:
-      text: Apuntarme a la lista de espera
-      scrollTo: sect-cta
-      
-  - type: stakes-with-image
-    id: sect-stakes
-    className: light
-    image: /images/courses/rescata-tu-proyecto.png
-    header: Esta formación es para ti si…
-    list:
-      - Cada vez que tocas el código, <em>tienes miedo de romper algo</em>.
-      - No hay tests, o los que hay <em>no te ayudan a detectar errores reales</em>.
-      - El código es tan complejo que <em>ni tú ni nadie quiere meterse ahí</em>.
-      - <em>Los bugs se acumulan</em>, pero nadie tiene tiempo (ni ganas) de resolverlos.
-      - <em>No tienes métricas</em> que te ayuden a justificar decisiones técnicas.
-      - <em>Te cuesta traducir problemas técnicos en impacto para negocio</em>.
-      - Sabes que hay margen de mejora, pero <em>te faltan herramientas y apoyo para empezar.</em>
-
-  - type: ticked-list
-    id: sect-benefits
-    className: dark lines
-    header: Qué vas a aprender
-    items:
-      - Identificar fuentes de complejidad y entropía en tu proyecto con criterios técnicos claros.
-      - Diseñar una estrategia de testing viable en entornos legacy, combinando tests manuales, end-to-end y approval testing.
-      - Refactorizar código sin tests de forma segura, usando characterization tests y refactoring incremental.
-      - Establecer métricas técnicas (cobertura, duplicidad, LOC…) y automatizar su recogida para tomar decisiones basadas en datos.
-      - Implantar una política de gestión de bugs con separación de tracks, prioridades claras y métricas operativas.
-      - Calcular el impacto económico de errores, paradas y deuda técnica en términos de costes reales y oportunidad.
-      - Comunicar con claridad técnica y económica por qué ciertas decisiones son necesarias para la sostenibilidad del proyecto.
-
-  # ¿Cómo lo vas a aprender?
-  - type: valueprop-elements
-    id: sect-methodology
-    className: tint
-    header: Cómo lo vas a aprender
-    elements:
-      - icon: global
-        text: '<em>Online</em>: Sesiones en directo por videoconferencia.'
-      - icon: calendario
-        text: '<em>Intensivo</em>: 2 días completos (16 horas).'
-      - icon: conversacion
-        text: '<em>Interactivo</em>: Ejercicios, dinámicas y casos reales.'
-      - icon: equipo
-        text: '<em>Reducido</em>: Limitado a 15 personas por edición.'
-      - icon: objetivo
-        text: '<em>Aplicable</em>: Técnicas para usar desde el primer día.'
-
-  - type: syllabus-extended
-    id: sect-syllabus
-    className: light
-    header: Temario completo
-    chapters:
-      - number: 1
-        chapter: Entropía, complejidad y diagnóstico inicial
-        topics:
-          - 'Entropía del software: síntomas, causas y consecuencias.'
-          - Complejidad esencial vs. accidental.
-          - Qué observar y cómo leer el estado real de un proyecto legacy.
-          - 'Objetivo técnico: reducir riesgo al modificar código.'
-      - number: 2
-        chapter: Testing en entornos legacy
-        topics:
-          - Diseño de plan de pruebas funcionales manuales.
-          - Automatización de tests end-to-end y black-box.
-          - Approval testing y técnicas de desacoplo progresivo.
-          - 'Estrategia de descenso en la pirámide de testing: de E2E a unitarios.'
-      - number: 3
-        chapter: Refactorización guiada por tests
-        topics:
-          - 'Refactoring sobre código sin tests: characterization tests y golden masters.'
-          - 'Loop de insight: lectura de código, renaming, extract method, comentarios.'
-          - Naming como proceso iterativo para revelar intención.
-          - Aplicación controlada de micro-refactorings.
-      - number: 4
-        chapter: Métricas objetivas y automatización
-        topics:
-          - 'Métricas base: cobertura de tests, líneas de código, duplicidad, indentación.'
-          - Herramientas de análisis estático y automatización de mediciones.
-          - Uso de quality gates y forcing functions para forzar mejoras.
-          - Cómo incorporar métricas en la retro y tomar decisiones basadas en datos.
-      - number: 5
-        chapter: Gestión de bugs como sistema
-        topics:
-          - 'Separación de tracks: bugfixing vs feature development.'
-          - Definición y medición de severidad (P1, P2…).
-          - 'Métricas operativas: nº de bugs por sprint, tiempo medio de resolución.'
-          - Implantación de políticas tipo “zero known bugs”.
-      - number: 6
-        chapter: Evaluación del impacto técnico en el negocio
-        topics:
-          - Cálculo del coste medio de bugs, downtime y mantenimiento.
-          - 'Métricas Accelerate: lead time, deployment frequency, etc.'
-          - Análisis de flujos críticos y estimación del coste de interrupción.
-          - Diferenciar costes directos (errores, operativa) y de oportunidad (features no entregadas).
-
-  # Próxima edición
-  - type: hero-with-image
-    id: sect-hero-with-image
-    className: tint mint
-    header: ¿Cuándo y dónde es la próxima edición?
-    #subheader: La próxima edición de <em>Rescata tu proyecto</em> se celebrará <em>online</em> los días <em>viernes 21 y sábado 22 de Noviembre de 2025</em>.
-    subheader: Aún no hay fecha confirmada para la próxima edición de <em>Rescata tu proyecto</em>, pero puedes apuntarte a la lista de espera para enterarte antes que nadie cuando abramos plazas.
-    image: /assets/img/photo-training-module.png
-    callToAction:
-      text: Apuntarme en la lista de espera
-      #scrollTo: sect-prices
-      scrollTo: sect-cta
-
-  # # Precios
-  # - type: single-price
-  #   id: sect-prices
-  #   className: dark judoka
-  #   header: <em>Precio</em>.
-  #   price:
-  #     name: Precio de lanzamiento
-  #     amountInEuroBefore: 997
-  #     amountInEuro: 597
-  #     #details: LIMITADO a <em>15 plazas</em>. Disponible hasta el Domingo 9/11/2025, 23:59 o <em>hasta agotar</em>.
-  #     enabled: true
-  #     #cta: Agenda una llamada de admisión
-  #     #checkoutUrl: https://calendly.com/exeal/llamada-de-admision-en-rescata-tu-proyecto
-  #     cta: Apuntarme a la lista de espera
-  #     checkoutUrl: https://docs.google.com/forms/d/e/1FAIpQLScqPt6rnPRi2KRJPQbFRnjUdJf1xB3PahsUhIWrpT4Ux2O0JA/viewform?usp=dialog
-
-  # FAQ
-  - type: syllabus-extended
-    id: sect-faq
-    className: tint
-    header: Preguntas frecuentes
-    chapters:
-      - chapter: ¿Qué horario tiene la formación?
-        number: 1
-        topics:
-          - Ambos días, viernes y sábado, comenzaremos a las 9.30h de la mañana (horario de España peninsular). La formación se prolongará hasta las 19h de la tarde, aproximadamente. Habrá un espacio de 1:30h para comer, y pausas de 15 minutos a lo largo de la mañana y la tarde.
-      - chapter: ¿Necesito ser senior?
-        number: 2
-        topics:
-          - No. No necesitas ser senior, pero sí es recomendable tener cierta experiencia real desarrollando software. El enfoque es práctico y avanzado, pero accesible para cualquier developer que ya trabaje o haya trabajado en proyectos de verdad.
-      - chapter: ¿Se grabarán las sesiones?
-        number: 3
-        topics:
-          - Sí, se grabarán, y estarán disponibles durante 1 año completo para que puedas consultarlas cuando quieras.
-      - chapter: ¿Puedo pagar a plazos?
-        number: 4
-        topics:
-          - Sí. Ofrecemos pago a plazos de hasta 4 meses sin intereses, para que puedas ajustar la inversión a tus necesidades. <a href="https://www.exeal.com/contacto">Contacta con nosotros directamente</a> para financiar la compra.
-      - chapter: ¿Lo puede pagar mi empresa?
-        number: 5
-        topics:
-          - ¡Claro que sí! <a href="https://www.exeal.com/contacto">Contacta con nosotros directamente</a> y le facilitaremos a tu empresa la forma de pago y factura correspondiente.
-
-  # Clients
-  - type: clients
-  
-  - type: call-to-action
-    id: sect-cta
-    className: dark dev
-    header: ¿Estás listo para dejar de apagar fuegos y empezar a rescatar tu proyecto con datos, estrategia y confianza?
-    #ctaLabel: Agenda una llamada de admisión
-    #ctaHref: https://calendly.com/exeal/llamada-de-admision-en-rescata-tu-proyecto
-    ctaLabel: Apuntarme en la lista de espera
-    ctaHref: https://docs.google.com/forms/d/e/1FAIpQLScqPt6rnPRi2KRJPQbFRnjUdJf1xB3PahsUhIWrpT4Ux2O0JA/viewform?usp=dialog
+- type: hero
+  id: sect-hero
+  className: dark samurai
+  header: Rescata tu proyecto
+  subheader: Para equipos que mantienen un sistema con años, pocos tests y cambios que cuestan más de lo que deberían.
+  backgroundImage: /images/courses/rescata-tu-proyecto.png
+  paragraphs:
+  - El equipo aprende a entender, proteger y cambiar código que hoy prefiere no tocar. Sale con una zona del sistema elegida, los primeros tests que la protegen y un plan para seguir.
+  callToAction:
+    text: Hablemos
+    href: /contacto/
+  secondaryCta:
+    text: Ver el temario
+    scrollTo: sect-syllabus
+  facts:
+  - 16 h
+  - hasta 10-12 personas
+  - presencial u online
+  - bonificable por Fundae
+- type: stakes-with-image
+  id: sect-stakes
+  className: light
+  image: /images/courses/rescata-tu-proyecto.png
+  header: Esta formación es para vuestro equipo si…
+  list:
+  - Hay partes del código que solo se atreven a tocar una o dos personas.
+  - Estimáis un cambio pequeño y acaba ocupando varios días.
+  - Queréis poner tests, pero cualquiera de ellos arrastra la base de datos y media infraestructura.
+  - Habláis cada cierto tiempo de reescribirlo todo, y nunca es buen momento.
+  - Os cuesta explicar a negocio por qué hay que dedicar tiempo a la deuda técnica.
+- type: before-after
+  id: sect-before-after
+  className: dark lines
+  header: Del «mejor no lo toques» <em>al «sabemos cómo cambiarlo»</em>
+  beforeLabel: Antes
+  afterLabel: Después
+  pairs:
+  - before: Se evita el código difícil o se cambia cruzando los dedos
+    after: Antes de cambiarlo, se escriben tests que fijan lo que hace hoy
+  - before: Se refactoriza donde más molesta al que pasa por allí
+    after: Se elige dónde mejorar según lo que cambia a menudo y cuesta más
+  - before: El código no se puede probar sin levantar el sistema entero
+    after: El equipo sabe aislar una dependencia en pasos pequeños para poder probarlo
+  - before: La deuda técnica se discute con quejas e intuiciones
+    after: Se presenta con datos, con un coste estimado y con un plan por pasos
+- type: features
+  id: sect-syllabus
+  style: numbers
+  className: light
+  header: 'Temario: 4 bloques de 4 horas'
+  intro: Seguimos una zona de vuestro sistema, desde que la localizamos hasta que la cambiamos con una red debajo.
+  items:
+  - title: 'Reconocimiento del terreno: el diagnóstico'
+    text: Qué hace difícil cambiar un sistema y cómo averiguar dónde está el problema. Si ya usáis un asistente de IA, nos ayuda a explorar el código y contrastamos lo que dice.
+    practice: El equipo analiza el historial de su repositorio, dibuja el mapa de las zonas difíciles y elige la que va a rescatar.
+    topics:
+    - Complejidad esencial y complejidad accidental
+    - 'Puntos calientes: frecuencia de cambio y complejidad a partir del historial de Git'
+    - Cómo orientarse en código desconocido
+    - 'Scratch refactoring: refactorizar para entender y descartar el resultado'
+    - Criterios para elegir por dónde empezar
+  - title: 'Cuerda de seguridad: los tests'
+    text: Cómo escribir tests para un código que no los tiene, partiendo de lo que hace hoy.
+    practice: Tras un ejercicio corto para aprender la técnica, los grupos escriben los primeros tests de la zona elegida.
+    topics:
+    - Tests de caracterización paso a paso
+    - 'Approval testing y golden master: cuándo usarlos'
+    - Qué entradas y salidas se pueden capturar
+    - Fechas, azar y otras fuentes de indeterminismo
+  - title: 'Desescombro: dependencias y refactorización'
+    text: Cómo separar el código de lo que impide probarlo y mejorarlo en pasos pequeños, con los tests en verde.
+    practice: Los grupos practican con ejemplos breves y después aíslan una dependencia y refactorizan una parte de su código.
+    topics:
+    - Inyección de dependencias en código que no la tenía
+    - Singletons, métodos estáticos y objetos que se crean dentro de otros
+    - Cambios seguros cuando todavía no hay tests
+    - Nombres y extracción de métodos para revelar la intención
+    - 'Sprout y wrap: añadir código nuevo sin ensanchar el problema'
+  - title: 'Plan de rescate: los siguientes pasos'
+    text: Cómo trocear un cambio grande para seguir entregando entretanto, y cómo explicar a negocio lo que cuesta y lo que se gana.
+    practice: El equipo prepara el plan para una mejora real de su sistema y lo defiende ante el resto como lo haría ante negocio.
+    topics:
+    - Método Mikado para cambios grandes con mucha incertidumbre
+    - 'Parallel change y strangler fig: migrar por partes'
+    - Qué mirar antes de decidir una reescritura
+    - 'Bugs y deuda: qué se arregla, qué se acepta y qué se vigila'
+    - Estimar el coste de la deuda y explicarlo fuera del equipo
+- type: features
+  id: sect-deliverables
+  style: boxes
+  columns: 2
+  className: tint
+  header: Lo que queda <em>cuando nos vamos</em>
+  items:
+  - icon: ubicacion
+    title: Mapa del sistema
+    text: Las zonas que más cambian y más cuestan, señaladas con datos de vuestro repositorio.
+  - icon: seguridad
+    title: Primeros tests
+    text: Tests que fijan el comportamiento actual de la zona que hayáis elegido.
+  - icon: iteracion
+    title: Un primer refactor
+    text: Un cambio pequeño y revisado, hecho en grupo, que sirve de ejemplo para los siguientes.
+  - icon: estrategia
+    title: Plan de rescate
+    text: Los próximos pasos en orden, con su motivo y la forma de explicarlos a negocio.
+- type: facts
+  id: sect-format
+  className: light
+  header: Formato
+  facts:
+  - value: 16 h
+    icon: calendario
+    label: Duración
+    detail: 2 días intensivos o en medias jornadas.
+  - value: Hasta 10-12 personas
+    icon: equipo
+    label: Personas
+    detail: Del mismo equipo o área.
+  - value: Presencial u online
+    icon: global
+    label: Modalidad
+    detail: En directo, con ejercicios, dinámicas y casos reales.
+  - value: Sobre vuestro código
+    icon: codigo
+    label: Material
+    detail: Siempre que se puede.
+  - value: Desde 599 € por persona
+    icon: evaluacion
+    label: Precio
+    detail: Os pasamos la propuesta para vuestro grupo.
+  - value: Bonificable por Fundae
+    icon: factura
+    label: Bonificable
+    detail: La bonificación la gestiona vuestra empresa o su gestoría; nosotros facilitamos la documentación.
+- type: testimonials
+  id: sect-testimonials
+  className: gray
+  testimonials:
+  - name: Humberto Braojos
+    position: Senior Software Engineer @ Voxel Group
+    photo: /images/testimonials/humberto-braojos.jpeg
+    text: Cambiábamos el código legacy cruzando los dedos, sin ningún tipo de test. He adquirido herramientas para que el código que escribo sea de mucha mejor calidad, y para protegerlo con tests automáticos.
+  - name: Fermín Saez
+    position: Senior Software Engineer @ Voxel Group
+    photo: /images/testimonials/fermin-saez.jpeg
+    text: Ahora me enfrento a los cambios en el código legacy con mucha más tranquilidad, confianza en el resultado y eficiencia.
+- type: trainer
+  id: sect-trainer
+  className: light
+  author: pedropardal
+  photo: /images/team/pedro-bilbo.jpg
+  photoPosition: 72% center
+  header: La formación <em>la doy yo</em>
+  role: fundador y formador de Exeal
+  paragraphs:
+  - He sido desarrollador y tech lead. He trabajado con Tuenti, Socialpoint, Trivago, Mango y Codurance. Exeal forma y acompaña a equipos desde 2020.
+- type: syllabus-extended
+  id: sect-faq
+  className: tint
+  header: Preguntas frecuentes
+  chapters:
+  - chapter: ¿Quién la imparte?
+    number: 1
+    topics:
+    - Pedro Pardal, fundador y formador de Exeal.
+  - chapter: ¿Cuándo y dónde se hace?
+    number: 2
+    topics:
+    - 'Cuando os venga bien: las fechas las acordamos con vosotros. Puede ser en vuestra oficina u online.'
+  - chapter: ¿Hace falta experiencia previa?
+    topics:
+    - Sí, experiencia real desarrollando software, pero no hace falta que todo el equipo sea senior.
+    number: 3
+  - chapter: ¿Cómo funciona la bonificación de Fundae?
+    number: 4
+    topics:
+    - Exeal es entidad formadora. La bonificación la gestiona vuestra empresa o su gestoría, según el crédito que tengáis, y nosotros facilitamos toda la documentación.
+  - chapter: ¿Qué queda fuera?
+    topics:
+    - En 16 horas no se moderniza un sistema entero, y quedan fuera la migración de tecnología, la implantación de herramientas de métricas y la estrategia completa de tests.
+    number: 5
+- type: clients
+  header: Han trabajado con nosotros
+- type: cta-band
+  id: sect-cta
+  className: dark lines
+  header: ¿Os ayudamos a rescatar <em>vuestro proyecto?</em>
+  p: Contadnos cómo trabajáis hoy. Os diremos con franqueza si podemos ayudar, y si no, también.
+  ctaLabel: Hablemos
+  ctaHref: /contacto/
 ---
