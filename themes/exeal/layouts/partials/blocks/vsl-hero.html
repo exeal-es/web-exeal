@@ -1,4 +1,4 @@
-{{- /* Hero con VSL. `video`: ID de YouTube o URL de inserción completa. Vacío = solo póster, marcado como pendiente. */ -}}
+{{- /* Hero con VSL. `video`: ID de YouTube o URL de inserción completa. Vacío = solo póster, marcado como pendiente. `facts`: etiquetas bajo el subtítulo. */ -}}
 {{- $video := .video | default "" -}}
 {{- $src := "" -}}
 {{- if $video -}}
@@ -15,6 +15,7 @@
     {{ with .kicker }}<p><span class="ex-tag">{{ . | safeHTML }}</span></p>{{ end }}
     <h1 class="ex-h1">{{ .header | safeHTML }}</h1>
     {{ with .subheader }}<p class="s-lead">{{ . | safeHTML }}</p>{{ end }}
+    {{ with .facts }}<ul class="s-tags s-tags--center">{{ range . }}<li class="ex-tag">{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
     <div class="ex-video s-video"{{ with .posterPosition }} style="{{ printf "--s-poster: %s" . | safeCSS }}"{{ end }}>
       {{ with .poster }}<img src="{{ . }}" alt="">{{ end }}
       {{ if $src }}<button type="button" class="ex-video__play" data-video="{{ $src }}" aria-label="Reproducir vídeo"></button>{{ else }}<span class="ex-course__badge">Vídeo pendiente</span>{{ end }}
