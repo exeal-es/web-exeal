@@ -4,7 +4,8 @@
     {{ partial "arrow-header.html" . }}
     {{ with .paragraph }}<p class="s-lead">{{ . | safeHTML }}</p>{{ end }}
     <div class="ex-post-grid">{{ range .workshops }}{{ partial "course-card.html" (merge . (dict "href" "#reserva" "cta" "Reservar" "pick" .title)) }}{{ end }}</div>
-    <form id="reserva" class="ex-lead-form s-after s-booking" accept-charset="UTF-8" method="POST" {{ if hugo.IsServer }}action="#{{ .id }}" onsubmit="alert('Vista previa: el formulario no envía nada.'); return false"{{ else }}action="https://leadhub-backend.ne2.studio/api/forms/exeal-home/submit"{{ end }}>
+    <form id="reserva" class="ex-lead-form s-after s-booking" accept-charset="UTF-8" method="POST" {{ if hugo.IsServer }}action="#{{ .id }}" onsubmit="alert('Vista previa: el formulario no envía nada.'); return false"{{ else }}action="https://leadhub-backend.ne2.studio/api/forms/exeal-taller/submit"{{ end }}>
+      <input type="text" name="_honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
       <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="wb-name">Nombre</label><input class="ex-input" id="wb-name" name="name" required autocomplete="name"></div>
       <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="wb-email">Email</label><input class="ex-input" type="email" id="wb-email" name="email" required autocomplete="email"></div>
       <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="wb-company">Empresa</label><input class="ex-input" id="wb-company" name="company" required autocomplete="organization"></div>

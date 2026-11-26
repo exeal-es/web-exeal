@@ -1,6 +1,6 @@
 ---
 title: Cambiar el código sin cruzar los dedos
-description: Formamos a equipos de desarrollo en testing, diseño, legacy y entrega. Programamos con vosotros y, siempre que se puede, sobre vuestro código.
+description: Formamos a equipos de desarrollo en testing, diseño, legacy y entrega, también cuando el código lo escribe la IA. Programamos con vosotros y, siempre que se puede, sobre vuestro código.
 date: 2026-11-11 00:00:00+01:00
 layout: courses
 blocks:
@@ -8,13 +8,14 @@ blocks:
   id: sect-hero
   className: dark samurai
   header: Cambiar el código <em>sin cruzar los dedos</em>
-  subheader: Formamos a equipos de desarrollo en testing, diseño, legacy y entrega. Programamos con vosotros y, siempre que se puede, sobre vuestro código.
+  subheader: Formamos a equipos de desarrollo en testing, diseño, legacy y entrega, también cuando el código lo escribe la IA. Programamos con vosotros y, siempre que se puede, sobre vuestro código.
   callToAction:
     text: Reservar un taller gratuito
     scrollTo: sect-workshop
   secondaryCta:
     text: Ver qué hacemos
     scrollTo: sect-services
+  ctaNote: 90 minutos online, programando sobre un código que traemos nosotros. Así veis cómo trabajamos antes de contratar nada.
 - type: clients
   header: Han trabajado con nosotros
 - type: services
