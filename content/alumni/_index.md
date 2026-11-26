@@ -140,8 +140,8 @@ blocks:
   className: dark lines
   header: Apúntate
   minimal: true
-  # PENDIENTE: ID del formulario de Kit para este evento (no existe todavía; ver PR).
-  kitFormId: ""
+  # Formulario de Kit «Registro - Encuentro Alumni Ene27». Regla en Kit: se suscribe → etiqueta Registrant_EncuentroAlumni_Ene27.
+  kitFormId: "10246290"
   source: web-alumni
   privacyUrl: /legal/privacy-policy/
   submitText: Me apunto
