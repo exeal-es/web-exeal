@@ -1,0 +1,21 @@
+{{- /* Servicios: texto y vídeo a dos columnas, alternando el lado. items: title, paragraphs, tags, quote, author, links[{text, href}], video (mp4) y poster, youtube o placeholder, courses (tarjetas). reverse: empieza con el vídeo a la izquierda. */ -}}
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+    {{ partial "arrow-header.html" . }}
+    {{ range $i, $s := .items }}
+    <article class="ex-split s-service{{ if ne (eq (mod $i 2) 1) ($.reverse | default false) }} s-split-rev{{ end }}">
+      <div>
+        <h3 class="ex-h3">{{ .title | safeHTML }}</h3>
+        {{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}
+        {{ with .tags }}<ul class="s-tags">{{ range . }}<li class="ex-tag">{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
+        {{ with .quote }}<blockquote class="s-blockquote">«{{ . | safeHTML }}»{{ with $s.author }}<br><small>{{ . }}</small>{{ end }}</blockquote>{{ end }}
+        {{ with .price }}<p><strong>{{ .text | safeHTML }}</strong>{{ with .href }} <a class="ex-link" href="{{ . }}">{{ $s.price.cta }}</a>{{ end }}</p>{{ end }}
+        {{ with .note }}<p>{{ . | safeHTML }}</p>{{ end }}
+        {{ with .cta }}<div class="s-actions">{{ partial "button.html" (merge . (dict "class" "ex-button--hollow")) }}</div>{{ end }}
+      </div>
+      <div>{{ if .video }}<div class="ex-video s-video"><video controls preload="none" playsinline poster="{{ .poster }}" src="{{ .video }}" aria-label="Vídeo: {{ .title }}"></video></div>{{ else if .youtube }}{{ partial "video.html" (dict "url" .youtube "title" .title) }}{{ else }}{{ with .placeholder }}<div class="ex-video s-video s-video--pending"><p><strong>Vídeo pendiente</strong>{{ . }}</p></div>{{ end }}{{ end }}</div>
+    </article>
+    {{ with .courses }}<div class="ex-post-grid s-service-courses">{{ range . }}{{ partial "course-card.html" . }}{{ end }}</div>{{ end }}
+    {{ end }}
+  </div>
+</section>

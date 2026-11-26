@@ -1,0 +1,17 @@
+{{- /* Reserva de taller: lista de talleres y formulario. En local (hugo server) el formulario no se envía. */ -}}
+<section id="{{ .id }}" class="{{ partial "theme.html" .className }}">
+  <div class="s-wrap">
+    {{ partial "arrow-header.html" . }}
+    {{ with .paragraph }}<p class="s-lead">{{ . | safeHTML }}</p>{{ end }}
+    <div class="ex-post-grid">{{ range .workshops }}{{ partial "course-card.html" (merge . (dict "href" "#reserva" "cta" "Reservar" "pick" .title)) }}{{ end }}</div>
+    <form id="reserva" class="ex-lead-form s-after s-booking" accept-charset="UTF-8" method="POST" {{ if hugo.IsServer }}action="#{{ .id }}" onsubmit="alert('Vista previa: el formulario no envía nada.'); return false"{{ else }}action="https://leadhub-backend.ne2.studio/api/forms/exeal-home/submit"{{ end }}>
+      <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="wb-name">Nombre</label><input class="ex-input" id="wb-name" name="name" required autocomplete="name"></div>
+      <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="wb-email">Email</label><input class="ex-input" type="email" id="wb-email" name="email" required autocomplete="email"></div>
+      <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="wb-company">Empresa</label><input class="ex-input" id="wb-company" name="company" required autocomplete="organization"></div>
+      <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="wb-workshop">Taller</label><select class="ex-input" id="wb-workshop" name="workshop" required>{{ range .workshops }}<option>{{ .title }}</option>{{ end }}</select></div>
+      <div class="ex-field"><label class="ex-field__label" for="wb-message">¿Algo que debamos saber? (opcional)</label><textarea class="ex-input" id="wb-message" name="message" rows="4"></textarea></div>
+      <label class="ex-checkbox"><input name="accept-terms" type="checkbox"> {{ i18n "checkcomms" }}</label>
+      <input class="ex-button ex-button--accent ex-button--block" type="submit" name="submit" value="Reservar taller">
+    </form>
+  </div>
+</section>

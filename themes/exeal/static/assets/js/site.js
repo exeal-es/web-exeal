@@ -113,3 +113,17 @@ if (cookieBox) {
     }
   }));
 }
+
+// Tarjetas de taller: preseleccionan su opción en el formulario de reserva.
+document.querySelectorAll("a[data-pick]").forEach((link) => {
+  link.addEventListener("click", () => {
+    const select = document.querySelector(`${link.getAttribute("href")} select`);
+    if (select) select.value = link.dataset.pick;
+  });
+});
+
+// Menú móvil: se cierra al elegir un enlace, también si lleva a una sección de la misma página.
+document.querySelectorAll("#menu a").forEach((link) => link.addEventListener("click", () => {
+  const menu = document.getElementById("menu");
+  if (menu.matches(":popover-open")) menu.hidePopover();
+}));

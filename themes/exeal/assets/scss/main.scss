@@ -162,3 +162,9 @@ blockquote, figure { margin: 0; }
 .s-embed { display: grid; justify-items: start; gap: 1em; padding: 1.5em; border: var(--ex-border-motif) solid var(--ex-color-green); }
 .s-footer-button { padding: 0; border: 0; background: none; color: var(--ex-color-muted); font: inherit; letter-spacing: inherit; cursor: pointer; &:hover { color: var(--ex-color-faint); } &:focus-visible { outline: 3px solid var(--ex-focus); outline-offset: 3px; } }
 .ex-cookies { max-height: calc(100dvh - 8em); .ex-box { max-height: calc(100dvh - 11em); overflow: visible auto; } }
+.s-service { align-items: center; + .s-service { margin-top: 4em; padding-top: 4em; border-top: var(--ex-border-hair) solid var(--ex-color-green); } }
+.s-video--pending { display: grid; place-items: center; aspect-ratio: auto; min-height: 14em; padding: 1.5em; background: var(--ex-color-ink); color: var(--ex-color-white); text-align: center; p { margin: 0; color: inherit; } strong { display: block; margin-bottom: 0.4em; font: 400 1.3em/1.3 var(--ex-font-display); } }
+.s-service-courses { margin-top: 2.5em; + .s-service { margin-top: 4em; padding-top: 4em; border-top: var(--ex-border-hair) solid var(--ex-color-green); } @media (min-width: 600px) { grid-template-columns: 1fr 1fr; } @media (min-width: 992px) { grid-template-columns: repeat(4, 1fr); .ex-course__cover { min-height: 9em; } .ex-course__body { padding: 1.1em; gap: 0.8em; } .ex-course__title { font-size: 1.2em; } .ex-course__body p { font-size: 0.9em; } .ex-course__actions .ex-button { font-size: 1em; } } }
+.s-booking { margin-top: 3em; scroll-margin-top: 2em; }
+.s-video video { display: block; width: 100%; height: 100%; background: var(--ex-color-ink); }
+.s-manifesto-actions { margin-top: 2em; }
