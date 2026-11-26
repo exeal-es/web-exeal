@@ -138,10 +138,10 @@ blocks:
     icon: factura
     label: Bonificable
     detail: Exeal es entidad formadora. La bonificación la gestiona vuestra empresa o su gestoría; nosotros facilitamos la documentación.
-  - value: In-company
-    icon: ubicacion
-    label: Edición
-    detail: Para un solo equipo.
+  - value: Desde 599 € por persona
+    icon: evaluacion
+    label: Precio
+    detail: In-company, para un solo equipo. Os pasamos la propuesta para vuestro grupo.
 - type: clients
 - type: testimonials
   id: sect-testimonials

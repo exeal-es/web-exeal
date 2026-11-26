@@ -18,12 +18,15 @@ params:
   hubspotId: 8231847
 
   navbar:
-  - name: "Piloto al mando"
+  - name: "Qué hacemos"
     type: link
-    url: "/piloto-al-mando/"
-  - name: "Hablemos"
+    url: "/#sect-services"
+  - name: "Sobre Pedro"
+    type: link
+    url: "/#sect-about"
+  - name: "Reservar taller"
     type: button
-    url: "/contacto/"
+    url: "/#sect-workshop"
 
 markup:
   highlight:
