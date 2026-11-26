@@ -4,11 +4,11 @@
     <div class="ex-split s-split-rev">
       <div>
         {{ partial "arrow-header.html" . }}
-        <p><strong>{{ $a.name }}</strong>, {{ .role }}</p>
+        {{ with .role }}<p><strong>{{ $a.name }}</strong>, {{ . }}</p>{{ end }}
         {{ range .paragraphs }}<p>{{ . | safeHTML }}</p>{{ end }}
         {{ with .track }}<ul class="s-tags">{{ range . }}<li class="ex-tag">{{ . }}</li>{{ end }}</ul>{{ end }}
         {{ with .quote }}<blockquote class="s-blockquote">{{ . | safeHTML }}</blockquote>{{ end }}
-        <p class="s-links">{{ with $a.social.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }} {{ with $a.social.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}</p>
+        <p class="s-links">{{ with $a.social.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }} {{ with $a.social.youtube }}<a href="{{ . }}" target="_blank" rel="noopener">YouTube</a>{{ end }} {{ with $a.social.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}</p>
       </div>
       <div><span class="ex-photo ex-photo--disc"><img class="s-cover" style="{{ printf "object-position:%s" (.photoPosition | default "center") | safeCSS }}" src="{{ .photo | default $a.avatar }}" alt="{{ $a.name }}" loading="lazy"></span></div>
     </div>

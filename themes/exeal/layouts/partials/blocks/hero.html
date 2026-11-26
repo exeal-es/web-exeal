@@ -9,6 +9,7 @@
         {{ with .callToAction }}{{ partial "button.html" . }}{{ end }}
         {{ with .secondaryCta }}{{ partial "button.html" (merge . (dict "class" "ex-button--hollow")) }}{{ end }}
       </div>{{ end }}
+      {{ with .ctaNote }}<p class="s-help s-hero__note">{{ . | safeHTML }}</p>{{ end }}
       {{ with .facts }}<ul class="s-tags">{{ range . }}<li class="ex-tag">{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
     </div>
     {{ with .image }}{{ partial "photo.html" (dict "src" .) }}{{ end }}

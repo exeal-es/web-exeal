@@ -1,8 +1,8 @@
 <section id="sect-clients" class="{{ partial "theme.html" .background }}">
   <div class="s-wrap">
-    {{ partial "arrow-header.html" (dict "header" (i18n "clientsheader")) }}
+    {{ partial "arrow-header.html" (dict "header" (.header | default (i18n "clientsheader"))) }}
     <ul class="ex-logo-strip">
-      {{ range site.Data.clients }}<li><img src="{{ .logo }}" alt="{{ .name }}" loading="lazy"></li>{{ end }}
+      {{ range site.Data.clients }}<li><img src="{{ .logo }}" alt="{{ .name }}"></li>{{ end }}
     </ul>
   </div>
 </section>

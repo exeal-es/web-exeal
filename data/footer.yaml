@@ -1,6 +1,10 @@
 resources:
+  - url: "/contacto/"
+    text: "linkcontact"
   - url: "/patrones/"
     text: "linkpatterns"
+  - url: "/manifiesto/"
+    text: "linkmanifesto"
   - url: "/blog/"
     text: "linkblog"
 links:

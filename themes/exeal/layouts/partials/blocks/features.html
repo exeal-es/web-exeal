@@ -9,7 +9,7 @@
     </ul>
     {{ else if eq $style "numbers" }}
     <ol class="ex-steps s-steps">
-      {{ range $i, $e := .items }}<li class="ex-step"><span class="ex-step__num" aria-hidden="true">{{ .number | default (printf "%02d" (add $i 1)) }}</span><div><h3>{{ .title | safeHTML }}</h3><p>{{ .text | safeHTML }}</p></div></li>{{ end }}
+      {{ range $i, $e := .items }}<li class="ex-step"><span class="ex-step__num" aria-hidden="true">{{ .number | default (printf "%02d" (add $i 1)) }}</span><div><h3>{{ .title | safeHTML }}</h3><p>{{ .text | safeHTML }}</p>{{ with .practice }}<p><strong>Práctica.</strong> {{ . | safeHTML }}</p>{{ end }}{{ with .topics }}<details class="ex-disclosure"><summary>Temas</summary><div class="ex-disclosure__body"><ul class="ex-bullets">{{ range . }}<li>{{ . | safeHTML }}</li>{{ end }}</ul></div></details>{{ end }}</div></li>{{ end }}
     </ol>
     {{ else if eq $style "boxes" }}
     <div class="ex-grid s-grid-{{ .columns | default 3 }}">

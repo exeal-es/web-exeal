@@ -1,9 +1,9 @@
-{{- /* dict: image, badge, title, text, href, cta. */ -}}
+{{- /* dict: image, badge, title, text, href, cta, pick (opción que preselecciona en el formulario de reserva). */ -}}
 <article class="ex-course">
   <div class="ex-course__cover" style="{{ printf "background-image:url('%s')" .image | safeCSS }}">{{ with .badge }}<span class="ex-course__badge">{{ . }}</span>{{ end }}</div>
   <div class="ex-course__body">
     <h3 class="ex-course__title">{{ .title }}</h3>
     <p>{{ .text }}</p>
-    {{ if .href }}<div class="ex-course__actions"><a class="ex-button ex-button--hollow ex-button--block" href="{{ .href }}" aria-label="{{ .cta }}: {{ .title }}">{{ .cta }}</a></div>{{ end }}
+    {{ if .href }}<div class="ex-course__actions"><a class="ex-button ex-button--hollow ex-button--block" href="{{ .href }}"{{ with .pick }} data-pick="{{ . }}"{{ end }} aria-label="{{ .cta }}: {{ .title }}">{{ .cta }}</a></div>{{ end }}
   </div>
 </article>

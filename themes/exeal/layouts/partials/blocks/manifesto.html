@@ -3,5 +3,9 @@
 {{ partial "arrow-header.html" . }}
     <ol class="ex-manifesto">{{ range .lines }}<li><span>{{ . | safeHTML }}</span></li>{{ end }}</ol>
     {{ with .closing }}<p class="ex-manifesto-close">{{ . | safeHTML }}</p>{{ end }}
+    {{ if or .callToAction .secondaryCta }}<div class="ex-actions s-manifesto-actions">
+      {{ with .callToAction }}{{ partial "button.html" . }}{{ end }}
+      {{ with .secondaryCta }}{{ partial "button.html" (merge . (dict "class" "ex-button--hollow")) }}{{ end }}
+    </div>{{ end }}
   </div>
 </section>

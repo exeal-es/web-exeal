@@ -1,173 +1,189 @@
 ---
-title: "Formación avanzada: Líder desarrollador"
-description: "Lidera desde el ejemplo, gestiona equipos de forma emocionalmente inteligente y haz crecer tu impacto profesional."
-date: 2025-05-01T00:00:00+02:00
+title: 'Formación in-company: Líder desarrollador'
+description: Quienes guían al equipo delegan con claridad, dan feedback a tiempo, afrontan las conversaciones pendientes y explican sus decisiones fuera del equipo. Practican con situaciones de su propio trabajo.
+date: 2025-05-01 00:00:00+02:00
 layout: course
-course_title: "Líder desarrollador"
+course_title: Líder desarrollador
 course_featured_image: /images/courses/lider-desarrollador.png
 course_visible: true
-#course_confirmed: true
 blocks:
-  - type: hero
-    id: sect-hero
-    className: dark samurai
-    header: Líder desarrollador
-    subheader: Lidera desde el ejemplo, gestiona equipos de forma emocionalmente inteligente y haz crecer tu impacto profesional.
-    backgroundImage: /images/courses/lider-desarrollador.png
-    paragraphs:
-      - Aprenderás a dominar la comunicación, el feedback, la negociación, el public speaking y la construcción de tu marca personal como developer de alto valor.
-    callToAction:
-      text: Apuntarme a la lista de espera
-      scrollTo: sect-cta
-
-  - type: stakes-with-image
-    id: sect-stakes
-    className: light
-    image: /images/courses/lider-desarrollador.png
-    header: Esta formación es para ti si…
-    list:
-      - Hay habilidades que necesitas para liderar, influir o ganar visibilidad, pero no sabes por dónde empezar.
-      - Te cuesta liderar o influir en tu equipo porque no te ves aún como un referente.
-      - Sabes técnicamente lo que hay que hacer, pero no logras que otros te sigan o entiendan tus decisiones.
-      - Dar feedback te resulta incómodo o temes generar conflictos innecesarios.
-      - Te marcas objetivos, pero no consigues mantener el foco ni la disciplina para alcanzarlos.
-      - Sientes que tu visibilidad en el sector no refleja tu nivel real de habilidades.
-      - Te bloqueas ante conversaciones difíciles o al tener que negociar condiciones de trabajo o decisiones técnicas.
-      - Hablar en público o presentar tu trabajo te genera ansiedad o no transmite el impacto que deseas.
-    p2: Todo esto se puede entrenar. Este programa te da el método.
-
-  - type: ticked-list
-    id: sect-benefits
-    className: dark lines
-    header: Qué vas a aprender
-    items:
-      - Liderarte a ti mismo con responsabilidad total y gestión consciente de tus emociones.
-      - Detectar y transformar creencias limitantes que frenan tu crecimiento.
-      - Dar y recibir feedback de forma constructiva y efectiva en equipos de desarrollo.
-      - Definir y alcanzar objetivos profesionales usando métodos como SMART y OKRs.
-      - Crear hábitos sólidos y gestionar tu energía diaria para mantener alta productividad.
-      - Construir y potenciar tu marca personal en la era de las redes sociales y el "building in public".
-      - Comunicar de forma clara y adaptativa, negociar con criterio y hablar en público conectando emocionalmente.
-
-  # ¿Cómo lo vas a aprender?
-  - type: valueprop-elements
-    id: sect-methodology
-    className: tint
-    header: Cómo lo vas a aprender
-    elements:
-      - icon: global
-        text: '<em>Online</em>: Sesiones en directo por videoconferencia.'
-      - icon: calendario
-        text: '<em>Intensivo</em>: 2 días completos (16 horas).'
-      - icon: conversacion
-        text: '<em>Interactivo</em>: Ejercicios, dinámicas y casos reales.'
-      - icon: equipo
-        text: '<em>Reducido</em>: Limitado a 15 personas por edición.'
-      - icon: objetivo
-        text: '<em>Aplicable</em>: Técnicas para usar desde el primer día.'
-
-  - type: syllabus-extended
-    id: sect-syllabus
-    className: light
-    header: Temario completo
-    chapters:
-      - number: 1
-        chapter: Liderazgo personal
-        topics:
-          - Liderarse a uno mismo antes de liderar a otros
-          - 'Relación entre pensamientos y emociones: cerebro racional vs emocional'
-          - 'Creencias limitantes y potenciadoras: cómo influyen en tus resultados'
-          - '100% responsabilidad: tu palabra como compromiso'
-      - number: 2
-        chapter: Habilidades emocionales y sociales
-        topics:
-          - Inteligencia emocional y gestión de emociones
-          - 'Empatía práctica: cómo entender y conectar con otros'
-          - Dar y recibir feedback de forma constructiva
-          - 'Gestión del miedo: acción masiva imperfecta'
-      - number: 3
-        chapter: Gestión de objetivos, energía y tiempo
-        topics:
-          - 'Cómo fijar objetivos efectivos: SMART y OKRs'
-          - Diseño de hábitos que sostienen el crecimiento
-          - Gestión de la energía, no solo del tiempo
-      - number: 4
-        chapter: Visibilidad y desarrollo profesional
-        topics:
-          - Marca personal y networking en el mundo tecnológico
-          - 'Creación de contenido: compartir, visibilizar y construir en público'
-          - Building in Public aplicado a tu carrera
-      - number: 5
-        chapter: Comunicación y liderazgo hacia otros
-        topics:
-          - Tipos de liderazgo y cuándo adaptarlos
-          - Negociación efectiva en entornos técnicos
-          - 'Comunicación adaptable: ajustar tu mensaje a diferentes perfiles'
-          - 'Public speaking: preparar y defender discursos que impactan emocionalmente'
-
-  # Próxima edición
-  - type: hero-with-image
-    id: sect-hero-with-image
-    className: tint mint
-    header: ¿Cuándo y dónde es la próxima edición?
-    #subheader: La próxima edición de <em>Líder desarrollador</em> se celebrará <em>online</em> los días <em>viernes 26 y sábado 27 de Septiembre de 2025</em>.
-    subheader: Aún no hay fecha confirmada para la próxima edición de <em>Líder desarrollador</em>, pero puedes apuntarte a la lista de espera para enterarte antes que nadie cuando abramos plazas.
-    image: /assets/img/photo-training-module.png
-    callToAction:
-      text: Apuntarme a la lista de espera
-      scrollTo: sect-cta
-
-  # # Precios
-  # - type: single-price
-  #   id: sect-prices
-  #   className: dark judoka
-  #   header: <em>Precio</em>.
-  #   price:
-  #     name: Precio de lanzamiento
-  #     amountInEuroBefore: 1047
-  #     amountInEuro: 697
-  #     details: LIMITADO a <em>15 plazas</em>. Disponible hasta el Domingo 21/9/2025, 23:59 o <em>hasta agotar</em>.
-  #     enabled: true
-  #     cta: Agenda una llamada de admisión
-  #     checkoutUrl: https://calendly.com/exeal/llamada-de-admision-en-lider-desarrollador
-
-  # FAQ
-  - type: syllabus-extended
-    id: sect-faq
-    className: tint
-    header: Preguntas frecuentes
-    chapters:
-      - chapter: ¿Qué horario tiene la formación?
-        number: 1
-        topics:
-          - Ambos días, viernes y sábado, comenzaremos a las 9.30h de la mañana (horario de España peninsular). La formación se prolongará hasta las 19h de la tarde, aproximadamente. Habrá un espacio de 1:30h para comer, y pausas de 15 minutos a lo largo de la mañana y la tarde.
-      - chapter: ¿Necesito ser senior?
-        number: 2
-        topics:
-          - No. No necesitas ser senior, pero sí es recomendable tener cierta experiencia real desarrollando software. El enfoque es práctico y avanzado, pero accesible para cualquier developer que ya trabaje o haya trabajado en proyectos de verdad.
-      - chapter: ¿Se grabarán las sesiones?
-        number: 3
-        topics:
-          - Sí, se grabarán, y estarán disponibles durante 1 año completo para que puedas consultarlas cuando quieras.
-      - chapter: ¿Puedo pagar a plazos?
-        number: 4
-        topics:
-          - Sí. Ofrecemos pago a plazos de hasta 4 meses sin intereses, para que puedas ajustar la inversión a tus necesidades. <a href="https://www.exeal.com/contacto">Contacta con nosotros directamente</a> para financiar la compra.
-      - chapter: ¿Lo puede pagar mi empresa?
-        number: 5
-        topics:
-          - ¡Claro que sí! <a href="https://www.exeal.com/contacto">Contacta con nosotros directamente</a> y le facilitaremos a tu empresa la forma de pago y factura correspondiente.
-
-  # Clients
-  - type: clients
-  
-  # Call to action
-  - type: call-to-action
-    id: sect-cta
-    className: dark dev
-    header: ¿Quieres dar el salto de developer competente a referente que inspira y guía a su equipo?
-    #ctaLabel: Agenda una llamada de admisión
-    #ctaHref: https://calendly.com/exeal/llamada-de-admision-en-lider-desarrollador
-    ctaLabel: Apuntarme a la lista de espera
-    ctaHref: https://docs.google.com/forms/d/e/1FAIpQLScG-a1lzQrC4Fub-Whj2C3zvUr8wLCBgzRjD_Uu9V7jHxWF5Q/viewform?usp=dialog
+- type: hero
+  id: sect-hero
+  className: dark samurai
+  header: Líder desarrollador
+  subheader: Para tech leads y desarrolladores que guían a otros dentro de su equipo.
+  backgroundImage: /images/courses/lider-desarrollador.png
+  paragraphs:
+  - Quienes guían al equipo delegan con claridad, dan feedback a tiempo, afrontan las conversaciones pendientes y explican sus decisiones fuera del equipo. Practican con situaciones de su propio trabajo.
+  callToAction:
+    text: Hablemos
+    href: /contacto/
+  secondaryCta:
+    text: Ver el temario
+    scrollTo: sect-syllabus
+  facts:
+  - 16 h
+  - hasta 10-12 personas
+  - presencial u online
+  - bonificable por Fundae
+- type: stakes-with-image
+  id: sect-stakes
+  className: light
+  image: /images/courses/lider-desarrollador.png
+  header: Esta formación es para vuestro equipo si…
+  list:
+  - Habéis dado responsabilidad a buenos desarrolladores sin enseñarles esa parte del trabajo.
+  - Dependéis de una persona que resuelve todo lo difícil y apenas delega.
+  - Evitáis algunas conversaciones hasta que el problema se hace grande.
+  - Discutís en las revisiones de código más de lo que aprendéis en ellas.
+  - Tomáis decisiones técnicas razonables que fuera del equipo no se entienden.
+- type: before-after
+  id: sect-before-after
+  className: dark lines
+  header: De resolverlo todo <em>a hacer que el equipo avance</em>
+  beforeLabel: Antes
+  afterLabel: Después
+  pairs:
+  - before: Quien guía se queda las tareas difíciles y hace de cuello de botella
+    after: Las reparte con un resultado esperado, un margen de decisión y un seguimiento acordado
+  - before: El feedback llega tarde, es vago o no llega
+    after: Se da pronto, sobre un hecho concreto, y se escucha la respuesta
+  - before: Las conversaciones difíciles se aplazan o acaban en discusión
+    after: Se preparan, se escucha a la otra parte y se cierran con un acuerdo
+  - before: Las decisiones técnicas se explican igual a todo el mundo
+    after: Se adapta el mensaje a quien escucha, con las opciones, el coste y las consecuencias
+- type: features
+  id: sect-syllabus
+  style: numbers
+  className: light
+  header: 'Temario: 4 bloques de 4 horas'
+  intro: Recorremos cuatro situaciones habituales de quien guía a un equipo de desarrollo, con casos vuestros.
+  items:
+  - title: 'Reparto de tareas: el rol y la delegación'
+    text: Qué cambia cuando parte del trabajo consiste en que avancen los demás. Cómo repartir tareas sin desentenderse ni estar encima.
+    practice: Cada persona prepara un traspaso real de su trabajo y lo ensaya con un compañero, que le dice qué ha entendido.
+    topics:
+    - Liderar como un rol dentro del equipo, con o sin cargo
+    - Estilos de liderazgo según la persona y la situación
+    - 'Delegar: resultado esperado, margen de decisión y seguimiento'
+    - Preguntar antes de dar la solución
+  - title: 'Revisión de código: el feedback'
+    text: Cómo dar y recibir feedback, por escrito y en persona, para que la otra persona pueda hacer algo con él.
+    practice: Los participantes reescriben comentarios de revisiones reales, sin nombres, y ensayan conversaciones de feedback en tríos con un observador.
+    topics:
+    - Hecho, efecto y petición
+    - Comentarios de revisión que enseñan
+    - Reconocer lo que está bien de forma concreta
+    - Recibir feedback y pedirlo
+    - Pair programming para acompañar a otra persona
+  - title: 'Conflicto de merge: conversaciones difíciles y negociación'
+    text: Cómo preparar una conversación incómoda, llevarla con calma y llegar a un acuerdo sobre prioridades, plazos o calidad.
+    practice: En grupos pequeños se ensayan situaciones propias, sin nombres, cambiando de papel para verlas desde el otro lado.
+    topics:
+    - 'Preparar la conversación: qué queréis resolver y qué sabéis de verdad'
+    - Reconocer las emociones, propias y ajenas, antes de responder
+    - Escuchar y encontrar el interés que hay detrás de una postura
+    - Negociar alcance, plazos y calidad con producto o con dirección
+    - Cerrar un acuerdo y revisarlo después
+  - title: 'Demo: comunicar decisiones'
+    text: Cómo explicar una decisión técnica a quien no tiene vuestro contexto, por escrito y de viva voz.
+    practice: Cada persona presenta en pocos minutos una decisión real de su equipo, responde preguntas y recibe feedback del grupo.
+    topics:
+    - Adaptar el mensaje al equipo, a producto y a dirección
+    - Contexto, opciones, coste y consecuencias
+    - Dejar la decisión por escrito en una página
+    - Preparar y ensayar una presentación corta
+    - Responder preguntas y objeciones
+- type: features
+  id: sect-deliverables
+  style: boxes
+  columns: 2
+  className: tint
+  header: Lo que queda <em>cuando nos vamos</em>
+  items:
+  - icon: proceso-valor
+    title: Un traspaso preparado
+    text: Una tarea vuestra lista para delegar, con su resultado esperado y su seguimiento.
+  - icon: revision
+    title: Guía de feedback
+    text: Criterios comunes para los comentarios de revisión y las conversaciones de feedback.
+  - icon: conversacion
+    title: Una conversación preparada
+    text: El guion de una conversación pendiente, ya ensayado con compañeros.
+  - icon: presentacion
+    title: Una decisión explicada
+    text: Una decisión técnica de vuestro equipo, escrita en una página y presentada en voz alta.
+- type: facts
+  id: sect-format
+  className: light
+  header: Formato
+  facts:
+  - value: 16 h
+    icon: calendario
+    label: Duración
+    detail: 2 días intensivos o en medias jornadas.
+  - value: Hasta 10-12 personas
+    icon: equipo
+    label: Personas
+    detail: Del mismo equipo o área.
+  - value: Presencial u online
+    icon: global
+    label: Modalidad
+    detail: En directo, con ejercicios, dinámicas y casos reales.
+  - value: In-company
+    icon: ubicacion
+    label: Edición
+    detail: Para un solo equipo o área.
+  - value: Desde 599 € por persona
+    icon: evaluacion
+    label: Precio
+    detail: Os pasamos la propuesta para vuestro grupo.
+  - value: Bonificable por Fundae
+    icon: factura
+    label: Bonificable
+    detail: La bonificación la gestiona vuestra empresa o su gestoría; nosotros facilitamos la documentación.
+- type: trainer
+  id: sect-trainer
+  className: light
+  author: pedropardal
+  photo: /images/team/pedro-bilbo.jpg
+  photoPosition: 72% center
+  header: La formación <em>la doy yo</em>
+  role: fundador y formador de Exeal
+  paragraphs:
+  - He sido desarrollador y tech lead. He trabajado con Tuenti, Socialpoint, Trivago, Mango y Codurance. Exeal forma y acompaña a equipos desde 2020.
+- type: syllabus-extended
+  id: sect-faq
+  className: tint
+  header: Preguntas frecuentes
+  chapters:
+  - chapter: ¿Quién la imparte?
+    number: 1
+    topics:
+    - Pedro Pardal, fundador y formador de Exeal.
+  - chapter: ¿Cuándo y dónde se hace?
+    number: 2
+    topics:
+    - 'Cuando os venga bien: las fechas las acordamos con vosotros. Puede ser en vuestra oficina u online.'
+  - chapter: ¿Hace falta experiencia previa?
+    topics:
+    - Está pensada para quien ya guía a otras personas en un equipo de desarrollo, con o sin cargo.
+    number: 3
+  - chapter: ¿Cómo funciona la bonificación de Fundae?
+    number: 4
+    topics:
+    - Exeal es entidad formadora. La bonificación la gestiona vuestra empresa o su gestoría, según el crédito que tengáis, y nosotros facilitamos toda la documentación.
+  - chapter: ¿Qué queda fuera?
+    topics:
+    - Quedan fuera la gestión de personas con autoridad formal (contratación, evaluación del desempeño, salarios), el coaching individual y el desarrollo de la carrera de cada uno.
+    number: 5
+- type: clients
+  header: Han trabajado con nosotros
+- type: cta-band
+  id: sect-cta
+  className: dark lines
+  header: ¿Hablamos de los líderes <em>de vuestro equipo?</em>
+  p: Contadnos cómo trabajáis hoy. Os diremos con franqueza si podemos ayudar, y si no, también.
+  ctaLabel: Hablemos
+  ctaHref: /contacto/
 ---
