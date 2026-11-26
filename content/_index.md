@@ -55,8 +55,10 @@ blocks:
       href: /cursos/lider-desarrollador/
       image: /images/courses/lider-desarrollador.png
       cta: Ver más
-    video: /video-preview/formacion.mp4
-    poster: /video-preview/formacion.jpg
+    # Vídeo de una formación (static/video-preview/formacion.mp4, fuera de git) pendiente del permiso de los alumnos.
+    # Cuando lo haya: alojarlo, y cambiar photo/photoAlt por video y poster.
+    photo: /images/team/pedro-bilbo.jpg
+    photoAlt: Pedro Pardal en un evento de Exeal
 - type: services
   id: sect-programs
   className: dark lines
