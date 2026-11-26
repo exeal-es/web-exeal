@@ -1,8 +1,8 @@
 ---
 # EXP-005 (encuentro de alumni, 28-1-2027). Copy: exeal-brain, brand/web/alumni/v4.md (iterado con los jueces del ICP devs-alumni).
 # Solo se llega desde la invitación: noindex/nofollow (hidden), fuera del sitemap, del RSS y del menú.
-title: Te cuento lo que veo en los equipos. Tú me cuentas lo que ves en el tuyo.
-description: "Cuatro charlas cortas de Pedro y cuatro salas pequeñas con alumni de otras empresas, para ver cómo lo lleva cada uno con la IA. Jueves 28 de enero de 2027, de 18:30 a 20:30, online y gratis."
+title: Te cuento lo que veo en los equipos con la IA. Tú me cuentas lo que ves en el tuyo.
+description: "Cuatro rondas: en cada una, una charla corta de Pedro y una sala pequeña con alumni de otras empresas, gente que aprendió lo mismo que tú y hoy lo pelea en otro sitio. Jueves 28 de enero de 2027, de 18:30 a 20:30, online y gratis."
 date: 2026-11-21 00:00:00+01:00
 layout: blocks
 hidden: true
@@ -17,8 +17,8 @@ blocks:
   id: sect-hero
   className: dark
   kicker: Solo para alumni de Exeal
-  header: Te cuento lo que veo en los equipos. <em>Tú me cuentas lo que ves en el tuyo.</em>
-  subheader: "Cuatro charlas cortas mías y cuatro salas pequeñas con alumni de otras empresas, para ver cómo lo lleva cada uno con la IA. Jueves 28 de enero de 2027, de 18:30 a 20:30, online y gratis."
+  header: Te cuento lo que veo en los equipos con la IA. <em>Tú me cuentas lo que ves en el tuyo.</em>
+  subheader: "Cuatro rondas: en cada una, una charla corta mía y una sala pequeña con alumni de otras empresas, gente que aprendió lo mismo que tú y hoy lo pelea en otro sitio."
   # VSL: pega aquí el ID de YouTube (p. ej. dQw4w9WgXcQ) o la URL de inserción completa (https://…).
   # Vacío = se muestra solo el póster, con la marca «vídeo pendiente».
   video: ""
@@ -40,8 +40,9 @@ blocks:
   statement: Nos vendieron que la IA nos iba a quitar trabajo. <em>Y resulta que tenemos más que nunca.</em>
   paragraphs:
   - El agente hace en una mañana lo que antes nos llevaba una semana, y aun así la semana no nos llega. No hay hueco para la calidad, ni para pensar en quien usa lo que construimos. Llegamos a casa reventados de ir al ritmo de la máquina. Cada uno está con su agente, en su rincón, a lo suyo. Y cada vez hay menos juniors, y a los que hay nadie tiene tiempo de enseñarles.
-  - Desde 2020 han pasado por Exeal más de 250 personas. El 28 de enero quiero juntaros otra vez. Os cuento lo que estoy viendo en los equipos con los que trabajo, y en grupos pequeños nos contamos cómo lo está llevando cada uno en su empresa.
-  - <strong>Es para quien ha hecho una formación con Exeal, da igual si llevas dos años programando o llevas un equipo.</strong>
+  - "Desde 2020 os he enseñado lo mismo: tests, diseño, revisar el código en equipo, entender el negocio. Cuando empezamos parecían cosas de puristas. Y ahora es justo lo que más veo fallar en los equipos con los que trabajo."
+  - Han pasado por Exeal más de 250 personas. Estáis en empresas muy distintas, pero aprendisteis a mirar el código de la misma forma. El 28 de enero quiero juntaros otra vez. Os cuento lo que estoy viendo en los equipos con los que trabajo, y en grupos pequeños nos contamos cómo lo está llevando cada uno en su empresa.
+  - <strong>Te invito a ti, que pasaste por Exeal,</strong> da igual si llevas dos años programando o llevas un equipo.
 - type: features
   id: sect-viendo
   style: list
@@ -67,14 +68,14 @@ blocks:
   variant: agenda
   className: tint
   header: Cómo va a ser
-  intro: Lo facilito yo, Pedro.
+  intro: "Lo facilito yo, Pedro. <strong>No vengo a deciros qué herramienta usar:</strong> no lo sé, y cambia cada mes."
   items:
   - number: "18:30"
     title: Bienvenida
     text: Lo que veo venir en los equipos con los que trabajo.
   - number: "18:45"
     title: Cuatro rondas de 20 minutos
-    text: "En cada una:<br>· 5 minutos: una charla corta mía sobre un tema;<br>· 12 minutos: salas de 4 o 5 personas de empresas distintas, con una pregunta para arrancar;<br>· 3 minutos: lo que ha salido en las salas, y siguiente tema."
+    text: "En cada una:<br>· 5 minutos: una charla corta mía sobre un tema;<br>· 12 minutos: salas de 4 o 5 alumni de empresas distintas, con una pregunta para arrancar;<br>· 3 minutos: lo que ha salido en las salas, y siguiente tema."
   - number: "20:05"
     title: Un regalo
     text: Material para seguir aprendiendo, gratis y solo para alumni de Exeal.
@@ -107,7 +108,7 @@ blocks:
   header: Lo facilito <em>yo</em>
   role: fundador de Exeal
   paragraphs:
-  - Desde 2020 formo y acompaño a equipos de desarrollo con Exeal. Por las formaciones han pasado más de 250 personas.
+  - "Ya me conoces: has pasado por mis clases y sabes de qué pie cojeo. Antes fui desarrollador y tech lead. Desde 2020 formo y acompaño a equipos de desarrollo con Exeal. Por las formaciones habéis pasado más de 250 personas."
   - En 2025 acabé quemado por empeñarme en tirar solo del carro. Esta vez quiero que lo hablemos entre todos.
 - type: syllabus-extended
   id: sect-faq
@@ -116,10 +117,10 @@ blocks:
   chapters:
   - chapter: ¿Cuánta gente va a haber?
     topics:
-    - Invito a unos 180 alumni de Exeal. Las salas son de 4 o 5 personas, así que en cada ronda hablas con unos pocos.
+    - Invito a unos 180 alumni de Exeal. En cada ronda repartimos a todos los que haya en salas de 4 o 5 personas, así que hablas con unos pocos.
   - chapter: ¿Se graba?
     topics:
-    - Las charlas sí, y te las mando después. Las salas no, y lo que se cuenta en ellas se queda ahí.
+    - Las charlas sí, y te las mando después. Las salas no, y <strong>lo que se cuenta en ellas se queda ahí.</strong>
   - chapter: ¿Tengo que preparar algo o hablar?
     topics:
     - No. Cada sala arranca con una pregunta, y habla quien quiera.
@@ -132,7 +133,10 @@ blocks:
   - chapter: ¿Qué hacéis con mi email?
     topics:
     - Lo uso para mandarte el enlace, el recordatorio y las grabaciones. Si marcas la casilla, también te llega «La Próxima Versión», mi newsletter.
-  - chapter: Me lo ha pasado un compañero, pero no hice formación con Exeal.
+  - chapter: ¿Por qué solo alumni?
+    topics:
+    - Porque en las salas nadie tiene que explicar por qué le importa un test o una revisión. Se empieza desde ahí.
+  - chapter: Me lo ha pasado un compañero, pero no hice formación ni coaching con Exeal.
     topics:
     - Esta vez es solo para alumni. <a class="ex-link" href="/contacto/">Escríbeme</a> y te aviso de lo próximo.
 - type: event-registration
