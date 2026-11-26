@@ -4,7 +4,7 @@
   - `source`: valor del campo SOURCE de Kit (origen del alta).
   - Consentimiento comercial: casilla opcional y sin marcar; solo se envía si se marca (campo `consent_exeal`).
   - Sin validación en el cliente contra la lista de alumni: los registros se cruzan después.
-  - `minimal: true`: solo email (`emailHelp`), casilla opcional de la newsletter (`newsletterText`, campo `newsletter_lpv`) y aviso de privacidad.
+  - `minimal: true`: nombre y email (`emailHelp`), casilla opcional de la newsletter (`newsletterText`, campo `newsletter_lpv`) y aviso de privacidad.
 */ -}}
 {{- $action := "#" -}}
 {{- with .kitFormId -}}
@@ -20,7 +20,8 @@
     {{ if .minimal }}
     <form class="ex-lead-form" action="{{ $action }}" method="post" accept-charset="UTF-8">
       <input type="hidden" name="fields[source]" value="{{ .source }}">
-      <div class="ex-field"><label class="ex-field__label" for="reg-email">Email</label><input class="ex-input" type="email" id="reg-email" name="email_address" required autocomplete="email"{{ with .emailHelp }} aria-describedby="reg-email-help"{{ end }}>{{ with .emailHelp }}<p class="s-help" id="reg-email-help">{{ . | safeHTML }}</p>{{ end }}</div>
+      <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="reg-first-name">Nombre</label><input class="ex-input" type="text" id="reg-first-name" name="fields[first_name]" required placeholder="Cómo quieres que te llame" autocomplete="given-name"></div>
+      <div class="ex-field ex-lead-form__half"><label class="ex-field__label" for="reg-email">Email</label><input class="ex-input" type="email" id="reg-email" name="email_address" required autocomplete="email"{{ with .emailHelp }} aria-describedby="reg-email-help"{{ end }}>{{ with .emailHelp }}<p class="s-help" id="reg-email-help">{{ . | safeHTML }}</p>{{ end }}</div>
       {{ with .newsletterText }}<label class="ex-checkbox"><input type="checkbox" name="fields[newsletter_lpv]" value="si"> <span>{{ . | safeHTML }}</span></label>{{ end }}
       <button type="submit" class="ex-button ex-button--accent ex-button--block">{{ .submitText }}</button>
       <p class="s-help">Al apuntarte aceptas la <a class="ex-link" href="{{ .privacyUrl }}" target="_blank" rel="noopener">política de privacidad</a>.</p>
