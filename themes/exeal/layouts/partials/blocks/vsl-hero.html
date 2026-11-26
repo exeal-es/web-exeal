@@ -1,4 +1,4 @@
-{{- /* Hero con VSL. `video`: ID de YouTube o URL de inserción completa. Vacío = solo póster, marcado como pendiente. `facts`: etiquetas bajo el subtítulo. */ -}}
+{{- /* Hero con VSL. `video`: ID de YouTube o URL de inserción completa. Vacío = solo póster (marcado como pendiente solo en `hugo server`). `facts`: etiquetas bajo el subtítulo. */ -}}
 {{- $video := .video | default "" -}}
 {{- $src := "" -}}
 {{- if $video -}}
@@ -18,7 +18,7 @@
     {{ with .facts }}<ul class="s-tags s-tags--center">{{ range . }}<li class="ex-tag">{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
     <div class="ex-video s-video"{{ with .posterPosition }} style="{{ printf "--s-poster: %s" . | safeCSS }}"{{ end }}>
       {{ with .poster }}<img src="{{ . }}" alt="">{{ end }}
-      {{ if $src }}<button type="button" class="ex-video__play" data-video="{{ $src }}" aria-label="Reproducir vídeo"></button>{{ else }}<span class="ex-course__badge">Vídeo pendiente</span>{{ end }}
+      {{ if $src }}<button type="button" class="ex-video__play" data-video="{{ $src }}" aria-label="Reproducir vídeo"></button>{{ else if hugo.IsServer }}<span class="ex-course__badge">Vídeo pendiente</span>{{ end }}
     </div>
     {{ with .callToAction }}<div class="s-actions">{{ partial "button.html" . }}</div>{{ end }}
   </div>
