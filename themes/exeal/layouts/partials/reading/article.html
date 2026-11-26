@@ -17,6 +17,7 @@
   <article class="ex-sheet s-sheet">
     {{ with .Params.podcast_episode_id }}<template data-consent="terceros" data-name="Spotify"><iframe class="s-podcast" src="https://open.spotify.com/embed-podcast/episode/{{ . }}" allow="encrypted-media" loading="lazy" title="Episodio del podcast"></iframe></template>{{ end }}
     {{ .Content }}
+    {{ if $isPattern }}{{ partial "reading/implement-prompt.html" . }}{{ end }}
     {{ partial "reading/author.html" . }}
     <nav class="ex-arrow-nav s-arrow-nav" aria-label="Más {{ .Section }}">
       {{ with .PrevInSection }}<a class="is-prev" href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a>{{ end }}
