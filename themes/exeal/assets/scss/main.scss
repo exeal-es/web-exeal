@@ -149,6 +149,12 @@ blockquote, figure { margin: 0; }
   :not(pre) > code { padding: 0.1em 0.35em; background: var(--ex-code-bg); color: var(--ex-code-fg); font: 400 0.85em/1.4 var(--ex-font-mono); letter-spacing: 0; overflow-wrap: anywhere; }
   .ex-author { margin-top: 3em; img { margin: 0; } a + a { margin-left: 0.8em; } a { color: inherit; border-bottom: var(--ex-border-button) solid var(--ex-color-amber); text-decoration: none; } }
 }
+// Prompt «Impleméntalo en tu codebase», al final de cada patrón.
+.s-implement { margin-top: 3em; padding: 1.5em; border: var(--ex-border-motif) solid var(--ex-color-green);
+  h2 { margin-top: 0; }
+  pre { max-height: 24em; margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+}
+.s-implement__status { margin-left: 0.8em; color: var(--ex-text-muted); }
 .s-arrow-nav { margin-top: 2em;
   a { max-width: 45%; }
   a::before, a::after { flex: none; }

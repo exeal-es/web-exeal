@@ -1,0 +1,34 @@
+{{- /* Al final de un patrón: prompt para que el agente de código de quien lee (Claude Code, Copilot, Cursor, Codex, pi...)
+   evalúe el patrón en su codebase. Lleva el patrón dentro: no todos los agentes pueden leer la web. */ -}}
+{{- $site := strings.TrimSuffix "/" (absURL "/") -}}
+{{- $pattern := .RawContent | replaceRE `\]\(/` (printf "](%s/" $site) | strings.TrimSpace -}}
+{{- $maturity := partial "reading/maturity-label.html" (.Params.maturity | default "explore") -}}
+{{- $prompt := printf `Quiero saber si el patrón «%s», de la biblioteca de patrones de Exeal, tiene sentido en este codebase. El patrón completo va al final de este mensaje, entre <patron> y </patron> (fuente: %s).
+
+No cambies ningún fichero hasta que yo lo apruebe. Trabaja en este orden:
+
+1. Entiende el patrón: qué problema resuelve, en qué contexto aparece y qué propone.
+2. Explora este codebase lo necesario para responder con evidencia: stack, estructura, tests, convenciones (README, CLAUDE.md, AGENTS.md o similares) y cómo se resuelve hoy lo que aborda el patrón. Cita ficheros y rutas concretas.
+3. Diagnóstico de encaje: ¿tenemos el problema que resuelve el patrón? Responde sí, en parte o no, con las pruebas que lo sostienen. Si ya está implementado, entero o en parte, aunque sea con otro nombre, dilo.
+4. Trade-offs: qué ganaríamos, qué costaría (esfuerzo, complejidad, dependencias nuevas, migración), qué riesgos tiene y qué alternativas más baratas hay, incluida no hacer nada. Ten en cuenta su madurez: «%s».
+5. Si tiene sentido, propón una hoja de ruta en pasos pequeños, cada uno entregable y verificable por separado, adaptada a este repo. Si no lo tiene, explica por qué y para ahí.
+6. Si recomiendas implementarlo, termina ofreciéndome hacerlo y dime por qué paso empezarías.
+
+Sé concreto: mejor «no encaja porque X» que una recomendación tibia. Responde en el idioma en que te hablo.
+
+<patron>
+# %s
+
+%s
+
+%s
+</patron>` .Title .Permalink $maturity .Title .Description $pattern -}}
+<section class="s-implement" aria-labelledby="implementalo">
+  <h2 id="implementalo">Impleméntalo en tu codebase</h2>
+  <p>Copia este prompt y pégalo en tu agente de código (Claude Code, Copilot, Cursor, Codex...) dentro de tu repositorio. Lleva el patrón dentro: el agente lo lee, analiza tu código, te dice si el problema es el tuyo y qué costaría, te propone una hoja de ruta y te ofrece implementarlo. No toca nada sin tu permiso.</p>
+  <p><button type="button" class="ex-button" data-copy="prompt-{{ .File.ContentBaseName }}">Copiar el prompt</button> <span class="s-implement__status" role="status"></span></p>
+  <details class="ex-disclosure">
+    <summary>Ver el prompt</summary>
+    <div class="ex-disclosure__body"><pre id="prompt-{{ .File.ContentBaseName }}" tabindex="0">{{ $prompt }}</pre></div>
+  </details>
+</section>

@@ -40,6 +40,17 @@ chips.forEach((chip) => chip.addEventListener("click", () => {
   });
 }));
 
+// Copiar al portapapeles: el botón data-copy copia el texto del elemento con ese id.
+document.querySelectorAll("[data-copy]").forEach((button) => button.addEventListener("click", async () => {
+  const status = button.parentElement.querySelector("[role=status]");
+  try {
+    await navigator.clipboard.writeText(document.getElementById(button.dataset.copy).textContent);
+    if (status) status.textContent = "Copiado. Pégalo en tu agente.";
+  } catch {
+    if (status) status.textContent = "No se pudo copiar: ábrelo abajo y cópialo a mano.";
+  }
+}));
+
 // Consentimiento. Los scripts y contenidos de terceros van en <template data-consent="categoría">
 // y solo se activan si la persona lo acepta. Se guarda 6 meses en la cookie exeal_consent.
 const CATEGORIES = ["medicion", "publicidad", "terceros"];
